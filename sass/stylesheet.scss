@@ -209,6 +209,33 @@ $light-color: $bg-color;
 
         h2 { font-size: 1.2em; }
 
+        /* Archives */
+        .archives > h2 {
+            font-size: 1.1em;
+            margin: 1.5em 0 .5em;
+            text-align: left;
+        }
+
+        .archives > h2:first-child {
+            margin-top: 1em;
+        }
+
+        .archives h3 {
+            font-size: .9em;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .archives > article {
+            margin: .5em 0 0 1em;
+        }
+
+        .archives time {
+            display: inline-block;
+            font-size: .6em;
+        }
+
         /* Displays source link and dates published */
         .post-container aside {
             margin: .4em 0;
