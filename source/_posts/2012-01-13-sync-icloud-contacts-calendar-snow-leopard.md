@@ -11,7 +11,7 @@ tags:
 ---
 Syncing iCloud to Snow Leopard is relatively simple. The information you need are your __iCloud ID__, usually in number identified as 1473233284, and the __iCloud Server Number__, usually labeled as pXX-caldav.icloud.com.
 
-To find out your iCloud ID and iCloud Server Number, you need to run Safari and [sign into your iCloud](icloud.com) account.
+To find out your iCloud ID and iCloud Server Number, you need to run Safari and [sign into your iCloud](https://www.icloud.com/ "iCloud") account.
 
 Pick Calendar or Contacts and choose __Windows » Activity__ from menu bar.
 
