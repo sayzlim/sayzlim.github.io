@@ -5,28 +5,39 @@ alias: [post/58509032370/blog-redesign-fresh-citrus, post/58509032370/]
 tags:
 - update
 ---
-<p>Regular readers should notice something new yesterday; I’ve redesigned this blog. I’ve done several redesigns, but this is my first time writing a blog post detailing what and why the changes are made.</p>
+I’ve been reading [Butterick’s Practical Typography][1] this past week. It’s a book detailing how typography can be applied to make our writing every day more useful for our intended audience.
 
-<h3>Why Search?</h3>
+I’m still at the beginning part of the book, but there is one important lesson I’ve learned from one of the section in the book. It answered one of the annoyance I keep encounter with responsive design, especially on this blog, is [typographic orphan][2].
 
-<p>This blog doesn’t have search. I wanted to add a search functionality since the birth of this blog. My temporary (or lazy) solution is to send the readers to <a href="https://twitter.com/garrytan/status/368078134018453504">DuckDuckGo site search query</a>. Since this blog is hosted on Tumblr, the number of features you can add is limited to JavaScript. Therefore, I need to make sure the blog’s loading time doesn’t suffer each time a new script is embedded.</p>
+Borrowing the definition from Wikipedia:
 
-<p>I discovered <a href="https://swiftype.com/" title="Swiftype: Modern full-text search for websites and applications">Switftype</a>, a search engine creator, through one of the <a href="https://twitter.com/garrytan/status/368078134018453504">tweet by Garry Tan</a>. Setting up Swiftype on Tumblr is merely a few steps by embedding a search form and a JavaScript snippet. They also provide analytics for search term so I can get some ideas what my visitors are actually expecting from this blog. What a nice opportunity for a redesign.</p>
+> A word, part of a word, or very short line that appears by itself at the end of a paragraph. Orphans result in too much white space between paragraphs or at the bottom of a page.
 
-<p>“Where should I put the search form?”, was the first question need to be solved — it seems designer doesn’t just instantly <em>put</em> everything together in Photoshop. It’s usually located in header. It’s not a bad idea if you own sites that depend on search for discoveries.</p>
+I [redesigned this blog][3] by referring to iPhone and iPad screen size. Even by limiting the screen size to iPhone and iPad, I occasionally will discover orphan in one of my post title as shown in the example below.
 
-<p>I need some metrics as references. Let’s take a look at the traffic sources.</p>
+![ [Post Title Without Non-Breaking Space][] ](http://images.sayzlim.net/2013/09/orphan_before.jpg "Post Title Without Non-Breaking Space")
 
-<p>This blog traffic sources — from largest to smallest — originate from search engine, referral, and social media. Visitors who come from search engine usually close the page if the post doesn’t match their <em>questions</em>. Sometimes they might find your post related to what they’re looking and try to browse your archive. By adding the search form at the end, they’re given an option search your blog easily. I also want to put priority on the blog posts instead of the search.</p>
+[Post Title Without Non-Breaking Space]: http://images.sayzlim.net/2013/09/orphan_before.jpg
 
-<h3>Relieving Readers’s Eyes Fatigue</h3>
+Orphan is considered a bad style because it’ll create too much whitespace between paragraph. Orphan found in centered text is even worse. Another problem with orphan is it’s likely to break the flow of the text. If you see the example above one more time, the text in “4 Best Bowtie Themes to Decorate Your” doesn’t flow well into the “Mac”. “Decorate Your Mac” should stay together so readers can see the relation between words in one glance.
 
-<p>I’m not an expert in Typography nor design, but, compared to regular folks, I’m far more concerned with the typefaces, the line-height, and the width of paragraphs. Along with the words selection and sentence construction, these values construct the readers reading experience.</p>
+One way to avoid orphan is to use non-breaking space. As explained in Butterick’s Practical Typography on [non-breaking space][4]:
 
-<p>I want to ensure the readers can read the post from the beginning to the end with the least amount of stress as possible.</p>
+> A non­break­ing space is the same width as a word space, but it pre­vents the text from flowing to a new line or page. It’s like in­vis­i­ble glue be­tween the words on ei­ther side.
 
-<p>I’ve tried both serif and sans-serif typefaces. Sans-serif used be my favorite which was shown by my use of <a href="https://typekit.com/fonts/adelle-web" title="Adelle | Typekit">Adelle</a> typeface in the previous blog design. I figure out I’ll need a new sans-serif typeface which is easier on eyes, something similar to Avenir Next, but less geometric. After searching through Typekit, I picked <a href="https://typekit.com/fonts/source-sans-pro" title="Source Sans Pro | Typekit">Source Sans Pro</a> as my new base typeface.</p>
+By using non-breaking space, I can ensure flow of title stay consistent across all screen sizes. I can control which words get wrapped when the width of screen size doesn’t fit. Following the example above, I can use non-breaking space for “Decorate Your Mac”. The phrase will be treated as singular word so each time the screen width won’t fit, it’ll flow into next line as shown in the screenshot below.
 
-<p>As you’ve seen right now, there is no huge differences except the header and footer contents. I’ve added background color for both header and footer to match my Tumblr avatar. I’ve moved some links from the header to footer to create some white space. I’ve removed the background textures to reduce the strain puts on your eyes.</p>
+![ [Post Title with Non-Breaking Space][] ](http://images.sayzlim.net/2013/09/orphan_after.jpg "Post Title with Non-Breaking Space")
 
-<p>I hope this redesign will make your reading experience more pleasant. There is no doubt you’ll find some weird bugs in this new design; I hope you can let me know by <a href="http://sayzlim.net/contact" title="sayzlim.net: Contact">using the contact page</a>.</p>
+[Post Title with Non-Breaking Space]: http://images.sayzlim.net/2013/09/orphan_after.jpg
+
+Now we have something useful for readers. They can process the words faster and the title also looks better in all screen sizes and styles, left aligned or centered.
+
+This practice can also be applied to paragraph. By using non-breaking space in the last two or three words, you can ensure orphan won’t exist between paragraph.
+
+Despite the form of contents have been growing in the last decade, text remains as the most popular among web users. By learning how to apply best typography practice in our works, we can deliver our works proudly to our audiences. As stated in the book, the core of typography is to perform utilitarian function.
+
+[1]: http://practicaltypography.com/ "Butterick&#39;s Practical Typography"
+[2]: http://en.wikipedia.org/wiki/Typographic_orphan "Typographic orphan"
+[3]: http://sayzlim.net/post/58509032370 "sayzlim.net: Blog Redesign, Fresh Citrus Flavor"
+[4]: http://practicaltypography.com/nonbreaking-spaces.html "nonbreaking space - Butterick&#39;s Practical Typography"
