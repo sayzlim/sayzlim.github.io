@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="post-container">
+  <article class="regular">
+  <h1>Recent Posts</h1>
+  <ul>
+  {% for post in site.posts limit: site.recent_posts %}
+      <li>
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  </div>
+</div>

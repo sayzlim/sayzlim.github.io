@@ -1,0 +1,19 @@
+---
+layout: post
+title: How to Remove Spotlight Icon in Menubar
+tags:
+- terminal
+- menubar
+- snow leopard
+---
+<p>If you choose <a href="http://sayzlim.net/alfred-app-vs-spotlight/">Alfred over Spotlight</a>, it looks better without menubar icon. Paste the code below into Terminal.app and enter your admin password.</p>
+
+<h3>To Hide Spotlight Icon</h3>
+
+<pre><code>sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search &amp;&amp; killall SystemUIServer
+</code></pre>
+
+<h3>To Show Spotlight Icon</h3>
+
+<pre><code>sudo chmod 777 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search &amp;&amp; killall SystemUIServer
+</code></pre>

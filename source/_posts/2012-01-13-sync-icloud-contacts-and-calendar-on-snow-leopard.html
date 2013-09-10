@@ -1,0 +1,100 @@
+---
+layout: post
+title: Sync iCloud Contacts and Calendar on Snow Leopard
+alias: [post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
+tags:
+- icloud
+- snow leopard
+- ical
+- address book
+- tech
+---
+<p>Syncing iCloud to Snow Leopard is relatively simple. The information you need are your <strong>iCloud ID</strong>, usually in number identified as 1473233284, and the <strong>iCloud Server Number</strong>, usually labeled as pXX-caldav.icloud.com.</p>
+
+<p>To find out your iCloud ID and iCloud Server Number, you need to run Safari and <a href="http://icloud.com">sign into your iCloud</a> account.</p>
+
+<p>Pick Calendar or Contacts and choose <strong>Windows&#160;» Activity</strong> from menu bar.</p>
+
+<p><img src="http://images.sayzlim.net/2012/01/sync_icloud_id.jpg" alt="iCloud ID and Server Number"/></p>
+
+<p>You should find something similar to this:</p>
+
+<pre><code>p03-contactsws.icloud.com/co/mecard/?dsid=1325673149
+</code></pre>
+
+<p>From the image above, my iCloud ID would be <strong>1325673149</strong> and my data are stored in server <strong>p03</strong>. Note down what you’ve found out because we’ll need these information later while setting up iCloud on iCal and Address Book.</p>
+
+<h3>Syncing iCal</h3>
+
+<p>Run iCal and choose <strong>iCal -&gt; Preferences…</strong> from menu bar. Pick <strong>Accounts Tab</strong> and click on the small plus sign at the bottom left. Fill in your iCloud email address and password.</p>
+
+<p><img src="http://images.sayzlim.net/2012/01/sync_ical_setting.jpg" alt="iCal Accounts"/></p>
+
+<p>The most important part is to replace the <strong>p03-caldav.icloud.com</strong> with your own iCloud Server Number. For instance, if you find out that your iCloud Server Number is <strong>p11</strong>, fill the Server address with <strong>p11-caldav.icloud.com</strong>.</p>
+
+<h3>Syncing Address Book</h3>
+
+<p>Syncing your contacts<sup id="fnref:p15776938944-1"><a href="#fn:p15776938944-1" rel="footnote">1</a></sup> might be a little bit difficult if you’re not used to edit .plist files. This is the right time to export all your contacts from Address Book and import them to iCloud before proceeding to next step. You can do this by select all your contacts and use right-click to create a backup file.</p>
+
+<p>Access Address Book preferences by choosing <strong>Address Book -&gt; Preferences…</strong> from menu bar. Add a CardDAV account by following the same procedure as iCal.</p>
+
+<p><img src="http://images.sayzlim.net/2012/01/sync_addressbook.jpg" alt="Address Book Accounts"/></p>
+
+<p>Fill the &#8220;User name field&#8221; with your iCloud email address under this format:</p>
+
+<pre><code>emailAddress%40domainName.com:yourPassword
+</code></pre>
+
+<p>For instance, if your iCloud email address is LOLcats@yahoo.com and the password is DogsMuffin, you must fill &#8220;User name field&#8221; with:</p>
+
+<pre><code>LOLcats%40yahoo.com:DogsMuffin
+</code></pre>
+
+<p><strong>Leave the Password field blank</strong> and replace the Server address field with your own iCloud Server Number. Take note that it’s pXX-<strong>contacts.icloud.com</strong> this time. Ignore the error and warning, you’ll fix it later.</p>
+
+<p>Choose the &#8220;Server Settings&#8221; and fill in your iCloud server address. It’s the one you fill in earlier in Server address field. (pXX-<strong>contacts.icloud.com</strong>)</p>
+
+<h4>Working With Configuration Files</h4>
+
+<p>We’re going to configure some setting by navigating to Address Book support folder. Run Finder, choose <strong>Go -&gt; Go to Folder…</strong> and enter this:</p>
+
+<pre><code>~/Library/Application Support/AddressBook/Sources
+</code></pre>
+
+<p><img src="http://images.sayzlim.net/2012/01/sync_folder.jpg" alt="AddressBook Sources"/></p>
+
+<p>You should be able to find one or several geeky folders. Run through each folder and open the <strong>configuration.plist</strong> with TextEdit or any similar text editor apps until your find the configuration associated to your iCloud account.</p>
+
+<p><img src="http://images.sayzlim.net/2012/01/sync_configuration.jpg" alt="Configuration.plst"/></p>
+
+<p>Replace the value after servername with:</p>
+
+<pre><code><a href="https://pXX-contacts.icloud.com:443/YYYYYYYYYY/principal/">https://pXX-contacts.icloud.com:443/YYYYYYYYYY/principal/</a>
+</code></pre>
+
+<p>Replace the XX with your own iCloud Server Number and YYYYYYYY with your iCloud ID number. Once you’re done, save the file and run Address Book. Fill in your iCloud password in the &#8220;Password field&#8221; and you should be able to see your iCloud contacts immediately.<sup id="fnref:p15776938944-2"><a href="#fn:p15776938944-2" rel="footnote">2</a></sup></p>
+
+<p><strong>Update 12/02/2012</strong>: A reader pointed the need to enable <strong>SSL Connection</strong> to make contact sync works. Thanks Federico.</p>
+
+<p><strong>Update 03/03/2012</strong>: Another reader pointed out using https allows you to skip the step enabling SSL. Thanks Ron!</p>
+
+<h3>Notes and Duplicate Bugs</h3>
+
+<p>Sometimes Address Book will behave weird and keep duplicating your contacts. There is no need to worry having your contacts duplicated at iCloud Contacts. Those duplicated contacts only exist locally.</p>
+
+<p><strong>Update 24/03/2013:</strong>: It seems this tutorial has brought <a href="http://forums.macrumors.com/showthread.php?p=14811447">some discussions</a> at MacRumors. There are some solutions suggested there, especially the part that modifies “addressBookName” key.</p>
+
+<p>I haven’t found the way to fix this bug. However, you can stop the bug temporary by readding your iCloud account to Address Book. Make sure to remove the previous iCloud account first.</p>
+
+<p>You can always use the contact form if you have any questions.</p>
+
+<div class="footnotes">
+<hr><ol><li id="fn:p15776938944-1">
+<p><a href="http://forums.macrumors.com/showthread.php?t=1265730">Finally! Sync your Address CardDav in OSX 10.6 Snow Leopard</a> <a href="#fnref:p15776938944-1" rev="footnote">↩</a></p>
+</li>
+
+<li id="fn:p15776938944-2">
+<p>Thanks for <a href="http://forums.macrumors.com/member.php?u=636665">j-dubya</a> who helped to clear up all the confusion. <a href="#fnref:p15776938944-2" rev="footnote">↩</a></p>
+</li>
+
+</ol></div>
