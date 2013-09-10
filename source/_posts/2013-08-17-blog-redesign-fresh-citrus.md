@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blog Redesign, Fresh Citrus Flavor
-alias: http://sayzlim.net/post/58245260102
+alias: [post/58509032370/blog-redesign-fresh-citrus, post/58509032370/]
 tags:
 - update
 ---
