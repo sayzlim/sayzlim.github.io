@@ -232,8 +232,9 @@ $light-color: $bg-color;
         }
 
         .archives time {
-            display: inline-block;
-            font-size: .6em;
+            display: block;
+            font-size: .7em;
+            height: 1.9em;
         }
 
         /* Displays source link and dates published */
