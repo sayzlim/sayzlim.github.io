@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 4 Beautiful Dark Growl Styles Themes
+alias: [/post/3680368363/4-beautiful-dark-growl-styles-themes, /post/3680368363/]
 tags:
 - growl
 ---

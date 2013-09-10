@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Buy and Upgrade Your Computer, or...
+alias: /post/5607656578/
 tags:
 - opinion
 - inspiration

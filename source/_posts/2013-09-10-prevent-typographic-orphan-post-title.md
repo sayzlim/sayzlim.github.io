@@ -38,6 +38,6 @@ This practice can also be applied to paragraph. By using non-breaking space in t
 Despite the form of contents have been growing in the last decade, text remains as the most popular among web users. By learning how to apply best typography practice in our works, we can deliver our works proudly to our audiences. As stated in the book, the core of typography is to perform utilitarian function.
 
 [1]: http://practicaltypography.com/ "Butterick&#39;s Practical Typography"
-[2]: http://en.wikipedia.org/wiki/Typographic_orphan "Typographic orphan"
+[2]: http://en.wikipedia.org/wiki/Widows_and_orphans "Typographic orphan"
 [3]: http://sayzlim.net/blog-redesign-fresh-citrus/ "sayzlim.net: Blog Redesign, Fresh Citrus Flavor"
 [4]: http://practicaltypography.com/nonbreaking-spaces.html "nonbreaking space - Butterick&#39;s Practical Typography"

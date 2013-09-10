@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spice Up OS X Mission Control
+alias: [/post/47939324665/spice-up-os-x-mission-control, /post/47939324665/]
 tags:
 - mission control
 - mountain lion

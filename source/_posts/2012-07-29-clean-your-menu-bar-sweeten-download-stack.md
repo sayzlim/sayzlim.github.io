@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clean Your Menu Bar, Sweeten Download Stack
-alias: /post/28270949677/
+alias: [/post/28270949677/, /post/28270949677/clean-your-menu-bar-sweeten-download-stack]
 tags:
 - dock
 - mountain lion

@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://sayzlim.github.io
+url: http://sayzlim.net
 title: sayzlim.net
 subtitle:
 author: Sayz Lim
@@ -16,7 +16,7 @@ description: A personal blog on using iOS and OS X as part of daily life written
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss: /atom.xml
+subscribe_rss: http://feedpress.me/sayzlim
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
