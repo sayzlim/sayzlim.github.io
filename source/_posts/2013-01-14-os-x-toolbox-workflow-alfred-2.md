@@ -24,7 +24,7 @@ Taking this chance, I’ve compiled all the extensions I’ve built and download
 
 - **Toggle Desktop:** Turn desktop visible or hidden.
 - **Toggle System Files by [Don Southard](http://www.dirtdon.com):** Turn system files visible/hidden.
-- **Toggle Wi-Fi by [Jonas Eriksen](www.aiyo.dk/alfredapp):** Turn Wi-Fi On/Off.
+- **Toggle Wi-Fi by [Jonas Eriksen](http://www.aiyo.dk/alfredapp):** Turn Wi-Fi On/Off.
 - **Purge Inactive Memory:** Clear away inactive memory without rebooting your Mac.
 - **Relaunch Finder:** If you’ve encountered a bug that stops you from revealing Alfred search result in Finder, then you’ll need this command. Usually it happened after you relaunch Finder without killing “appleeventsd” process. With this, you can relaunch Finder and kill the process in one stroke. <del>Because we need *sudo* command, you’ll need to enter your user password in the workflows menu (see the Relauch Finder shell script).</del> You’re no longer need to type in your password in the shell script. This action will use your password as argument and pass it along to the command.[^1]
 
