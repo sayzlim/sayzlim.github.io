@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sync iCloud Contacts and Calendar on Snow Leopard
-alias: [post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
+alias: [/post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
 tags:
 - icloud
 - snow leopard
