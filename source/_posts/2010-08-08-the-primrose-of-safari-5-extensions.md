@@ -26,7 +26,7 @@ With the beautiful design eliminating all distraction. This is a must have exten
 ### [Google Reader Snow Leopard](http://mariusth.channelwood.org/SafariExtensions/#GoogleReaderSnowLeopard)
 An extension which bring the unified interface Google Reader to Mac OS X, I also mentioned it this in my post on how to [customize Safari 5 with Glims][1].
 
-[1]: http://www.sayzlim.net/post/753033812/elegant-search-display-with-glims-in-safari-5
+[1]: http://sayzlim.net/elegant-search-display-with-glims-in-safari-5/
 
 ### [Google Search Cleanup](http://sites.google.com/site/mfrelink/)
 Bring the classic Google homepage and search by hiding the "more…" at left side.
