@@ -7,7 +7,7 @@ title: sayzlim.net
 subtitle:
 author: Sayz Lim
 simple_search: http://google.com/search
-description: A personal blog on using iOS and OS X as part of daily life written by Sayz Lim.
+description: "A personal blog on using iOS and OS X as part of daily life written by Sayz Lim."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: http://feedpress.me/sayzlim
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: talk@sayzlim.net
 
 # ----------------------- #
 #    Jekyll & Plugins     #
