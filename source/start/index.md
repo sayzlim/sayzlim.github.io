@@ -31,7 +31,7 @@ All the post listed in this category are the most visited posts through search e
 Not all the posts I've written receive much love. They're not professionally written nor well thought. But, I love how I can leave the message I find important here for everyone to read. Without further ado, these are my gems:
 
 - [Keyboardless MacBook Air][12]
-- [From Microsoft to Apple](15)
+- [From Microsoft to Apple][15]
 - [Minimal Living with MacBook][13]
 - [Living Without Facebook](!g "http://sayzlim.net/post/4235354563/")
 - [Buy and Upgrade Your Computer, or...](!g "http://sayzlim.net/post/5607656578/")

@@ -1,21 +1,63 @@
 $ads-position: 180px;
 
-#bsap_1269432 { position: fixed; right: 0; bottom: 80px+$ads-position; width: 190px; }
-body .yoggrt {margin:15px 0 0;padding:15px;border:3px solid #eee;background:#fff; }
-body .one .bsa_it_ad{margin:0;padding:0 15px 0 10px;border:none;background:transparent;text-align:right;font-family:inherit;}
-body .one .bsa_it_ad:hover img{-webkit-box-shadow:0 0 3px #CF490B;-moz-box-shadow:0 0 3px #CF490B;box-shadow:0 0 3px #CF490B;}
-body .one .bsa_it_ad .bsa_it_i{display:block;float:none;margin:0 0 5px;padding:0;}
-body .one .bsa_it_ad .bsa_it_i img{padding:0;border:none;}
-body .one .bsa_it_ad .bsa_it_t{padding:6px 0 0 0;}
-body .one .bsa_it_p{display:none;}
-body #bsap_aplink,body #bsap_aplink:hover{
+#bsap_1269432 {
+    position: fixed;
+    right: 0;
+    bottom: 80px+$ads-position;
+    width: 190px;
+}
+
+body .yoggrt {
+    margin: 15px 0 0;
+    padding: 15px;
+    border: 3px solid #eee;
+    background: #fff;
+}
+
+body .one .bsa_it_ad {
+    margin: 0;
+    padding: 0 15px 0 10px;
+    border: none;
+    background: transparent;
+    text-align: right;
+    font-family: inherit;
+}
+
+body .one .bsa_it_ad:hover img {
+    -webkit-box-shadow: 0 0 3px #CF490B;
+    -moz-box-shadow: 0 0 3px #CF490B;
+    box-shadow: 0 0 3px #CF490B;
+}
+
+body .one .bsa_it_ad .bsa_it_i {
+    display: block;
+    float: none;
+    margin: 0 0 5px;
+    padding: 0;
+}
+
+body .one .bsa_it_ad .bsa_it_i img {
+    padding: 0;
+    border: none;
+}
+
+body .one .bsa_it_ad .bsa_it_t {
+    padding: 6px 0 0 0;
+}
+
+body .one .bsa_it_p {
+    display: none;
+}
+
+body #bsap_aplink, body #bsap_aplink:hover {
     position: fixed;
     right: 16px;
     bottom: 41px+$ads-position;
-    display:block;
-    text-align:right;
-    font-size:.7em; }
+    display: block;
+    text-align: right;
+    font-size: .7em;
+}
 
 li.f2jnag {
-    display:none;
+    display: none;
 }
