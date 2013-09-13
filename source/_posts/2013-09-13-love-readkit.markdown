@@ -5,94 +5,51 @@ date: 2013-09-13 22:30
 categories: 
 ---
 
-Let’s admit it.
-ReadKit is not the best RSS Reader out there.
-We have Reeder, and many more apps that can do the same stuffs.
-So why use ReadKit?
-Are we left with little choices?
+Not everyone likes ReadKit. Not everyone loves Tweetbot. That’s one thing I feel grateful. Imagine the world where everyone share the same taste. That would be boring. The differences in design and engineering style have created numerous of apps for us to use.
 
-I don’t recommend an app unless I’ve grown accustomed to it.
-There is this kind of familiarity when you’ve used an application every day.
-What does it do? What can it do? I didn’t realize it can do such a thing.
-Every day I’m surprised by the little thing an app can deliver.
-Just like when I started to use OS X in my first year.
-Many things to learn and discover.
-Today I’m still doing the same. Endless knowledges to be learned.
+But why ReadKit among all the available RSS reader for Mac?
 
-A little details about my current setup.
-I’m using Feedbin[^1] to sync all my feeds.
-On Mac, definitely, I’m using ReadKit.
-On iPad mini, I use Mr. Readers which does its job extremely well.
-Shawn and others are recommending Feed Wrangler.
-Their main reason is to create a smart stream to monitor news.
-I prefer to take control of what I read.
-I don’t subscribe to news blog.
-I pick blogs I read.
-That’s why I choose Feedbin.
-It’s a feed services where you can tag your feeds.
-That’s it.
-No hassles.
-Just your subscriptions and tags.
+It all comes down to the kind of RSS reader I need. A RSS reader that can help me to follow high volume feeds while providing an easy way to filter them out. At the same time, I also don’t want to feel obligated to follow all the latest updates.
 
-ReadKit.
-It started as an application to sync your unread items in Pocket, Instapaper, and Readibility.
-I bought it during its first releases and eventually it manages to replace Reeder as my main application to read feeds on Mac.
-Design wise. It resembles Reeder in many areas.
+ReadKit is the only Mac app that provides this level of customization.
 
-I like to keep the area of discussion focused on the reading experience.
-After all, feeds is about reading.
-I won’t go further how smarts Feedbin or ReadKit helping you follow tons of news.
-ReadKit keeps your feeds organized.
-The reason is the Smart Folders.
+With the death of Google Reader, you might be wondering which RSS services you should use. It comes down to preferences. Most of the bloggers I follow recommend Feed Wrangler. Their main reason to use Feed Wrangler is the smart streams feature it offers. Smart streams is basically a [folder with a set of rules](!g "nested rules site:sayzlim.net") for your feeds. Only feeds that fulfill the criteria will show up in your created stream.
 
-Smart Folders is basically a [folder with set of rules](!g "nested rules site:sayzlim.net").
-You use to live updating feeds that contain your criteria.
-How can you make use of it well?
+I personally use Feedbin. It all comes down to this. If you want folder to organize your feeds, then Feedbin is the best choice available. It doesn’t use the term as folder. It uses tags. There is no folders, just tags and your subcriptions. That‘s all. No smart streams, no filter. Just a plain old RSS services.
 
-The first smart folder you can create is Unread folder.
-It stores all the feeds you haven’t read in one folder.
-You can all it all items, but I prefer to name it Unread.
-I also add a rules to exclude feeds from sites with high volumes of updates.
-You can easily do this by adding this rule below.
+Perhaps you’re just a casual user who doesn’t need all those paid options. An alternative would be using Feedly. Remember the useful smart streams I mentioned earlier? You can actually get it in ReadKit. It‘s called smart folders.
 
-You’re basically telling smart folder to exclude feeds from a folder.
-I regularly keep track of all the latest bookmarked sites on Pinboard. I don’t care how much new items are bookmarked, but I don’t want them to litter my main unread items. By excluding them, I can gain the clear view of how many unread items are left, how many updates available.
+Smart folder is the same as Feed Wrangler’s smart stream. The only difference is smart folder is only available locally, not synced for all your devices.
 
-I also prefer to keep the unread badged and unread counts beside folder turned off.
-Trying to finish of all the unread items is not an achievement I’m proud of.
-I like to read the articles slowly and note down everything I find useful.
-If you’re regular RSS users. Don’t let the thought of mark as unread a daily goal.
-Your main purpose is to read.
+I’m going to show how you can configure ReadKit so you can follow all the news without feeling overwhelmed. In fact, you’ll find the joy of staying updated once again thanks to ReadKit.
 
-Another smart folder I keep is Past Week. It lists all the items I’ve saved in Instapaper and Pocket in the past week[^2].
-I’m never bothered to archive or mark an item as read in Instapaper nor Pocket.
-If it’s read, the they’re read.
-An extra step to mark item as read is trivial.
-We can live without it.
-Sometimes a designer simply need to ask if user can live without that button.
+### Smart Folders Setup
+There are several core folders you need to create first to kick start your experience.
 
-Although it’s not as smart as the Feed Wrangler.
-You can still make use of smart folder to filter post with your chosen keywords.
-Let’s say iOS 7 is the talk of the town.
-In order for you to see post talking about it, you can create a smart folder with the selected keywords.
-It’s a good way to filter out what you want to read.
+**Unread Folder**: This folder contains all the feeds you haven’t read in one place. It’s a quick way to see how many updates from your subcribed blogs. I also add a rules to exclude feeds from the sites with frequent daily updates such as news site. I do this by excluding folder name, although you may exclude by feed names.
 
-### Performance Wise
-There are a couple of tricks to make sure ReadKit doesn’t go wild.
-The first I think I recommend it to keep read items for only one day.
-The second it to only sync it once a day; you don’t need to refresh hour from hour. Check your feeds about once a day, preferable after you’ve done your main tasks of the day. Also enable caches images locally to speed up everything.
+**Starred Folder:** If you frequently favorite articles, then this folder is a must have so you can view all your favorited bookmarks easily.
 
-### Design Wise
-As I’ve mentioned, it‘s better to turn off icon badge and items count.
-Set the list height to minimum so you can only see the titles of feeds. It’ll show more items in the list.
-Theme is subjective, but I prefer Light theme. Dark on white always work better for readibility.
-Align text to left.
-Optima Regular 18 as font choice.
-Set line height and width as shown below.
+**Past Week:** This is a smart folder to show all the permanent  unread items in Instapaper and Pocket I’ve saved in the past week.[^2] There is no need to mark them as read items. If it’s read, it’s read. Why create additonal step that doesn’t add value into your reading experience?
 
-ReadKit might not be the best app out there. But the options and the number of services it supports has manage to bring it to the top with all the efforts put by developers this past few months. I can feel that they‘re trying their best to cater all the needs of RSS users.
+Feed Wrangler’s smart stream allows you to filter posts by keywowrds and feeds. It means you can create a folder containing “iOS 7” from the feeds you choose or exclude. In fact, this type of filtering is more powerful than the one provided in Feed Wrangler which limited to including, without option to exclude feeds.
 
-I have expecation of what an app and services can do. Most of times, they take time. Instead of complaining, I find the workaround to bring the best out of an app so I can find joy while using it. So, did I manage to persuade you to buy ReadKit, and better yet, love it?
+The only drawback with this setup is you can’t bring your smart folders to other devices. But I spend most of time skimming articles on Mac. It won’t be a problem for me.
+
+### Keeping It Lean and Clean
+Since ReadKit is not optimized for one service only, you might want to make sure it runs as fast as possible. I usually keep the read items stored for only one day as references while working on the article, or simply want to check out what I’ve read recently. Another thing you can do is to sync manually so it ReadKit only works when you need it.
+
+To complete this setup, you might want to caches the image locally to speed up everything.
+
+Reading should be a enjoyful activity. If you feel rushed to mark all items as read, then something is definitely wrong. The rule to enjoyful reading is **not knowing how much unread items left**. That’s it. Turn off your unread item badge count in Dock icon, turn off all the unread items count beside feeds and folders. See? You simply read when open ReadKit. Take a deep breath because you’ve just lifted the heaviest boulder by staying subscribed.
+
+The finishing touch is to improve the typography of the interface. I prefer to keep the list height minimum so only post titles can be seen. It also allows more items displayed for user with small screen. Always align the text to left. I use Optima Regular 18 as my font choice. As for the line height and width follow the preferences below:
+
+ReadKit might not be the best RSS reader out there. But judging from the number of services they’ve added and improvements they’ve made this past few months make me realize that they do care for their users.
+
+We always have expectation of what an app and services can do, but we must also understand that implementing features requires time and decision. Try to find a way to make your exisitng app works and find the joy of learning to use it.
+
+Did I manage to persuade you to buy ReadKit?
 
 
 [^1]: I still recommend Feedly if you prefer a free RSS sync services. ReadKit also supports Feedly, or you can [use Fluid](http://blog.feedly.com/2013/07/01/create-your-own-feedly-mac-app/) if you need a desktop app.
