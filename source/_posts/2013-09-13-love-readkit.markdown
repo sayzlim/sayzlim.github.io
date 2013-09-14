@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Now You’re Going to Love ReadKit"
-date: 2013-09-13 22:30
+date: 2013-09-14 16:30
 categories: 
 keywords: readkit for mac, readkit, feedbin, feed wrangler, feedbin vs feed wrangler
 description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
@@ -66,7 +66,7 @@ We always have expectations of what an app and services can do, but we must also
 So, did I manage to persuade you to buy [ReadKit][6]?
 
 
-[^1]: We have [Shawn Blanc][7] and [Marco Arment][8]. Guess that’s enough as references.
+[^1]: We have [Shawn Blanc](http://shawnblanc.net/2013/06/feed-wrangler-smart-streams/ "Feed Wrangler&#39;s Smart Streams — Shawn Blanc") and [Marco Arment](http://www.marco.org/2013/06/28/drang-feeds "Feedle-dee-dee – Marco.org"). Guess that’s enough as references.
 
 [^2]: There is no need to mark items as read. If it’s read, it’s read. Why create additonal step that doesn’t add value into your reading experience?
 
@@ -74,9 +74,7 @@ So, did I manage to persuade you to buy [ReadKit][6]?
 
 [1]: http://googlereader.blogspot.com/2013/07/a-final-farewell.html "Official Google Reader Blog: A final farewell"
 [2]: http://feedwrangler.net/ "Feed Wrangler"
-[3]: http://sayzlim.net/post/54195313799 "sayzlim.net: Why You Should Start Using OS X Nested Rules"
+[3]: http://sayzlim.net/nested-rules-osx/ "sayzlim.net: Why You Should Start Using OS X Nested Rules"
 [4]: https://feedbin.me/ "Feedbin"
 [5]: http://www.feedly.com/ "feedly: your news. delivered."
 [6]: https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4 "ReadKit"
-[7]: http://shawnblanc.net/2013/06/feed-wrangler-smart-streams/ "Feed Wrangler&#39;s Smart Streams — Shawn Blanc"
-[8]: http://www.marco.org/2013/06/28/drang-feeds "Feedle-dee-dee – Marco.org"
