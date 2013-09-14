@@ -14,4 +14,4 @@ or mention me at:
 
 [@sayzlim](http://twitter.com/sayzlim)
 
-This is a small site maintained by myself. I live in Jakarta, so it might take some time to get back on your email.
+This is a small site maintained by myself. I live in Batam, a small island in Indonesia, so it might take some time to get back on your email.
