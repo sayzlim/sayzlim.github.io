@@ -3,54 +3,80 @@ layout: post
 title: "Now You’re Going to Love ReadKit"
 date: 2013-09-13 22:30
 categories: 
+keywords: readkit for mac, readkit, feedbin, feed wrangler, feedbin vs feed wrangler
+description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
 ---
 
-Not everyone likes ReadKit. Not everyone loves Tweetbot. That’s one thing I feel grateful. Imagine the world where everyone share the same taste. That would be boring. The differences in design and engineering style have created numerous of apps for us to use.
+![ [ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-intro.jpg "ReadKit for Mac")
 
-But why ReadKit among all the available RSS reader for Mac?
+[ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-intro.jpg
 
-It all comes down to the kind of RSS reader I need. A RSS reader that can help me to follow high volume feeds while providing an easy way to filter them out. At the same time, I also don’t want to feel obligated to follow all the latest updates.
+Some of us just can’t stop reading. That’s why we use services like Google Reader. I want to read, yet at the same time I don’t want to feel obligated to mark all items as read. I’m talking about the unread items count lingering on your Home screen and dock icon.
 
-ReadKit is the only Mac app that provides this level of customization.
+In order to improve our reading experience, we need to create a cleaner reading environment. ReadKit is the only app that provides this level of customization.
 
-With the death of Google Reader, you might be wondering which RSS services you should use. It comes down to preferences. Most of the bloggers I follow recommend Feed Wrangler. Their main reason to use Feed Wrangler is the smart streams feature it offers. Smart streams is basically a [folder with a set of rules](!g "nested rules site:sayzlim.net") for your feeds. Only feeds that fulfill the criteria will show up in your created stream.
+With the [death of Google Reader][1], you might be wondering which RSS services you should use. It comes down to preferences. Most of the bloggers[^1] I follow recommend [Feed Wrangler][2]. Their main reason to use Feed Wrangler is its smart stream feature. To put it simply, smart stream is basically a [folder with a set of rules][3] for your feeds. Only feeds that fulfill the criteria will show up in created smart stream.
 
-I personally use Feedbin. It all comes down to this. If you want folder to organize your feeds, then Feedbin is the best choice available. It doesn’t use the term as folder. It uses tags. There is no folders, just tags and your subcriptions. That‘s all. No smart streams, no filter. Just a plain old RSS services.
+I’ve compared Feed Wrangler to [Feedbin][4]. In the end, I pick Feedbin. The reason? I want to organize my feeds in folders, grouped in folders. That‘s it. No smart streams, no filters. Just a plain old school Google Reader tagging.
 
-Perhaps you’re just a casual user who doesn’t need all those paid options. An alternative would be using Feedly. Remember the useful smart streams I mentioned earlier? You can actually get it in ReadKit. It‘s called smart folders.
+What if I don’t want to pay? An alternative would be [Feedly][5]. They also have a paid plan if you need more advanced features. The free plan doesn’t stop you from using their services like the usual Google Reader though.
 
-Smart folder is the same as Feed Wrangler’s smart stream. The only difference is smart folder is only available locally, not synced for all your devices.
+Remember the useful smart stream I mentioned earlier? You can actually get it in ReadKit. It‘s known as smart folder. Smart folder is the same as Feed Wrangler’s smart stream. The only difference is smart folder lives locally, not synced across all your devices.
 
-I’m going to show how you can configure ReadKit so you can follow all the news without feeling overwhelmed. In fact, you’ll find the joy of staying updated once again thanks to ReadKit.
+I’m going to show you how ReadKit can help you follow all the news without feeling overwhelmed. Chance is you’re going to discover the joy of staying updated once again.
 
-### Smart Folders Setup
-There are several core folders you need to create first to kick start your experience.
+### Core Smart Folders Setup
+These are the list of smart folders almost everyone need to create at first:
 
-**Unread Folder**: This folder contains all the feeds you haven’t read in one place. It’s a quick way to see how many updates from your subcribed blogs. I also add a rules to exclude feeds from the sites with frequent daily updates such as news site. I do this by excluding folder name, although you may exclude by feed names.
+**Unread**: It can also be called **Slow Feeds**. This smart folder compiles all the important feeds, usually 2–3 posts every week, you haven’t read in one place. It’s a quick way to see all your favorite sites’ updates in one location. Slow Feeds can be created by excluding sites with frequent updates. You can see the example below.
 
-**Starred Folder:** If you frequently favorite articles, then this folder is a must have so you can view all your favorited bookmarks easily.
+![ [Unread Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/reakit-unread.jpg "Unread Folder in ReadKit for Ma")
 
-**Past Week:** This is a smart folder to show all the permanent  unread items in Instapaper and Pocket I’ve saved in the past week.[^2] There is no need to mark them as read items. If it’s read, it’s read. Why create additonal step that doesn’t add value into your reading experience?
+[Unread Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/reakit-unread.jpg
 
-Feed Wrangler’s smart stream allows you to filter posts by keywowrds and feeds. It means you can create a folder containing “iOS 7” from the feeds you choose or exclude. In fact, this type of filtering is more powerful than the one provided in Feed Wrangler which limited to including, without option to exclude feeds.
+**Starred:** This smart folder list all your favorited articles.
 
-The only drawback with this setup is you can’t bring your smart folders to other devices. But I spend most of time skimming articles on Mac. It won’t be a problem for me.
+![ [Starred Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-starred.jpg "Starred Folder in ReadKit for Mac")
+
+[Starred Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-starred.jpg
+
+**Past Week:** This is a smart folder to show all the permanent  unread items[^2] in read later services I’ve saved in the past week.
+
+![ [Past Week Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-past-week.jpg "Past Week Folder in ReadKit for Mac")
+
+[Past Week Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-past-week.jpg
+
+There are many rules you can use to create a smart folder that cater your interests. The smart folder is usually topical. You might want to list all the articles that contain “iOS 7” from some feeds. That’s actually part of the Feed Wrangler’s smart stream feature. But ReadKit’s smart folder is more powerful because it can also exclude keywords from specific feeds, a feature which is not available yet in Feed Wrangler.[^3]
+
+The only drawback with smart folders is you can’t bring your smart folders to your mobile devices. Feed Wrangler is still the best option for this setup if you need them available on your iPhone and iPad.
 
 ### Keeping It Lean and Clean
-Since ReadKit is not optimized for one service only, you might want to make sure it runs as fast as possible. I usually keep the read items stored for only one day as references while working on the article, or simply want to check out what I’ve read recently. Another thing you can do is to sync manually so it ReadKit only works when you need it.
+Since ReadKit is designed to support many reading services at once, you might want to make some tweaks. I keep the read items stored for only one day, usually as references while working on the article, or simply want to check out what have been published yesterday. I also prefer to sync feeds manually. To complete this setup, you should enable local image caches to speed up everything.
 
-To complete this setup, you might want to caches the image locally to speed up everything.
+Reading should be a pleasant activity. If you feel rushed to mark all items as read, then something is definitely wrong. The rule of enjoyable reading experience is **not knowing how much unread items left**. That’s it. Turn off your unread item counts on icons, feeds, and folders.
 
-Reading should be a enjoyful activity. If you feel rushed to mark all items as read, then something is definitely wrong. The rule to enjoyful reading is **not knowing how much unread items left**. That’s it. Turn off your unread item badge count in Dock icon, turn off all the unread items count beside feeds and folders. See? You simply read when open ReadKit. Take a deep breath because you’ve just lifted the heaviest boulder by staying subscribed.
+See? You simply read when you launch ReadKit. Take a deep breath because you’ve just lifted the heaviest boulder from using RSS.
 
-The finishing touch is to improve the typography of the interface. I prefer to keep the list height minimum so only post titles can be seen. It also allows more items displayed for user with small screen. Always align the text to left. I use Optima Regular 18 as my font choice. As for the line height and width follow the preferences below:
+This is the icing part. Keep the list height minimum so post titles are the only one left — great for small screen. Always align the text to left. I use Optima Regular 18 as my font choice. As for the line height and width, follow the preferences below:
 
-ReadKit might not be the best RSS reader out there. But judging from the number of services they’ve added and improvements they’ve made this past few months make me realize that they do care for their users.
+ReadKit might not be the best reader app for Mac out there. But judging from the number of services they’ve added and improvements they’ve made this past few months make me realize that they do care what they build.
 
-We always have expectation of what an app and services can do, but we must also understand that implementing features requires time and decision. Try to find a way to make your exisitng app works and find the joy of learning to use it.
+We always have expectations of what an app and services can do, but we must also understand that implementing features requires time and decision. Try to find a way to make your existing app works and find the joy of learning to use it.
 
-Did I manage to persuade you to buy ReadKit?
+So, did I manage to persuade you to buy [ReadKit][6]?
 
 
-[^1]: I still recommend Feedly if you prefer a free RSS sync services. ReadKit also supports Feedly, or you can [use Fluid](http://blog.feedly.com/2013/07/01/create-your-own-feedly-mac-app/) if you need a desktop app.
-[^2]: I [use both Instapaper and Pocket](!g "instapaper pocket site:sayzlim.net").
+[^1]: We have [Shawn Blanc][7] and [Marco Arment][8]. Guess that’s enough as references.
+
+[^2]: There is no need to mark items as read. If it’s read, it’s read. Why create additonal step that doesn’t add value into your reading experience?
+
+[^3]: Feed Wrangler uses filter to automatically mark item containing keywords as read. A feature you need to use carefully in order to not filter out posts you might find interesting.
+
+[1]: http://googlereader.blogspot.com/2013/07/a-final-farewell.html "Official Google Reader Blog: A final farewell"
+[2]: http://feedwrangler.net/ "Feed Wrangler"
+[3]: http://sayzlim.net/post/54195313799 "sayzlim.net: Why You Should Start Using OS X Nested Rules"
+[4]: https://feedbin.me/ "Feedbin"
+[5]: http://www.feedly.com/ "feedly: your news. delivered."
+[6]: https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4 "ReadKit"
+[7]: http://shawnblanc.net/2013/06/feed-wrangler-smart-streams/ "Feed Wrangler&#39;s Smart Streams — Shawn Blanc"
+[8]: http://www.marco.org/2013/06/28/drang-feeds "Feedle-dee-dee – Marco.org"
