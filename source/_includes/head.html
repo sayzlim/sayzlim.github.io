@@ -18,7 +18,6 @@
   {% endcapture %}
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 
-  {% if index %}<meta name="keywords" content="{{ site.keywords }}">{% endif %}
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
   <!-- http://t.co/dKP3o1e -->
