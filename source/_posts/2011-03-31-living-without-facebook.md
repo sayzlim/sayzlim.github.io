@@ -19,7 +19,7 @@ It has been almost a year I quit from Facebook. I was very curious how the decis
 
 Back then, I was busy with my final project in college. I could dedicate all my time to do the project while taking a part time job. The time given to me let me have more time to contemplate about my life.
 
-I can focus on the people during meets. I use this [phone](http://www.sayzlim.net/post/601511321/witel-k336-the-minimal-of-minimalism) since the time I quit Facebook. Without being connected online, I can actually connect with the people I interact. You can give your full attention without being distracted. By not playing with my gadget while talking, it actually shows how you care the people you talk too.
+I can focus on the people during meets. I use this [phone](http://sayzlim.net/witel-k336-the-minimal-of-minimalism/) since the time I quit Facebook. Without being connected online, I can actually connect with the people I interact. You can give your full attention without being distracted. By not playing with my gadget while talking, it actually shows how you care the people you talk too.
 
 Is quitting Facebook a wise decision? No, not really. But I'm sure it helps me to realize what I have and do with my life.
 

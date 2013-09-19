@@ -68,7 +68,6 @@ Let me know your thoughts on this setup, and don’t be hesitate to [contact me]
 
 [^1]: First, I don’t like the icon. Second, I don’t activate Notification Center using the menu bar icon.
 
-[^2]: Another reason is Delibar doesn’t play well with Bartender 
-which keeping it in menu bar is necessary.
+[^2]: Another reason is Delibar doesn’t play well with Bartender which keeping it in menu bar is necessary.
 
 [^3]: I’ve seen some mods for Stacks before, but I didn’t pay much attention to it.

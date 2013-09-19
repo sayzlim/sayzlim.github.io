@@ -9,7 +9,7 @@ tags:
 ---
 Among many configurations I’ve made, under the hood tweaks are rarely documented. I’ve written several guides to [prettify a download folder][3], or choose themes for Adium, yet not a single article on improving the performance of OS X.
 
-[3]: http://sayzlim.net/post/28270949677/clean-your-menu-bar-sweeten-download-stack
+[3]: http://sayzlim.net/clean-your-menu-bar-sweeten-download-stack/
 
 It’s a perception of speed that shapes up your experience from using a Mac. OS X has a lot of subtle animations in order to guide the users. Some animations are too slow. In order to achieve what I call as optimized performance, you need to be able to distinguish the difference between useful and useless animations and adjust it accordingly.
 
@@ -31,7 +31,7 @@ Mission Control is wonderful. It combines the advantages of Exposé and the Spac
 
 I’ve tried several values and decided to use 0.12 because it’s the fastest value for my eyes to follow. If you’re not comfortable with Terminal, you can get [Lion Designer][6] which I’ve used to [change the background of Launchpad and Mission Control][5].
 
-[5]: http://sayzlim.net/post/47939324665/spice-up-os-x-mission-control
+[5]: http://sayzlim.net/spice-up-os-x-mission-control/
 [6]: http://www.moritzwette.com/liondesigner/
 
 Those two options above doesn’t actually speed up your Mac in term of hardware performance. It’s more about leveraging existing features and eliminating redundant animations.

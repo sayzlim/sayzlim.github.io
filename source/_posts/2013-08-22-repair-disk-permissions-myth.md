@@ -16,6 +16,6 @@ I used to stay up late searching for tools and tips to optimize Mac. I downloade
 
 Nowadays, I let OS X manages everything. I’ve only [adjusted some animations][1] to improve my experience. 
 
-[1]: http://sayzlim.net/post/58245260102 "sayzlim.net: Speed Up Your Mac Drastically"
+[1]: http://sayzlim.net/speed-up-your-mac-drastically/ "sayzlim.net: Speed Up Your Mac Drastically"
 
 Avoid needless hacks when OS X doesn’t freeze your Mac. Instead of spending your time to optimize OS X, try to come up with a way to finish your tasks efficiently.

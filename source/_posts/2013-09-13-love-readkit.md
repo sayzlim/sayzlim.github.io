@@ -3,7 +3,6 @@ layout: post
 title: "Now You’re Going to Love ReadKit"
 date: 2013-09-14 16:30
 categories: 
-keywords: readkit for mac, readkit, feedbin, feed wrangler, feedbin vs feed wrangler
 description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
 ---
 
@@ -17,11 +16,11 @@ In order to improve our reading experience, we need to create a cleaner reading 
 
 With the [death of Google Reader][1], you might be wondering which RSS services you should use. It comes down to preferences. Most of the bloggers[^1] I follow recommend [Feed Wrangler][2]. Their main reason to use Feed Wrangler is its smart stream feature. To put it simply, smart stream is basically a [folder with a set of rules][3] for your feeds. Only feeds that fulfill the criteria will show up in created smart stream.
 
-I’ve compared Feed Wrangler to [Feedbin][4]. In the end, I pick Feedbin. The reason? I want to organize my feeds in folders, grouped in folders. That‘s it. No smart streams, no filters. Just a plain old school Google Reader tagging.
+I’ve compared Feed Wrangler to [Feedbin][4]. In the end, I pick Feedbin. The reason? I want to organize my feeds in folders, grouped in folders. That’s it. No smart streams, no filters. Just a plain old school Google Reader tagging.
 
 What if I don’t want to pay? An alternative would be [Feedly][5]. They also have a paid plan if you need more advanced features. The free plan doesn’t stop you from using their services like the usual Google Reader though.
 
-Remember the useful smart stream I mentioned earlier? You can actually get it in ReadKit. It‘s known as smart folder. Smart folder is the same as Feed Wrangler’s smart stream. The only difference is smart folder lives locally, not synced across all your devices.
+Remember the useful smart stream I mentioned earlier? You can actually get it in ReadKit. It’s known as smart folder. Smart folder is the same as Feed Wrangler’s smart stream. The only difference is smart folder lives locally, not synced across all your devices.
 
 I’m going to show you how ReadKit can help you follow all the news without feeling overwhelmed. Chance is you’re going to discover the joy of staying updated once again.
 
@@ -34,7 +33,7 @@ These are the list of smart folders almost everyone need to create at first:
 
 [Unread Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/reakit-unread.jpg
 
-**Starred:** This smart folder list all your favorited articles.
+**Starred:** This smart folder lists all your favorited articles.
 
 ![ [Starred Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-starred.jpg "Starred Folder in ReadKit for Mac")
 

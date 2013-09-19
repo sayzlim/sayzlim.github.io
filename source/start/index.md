@@ -6,7 +6,7 @@ date: 2013-09-10 16:26
 
 I used to publish [all my posts on Tumblr](http://sayzlim.tumblr.com) because of its simplicity. It’s a blogging platform where you just write. It’s a place where many authors with credibility share their thoughts. It’s a social network where readers can get know their favorite writers.
 
-Right now I publish with [Octopress](!g). The setup is straightforward and the generated sites is fast. I hope you find this site more useful after the migration.
+Right now I publish with [Octopress](http://octopress.org/ "Octopress"). The setup is straightforward and the generated sites is fast. I hope you find this site more useful after the migration.
 
 ### Beautiful and Useful
 I believe in beautiful computing experience. I want to show people that they can do everything they’ve been doing efficiently while keeping the desktop clean. I want to show that they can have a beautiful designed computer with well arranged workspace. This is the idea. It’s about beautiful desktop, icons, and animations.
