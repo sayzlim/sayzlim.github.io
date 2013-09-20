@@ -1,35 +1,46 @@
 ---
 layout: post
-title: "Organize Mac Application Windows with Contexts"
+title: "Organize Mac Application Windows with Contexts"
 date: 2013-09-20 11:30
 categories: 
 description: Contexts keep your cluttered application windows on Mac organized without sweat.
 ---
 
-Working with many applications at once can create clutter when you have small screen. MacBook Air can only handle this much applications windows at once. Running Safari, Firefox, and Chrome to test the change made on the website. Writing down notes in nVALT and editing images in Pixelmator. I also need to keep the Terminal running if I want to commit some changes for the files I’m working on. There is no more spot left.
+Here is what my typical desktop activity looks like every day.
 
-I discovered an app called Contexts recently. It’s another third party app to boost your productivity by providing an easy way to manage and search for your active windows.
+First is developer’s main tool, Sublime Text. Followed by our trio — Safari, Firefox, and Chrome. Marked and nVALT are the best combination for writing. Need to edit some images? Pixelmator is the guy. Don’t forget to keep the Terminal active for committing changes. Let’s activate Mission Control. Now, where is _that_ window?
 
-I don’t want to install too much third party apps. I questioned how useful this app could be, lost in thought, and finally give it a test.
+It’s difficult to keep your application windows organized — not when you have a small screen like MacBook Air. There is a limitation of how much can be shown at once.
 
-I’m trying to reduce the number of third party applications in this Mac. I must admit once in a while I’ll add an application into my toolbox. The prerequisites for them to be included is simple. They need to be useful.
+You can switch between active applications easily with OS X built in **Application Switcher**. However, what if you want to find a specific application window? What if you have ten similar windows opened? Even App Exposé can’t help you, unless you [search through your menu bar](!g "effective menu bar site:sayzlim.net").
 
-If you’re like me, working with small screen, and sometimes need a few seconds to find the window you need from all the windows in Mission Control, then you’ll love Contexts. It’s not difficult to say this app is worthy to stay at the sidebar on your desktop, but the main point is it’s better than I thought.
+You can use [Contexts](!g "contextsformac").
 
-### Comparison to Task Switcher
-Contexts is different. It’s not the task switcher like we’re used to use with `Command + Tab`. It actually complements the task switcher, by being more than just task switcher. It switches application windows.
+Robert Agcaoili, the author of [gridwriter](!g), accurately described Contexts’ main feature in one sentence, “**Contexts for Mac is like a task switcher on steroids.**”  Now, Contexts has joined the rest of my precious applications. It carries the same value as Bartender. It does one thing well: to help me search active windows.
 
-I’m using it along with built in Task Switcher. At first, I thought I could use to replace the task switcher entirely. But there is no way to replicate the functionality that the task switcher offers completely. While Contexts can be used to filter through the pile of active windows, Task Switcher at its best still the best for switching between windows without relying the shift key. Moreover, Task Switcher can be used to hide and quit apps.
+### Not Yet As Application Switcher Replacement
+You use Application Switcher to manage applications. In other words, you can activate, hide, and even quit applications with Application Switcher. None of the features I mentioned are available in Contexts. Instead acting as a replacement, Contexts actually complements Application Switcher as Window Switcher.
 
-Both of them should be used together to tame all your active applications and windows.
+What exactly is the difference?
 
-### Using Contexts
-The way I use Contexts is more visual. I keep the sidebar visible at the bottom right so I can know how many windows are actually active. This is also a signal when I’m trying to get too much things done at once. If you open multiple Finder windows at once, Contexts will show them all as an individual icon in the sidebar. Hovering your mouse will show you the title of each window, making navigatin in Finder without tabs support easier.
+Application Switcher only shows the number of active applications. If they’re available in Dock, you can view all of them by pressing `Command+Tab`. As for Window Switcher, you can only see the active windows. If you have four active Finder windows, they’re all visible in Contexts.
 
-Another problem that Contexts solve is to filter windows, especialy when you have more than 20 windows opened at once. By utilizing `Option+``, you can activate the search field to search for your windows. This is the most important feature which I like.
+Both of them can be used together to tame all your active applications and windows.
 
-There is another shorcut to switch between windows — by using `Option+(Number)`.I don’t use this shorcut because it takes away main option to type symbols on Mac. Some of the keys are pretty common such as ™ and ∞. I hope there is a way to assign our own shortcuts, or at least modifiers to avoid keys conflict in the final release.
+### Using Contexts to Manage Windows
 
-Undoubtfully, Contexts for Mac has become one of my tool to get things done on Mac. It’s unobstrusive and proves to be helpful when I want to know how many windows are active. It’s not a replacement for built in Application Switcher; [Witch](!g "witch for mac") is the one if that’s what you want.
+![ [Keeping the Contexts sidebar active all the time][] ](http://images.sayzlim.net/2013/09/contexts_search.jpg "Keeping the Contexts sidebar active all the time")
 
-You can get it for half price while it’s still in beta.
+[Keeping the Contexts sidebar active all the time]: http://images.sayzlim.net/2013/09/contexts_search.jpg
+
+I keep the sidebar visible all the time at the bottom right of the screen. The active windows in sidebar serves as a signal to remind me that I’m doing too much tasks. Sometimes I find many Finder windows stay active when they’re actually pointing to the same path.
+
+![ [Search with Contexts for Mac][] ](http://images.sayzlim.net/2013/09/contexts_search.jpg "Search with Contexts for Mac")
+
+[Search with Contexts for Mac]: http://images.sayzlim.net/2013/09/contexts_search.jpg
+
+Contexts’ main feature is search. By utilizing <code>Option+`</code> to access search field, you can find a specific window among hundred of active windows within a few key presses.
+
+There is another shortcut to switch between windows — by using `Option+(Number)`. I don’t use this shortcut because it takes away the ability to type symbols on Mac. Some of the keys are pretty common such as ™ and ∞. I hope there is a way to assign our own shortcuts, or at least modifiers to avoid keys conflict in future.
+
+While under development, Contexts can be used for free and purchased for $7. That’s half of the original price. If you think you need an application to manage windows, Contexts is one of the choice you need to consider.

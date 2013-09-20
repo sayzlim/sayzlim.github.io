@@ -6,9 +6,9 @@ categories:
 description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
 ---
 
-![ [ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-intro.jpg "ReadKit for Mac")
+![ [ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_intro.jpg "ReadKit for Mac")
 
-[ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-intro.jpg
+[ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit_intro.jpg
 
 Some of us just can’t stop reading. That’s why we use services like Google Reader. I want to read, yet at the same time I don’t want to feel obligated to mark all items as read. I’m talking about the unread items count lingering on your Home screen and dock icon.
 
@@ -29,21 +29,21 @@ These are the list of smart folders almost everyone need to create at first:
 
 **Unread**: It can also be called **Slow Feeds**. This smart folder compiles all the important feeds, usually 2–3 posts every week, you haven’t read in one place. It’s a quick way to see all your favorite sites’ updates in one location. Slow Feeds can be created by excluding sites with frequent updates. You can see the example below.
 
-![ [Unread Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/reakit-unread.jpg "Unread Folder in ReadKit for Ma")
+![ [Unread Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_unread.jpg "Unread Folder in ReadKit for Ma")
 
-[Unread Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/reakit-unread.jpg
+[Unread Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit_unread.jpg
 
 **Starred:** This smart folder lists all your favorited articles.
 
-![ [Starred Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-starred.jpg "Starred Folder in ReadKit for Mac")
+![ [Starred Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_starred.jpg "Starred Folder in ReadKit for Mac")
 
-[Starred Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-starred.jpg
+[Starred Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit_starred.jpg
 
 **Past Week:** This is a smart folder to show all the permanent  unread items[^2] in read later services I’ve saved in the past week.
 
-![ [Past Week Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit-past-week.jpg "Past Week Folder in ReadKit for Mac")
+![ [Past Week Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_past_week.jpg "Past Week Folder in ReadKit for Mac")
 
-[Past Week Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit-past-week.jpg
+[Past Week Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit_past_week.jpg
 
 There are many rules you can use to create a smart folder that cater your interests. The smart folder is usually topical. You might want to list all the articles that contain “iOS 7” from some feeds. That’s actually part of the Feed Wrangler’s smart stream feature. But ReadKit’s smart folder is more powerful because it can also exclude keywords from specific feeds, a feature which is not available yet in Feed Wrangler.[^3]
 
