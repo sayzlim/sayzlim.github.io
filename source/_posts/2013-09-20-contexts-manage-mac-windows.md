@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Organize Mac Application Windows with Contexts"
+title: "Manage Mac Application Windows with Contexts"
 date: 2013-09-20 11:30
 categories: 
-description: Contexts keep your cluttered application windows on Mac organized without sweat.
+description: Contexts manages your cluttered Mac application windows with the powerful search feature. Use it together with Application Switcher to tame all windows.
 ---
 
 Here is what my typical desktop activity looks like every day.

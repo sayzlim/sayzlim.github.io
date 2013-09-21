@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Revamped ImageOptim Icon"
+date: 2013-09-21 09:00
+external-url: http://imageoptim.com
+categories: 
+description: ImageOptim 1.4.5 has been released with the brand new icon by Anna from icon8. Get it for free to optimize all your images.
+---
+
+They finally replaced the old icon with the brand new one which is designed by Anna from [icons8](!g). Although the previous icon is lacking to be proudly displayed on your Dock, the functionally of ImageOptim can’t be disregarded.
+
+I use ImageOptim all the time to optimize the images published on this blog. You can easily reduce the JPG up to 45% with it. ImageOptim is not just useful, but, with the brand new icon, it’s becoming more beautiful.
