@@ -37,7 +37,7 @@ Not all the posts I've written receive much love. They're not professionally wri
 - [Minimal Living with MacBook][13]
 - [Living Without Facebook][18]
 - [Buy and Upgrade Your Computer, or…][16]
-- [Being Myself](!g "http://sayzlim.net/post/6146286421/")
+- [Being Myself][17]
 - [Defining Apps and Utilities][14]
 
 [1]: http://sayzlim.net/most-beautiful-folder-icons-mac/ "The Most Beautiful Folder Icons Replacement for Mac"
@@ -56,4 +56,5 @@ Not all the posts I've written receive much love. They're not professionally wri
 [14]: http://sayzlim.net/effective-menu-bar-search-workflow/ "Effective Menu Bar Search Workflow"
 [15]: http://sayzlim.net/from-microsoft-to-apple/
 [16]: http://sayzlim.net/buy-and-upgrade-your-computer-or "Buy and Upgrade Your Computer, or..."
+[17]: http://sayzlim.net/being-myself/ "Being Myself | Sayz Lim"
 [18]: http://sayzlim.net/living-without-facebook "Living without Facebook"
