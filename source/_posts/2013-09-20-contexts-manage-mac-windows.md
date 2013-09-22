@@ -29,15 +29,15 @@ Both of them can be used together to tame all your active applications and windo
 
 ### Using Contexts to Manage Windows
 
-![ [Keeping the Contexts sidebar active all the time][] ](http://images.sayzlim.net/2013/09/contexts_search.jpg "Keeping the Contexts sidebar active all the time")
+[ ![Contexts’ sidebar at bottom right][A1] ](http://images.sayzlim.net/2013/09/contexts_sidebar.jpg "Contexts’s sidebar shows active application wndows")
 
-[Keeping the Contexts sidebar active all the time]: http://images.sayzlim.net/2013/09/contexts_search.jpg
+[A1]: http://images.sayzlim.net/2013/09/contexts_sidebar.jpg "Contexts’s sidebar shows active application wndows"
 
 I keep the sidebar visible all the time at the bottom right of the screen. The active windows in sidebar serves as a signal to remind me that I’m doing too much tasks. Sometimes I find many Finder windows stay active when they’re actually pointing to the same path.
 
-![ [Search with Contexts for Mac][] ](http://images.sayzlim.net/2013/09/contexts_search.jpg "Search with Contexts for Mac")
+[ ![Contexts’s search result][A2] ](http://images.sayzlim.net/2013/09/contexts_search.jpg "Use Contexts Search to filter result")
 
-[Search with Contexts for Mac]: http://images.sayzlim.net/2013/09/contexts_search.jpg
+[A2]: http://images.sayzlim.net/2013/09/contexts_search.jpg "Use Contexts Search to filter result"
 
 Contexts’ main feature is search. By utilizing <code>Option+`</code> to access search field, you can find a specific window among hundred of active windows within a few key presses.
 
