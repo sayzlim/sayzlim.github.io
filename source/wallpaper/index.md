@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Wallpaper"
+description: List of my favorite wallpapers as dispayed in every reviews and tutorials.
 date: 2013-09-10 16:26
 ---
 

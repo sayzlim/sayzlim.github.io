@@ -2,6 +2,7 @@
 layout: post
 title: Why an iPad and a Mac mini are my computing future
 external-url: http://www.tuaw.com/2010/05/29/why-an-ipad-and-a-mac-mini-are-my-computing-future/
+description: Three years ago when I bought the iMac, I dismissed the mini as too weak and actually looked at a Mac Pro.
 tags:
 - mac
 ---
