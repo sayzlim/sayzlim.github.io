@@ -178,10 +178,9 @@ $light-color: $bg-color;
 
     /* Elements in post-container */
         .post-container a {
-            border-bottom: dotted 1px hsla(19, 90%, 43%, 0);
             color: $base-color;
             &:hover {
-                border-bottom: dotted 1px hsla(19, 90%, 43%, 1);
+                color: #f5773d;
             }
         }
 
@@ -331,9 +330,6 @@ $light-color: $bg-color;
         .post-container {
             nav {
                 overflow: hidden; font-size: 0.75em;
-                a:hover {
-                    border-bottom: dotted 1px hsla(19,90%,43%,0);
-                }
             }
         }
 

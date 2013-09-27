@@ -14,9 +14,9 @@
       {% endif %}
     {% endif %}
     {% unless page.meta == false %}
-      <div class="meta">
+      <aside class="meta">
         <a href="{{ root_url }}{{ post.url }}">&#x221E;</a> {% include post/date.html %}{{ time }}
-      </div>
+      </aside>
     {% endunless %}
 {% endunless %}
 {% if index %}
