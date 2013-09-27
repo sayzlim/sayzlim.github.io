@@ -42,10 +42,24 @@ The overall structure of your abbreviations should use the following structure:
 
 	[unique character][group abbreviation][snippet abbreviation]
 
-You can come up with many different ideas for this your snippets. I use a lot of shortcodes when writing on MakeMac. It’s common for me to use `mm` as the group abbreviations for all the snippets. Some of the example are:
+If you’re a developer, you should be familiar with Git. By following the rules above, you can come up with the list of abbreviations below such as `.gitlog`, `.gitbran`, `.gitpush`, and `.gitstat`. The optimal group abbreviation character length is about three, while the snippet abbreviation should be limited to four characters without shortening.
 
-- `.mmtoapp`
-- `.mmdirapp`
+The above structure works because we only need to remember the group abbreviations. The following snippet abbreviations are only the truncated version of it. For `git branch` command, I don’t use `.gitbrnc`, I just use `.gitbran`.
 
+You’ll also find this useful when writing CSS. By prepending `.css` to all your abbreviations, the group itself will be uniques. You can also use your company alias as a prefix for all the common emails replies.
+
+## Taking The Structures Apart
+The structures is defined to help you remember abbreviations. There are cases where you might consider to break the rules. If you’re interested to start storing all your files in plain text, I recommend reading the [Plain Text Primer](!g) by Michael Schechter. In his guide, I use some abbreviations like `.nx` and `.bx`.
+
+**Frequently used snippets can have their own abbreviation without  group abbreviations.** You can use `.date` to show current date, or even `.time` to show current time.
+
+I also break the guides by using different unique character for different type of snippets. If you need to remember filepath, using `~` as the unique character works better than dot or other characters. Use it to store all the most common used filepath like assingin `~log` to access your server log.
+
+You can combine with the guides above to group the filepath together. If you need to access your remote server, use the servername or company name as prefix. That way you can access the same path, but only need to remember the different group abbreviations, eg. `~yhlog`, `~wdlog`, `~msnlog`.
+
+## Conclusion
+The main point of this structure is to reduce the number of abbreviations we need to remember. Similar snippet function, like the one with accessing log files, shares the same snippet abbreviation. With the help of group abbreviation, we can make them unique.
+
+This approach reduce the complexity of the created abbreviations and provide the simple way to remember forgoteen abbreviations. If you have any questions about TextExpander, feel free to contact me.
 
 [^1]: You can enable delimiter to decide when the abbreviation should be expanded. With the delimited enabled (the default one are space, tab, return, and enter), the abbreviation will expand when one of the delimited is typed.
