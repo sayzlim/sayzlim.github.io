@@ -2,13 +2,14 @@
 <!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
+<head prefix="og: http://ogp.me/ns/article#">
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
   <meta name="author" content="{{ site.author }}">
-
+  {% include custom/opengraph.html %}
   {% assign index = true %}
   {% if page.title %}{% assign index = false %}{% endif %}
+
 
   {% capture description %}
     {% if index %}{{ site.description }}
@@ -20,7 +21,6 @@
 
   {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
 
-  <!-- http://t.co/dKP3o1e -->
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
