@@ -13,15 +13,16 @@ Several themes has sit on my desktop before the current one I use. The themes ha
 
 ![Exact 2.0](http://images.sayzlim.net/2011/01/bowtie_exact.jpg)
 
-[Exact 2.0][1], designed by Jesse Millar, is a simple pinned theme to one of the corner on your desktop. The font used in sliding animation fits perfectly and not obtrusive. Click the album artwork to display the song information. Rich color wallpaper always fits well with this theme.
+[Exact 2.0][1], designed by [Jesse Millar][6], is a simple pinned theme to one of the corner on your desktop. The font used in sliding animation fits perfectly and not obtrusive. Click the album artwork to display the song information. Rich color wallpaper always fits well with this theme.
 
-[1]: http://www.jessemillar.com/portfolio/exact
+[1]: http://d.pr/f/b0R8 "Exact 2.0"
+[6]: http://www.jessemillar.com/ "Jesse Millar | Game Developer"
 
 ![Condensed Black](http://images.sayzlim.net/2011/01/bowtie_black.jpg)
 
 The most simple theme designed, [Zukunft Condensed][2] comes in two color. Condensed Black works well with lighter background. The choose of font is what makes me fall in love with it.
 
-[2]: http://macthemes.net/forum/viewtopic.php?id=16792497
+[2]: http://catalog.13bold.com/theme/18 "Zukunft Condensed White on Bowcase"
 
 ![Condensed White](http://images.sayzlim.net/2011/01/bowtie_white.jpg)
 
