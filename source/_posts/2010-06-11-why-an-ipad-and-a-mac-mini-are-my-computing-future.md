@@ -1,9 +1,0 @@
----
-layout: post
-title: Why an iPad and a Mac mini are my computing future
-external-url: http://www.tuaw.com/2010/05/29/why-an-ipad-and-a-mac-mini-are-my-computing-future/
-description: Three years ago when I bought the iMac, I dismissed the mini as too weak and actually looked at a Mac Pro.
-tags:
-- mac
----
-> Three years ago when I bought the iMac, I dismissed the mini as too weak and actually looked at a Mac Pro. At one point, I thought about going to a “one Mac” solution and getting a 17” MacBook Pro, but the arrival of the iPad has made me totally reevaluate my computing needs and realize that — at least for me — a desktop powerful enough for my needs (which today’s Mac mini is) plus an iPad is a better trade off than a powerful portable computer.
