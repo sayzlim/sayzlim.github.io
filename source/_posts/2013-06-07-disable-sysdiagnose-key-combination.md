@@ -39,41 +39,58 @@ The only way I have figured so far to prevent OS X from triggering this special 
 [2]: http://stevelosh.com/blog/2012/10/a-modern-space-cadet/#better-shifting
 [4]: https://pqrs.org/macosx/keyremap4macbook/
 
-![ [Open “private.xml” file][] ](http://images.sayzlim.net/2013/06/keyremap4macbook_private.jpg "Open “private.xml” file")
+[ ![Open private.xml][img2] ](http://images.sayzlim.net/2013/06/keyremap4macbook_private.jpg "Open private.xml")
 
-[Open “private.xml” file]: http://images.sayzlim.net/2013/06/keyremap4macbook_private.jpg
+[img2]: http://images.sayzlim.net/2013/06/keyremap4macbook_private.jpg "Open private.xml"
 
 Run KeyRemap4MacBook and navigate to Misc & Uninstall tab. Choose “Open private.xml” under the Custom Setting. It’ll show you the private.xml. Open the file. Copy the code below and put it under the *root* tag.
 
+**Update 2013-10-06**: A quick thanks to [Jeremy Mack][A2] for letting me know that forward slash key also triggers sysdiagnose. I’ve included [his code][A1] below.  Replace the previous code and reload private.xml to update the selection.
+
+[A1]: https://gist.github.com/mutewinter/6847308 "Disable Sysdiagnose Key"
+[A2]: http://pileofturtles.com/ "Turtle Log | A Programmer Blog"
+
 	<item>
-        <name>Disable Sysdiagnose DOT Key</name>
-        <appendix>Disable Sysdiagnose Key</appendix>
-        <identifier>private.disable_sysdiagnosedot</identifier>
-        <autogen>
-            --KeyToKey--
-            KeyCode::DOT,
-            ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
-            KeyCode::VK_NONE
-        </autogen>
-    </item>
+      <name>Disable Sysdiagnose DOT Key</name>
+      <appendix>Disable Sysdiagnose DOT Key</appendix>
+      <identifier>private.disable_sysdiagnose_dot_key</identifier>
+      <autogen>
+          --KeyToKey--
+          KeyCode::DOT,
+          ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+          KeyCode::VK_NONE
+      </autogen>
+	</item>
 
-    <item>
-        <name>Disable Sysdiagnose COMMA Key</name>
-        <appendix>Disable Sysdiagnose Key</appendix>
-        <identifier>private.disable_sysdiagnosecomma</identifier>
-        <autogen>
-            --KeyToKey--
-            KeyCode::COMMA,
-            ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
-            KeyCode::VK_NONE
-        </autogen>
-    </item> 
+	<item>
+      <name>Disable Sysdiagnose COMMA Key</name>
+      <appendix>Disable Sysdiagnose COMMA Key</appendix>
+      <identifier>private.disable_sysdiagnose_comma_key</identifier>
+      <autogen>
+          --KeyToKey--
+          KeyCode::COMMA,
+          ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+          KeyCode::VK_NONE
+      </autogen>
+	</item>
 
-Run KeyRemap4MacBook again. This time, open Change Key tab and choose ReloadXML. You should see two new remapping rules similar to the screenshot below. Activate them.
+	<item>
+      <name>Disable Sysdiagnose Foward Slash Key</name>
+      <appendix>Disable Sysdiagnose FORWARD SLASH Key</appendix>
+      <identifier>private.disable_sysdiagnose_forward_slash</identifier>
+      <autogen>
+          --KeyToKey--
+          KeyCode::SLASH,
+          ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+          KeyCode::VK_NONE
+      </autogen>
+		</item>
 
-![ [Activate new mapping rules][] ](http://images.sayzlim.net/2013/06/keyremap4macbook_activate.jpg "Activate new mapping rules")
+Run KeyRemap4MacBook again. This time, open Change Key tab and choose ReloadXML. You should see three new remapping rules similar to the screenshot below. Activate them.
 
-[Activate new mapping rules]: http://images.sayzlim.net/2013/06/keyremap4macbook_activate.jpg
+[ ![Activate new mapping rules][img1] ](http://images.sayzlim.net/2013/06/keyremap4macbook_activate.jpg "Activate new mapping rules")
+
+[img1]: http://images.sayzlim.net/2013/06/keyremap4macbook_activate.jpg "Activate new mapping rules"
 
 The rules above prevent the combination between left side modifier with Period and Comma. Try to hit `Hyper + Comma` and `Hyper + Period`. It should do nothing, but you can still type `Shift + Comma` and `Shift + Period`.
 

@@ -46,7 +46,7 @@ Sometimes I do simple image editing and programming with those apps:
 - Dash (Free/$7.99): [App Store][B2]
 - Pixa ($24.99): [App Store][B3]
 - Pixelmator ($14.99): [App Store][B4]
-- Sublime Text (Free): [Direct][B7]
+- Sublime Text (Free/$70): [Direct][B7]
 - xScope ($29.99): [App Store][B5] or [Direct][B6]
 
 
@@ -83,4 +83,4 @@ I use CleanMyMac 2 clear caches and uninstall apps, Cookie to manage cookies sto
 [D3]: http://www.sweetpproductions.com/ "SweetP Productions"
 [D4]: https://itunes.apple.com/us/app/growl/id467939042?mt=12&at=11ld6n "Mac App Store - Growl - iTunes - Apple"
 [D5]: http://www.bresink.com/osx/TinkerTool.html "TinkerTool: Description - Marcel Bresink Software-Systeme"
-[D6]: https://itunes.apple.com/fr/app/wifi-signal/id525912054?l=en&mt=12&at=11ld6n "Mac App Store - WiFi Signal - iTunes - Apple"
+[D6]: https://itunes.apple.com/us/app/wifi-signal/id525912054?l=en&mt=12&at=11ld6n "Mac App Store - WiFi Signal - iTunes - Apple"

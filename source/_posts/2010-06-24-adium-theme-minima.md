@@ -61,4 +61,6 @@ You can set hide the menu bar icon if you don't use it often. If you're any ques
 ## Problem with Windows Bar
 If you have problem with the windows bar or want to change it to default, you can reinstall the Adium to replace the resources folder you've modified or just open the new Adium and copy the resources folder into your applications Adium using the same method.
 
-If you use Safari as your default browser and love beautiful websites. Consider checking these [beautiful extensions](!g "http://sayzlim.net/best-of-beautiful-safari-extensions") for Safari 5.
+If you use Safari as your default browser and love beautiful websites. Consider checking these [beautiful extensions][10] for Safari 5.
+
+[10]: http://sayzlim.net/best-of-beautiful-safari-extensions "Best of Beautiful Safari Extensions | Sayz Lim"
