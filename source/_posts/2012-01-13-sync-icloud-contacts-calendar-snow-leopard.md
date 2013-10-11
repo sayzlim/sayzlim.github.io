@@ -2,12 +2,7 @@
 layout: post
 title: Sync iCloud Contacts and Calendar on Snow Leopard
 alias: [/post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
-tags:
-- icloud
-- snow leopard
-- ical
-- address book
-- tech
+description: Follow the step by step tutorial to sync your iCloud on Snow Leopard.
 ---
 Syncing iCloud to Snow Leopard is relatively simple. The information you need are your __iCloud ID__, usually in number identified as 1473233284, and the __iCloud Server Number__, usually labeled as pXX-caldav.icloud.com.
 
@@ -15,7 +10,9 @@ To find out your iCloud ID and iCloud Server Number, you need to run Safari and 
 
 Pick Calendar or Contacts and choose __Windows » Activity__ from menu bar.
 
-![iCloud ID and Server Number](http://images.sayzlim.net/2012/01/sync_icloud_id.jpg)
+[ ![iCloud ID and Server Number][img1] ](http://images.sayzlim.net/2012/01/sync_icloud_id.jpg "iCloud ID and Server Number")
+
+[img1]: http://images.sayzlim.net/2012/01/sync_icloud_id.jpg "iCloud ID and Server Number"
 
 You should find something similar to this:
 
@@ -26,7 +23,9 @@ From the image above, my iCloud ID would be __1325673149__ and my data are store
 ### Syncing iCal
 Run iCal and choose __iCal -&gt; Preferences…__ from menu bar. Pick __Accounts Tab__ and click on the small plus sign at the bottom left. Fill in your iCloud email address and password.
 
-![iCal Accounts](http://images.sayzlim.net/2012/01/sync_ical_setting.jpg)
+[ ![iCal Settings iCloud Sync][img2] ](http://images.sayzlim.net/2012/01/sync_ical_setting.jpg "iCal Settings iCloud Sync")
+
+[img2]: http://images.sayzlim.net/2012/01/sync_ical_setting.jpg "iCal Settings iCloud Sync"
 
 The most important part is to replace the __p03-caldav.icloud.com__ with your own iCloud Server Number. For instance, if you find out that your iCloud Server Number is __p11__, fill the Server address with __p11-caldav.icloud.com__.
 
@@ -35,7 +34,9 @@ Syncing your contacts[^1] might be a little bit difficult if you’re not used t
 
 Access Address Book preferences by choosing __Address Book -&gt; Preferences…__ from menu bar. Add a CardDAV account by following the same procedure as iCal.
 
-![Address Book Accounts](http://images.sayzlim.net/2012/01/sync_addressbook.jpg)
+[ ![Address Book Accounts for iCloud][img3] ](http://images.sayzlim.net/2012/01/sync_addressbook.jpg "Address Book Accounts for iCloud")
+
+[img3]: http://images.sayzlim.net/2012/01/sync_addressbook.jpg "Address Book Accounts for iCloud"
 
 Fill the "User name field" with your iCloud email address under this format:
 
@@ -54,11 +55,15 @@ We’re going to configure some setting by navigating to Address Book support fo
 
 	~/Library/Application Support/AddressBook/Sources
 
-![AddressBook Sources](http://images.sayzlim.net/2012/01/sync_folder.jpg)
+[ ![AddressBook Sources][img4] ](http://images.sayzlim.net/2012/01/sync_folder.jpg "AddressBook Sources")
+
+[img4]: http://images.sayzlim.net/2012/01/sync_folder.jpg "AddressBook Sources"
 
 You should be able to find one or several geeky folders. Run through each folder and open the __configuration.plist__ with TextEdit or any similar text editor apps until your find the configuration associated to your iCloud account.
 
-![Configuration.plst](http://images.sayzlim.net/2012/01/sync_configuration.jpg)
+[ ![Configuration Plist][img7] ](http://images.sayzlim.net/2012/01/sync_configuration.jpg "Configuration Plist")
+
+[img7]: http://images.sayzlim.net/2012/01/sync_configuration.jpg "Configuration Plist"
 
 Replace the value after servername with:
 
@@ -77,7 +82,7 @@ __Update 24/03/2013:__: It seems this tutorial has brought [some discussions][15
 
 [15]: http://forums.macrumors.com/showthread.php?p=14811447
 
-I haven’t found the way to fix this bug. However, you can stop the bug temporary by readding your iCloud account to Address Book. Make sure to remove the previous iCloud account first.
+I haven’t found the way to fix this bug. However, you can stop the bug temporary by reading your iCloud account to Address Book. Make sure to remove the previous iCloud account first.
 
 You can always use the contact form if you have any questions.
 

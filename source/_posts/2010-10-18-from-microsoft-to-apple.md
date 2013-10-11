@@ -1,10 +1,7 @@
 ---
 layout: post
 title: From Microsoft to Apple
-alias: /post/1344138461/
-tags:
-- apple
-- microsoft
+description: My first impression of the MacBook White released by Apple. Find out how I move from Microsoft to Apple.
 ---
 People who know me will find that I am Apple maniac. True indeed, I love most (if not all) of Apple products. But, I wasn't born like this. There is some short story before I come to get know Apple products.
 
@@ -24,6 +21,9 @@ I don't know about you. But I love how I don't need to be bothered fixing regist
 
 I don't know if Apple is going to be like that forever. But I'm sure that as long Steve Jobs stay in the company, this love for their products would never change.
 
-And while you are at it, why don't you read this [interview with the former Apple CEO](http://www.cultofmac.com/john-sculley-on-steve-jobs-the-full-interview-transcript/63295).
+And while you are at it, why don't you read this [interview with the former Apple CEO][1].
 
-Of course, I will be very glad to talk to you on [Twitter](http://twitter.com/sayzlim) if you are also an Apple fan.
+Of course, I will be very glad to talk to you on [Twitter][2] if you are also an Apple fan.
+
+[1]: http://www.cultofmac.com/63295/john-sculley-on-steve-jobs-the-full-interview-transcript/ "John Sculley On Steve Jobs, The Full Interview Transcript | Cult of Mac"
+[2]: https://twitter.com/sayzlim "Sayz Lim (sayzlim) on Twitter"

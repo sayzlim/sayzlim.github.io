@@ -2,10 +2,7 @@
 layout: post
 title: Disable Sysdiagnose Key Combination
 alias: post/52388484975
-tags:
-- osx
-- os x
-- mac
+description: Sysdiagnose can be triggered easily by any combinations of hyper key with the period, comma, and forward slash key. Learn how to disable sysdiagnose key.
 ---
 I’ve learned many tips to improve my experience with OS X for the past three months. The most useful one, which I picked from Brett, is [turning `Caps Lock` into “Hyper” modifier key][1]. In his post, Brett also outlines how he remaps hitting `Caps Lock` into `Escape` key when it’s not used as modifier. Despite trying to follow him using `Caps Lock` as `Escape` key, I gave up. There are way too many escape mistakes.[^1]
 

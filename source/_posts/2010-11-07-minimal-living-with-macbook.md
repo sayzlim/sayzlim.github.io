@@ -2,10 +2,7 @@
 layout: post
 title: Minimal Living with MacBook
 alias: /post/1506476982/
-tags:
-- lifestyle
-- macbook
-- minimalism
+description: You can simplify your digital possesion by making full use of what you have, not by adding more to your desk.
 ---
 The only possession I use to manage my daily item is a MacBook. It can do everything I want from study, entertainment, and working. It is the only machine I need to keep everything organised.
 
@@ -47,4 +44,4 @@ What I'm saying is not to be obsessed with going digital. If you hear some peopl
 
 I go digital for note taking. But I prefer a real book compared to the digital book. I keep movies in my external hard disk to save space. I never use more than 60 GB for my internal hard disk. This is how I use my MacBook. Now tell me how you plan to use your MacBook.
 
-Want to get listed as one of the MacBook user? Follow [Sayz Lim](http://twitter.com/sayzlim/) and mention about getting listed.
+Want to get listed as one of the MacBook user? Follow [Sayz Lim](https://twitter.com/sayzlim "Sayz Lim (sayzlim) on Twitter") and mention about getting listed.

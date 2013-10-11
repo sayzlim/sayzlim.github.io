@@ -53,7 +53,7 @@ Not all the posts I've written receive much love. They're not professionally wri
 [11]: http://sayzlim.net/4-beautiful-dark-growl-styles-themes/ "4 Beautiful Dark Growl Styles Themes"
 [12]: http://sayzlim.net/keyboardless-macbook-air/ "Keyboardless MacBook Air"
 [13]: http://sayzlim.net/minimal-living-with-macbook/ "Minimal Living with MacBook"
-[14]: http://sayzlim.net/effective-menu-bar-search-workflow/ "Effective Menu Bar Search Workflow"
+[14]: http://sayzlim.net/defining-apps-and-utilities/ "Defining Apps and Utilities"
 [15]: http://sayzlim.net/from-microsoft-to-apple/
 [16]: http://sayzlim.net/buy-and-upgrade-your-computer-or "Buy and Upgrade Your Computer, or..."
 [17]: http://sayzlim.net/being-myself/ "Being Myself | Sayz Lim"
