@@ -2,13 +2,9 @@
 layout: post
 title: Journaling with Day One
 alias: /post/17027730672
-tags:
-- day one
-- review
-- apple
-- app store
+description: Day One helps you note down what, where, when, who, and how your experience happened. 
 ---
-It happens all the time. I notice an app, pin it, and toss it aside at [Pinboard](http://pinboard.in/). A friend of mine mentioned Day One to me few days ago, so I took a closer look to this app. My thought on this app? Totally in love with it. It’s definitely a beautiful tool for you who take pleasure in writing down your thoughts in diary.
+It happens all the time. I notice an app, pin it, and toss it aside at [Pinboard](!g "http://pinboard.in/"). A friend of mine mentioned Day One to me few days ago, so I took a closer look to this app. My thought on this app? Totally in love with it. It’s definitely a beautiful tool for you who take pleasure in writing down your thoughts in diary.
 
 > “Make sure you write your feelings and thoughts about things going on in your life.”
 
@@ -23,7 +19,9 @@ Everyone can be a writer. If you tweet, you’re a writer. If you can update you
 I can tell you how useful and well made Day One is. But, if you hate writing or not even interested in keeping a journal, features are meaningless. You need a reason. Once you find a reason, you need a tool that can aid you in the most beautiful and elegant ways.
 
 ### Day One on iOS
-![Day One for iPhone](http://images.sayzlim.net/2012/02/day_one_iphone.jpg)
+[ ![Day One for iPhone][img1] ](http://images.sayzlim.net/2012/02/day_one_iphone.jpg "Day One for iPhone")
+
+[img1]: http://images.sayzlim.net/2012/02/day_one_iphone.jpg "Day One for iPhone"
 
 On iPhone, you’ll be able to see the statistic of your entries at the start screen. You can view all your entries in Calendar, or Entries by Year. Creating new entry is simply done by tapping the new entry button. You can also configure the starting page on startup from the setting menu.
 
@@ -32,7 +30,9 @@ iPhone and iPad version are fairly similar. Day One on iPad make use of the spac
 ### Day One on Mac
 Those who prefer to write by the end of the day, like how most people used to write diary before sleep, should get a Mac version. Sometimes I find myself learning a valuable lesson from a piece of writing, rather than trying to write it down with iOS version. I turn on my Mac and copy-paste or rewriting them into Day One. With syncing and Markdown support, you can read all the stored entries easily on your iPad/iPhone.
 
-![Day One for Mac](http://images.sayzlim.net/2012/02/day_one_all.jpg)
+[ ![Day One for Mac][img2] ](http://images.sayzlim.net/2012/02/day_one_all.jpg "Day One for Mac")
+
+[img2]: http://images.sayzlim.net/2012/02/day_one_all.jpg "Day One for Mac"
 
 All the features accross the devices remain similar and the most noteworthy features, aside from its intuitive interface are:
 
@@ -44,4 +44,5 @@ __Sharing__ is made simple. You can easily tweet or email your entries with shar
 
 If you hesitate, start with iOS version. The price is as low as $1.99 to get you started. There is one way to make use of Day One if you’re not used to keeping jornal. Rather than updating from any Twitter client, write it down first in Day One. If you don’t want to share them to your followers, it’s fine. And if you’ve decided to publish it, hit the share button. You might be surprised at how much entries you can accumulate from using this approach.
 
-Purchase: [Day One](http://dayoneapp.com/)
+- Purchase: [Day One for iOS](https://itunes.apple.com/us/app/day-one-journal-diary/id421706526?mt=8 "Day One (Journal / Diary) for iPhone, iPad, and iPod touch on the ...")
+- Purchase: [Day One for Mac](https://itunes.apple.com/us/app/day-one/id422304217?mt=12 "Mac App Store - Day One - iTunes - Apple")
