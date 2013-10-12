@@ -2,10 +2,7 @@
 layout: post
 title: 3 Bowtie Themes to Beautify Your Desktop
 alias: /post/2942690106
-tags:
-- bowtie
-- desktop
-- mod
+description: Three selected Bowtie themes that beautify your desktop with its simplicity and design.
 ---
 Music has become one of the core element in my computing experience. Turning on music while writing and doing assignment is a common daily event. Bowtie, an iTunes controller, is a jewel created to complete your desktop with its beautiful theming engine.
 
@@ -38,6 +35,4 @@ Condensed White fits well with darker background. It is very easy to match both 
 
 [img4]: http://images.sayzlim.net/2011/01/bowtie_theme.jpg "Bowtie Themes"
 
-There are more themes you can install with the newest version of Bowtie. Hit preferences by right clicking the album artwork on desktop. Browse the theme and install theme. Alternatively, you can visit [Bowcase.me][4] for more themes.
-
-[4]: http://www.bowcase.me/
+There are more themes you can install with the newest version of Bowtie. Hit preferences by right clicking the album artwork on desktop. Browse the theme and install theme. Alternatively, you can visit Bowcase.me for more themes.
