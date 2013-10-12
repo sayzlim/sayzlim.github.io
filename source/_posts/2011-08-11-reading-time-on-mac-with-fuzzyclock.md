@@ -18,9 +18,9 @@ And, if you use [Menubar icons v2][1] by ~iAndrew, I have a few suggestions for 
 
 Download [CodeBold][2] and  use the setting below.
 
-[ ![FuzzyClock Settings][img2] ](http://images.sayzlim.net/2011/08/fuzzyclock_setting.jp "FuzzyClock Settings")
+[ ![FuzzyClock Settings][img2] ](http://images.sayzlim.net/2011/08/fuzzyclock_setting.jpg "FuzzyClock Settings")
 
-[img2]: http://images.sayzlim.net/2011/08/fuzzyclock_setting.jp "FuzzyClock Settings"
+[img2]: http://images.sayzlim.net/2011/08/fuzzyclock_setting.jpg "FuzzyClock Settings"
 
 If you plan to change the icon yourself, use official link. To use the modified one, use alternative link.
 

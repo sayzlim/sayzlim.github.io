@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Flexiglass: Snapping Tool for Mac
+title: "Flexiglass: Snapping Tool for Mac"
 ---
 This is not paid review. The developer kindly contacts me and request a review which coincidentally included in future posts. So I move forward the schedule and post it sooner.
 
