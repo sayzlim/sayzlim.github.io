@@ -59,7 +59,7 @@ I have already owned a beautiful reading room and a dusty attic. How will Pocket
 
 I use Pocket as my app collection gallery. It’s my personal museum to showcase every apps I find noteworthy to store and share with readers later. Since the saved apps are also bookmarked on Pinboard and properly tagged, I can save myself from worrying that my collection will vanish if Pocket makes a radical decision.
 
-In order to avoid sending unwanted bookmarks to Pocket, I create a recipe with ifttt. [This recipe](!g "http://ifttt.com/recipes/31264") lets me send only bookmarks tagged with ‘Pocket’ from Pinboard to Pocket.[^3] Using this approach lets me have the same gallery of apps properly tagged on both Pinboard and Pocket, keeping them synced. When I lose Pocket, I still have Pinboard with exact format as Pocket.
+In order to avoid sending unwanted bookmarks to Pocket, I create a recipe with ifttt. [This recipe](http://ifttt.com/recipes/31264 "IFTTT Recipes") lets me send only bookmarks tagged with ‘Pocket’ from Pinboard to Pocket.[^3] Using this approach lets me have the same gallery of apps properly tagged on both Pinboard and Pocket, keeping them synced. When I lose Pocket, I still have Pinboard with exact format as Pocket.
 
 The way Pocket presents saved items with grid and picture are surely more appealing compared to Instapaper. With the tags as their feature to organize collection, I can easily fiter collection according to apps categories. The visual cue provided by the good usage of picture makes browsing apps collection far more pleasant and comfortable.
 
