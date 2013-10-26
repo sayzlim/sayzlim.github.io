@@ -9,7 +9,7 @@ Each person has their own set of tools to get jobs done. This is the list of the
 ## Essential on Mac
 Those are the apps I must install on my Mac. Without these apps, I’ll have hard time navigating from one screen to another.
 
-- 1Password ($39.99): [App Store][1] or [Direct][2]
+- 1Password ($49.99): [App Store][1] or [Direct][2]
 - Alfred (£17): [App Store][3] or [Direct][4]
 - BetterTouchTool (Free): [Direct][5]
 - DragonDrop ($4.99): [App Store][6]
