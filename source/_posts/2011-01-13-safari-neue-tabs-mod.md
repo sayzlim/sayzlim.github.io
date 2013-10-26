@@ -13,6 +13,7 @@ I take a particular like to the Safari Neue Tab. The UI design gives out an enti
 
 Safari Neue Tabs: [Download](http://d.pr/NJpN "Safari Neue Tabs")
 
-**Update 2013-10-12**: The mod doesn’t work in the latest Safari. But you can give it a try, the author might update it to ensure the compability with the latest Safari. The site is no longer available. But you still can download the mod from the link above.
+> %update%
+> **Update 2013-10-12**: The mod doesn’t work in the latest Safari. But you can give it a try, the author might update it to ensure the compability with the latest Safari. The site is no longer available. But you still can download the mod from the link above.
 
 [^1]: Visit Koshic’s site and take a look at his impressive works. It is made in HTML 5, so Safari 5 might have a slow problem to render it.

@@ -27,7 +27,9 @@ These extensions can help you speed up your work and avoid distractions such as 
 - [**AutoPagerize**][6]: Best extension ever. You must install this, it loads the next page under the current page so you can save your clicks. You can disable it on current page easily by right-clicking to toggle it on/off.
 - [**Facebook Photo Zoom**][7]: Frustrated with the need of open whole Facebook page just to view the user profile picture? Or did you see an interesting photo thumbnails on the News Feed but too lazy to open the photo album? Install this plugin and enjoy.
 
-	**Update:** a better photo zoom extension called [HoverZoom][12] is recommended, it works on Facebook, MySpace, Flickr, Picasa, Twitter, Digg, Amazon, and more.
+	> %update%
+	> **Update:** A better photo zoom extension called [HoverZoom][12] is recommended, it works on Facebook, MySpace, Flickr, Picasa, Twitter, Digg, Amazon, and more.
+
 - [**Gmail Checker**][8]: Out of many Gmail notifier versions, Gmail Checker has proven to be my best recommendation. It doesn't have too many unnecessary options and it will show you the title of the email you received if you hover the toolbar icon.
 - [**NoMoreiTunes**][9]: This extension will stop the iTunes link to automatically open the iTunes store.
 - [**Ultimate Status Bar**][10]: Hide the status bar and use this plugin to enable the status bar only when you hover on the link. You can change the style of bar. But the best thing from this plugin is it shows favicon and the destination of some shortened link in status bar.

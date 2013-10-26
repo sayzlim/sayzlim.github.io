@@ -36,11 +36,13 @@ The extensions are all packaged into one workflow so it won’t clutter your Alf
 
 If you plan to build a better and complete version of this, [send me an email][2] and I’ll link it so others can download it. I simply want to show you how easy it is to create your own workflow in Alfred 2. If you haven’t upgraded to Mega Supporter license, don’t hesitate and hurry [get the license.][3]
 
-**Update 2013-08-15:** I’ve included the command to reset Launchpad’s apps ordering in the latest update. You may get the workflow from the download link below.
+> %update%
+> **Update 2013-08-15:** I’ve included the command to reset Launchpad’s apps ordering in the latest update. You may get the workflow from the download link below.
 
-Download: [OS X Toolbox Workflow for Alfred 2](http://d.pr/f/Hvc "OS X Toolbox Workflow for Alfred 2")
+Download: [OS X Toolbox Workflow for Alfred 2](http://d.pr/f/9Lz5 "OS X Toolbox Workflow for Alfred 2")
 
-**Update 2013-09-27:** Ed Heltzer from [Rainy Day Media][4] has sent me an updated workflow with more and better tools. With the improved Wi-Fi toggle, you can also view the your Wi-Fi network and see your IP address from single command. Perhaps the  “space” command is the one I’ll use the most. It’ll check and show the storage on your local and mounted drives. Pretty handy, isn’t it?
+> %update%
+> **Update 2013-09-27:** Ed Heltzer from [Rainy Day Media][4] has sent me an updated workflow with more and better tools. With the improved Wi-Fi toggle, you can also view the your Wi-Fi network and see your IP address from single command. Perhaps the  “space” command is the one I’ll use the most. It’ll check and show the storage on your local and mounted drives. Pretty handy, isn’t it?
 
 Download: [OS X Toolbox Workflow by Ed Heltzer](http://d.pr/f/mues "OS X Toolbox Workflow by Ed Heltzer")
 

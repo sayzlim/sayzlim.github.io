@@ -312,6 +312,17 @@ $light-color: $bg-color;
             font: .7em/1.5em Menlo, Courier, Monospace;
         }
 
+        .update {
+            box-sizing: border-box;
+            padding: .5em;
+            margin: 1.1em 0;
+            border:  4px solid;
+            background-color: #1D1F20;
+            color: #BBAF6C;
+            text-shadow: none;
+            p { margin: 0; }
+        }
+
         .footnotes {
             border-top: dotted 1px #c8c8c8;
             font-weight: normal;

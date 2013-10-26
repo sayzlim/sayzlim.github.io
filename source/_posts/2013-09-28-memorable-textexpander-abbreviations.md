@@ -75,7 +75,8 @@ Try using different unique character for different type of snippets. If you need
 
 By combining what you’ve learned, you can differentiate between snippets with group abbreviations. If you need to access your remote server, use the server name or company name as prefix. That way you can access the same path, but only need to remember the different group abbreviations, eg. `~yhlog`, `~wdlog`, `~msnlog`.
 
-**Update 2013-10-01**: One of the readers, [Johnny Knittle](http://johnnyrk.com/ "johnny knittle. music."), has shown me a similar approach, but with more flexibility to group abbreviations based on functions and objects. By using the unique character as separator, you can create multiple level abbreviations for your personal contacts.
+> %update%
+> **Update 2013-10-01**: One of the readers, [Johnny Knittle](http://johnnyrk.com/ "johnny knittle. music."), has shown me a similar approach, but with more flexibility to group abbreviations based on functions and objects. By using the unique character as separator, you can create multiple level abbreviations for your personal contacts.
 
 If you group them according to objects, the snippets will be like the one in the list:
 

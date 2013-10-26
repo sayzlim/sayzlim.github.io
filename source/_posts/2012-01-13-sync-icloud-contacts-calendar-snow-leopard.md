@@ -71,14 +71,14 @@ Replace the value after servername with:
 
 Replace the XX with your own iCloud Server Number and YYYYYYYY with your iCloud ID number. Once you’re done, save the file and run Address Book. Fill in your iCloud password in the "Password field" and you should be able to see your iCloud contacts immediately.[^2]
 
-__Update 12/02/2012__: A reader pointed the need to enable __SSL Connection__ to make contact sync works. Thanks Federico.
-
-__Update 03/03/2012__: Another reader pointed out using https allows you to skip the step enabling SSL. Thanks Ron!
+> %update%
+> __Update 12/02/2012__: Federico pointed the need to enable __SSL Connection__ to make contact sync works. You can also use https to skip SSL.
 
 ### Notes and Duplicate Bugs
 Sometimes Address Book will behave weird and keep duplicating your contacts. There is no need to worry having your contacts duplicated at iCloud Contacts. Those duplicated contacts only exist locally.
 
-__Update 24/03/2013:__: It seems this tutorial has brought [some discussions][15] at MacRumors. There are some solutions suggested there, especially the part that modifies “addressBookName” key.
+> %update%
+> __Update 24/03/2013__: It seems this tutorial has brought [some discussions][15] at MacRumors. There are some solutions suggested there, especially the part that modifies “addressBookName” key.
 
 [15]: http://forums.macrumors.com/showthread.php?p=14811447
 

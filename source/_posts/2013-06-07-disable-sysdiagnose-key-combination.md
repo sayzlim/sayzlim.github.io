@@ -42,7 +42,8 @@ The only way I have figured so far to prevent OS X from triggering this special 
 
 Run KeyRemap4MacBook and navigate to Misc & Uninstall tab. Choose “Open private.xml” under the Custom Setting. It’ll show you the private.xml. Open the file. Copy the code below and put it under the *root* tag.
 
-**Update 2013-10-06**: A quick thanks to [Jeremy Mack][A2] for letting me know that forward slash key also triggers sysdiagnose. I’ve included [his code][A1] below.  Replace the previous code and reload private.xml to update the selection.
+> %update%
+> **Update 2013-10-06**: A quick thanks to [Jeremy Mack][A2] for letting me know that forward slash key also triggers sysdiagnose. I’ve included [his code][A1] below.  Replace the previous code and reload private.xml to update the selection.
 
 [A1]: https://gist.github.com/mutewinter/6847308 "Disable Sysdiagnose Key"
 [A2]: http://pileofturtles.com/ "Turtle Log | A Programmer Blog"
