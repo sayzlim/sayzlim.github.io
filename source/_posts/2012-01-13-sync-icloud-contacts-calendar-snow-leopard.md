@@ -2,7 +2,7 @@
 layout: post
 title: Sync iCloud Contacts and Calendar on Snow Leopard
 alias: [/post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
-description: Follow the step by step tutorial to sync your iCloud on Snow Leopard.
+description: Follow the step by step tutorial to sync your iCloud contacts and calendar on Snow Leopard.
 ---
 Syncing iCloud to Snow Leopard is relatively simple. The information you need are your __iCloud ID__, usually in number identified as 1473233284, and the __iCloud Server Number__, usually labeled as pXX-caldav.icloud.com.
 
@@ -80,7 +80,7 @@ Sometimes Address Book will behave weird and keep duplicating your contacts. The
 > %update%
 > __Update 24/03/2013__: It seems this tutorial has brought [some discussions][15] at MacRumors. There are some solutions suggested there, especially the part that modifies “addressBookName” key.
 
-[15]: http://forums.macrumors.com/showthread.php?p=14811447
+[15]: http://forums.macrumors.com/showthread.php?p=14811447 "Finally! Sync your Address CardDav in OSX 10.6 Snow Leopard"
 
 I haven’t found the way to fix this bug. However, you can stop the bug temporary by reading your iCloud account to Address Book. Make sure to remove the previous iCloud account first.
 
