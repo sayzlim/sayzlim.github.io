@@ -10,7 +10,7 @@ description: How can you make something simple, cleaner? You start cleaning the 
 
 Things I enjoy writing the most are anything related to customization. Browsing the [Iconpaper][1] for a new icon replacement, a [new theme for Adium][2], and a gorgeous wallpaper. A desktop can be both useful and beautiful. It’s as easy as writing a blogpost to deliver this message.
 
-[1]: (http://www.iconpaper.org/ "Iconpaper « Free icons, wallpapers, themes, resources and more »"
+[1]: http://www.iconpaper.org/ "Iconpaper « Free icons, wallpapers, themes, resources and more »"
 [2]: http://sayzlim.net/best-adium-textured-based-theme "Best Adium Textured Based Theme | Sayz Lim"
 
 Mountain Lion, the latest OS X released by Apple recently, fixes most of the annoyances in Lion and shows the refinement of previous features. There is no major change from the core, but you’ll find number of subtle improvements across the system.
