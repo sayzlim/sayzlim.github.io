@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 5 Best Alfred 2 Workflows You Should Download
-description: Download these Alfred workflows and improve your workflow performance dramatically.
+title: Best Alfred 2 Workflows
+description: Download these best Alfred 2 workflows and save your time.
 ---
 Without [Alfred][3] installed, I feel crippled. I use Alfred for a least 320 times a day, that’s 9.600 times a month. It shows how much you can do with Alfred alone.
 
 [3]: http://www.alfredapp.com/ "Alfred App - Productivity App for Mac OS X"
 
-Tons of features developed by the community is ready for you to plug into Alfred. I see these workflows as separate upgrade for my Alfred. Alfred is my weapon. Maximizing the capability of Alfred requires constant exploration until you find workflows that fit your style. Since the beginning of Alfred 2, I’ve gathered some workflows that prove to be useful no matter style you are. Here are the best five workflows you can install immediately.
+Tons of features developed by the community is ready for you to plug into Alfred. I see these workflows as separate upgrade for my Alfred. Alfred is my weapon. Maximizing the capability of Alfred requires constant exploration until you find workflows that fit your style. Since the beginning of Alfred 2, I’ve gathered some workflows that prove to be useful no matter style you are. Here are the best Alfred 2 workflows you can install immediately.
 
 ## [1. Top Processes](https://github.com/zhaocai/alfred2-top-workflow "zhaocai/alfred2-top-workflow · GitHub")
 
@@ -54,4 +54,4 @@ Useful Alfred’s Workflows will boost your efficiency by threefold, or maybe te
 [2519-001]: http://www.alfredforum.com/ "Alfred App Community Forum"
 [2519-002]: http://sayzlim.net/os-x-toolbox-workflow-alfred-2 "OS X Toolbox Workflow for Alfred 2 | Sayz Lim"
 
-Alfred is your tool. How powerful can it get depends how you use it and what you equip it with. So explore and try to master this  powerful tool.
+Alfred is your tool. How powerful it get depends how you use it and what you equip it with. Explore and try to master this  powerful tool.
