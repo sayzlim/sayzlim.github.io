@@ -75,7 +75,7 @@ I use CleanMyMac 2 clear caches and uninstall apps, Cookie to manage cookies sto
 - CleanMyMac 2 ($39.95): [Direct][D1]
 - Cookie ($14.99): [App Store][D2] or [Direct][D3]
 - Growl ($3.99): [App Store][D4]
-- TinkerToolFree): [Direct][D5]
+- TinkerTool (Free): [Direct][D5]
 - WiFi Signal ($0.99): [App Store][D6]
 
 [D1]: http://macpaw.com/cleanmymac "CleanMyMac 2: The Best Clean Up Mac App. Clean My Mac for Free ..."
