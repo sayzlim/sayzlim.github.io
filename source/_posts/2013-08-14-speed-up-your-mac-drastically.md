@@ -2,10 +2,6 @@
 layout: post
 title: Speed Up Your Mac Drastically
 alias: post/58245260102
-tags:
-- os x
-- osx
-- mac
 ---
 Among many configurations I’ve made, under the hood tweaks are rarely documented. I’ve written several guides to [prettify a download folder][3], or choose themes for Adium, yet not a single article on improving the performance of OS X.
 

@@ -1,9 +1,7 @@
 ---
 layout: post
 title: Blog Redesign, Fresh Citrus Flavor
-alias: [post/58509032370/blog-redesign-fresh-citrus, post/58509032370/]
-tags:
-- update
+description: Keeping the design unified and deliver the better reading exprience for readers. Here are the changes I’ve made.
 ---
 Regular readers should notice something new yesterday; I’ve redesigned this blog. I’ve done several redesigns, but this is my first time writing a blog post detailing what and why the changes are made.
 

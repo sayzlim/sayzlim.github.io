@@ -2,9 +2,6 @@
 layout: post
 title: Tweetbot for Mac Public Alpha
 external-url: http://tapbots.com/tweetbot_mac/
-tags:
-- osx
-- os x
 ---
 ![Tweetbot for Mac](http://images.sayzlim.net/2012/07/tweetbot_mac.jpg "Tweetbot for Mac")
 

@@ -2,9 +2,6 @@
 layout: post
 title: Droplr Referral Program
 external-url: http://droplr.tumblr.com/post/30875449331
-tags:
-- droplr
-- os x
 ---
 > For every new person you invite to use Droplr, once they’ve registered a free account, we’ll reward both of you with an extra 200mb in storage. We currently let you invite up to 20 people, which means up to 4GB of extra space.
 

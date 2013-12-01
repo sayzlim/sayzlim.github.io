@@ -1,6 +1,7 @@
 ---
 layout: post
 title: DragonDrop Makes Dragging and Dropping Easier
+description: Move the files between folder on Mac easily with the help of DragonDrop.
 ---
 I can hardly tell the DragonDrop’s purpose from the its description. The developer describes DragonDrop as a utility that makes dragging and dropping easier on your Mac. One thing is true. The process of dragging and dropping on Mac is difficult. There are many times where I need drop the files into “Open File…” window and miss the hold state during the process.
 
@@ -10,4 +11,4 @@ DragonDrop uses a very simple approach to ease up your life. It creates temporar
 
 If you’re fond of working with menu bar, DragonDrop also provides a way for you to drop the dragged files into its icon in menu bar. Personally, I prefer the shake approach compared to dropping in menu bar.
 
-At the price of $4.99, DragonDrop may not suit everyone. While it does its task very well, I can hardly find anyone beside Mac power users enjoy using this app. If you’re not sure whether you’ll need this, you can [download the trial](http://shinyplasticbag.com/ "DragonDrop, from ShinyPlasticBag") from developer website.
+At the price of $4.99, [DragonDrop](https://itunes.apple.com/us/app/dragondrop/id499148234?mt=12&uo=4&at=11ld6n "DragonDrop") may not suit everyone. While it does its task very well, I can hardly find anyone beside Mac power users enjoy using this app. If you’re not sure whether you’ll need this, you can [download the trial](http://shinyplasticbag.com/ "DragonDrop, from ShinyPlasticBag") from developer website.

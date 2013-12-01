@@ -2,10 +2,6 @@
 layout: post
 title: 4 Best Bowtie Themes to Decorate Your Mac
 description: Four curated best designed Bowtie themes from the minimalist to the modern styles.
-tags:
-- os x
-- osx
-- bowtie
 ---
 I’ve just cleaned all unused files from desktop. I turn on Rdio as one of the Bowlet[^1] gradually appearing from the corner of the screen. It all thanks to Bowtie.
 

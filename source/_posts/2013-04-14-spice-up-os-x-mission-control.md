@@ -2,29 +2,25 @@
 layout: post
 title: Spice Up OS X Mission Control
 alias: [/post/47939324665/spice-up-os-x-mission-control, /post/47939324665/]
-tags:
-- mission control
-- mountain lion
-- os x
-- osx
+description: Change the background of Mission Control with Lion Designer.
 ---
-<p>Modification is rarely recommended for new OS X users. You don’t want to spend your time struggling reverting system to default settings. However, with little personalization, you can dramatically change the way how your Mac looks, especially when it’s the workspace you use every day.</p>
+Modification is rarely recommended for new OS X users. You don’t want to spend time reverting system to default settings. However, with little personalization, you can dramatically change the way your Mac looks, especially when it’s the workspace you use every day.
 
-<p><img src="http://images.sayzlim.net/2013/04/lion_designer.jpg" alt="Mission Control Black Maze Background" title="Mission Control Black Maze Background"/></p>
+[ ![Mission Control Black Maze Background][img1] ](http://images.sayzlim.net/2013/04/lion_designer.jpg "Mission Control Black Maze Background")
 
-<p>Mission Control with its linen background becomes boring if you’re used to all the linen in OS X. What if we can replace the background with other pattern that looks better than the overused linen? It turns out that there is an easy way to replace Mission Control’s background without risking your OS X default settings. The first thing you have to do is <a href="http://subtlepatterns.com">selecting some nice patterns</a>.</p>
+[img1]: http://images.sayzlim.net/2013/04/lion_designer.jpg "Mission Control Black Maze Background"
 
-<p>As soon as you’ve picked your favorite pattern<sup id="fnref:p47939324665-1"><a href="#fn:p47939324665-1" rel="footnote">1</a></sup>, download <a href="http://www.moritzwette.com/liondesigner/">Lion Designer</a> made by <a href="http://www.moritzwette.com">Moritz Wette</a>. This simple tool allows you to replace many low level OS X configurations<sup id="fnref:p47939324665-2"><a href="#fn:p47939324665-2" rel="footnote">2</a></sup> while providing a safety button to revert back to default settings.</p>
+Mission Control with its linen background becomes boring if you’re used to all the linen in OS X. What if we can replace the background with other pattern that looks better than the overused linen? It turns out that there is an easy way to replace Mission Control’s background without risking your OS X default settings. The first thing you have to do is [choose some nice patterns][0299-001].
 
-<p>Lion Designer will automatically relaunch the Dock whenever you make changes. After applying the new pattern, you should be able to see the difference immediately. Hence, enjoy your new Mission Control immediately.</p>
+[0299-001]: http://subtlepatterns.com/ "Subtle Patterns | Free textures for your next web project."
 
-<div class="footnotes">
-<hr><ol><li id="fn:p47939324665-1">
-<p>I pick <a href="http://subtlepatterns.com/maze-black/">Black Maze</a>. <a href="#fnref:p47939324665-1" rev="footnote">↩</a></p>
-</li>
+As soon as you’ve picked your favorite pattern[^1], download [Lion Designer][0299-002] made by [Moritz Wette][0299-003]. This simple tool allows you to replace many low level OS X configurations[^2] while providing a safety button to revert back to default settings.
 
-<li id="fn:p47939324665-2">
-<p>You can easily adjust the animation speed of Mission Control and Launchpad for the sake of productivity. <a href="#fnref:p47939324665-2" rev="footnote">↩</a></p>
-</li>
+[0299-002]: http://www.moritzwette.com/liondesigner/ "Moritz Wette - Lion Designer - Customize new features of Mac OS X ..."
+[0299-003]: http://www.moritzwette.com/ "Moritz Wette - Developer Website"
 
-</ol></div>
+Lion Designer will automatically relaunch the Dock whenever you make changes. After applying the new pattern, you should be able to spot the difference. Hence, enjoy your new Mission Control.
+
+[^1]: I pick [Black Maze](http://subtlepatterns.com/maze-black/ "Maze black - Subtle Patterns | Free textures for your next web project.").
+
+[^2]: You can easily adjust the animation speed of Mission Control and Launchpad for the sake of productivity.

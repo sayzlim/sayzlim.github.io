@@ -3,12 +3,6 @@ layout: post
 title: Reset and Remove Applications in Location Services on Mountain Lion
 alias: [post/39725203390/reset-and-remove-items-in-applications-services-on, post/39725203390/]
 description: Explained how to remove application in the Location Services found on OS X Mountain Lion.
-tags:
-- mountain lion
-- location services
-- mac
-- os x
-- osx
 ---
 One of the best features in OS X Lion is a better privacy control which allows you to see all the applications that have access to your information. Some example of those informations are your location, contacts, and Twitter account. They can be found in System Preferences under Security & Privacy pane.
 

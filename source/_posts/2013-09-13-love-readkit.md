@@ -2,7 +2,6 @@
 layout: post
 title: "Now You’re Going to Love ReadKit"
 date: 2013-09-14 16:30
-categories: 
 description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
 ---
 
@@ -62,7 +61,7 @@ ReadKit might not be the best reader app for Mac out there. But judging from the
 
 We always have expectations of what an app and services can do, but we must also understand that implementing features requires time and decision. Try to find a way to make your existing app works and find the joy of learning to use it.
 
-So, did I manage to persuade you to buy [ReadKit][6]?
+So, did I manage to persuade you to buy [ReadKit](https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4&at=11ld6n "ReadKit")?
 
 
 [^1]: We have [Shawn Blanc](http://shawnblanc.net/2013/06/feed-wrangler-smart-streams/ "Feed Wrangler&#39;s Smart Streams — Shawn Blanc") and [Marco Arment](http://www.marco.org/2013/06/28/drang-feeds "Feedle-dee-dee – Marco.org"). Guess that’s enough as references.
@@ -76,4 +75,3 @@ So, did I manage to persuade you to buy [ReadKit][6]?
 [3]: http://sayzlim.net/nested-rules-osx/ "sayzlim.net: Why You Should Start Using OS X Nested Rules"
 [4]: https://feedbin.me/ "Feedbin"
 [5]: http://www.feedly.com/ "feedly: your news. delivered."
-[6]: https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4 "ReadKit"

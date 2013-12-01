@@ -3,7 +3,6 @@ layout: post
 title: "Revamped ImageOptim Icon"
 date: 2013-09-21 09:00
 external-url: http://imageoptim.com
-categories: 
 description: ImageOptim 1.4.5 has been released with the brand new icon by Anna from icon8. Get it for free to optimize all your images.
 ---
 

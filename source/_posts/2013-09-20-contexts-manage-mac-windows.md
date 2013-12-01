@@ -2,7 +2,6 @@
 layout: post
 title: "Manage Mac Application Windows with Contexts"
 date: 2013-09-20 11:30
-categories: 
 description: Contexts manages your cluttered Mac application windows with the powerful search feature. Use it together with Application Switcher to tame all windows.
 ---
 
