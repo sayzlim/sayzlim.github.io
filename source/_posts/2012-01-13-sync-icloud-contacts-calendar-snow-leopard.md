@@ -82,7 +82,7 @@ Sometimes Address Book will behave weird and keep duplicating your contacts. The
 
 [15]: http://forums.macrumors.com/showthread.php?p=14811447 "Finally! Sync your Address CardDav in OSX 10.6 Snow Leopard"
 
-I haven’t found the way to fix this bug. However, you can stop the bug temporary by reading your iCloud account to Address Book. Make sure to remove the previous iCloud account first.
+I haven’t found the way to fix this bug. However, you can stop the bug temporary by readding your iCloud account to Address Book. Make sure to remove the previous iCloud account first.
 
 You can always use the contact form if you have any questions.
 
