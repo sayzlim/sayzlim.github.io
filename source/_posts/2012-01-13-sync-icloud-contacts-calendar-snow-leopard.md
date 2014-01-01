@@ -42,9 +42,12 @@ Fill the "User name field" with your iCloud email address under this format:
 
 	emailAddress%40domainName.com:yourPassword
 
+> %update%
+> __Update 13/12/2013__: I received a feedback from one of the readers, Arjan, that for this method to work, your iCloud password need to be in alpha-numeric. I haven't tested it, but it’s always better to create a strong password for your Apple ID. If you have problem with this tutorial, try to change your password.
+
 For instance, if your iCloud email address is LOLcats@yahoo.com and the password is DogsMuffin, you must fill "User name field" with:
 
-	LOLcats%40yahoo.com:DogsMuffin
+	LOLcats%40yahoo.com:DogsMuffin14
 
 __Leave the Password field blank__ and replace the Server address field with your own iCloud Server Number. Take note that it’s pXX-__contacts.icloud.com__ this time. Ignore the error and warning, you’ll fix it later.
 

@@ -37,7 +37,7 @@ Since the source of the lyrics is in China, some of those lyrics are written in 
 You can also copy the lyrics and share them with your friends. The most common choice is plain text format. Another format you can copy is [LRC][6086-003] format that includes the timestamp of when a lyric should be shown.
 
 ## Impressive Album Artworks Search
-One of my favorite tips is using Growl and Bowtie to show track change notification. I’ve written a lot about Bowtie and Growl before, especially the list of [beautiful Growl themes][6086-004] to decorate the desktop. But the key to gorgeous notification lies within the correct song title and album artworks.
+One of my favorite tips is using Growl and Bowtie to show track change notification. I’ve written a lot about Bowtie and Growl before, especially the list of [beautiful Growl styles][6086-004] to decorate the desktop. But the key to gorgeous notification lies within the correct song title and album artworks.
 
 [ ![DynamicLyrics Album Artworks Search Results][img1] ](http://images.sayzlim.net/2013/12/dynamiclyrics_album_artworks.jpg "DynamicLyrics Album Artworks Search Results")
 
@@ -53,4 +53,4 @@ It’s unbelievable that DynamicLyrics is free. By polishing the user interface,
 [6086-001]: http://martianz.cn/dynamiclyrics/ "DynamicLyrics - MartianZ!"
 [6086-002]: http://martianz.cn/ "Martianz.cn"
 [6086-003]: http://en.wikipedia.org/wiki/LRC_(file_format) "LRC (file format) - Wikipedia, the free encyclopedia"
-[6086-004]: http://sayzlim.net/best-bowtie-themes "4 Best Bowtie Themes to Decorate Your Mac | Sayz Lim"
+[6086-004]: http://sayzlim.net/4-beautiful-dark-growl-styles-themes/ "4 Beautiful Dark Growl Styles Themes | Sayz Lim"
