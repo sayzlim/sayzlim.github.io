@@ -34,12 +34,12 @@ If you plan to build a better and complete version of this, [send me an email][2
 > %update%
 > **Update 2013-08-15:** I’ve included the command to reset Launchpad’s apps ordering in the latest update. You may get the workflow from the download link below.
 
-Download: [OS X Toolbox Workflow for Alfred 2](http://d.pr/f/9Lz5 "OS X Toolbox Workflow for Alfred 2")
+Download: [OS X Toolbox Workflow for Alfred 2](http://s3.sayzlim.net/f/alfred-toolbox.zip "OS X Toolbox Workflow for Alfred 2")
 
 > %update%
 > **Update 2013-09-27:** Ed Heltzer from [Rainy Day Media][4] has sent me an updated workflow with more and better tools. With the improved Wi-Fi toggle, you can also view the your Wi-Fi network and see your IP address from single command. Perhaps the  “space” command is the one I’ll use the most. It’ll check and show the storage on your local and mounted drives. Pretty handy, isn’t it?
 
-Download: [OS X Toolbox Workflow by Ed Heltzer](http://d.pr/f/mues "OS X Toolbox Workflow by Ed Heltzer")
+Download: [OS X Toolbox Workflow by Ed Heltzer](http://s3.sayzlim.net/f/alfred-toolbox-heltzer.zip "OS X Toolbox Workflow by Ed Heltzer")
 
 [2]: http://sayzlim.net/contact "Contact | Sayz Lim"
 [3]: https://buy.alfredapp.com "Buy Alfred"

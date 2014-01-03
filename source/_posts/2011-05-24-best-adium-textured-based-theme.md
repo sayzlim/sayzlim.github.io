@@ -37,7 +37,7 @@ It’s not part of the mod, but if you find the existing Adium toolbar icons out
 
 I’ve included all the links to all the mods I’ve used in this customization in each paragraph. If you prefer an easier way to customize theme without having to visit each site separately, I’ve included a package that contains all the files required to change your Adium theme, except the toolbar icons.
 
-[Download](http://d.pr/UySO "Adium Textured Theme Package")
+[Download](http://s3.sayzlim.net/f/adium-textured-pack-theme.zip "Adium Textured Theme Package")
 
 You can always [ask me question][3] if you encounter any problems.
 

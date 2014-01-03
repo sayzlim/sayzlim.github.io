@@ -9,4 +9,4 @@ I spent a little time to modify Tweetie for Mac which you can see at the picture
 
 I don’t like the default bubble message because it is too aquatic. Instead, the modified one which I got from [iChat Matte Mod](http://prettifyit.com/post/70271214/ichat-matte-mod-by-josh-bryant-this-doesnt-fit "Prettify* — iChat Matte Mod by Josh Bryant This doesn&#39;t fit...") fits perfectly with Tweetie for Mac.
 
-[Download Tweetie for Mac Mod](http://d.pr/7gA5 "Tweetie for Mac Mod")
+[Download Tweetie for Mac Mod](http://s3.sayzlim.net/f/tweetie-message-mod.zip "Tweetie for Mac Mod")

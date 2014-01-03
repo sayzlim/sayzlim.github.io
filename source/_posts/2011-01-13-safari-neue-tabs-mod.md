@@ -11,7 +11,7 @@ Stumbled Safari Tabs Collection by Koshic[^1] few days ago. The mod is impressiv
 
 I take a particular like to the Safari Neue Tab. The UI design gives out an entirely different experience if you’re new to it. But once you get a hang of it, it looks superb.
 
-Safari Neue Tabs: [Download](http://d.pr/NJpN "Safari Neue Tabs")
+Safari Neue Tabs: [Download](http://s3.sayzlim.net/f/safari-tab-new.zip "Safari Neue Tabs")
 
 > %update%
 > **Update 2013-10-12**: The mod doesn’t work in the latest Safari. But you can give it a try, the author might update it to ensure the compability with the latest Safari. The site is no longer available. But you still can download the mod from the link above.

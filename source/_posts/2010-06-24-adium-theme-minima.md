@@ -15,7 +15,7 @@ Let's do this staring from the trickiest part. We're going to change the usual a
 
 We're going to [use the Adium HUD theme][1] and replace some files in the Adium packages.
 
-[1]: http://d.pr/oFIc "Adium HUD Theme"
+[1]: http://s3.sayzlim.net/f/adium-hud-theme.zip "Adium HUD Theme"
 
 Before you do anything with the HUD theme file, you'll have to open the Adium package content. Mac OS X bundles all the application files into one package, so we're going to peek inside it by right clicking the Adium and show the package content.
 

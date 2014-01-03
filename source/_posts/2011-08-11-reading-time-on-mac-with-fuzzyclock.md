@@ -24,7 +24,7 @@ Download [CodeBold][2] and  use the setting below.
 
 If you plan to change the icon yourself, use official link. To use the modified one, use alternative link.
 
-[Download](http://d.pr/Wtyv "FuzzyClock for Mac")
+[Download](http://s3.sayzlim.net/f/fuzzyclock.zip "FuzzyClock for Mac")
 
 [1]: http://iandrew.deviantart.com/art/Menubar-icons-v2-Leopard-SL-120653580 "Menubar icons v2 Leopard, SL by iAndrew on deviantART"
 [2]: http://fontfabric.com/code-free-font-3/ "Code Free Font | Fontfabric™"

@@ -17,7 +17,7 @@ It looks daunting if you’ve never done CSS styling. But it’s a very simple c
 
 To make this whole process easier, I’ve included my own customization for you to download. It doesn’t change much to the default theme, the most noticeable part is the username font size on the timeline.[^2]
 
-[Download](http://d.pr/HGrr "Twitterrific 4 for Mac Mod")
+[Download](http://s3.sayzlim.net/f/twitterrific-4-font-mod.zip "Twitterrific 4 for Mac Mod")
 
 [^1]: Use Xcode or Dashcode if you have them installed. They provide user friendly interface.
 

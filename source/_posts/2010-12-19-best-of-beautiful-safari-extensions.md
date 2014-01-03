@@ -40,7 +40,7 @@ So every artist or curator, DeviantArt is probably the best extension for all De
 
 [img4]: http://images.sayzlim.net/2010/12/extension_deviantart.jpg "DeviantArt Lite"
 
-[Download](http://d.pr/VYnL "DeviantArt Lite")
+[Download](http://s3.sayzlim.net/f/safari-deviantart.zip "DeviantArt Lite")
 
 ## MacRumorsMinimal
 The first impression when I visit macrumors is how not my taste their interface is. This extension will get rid the forum-like interface and turn in into blog-like interface.

@@ -29,7 +29,7 @@ The easiest way to open folder in new tab is by pressing `Control + Command + O`
 
 I need one shortcut. One shortcut to open files (`Command + O`) that can also open folders in new tab.
 
-Fortunately, Keyboard Maestro can remedy the situation easily. Since folders are the only item that can be opened in new tab, I can create [a macro](http://d.pr/f/APoa "Open in New Tab Macro") that’ll check whether a menu item with the name of “Open in New Tab” exists. If the menu item exists, it’s a folder and it’ll opened in new tab. If it doesn’t exist, it’s a file and will be opened normally.
+Fortunately, Keyboard Maestro can remedy the situation easily. Since folders are the only item that can be opened in new tab, I can create [a macro](http://s3.sayzlim.net/f/km-open-in-new-tab.zip "Open in New Tab Macro") that’ll check whether a menu item with the name of “Open in New Tab” exists. If the menu item exists, it’s a folder and it’ll opened in new tab. If it doesn’t exist, it’s a file and will be opened normally.
 
 There is another reason why I prefer Finder over Path Finder: [beautiful sidebar and folder icons][2].
  

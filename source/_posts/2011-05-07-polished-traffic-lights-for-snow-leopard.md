@@ -19,6 +19,6 @@ I hope you enjoy this theme as much as I do because this is one of the mod I lov
 
 To ensure that the theme is available whole time, I will post two links. Official will lead you to the forum where I get the theme, while alternative is the zip file including ThemePark. Please use the official link as a form of appreciation to the creator of this theme.
 
-Download: [Alternative](http://d.pr/nSln "Stiijo Traffic Lights")
+Download: [Alternative](http://s3.sayzlim.net/f/safari-stiijo-mod.zip "Stiijo Traffic Lights")
 
 [^1]: To clarify, I actually planned to post last month, but didn’t do it due to post limit I set for myself each month. In other word, if you have information that can’t be found on this site, contact me.

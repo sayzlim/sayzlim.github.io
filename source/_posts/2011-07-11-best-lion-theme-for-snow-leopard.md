@@ -27,7 +27,7 @@ If there is one thing I want to emphasize about using mod for your desktop is kn
 
 **Snow Lion** is a theme crafted by [lukeedee][1] to get similar button and progress bar in Lion. I can’t even believe that I’m on Snow Leopard after installing this theme. The button and progress bar alone add subtle difference to the whole OS.
 
-Download: [Official](http://lukeedee.deviantart.com/art/Snow-Lion-Theme-Update-2-208905192 "Snow Lion Theme") | [Alternative](http://d.pr/yHpc "Snow Lion Theme")
+Download: [Official](http://lukeedee.deviantart.com/art/Snow-Lion-Theme-Update-2-208905192 "Snow Lion Theme") | [Alternative](http://s3.sayzlim.net/f/snowlion-leopard-theme.zip "Snow Lion Theme")
 
 ### Thought
 

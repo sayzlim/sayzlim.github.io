@@ -14,7 +14,7 @@ Several themes has sit on my desktop before the current one I use. The themes ha
 
 [Exact 2.0][1], designed by [Jesse Millar][6], is a simple pinned theme to one of the corner on your desktop. The font used in sliding animation fits perfectly and not obtrusive. Click the album artwork to display the song information. Rich color wallpaper always fits well with this theme.
 
-[1]: http://d.pr/f/b0R8 "Exact 2.0"
+[1]: http://s3.sayzlim.net/f/bowtie-exact-theme.zip "Exact 2.0"
 [6]: http://www.jessemillar.com/ "Jesse Millar | Game Developer"
 
 [ ![Condensed Black][img2] ](http://images.sayzlim.net/2011/01/bowtie_black.jpg "")

@@ -8,4 +8,4 @@ title: Day-0, Menu Bar Clock with Calendar
 
 Well, if you’re not a fan of [FuzzyClock](http://sayzlim.net/reading-time-on-mac-with-fuzzyclock "Reading Time on Mac with FuzzyClock | Sayz Lim").
 
-Download: [Official](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock "Day-O // ShaunInman.com") | [Alternative](http://d.pr/UMkX)
+Download: [Official](http://www.shauninman.com/archive/2011/10/20/day_o_mac_menu_bar_clock "Day-O // ShaunInman.com") | [Alternative](http://s3.sayzlim.net/f/day-o.zip)
