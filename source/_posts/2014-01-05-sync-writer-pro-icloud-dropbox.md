@@ -5,7 +5,7 @@ date: 2014-01-05  16:00
 description: Writer Pro hasn’t build Dropbox sync yet, but you still can sync your documents by using symbolic links.
 --- 
 
-[Information Architects][2210-001], the developer of my favorite writing app [iA Writer][2210-002],  released [Writer Pro][2210-003], an advanced writing tool tailored for professional writers few weeks ago. They believe [Writer Pro’s workflow][2210-004] — by dividing the writing process into four stage: Note, Writer, Edit, and Read — can help writers to focus on their writing instead of tinkering with all the unnecessary preferences.
+[Information Architects][2210-001], the developer of my favorite writing app [iA Writer][2210-002],  released [Writer Pro][2210-003], an advanced writing tool tailored for professional writers few weeks ago. They believe [Writer Pro’s workflow][2210-004] — by dividing the writing process into four stages: Note, Writer, Edit, and Read — can help writers to focus on their writing instead of tinkering with all the unnecessary preferences.
 
 The carefully selected typography and focus mode is the reason I choose iA Writer as my writing app. Writer Pro brings it to next level by introducing  Syntax Control™ that highlights the element of sentences like adverbs and adjectives, which as the result, writers gain the eagle-eye view of their own writing.
 
