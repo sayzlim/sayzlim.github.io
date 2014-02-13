@@ -12,6 +12,7 @@ Those are the apps I must install on my Mac. Without these apps, I’ll have har
 - 1Password ($49.99): [App Store][1] or [Direct][2]
 - Alfred (£17): [App Store][3] or [Direct][4]
 - BetterTouchTool (Free): [Direct][5]
+- Contexts ($7): [Direct](http://contextsformac.com/ "Contexts")
 - DragonDrop ($4.99): [App Store][6]
 - Keyboard Maestro ($36): [Direct][7]
 - TextExpander ($34.99): [App Store][8] or [Direct][9]
