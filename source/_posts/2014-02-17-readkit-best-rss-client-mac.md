@@ -21,4 +21,4 @@ The most welcoming feature is the rewritten folder and article list. You can tel
 
 If you need to view many items at once, ReadKit has added an option to change article list font size. This is extremely useful if you read in smaller screen. I prefer to choose the second smallest font size because it’s more readable than the others on my MacBook Air.
 
-[ReadKit](https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4&at=11ld6n "ReadKit") is the best RSS client for Mac you can get right now.
+[ReadKit](https://itunes.apple.com/us/app/readkit/id588726889?mt=12&uo=4&at=11ld6n&ct=blog "ReadKit") is the best RSS client for Mac you can get right now.

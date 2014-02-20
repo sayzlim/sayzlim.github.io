@@ -41,4 +41,4 @@ Another reason why I love this mail client is it constantly reminding me one imp
 
 [6342-001]: http://inboxzero.com/ "Inbox Zero"
 [6342-002]: http://www.uniboxapp.com/faq/organizing-emails/inbox-zero "Inbox Zero - Organizing Emails - FAQs - Unibox"
-[6342-003]: https://itunes.apple.com/us/app/unibox/id702816521?mt=12&uo=4&at=11ld6n "Unibox"
+[6342-003]: https://itunes.apple.com/us/app/unibox/id702816521?mt=12&uo=4&at=11ld6n&ct=blog "Unibox"

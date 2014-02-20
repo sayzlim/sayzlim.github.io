@@ -20,6 +20,6 @@ Detailed weather information can be found by tapping on each Exposé. Weather Pa
 
 Drag the side panel and you can view today the temperature and chance of rain change measured in hour interval. Especially useful for someone like me who lives in a tropical country.
 
-If you’ve been wondering which app can be used as a decoration on your working table, [Magical Weather](https://itunes.apple.com/us/app/magical-weather/id396179545?mt=8&uo=4&at=11ld6n "Magical Weather") is definitely one of it.
+If you’ve been wondering which app can be used as a decoration on your working table, [Magical Weather](https://itunes.apple.com/us/app/magical-weather/id396179545?mt=8&uo=4&at=11ld6n&ct=blog "Magical Weather") is definitely one of it.
 
 [2]: http://sophiestication.com/ "Sophiestication Software"

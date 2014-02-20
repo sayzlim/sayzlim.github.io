@@ -30,11 +30,11 @@ Definitely guilty, but let me state some common excuse why people use pirated ap
 
 Just to remind you who read it. I have list of apps I plan to purchase. I’ve been using them for many months. I didn’t purchase it because I couldn’t afford it under certain circumtances. I have purchased [Sparrow][0276-001], [Alfred][0276-002], and [Wren][0276-003]. And I’m going to purchase [Reeder][0276-004], [MoneyWell][0276-005], and [Twitterrific][0276-006].
 
-[0276-001]: https://itunes.apple.com/us/app/sparrow/id417250177?mt=12&uo=4&at=11ld6n "Sparrow"
-[0276-002]: https://itunes.apple.com/us/app/alfred/id405843582?mt=12&uo=4&at=11ld6n "Alfred"
-[0276-003]: https://itunes.apple.com/us/app/wren/id439545337?mt=12&uo=4&at=11ld6n "Wren"
+[0276-001]: https://itunes.apple.com/us/app/sparrow/id417250177?mt=12&uo=4&at=11ld6n&ct=blog "Sparrow"
+[0276-002]: https://itunes.apple.com/us/app/alfred/id405843582?mt=12&uo=4&at=11ld6n&ct=blog "Alfred"
+[0276-003]: https://itunes.apple.com/us/app/wren/id439545337?mt=12&uo=4&at=11ld6n&ct=blog "Wren"
 [0276-004]: http://reederapp.com/ "reeder"
-[0276-005]: https://itunes.apple.com/us/app/moneywell/id404246493?mt=12&uo=4&at=11ld6n "MoneyWell"
+[0276-005]: https://itunes.apple.com/us/app/moneywell/id404246493?mt=12&uo=4&at=11ld6n&ct=blog "MoneyWell"
 [0276-006]: http://twitterrific.com/ "Twitterrific: Making Twitter Extra Terrific"
 
 If you can’t afford it now and choose to use pirated apps, it’s fine. But make sure to pay for the things you love once you can afford it.

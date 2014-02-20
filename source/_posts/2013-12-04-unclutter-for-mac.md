@@ -35,4 +35,4 @@ Here are some ideas on how I use Unclutter.
 
 
 [5341-001]: http://sayzlim.net/os-x-toolbox-workflow-alfred-2 "OS X Toolbox Workflow for Alfred 2 | Sayz Lim"
-[5341-002]: https://itunes.apple.com/us/app/unclutter/id577085396?mt=12&uo=4&at=11ld6n "Unclutter"
+[5341-002]: https://itunes.apple.com/us/app/unclutter/id577085396?mt=12&uo=4&at=11ld6n&ct=blog "Unclutter"
