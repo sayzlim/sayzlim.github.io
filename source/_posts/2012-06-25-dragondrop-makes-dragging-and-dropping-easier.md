@@ -11,4 +11,4 @@ DragonDrop uses a very simple approach to ease up your life. It creates temporar
 
 If you’re fond of working with menu bar, DragonDrop also provides a way for you to drop the dragged files into its icon in menu bar. Personally, I prefer the shake approach compared to dropping in menu bar.
 
-At the price of $4.99, [DragonDrop](https://itunes.apple.com/us/app/dragondrop/id499148234?mt=12&uo=4&at=11ld6n&ct=blog "DragonDrop") may not suit everyone. While it does its task very well, I can hardly find anyone beside Mac power users enjoy using this app. If you’re not sure whether you’ll need this, you can [download the trial](http://shinyplasticbag.com/ "DragonDrop, from ShinyPlasticBag") from developer website.
+At the price of $4.99, [DragonDrop](https://itunes.apple.com/us/app/dragondrop/id499148234?mt=12&uo=4&at=11ld6n&ct=dragondrop "DragonDrop") may not suit everyone. While it does its task very well, I can hardly find anyone beside Mac power users enjoy using this app. If you’re not sure whether you’ll need this, you can [download the trial](http://shinyplasticbag.com/ "DragonDrop, from ShinyPlasticBag") from developer website.

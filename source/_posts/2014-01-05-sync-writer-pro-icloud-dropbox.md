@@ -80,8 +80,8 @@ Instead of waiting for Information Architects to include Dropbox sync in their n
 [^3]: Configuring Writer Pro as the editor in Marked will open the post right into Edit stage. You can open them side by side for editing and previewing at the same time, skipping the Read stage altogether.
 
 [2210-001]: http://ia.net/ "Information Architects | iA designs and builds digital products."
-[2210-002]: https://itunes.apple.com/us/app/ia-writer/id439623248?mt=12&uo=4&at=11ld6n&ct=blog "iA Writer"
-[2210-003]: https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&uo=4&at=11ld6n&ct=blog "Writer Pro: Note, Write, Edit, Read"
+[2210-002]: https://itunes.apple.com/us/app/ia-writer/id439623248?mt=12&uo=4&at=11ld6n&ct=ia+writer "iA Writer"
+[2210-003]: https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&uo=4&at=11ld6n&ct=writer+pro "Writer Pro: Note, Write, Edit, Read"
 [2210-004]: http://ia.net/blog/writer-pro/ "Writer Pro | Information Architects - iA"
 [2210-005]: http://markedapp.com/ "Marked - smart tools for smart writers"
 [2210-006]: https://zerodistraction.com/using-dropbox-with-writer-pro/ "Zero Distraction | Using Dropbox with Writer Pro"

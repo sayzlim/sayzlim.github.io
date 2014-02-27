@@ -44,5 +44,5 @@ __Sharing__ is made simple. You can easily tweet or email your entries with shar
 
 If you hesitate, start with iOS version. The price is as low as $1.99 to get you started. There is one way to make use of Day One if you’re not used to keeping jornal. Rather than updating from any Twitter client, write it down first in Day One. If you don’t want to share them to your followers, it’s fine. And if you’ve decided to publish it, hit the share button. You might be surprised at how much entries you can accumulate from using this approach.
 
-- Purchase: [Day One for iOS](https://itunes.apple.com/us/app/day-one-journal-diary/id421706526?mt=8&uo=4&at=11ld6n&ct=blog "Day One (Journal / Diary)")
-- Purchase: [Day One for Mac](https://itunes.apple.com/us/app/day-one/id422304217?mt=12&uo=4&at=11ld6n&ct=blog "Day One")
+- Purchase: [Day One for iOS](https://itunes.apple.com/us/app/day-one-journal-diary/id421706526?mt=8&uo=4&at=11ld6n&ct=day+one+for+ios "Day One (Journal / Diary)")
+- Purchase: [Day One for Mac](https://itunes.apple.com/us/app/day-one/id422304217?mt=12&uo=4&at=11ld6n&ct=day+one+for+mac "Day One")
