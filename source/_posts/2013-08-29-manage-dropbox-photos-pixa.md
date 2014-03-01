@@ -56,7 +56,7 @@ This setup has helped me to organize images efficiently. All the  goes into Down
 
 [Pixa][8] is definitely one of the best application you can get to organize images. Stop wondering which application you can get to view all the photos stored in Dropbox. Get Pixa.
 
-[8]: https://itunes.apple.com/us/app/pixa/id527618971?mt=12&at=11ld6n&ct=pixa"Pixa - organizing your images, the easy way"
+[8]: https://itunes.apple.com/us/app/pixa/id527618971?mt=12&at=11ld6n&ct=pixa "Pixa - organizing your images, the easy way"
 
 
 [^1]: OS X Mavericks will implement tags as one of the Finder feature. I don’t think it’s a great idea to use Finder for managing photos. Photos are visual and Finder can’t display them as well as Pixa.
