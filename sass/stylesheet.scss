@@ -2,7 +2,7 @@
 @import "buysellads";
 
 $base-font: source-sans-pro, Avenir Next, Verdana, sans-serif;
-$base-color: #CF490B;
+$base-color: #cf490b;
 $header-color: $base-color;
 $bg-color: #f7f7f7;
 $light-color: $bg-color;
@@ -66,9 +66,9 @@ $light-color: $bg-color;
     max-width: 37.5em; /*600px/16px*/
     article {
       overflow: hidden;
-      margin: 15em 0 2em;
-      &:first-child {
-        margin-top: 3em;
+      margin: 2em 0 15em;
+      &:nth-last-child(-n+2) {
+        margin-bottom: 2em;
       }
     }
   }
@@ -337,16 +337,35 @@ $light-color: $bg-color;
       }
     }
 
+    // Readers Support
+    .support {
+      font-size: .7em;
+      text-shadow: none;
+      background-color: adjust-lightness($base-color, 40%);
+      border-radius: 4px;
+      p {
+        padding: .5em 1em;
+      }
+    }
+
    /* PREVIOUS-NEXT LINKS */
 
     .post-container {
       nav {
-        overflow: hidden; font-size: 0.75em;
+        overflow: hidden;
+        font-size: 0.75em;
       }
     }
 
-      .newer { float: left; }
-      .older { float: right; }
+      .newer {
+        width: 48%;
+        float: left;
+      }
+      .older {
+        width: 48%;
+        text-align: right;
+        float: right;
+      }
 
   /* Elements in footer */
     footer {
