@@ -9,9 +9,9 @@ I rarely use Finder anymore because all of the tasks is one query away. I save m
 
 ## 1. Enable Quick File Search
 
-[ ![Alfred Quick File Search][img1] ](http://images.sayzlim.net/2014/03/alfred_file_browser.jpg "Alfred Quick File Search")
+[ ![Alfred Quick File Search][img1] ](http://images.sayzlim.net/2014/03/alfred_file_search.jpg "Alfred Quick File Search")
 
-[img1]: http://images.sayzlim.net/2014/03/alfred_file_browser.jpg "Alfred Quick File Search"
+[img1]: http://images.sayzlim.net/2014/03/alfred_file_search.jpg "Alfred Quick File Search"
 
 Turning on this option lets you search files quickly by prefixing the search term with `single apostrophe(')` or `spacebar`. Since you can search all files or folders with this method, try to limit the default search results to Applications, Preferences, and Contacts.  In other words, don’t clutter default search results. If you need to search for all files, use quick file search.
 
