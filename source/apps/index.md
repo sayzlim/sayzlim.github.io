@@ -71,7 +71,7 @@ Too many menu bar items? Want to hide unused windows after certain period? Need 
 [C3]: https://itunes.apple.com/us/app/unclutter/id577085396?mt=12&at=11ld6n&ct=unclutter "Mac App Store - Unclutter - iTunes - Apple"
 
 ## Utilities Tools
-I use CleanMyMac 2 clear caches and uninstall apps, Cookie to manage cookies stored in all browsers, Growl for controlled notifications, TinkerTool to access hidden settings, and WiFi Signal to test the quality of WiFi.
+I use CleanMyMac 2 to clear caches and uninstall apps, Cookie to manage cookies stored in all browsers, Growl to show notifications, TinkerTool to access hidden settings, and WiFi Signal to test the quality of WiFi.
 
 - CleanMyMac 2 ($39.95): [Direct][D1]
 - Cookie ($14.99): [App Store][D2] or [Direct][D3]
