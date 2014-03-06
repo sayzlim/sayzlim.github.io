@@ -228,7 +228,7 @@ $light-color: $bg-color;
       font-size: .9em;
     }
 
-    .archives > article {
+    .archives > .list-item {
       margin: .5em 0 0 1em;
     }
 
@@ -339,10 +339,11 @@ $light-color: $bg-color;
 
     // Readers Support
     .support {
-      font-size: .7em;
-      text-shadow: none;
-      background-color: adjust-lightness($base-color, 40%);
       border-radius: 4px;
+      background-color: adjust-lightness($base-color, 40%);
+      text-align: center;
+      text-shadow: none;
+      font-size: .7em;
       p {
         padding: .5em 1em;
       }
@@ -358,13 +359,13 @@ $light-color: $bg-color;
     }
 
       .newer {
-        width: 48%;
         float: left;
+        width: 48%;
       }
       .older {
+        float: right;
         width: 48%;
         text-align: right;
-        float: right;
       }
 
   /* Elements in footer */
