@@ -102,6 +102,6 @@ What I’ve learned from organizing those files is to lessen the amount of user 
 
 Find the setup that works for you, but remember to keep the structure simple. Few years later, we might use different tools to access the files we have today. When that time comes, you won’t have to get busy exporting all the notes and photos.
 
-[^1]: Learn about `Hyper` key in [this post](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/ "A useful Caps Lock key - BrettTerpstra.com") by Brett Tersptra.
+[^1]: Learn about `Hyper` key in [this post](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/ "A useful Caps Lock key - BrettTerpstra.com") by Brett Terpstra.
 
 [^2]: You can access the preferences by pressing `Command+J` in active window.
