@@ -89,7 +89,7 @@ del {
 }
 
 sup {
-  vertical-align: super;
+  vertical-align: baseline;
   font-size: .75em;
   line-height: 0;
   a, a:hover {
@@ -126,7 +126,7 @@ pre {
 p,
 ol,
 ul {
-  &>code {
+  code {
     background-color: adjust-lightness($bg-color, -5%);
     font-size: .74em;
     font-family: $monospace-font;
