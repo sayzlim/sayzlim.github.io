@@ -1,0 +1,24 @@
+body {
+  background-color: $base-color;
+}
+
+.container {
+  padding: 2em 0;
+  width: 100%;
+  background-color: $bg-color;
+}
+
+.post-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  min-width: 18.5em;
+  max-width: 37.5em; /*600px/16px*/
+  article {
+    overflow: hidden;
+    margin: 2em 0 15em;
+    &:last-of-type {
+      margin-bottom: 1em;
+    }
+  }
+}

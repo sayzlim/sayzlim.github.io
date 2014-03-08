@@ -1,0 +1,124 @@
+body {
+  color: $text-color;
+  text-shadow: 0 1px 0 #fffafa;
+  font: 1.25em/1.875em $base-font;
+  -webkit-text-size-adjust: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: .6em 0;
+  text-align: center;
+  font-weight: bold;
+  a {
+    display: block;
+    padding: 0;
+    border: none !important;
+    color: #333 !important;
+    &:hover {
+      border: none !important;
+      color: $base-color !important;
+    }
+  }
+}
+
+a,
+a:active,
+a:visited {
+  color: #4D4D4D;
+  text-decoration: none;
+  -webkit-transition: all .15s ease-in-out;
+  -moz-transition: all .15s ease-in-out;
+  transition: all .15s ease-in-out;
+}
+
+a:hover { color: $base-color; }
+
+::selection {
+  background-color: $base-color;
+  color: #F5F7FA;
+  text-shadow: none;
+}
+
+p,
+ul,
+ol {
+  margin: 1.1em 0;
+}
+
+
+ul,
+ol {
+  padding-left: 1.2em;
+}
+
+ul {
+  list-style: square;
+}
+ol {
+  list-style: decimal;
+}
+
+ul > li { margin-bottom: 0.3em; }
+
+figure {
+  margin: 0; padding: 0;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.75em; }
+
+em,
+i {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+del {
+  text-shadow: none;
+}
+
+sup {
+  vertical-align: super;
+  font-size: .75em;
+  line-height: 0;
+  a, a:hover {
+    padding: .2em;
+    border-bottom-style: none;
+  }
+}
+
+blockquote {
+  display: block;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: solid 3px #c8c8c8;
+  color: #7c7c7c; }
+
+pre {
+  margin: 1.5em 0;
+  padding: .5em;
+  border-radius: 2px;
+  background-color: #1D1F20;
+  -webkit-box-shadow: 0 0 3px 1px #969799;
+  -moz-box-shadow: 0 0 3px 1px #969799;
+  box-shadow: 0 0 3px 1px #969799;
+  color: $gold;
+  text-shadow: none;
+  white-space: pre-wrap;     /* css-3 */
+  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap;    /* Opera 4-6 */
+  white-space: -o-pre-wrap;  /* Opera 7 */
+  word-wrap: break-word;     /* Internet Explorer 5.5+ */
+  font: .7em/1.5em Menlo, Courier, Monospace;
+}

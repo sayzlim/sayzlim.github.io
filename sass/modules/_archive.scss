@@ -1,0 +1,27 @@
+.archives > h2 {
+  margin: 1.5em 0 .5em;
+  text-align: left;
+  font-size: 1.1em;
+}
+
+.archives > h2:first-child {
+  margin-top: 1em;
+}
+
+.archives h3 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: .9em;
+}
+
+.archives > .list-item {
+  margin: .5em 0 0 1em;
+}
+
+.archives time {
+  display: block;
+  height: 1.9em;
+  color: #4d4d4d;
+  font-size: .7em;
+}

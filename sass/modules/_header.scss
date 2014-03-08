@@ -1,0 +1,55 @@
+header {
+  overflow: hidden;
+  background-color: $header-color;
+}
+
+.nav-wrapper {
+    margin: 3.5em auto 0.5em auto;
+    max-width: 37.5em;
+    a, a:active, a:visited, a:hover {
+      color: $bg-color;
+      text-shadow: 0 -1px 0 adjust-lightness($base-color, -10%);
+    }
+    section {
+      overflow: hidden;
+      padding: 0 1.5em;
+    }
+    nav {
+      float: right;
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      li { display: inline-block; padding: 0.2em; }
+      a, a:active, a:visited {
+        margin: 5px 0;
+        padding-bottom: .5em;
+      }
+      a:hover {
+        padding-bottom: 0;
+        border-bottom: solid 2px $bg-color;
+      }
+    }
+  }
+
+  .title { float: left; }
+
+
+header {
+  text-align: center;
+  text-shadow: none;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+
+  section nav {
+    font-size: 0.9em;
+  }
+}
+  .title {
+    font-weight: bold;
+    font-size: 1.4em;
+    &:hover {
+      padding: 0;
+      color: $bg-color;
+    }
+  }

@@ -1,0 +1,16 @@
+// Color Palettes
+$tangerine: #cf490b;
+$teal: #f7f7f7;
+$charcoal: #333;
+$gold: #bbaf75;
+
+// Base Variable
+$base-font: source-sans-pro, Avenir Next, Verdana, sans-serif;
+$base-color: $tangerine;
+$bg-color: $teal;
+$text-color: $charcoal;
+$hover-color: adjust-lightness($base-color, 10%);
+
+// Components Variable
+$header-color: $base-color;
+$light-color: $bg-color;

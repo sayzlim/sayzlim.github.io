@@ -1,0 +1,65 @@
+footer {
+  padding: 2em 0;
+  border-top: solid 6px $hover-color;
+  background-color: $header-color;
+  text-shadow: none;
+
+  a, a:active, a:visited {
+    padding-bottom: .5em;
+    color: $light-color;
+    text-shadow: 0 -1px 0 adjust-lightness($base-color, -10%);
+  }
+
+  a:hover {
+    padding-bottom: 0;
+    border-bottom: solid 2px $bg-color;
+    color: $bg-color;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline-block;
+      padding: 0;
+      &:before {
+        padding: 0 0.5em;
+        color: $bg-color;
+        content: "|";
+      }
+      &:first-child:before {
+        padding: 0;
+        content: "";
+      }
+    }
+  }
+
+  form {
+    margin: 0.7em auto;
+    max-width: 20em;
+    text-align: center;
+    input {
+      padding: 4px;
+      width: 100%;
+      border: none;
+      border-radius: 2px;
+      background-color: $bg-color;
+      font: 0.9em/1.7em $base-font !important;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.credit {
+  color: $bg-color;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+footer {
+  color: #999;
+  font-size: .75em;
+}
