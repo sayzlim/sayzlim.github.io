@@ -12,21 +12,21 @@ If you’ve installed Tweetbot for Mac before and removed it from your Mac, then
 
 The remained items won’t cause any problems to your Mac. However, I don’t like to see broken preferences. Therefore, I researched how to remove it and discovered a method to fix this problem.[^1]
 
-The method is to locate and edit the configuration file that stores the applications in Location Services. In order to do that, we need to open the folder that contains the file. Type **Command+Shift+G** in Finder and insert the file path below:
+The method is to locate and edit the configuration file that stores the applications in Location Services. In order to do that, we need to open the folder that contains the file. Type `Command+Shift+G` in Finder and insert the file path below:
 
 	/private/var/db/locationd/
 
-You’ll see many files and folders. Find and select **locationd** folder. You’ll see it has a small red badge. The badge means that you don’t have the permission to access and edit the folder. We’ll grant permission to ourselves by pressing **Command+I** or **Secondary Click&#160;» Get Info** on the selected folder.
+You’ll see many files and folders. Find and select `locationd` folder. You’ll see it has a small red badge. The badge means that you don’t have the permission to access and edit the folder. We’ll grant permission to ourselves by pressing `Command+I` or **Secondary Click&#160;» Get Info** on the selected folder.
 
 ![Edit Permission for locationd Folder](http://images.sayzlim.net/2013/01/location_services_path.jpg)
 
 Expand the Sharing & Permissions panel; you’ll see the privilege of each user. Unlock the panel by clicking the lock icon in the bottom corner right. You’ll be prompted to fill in your administrator password. Change everyone’s privilege into **Read & Write** as shown in screenshot above. With this modified, you can browse the files inside this folder.
 
-Now we need to edit **clients.plist**. But before we do that, we’ve to convert it from binary mode into xml1 file. Run the command below in Terminal — you’ll have to fill in your administrator password:
+Now we need to edit `clients.plist`. But before we do that, we’ve to convert it from binary mode into xml1 file. Run the command below in Terminal — you’ll have to fill in your administrator password:
 
 	sudo plutil -convert xml1 /private/var/db/locationd/clients.plist
 
-Following the steps you’ve used to grant Read & Write access to the **locationd** folder, you’ll need to do the same with the **clients.plist** file. Otherwise, you won’t be able to edit and save the file.
+Following the steps you’ve used to grant Read & Write access to the `locationd` folder, you’ll need to do the same with the `clients.plist` file. Otherwise, you won’t be able to edit and save the file.
 
 Open the clients.plist and remove the key and dictionary pair in the configuration file. If you’re not sure which line to remove, see the example below.
 
