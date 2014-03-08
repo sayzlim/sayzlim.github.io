@@ -16,7 +16,10 @@
       line-height: 1.5em;
     }
 
-    h2 { font-size: 1.2em; }
+    h2 {
+      margin: 1.5em 0 .5em;
+      font-size: 1.2em;
+    }
 
     /* Displays source link and dates published */
     .meta {
