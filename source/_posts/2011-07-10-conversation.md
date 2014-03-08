@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Conversation
-alias: [/post/7446458101/conversation, /post/7446458101/]
-tags:
-- inspiration
 ---
 When was the last time you really immerse yourself into a conversation? A conversation that is simply for fun. A conversation where you’re being yourself. A conversation where you use your mouth instead of fingers to express yourself.
 

@@ -1,9 +1,6 @@
 ---
 layout: post
 title: Keyboardless MacBook Air
-alias: /post/8941968728/
-tags:
-- macbook
 ---
 Apple is well known for their boldness in removing features and parts from their products. It has killed optical drive and firewire before. There is assumption that they will eventually kill keyboard in the future.
 

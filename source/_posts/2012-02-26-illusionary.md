@@ -1,11 +1,6 @@
 ---
 layout: post
 title: Illusionary
-alias: [/post/18317432532/illusionary, /post/18317432532/]
-tags:
-- thought
-- idea
-- app
 ---
 Sites I love are Twitter and Tumblr. Sites I hate is Facebook. So from the hates and loves, I get Illusionary.
 

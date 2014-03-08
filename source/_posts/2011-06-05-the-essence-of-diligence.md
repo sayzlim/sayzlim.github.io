@@ -1,11 +1,6 @@
 ---
 layout: post
 title: The Essence of Diligence
-alias: [/post/6211984368/the-essence-of-diligence, /post/6211984368/]
-tags:
-- buddhism
-- inspiration
-- lifestyle
 ---
 The Buddhist notion of diligence is to delight in positive deeds. Its opposite, called le lo in Tibetan, has three aspects. Le lo is usually translated as “laziness,” though only its first aspect refers to laziness as we usually understand it. 
 

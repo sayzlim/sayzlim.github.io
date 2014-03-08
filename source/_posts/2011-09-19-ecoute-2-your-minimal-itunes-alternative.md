@@ -2,10 +2,6 @@
 layout: post
 title: "Ecoute 2: Your Minimal iTunes Alternative"
 description: Ecoute is your minimal music player that can replace iTunes for casual listening.
-tags:
-- music
-- iTunes
-- Ecoute 2
 ---
 I’ve shown you one of the [most minimal and beautiful iTunes theme][1] before in one of my writings. Many of you might have a love and hate relationship with iTunes which is both powerful and memory consuming.
 
