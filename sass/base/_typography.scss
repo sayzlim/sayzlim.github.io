@@ -120,5 +120,19 @@ pre {
   white-space: -pre-wrap;    /* Opera 4-6 */
   white-space: -o-pre-wrap;  /* Opera 7 */
   word-wrap: break-word;     /* Internet Explorer 5.5+ */
-  font: .7em/1.5em Menlo, Courier, Monospace;
+  font: .7em/1.5em $monospace-font;
+}
+
+p,
+ol,
+ul {
+  &>code {
+    background-color: adjust-lightness($bg-color, -5%);
+    font-size: .74em;
+    font-family: $monospace-font;
+    padding: .3em .6em;
+    vertical-align: baseline;
+    white-space: pre-wrap;
+    text-shadow: none;
+  }
 }
