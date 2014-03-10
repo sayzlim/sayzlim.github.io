@@ -50,7 +50,7 @@ Here are the document flows I’ve assigned for each folder:
 
 **Notes** – I need a quick way to jot down notes on Mac. It has to be an app that works universally and plays well with plain text — learn why you should [use plain text](http://bettermess.com/a-plain-text-primer/ "A Plain Text Primer - A Better Mess"). This means I can freely create a plain text file from everywhere, and also access it with any apps. By far,  [nvALT](http://brettterpstra.com/projects/nvalt/ "nvALT - BrettTerpstra.com") by Brett Terpstra is the best app for this task.
 
-Set Notes as the source of your text files. Configure a keyboard shortcut to toggle nvALT everywhere. My preferred key combination is `Hyper + E`.[^1]
+Set Notes as the source of your text files. Configure a keyboard shortcut to toggle nvALT everywhere. My preferred key combination is `Hyper+E`.[^1]
 
 If you’re a Writer Pro user, you might want to bring all your notes into this folder. You can achieve this by [creating a symbolic link for each folder from iCloud to Dropbox](http://sayzlim.net/sync-writer-pro-icloud-dropbox "Sync Writer Pro Between iCloud and Dropbox - Sayz Lim").
 

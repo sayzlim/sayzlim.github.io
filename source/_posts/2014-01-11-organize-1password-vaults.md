@@ -30,7 +30,10 @@ Business Vault, on the other hand, is where you store all information related to
 ## Archive Vault
 Audit all your saved login items. Sven Fechner on his blog, simplicitybliss, [has written a detailed tutorial][1811-003] to create smart folders that filter out saved logins that are not used in the past year. Just like him, I recommend you to either delete the unused accounts or move them to this vault.
 
-> 1Password hasn’t built a feature to move saved items between vault. One way to move the saved items is by exporting the selected items to desktop, followed by deleting the items from the original vault. Once you’ve verified the exported items are correct, switch to your destination vault and import the items into the vault.
+<del>1Password hasn’t built a feature to move saved items between vault. One way to move the saved items is by exporting the selected items to desktop, followed by deleting the items from the original vault. Once you’ve verified the exported items are correct, switch to your destination vault and import the items into the vault.</del>
+
+> %update%
+> **Update 2014-03-10:** 1Password has the [feature to copy items between vaults](https://twitter.com/1Password/status/443066610715082752) all this time. You can find the option in **Item » Share » (Your Vault Name)**. Make sure to the delete the items in the original vault to prevent duplicate.
 
 ## Family Vault
 Welcome home superhero! This place is where all the forgotten passwords shall be recovered. This is also one of the reasons why your family treats you as the computer genius. Hurry, move all their accounts to this vault and use the naming convention I’ve shown in the fifth paragraph.
