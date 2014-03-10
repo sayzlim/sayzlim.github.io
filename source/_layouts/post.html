@@ -32,7 +32,7 @@ single: true
   <aside class="related">
     <h3>Related:</h3>
     <ul>
-      {% for post in site.related_posts %}
+      {% for post in site.related_posts limit:5 %}
         <li><a href="{{ post.url }}">{{post.title }}</a></li>
       {% endfor %}
     </ul>
