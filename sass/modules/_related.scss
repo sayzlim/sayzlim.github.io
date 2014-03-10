@@ -17,41 +17,41 @@
           border: solid .1em $base-color;
           border-left: none;
           background: $base-color;
+          background: $base-color;
           color: $bg-color;
           text-shadow: none;
-          background: $base-color;
         }
       }
       &:nth-child(2) {
         border-left: solid .3em adjust-lightness($base-color, 10%);
         a:hover {
-          background: adjust-lightness($base-color, 10%);
           border: solid .1em adjust-lightness($base-color, 10%);
           border-left: none;
+          background: adjust-lightness($base-color, 10%);
         }
       }
       &:nth-child(3) {
         border-left: solid .3em adjust-lightness($base-color, 20%);
         a:hover {
-          background: adjust-lightness($base-color, 20%);
           border: solid .1em adjust-lightness($base-color, 20%);
           border-left: none;
+          background: adjust-lightness($base-color, 20%);
         }
       }
       &:nth-child(4) {
         border-left: solid .3em adjust-lightness($base-color, 30%);
         a:hover {
-          background: adjust-lightness($base-color, 30%);
           border: solid .1em adjust-lightness($base-color, 30%);
           border-left: none;
+          background: adjust-lightness($base-color, 30%);
         }
       }
       &:nth-child(5) {
         border-left: solid .3em adjust-lightness($base-color, 40%);
         a:hover {
-          background: adjust-lightness($base-color, 40%);
           border: solid .1em adjust-lightness($base-color, 40%);
           border-left: none;
+          background: adjust-lightness($base-color, 40%);
         }
       }
     }
