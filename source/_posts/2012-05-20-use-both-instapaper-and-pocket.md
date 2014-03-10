@@ -3,8 +3,10 @@ layout: post
 title: Don’t Pick, Use Both Instapaper and Pocket
 alias: /post/23358093610
 description: Learn why I’ve decided to use both Instapaper and Pocket instead of choosing only one read later service.
+tags:
+- declutter
 ---
-Among the services that clean away online clutter I know so far, Instapaper and Pocket come across to be the most used services. [Instapaper][1] is designed with the sole purpose for you to store, read later, and discard/archive. [Pocket][2], formerly Read It Later, comes out with a concept of save later for everything including articles, images, videos, and webpages. 
+Among the services that clean away online clutter I know so far, Instapaper and Pocket come across to be the most used services. [Instapaper][1] is designed with the sole purpose for you to store, read later, and discard/archive. [Pocket][2], formerly Read It Later, comes out with a concept of save later for everything including articles, images, videos, and webpages.
 
 The sudden change of approach, backed up with well designed Pocket app across multiple platforms, manages to stir up the existing Instapaper users. I’m also troubled by it, rising the thought of switching from Instapaper to Pocket.
 
@@ -49,7 +51,7 @@ Leaving aside the matter of being free. Pocket allows you to save literally ever
 
 > Pocket wants you to consume easily what you’ve saved in one place.
 
-I don’t need Pocket as my bookmarking services. I use [Pinboard][3] for that purpose. Throw everything into one place, give some tags if you want. 
+I don’t need Pocket as my bookmarking services. I use [Pinboard][3] for that purpose. Throw everything into one place, give some tags if you want.
 
 Maciej Ceglowski, the Pinboard founder, once made a statement in an interview:
 

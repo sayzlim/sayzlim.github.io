@@ -2,6 +2,8 @@
 layout: post
 title: Keep Your MacBook Safe
 description: Security becomes main concern once you’ve lost your precious thing. Here are few tips to help your track MacBook if they‘re lost.
+tags:
+- mac
 ---
 One of my friends lost his MacBook Pro recently. There was no way to track his stolen MacBook because there was no tracking app installed. Somehow I blame myself for not spreading the tips on how to keep their MacBook safe.
 

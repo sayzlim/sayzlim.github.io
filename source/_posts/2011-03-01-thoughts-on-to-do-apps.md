@@ -2,6 +2,8 @@
 layout: post
 title: Thoughts on To-do Apps
 description: Why I’ve decided to stop using to-do apps and opt for a plain text to make list.
+tags:
+- rant
 ---
 One particular genre of apps that been bothering me is the huge release of to-do apps for either Mac or iOS. First, let’s define the basic concept of to-do apps. A full fledged to-do apps should have these features.
 

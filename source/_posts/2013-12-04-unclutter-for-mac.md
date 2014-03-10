@@ -3,6 +3,9 @@ layout: post
 title: "Improved Unclutter for Mac"
 date: 2013-12-04 21:06
 description: Unclutter your desktop with three basic pockets. Browse clipboard history and clear temporary files from desktop.
+tags:
+- unclutter
+- review
 ---
 
 Better keep your desktop tidy instead of making yourself dizzy. I belong to the former. Show me a desktop full of clutter and I’ll show you how to clear it with a Terminal command. Here it is:
@@ -27,7 +30,7 @@ Here are some ideas on how I use Unclutter.
 
 [img2]: http://images.sayzlim.net/2013/12/unclutter-notes.jpg "Unclutter for Mac Notes"
 
-**Notes** is my scratchpad. Unclutter is not the only choice here; there are plenty of ways to make your own scratchpad. You can create a new text file, use Stickies, or even activate Evernote from menu bar. But Unclutter is by far the most practical. Since it stays on the top of all windows, you can drag it out and put it wherever you want on the screen. 
+**Notes** is my scratchpad. Unclutter is not the only choice here; there are plenty of ways to make your own scratchpad. You can create a new text file, use Stickies, or even activate Evernote from menu bar. But Unclutter is by far the most practical. Since it stays on the top of all windows, you can drag it out and put it wherever you want on the screen.
 
 [Unclutter][5341-002] is not the must have apps for most people. It doesn’t stand out compared to other apps like Keyboard Maestro or TextExpander. But what makes me like Unclutter so much is the practicability it brings the moment you start using it. It won’t make you super productive, but this app will surely make using Mac more pleasant.
 

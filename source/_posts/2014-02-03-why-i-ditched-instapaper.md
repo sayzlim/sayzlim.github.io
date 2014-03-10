@@ -3,6 +3,8 @@ layout: post
 title: "Why I Ditched Instapaper"
 date: 2014-02-03 20:11
 description: I love Instapaper. I can use it all the time. Not until I realize that it doesn’t meet my expectation.
+tags:
+- rant
 ---
 
 It was love at first sight. The moment I opened Instapaper, I knew this read later app is designed with _words_ as the main lead of a play. Everyday I’m delighted with the details that made me feel like an honored guest in a coffee shop full of my favorite books and magazines.

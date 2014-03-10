@@ -2,6 +2,8 @@
 layout: post
 title: Elegant Search Display with Glims in Safari 5
 description: Improve your Safari 5 search bar function with Glims.
+tags:
+- safari
 ---
 Safari 5 implemented extension feature which attracting many user to switch browser. So why the heap over the browser which doesn’t even reach 5% of the browser market share?
 

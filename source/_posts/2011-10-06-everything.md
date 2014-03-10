@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Everything
+tags:
+- rant
 ---
 Everything you know about this blog and me won’t exist if I didn’t get a MacBook few years ago.
 

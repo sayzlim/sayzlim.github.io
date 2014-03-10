@@ -2,6 +2,8 @@
 layout: post
 title: The Most Beautiful Folder Icons Replacement for Mac
 alias: [post/34994221785/most-beautiful-folder-icons-mac, post/34994221785/]
+tags:
+- prettify
 ---
 I’ve never customized the folder icons on Mac. There is a reason behind this decision. Most of the icon sets take away the natural beauty of OS X. They usually stand out by themselves, ignoring other UI elements, and turn the whole OS X into a bizarre state.
 

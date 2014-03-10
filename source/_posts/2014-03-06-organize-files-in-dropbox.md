@@ -3,6 +3,9 @@ layout: post
 title: "How I Organize Files in Dropbox"
 date: 2014-03-06 17:00
 description: Dropbox is great for storing all your files, only if you organize them well.
+tags:
+- dropbox
+- declutter
 ---
 
 There is no perfect setup. Not mine, not yours. We organize folders our own ways.
@@ -28,8 +31,8 @@ I only use that much storage because I store all my reference files in Evernote.
 The documents I store in Dropbox fall under these categories:
 
 - **Notes** – The location where I store notes in plain text.
-- **Photos** – Any type of images goes here. 
-- **Projects** – All the active projects stay in this folder. 
+- **Photos** – Any type of images goes here.
+- **Projects** – All the active projects stay in this folder.
 - **Safe** – My iCloud in Dropbox, I save apps specific files in this location, grouped by folders.
 
 As you can see from the structures above, raw files like images and text files are not bound to any specific apps. I don’t need iPhoto to view these photos, I can use Writer Pro, Byword, or even Sublime Text to edit text files. Storing all documents in Dropbox means I can sync them to iPhone, iPad, and other Mac easily.

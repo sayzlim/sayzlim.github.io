@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Reading Time on Mac with FuzzyClock
+tags:
+- fuzzyclock
+- review
 ---
 I love words. I love beautiful typography. FuzzyClock displays the time with words instead of numbers. With beautiful typeface, FuzzyClock looks elegant in menubar.
 

@@ -2,6 +2,8 @@
 layout: post
 title: Fast Enough
 description: Your computing experience is not determined by the Windows Experience Index.
+tags:
+- zen
 ---
 Stop questioning “Is this computer fast enough?”.
 

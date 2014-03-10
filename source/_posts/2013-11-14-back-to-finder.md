@@ -3,6 +3,8 @@ layout: post
 title: "Back to Finder"
 date: 2013-11-14  01:23
 description: Mavericks introduces tabs as one of the main feature alongside with tags. Should I go back to Finder?
+tags:
+- declutter
 ---
 
 Tabs is finally available in Finder.  A simple and familiar feature we’ve grown accustomed can now be found in the wave of Mavericks.
@@ -32,7 +34,7 @@ I need one shortcut. One shortcut to open files (`Command + O`) that can also op
 Fortunately, Keyboard Maestro can remedy the situation easily. Since folders are the only item that can be opened in new tab, I can create [a macro](http://s3.sayzlim.net/f/km-open-in-new-tab.zip "Open in New Tab Macro") that’ll check whether a menu item with the name of “Open in New Tab” exists. If the menu item exists, it’s a folder and it’ll opened in new tab. If it doesn’t exist, it’s a file and will be opened normally.
 
 There is another reason why I prefer Finder over Path Finder: [beautiful sidebar and folder icons][2].
- 
+
 [2]: http://sayzlim.net/most-beautiful-folder-icons-mac "The Most Beautiful Folder Icons Replacement for Mac | Sayz Lim"
 
 [^1]: App Exposé displays all current active app windows like Mission Control. The default gesture to call this feature is to swipe down with four fingers.

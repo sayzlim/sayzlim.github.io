@@ -3,6 +3,8 @@ layout: post
 title: Sync iCloud Contacts and Calendar on Snow Leopard
 alias: [/post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
 description: Follow the step by step tutorial to sync your iCloud contacts and calendar on Snow Leopard.
+tags:
+- icloud
 ---
 Syncing iCloud to Snow Leopard is relatively simple. The information you need are your __iCloud ID__, usually in number identified as 1473233284, and the __iCloud Server Number__, usually labeled as pXX-caldav.icloud.com.
 

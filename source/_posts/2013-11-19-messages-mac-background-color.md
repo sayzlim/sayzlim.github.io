@@ -3,6 +3,8 @@ layout: post
 title: "Messages for Mac Background Color"
 date: 2013-11-19 13:56
 description: Easily change Messages for Mac background color to tell apart between senders.
+tags:
+- prettify
 ---
 
 Messages for Mac is extremely useful when you need to continue conversation from iPhone and iPad. There is no problem when you receive message from single person.  But when you’re conversing with several people at once, telling the senders apart requires more efforts.

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Living without Facebook
+tags:
+- zen
 ---
 I can see most of the people spend most of their time on Facebook. Perhaps you are also one of the people who are currently logged in Facebook.
 

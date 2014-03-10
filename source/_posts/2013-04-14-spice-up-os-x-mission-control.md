@@ -3,6 +3,8 @@ layout: post
 title: Spice Up OS X Mission Control
 alias: [/post/47939324665/spice-up-os-x-mission-control, /post/47939324665/]
 description: Change the background of Mission Control with Lion Designer.
+tags:
+- prettify
 ---
 Modification is rarely recommended for new OS X users. You don’t want to spend time reverting system to default settings. However, with little personalization, you can dramatically change the way your Mac looks, especially when it’s the workspace you use every day.
 

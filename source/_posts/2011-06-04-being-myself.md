@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Being Myself
+tags:
+- zen
 ---
 “Just be yourself” is one of the most used phrase to comfort myself. Not just me, but most of my friends will use this phrase to comfort anyone facing hesitation, trouble, and insecurity.
 

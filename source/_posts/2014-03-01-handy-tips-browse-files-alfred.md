@@ -3,6 +3,8 @@ layout: post
 title: "5 Handy Tips to Browse Files in Alfred"
 date: 2014-03-01 22:50
 description: Learn to navigate your way in Alfred for Mac with those tips and become more productive while working.
+tags:
+- alfred
 ---
 
 I rarely use Finder anymore because all of the tasks is one query away. I save more time, I find my files faster. Here are some tips to improve the search experience in Alfred.

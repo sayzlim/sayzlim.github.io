@@ -3,6 +3,9 @@ layout: post
 title: "Creating Memorable TextExpander Abbreviations"
 date: 2013-09-28 19:00
 description: Learn how to create a memorable TextExpander abbreviations with this simple guide.
+tags:
+- declutter
+- TextExpander
 ---
 
 TextExpander has saved me a lot of time. Rather than copy pasting, or arranging the rich text format, I can turn them into snippets. You can assign variable and input field for each snippet to make it more useful.

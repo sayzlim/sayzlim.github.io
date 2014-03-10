@@ -3,6 +3,9 @@ layout: post
 title: "Useful Extensions for Safari 7"
 date: 2013-10-26 02:18
 description: Safari in OS X Mavericks can become more useful if installed with these carefully chosen extensions.
+tags:
+- safari extension
+- safari
 ---
 
 Safari is one of the finest update we can receive in Mavericks. It’s [packaged with the WebKit2 engine][A31] that has been rewritten to handle multiple tabs better, similar to Google’s Chrome process-per-tab architecture. No longer we have to restart Safari when one of the tab crashes.
@@ -34,7 +37,7 @@ HoverZoom allows you to load the actual image size within web page. This extensi
 Do you want to track and limit the time you spend on the websites you visit? You can have this feature built into Safari easily with WasteNoTime. By enabling this extension, you can decide how much time is allowed to spend on certain websites. You can also decide when the extensions are active — by adjusting allocated time effectively on weekdays and weekends.
 
 ## [Tab Options](http://canisbos.com/taboptions "Tab Options - Canisbos Safari Extensions")
-By default, all new tabs will be created at the end of the tab bar. If you often use **Select Next Tab** and **Select Previous Tab**, having the new tab created right beside the active tab is preferable. With **Tab Options**, you can choose the the behavior how each new tab is handled. You can also put it in the beginning of tab bar, the left or the right of the active tab. 
+By default, all new tabs will be created at the end of the tab bar. If you often use **Select Next Tab** and **Select Previous Tab**, having the new tab created right beside the active tab is preferable. With **Tab Options**, you can choose the the behavior how each new tab is handled. You can also put it in the beginning of tab bar, the left or the right of the active tab.
 
 Shortcuts are available if you wish to control the tab positioning behavior. But I mainly use it to set the new tab to open in the right side of active tab.
 

@@ -2,6 +2,8 @@
 layout: post
 title: Adium Reborn
 external-url: http://nouincolor.com/blog/adium-reborn/
+tags:
+- share
 ---
 [ ![Adium Reborn][img1] ](http://images.sayzlim.net/2013/05/adium_reborn.jpg "Adium Reborn")
 

@@ -3,6 +3,10 @@ layout: post
 title: "Move Entire iPhoto Library to Dropbox"
 date: 2012-09-30 23:38
 description: Here is the tutorial to move your iPhoto library into Dropbox and keep them accessible everywhere.
+tags:
+- dropbox
+- iphoto
+- declutter
 ---
 
 If you’re interested to move your entire iPhoto library to Dropbox, then the [tutorial][6064-001] written by Viticci should be enough to walk you through the process. The tutorial serves as the basic to create your own photo management system in Dropbox. There are some steps that can be simplified, especially the part where additional applications are required to keep the photos metadata intact.

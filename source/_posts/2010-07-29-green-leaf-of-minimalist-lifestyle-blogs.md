@@ -2,6 +2,8 @@
 layout: post
 title: Green Leaf of Minimalist Lifestyle Blogs
 description: Follow the blogs that advocate minimalism living and computing.
+tags: 
+- zen
 ---
 [ ![Maple Leaf][img3] ](http://images.sayzlim.net/2010/07/maple_leaf.jpg "Maple Leaf")
 

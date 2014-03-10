@@ -3,6 +3,8 @@ layout: post
 title: Simple Applications of Mine
 alias: /post/2637832869
 description: List of the applications I usually install on the new Mac.
+tags:
+- mac
 ---
 There are several apps I installed are needed temporary. They are not essential because I use them just for this semester. However, there are some core applications I always have them installed. The list below consist  all the core applications I use frequently.
 

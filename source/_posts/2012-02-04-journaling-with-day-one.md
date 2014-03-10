@@ -2,7 +2,10 @@
 layout: post
 title: Journaling with Day One
 alias: /post/17027730672
-description: Day One helps you note down what, where, when, who, and how your experience happened. 
+description: Day One helps you note down what, where, when, who, and how your experience happened.
+tags:
+- review
+- day one
 ---
 It happens all the time. I notice an app, pin it, and toss it aside at [Pinboard](http://pinboard.in/ "Pinboard: social bookmarking for introverts"). A friend of mine mentioned Day One to me few days ago, so I took a closer look to this app. My thought on this app? Totally in love with it. It’s definitely a beautiful tool for you who take pleasure in writing down your thoughts in diary.
 

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ! 'Magical Weather: Gorgeous Weather Station'
+tags:
+- magical weather
+- review
 ---
 It’s not just stunning. It’s absolutely gorgeous. [Magical Weather][1] is crafted by Sophia Teutschler, a designer and iOS developer, who keeps pushing many beautiful apps under her own brand [Sophiestication][2]. Without doubt, Magical Weather carries the essential of “great design in simple app” that I can’t stop myself from not writing about it.
 

@@ -2,6 +2,9 @@
 layout: post
 title: Clear Twitter Distraction with Wren for Mac
 description: Single window for you to tweet without all the distraction made by the people on your timeline.
+tags:
+- wren
+- review
 ---
 As an Twitter active user, I noticed a slight difference in usage pattern between using Twitter on desktop and mobile.
 

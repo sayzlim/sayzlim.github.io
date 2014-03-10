@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Search Your Pinboard and Delicious Bookmarks with Shiori
+tags:
+- review
 ---
 It’s common for us to encounter many useful links while surfing the Internet. The most practical way to store those links is by using bookmarks feature provided in each browser. Keeping your bookmarks tied with a browser is not recommended though. You want to make sure the bookmarks can used interchangeably between browsers easily. That’s why services such as [Delicious](http://delicious.com/ "Delicious") or [Pinboard](http://pinboard.in/ "Pinboard: social bookmarking for introverts") play an important role to keep your bookmarks safe.
 

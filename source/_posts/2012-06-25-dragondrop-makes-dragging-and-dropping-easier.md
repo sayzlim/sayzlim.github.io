@@ -2,6 +2,9 @@
 layout: post
 title: DragonDrop Makes Dragging and Dropping Easier
 description: Move the files between folder on Mac easily with the help of DragonDrop.
+tags:
+- review
+- dragondrop
 ---
 I can hardly tell the DragonDrop’s purpose from the its description. The developer describes DragonDrop as a utility that makes dragging and dropping easier on your Mac. One thing is true. The process of dragging and dropping on Mac is difficult. There are many times where I need drop the files into “Open File…” window and miss the hold state during the process.
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Buy and Upgrade Your Computer, or...
+tags:
+- zen
 ---
 According to [Moore’s law](http://en.wikipedia.org/wiki/Moore "Moore - Wikipedia, the free encyclopedia"), the number of transistors that can be placed inexpensively on an integrated circuit doubles approximately every two years. In other words, the processors’ speed double every two years. Judging from the law and consumers trend, it should be normal to upgrade your system every two years.
 

@@ -2,6 +2,8 @@
 layout: post
 title: Beautiful Minimal Google
 description: Cleaner Google landing page without all the unnecessary buttons.
+tags:
+- prettify
 ---
 [ ![Minimal Google][img1] ](http://images.sayzlim.net/2010/08/google_minimal.jpg "Minimal Google")
 

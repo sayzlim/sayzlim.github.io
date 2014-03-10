@@ -2,6 +2,8 @@
 layout: post
 title: Tuning Your Snow Leopard Scrollbar
 description: This package made by Max Rudberg will fine tune the boring aqua scrollbar on Snow Leopard.
+tags:
+- mac
 ---
 [ ![Aqua Extreme 3][img1] ](http://images.sayzlim.net/2010/12/extreme_aqua.jpg "Aqua Extreme 3")
 

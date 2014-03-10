@@ -2,6 +2,8 @@
 layout: post
 title: Making Use of Activity in Safari 5
 description: The multiple functions of Safari 5 Activity Monitor in this post.
+tags:
+- safari
 ---
 [ ![Safari 5 Activity Monitor][img1] ](http://images.sayzlim.net/2010/10/safari_activity.jpg "Safari 5 Activity Monitor")
 

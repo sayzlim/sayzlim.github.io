@@ -2,6 +2,8 @@
 layout: post
 title: Starting Minimalist Lifestyle
 description: The role of contentment in contributing the way to lead minimalist lifestyle.
+tags:
+- zen
 ---
 Minimalist lifestyle is closely related to how your mind perceive it. There is no rules in defining the lifestyle you want. Not to mention the how to lead a minimalist lifestyle. You can’t let people decide what action you ought to take. So take your time to practice and continue what you find is helpful to you.
 

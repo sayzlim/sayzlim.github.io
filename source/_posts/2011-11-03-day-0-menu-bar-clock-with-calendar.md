@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Day-0, Menu Bar Clock with Calendar
+tags:
+- share
 ---
 [ ![Day-0 Preview][img] ](http://images.sayzlim.net/2011/11/day_0.jpg "Day-0 Preview")
 

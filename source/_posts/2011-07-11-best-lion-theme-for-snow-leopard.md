@@ -2,6 +2,8 @@
 layout: post
 title: Best Lion Theme for Snow Leopard
 description: Change the theme of Mac OS X Snow Leopard into Lion  with this small package.
+tags:
+- prettify
 ---
 With the Lion approaching in just a few days, it’s no wonder everyone will prepare their Snow Leopard for an upgrade. But, not in my case because I haven’t found any value in upgrading to Lion.
 

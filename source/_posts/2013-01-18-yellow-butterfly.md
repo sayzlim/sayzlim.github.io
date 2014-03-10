@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Yellow Butterfly
+tags:
+- rant
 ---
 It may not be possible for you to picture my writing environment right now. With windows widely open behind me making use of the moon reflection as the only source of light, surrounded by the vast amount of water with limited electricity, and the endless rain increasing the water level, I don’t think many properties are able to survive this flood.
 

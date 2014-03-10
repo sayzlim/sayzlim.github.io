@@ -2,6 +2,8 @@
 layout: post
 title: Keep Your Needs to a Minimum
 description: You don’t really need a lot to be happy.
+tags:
+- zen
 ---
 The modern American economy is built on the false premise that people need to buy new goods and services all the time. Again, I call bullshit.
 

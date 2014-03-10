@@ -3,6 +3,9 @@ layout: post
 title: "Simplify Emails With Unibox"
 date: 2013-12-26 12:24
 description: Unibox is the mail client that helps us to simplify inbox and remember the most important element in emails. It’s the people.
+tags:
+- unibox
+- review
 ---
 
 Simplify. Don’t simplify for the sake of being minimalist. Simplify because your time is a finite resource.

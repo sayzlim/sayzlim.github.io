@@ -3,6 +3,9 @@ layout: post
 title: "Remember Everything"
 date: 2013-11-27 00:30
 description: We create fragments everyday. Why don’t we save and remember them?
+tags:
+- declutter
+- evernote
 ---
 
 We don’t have a chip implanted in our brain yet to remember everything — from the books we’ve read, the places we’ve visited, and the food we’ve eaten. The most practical method is to write them down. But do the people nowadays use their time to record their life events when they don’t even allow themselves to admire the dancing cloud in the sky?

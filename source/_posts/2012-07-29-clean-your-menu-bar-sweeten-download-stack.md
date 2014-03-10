@@ -3,6 +3,8 @@ layout: post
 title: Clean Your Menu Bar, Sweeten Download Stack
 alias: [/post/28270949677/, /post/28270949677/clean-your-menu-bar-sweeten-download-stack]
 description: How can you make something simple, cleaner? You start cleaning the menu bar, and follow the the stacks in Dock.
+tags:
+- prettify
 ---
 [ ![Stack Desktop][img1] ](http://images.sayzlim.net/2012/07/stack_desktop.jpg "Stack Desktop")
 

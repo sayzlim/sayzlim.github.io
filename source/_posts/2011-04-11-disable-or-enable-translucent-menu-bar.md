@@ -2,6 +2,8 @@
 layout: post
 title: Disable or Enable Translucent Menu Bar
 description: Answering the question for people who care how the menu bar in OS X is displayed.
+tags:
+- declutter
 ---
 You can’t deny the fact that some folks are having this question. Should I enable translucent menu bar? This is not a rocket science question, so it can be easily answered once you can identify your needs and personal taste.
 

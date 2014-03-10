@@ -3,6 +3,8 @@ layout: post
 title: Best of Beautiful Safari Extensions
 alias: /post/2363230149/
 description: Looking for the best Safari extensions? This list will have most of the extensions covered.
+tags:
+- safari
 ---
 Safari is becoming more beautiful with the support from several top notch extensions. Most of the extensions I install on Safari are interface tweaker. It literally means that none of them are heavy to your browser experience because they only override the CSS. You don't need to install all of them, so take your pick only the sites you visit regularly.
 

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Minimal Twitterrific 4 for Mac
+tags:
+- twitterrific
+- prettify
 ---
 If you’ve been following my blog since the beginning of it. You will realize that I rarely review an app.[^1] There are too many well written review articles out there. I am not one of those writers. I’m too good for these kinds of articles.[^2]
 

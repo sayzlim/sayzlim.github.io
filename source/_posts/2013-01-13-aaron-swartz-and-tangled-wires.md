@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Aaron Swartz and Tangled Wires
+tags:
+- rant
 ---
 I followed [Aaron Swartz][7653-001] on Twitter last year after seeing several mentions of him on my timeline. I realized at once that he was a person that everyone look up to, mainly due to his contribution to technology at a very young age. He co-wrote the RSS specification when he was 14 which we still use nowadays. He helped to [improve popular Markdown][7653-002] I use to write this post. He was a gifted kid every adults want to nurture and protect. He was a genius.
 

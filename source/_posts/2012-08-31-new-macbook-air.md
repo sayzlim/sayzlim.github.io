@@ -2,6 +2,8 @@
 layout: post
 title: The New MacBook Air
 alias: /post/30532640682
+tags:
+- rant
 ---
 When Apple first announced MacBook Air in 2008, I know it’ll be my only Mac. I didn’t force myself to get one immediately. There were many limitations with the first-generation MacBook Air. It needed time become mature enough to act as a primary machine. It happened sooner than I thought. Apple replaced MacBook’s role with MacBook Air in 2010. Since then, MacBook Air is getting better.
 

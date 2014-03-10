@@ -2,6 +2,8 @@
 layout: post
 title: Should I Install Windows on My Mac?
 description: Should you even consider to install Windows after getting your first Mac?
+tags:
+- mac
 ---
 No. There is no reason for me to install Window on my Mac. I can do all what Windows can [do with a Mac](http://sayzlim.net/minimal-living-with-macbook "Minimal Living with MacBook | Sayz Lim"). There are many applications that perform better than Windows applications.
 

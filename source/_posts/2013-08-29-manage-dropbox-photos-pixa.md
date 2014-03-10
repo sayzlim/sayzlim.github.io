@@ -2,6 +2,10 @@
 layout: post
 title: How I Manage Photos with Dropbox and Pixa
 description: Leaving iPhoto to Dropbox means I need to find a replacement application that also organize photos based on folders.
+tags:
+- dropbox
+- pixa
+- review
 ---
 [Abandoning iPhoto][1] is probably one of the right decision I’ve made in storing photos. Long time OS X users such as [Federico Vitici][2] and [Sven Fechner][3] started this and it remains as one of my favorite tips of all time.
 

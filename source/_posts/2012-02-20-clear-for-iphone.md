@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Your Paper and Pencil, Clear for iPhone
+tags:
+- review
+- clear
 ---
 
 [I’m not a big fan of to-do apps](http://sayzlim.net/thoughts-on-to-do-apps "Thoughts on To-do Apps - Sayz Lim") in general. Creating to-do apps can serve as a good project for new developers. It’s not surprising that the app market is flooded with to-do apps. The problem with those to-do apps are their target audience. Unlike OmniFocus that is primarily designed for long term goals and large scale project, most of the existing to-do apps fall into the region of “Reminder.app”.

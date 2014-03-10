@@ -3,6 +3,8 @@ layout: post
 title: "Clear for Free"
 date: 2014-02-19 22:30
 description: Realmac Software is going to make Clear free for 24 hours twice so Clear+ can move to the correct version for free.
+tags:
+- share
 ---
 
 Realmac Software, the company behind popular to-do list app Clear, has decided to remove Clear+ from App Store and add universal support to the original Clear. This means the existing Clear+ customers won’t receive updates anymore and must buy the original Clear. To address this problem, Realmac Software is going to [make Clear free](http://realmacsoftware.com/clear/letter "Realmac Software - Making Things Right") for 24 hours twice in a next few weeks.

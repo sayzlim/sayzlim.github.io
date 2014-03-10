@@ -3,6 +3,8 @@ layout: post
 title: "Best iTunes Lyrics App for Mac"
 date: 2013-12-08 04:24
 description: DynamicLyrics is the best lyrics app for Mac that works perfectly with iTunes.
+tags:
+- itunes
 ---
 
 &#x266B; Amsterdam by Imagine Dragons in iTunes Music. First time listening this song, doesn’t know the lyrics, no way to sing along.

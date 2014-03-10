@@ -1,6 +1,8 @@
 ---
 layout: post
 title: No Longer Illusion, Meet Harpoen
+tags:
+- share
 ---
 This [silly idea][4793-001][^1] I came up with few months ago is no longer an illusion. Meet [Harpoen][4793-002].
 
@@ -24,7 +26,7 @@ Aulia Masna on [DailySocial](http://en.dailysocial.net/post/harpoen-lets-you-lea
 **How will it handle a huge number of overlapping harps? (I’m not using time filter)**
 
 > We are working on ways to better navigate areas with numerous Harps. One way, which we failed to include in our app tour (on first load and always available on the settings page), is “Stacks.” When Harps are made in the exact same location, the preview panel becomes horizontally scrollable and slides between different messages.
-> 
+>
 > Filters are the main way to navigate lots of overlapping content. The time filter allows you to look back at what is being said in a certain place and the other filters help see the different people saying it. New filters will be added to help hear all voices, and to help users connect with the kind of ideas and things they want to connect with.
 
 **Do I really need to tap each node to view harps?**

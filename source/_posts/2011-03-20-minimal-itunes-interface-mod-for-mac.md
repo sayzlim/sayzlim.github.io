@@ -3,6 +3,9 @@ layout: post
 title: Minimal iTunes Interface Mod for Mac
 alias: post/3965972245/
 description: Sophisticated minimal mod for iTunes.
+tags:
+- itunes
+- prettify
 ---
 There is one app with interface that I love to hate. The precious app that I run all the time to play music known as iTunes is the app with most modification in term of interface. The icon doesn't match my taste and the user interface is too boring for daily use.
 

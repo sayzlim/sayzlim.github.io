@@ -3,6 +3,10 @@ layout: post
 title: "Organize 1Password Accounts With Vaults"
 date: 2014-01-11 22:54
 description: Manage 1Password with multiple vaults and keep different accounts and passwords in separate location.
+tags:
+- 1password
+- review
+- declutter
 ---
 
 One of the problems after using 1Password for several years is _all_ sensitive information are stored in there. Yes, from the Windows Live account I’ve never signed in, my brother’s Facebook recovered password that I’ve saved just in case he forgets again, and the router password I’ve configured for my sister. It’s no longer just about my accounts.

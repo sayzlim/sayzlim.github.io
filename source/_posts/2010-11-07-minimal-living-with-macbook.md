@@ -3,6 +3,8 @@ layout: post
 title: Minimal Living with MacBook
 alias: /post/1506476982/
 description: You can simplify your digital possesion by making full use of what you have, not by adding more to your desk.
+tags:
+- zen
 ---
 The only possession I use to manage my daily item is a MacBook. It can do everything I want from study, entertainment, and working. It is the only machine I need to keep everything organised.
 

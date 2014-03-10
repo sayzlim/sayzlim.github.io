@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Defining Apps and Utilities
+tags:
+- declutter
 ---
 It’s a habit of mine to make use of the default setting and make use of it. One of the default state in Snow Leopard and its predecessor is the existence of Utilities folder. I never put anything inside this folder because I haven’t figured out what it does.
 

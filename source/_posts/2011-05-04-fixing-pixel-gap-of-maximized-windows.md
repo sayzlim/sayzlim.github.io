@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Fixing Pixel Gap of Maximized Windows
-alias: /post/5183547740/
+tags:
+- prettify
 ---
 Talking about perfection, there is one thing about Snow Leopard — I’m not sure about other version — that keeps bothering me. With the dock hidden, I expect the maximized window will cover entire screen perfectly, which unfortunately doesn’t do its job well. It leaves a 3–4 pixel gaps at the bottom of the hidden dock.
 
@@ -19,4 +20,4 @@ Unlike other apps, BetterTouchTool can fill the whole screen if the dock is loca
 [4]: http://blog.boastr.net/ "Great Tools For Your Mac By Andreas Hegenberg ... - BetterTouchTool"
 [5]: https://twitter.com/boastr_net "Andreas Hegenberg (boastr_net) on Twitter"
 
-[^1]: I am considering to cover a walkthrough and review article on it in the near future. Let me know if you’re interested and wish to know about this amazing free app. 
+[^1]: I am considering to cover a walkthrough and review article on it in the near future. Let me know if you’re interested and wish to know about this amazing free app.

@@ -2,6 +2,8 @@
 layout: post
 title: Weather Neue
 external-url: http://www.weatherneue.com
+tags:
+- share
 ---
 ![Weather Neue](http://images.sayzlim.net/2012/07/weather_neue.jpg "Weather Neue")
 

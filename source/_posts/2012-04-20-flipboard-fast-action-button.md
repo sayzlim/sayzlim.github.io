@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Fast Action Button on Flipboard for iPhone
+tags:
+- flipboard
 ---
 I’m a fan of sending article to my favorite Read Later application, Instapaper. Sending articles from Flipboard to Instapaper usually requires at least 2 steps.
 

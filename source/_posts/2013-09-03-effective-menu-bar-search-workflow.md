@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Effective Menu Bar Search Workflow
+tags:
+- alfred
 ---
 I hate shortcuts. I used to love them. But, every time conflicting shortcuts exits, I smash my MacBook Air keyboards. No, I didn’t. I wish I could.
 

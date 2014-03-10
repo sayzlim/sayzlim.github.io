@@ -2,6 +2,9 @@
 layout: post
 title: Simple Multimedia Player for Mac
 description: There are many apps to play media on Mac. If you need a simple media player, perhaps MPlayerX is the one you’re looking for.
+tags:
+- mplayerx
+- review
 ---
 I like QuickTime Player, but I don’t like third-party plug-ins. Neither Flip4Mac or Perian is installed on my machine. I’d like to keep the system default as much as possible.
 

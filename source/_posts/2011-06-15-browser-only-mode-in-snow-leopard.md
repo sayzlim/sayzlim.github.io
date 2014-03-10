@@ -2,6 +2,8 @@
 layout: post
 title: Browser Only Mode in Snow Leopard
 description: Setup your own browser only mode without having to upgrade to Lion.
+tags:
+- mac
 ---
 It seems the upcoming Lion comes with many hidden gems. One of them is the option to run [Safari Browser Only Mode][1] which is very similar to the Chrome OS made by Google. No more worrying about privacy when you friends borrow your Mac.
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: No Amount of Apologies Can Correct Misinformed People
+tags:
+- rant
 ---
 As someone who check out[^1] news from major tech blog regularly, the ability to filter and verify the validity of news is important. Blogging is easier with the access of information and the help of technology. One can write a summary of news from the press release or a [thread in Reddit](http://www.cultofmac.com/184207/swedish-design-company-experiments-to-see-how-apple-rumors-spread-across-the-internet/ "Swedish Design Company Experiments To See How Apple Rumors ...") without confirming first.
 

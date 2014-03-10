@@ -2,6 +2,8 @@
 layout: post
 title: Best Adium Textured Based Theme
 description: Textured Adium theme that can make the chatting more delightful.
+tags:
+- adium
 ---
 Adium has always been my favorite IM client because of its support to many IM services and the ability to customize theme. I’ve shared [my personalized theme][4] using modifications crafted by several authors at DeviantArt and it remains one of the popular posts in this blog.
 

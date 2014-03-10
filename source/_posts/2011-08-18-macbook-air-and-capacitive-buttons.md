@@ -1,6 +1,8 @@
 ---
 layout: post
 title: MacBook Air and Capacitive Buttons
+tags:
+- rant
 ---
 > Capacitive buttons make for a worse experience in all cases, even if they make the phone look sleeker. The capacitive button cult must be stopped.[^1]
 

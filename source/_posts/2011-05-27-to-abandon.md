@@ -2,6 +2,8 @@
 layout: post
 title: To Abandon
 external-url: http://www.vipassana.com/resources/8fp5.php
+tags:
+- share
 ---
 For desire a remedy of general application is the meditation on impermanence, which knocks away the underlying prop of clinging, the implicit assumption that the objects clung to are stable and durable.
 

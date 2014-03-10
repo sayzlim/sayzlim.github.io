@@ -3,6 +3,8 @@ layout: post
 title: "Keep Writing"
 date: 2014-02-13 21:03
 description: You deserve to complete your sentence. The key is realizing that no one reads your first draft.
+tags:
+- write
 ---
 
 If you’re read my tutorial on [how to sync Writer Pro to Dropbox and iCloud](http://sayzlim.net/sync-writer-pro-icloud-dropbox/ "Sync Writer Pro Between iCloud and Dropbox - Sayz Lim"), you probably know that my writing flow are divided into four stages.  I can’t say the Writer Pro has helped me to become a better writer, however, it has helped to stay more focused by clearly defining the writing stage.

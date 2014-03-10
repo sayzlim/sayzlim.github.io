@@ -3,6 +3,9 @@ layout: post
 title: Three Extensions, One Browser, Killed Flash
 alias: [/post/4634996988/three-extensions-one-browser-killed-flash, /post/4634996988/]
 description: Learn how to disable Flash on Safari and keep your Mac temperature low with these three extensions.
+tags:
+- declutter
+- safari
 ---
 This post is intended for you who use Safari as your primary browser and have uninstalled Flash plugin since age ago. The reason why we kill Flash is simply the heat it brings while we are viewing Flash based content.
 

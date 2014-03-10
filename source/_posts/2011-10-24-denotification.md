@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Denotification
+tags:
+- declutter
 ---
 “Someone has sent you a message”, “Download is complete”, “Clara is typing…”, “Connection to FTP has failed”. Those messages are known as notifications. They are always there, whole time, notifying what is happening with your Mac if you have Growl installed.
 

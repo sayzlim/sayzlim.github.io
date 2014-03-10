@@ -3,6 +3,8 @@ layout: post
 title: "Stay Lucky With Alfred Fallback Searches"
 date: 2013-10-15 16:09
 description: There is no need to create many custom searches. With single custom search, you can search all the websites easily in Alfred.
+tags:
+- alfred
 ---
 Alfred’s [fallback searches][4920-002] is one of the most underutilized feature. The free version doesn’t allow users to set their own custom searches; Powerpack owners can configure it easily. This feature is especially useful for people who search regularly.
 

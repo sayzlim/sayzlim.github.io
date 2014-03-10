@@ -2,6 +2,8 @@
 layout: post
 title: Polished Traffic Lights for Snow Leopard
 description: A minimalist and beautiful titlebar controls for OS X Snow Leopard.
+tags:
+- prettify
 ---
 A number of people have asked for this mod, searched this site for this mod, googled for this mod. I’m talking about the traffic lights or titlebar controls you have seen in my screenshot lately. The particular polished yet minimal titlebar controls mod for Snow Leopard.[^1]
 

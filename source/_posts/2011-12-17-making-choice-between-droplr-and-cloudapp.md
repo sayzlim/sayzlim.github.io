@@ -2,6 +2,8 @@
 layout: post
 title: Making Choice Between Droplr and CloudApp
 description: How to use Droplr and CloudApp together without missing the benefits of both services.
+tags:
+- declutter
 ---
 [CloudApp][1] and [Droplr][2] are without doubt well known file sharing services. They separate themselves from many competitors in this industry by delivering a high standard of web interface, providing native apps that run seamlessly on Mac OS X.
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Slave’s Desire
+tags:
+- zen
 ---
 One doesn’t merely allow desire to take control of himself. Becoming aware of self, acknowledging the existence of ego, and continuously look into the origin of desire can allow one to see the impermanence and unsteadiness of desire.
 

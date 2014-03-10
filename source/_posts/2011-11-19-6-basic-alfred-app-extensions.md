@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 6 Basic Alfred App Extensions
+tags:
+- alfred
 ---
 The release of Alfred 0.9.9 has added a feature for users with experience in Apple Script, Shell Script, and Automator to extend Alfred capability beyond what it can do. If you’ve made a switch from Spotlight to Alfred, I hope this list adds another reason for you to get Power Pack upgrade. Even without Power Pack, you should also try Alfred.[^1]
 

@@ -2,6 +2,8 @@
 layout: post
 title: From Microsoft to Apple
 description: My first impression of the MacBook White released by Apple. Find out how I move from Microsoft to Apple.
+tags:
+- rant
 ---
 People who know me will find that I am Apple maniac. True indeed, I love most (if not all) of Apple products. But, I wasn't born like this. There is some short story before I come to get know Apple products.
 

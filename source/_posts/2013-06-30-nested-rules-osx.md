@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Why You Should Start Using OS X Nested Rules
+tags:
+- mac
 ---
 Rules is an old time feature in OS X. It can be found all across the Cocoa app — commonly in Finder, Mail, and iTunes. Setting up rules for your favorite apps is straightforward. Natural language takes away the fear of making mistakes during the setup. Once the rules are set, we have what we call as smart folders, smart playlists, and smart mailboxes.
 

@@ -4,6 +4,8 @@ title: "Simplenote for Mac"
 date: 2013-09-19 02:00
 external-url: http://simplenote.com/2013/09/18/a-new-simplenote/
 description: Simplenote for Mac is finally available for all the plain text user.
+tags:
+- share
 ---
 
 ![ [Simplenote][] ](http://images.sayzlim.net/2013/09/simplenote_featured.png "Simplenote")
