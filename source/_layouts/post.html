@@ -19,15 +19,6 @@ single: true
     <p>If you enjoyed this post, receive free updates by <a href="{{ site.subscribe_email }}">email</a> or <a href="{{ site.subscribe_rss }}">feed</a>.</p>
   </aside>
 
-  <nav>
-      {% if page.previous.url %}
-        <a class="older" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &#x2192;</a>
-      {% endif %}
-      {% if page.next.url %}
-        <a class="newer" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">&#x2190; {{page.next.title}}</a>
-      {% endif %}
-  </nav>
-
   {% if site.related_posts != empty %}
   <aside class="related">
     <h3>Related:</h3>
@@ -37,5 +28,14 @@ single: true
       {% endfor %}
     </ul>
   </aside>
+  {% else %}
+    <nav>
+      {% if page.previous.url %}
+        <a class="older" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &#x2192;</a>
+      {% endif %}
+      {% if page.next.url %}
+        <a class="newer" href="{{page.next.url}}" title="Next Post: {{page.next.title}}">&#x2190; {{page.next.title}}</a>
+      {% endif %}
+    </nav>
   {% endif %}
 </div>

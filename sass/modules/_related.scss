@@ -4,6 +4,24 @@
     list-style: none inside;
     li {
       border-left: solid .3em $base-color;
+      a {
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: .4em;
+        border: solid .1em adjust-lightness($teal, -5%);
+        border-left: none;
+        background: adjust-lightness($teal, 1%);
+        &:hover {
+          border: solid .1em $base-color;
+          border-left: none;
+          background: $base-color;
+          color: $bg-color;
+          text-shadow: none;
+          background: $base-color;
+        }
+      }
       &:nth-child(2) {
         border-left: solid .3em adjust-lightness($base-color, 10%);
         a:hover {
@@ -34,24 +52,6 @@
           background: adjust-lightness($base-color, 40%);
           border: solid .1em adjust-lightness($base-color, 40%);
           border-left: none;
-        }
-      }
-      a {
-        display: block;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        padding: .4em;
-        border: solid .1em adjust-lightness($teal, -5%);
-        border-left: none;
-        background: adjust-lightness($teal, 1%);
-        &:hover {
-          border: solid .1em $base-color;
-          border-left: none;
-          background: $base-color;
-          color: $bg-color;
-          text-shadow: none;
-          background: $base-color;
         }
       }
     }
