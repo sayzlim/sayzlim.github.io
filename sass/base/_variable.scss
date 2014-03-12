@@ -1,5 +1,5 @@
 // Color Palettes
-$tangerine: #cf490b;
+$citrus: #cf490b;
 $teal: #f7f7f7;
 $charcoal: #333;
 $gold: #bbaf75;
@@ -8,7 +8,7 @@ $blueberry: #7e3e69;
 // Base Variable
 $base-font: source-sans-pro, Avenir Next, Verdana, sans-serif;
 $monospace-font: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-$base-color: $tangerine;
+$base-color: $citrus;
 $bg-color: $teal;
 $text-color: $charcoal;
 $hover-color: adjust-lightness($base-color, 10%);

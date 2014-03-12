@@ -3,7 +3,7 @@
 }
 
 @media screen and (max-width: pem(1050)) {
-  .ads { display: none; }
+  .ads, img.typekit-badge { display: none !important; }
 }
 
 @media screen and (min-width: pem(569)) and (max-width: pem(1100)) {
