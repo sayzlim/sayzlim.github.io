@@ -56,6 +56,27 @@
       p { margin: 0; }
     }
 
+    .read-more {
+      text-align: center;
+      a {
+        font-size: .8em;
+        line-height: 1em;
+        padding: .8em 1.5em;
+        display: inline-block;
+      }
+
+      a {
+        $read-more-color: adjust-lightness($text-color, 40%);
+        border: solid .15em $read-more-color;
+        text-shadow: none;
+        color: $read-more-color;
+        border-radius: 18em;
+        &:hover {
+          border: solid .15em $hover-color;
+        }
+      }
+    }
+
     .footnotes {
       border-top: dotted 1px #c8c8c8;
       font-weight: normal;
