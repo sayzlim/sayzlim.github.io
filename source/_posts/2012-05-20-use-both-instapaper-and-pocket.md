@@ -8,6 +8,8 @@ tags:
 ---
 Among the services that clean away online clutter I know so far, Instapaper and Pocket come across to be the most used services. [Instapaper][1] is designed with the sole purpose for you to store, read later, and discard/archive. [Pocket][2], formerly Read It Later, comes out with a concept of save later for everything including articles, images, videos, and webpages.
 
+<!--more-->
+
 The sudden change of approach, backed up with well designed Pocket app across multiple platforms, manages to stir up the existing Instapaper users. I’m also troubled by it, rising the thought of switching from Instapaper to Pocket.
 
 When you’re indecisive, gather more information. That’s what I did. I signed up for Pocket, downloaded the app on both iPhone and iPad, and started to use it for several days. What I discovered is how similar the purpose of Pocket to bookmarking services like [Pinboard][3].

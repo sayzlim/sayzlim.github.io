@@ -12,6 +12,8 @@ Checking out Twitter on mobile is most likely done when you’re waiting for bus
 
 This is a whole different story when you’re checking out Twitter on your desktop. Most likely, you’re working. The timeline become a hindrance instead of entertainment.
 
+<!--more-->
+
 ## Wren for Mac
 
 Wren for Mac is an app crafted by Andrew Ramos and Kevin Smith with one purpose. It’s an app to help people working on Mac to focus, clearing all Twitter distraction.

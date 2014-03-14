@@ -9,6 +9,8 @@ tags:
 ---
 This post is intended for you who use Safari as your primary browser and have uninstalled Flash plugin since age ago. The reason why we kill Flash is simply the heat it brings while we are viewing Flash based content.
 
+<!--more-->
+
 I have mentioned in my previous post about [removing Flash plugin][1] and let Safari runs Flashless, using Chrome as alternative browser if you need to view contents requiring Flash.
 
 It&#8217;s not practical if you need to run two browsers at once and have to switch between in order to view embedded video and audio. Most of the online experience revolve around image, audio, and video. Unless you are a heavy gamer, the three extensions below should be able to replace the role of Flash on Safari.

@@ -9,6 +9,8 @@ Stop questioning “Is this computer fast enough?”.
 
 Does Windows Experience Index matter? Is getting a powerful machine the number one priority? Do you think achieving maximum score in Windows Experience Index improve your computing experience?
 
+<!--more-->
+
 If we slow down and try to understand our needs, it’s not how fast our machine can handle the tasks we’re doing. What we need is to get things done, so what we need is a computer that can perform the commands we give well.
 
 And what is the layer bridging us to the machine? It’s the operating system. A well made operating system can increase your productivity dramatically. Each interaction and experience helps you getting things done. It doesn’t confuse or annoy you with unnecessary message.

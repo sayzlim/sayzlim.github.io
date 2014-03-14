@@ -9,6 +9,8 @@ One of my friends lost his MacBook Pro recently. There was no way to track his s
 
 If you own a MacBook or similar devices, there are several ways to keep your Mac safe. I hope these simple tips can increase the chance to get back your stolen devices or even preventing it from getting stolen.
 
+<!--more-->
+
 - **Install tracking** app so you can track your stolen device. The app will send you several information like location, screenshot, and photo periodically where you can use them to track the thief. Personally, I use [Prey][1431-001] for this.
 - **Enable guest account** because the tracking app requires internet connection. Letting the thief login using guest account can let you fetch the information quickly without risking the modification of your existing files. You can also enable parental control for the guest account to prevent the thief accessing certain apps.
 - **Setup firmware password** to ensure the thief can’t modify your installed OS by booting using another OS installation disc. Setting up firmware password can be done by booting using your OS installation disc and choose setup firmware password from the utility in menu bar. Apple provides documentation on how to [enable firmware protection][1431-002].

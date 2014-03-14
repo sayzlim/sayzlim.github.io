@@ -7,6 +7,8 @@ tags:
 ---
 I’ve never customized the folder icons on Mac. There is a reason behind this decision. Most of the icon sets take away the natural beauty of OS X. They usually stand out by themselves, ignoring other UI elements, and turn the whole OS X into a bizarre state.
 
+<!--more-->
+
 [De Anza][1] is the latest folder icons sets designed by Louie Mantia, a former Apple and Square designer. Consisting of 2 color schemes with many sharp details, it blends well with Finder and OS X Mountain Lion. I can say it’s the most beautiful[^1] folder icon sets I’ve seen so far.
 
 If you’ve never customized your OS X before, I’ll give a brief tutorial on this. There are many tools you can use to get this done, but I’ll share the one I use to change the system icons. If you’ve never heard or tried [CandyBar][3] before, then go ahead and download a copy of it first.

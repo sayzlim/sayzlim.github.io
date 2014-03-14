@@ -9,6 +9,8 @@ I followed [Aaron Swartz][7653-001] on Twitter last year after seeing several me
 [7653-001]: https://twitter.com/aaronsw "Aaron Swartz (aaronsw) on Twitter"
 [7653-002]: http://daringfireball.net/projects/markdown/ "Daring Fireball: Markdown"
 
+<!--more-->
+
 But, it’s not that he was a genius that his family, his friends, and his followers to grieve over his death. It’s his belief and preserverance to put everything in action. There are many geniuses in this world, but there aren’t many who hold onto their beliefs like Aaron did. Losing him now is equal to losing the future he believes.
 
 Before his death[^1], Aaron spent the past few years fighting against corruption and dedicated his time to popularize information freedom. He was charged with stealing protected information in one of his discovered attempts. No one in his right mind would take that kind of risk when he could build a popular service and spent his rest of days peacefully. Yet, he kept fighting.

@@ -11,6 +11,8 @@ tags:
 
 [img]: http://images.sayzlim.net/2014/02/readkit_24.jpg "ReadKit 2.4 for Mac"
 
+<!--more-->
+
 Let me start this post by quoting my [review of ReadKit](http://sayzlim.net/love-readkit "Now You&#39;re Going to Love ReadKit - Sayz Lim") six months ago:
 
 > ReadKit might not be the best reader app for Mac out there. But judging from the number of services they’ve added and improvements they’ve made this past few months make me realize that they do care what they build.

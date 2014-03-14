@@ -11,6 +11,8 @@ tags:
 
 I gave up looking for the best app to display lyrics for iTunes.
 
+<!--more-->
+
 Most of the commercial apps I’ve tried are either expensive or complicated. None of them are practical. Searching for lyrics should be simple — the optimal scenario would be displaying the correct lyrics without me exerting efforts.
 
 I was wrong. There is one app that can save us from the chores of searching and saving. The best of all, it’s free.

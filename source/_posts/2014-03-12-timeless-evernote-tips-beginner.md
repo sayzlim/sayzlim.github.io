@@ -3,11 +3,14 @@ layout: post
 title: "Timeless Evernote Tips for Beginner"
 date: 2014-03-12 16:24
 description: Evernote tips that actually works for beginner to create a future-proof notes storage.
+excerpt: Evernote tips that actually works for beginner to create a future-proof notes storage.
 tags:
 - evernote
 ---
 
 What stops you from using Evernote? I didn’t use Evernote until recently. In the past, I sent all my saved articles in Instapaper to Pinboard. That was the only way for me to keep the records of what I’ve read. What about the other things?
+
+<!--more-->
 
 At that moment, I realized the importance of keeping records.
 

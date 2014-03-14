@@ -6,6 +6,8 @@ tags:
 ---
 It’s common for us to encounter many useful links while surfing the Internet. The most practical way to store those links is by using bookmarks feature provided in each browser. Keeping your bookmarks tied with a browser is not recommended though. You want to make sure the bookmarks can used interchangeably between browsers easily. That’s why services such as [Delicious](http://delicious.com/ "Delicious") or [Pinboard](http://pinboard.in/ "Pinboard: social bookmarking for introverts") play an important role to keep your bookmarks safe.
 
+<!--more-->
+
 Searching for bookmarks should be easy. I use [Delibar](http://www.delibarapp.com/ "Delibar, Delicious Mac client") intensively to store bookmarks and keep track of the bookmarks saved by the people I follow on Pinboard. The only drawback of Delibar is the price. If you’re a casual user looking for free alternative with similar quality to Delibar, Shiori might be your answer.
 
 [ ![Shiori: Pinboard & Delicious OS X Client][img] ](http://images.sayzlim.net/2013/08/shiori_intro.jpg "Shiori: Pinboard & Delicious OS X Client")

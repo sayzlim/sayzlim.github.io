@@ -6,6 +6,8 @@ tags:
 ---
 Rules is an old time feature in OS X. It can be found all across the Cocoa app — commonly in Finder, Mail, and iTunes. Setting up rules for your favorite apps is straightforward. Natural language takes away the fear of making mistakes during the setup. Once the rules are set, we have what we call as smart folders, smart playlists, and smart mailboxes.
 
+<!--more-->
+
 You probably have never heard about rules before. Why should you learn about it? What are the advantages of rules? Obviously, I’ve seen some people who don’t organize their folders and leave smart folders filtering files for them. But, when you use productivity app such as Hazel, then rules is one of the important tools you need to know.
 
 Sometimes we only want to see all the files that have been created today. Let’s try this with smart folders in Finder. We’ll create a smart folder[^1] which only display all files created today.

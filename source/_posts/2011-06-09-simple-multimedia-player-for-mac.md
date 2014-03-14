@@ -8,6 +8,8 @@ tags:
 ---
 I like QuickTime Player, but I don’t like third-party plug-ins. Neither Flip4Mac or Perian is installed on my machine. I’d like to keep the system default as much as possible.
 
+<!--more-->
+
 I prefer to have a standalone app that can play all the file types rather than having several plugins installed. This is the simplest approach because when you decide not to use the app, you can simply remove the app.
 
 Several open source multimedia player can handle most of the file types without problem. VLC is one of them. I still love to use VLC on my Windows machine, but for Mac, I use MPlayerX.

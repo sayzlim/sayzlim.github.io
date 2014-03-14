@@ -8,6 +8,8 @@ tags:
 ---
 Alfred’s [fallback searches][4920-002] is one of the most underutilized feature. The free version doesn’t allow users to set their own custom searches; Powerpack owners can configure it easily. This feature is especially useful for people who search regularly.
 
+<!--more-->
+
 Although you can have several fallback searches in Alfred, I only need two fallback searches. The first fallback search is “**I’m Feeling Lucky**”.[^1]
 
 [ ![I’m Feeling Lucky with Alfred][img2] ](http://images.sayzlim.net/2013/10/alfred_lucky_pinboard.jpg "I’m Feeling Lucky with Alfred")

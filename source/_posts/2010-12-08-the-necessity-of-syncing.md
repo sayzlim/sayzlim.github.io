@@ -9,6 +9,8 @@ Syncing is one of the important feature in technology devices. Now you can sync 
 
 Cool as it is, the question arise after the long time of using these devices. Do you really need to sync everything? Is syncing a must for all your devices?
 
+<!--more-->
+
 Syncing is necessary only if you need it.
 
 You don’t need all your iTunes library synced to your iPhone. You also don’t need your MacBook synced to your iMac. You need to know what you want to do with your devices. Like what I want to do with [my MacBook][1]. And what I need with [my mobile phone][2].

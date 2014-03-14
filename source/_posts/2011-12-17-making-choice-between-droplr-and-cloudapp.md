@@ -7,6 +7,8 @@ tags:
 ---
 [CloudApp][1] and [Droplr][2] are without doubt well known file sharing services. They separate themselves from many competitors in this industry by delivering a high standard of web interface, providing native apps that run seamlessly on Mac OS X.
 
+<!--more-->
+
 For those of you who may not be familiar with how they work, CloudApp and Droplr allow you to upload your files to their server by either:
 
 - dragging files into Menu bar icon;

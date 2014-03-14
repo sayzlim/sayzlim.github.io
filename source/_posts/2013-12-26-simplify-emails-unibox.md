@@ -10,6 +10,8 @@ tags:
 
 Simplify. Don’t simplify for the sake of being minimalist. Simplify because your time is a finite resource.
 
+<!--more-->
+
 Simplify your emails routine.  Reject labels or folders; that’s the main culprit that keeps you occupied. Write clearly; less questions equals to less emails. Unsubscribe newsletter that doesn’t bring abundance in your life. The concept is to reduce noises and choices. Do it until you’re left with reply, archive, or delete.
 
 You can write with a pencil, a fountain pen, or a chalk. The choice is yours, but the way to simplify the process is similar.  I practice them with my favorite mail client: Unibox.

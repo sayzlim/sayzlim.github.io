@@ -7,6 +7,8 @@ tags:
 ---
 The best feature for any new mac user is probably Spotlight. It provides a simplify experience to locate and run files and applications. It can be fast or slow depending on how we configure it. A decent and “just enough” configuration can lead to a better experience with Spotlight.
 
+<!--more-->
+
 Let’s start by limiting the search results. There are many items that the Spotlight will show you if you never set a limit to the search result. By default, it displays all categories of items in the search result. It can cause the overload of search result which cause annoyance. Try to search using Spotlight and you can see a “Spotlight Preferences” at the bottom of the result.
 
 There are 14 categories that the Spotlight display. As for me, I usually use Spotlight to run application, searching for presentation slide, and look for folder. As you can see the picture below, this is the configuration.

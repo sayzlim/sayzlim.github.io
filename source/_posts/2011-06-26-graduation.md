@@ -6,6 +6,8 @@ tags:
 ---
 Graduating from one of the self-claimed renowned university in Indonesia marks the end of one chapter in my life. I was like everyone else, beginning my journey to hunt the job I desire, or maybe a job with high income. I had a small plan, a plan to work as an iOS programmer, or maybe not.
 
+<!--more-->
+
 ## April’11 - Doubt
 
 But do I really want to work as a programmer? I couldn’t find the answer if I didn’t try to be one. So, I submitted my resume to several companies and started to read books about iOS development and Objective-C.

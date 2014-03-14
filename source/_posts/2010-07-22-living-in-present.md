@@ -11,6 +11,8 @@ Read again the quote above.
 
 Done? Great, this is the question. Are you enjoying your life?
 
+<!--more-->
+
 "No, I’m not". That’s my answer, we always live in an irregular condition. Sometimes we feel happy, sometimes we feel down. And that’s normal for regular people like us.
 
 We are worrying future so much that we never experience what is happening in present. Look at yourself, you are always chasing the goal beyond your reach and neglect it once your reach it. As the result, you never enjoy your achievement.

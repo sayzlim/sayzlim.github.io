@@ -8,6 +8,8 @@ Sites I love are Twitter and Tumblr. Sites I hate is Facebook. So from the hates
 
 Illusionary requires your username, email, password to sign up. That’s all we need. You can delete your account completely with a simple email verification.
 
+<!--more-->
+
 What does this app do? Let’s pretend you’re having a great meal in one of the restaurant near your house, and you want to your friends to visit this place when they’re around that place. What would you do? Leave a note or signboard so they can see them when they’re nearby.
 
 Wait, it seems there is a similar service somewhere. I forgot the name, but yes, it exists.

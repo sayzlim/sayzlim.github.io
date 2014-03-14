@@ -7,6 +7,8 @@ tags:
 ---
 When Apple first announced MacBook Air in 2008, I know it’ll be my only Mac. I didn’t force myself to get one immediately. There were many limitations with the first-generation MacBook Air. It needed time become mature enough to act as a primary machine. It happened sooner than I thought. Apple replaced MacBook’s role with MacBook Air in 2010. Since then, MacBook Air is getting better.
 
+<!--more-->
+
 The right moment to get a MacBook Air was last year. The next moment is now. The latest MacBook Air is going to be the best non-retina MacBook Air you can get. Apple is aiming get all the their products retina-ready. We can expect Apple to prepare a retina-ready MacBook Air in less than 3 years with same price. It’s going to be one of the marvelous MacBook you can get when it happens.
 
 I’ve always wished for a lightweight, fast, and simple MacBook. Simple is personal. By definition of simple, it should only contains what I need and eliminate all the unnecessary technology. I want a Mac where I can turn it on and start using without having to worry the hardware compatibility. I want a Mac where simplicity comes first and less holes to plug in stuffs.

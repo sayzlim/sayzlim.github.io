@@ -7,6 +7,8 @@ tags:
 ---
 You can’t deny the fact that some folks are having this question. Should I enable translucent menu bar? This is not a rocket science question, so it can be easily answered once you can identify your needs and personal taste.
 
+<!--more-->
+
 First and foremost, I should tell you that I disable translucent menu bar.[^1] There are several reasons why I take this approach, but the most important reason is to balance the unity between the menu bar and every apps on my Mac.
 
 [ ![Solid Menu Bar][img1] ](http://images.sayzlim.net/2011/04/menubar_soild.jpg "Solid Menu Bar")

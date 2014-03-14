@@ -7,6 +7,8 @@ tags:
 ---
 Minimalist lifestyle is closely related to how your mind perceive it. There is no rules in defining the lifestyle you want. Not to mention the how to lead a minimalist lifestyle. You can’t let people decide what action you ought to take. So take your time to practice and continue what you find is helpful to you.
 
+<!--more-->
+
 The origination of everything in this world is coming from your mind. The first step is to define the lifestyle you want. A lifestyle that you can take control now without having to think too much about future.
 
 Minimalist lifestyle is the combination of mindfulness and contentment. Through mindfulness, we pay attention to what we think, speak and behave. Through contentment, we understand what we really need and control our lust over things.

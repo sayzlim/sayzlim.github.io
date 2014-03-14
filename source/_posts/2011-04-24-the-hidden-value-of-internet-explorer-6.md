@@ -7,6 +7,8 @@ tags:
 ---
 Internet Explorer 6 is a nightmare for web developers and designers. Internet Explorer itself is not the best browser for web savvy user. It’s slow, bloated with useless features, and has a unfriendly UI — if not horrid.
 
+<!--more-->
+
 Every old time web user know that IE 6 doesn’t support multiple tabs. You have to open new window for each link you click and eventually creating clutter on your desktop. You can’t possibly having 20 tabs opened at the same time during the IE 6 days - even with powerful desktop during that time.
 
 The UI is filled with useless toolbars. It took up a large amount of your desktop screen. You had hard time figuring how to configure it properly. Not until you discover a better browser.

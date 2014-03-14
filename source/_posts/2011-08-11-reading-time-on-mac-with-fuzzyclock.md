@@ -13,6 +13,8 @@ I love words. I love beautiful typography. FuzzyClock displays the time with wor
 
 It doesn't have beautiful icon. So get a replacement for it. Install it, and you might fall in love with it.
 
+<!--more-->
+
 And, if you use [Menubar icons v2][1] by ~iAndrew, I have a few suggestions for you.
 
 Download [CodeBold][2] and  use the setting below.

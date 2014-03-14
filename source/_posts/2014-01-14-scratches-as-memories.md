@@ -11,6 +11,8 @@ Admit it. You’re annoyed when you see a crack on your gadgets. If you deny it,
 
 As the result, we resolve to all kinds of protection for our gadgets. We buy cases decorated with colorful pattern, funny cartoon, and creative design.  We apply screen protector, anti-glare, anti-scratch, and anti-fingerprint. Protective cases are great addition to create variety in the uniformity of our gadgets. But protection shouldn’t sacrifice the beauty of original design.
 
+<!--more-->
+
 Try to pull out the devices in your possession — I assume you have iPhone or iPad in your hands. Remove the protective bulky case that hides the line, shape, and color of the original design. Feel the texture of the material, the reduced size and weight, and the  clarity of the screen. What you see is the thousand of decisions designers have made to craft this perfectly tuned device.
 
 Like the rest of you, I also want to protect this device from the cracks and scratches.  It’s risky to use iPhone without protective case. But life is also full of risks.

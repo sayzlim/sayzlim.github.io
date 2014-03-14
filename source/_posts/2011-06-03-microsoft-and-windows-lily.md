@@ -7,6 +7,8 @@ tags:
 ---
 Windows has become one of the my favorite company sitting alongside with Apple. They still build Windows and sell their office suites, but there are many things they have changed.
 
+<!--more-->
+
 ## Windows Categorization
 
 They don’t have Windows Home, Windows Home Premium, and those “WTF” type of Windows anymore. Instead, they build a new lineup of Windows by assigning flower name to them. Most notable for their Windows Cherry Blossom, Windows Lily,and Windows Rose. I don’t know if it’s related to the fact that Leopard and Tiger don’t eat flowers. But it sounds good.

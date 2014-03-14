@@ -11,6 +11,8 @@ As you might don’t know, most of the developers tend to create a highly beauti
 
 I’m going to share one plugin and one extension which are highly recommended if you’re Google Reader user.
 
+<!--more-->
+
 ## Beautify Your Search with Glims Safari 5 Plugin
 
 If there is one plugin that I must not miss when I install Safari 5, it is this marvelous plugin called [Glims][1]. I searched for many plugins once I switched to Safari and none of the plugin can offer a stable and neatly integrated into Safari 5.

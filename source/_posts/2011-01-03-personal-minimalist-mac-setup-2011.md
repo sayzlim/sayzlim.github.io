@@ -9,6 +9,8 @@ Embracing minimalism is the path to stay focused. Embedding minimalism approach 
 
 I have made several change for the system preferences. Some of them to disable the services I never use.
 
+<!--more-->
+
 The first thing I change is the Appearance color and highlight color to Graphite. And I change all the number of recent items to “None”. The Desktop and Screen Saver remain the same, except that I disable the Translucent menu bar.
 
 The dock position is now on the left bottom side. I used to have them at the bottom, but now I have them pinned on the left side. You can also have this effect by typing the line below into terminal:

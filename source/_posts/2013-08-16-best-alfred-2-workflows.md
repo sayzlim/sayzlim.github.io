@@ -9,6 +9,8 @@ Without [Alfred][3] installed, I feel crippled. I use Alfred for a least 320 tim
 
 [3]: http://www.alfredapp.com/ "Alfred App - Productivity App for Mac OS X"
 
+<!--more-->
+
 Tons of features developed by the community is ready for you to plug into Alfred. I see these workflows as separate upgrade for my Alfred. Alfred is my weapon. Maximizing the capability of Alfred requires constant exploration until you find workflows that fit your style. Since the beginning of Alfred 2, I’ve gathered some workflows that prove to be useful no matter style you are. Here are the best Alfred 2 workflows you can install immediately.
 
 ## [1. Top Processes](https://github.com/zhaocai/alfred2-top-workflow "zhaocai/alfred2-top-workflow · GitHub")

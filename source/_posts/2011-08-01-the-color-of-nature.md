@@ -11,6 +11,8 @@ Commuting is boring. Sitting alone in the bus without your friends is boring. Wa
 
 "Gadgets will turn all this boring commuting interesting."
 
+<!--more-->
+
 I don’t own smartphone, my phone can’t even access internet. Twitter is out of options. I don’t own portable console. Gaming is out of options.
 
 I stopped a while looking at the opposite windows. Watching the trees and leaves, the clouds and the skies.

@@ -6,6 +6,8 @@ tags:
 ---
 Talking about perfection, there is one thing about Snow Leopard — I’m not sure about other version — that keeps bothering me. With the dock hidden, I expect the maximized window will cover entire screen perfectly, which unfortunately doesn’t do its job well. It leaves a 3–4 pixel gaps at the bottom of the hidden dock.
 
+<!--more-->
+
 After some research and the solution discovery process, it turns out that the bottom hidden dock reserves 3 pixels — as the matter of fact I don’t know what it does.
 
 Not giving up, I move the dock to the left screen edge and try to maximize the window again (I used Cinch to maximize the window), and the gap is still there.

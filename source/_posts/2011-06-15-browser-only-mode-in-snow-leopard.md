@@ -7,6 +7,8 @@ tags:
 ---
 It seems the upcoming Lion comes with many hidden gems. One of them is the option to run [Safari Browser Only Mode][1] which is very similar to the Chrome OS made by Google. No more worrying about privacy when you friends borrow your Mac.
 
+<!--more-->
+
 Lion will arrive this July, meaning that you won’t be able to get this feature unless you upgrade to Lion. Some of you might upgrade, some of you might wait. There is [minimum requirements][2] for this upgrade, so you need to confirm your Mac specifications.
 
 Now, let’s talk about Snow Leopard. Soon, it’ll be history, or maybe not. Snow Leopard is awesome in its own term. Easy to use, carrying on the legacy from its previous ancestor. Looking at the [Mufasa clouds](http://www.google.com/search?q=mufasa+cloud), iCloud and Lion, reminds me of one of the scene in Lion King. Well, that’s unrelated. But we can have this Safari Mode in Snow Leopard easily. The screenshot below shows what you get.

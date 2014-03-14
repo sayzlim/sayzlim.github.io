@@ -12,6 +12,8 @@ There is no perfect setup. Not mine, not yours. We organize folders our own ways
 
 Even Mac experts [organize their mountain of files differently](http://www.macworld.com/article/2079188/how-mac-experts-organize-their-files.html "How Mac experts organize their files - Macworld").  You pick a few lessons from them and come up with your own setup. My setup is suitable for people who want to synchronize their files across devices while maintaining the number of folders small.
 
+<!--more-->
+
 If you’re like me, carry on reading this post.
 
 ## Store almost everything in Dropbox

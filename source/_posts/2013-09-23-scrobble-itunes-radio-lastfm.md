@@ -9,6 +9,8 @@ tags:
 
 Everyone loves to share what they’re watching, reading, or listening. Twitter have tweeting, Last.fm have scroblling, Facebook have stalking[^1]. This is just one of the way to give other people a chance to say “me too”, and thus starting a conversation.
 
+<!--more-->
+
 [ ![iTunes Mini Player][img1] ](http://images.sayzlim.net/2013/09/itunes_radio.jpg "iTunes Mini Player")
 
 [img1]: http://images.sayzlim.net/2013/09/itunes_radio.jpg "iTunes Mini Player"

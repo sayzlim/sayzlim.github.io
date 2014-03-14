@@ -9,6 +9,8 @@ tags:
 
 Messages for Mac is extremely useful when you need to continue conversation from iPhone and iPad. There is no problem when you receive message from single person.  But when you’re conversing with several people at once, telling the senders apart requires more efforts.
 
+<!--more-->
+
 By default, sender’s background color is set to **Automatic**. This setup will occasionally cause senders to have the same background color. The only helpful clue left to help your tell the senders apart is the contact photo. But if the senders are not in your contacts, you’ll need to read the name to figure out who is the sender.
 
 Won’t it be better if each sender has different message background color?

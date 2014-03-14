@@ -9,6 +9,8 @@ Among many configurations I’ve made, under the hood tweaks are rarely document
 
 [3]: http://sayzlim.net/clean-your-menu-bar-sweeten-download-stack/
 
+<!--more-->
+
 It’s a perception of speed that shapes up your experience from using a Mac. OS X has a lot of subtle animations in order to guide the users. Some animations are too slow. In order to achieve what I call as optimized performance, you need to be able to distinguish the difference between useful and useless animations and adjust it accordingly.
 
 ### Disable Window Animation

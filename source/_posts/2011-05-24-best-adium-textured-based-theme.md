@@ -13,6 +13,8 @@ Adium has always been my favorite IM client because of its support to many IM se
 
 I’ve been browsing for Adium theme recently and discover some beautiful themes. This is one of the best textured based Adium theme I’ve seen so far. In this post, I’m going to share all the mods I’ve applied for this theme.
 
+<!--more-->
+
 ## Birdie Dock Icon
 
 I’ve never seen any Adium dock icon that is beautiful while still maintaining the original Adium mascot. [Birdie][5] is the dock icon crafted by [Milos Mirkovic][6] featuring a cute little green bird. The reason why I love this icon is the cute animation and how it resembles the Adium original dock icon. That is also the reason why I don’t like the idea of using iChat icon as the replacement for Adium icon.[^1]

@@ -7,6 +7,8 @@ tags:
 
 I’ve never expected writing will become part of my life. I started writing when I had internet access in 2007. That was the time when I didn’t even know that “I” should be capitalized.
 
+<!--more-->
+
 I’ve made numerous amount of mistakes. But, no one read my writing that time. No pressure, so I keep writing. Writing makes me think and I enjoy arranging my thought into a piece of writing.
 
 The thought of making living through writing has never occured before. I didn’t have any plans after [graduation](http://sayzlim.net/graduation/ "Graduation - Sayz Lim"). The only plan was to accept any job available that doesn’t require long commuting while continue writing and learning UI/UX design.

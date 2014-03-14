@@ -7,6 +7,8 @@ tags:
 ---
 I’ve just cleaned all unused files from desktop. I turn on Rdio as one of the Bowlet[^1] gradually appearing from the corner of the screen. It all thanks to Bowtie.
 
+<!--more-->
+
 [Bowtie][2] is one of the most popular music controller you can find for OS X. It supports iTunes, Sonora, Spotify, and Rdio. It allows you assign shortcuts to control these music players from a single app. I’ve also shared some of [my favorites Bowtie themes in 2011][1].
 
 [1]: http://sayzlim.net/3-bowtie-themes-to-beautify-your-desktop/ "3 Bowtie Themes to Beautify Your Desktop | Sayz Lim"

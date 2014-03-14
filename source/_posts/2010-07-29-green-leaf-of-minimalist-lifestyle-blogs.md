@@ -13,6 +13,8 @@ Most of this site visitors are the people who are looking for the blog about min
 
 Therefore, I’ll mention some of the blog I read frequently which is about lifestyle and human thinking. I have some tips and suggestions to ensure that you will not be the victim of information overload.
 
+<!--more-->
+
 ## Less Than Three
 
 I used to read many blogs. As the result, I felt overwhelmed by those information. So I decided to strap down the blogs I read from 10 to 3. And the result is refreshing. I can concentrate better and understand the purpose of each posted articles.

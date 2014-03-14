@@ -8,6 +8,8 @@ As someone who has experienced the life without internet connection, I find the 
 
 Companion is no longer the factor within consideration. In fact, most people prefer to spend their time watching people creating noises.
 
+<!--more-->
+
 Coming from a small town where commuting took less than 15 minutes from one place to another. I could visit several places in one day. Despite the lack of entertainments, my friends and I could create our own fun and laugh every day. You can barely experiencing boredom.
 
 We had this basketball court in one of the corner in town. And this basketball court, a place where teenagers gathered each afternoon was the place full of memories and experiences. Many people met their friends, their love, and their enemies there.

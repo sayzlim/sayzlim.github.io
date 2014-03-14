@@ -8,6 +8,8 @@ tags:
 
 I’ve been reading [Butterick’s Practical Typography][1] this past week. It’s a book detailing how typography can be applied to make our writing every day more useful for our intended audience.
 
+<!--more-->
+
 I’m still at the beginning part of the book, but there is one important lesson I’ve learned from one of the section in the book. It answered one of the annoyance I keep encounter with responsive design, especially on this blog, is [typographic orphan][2].
 
 Borrowing the definition from Wikipedia:

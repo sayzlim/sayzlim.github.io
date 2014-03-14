@@ -11,6 +11,8 @@ I think not many people know Dropbox. Dropbox is a multi-tools which can be used
 
 Few days ago, I encountered a small problem using Dropbox. The usual contextual link when I right-click the folder disappeared. It doesn’t bother since I don’t share my files to others. But problem is problem, if there is something wrong with my laptop, then I’ll solve it.
 
+<!--more-->
+
 [ ![Dropbox Contextual Links][img1] ](http://images.sayzlim.net/2010/08/dropbox_secondary.jpg "Dropbox Contextual Links")
 
 [img1]: http://images.sayzlim.net/2010/08/dropbox_secondary.jpg "Dropbox Contextual Links"

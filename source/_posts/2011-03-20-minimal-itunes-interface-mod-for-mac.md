@@ -11,6 +11,8 @@ There is one app with interface that I love to hate. The precious app that I run
 
 So I search for modification for the user interface and find this one particular sophisticated mod.
 
+<!--more-->
+
 [ ![Minimal iTunes List][img1] ](http://images.sayzlim.net/2011/03/itunes_list.jpg "Minimal iTunes List")
 
 [img1]: http://images.sayzlim.net/2011/03/itunes_list.jpg "Minimal iTunes List"

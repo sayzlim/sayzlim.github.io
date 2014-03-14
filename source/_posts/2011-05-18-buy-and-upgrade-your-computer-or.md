@@ -8,6 +8,8 @@ According to [Moore’s law](http://en.wikipedia.org/wiki/Moore "Moore - Wikiped
 
 But, is it necessary to upgrade your system every two years?
 
+<!--more-->
+
 If we measure the capability of the computers we use in this age, most computers can handle our daily computing pretty fast. Do you think you’ll need an i5 or i7 processors chip to watch YouTube videos, do your school projects, or play Farmville? How many times have you heard someone, if not yourself, complaining how slow their computers are?
 
 The computing process consists of the interaction and combination of software, hardware, and human. Achieving the best result requires these three things to perform at their best. However, most people only pay attention to two of them which are software and hardware.

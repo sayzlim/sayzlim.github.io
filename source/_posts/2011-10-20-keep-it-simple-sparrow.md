@@ -8,6 +8,8 @@ tags:
 ---
 Unless you’re a new to Mac, you’ve probably heard about Sparrow for Mac. This simple mail client has grown from a little app, supporting only Gmail, into a complete mail client while maintaining the nature of being “simple”.
 
+<!--more-->
+
 Sparrow for Mac is a versatile mail client. It can be used in many ways, as a small widget, or as a complete mail client for serious tasks.
 
 If you’re like me, someone with limited screen space. This setup might lessen the screen space required for email works.

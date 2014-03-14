@@ -12,6 +12,8 @@ tags:
 
 Of course, that’s not all.
 
+<!--more-->
+
 Unless you use your Mac without looking at the screen. The feedback you expect is not from the physical touch on the keyboard buttons. Instead, you expect the feedbacks from the screen.
 
 > The result was a design that required me to stop, take the iPod out of my pocket, look at the screen, carefully press the button I wanted, then verify that it worked onscreen, since there was no physical click to provide feedback.

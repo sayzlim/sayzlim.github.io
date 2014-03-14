@@ -7,6 +7,8 @@ tags:
 ---
 You want to spend more time listening to your music, not managing your library. Applying these seven tips will help you keep the iTunes library organized all the time.
 
+<!--more-->
+
 ### 1. Delete, Delete, Delete
 Delete all the albums you don't listen for past a year. Delete all the albums that you don't like. Delete all the albums that is not complete. Or you can move them to somewhere else. I never store music for more than 10 GB.
 

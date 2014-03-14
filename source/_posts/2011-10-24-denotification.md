@@ -6,6 +6,8 @@ tags:
 ---
 “Someone has sent you a message”, “Download is complete”, “Clara is typing…”, “Connection to FTP has failed”. Those messages are known as notifications. They are always there, whole time, notifying what is happening with your Mac if you have Growl installed.
 
+<!--more-->
+
 Most applications, by default, enable the notification. And by having all the notifications together, we end up with a pile of useless notifications.
 
 Problem is, it’s difficult — if not troublesome — to sort out notifications and filter out the notifications that matter. Most people don’t feel like to manually select the notifications they want to receive. (Some people don’t even know which notifications matter to them.)

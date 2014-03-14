@@ -10,6 +10,8 @@ tags:
 
 TextExpander has saved me a lot of time. Rather than copy pasting, or arranging the rich text format, I can turn them into snippets. You can assign variable and input field for each snippet to make it more useful.
 
+<!--more-->
+
 This post won’t address what TextExpander can do nor showing you which snippets to use. You can learn what it does by visiting [official TextExpander’s site][3]. For snippets recommendations, [David Sparks][4] and [Brett Terpstra][5] have shared their snippets which you can use as references.
 
 [3]: http://www.smilesoftware.com/help/TextExpander/index.html "TextExpander Help: Index"

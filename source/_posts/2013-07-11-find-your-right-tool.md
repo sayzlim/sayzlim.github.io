@@ -9,6 +9,8 @@ tags:
 
 “Mind your own business! My tools work just fine” is the expression, not exactly a reply, I get when I’m trying too hard while recommending apps to people. Hard-selling is hard, but I can’t get hold of myself from pointing out how they can save more time by doing less.
 
+<!--more-->
+
 I know how it feels to have a right tool for a task. I want others to feel the same. I’ve switched from HTML to Markdown — that was the best decision made ever. I’ve switched from [rich text to plain text][6817-003]. I’ve switched from [Flash to Flashless][6817-002]. I’ve [stopped using iPhoto][6817-001]. I’ve also trashed away many apps without slight hesitation.
 
 To abandon a tool — languages, apps, and services — that you’ve used for many years is difficult. It’s not only about how much money is spent, but also how many hours are used to master the tool. This is the main one reason why most people still use Microsoft Words to accomplish tasks that can be done easier and faster in Pages, or perhaps TextEdit.

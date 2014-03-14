@@ -6,6 +6,8 @@ tags:
 ---
 Mac OS X has entered another major change. The first major change happened few years ago when Steve Jobs brought us Leopard  with a major UI change and over 300 new features.
 
+<!--more-->
+
 I believe Lion is the second major overhaul of the user experience. Unlike Snow Leopard, Lion brings a new way to access and arrange your Mac. Instead of bringing you everything, Apple strives to show you the best way to use your Mac.
 
 Despite many improvements Apple has made to Lion and what they believe would simplify their users. I haven’t upgraded my MacBook to Lion. The reason is fairly simple, current setup serves me very well.

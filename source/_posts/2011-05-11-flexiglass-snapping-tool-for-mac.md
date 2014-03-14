@@ -11,6 +11,8 @@ This is not paid review. The developer kindly contacts me and request a review w
 
 [img1]: http://images.sayzlim.net/2011/05/flexiglass_setting.jpg "Flexiglass Configuration"
 
+<!--more-->
+
 The first thing that catch my attention is the configuration interface. The well designed user interface explain all Flexiglass features without having user to explore deep further. This is very important because most people avoid app with complicated configuration.
 
 I disable dock and menubar icon because the size doesn&#8217;t match my desktop layout - the dock and menubar icon is not ugly, but it can get better.

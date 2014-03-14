@@ -7,6 +7,8 @@ tags:
 ---
 With the Lion approaching in just a few days, it’s no wonder everyone will prepare their Snow Leopard for an upgrade. But, not in my case because I haven’t found any value in upgrading to Lion.
 
+<!--more-->
+
 One of the reason is my MacBook doesn’t have multitouch support.  I’ve tried Lion GM on my friend’s MacBook Pro and conclude several things.
 
 - My workflow doesn’t change even with gesture support.

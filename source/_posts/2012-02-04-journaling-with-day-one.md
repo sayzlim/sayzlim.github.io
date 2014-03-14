@@ -9,6 +9,8 @@ tags:
 ---
 It happens all the time. I notice an app, pin it, and toss it aside at [Pinboard](http://pinboard.in/ "Pinboard: social bookmarking for introverts"). A friend of mine mentioned Day One to me few days ago, so I took a closer look to this app. My thought on this app? Totally in love with it. It’s definitely a beautiful tool for you who take pleasure in writing down your thoughts in diary.
 
+<!--more-->
+
 > “Make sure you write your feelings and thoughts about things going on in your life.”
 
 One of the inspirational message found in Day One for Mac. Whether you’re an public figure or regular person, I think your thoughts and feelings carry a certain value that no one can measure. Years later, you might be surprised to see how much you’ve grown and changed from reading your archived entries.

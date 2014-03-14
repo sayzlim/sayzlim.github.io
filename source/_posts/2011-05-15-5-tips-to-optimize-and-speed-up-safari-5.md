@@ -8,6 +8,8 @@ tags:
 ---
 Safari is not the best browser on Windows. But it remains as one of the most used browser on OS X. For some people, memory usage on Safari is too high compared to other browsers. It causes some performance issues, but there is a cure. I’ve implemented these tips since the day I use Snow Leopard till Mountain Lion. It remains useful to improve the performance.
 
+<!--more-->
+
 ## Set new windows and tabs open in empty page
 
 I’ve never set a homepage for my browser. It doesn’t only speed up Safari launch time, it also speed up the new windows and tabs launch time. You can access it under **Preferences &gt; General**.

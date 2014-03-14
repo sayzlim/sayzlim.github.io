@@ -11,6 +11,8 @@ tags:
 
 One of the problems after using 1Password for several years is _all_ sensitive information are stored in there. Yes, from the Windows Live account I’ve never signed in, my brother’s Facebook recovered password that I’ve saved just in case he forgets again, and the router password I’ve configured for my sister. It’s no longer just about my accounts.
 
+<!--more-->
+
 Hundred of accounts are stored in my 1Password  Primary Vault. I skim through them,  counting the number of accounts I don’t use in the past year, and in the midst of my reading time, I decide to clean up this old security vault.
 
 I’ve been looking for a better way to manage my 1Password saved items. The first step is to have separate storage for different type of information.

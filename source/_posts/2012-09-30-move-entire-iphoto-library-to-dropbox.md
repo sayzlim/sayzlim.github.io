@@ -11,6 +11,8 @@ tags:
 
 If you’re interested to move your entire iPhoto library to Dropbox, then the [tutorial][6064-001] written by Viticci should be enough to walk you through the process. The tutorial serves as the basic to create your own photo management system in Dropbox. There are some steps that can be simplified, especially the part where additional applications are required to keep the photos metadata intact.
 
+<!--more-->
+
 I’ve never depended iPhoto for storing photos. The only time I use it was to test its features. It might sound funny from an iOS user, but I don’t like the way iPhoto keeping the photos separated from the operating system. Just like how I [use plain text on Mac][6064-002] now, this approach allows me to store images on folder basis. It’s not only easier to manage, I can also work with photos in many environment where Dropbox is available.
 
 What you’re going to read here is similar to what you’re going to read in Viticci’s post. The only difference is during the export process and how I organize rules in Hazel.

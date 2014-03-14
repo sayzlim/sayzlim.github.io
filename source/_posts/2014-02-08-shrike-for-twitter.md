@@ -9,6 +9,8 @@ tags:
 
 The first thing I do whenever Twitter launches their redesigned webpage is searching for a Safari extension that hides the clutters . I avoid noises by hiding the trending topics. I decide who to follow from the Retweets and Discovery Tab — not from machine generated recommendations pasted over the sidebar.
 
+<!--more-->
+
 One of my favorite extension is [Feather](http://chrismasterson.me/feather/ "Feather - Twitter, a little cleaner. - Chris Masterson"). I’ve recommended it on this blog several times for people who use Twitter web interface regularly. Since it hasn’t received any updates yet, I decided to build a Safari extension that hides away elements I don’t need.
 
 I name it Shrike.

@@ -9,6 +9,8 @@ tags:
 
 Compared to few years ago when I just started out using Twitter, the frequency of my tweets have hit rock bottom. What it used to be at least five tweets a day becomes one tweet a week.
 
+<!--more-->
+
 Twitter remains as my favorite channel to find out what the people I follow are up to. It’s just that I often discard my tweets.
 
 I always ask myself these questions before pressing the tweet button. Is it useful? Can I explain it more clearly? Will I have the same thought tomorrow? As the result, my notes are filled with many broken sentences, waiting for me to complete it one day.

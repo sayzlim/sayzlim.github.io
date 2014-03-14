@@ -8,6 +8,8 @@ Existing Twitter clients are build based on past Twitter user experience. Past T
 
 Twitter has entered a phase where it’s no longer only about self expression and social engagement. Following is no longer for the people you find interesting. It can also serve as an aggregator. It can also serve as a bookmarking services. It can take many forms thus developers can build many types of Twitter client from different approach.
 
+<!--more-->
+
 ## How I Use Twitter
 
 The way I’m using Twitter client is no longer similar to how I used Twitter one year ago. In the past, I followed everything. Blogs, people, friends, all of them are under one huge list known as the people I follow. It was a mess. I was very selective in choosing the people I follow, but of course the huge timeline was still a problem.

@@ -8,6 +8,8 @@ Apple is well known for their boldness in removing features and parts from their
 
 Instead of killing keyboard, I think Apple will change how people perceive and use keyboard. This MacBook Air will replace the keyboard area with a solid glass displaying virtual keyboards. Let’s pretend that we replace the keyboard with an iPad displaying keyboards.
 
+<!--more-->
+
 So, this piece of MacBook Air would be flat and very slim by eliminating the needs to install keyboard — no more keypads for you to press. Imagine the numbers of simple and beautiful features can be achieved from this approach.
 
 One of the common problems I encounter is trying to insert special characters I rarely use. Most of times, I’ve to google which shortcuts are needed or I can insert it manually by firing Special Characters window.

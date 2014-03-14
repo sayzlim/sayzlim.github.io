@@ -8,6 +8,8 @@ When was the last time you really immerse yourself into a conversation? A conver
 
 A conversation is more than just typing a message and send it to your friends. It’s more than just BUZZing your friends. It’s more than just giving a phone call to your family. It’s more than just a simple LIKE button.
 
+<!--more-->
+
 A conversation, I think, should incorporate expression, emotion, and interaction. It’s something expressive, just like writing, to convey your thought and opinion. The only difference is you’re given less time to think. You have to be spontaneous.
 
 I’ve been having a lot of conversation with my family recently. We talked about why I haven’t found a job. I discussed with my sister-in-law about disciplining my niece. My sister and I would argue about her diet. I would complain the way my mum cook.

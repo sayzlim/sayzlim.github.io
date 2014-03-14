@@ -12,6 +12,8 @@ tags:
 
 In this post, I'm going to share with you how I customize Adium to look like the screenshot above. I personally name it the Minima theme. It works best with the dark background. So if you're like me, who prefer dark background, don't miss out.
 
+<!--more-->
+
 ### Dark Translucent Windows Bar
 Let's do this staring from the trickiest part. We're going to change the usual aluminium windows bar into the dark rounded translucent bar.
 

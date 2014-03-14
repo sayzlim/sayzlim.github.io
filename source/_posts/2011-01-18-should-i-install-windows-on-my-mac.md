@@ -9,6 +9,8 @@ No. There is no reason for me to install Window on my Mac. I can do all what Win
 
 However, it is not about me, it is about you.
 
+<!--more-->
+
 ### Should you install Windows on your Mac?
 
 Yes, if you

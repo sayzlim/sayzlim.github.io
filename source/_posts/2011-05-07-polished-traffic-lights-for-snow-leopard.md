@@ -11,6 +11,8 @@ A number of people have asked for this mod, searched this site for this mod, goo
 
 [img1]: http://images.sayzlim.net/2011/05/stiijo_preview.jpg "Minimal Traffic Lights"
 
+<!--more-->
+
 Modifying system theme is one of the way to express your taste. But, system theme is not something you can modify safely compared to modifying app theme. There are several things you should note down before applying this mod.
 
 - If you have other mod applied to your theme, make sure you have the mod package prepared.

@@ -10,6 +10,8 @@ I’ve shown you one of the [most minimal and beautiful iTunes theme][1] before 
 
 Introducing [Ecoute 2][2], a minimal and lightweight music player for day to day music junkie. Ecoute 2 is developed by PixiApps to cater your needs who only want a music player that play music.
 
+<!--more-->
+
 ### Luxury Feel
 
 [ ![Ecoute 2 Genres View][img1] ](http://images.sayzlim.net/2011/09/ecoute_preview.jpg "Ecoute 2 Genres View")

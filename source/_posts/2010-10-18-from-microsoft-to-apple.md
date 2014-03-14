@@ -7,6 +7,8 @@ tags:
 ---
 People who know me will find that I am Apple maniac. True indeed, I love most (if not all) of Apple products. But, I wasn't born like this. There is some short story before I come to get know Apple products.
 
+<!--more-->
+
 I remembered back then 2 years ago when I first started to learn about computer. Everything was fascinating, I was given the chance to use notebook in the office at night since I didn't have my own. And during that time, I only knew that computer is Windows.
 
 So, I learned my way around Windows. I used a lot of software to optimise Windows. Windows XP was still in its glory era. I even got myself a handbook to tweak the registry just to increase the performance. And it was likely several times the notebook need to be formatted.

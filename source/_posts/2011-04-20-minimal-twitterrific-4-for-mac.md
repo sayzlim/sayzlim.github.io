@@ -13,6 +13,8 @@ I’ve been a Tweetie fans for so long that I don’t remember since when I star
 
 [img1]: http://images.sayzlim.net/2011/04/twitterrific_mac_4.jpg "Twitterrific 4 for Mac"
 
+<!--more-->
+
 Back to Twitterrific 4 for Mac. This app caught my attention recently because I saw a compact version on their website. It actually looks better than I thought.
 
 The first time I launch the app, I’m so sure I will replace Ollie[^3] entirely. It’s not that I don’t like her, she just doesn’t fit well with his mates on the dock.

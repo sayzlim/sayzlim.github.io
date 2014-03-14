@@ -15,6 +15,8 @@ Things I enjoy writing the most are anything related to customization. Browsing 
 [1]: http://www.iconpaper.org/ "Iconpaper « Free icons, wallpapers, themes, resources and more »"
 [2]: http://sayzlim.net/best-adium-textured-based-theme "Best Adium Textured Based Theme | Sayz Lim"
 
+<!--more-->
+
 Mountain Lion, the latest OS X released by Apple recently, fixes most of the annoyances in Lion and shows the refinement of previous features. There is no major change from the core, but you’ll find number of subtle improvements across the system.
 
 Apple brings Notification Center from iOS to OS X. It’s a good to have feature but not necessarily to live in menu bar.[^1] To make it worse, there is no way to drag the icon out from menu bar nor an option to hide it.

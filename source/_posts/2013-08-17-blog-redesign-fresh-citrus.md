@@ -7,6 +7,8 @@ tags:
 ---
 Regular readers should notice something new yesterday; I’ve redesigned this blog. I’ve done several redesigns, but this is my first time writing a blog post detailing what and why the changes are made.
 
+<!--more-->
+
 ### Why Search?
 This blog doesn’t have search. I wanted to add a search functionality since the birth of this blog. My temporary (or lazy) solution is to send the readers to [DuckDuckGo site search query][1]. Since this blog is hosted on Tumblr, the number of features you can add is limited to JavaScript. Therefore, I need to make sure the blog’s loading time doesn’t suffer each time a new script is embedded.
 

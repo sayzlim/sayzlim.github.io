@@ -13,6 +13,8 @@ tags:
 [2]: http://simoncurd.com/2013/02/19/moving-your-iphoto-library-to-the-cloud/ "Moving your iPhoto Library to the cloud | Better Living Through ..."
 [3]: http://simplicitybliss.com/2012/09/exporting-your-iphoto-library-to-dropbox/ "Exporting your iPhoto Library to Dropbox | SimplicityBliss"
 
+<!--more-->
+
 But there is one problem. You still need an application to view and organize all existing photos.
 
 Perhaps you have a folder shared between friends. Perhaps you have a folder filled with screenshots. Perhaps you need your photos tagged. You shouldn’t do that with Finder[^1]. The only way is to find an application that can monitor folders live.

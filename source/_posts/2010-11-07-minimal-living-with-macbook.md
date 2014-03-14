@@ -10,6 +10,8 @@ The only possession I use to manage my daily item is a MacBook. It can do everyt
 
 Minimal living is to make use of your possession to the fullest. Reducing the unnecessary. So the focus is not on the thing you own, but the problem and challenge you face.
 
+<!--more-->
+
 ### Understanding Needs
 
 I will always tell my friend to list out their needs if they plan to buy a gadget. Be sure when you list out your needs. Don't use "What if" because you don't need the "What if". Be certain in what you want to do with your gadget. In this case, be sure what you want to do with your MacBook.

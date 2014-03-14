@@ -11,6 +11,8 @@ It’s not just stunning. It’s absolutely gorgeous. [Magical Weather][1] is cr
 
 [img1]: http://images.sayzlim.net/2012/06/magical_weather.jpg "Magical Weather Exposé"
 
+<!--more-->
+
 Weather Exposé displays your current location weather and allows you to add 8 more locations. Each Exposé will show the temperature and weather condition in front of the scenic images. Easily add location by city, zip code, or airport code.
 
 [ ![Magical Weather Panel][img2] ](http://images.sayzlim.net/2012/06/magical_weather_panel.jpg "Magical Weather Panel")

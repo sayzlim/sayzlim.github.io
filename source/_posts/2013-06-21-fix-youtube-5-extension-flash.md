@@ -5,6 +5,8 @@ description: Broken YouTube 5 can be fixed by joining YouTube Feather.
 ---
 No one like to play with Flash. Apart from being able to move near the speed of light, the heat produced is not welcomed by most of the Mac owners. Not even once I’ve missed Flash since [its removal two years ago](http://sayzlim.net/three-extensions-one-browser-killed-flash/ "sayzlim.net: Three Extensions, One Browser, Killed Flash"). Browsing experience on Safari has been great since that day.
 
+<!--more-->
+
 Peaceful life doesn’t last long. Villains can always find a way to start a sequel. In the midst of streaming YouTube videos, this sudden error message below left me baffled.
 
 ![ [YouTube Requires Adobe Flash][] ](http://images.sayzlim.net/2013/06/youtube5_fix.jpg "YouTube Requires Adobe Flash")

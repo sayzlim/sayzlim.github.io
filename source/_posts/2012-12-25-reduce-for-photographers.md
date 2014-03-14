@@ -7,6 +7,8 @@ tags:
 ---
 I’m not a photographer. I don’t take photos daily; not even with my iPhone. I believe photography is one of the activity that can develop one sense of beauty. The art of composition in expressing the moment from a single image is brilliant. It’s a craft which requires thousand hours of practice to be good.
 
+<!--more-->
+
 One of the iPhone application I’ve discovered recently is designed for photographers.  It’s called [Reduce][2795-001]. It’s designed and built by [Tobias Wiedenmann][2795-002], an independent designer and developer from German. The interface is beautiful. His [cartoonish detailed design][2795-003] can be seen throughout this application which define the overall aesthetic beauty. Every features are aimed to provide simple and fast image processing on trip.
 
 

@@ -14,6 +14,8 @@ tags:
 
 Some of us just can’t stop reading. That’s why we use services like Google Reader. I want to read, yet at the same time I don’t want to feel obligated to mark all items as read. I’m talking about the unread items count lingering on your Home screen and dock icon.
 
+<!--more-->
+
 In order to improve our reading experience, we need to create a cleaner reading environment. ReadKit is the only app that provides this level of customization.
 
 With the [death of Google Reader][1], you might be wondering which RSS services you should use. It comes down to preferences. Most of the bloggers[^1] I follow recommend [Feed Wrangler][2]. Their main reason to use Feed Wrangler is its smart stream feature. To put it simply, smart stream is basically a [folder with a set of rules][3] for your feeds. Only feeds that fulfill the criteria will show up in created smart stream.

@@ -9,6 +9,8 @@ tags:
 
 I rarely use Finder anymore because all of the tasks is one query away. I save more time, I find my files faster. Here are some tips to improve the search experience in Alfred.
 
+<!--more-->
+
 ## 1. Enable Quick File Search
 
 [ ![Alfred Quick File Search][img1] ](http://images.sayzlim.net/2014/03/alfred_file_search.jpg "Alfred Quick File Search")

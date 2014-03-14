@@ -8,6 +8,8 @@ tags:
 
 The problem is that we never want to be ourselves. We want to be someone else. We want to be that man who can travel around the world. We want to be that charming girl who is passionate with her life.
 
+<!--more-->
+
 In the end, what we really want is to make meaning with our life. We’re afraid that we can’t achieve anything in this lifetime. We’re too scared to admit that we’ve been wasting our life.
 
 I also want to live a life full of meaning. But what is the meaning I’ve been searching for all this time? Is it the money? Is it the passion? Is it the love?

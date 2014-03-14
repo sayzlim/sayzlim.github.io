@@ -6,6 +6,8 @@ tags:
 ---
 As someone who check out[^1] news from major tech blog regularly, the ability to filter and verify the validity of news is important. Blogging is easier with the access of information and the help of technology. One can write a summary of news from the press release or a [thread in Reddit](http://www.cultofmac.com/184207/swedish-design-company-experiments-to-see-how-apple-rumors-spread-across-the-internet/ "Swedish Design Company Experiments To See How Apple Rumors ...") without confirming first.
 
+<!--more-->
+
 Yesterday, we had a pile of false reporting from major tech blog. Most of them [didn’t apologize for false reporting](http://curiousrat.com/blogging-means-never-having-to-say-youre-sorry "Blogging Means Never Having to Say You're Sorry curious rat"), or at least admitted that it was their fault.
 
 I guess it’s a common occurrence in this field. Write a story, publish it, and correct it later if it’s proven wrong. Has the ease of blogging made writers to neglect the impact of misreporting?

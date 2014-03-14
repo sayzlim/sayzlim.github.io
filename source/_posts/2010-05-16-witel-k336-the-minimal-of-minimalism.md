@@ -8,6 +8,8 @@ tags:
 ---
 After the period for not using mobile phone at all (I’m saving money for the 4th generation iPhone), my brother lend me his Witel K336. I bet you won’t even know what type of mobile phone it is. Even I don’t know about it.
 
+<!--more-->
+
 Let me describe it to you, it is like most of the folding mobile phone with black color. It is similar to the Samsung (If I have to choose one) in term of design. Basically a decent design.
 
 What surprises me is the operating system it use, neither Symbian or Java, don’t even bother with Android. It looks like a mobile phone from late 2003, I can’t even open Facebook page with its WAP browser although I set it up.

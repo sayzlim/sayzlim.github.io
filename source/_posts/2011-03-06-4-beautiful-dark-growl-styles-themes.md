@@ -10,6 +10,8 @@ One app that turn the your Mac alive is Growl. [Growl][1] has been around since 
 
 [1]: http://growl.info/ "Growl"
 
+<!--more-->
+
 The things I love from Growl is the style system where we can customize and change the notification appearance. Designers are crafting beautiful styles and combine it with Mac OS X beautiful user interface.
 
 These are the styles I handpicked and personally recommend. Not many styles make it into this post since I choose only 4 styles.

@@ -6,6 +6,8 @@ tags:
 ---
 I can see most of the people spend most of their time on Facebook. Perhaps you are also one of the people who are currently logged in Facebook.
 
+<!--more-->
+
 I was addicted to Facebook. I use "addicted" because I had the urge to log into Facebook whether I was busy or free. You know there is nothing new or interesting in there, but you will at least take a peek at your Facebook stream, expecting something. Something you don't know.
 
 Occasionally, you will play some games if you're not a hardcore gamers. Some people can play the Facebook games to a certain degrees which is unbelievable.

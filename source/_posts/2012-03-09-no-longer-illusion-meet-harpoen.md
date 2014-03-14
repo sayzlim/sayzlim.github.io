@@ -9,6 +9,8 @@ This [silly idea][4793-001][^1] I came up with few months ago is no longer an il
 [4793-001]: http://sayzlim.net/illusionary "Illusionary - Sayz Lim"
 [4793-002]: http://harpoen.com/ "Harpoen: Make Spaces Talk"
 
+<!--more-->
+
 Aulia Masna on [DailySocial](http://en.dailysocial.net/post/harpoen-lets-you-leave-digital-graffiti-all-over-the-city "Harpoen Lets You Leave Digital Graffiti All Over the City - DailySocial"):
 
 > Harpoen lets you leave notes, photos, remarks, comments all over the city, virtually. This digital graffiti app lets you put up what the developer calls “harps” all over the city which can be placed permanently or temporarily, as you can set these harps to disappear after a particular length of time if you wish.

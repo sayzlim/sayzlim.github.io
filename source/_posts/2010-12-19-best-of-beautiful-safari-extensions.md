@@ -8,6 +8,8 @@ tags:
 ---
 Safari is becoming more beautiful with the support from several top notch extensions. Most of the extensions I install on Safari are interface tweaker. It literally means that none of them are heavy to your browser experience because they only override the CSS. You don't need to install all of them, so take your pick only the sites you visit regularly.
 
+<!--more-->
+
 ## Feather for New Twitter
 The first sight of #NewTwitter is beautiful compared to its predecessor. Eventually I feel overwhelmed by the new interface. This extension will clear all the clutter and things you don't like. I have to say that this is one of my favorite extension.
 

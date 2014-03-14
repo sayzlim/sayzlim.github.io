@@ -8,6 +8,8 @@ tags:
 
 [I’m not a big fan of to-do apps](http://sayzlim.net/thoughts-on-to-do-apps "Thoughts on To-do Apps - Sayz Lim") in general. Creating to-do apps can serve as a good project for new developers. It’s not surprising that the app market is flooded with to-do apps. The problem with those to-do apps are their target audience. Unlike OmniFocus that is primarily designed for long term goals and large scale project, most of the existing to-do apps fall into the region of “Reminder.app”.
 
+<!--more-->
+
 Now we have [Clear for iPhone][9340-001] designed by [Real Mac Software][9340-002] and [Impending][9340-003]. Clear has clearly taken a right approach in designing app for iOS. Clear makes use of all the apparent gesture interaction for managing to-do list. Combining with the colorful interface indicating the priority of tasks and the variation of sound effects+vibration to send feedbacks, Clear turns creating to-do list from boring stuff into pleasant and entertaining experience.
 
 [9340-001]: http://realmacsoftware.com/clear "Simplify your life — Clear - Realmac Software"

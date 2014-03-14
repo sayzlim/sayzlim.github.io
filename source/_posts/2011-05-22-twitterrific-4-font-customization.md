@@ -10,6 +10,8 @@ There are many things I love and hate about [Twitterrific 4 for Mac][1]. The sim
 
 [1]: http://sayzlim.net/minimal-twitterrific-4-for-mac/ "Minimal Twitterrific 4 for Mac | Sayz Lim"
 
+<!--more-->
+
 If you navigate to Twitterrific app icon and show the package content. There are actually theme configuration files inside. All of them are ending with .plist extension which you can edit with any text editors.[^1] You can configure the theme to preferred style, such as font type and font size.
 
 It looks daunting if you’ve never done CSS styling. But it’s a very simple configuration once you try it for a while. You can also customize the layout, color, and several miscellaneous theme related settings.

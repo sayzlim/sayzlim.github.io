@@ -6,6 +6,8 @@ tags:
 ---
 When I heard the news that [Sparrow has been acquired by Google](http://sparrowmailapp.com/ "Sparrow — Get mail done"), I could only let out a deep sigh as one of the Sparrow user. You can’t avoid being disappointed when you’re looking forward for what they’re going to build into their next release. No one can blame their Sparrow for their decision when they’re offered an opportunity gain more income supporting their family while building a product that will be used by many people.
 
+<!--more-->
+
 I’m not going to dwell over this matter more than a day. I’ve moved on and switched to [Postbox 3](http://www.postbox-inc.com/ "Postbox — Awesome Email"). In fact, I used Postbox long before trying out Sparrow. But one of the response post caught my attention.
 
 This particular post [“The real reason we’re upset about Sparrow’s acquisition”](http://www.elezea.com/2012/07/sparrow-google-acquisition/ "The real reason we&#39;re upset about Sparrow&#39;s acquisition - Elezea") by Rian:

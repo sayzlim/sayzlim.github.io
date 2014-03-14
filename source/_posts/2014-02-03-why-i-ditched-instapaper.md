@@ -9,6 +9,8 @@ tags:
 
 It was love at first sight. The moment I opened Instapaper, I knew this read later app is designed with _words_ as the main lead of a play. Everyday I’m delighted with the details that made me feel like an honored guest in a coffee shop full of my favorite books and magazines.
 
+<!--more-->
+
 Yet, my Instapaper account: deleted yesterday.
 
 I used to recommend [both Instapaper and Pocket][2960-001]. The former for saving articles and the latter for storing collections (bookmarks, images, and videos). If you’ve read [my setup for recording my online activity][2960-002], you know that I’ve been using Pocket to save all my articles. The truth is, reading the articles is done in Instapaper, which made possible by creating an IFTTT recipe that syncs Pocket saved items to Instapaper.

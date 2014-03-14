@@ -10,6 +10,8 @@ I’ve learned many tips to improve my experience with OS X for the past three m
 
 [1]: http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/
 
+<!--more-->
+
 I use [nVALT][6] to take notes. A global shortcut is required to toggle nVALT window quickly. **`Option + E`** used to be the key. You can easily find that shortcut being used across applications. As the result, there are some shortcuts being rendered useless. Hyper modifier key solves this problem.
 
 [6]: http://brettterpstra.com/projects/nvalt/

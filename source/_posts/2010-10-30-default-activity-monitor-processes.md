@@ -11,6 +11,8 @@ If you are like me, someone who is always looking at the Activity Monitor to fin
 
 What if you don’t know what is running? Sometimes I wonder what process should be running and which one is the redundant one. When you install an apps, there is a chance it will run additional plugin or process without your knowing. So what you need to know what is the default processes that every OS X running.
 
+<!--more-->
+
 Take a look at the image below. It shows you the default processes if you don’t run any apps except connected to Internet. Let’s take a look at each process. And, I’m going to explain in human language. :-)
 
 [ ![Default Activity Monitor Processes][img1] ](http://images.sayzlim.net/2010/10/activity_monitor.jpg "Default Activity Monitor Processes")

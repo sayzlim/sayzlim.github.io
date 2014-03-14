@@ -7,6 +7,8 @@ tags:
 ---
 My favorite productivity tool, Alfred, has entered its second version and released the beta for every Mega Supporters last night. The most useful feature in Alfred 2 is workflow that allows you to create a series of actions to complete a task.
 
+<!--more-->
+
 The extensions support in the first version of Alfred were great but limited in term of creation. However, with the new workflow, everything are more powerful and easier to manage.
 
 [ ![Alfred OS X Toolbox Workflow][img2] ](http://images.sayzlim.net/2013/01/alfred2_workflow.jpg "Alfred OS X Toolbox Workflow")

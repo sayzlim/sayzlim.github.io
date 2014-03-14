@@ -6,6 +6,8 @@ tags:
 ---
 I hate shortcuts. I used to love them. But, every time conflicting shortcuts exits, I smash my MacBook Air keyboards. No, I didn’t. I wish I could.
 
+<!--more-->
+
 I’ve been looking for an effective way to select uncommon menu item. The easiest way is to use help menu. Aside from providing help, you can search and point the menu bar item you’re looking for as shown in the screenshot below.
 
 [ ![Menu Bar Search][img] ](http://images.sayzlim.net/2013/09/menubar_help.jpg "Menu Bar Search")

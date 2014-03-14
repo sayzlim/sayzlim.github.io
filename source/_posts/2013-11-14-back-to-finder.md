@@ -9,6 +9,8 @@ tags:
 
 Tabs is finally available in Finder.  A simple and familiar feature we’ve grown accustomed can now be found in the wave of Mavericks.
 
+<!--more-->
+
 For the past six months, I’ve been using Path Finder as my default file browser. The reason for the switch is tabs. The lack of tabs support greatly affects the way I manage files. When I’m _actually_ working, windows and folders can fill up my screen in just a matter of seconds. What troubles me the most is when I need to work on two different projects at once. Since I can’t group the windows in tabs, App Exposé[^1] won’t be able to help me find window quicker.
 
 With tabs, I only need a single window to open folders within a project. This approach cuts down the number of windows and helps me distinguish different projects in one glance. Remember App Exposé? Now you can use it to switch between projects.

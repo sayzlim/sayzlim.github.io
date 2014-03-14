@@ -8,6 +8,8 @@ tags:
 ---
 There are several apps I installed are needed temporary. They are not essential because I use them just for this semester. However, there are some core applications I always have them installed. The list below consist  all the core applications I use frequently.
 
+<!--more-->
+
 - [Adium](https://adium.im/ "Adium - Download") - the best multi-protocol instant messaging for Mac. There are times where I want to stop using it. However, most of my contacts use MSN as their instant messaging service. It become very nice once you know how to turn it into a beautiful application.
 - [Alfred](http://www.alfredapp.com/ "Alfred App - Productivity App for Mac OS X") - the replacement for Spotlight. It is fast, stable, simple, and not bloated with complicated feature. I understand the hesitant to switch from the lovely Spotlight to Alfred. There is always a reason for me to include it.
 - [AppFresh](http://metaquark.de/appfresh/ "AppFresh for Mac – metaquark") - this tools let me keep the applications up to date. There are alternative such as Bodega and MacUpdate. I prefer AppFresh because I can have the control over it to skip and exclude update.

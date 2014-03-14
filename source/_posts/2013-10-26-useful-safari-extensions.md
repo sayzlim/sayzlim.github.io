@@ -12,6 +12,8 @@ Safari is one of the finest update we can receive in Mavericks. It’s [packaged
 
 [A31]: http://arstechnica.com/apple/2013/10/os-x-10-9/4/#safari "OS X Mavericks: Safari"
 
+<!--more-->
+
 What makes Safari appealing is not the underlying technology; it’s the tight integration with OS X sporting consistent interface built on AppKit Framework.
 
 With the release of Safari 5, developers can finally build extensions to make Safari better. Some of the them only [change the looks of the website][1], some of them [add functionality to Safari][2], and some of them [disable Flash on Safari][3].

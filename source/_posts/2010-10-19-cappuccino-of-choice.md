@@ -9,6 +9,8 @@ What to write? And for who do I write?
 
 I rarely write about myself. I don’t think the visitors of this site would like find out more about me. If I analyze the keyword and the top content of my site, I’m sure that my visitors don’t care about personal post. Yeah, I said so because I myself don’t care who is the writer behind a blog if I visit it from searching Google. It’s one of the habit unless you know me personally in real life.
 
+<!--more-->
+
 If you are one of this site readers. Thanks, it’s my honor. And I’d like to get know my reader more.
 
 More or less, some of you might be a fans of certain blog. When I was learning how to design, my feed would be full of design blog. And it was huge scale of list post everyday published.

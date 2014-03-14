@@ -8,6 +8,8 @@ tags:
 ---
 One of the best features in OS X Lion is a better privacy control which allows you to see all the applications that have access to your information. Some example of those informations are your location, contacts, and Twitter account. They can be found in System Preferences under Security & Privacy pane.
 
+<!--more-->
+
 ![Remained Applications in Location Services](http://images.sayzlim.net/2013/01/location_services.jpg)
 
 If you’ve installed Tweetbot for Mac before and removed it from your Mac, then now you should see the removed app remains in the Location Services item list. Normally, we can remove them with secondary click or the button under item list, but not on Mountain Lion.

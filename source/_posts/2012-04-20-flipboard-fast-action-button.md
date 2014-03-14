@@ -6,6 +6,8 @@ tags:
 ---
 I’m a fan of sending article to my favorite Read Later application, Instapaper. Sending articles from Flipboard to Instapaper usually requires at least 2 steps.
 
+<!--more-->
+
 [ ![Fast Action Button][img] ](http://images.sayzlim.net/2012/04/flipboard_fast_action.jpg "Fast Action Button")
 
 [img]: http://images.sayzlim.net/2012/04/flipboard_fast_action.jpg "Fast Action Button"

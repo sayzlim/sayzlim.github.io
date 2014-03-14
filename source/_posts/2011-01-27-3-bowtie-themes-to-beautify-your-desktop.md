@@ -10,6 +10,8 @@ Music has become one of the core element in my computing experience. Turning on 
 
 Several themes has sit on my desktop before the current one I use. The themes have to be in uniform with the desktop wallpaper. Some themes are suitable for darker background, while some themes are beautiful on wallpaper with vivid colors.
 
+<!--more-->
+
 [ ![Exact 2.0][img1] ](http://images.sayzlim.net/2011/01/bowtie_exact.jpg "Exact 2.0")
 
 [img1]: http://images.sayzlim.net/2011/01/bowtie_exact.jpg "Exact 2.0"

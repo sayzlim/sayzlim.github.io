@@ -8,6 +8,8 @@ tags:
 ---
 Modification is rarely recommended for new OS X users. You don’t want to spend time reverting system to default settings. However, with little personalization, you can dramatically change the way your Mac looks, especially when it’s the workspace you use every day.
 
+<!--more-->
+
 [ ![Mission Control Black Maze Background][img1] ](http://images.sayzlim.net/2013/04/lion_designer.jpg "Mission Control Black Maze Background")
 
 [img1]: http://images.sayzlim.net/2013/04/lion_designer.jpg "Mission Control Black Maze Background"

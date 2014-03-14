@@ -8,6 +8,8 @@ It’s a habit of mine to make use of the default setting and make use of it. On
 
 I have defined my own style to organize apps within the Applications folder. It is simple — without various of methodology and formula.
 
+<!--more-->
+
 [ ![Applications Folder][img1] ](http://images.sayzlim.net/2011/04/define_applications.jpg "Applications Folder")
 
 [img1]: http://images.sayzlim.net/2011/04/define_applications.jpg "Applications Folder"

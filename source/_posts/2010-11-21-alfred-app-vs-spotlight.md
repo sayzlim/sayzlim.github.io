@@ -10,6 +10,8 @@ Deciding whether to switch from Spotlight to another launching application is no
 
 If you are one of the users who launches application from Spotlight, searching for folders and files using Spotlight, and you live inside the cloud. I’m sure you must switch from Spotlight to Alfred App.
 
+<!--more-->
+
 ### Reason #1 Smart Launching
 
 > Spotlight can also launch application!

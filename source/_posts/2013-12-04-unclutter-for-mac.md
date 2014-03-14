@@ -14,6 +14,8 @@ Better keep your desktop tidy instead of making yourself dizzy. I belong to the 
 
 OK, so you don’t like to have your desktop hidden. Here is another [Alfred workflow full of commands][5341-001] you can install. Where were we? Right, Unclutter.
 
+<!--more-->
+
 [ ![Unclutter for Mac Screenshot][img1] ](http://images.sayzlim.net/2013/12/unclutter-preview.jpg "Unclutter for Mac Screenshot")
 
 [img1]: http://images.sayzlim.net/2013/12/unclutter-preview.jpg "Unclutter for Mac Screenshot"

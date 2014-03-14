@@ -10,6 +10,8 @@ Piracy is illegal. For tech savvy people, discovering pirated apps is like walki
 
 Pirating is one thing. Pirating movies, music, and apps is different thing. Movies and music can’t be treated same as apps.
 
+<!--more-->
+
 It’ll be a major problem for the publisher if you download or purchase pirated movies/music. The sole reason is the huge investment of money and time put into each project. Therefore, the publisher expect to reach ROI as soon as possible, so they can continue onto their next project.
 
 On the other hands, developing apps requires time instead of fund. Developers can’t expect a large volume of sale once they launch their apps. They have to iterate their apps until the version 1.0. It takes time to reach their market and create their presence among their niche market.

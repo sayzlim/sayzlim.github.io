@@ -11,6 +11,8 @@ With the release of Safari 5.0.1 and the extensions gallery by Apple. Safari has
 
 In this post, I'm going to share with you the extensions I installed. And there is no best extension or whatsoever.
 
+<!--more-->
+
 You need to know what you want to do with your browser. So choose the extension that can speed up and improve your browsing experience.
 
 ## User Interface Tweaker

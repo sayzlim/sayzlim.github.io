@@ -12,6 +12,8 @@ Here is what my typical desktop activity looks like every day.
 
 First is developer’s main tool, Sublime Text. Followed by our trio — Safari, Firefox, and Chrome. Marked and nVALT are the best combination for writing. Need to edit some images? Pixelmator is the guy. Don’t forget to keep the Terminal active for committing changes. Let’s activate Mission Control. Now, where is _that_ window?
 
+<!--more-->
+
 It’s difficult to keep your application windows organized — not when you have a small screen like MacBook Air. There is a limitation of how much can be shown at once.
 
 You can switch between active applications easily with OS X built in **Application Switcher**. However, what if you want to find a specific application window? What if you have ten similar windows opened? Even App Exposé can’t help you, unless you [search through your menu bar][1].

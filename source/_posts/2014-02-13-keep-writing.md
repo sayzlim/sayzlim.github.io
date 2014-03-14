@@ -9,6 +9,8 @@ tags:
 
 If you’re read my tutorial on [how to sync Writer Pro to Dropbox and iCloud](http://sayzlim.net/sync-writer-pro-icloud-dropbox/ "Sync Writer Pro Between iCloud and Dropbox - Sayz Lim"), you probably know that my writing flow are divided into four stages.  I can’t say the Writer Pro has helped me to become a better writer, however, it has helped to stay more focused by clearly defining the writing stage.
 
+<!--more-->
+
 As good as I might make it sound. It hasn’t fixed my  habit to rewrite my sentences before it’s completed. Pressing the delete key to correct the typo, rearrange the structure, and remove adverbs slows me down.
 
 Fear stops me from completing the sentence. This sentence sounds stupid. This sentence ruins the whole paragraph. This sentence doesn’t make sense. Stop judging yourself. In fact, how can I be so sure that the incomplete sentences are bad? The sentences I find stupid might turn out to be a pearl covered in mud.

@@ -13,6 +13,8 @@ One particular genre of apps that been bothering me is the huge release of to-do
 
 No matter how many features you add to your to-do list apps, these are the core elements for to-do apps. So, why do they even bother to release to-do apps one after another?
 
+<!--more-->
+
 ## Market and Illusion
 
 This is why developers will spend their time writing an apps. There is market where people buy. There are always people who focus more on apps rather than getting things done. We’re all same, when there is new apps, we want to try it. Purchasing productivity apps like to-do apps can create an illusion of how productive we are for several days. Worst: you create list and never complete it.

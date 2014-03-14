@@ -9,6 +9,8 @@ tags:
 
 The ease to save web pages for reading is made simple with services like Pocket or Instapaper. You’re no longer need to read the article on the spot. Just send them to the queue list for reading, later.
 
+<!--more-->
+
 Later; this word doesn’t live in present. How many articles in the queue list that you haven’t read? People with more than thirty articles in the list feel burdened before they start reading — obligation to read all articles is the cause.
 
 “I can sort them”, you said.  Sure, go ahead and tag each article or move them into the folders.  Don’t worry. This article can wait.

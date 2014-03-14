@@ -6,6 +6,8 @@ tags:
 ---
 The release of Alfred 0.9.9 has added a feature for users with experience in Apple Script, Shell Script, and Automator to extend Alfred capability beyond what it can do. If you’ve made a switch from Spotlight to Alfred, I hope this list adds another reason for you to get Power Pack upgrade. Even without Power Pack, you should also try Alfred.[^1]
 
+<!--more-->
+
 - **[Connection Speed](http://blog.b42.eu/?p=44 "Connection Speed Alfred")** measures your connection speed and displays the result with Growl.[^2] It has helped me save many steps required in speed test site to get the same result.
 
 - **[Flush DNS](http://cl.ly/8Gfg "Flush DNS Alfred")** flushes DNS.
