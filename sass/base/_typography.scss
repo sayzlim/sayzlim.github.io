@@ -1,6 +1,6 @@
 body {
   color: $text-color;
-  text-shadow: 0 1px 0 #fffafa;
+  text-shadow: 0 1px 0 scale-lightness($text-color, 90%);
   font: 1.25em/1.875em $base-font;
   -webkit-text-size-adjust: none;
 }
@@ -18,7 +18,7 @@ h6 {
     display: block;
     padding: 0;
     border: none !important;
-    color: #333 !important;
+    color: $text-color !important;
     &:hover {
       border: none !important;
       color: $base-color !important;
@@ -29,7 +29,7 @@ h6 {
 a,
 a:active,
 a:visited {
-  color: #4D4D4D;
+  color: $text-color;
   text-decoration: none;
   -webkit-transition: all .15s ease-in-out;
   -moz-transition: all .15s ease-in-out;
@@ -40,7 +40,7 @@ a:hover { color: $base-color; }
 
 ::selection {
   background-color: $base-color;
-  color: #F5F7FA;
+  color: scale-lightness($text-color, 95%);
   text-shadow: none;
 }
 
@@ -102,17 +102,20 @@ blockquote {
   display: block;
   margin: 1em 0;
   padding-left: 1em;
-  border-left: solid 3px #c8c8c8;
-  color: #7c7c7c; }
+  border-left: solid .2em scale-lightness($text-color, 70%);
+  color: scale-lightness($text-color, 35%);
+  text-shadow: none;
+}
 
 pre {
-  margin: 1.5em 0;
+  margin: 1.5em .3em;
   padding: .5em;
   border-radius: 2px;
-  background-color: #1D1F20;
-  -webkit-box-shadow: 0 0 3px 1px #969799;
-  -moz-box-shadow: 0 0 3px 1px #969799;
-  box-shadow: 0 0 3px 1px #969799;
+  box-sizing: border-box;
+  background-color: scale-lightness($bg-color, -90%);
+  -webkit-box-shadow: 0 0 3px 1px $box-shadow;
+  -moz-box-shadow: 0 0 3px 1px $box-shadow;
+  box-shadow: 0 0 3px 1px $box-shadow;
   color: $gold;
   text-shadow: none;
   white-space: pre-wrap;     /* css-3 */
@@ -127,7 +130,7 @@ p,
 ol,
 ul {
   code {
-    background-color: adjust-lightness($bg-color, -5%);
+    background-color: scale-lightness($bg-color, -4%);
     font-size: .77em;
     font-family: $monospace-font;
     padding: .2em .6em;

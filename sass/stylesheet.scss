@@ -23,7 +23,7 @@
 
     /* Displays source link and dates published */
     .meta {
-      color: #999;
+      color: scale-lightness($text-color, 40%);
       text-align: center;
       font-size: .8em;
     }
@@ -33,9 +33,9 @@
         margin: 0 1%;
         max-width: 100%;
         width: 98%;
-        -webkit-box-shadow: 0 0 3px 1px #969799;
-        -moz-box-shadow: 0 0 3px 1px #969799;
-        box-shadow: 0 0 3px 1px #969799; }
+        -webkit-box-shadow: 0 0 3px 1px $box-shadow;
+        -moz-box-shadow: 0 0 3px 1px $box-shadow;
+        box-shadow: 0 0 3px 1px $box-shadow; }
       iframe {
         width: 100%;
         height: auto; }
@@ -50,8 +50,8 @@
       margin: 1.1em 0;
       padding: .5em;
       border:  4px solid;
-      background-color: #1D1F20;
-      color: #BBAF6C;
+      background-color: scale-lightness($bg-color, -90%);
+      color: $gold;
       text-shadow: none;
       p { margin: 0; }
     }
@@ -67,7 +67,7 @@
       }
 
       a {
-        $read-more-color: adjust-lightness($text-color, 40%);
+        $read-more-color: scale-lightness($text-color, 70%);
         border: solid .15em $read-more-color;
         text-shadow: none;
         color: $read-more-color;
@@ -79,7 +79,7 @@
     }
 
     .footnotes {
-      border-top: dotted 1px #c8c8c8;
+      border-top: solid 1px scale-lightness($bg-color, -15%);
       font-weight: normal;
       font-size: .75em;
       p { margin: 0; }
@@ -87,7 +87,7 @@
       ol {
         margin: 0;
         padding: 1em 1em 0 3em;
-        border-top: dotted 1px #F5F7FA;
+        border-top: solid 1px scale-lightness($bg-color, 25%);
       }
     }
 
@@ -95,7 +95,7 @@
     .support {
       margin-bottom: 4em;
       border-radius: 4px;
-      background-color: adjust-lightness($base-color, 40%);
+      background-color: scale-lightness($base-color, 70%);
       text-align: center;
       text-shadow: none;
       font-size: .8em;

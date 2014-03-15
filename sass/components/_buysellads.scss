@@ -24,9 +24,9 @@ body .one .bsa_it_ad {
 }
 
 body .one .bsa_it_ad:hover img {
-    -webkit-box-shadow: 0 0 3px #CF490B;
-    -moz-box-shadow: 0 0 3px #CF490B;
-    box-shadow: 0 0 3px #CF490B;
+    -webkit-box-shadow: 0 0 .1em $hover-color;
+    -moz-box-shadow: 0 0 .1em $hover-color;
+    box-shadow: 0 0 .1em $hover-color;
 }
 
 body .one .bsa_it_ad .bsa_it_i {

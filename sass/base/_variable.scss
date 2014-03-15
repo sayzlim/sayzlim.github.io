@@ -4,6 +4,7 @@ $teal: #f7f7f7;
 $charcoal: #333;
 $gold: #bbaf75;
 $blueberry: #7e3e69;
+$milky-pink: #ff7598;
 
 // Base Variable
 $base-font: source-sans-pro, Avenir Next, Verdana, sans-serif;
@@ -12,6 +13,7 @@ $base-color: $citrus;
 $bg-color: $teal;
 $text-color: $charcoal;
 $hover-color: adjust-lightness($base-color, 10%);
+$box-shadow: scale-lightness($bg-color, -50%);
 
 // Components Variable
 $header-color: $base-color;

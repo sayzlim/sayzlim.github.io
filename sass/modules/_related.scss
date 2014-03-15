@@ -10,11 +10,11 @@
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: .4em;
-        border: solid .1em adjust-lightness($teal, -5%);
+        border: solid 1px scale-lightness($bg-color, -4%);
         border-left: none;
-        background: adjust-lightness($teal, 1%);
+        background: scale-lightness($bg-color, 50%);
         &:hover {
-          border: solid .1em $base-color;
+          border: solid 1px $base-color;
           border-left: none;
           background: $base-color;
           background: $base-color;
@@ -30,7 +30,7 @@
         &:nth-child(#{$i+1}) {
           border-left: solid .3em $clear-color;
           a:hover {
-            border: solid .1em $clear-color;
+            border: solid 1px $clear-color;
             border-left: none;
             background: $clear-color;
           }
