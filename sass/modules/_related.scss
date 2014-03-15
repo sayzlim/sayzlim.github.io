@@ -22,36 +22,18 @@
           text-shadow: none;
         }
       }
-      &:nth-child(2) {
-        border-left: solid .3em adjust-lightness($base-color, 10%);
-        a:hover {
-          border: solid .1em adjust-lightness($base-color, 10%);
-          border-left: none;
-          background: adjust-lightness($base-color, 10%);
-        }
-      }
-      &:nth-child(3) {
-        border-left: solid .3em adjust-lightness($base-color, 20%);
-        a:hover {
-          border: solid .1em adjust-lightness($base-color, 20%);
-          border-left: none;
-          background: adjust-lightness($base-color, 20%);
-        }
-      }
-      &:nth-child(4) {
-        border-left: solid .3em adjust-lightness($base-color, 30%);
-        a:hover {
-          border: solid .1em adjust-lightness($base-color, 30%);
-          border-left: none;
-          background: adjust-lightness($base-color, 30%);
-        }
-      }
-      &:nth-child(5) {
-        border-left: solid .3em adjust-lightness($base-color, 40%);
-        a:hover {
-          border: solid .1em adjust-lightness($base-color, 40%);
-          border-left: none;
-          background: adjust-lightness($base-color, 40%);
+
+      $percentage: 15%;
+
+      @for $i from 1 to 5 {
+        $clear-color: scale-lightness($base-color, $percentage*$i);
+        &:nth-child(#{$i+1}) {
+          border-left: solid .3em $clear-color;
+          a:hover {
+            border: solid .1em $clear-color;
+            border-left: none;
+            background: $clear-color;
+          }
         }
       }
     }
