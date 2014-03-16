@@ -5,6 +5,7 @@ date: 2013-09-23 21:20
 description: Does Last.fm scrobble iTunes Radio? If the answer is yes. Then which app is the recommended one?
 tags:
 - itunes
+- bowtie
 ---
 
 Everyone loves to share what they’re watching, reading, or listening. Twitter have tweeting, Last.fm have scroblling, Facebook have stalking[^1]. This is just one of the way to give other people a chance to say “me too”, and thus starting a conversation.
@@ -36,6 +37,6 @@ Last but not least, Bowtie allows us to apply custom theme. Compared to applicat
 [^1]: Nah, I’m kidding. They rhyme.
 
 [1]: http://www.last.fm/ "Last.fm - Listen to free music with internet radio and the largest ..."
-[2]: http://sayzlim.net/4-beautiful-dark-growl-styles-themes/ "4 Beautiful Dark Growl Styles Themes | Sayz Lim"
+[2]: http://sayzlim.net/3-bowtie-themes-to-beautify-your-desktop/ "3 Bowtie Themes to Beautify Your Desktop | Sayz Lim"
 [3]: http://sayzlim.net/best-bowtie-themes "4 Best Bowtie Themes to Decorate Your Mac | Sayz Lim"
 [4]: http://bowtieapp.com/ "Bowtie"
