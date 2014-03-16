@@ -62,19 +62,19 @@
   .read-more {
     text-align: center;
     a {
+      display: inline-block;
+      margin: .2em 0;
+      padding: .8em 1.5em;
       font-size: .8em;
       line-height: 1em;
-      padding: .8em 1.5em;
-      margin: .2em 0;
-      display: inline-block;
     }
 
     a {
       $read-more-color: scale-lightness($text-color, 50%);
       border: solid .15em $read-more-color;
-      text-shadow: none;
-      color: $read-more-color;
       border-radius: 18em;
+      color: $read-more-color;
+      text-shadow: none;
       &:hover {
         border: solid .15em $hover-color;
       }
@@ -96,14 +96,45 @@
 
   // Readers Support
   .support {
-    margin-bottom: 4em;
-    border-radius: 4px;
-    background-color: scale-lightness($base-color, 70%);
+    margin-bottom: 3em;
+    padding: .4em 0;
     text-align: center;
     text-shadow: none;
     font-size: .8em;
-    p {
-      padding: .5em 1em;
+
+    form {
+      margin: 0.2em auto;
+      text-align: center;
+      input {
+        box-sizing: border-box;
+        display: inline-block;
+        margin: .5em .2em;
+        padding: .3em;
+        border: solid 1px scale-lightness($base-color, -5%);
+        border-radius: 2px;
+        background: scale-lightness($bg-color, 40%);
+        font: 1em/1.7em $base-font !important;
+        -webkit-transition: all .15s ease-in-out;
+        -moz-transition: all .15s ease-in-out;
+        transition: all .15s ease-in-out;
+        &:focus {
+          outline: none;
+          background: scale-lightness($base-color, 95%);
+        }
+      }
+
+      .email {
+        width: 22em;
+      }
+
+      .subscribe {
+        width: 8em;
+        background: scale-lightness($base-color, 10%);
+        color: scale-lightness($base-color, 95%);
+        &:hover {
+          background: $base-color;
+        }
+      }
     }
   }
 

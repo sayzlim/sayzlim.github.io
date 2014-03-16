@@ -16,7 +16,10 @@ single: true
   {% include article.html %}
 
   <aside class="support">
-    <p>If you enjoyed this post, receive free updates by <a href="{{ site.subscribe_email }}">email</a> or <a href="{{ site.subscribe_rss }}">feed</a>.</p>
+    <form action="http://sayzlim.us2.list-manage.com/subscribe/post?u=ff1398bcc911abf87a3dfe82d&amp;id=cc23ae2e4d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    	<input type="email" value="" name="EMAIL" class="email" placeholder="Email me when new article is published…" required>
+      <input type="submit" class="subscribe" value="Subscribe">
+    </form>
   </aside>
 
   {% if site.related_posts != empty %}
