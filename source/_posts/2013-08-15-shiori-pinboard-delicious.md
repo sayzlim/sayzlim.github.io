@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Search Your Pinboard and Delicious Bookmarks with Shiori
+description: Shiori is an elegant lightweight app to access your Pinboard and Delicious bookmarks on Mac.
 tags:
 - review
 ---

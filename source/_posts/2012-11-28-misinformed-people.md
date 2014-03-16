@@ -1,6 +1,7 @@
 ---
 layout: post
 title: No Amount of Apologies Can Correct Misinformed People
+description: The consequences of misreporting and its influence to their readers.
 tags:
 - rant
 ---

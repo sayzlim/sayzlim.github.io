@@ -2,6 +2,7 @@
 layout: post
 title: The Most Beautiful Folder Icons Replacement for Mac
 alias: [post/34994221785/most-beautiful-folder-icons-mac, post/34994221785/]
+description: The beautiful custom folder icons set for OS X made by Louie Mantia.
 tags:
 - prettify
 ---
@@ -33,5 +34,5 @@ For Dropbox users, some folder icons can’t be replaced using traditional copy-
 [2]: http://s3.sayzlim.net/f/dropbox-de-anza.zip
 [3]: http://panic.com/candybar/ "Panic Blog » CandyBar, Mountain Lion, and Beyond"
 [4]: http://iconfactory.com/ "Iconfactory : Home"
- 
+
 [^1]: I always try to be careful when coming up with a title. Using “The Most” in the title requires a tremendous amount of responsibility because nothing lasts forever. It puts my credibility on stake, but I find that is the only way to show you how much I love the new folder icons set by Mantia.

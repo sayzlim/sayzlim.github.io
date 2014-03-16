@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ! 'OS X Toolbox Workflow for Alfred 2 '
+description: Collection of Alfred 2 workflows for daily tasks to increase your productivity.
 alias: /post/40457309216
 tags:
 - alfred

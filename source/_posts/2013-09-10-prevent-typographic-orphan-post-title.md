@@ -2,6 +2,7 @@
 layout: post
 title: "Prevent Typographic Orphan in Post Title"
 date: 2013-09-10 23:45
+description: If you want to build a better web, you must eliminate typographic orphan.
 tags:
 - write
 ---

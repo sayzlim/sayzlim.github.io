@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why You Should Start Using OS X Nested Rules
+description: Nested rules has been built in OS X all along to simplify the searches and filters.
 tags:
 - mac
 ---

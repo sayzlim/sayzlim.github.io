@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The New MacBook Air
-alias: /post/30532640682
+description: My review of the new MacBook Air.
 tags:
 - rant
 ---

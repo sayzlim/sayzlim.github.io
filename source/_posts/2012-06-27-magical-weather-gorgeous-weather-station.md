@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ! 'Magical Weather: Gorgeous Weather Station'
+description: View the weather conditions on your iPad with the sleek and gorgeous iPad app.
 tags:
 - magical weather
 - review

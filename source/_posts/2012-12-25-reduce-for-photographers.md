@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Reduce for Photographers
+description: Compress and watermark your photos and images from your iPad and iPhone.
 tags:
 - reduce
 - review

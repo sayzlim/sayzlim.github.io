@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Aaron Swartz and Tangled Wires
+description: How I feel about the death of Aaron Swartz.
 tags:
 - rant
 ---

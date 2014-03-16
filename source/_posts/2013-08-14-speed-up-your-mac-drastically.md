@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Speed Up Your Mac Drastically
+description: A few straightforward tips to improve your Mac performance and speed.
 alias: post/58245260102
 tags:
 - mac
