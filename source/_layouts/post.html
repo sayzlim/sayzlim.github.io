@@ -15,15 +15,6 @@ single: true
 
   {% include article.html %}
 
-  <aside class="support">
-    <form action="http://sayzlim.us2.list-manage.com/subscribe/post" method="POST">
-      <input type="hidden" name="u" value="ff1398bcc911abf87a3dfe82d">
-      <input type="hidden" name="id" value="cc23ae2e4d">
-    	<input type="email" value="" name="EMAIL" class="email" placeholder="Email me when new article is published…" required>
-      <input type="submit" class="subscribe" value="Subscribe">
-    </form>
-  </aside>
-
   {% if site.related_posts != empty %}
   <aside class="related">
     <h3>Related Posts:</h3>
@@ -43,4 +34,15 @@ single: true
       {% endif %}
     </nav>
   {% endif %}
+
+  <aside class="support">
+    <p><strong>SIGNUP</strong> for more posts on how to use <a href="http://sayzlim.net/apps/" title="Recommended Apps - Sayz Lim">my recommended apps</a> simplifying your works on Mac. <a href="http://sayzlim.net/subscribe/"" title="Subscribe - Sayz Lim">More details »</a></p>
+    <form class="form" action="http://sayzlim.us2.list-manage.com/subscribe/post" method="POST">
+      <input type="hidden" name="u" value="ff1398bcc911abf87a3dfe82d">
+      <input type="hidden" name="id" value="cc23ae2e4d">
+      <input type="text" value="" name="FNAME" class="name" placeholder="First Name" required>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="Email Address" required>
+      <input type="submit" class="subscribe" value="Go">
+    </form>
+  </aside>
 </div>

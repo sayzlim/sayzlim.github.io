@@ -17,4 +17,14 @@
   }
 
   .title { margin-bottom: 0.3em; }
+
+.form {
+    input {
+      float: left;
+    }
+    input.name,
+    input.email {
+      width: 22em;
+    }
+  }
 }
