@@ -1,6 +1,7 @@
 @import "screen";
 @import "components/buysellads";
 @import "components/swiftype";
+@import "components/form";
 
 /* Elements in post-container */
   .post-container a {
@@ -94,47 +95,25 @@
     }
   }
 
+  .form.subscribe {
+    font-size: .8em;
+  }
+
   // Readers Support
   .support {
-    margin-bottom: 3em;
-    padding: .4em 0;
-    text-align: center;
-    text-shadow: none;
     font-size: .8em;
+    margin: 5em 0 3em;
+    border-top: solid 1px scale-lightness($bg-color, -15%);
+    text-align: left;
+    text-shadow: none;
+    &:before {
+      display: block;
+      border-top: solid 1px scale-lightness($bg-color, 25%);
+      content: "";
+    }
 
-    form {
-      margin: 0.2em auto;
-      text-align: center;
-      input {
-        box-sizing: border-box;
-        display: inline-block;
-        margin: .5em .2em;
-        padding: .3em;
-        border: solid 1px scale-lightness($base-color, -5%);
-        border-radius: 2px;
-        background: scale-lightness($bg-color, 40%);
-        font: 1em/1.7em $base-font !important;
-        -webkit-transition: all .15s ease-in-out;
-        -moz-transition: all .15s ease-in-out;
-        transition: all .15s ease-in-out;
-        &:focus {
-          outline: none;
-          background: scale-lightness($base-color, 95%);
-        }
-      }
-
-      .email {
-        width: 22em;
-      }
-
-      .subscribe {
-        width: 8em;
-        background: scale-lightness($base-color, 10%);
-        color: scale-lightness($base-color, 95%);
-        &:hover {
-          background: $base-color;
-        }
-      }
+    p {
+      margin: 1em 0;
     }
   }
 

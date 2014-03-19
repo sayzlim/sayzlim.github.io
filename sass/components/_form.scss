@@ -1,0 +1,38 @@
+.form {
+  margin: 1em auto;
+  text-align: center;
+  input {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: .5em .2em;
+    padding: .3em;
+    border: solid 1px scale-lightness($base-color, -5%);
+    border-radius: 2px;
+    background: scale-lightness($bg-color, 40%);
+    font: 1em/1.7em $base-font !important;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    &:focus {
+      outline: none;
+      background: scale-lightness($base-color, 95%);
+    }
+  }
+
+  .name {
+    width: 14em;
+  }
+
+  .email {
+    width: 14em;
+  }
+
+  .subscribe {
+    width: 5em;
+    background: scale-lightness($base-color, 10%);
+    color: scale-lightness($base-color, 95%);
+    &:hover {
+      background: $base-color;
+    }
+  }
+}
