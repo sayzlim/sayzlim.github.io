@@ -20,7 +20,7 @@ Without doubt, they’re useless. When dealing with enormous of useless informat
 
 It’s like when you’re trying to pick out several red marbles from the jar full of blue marbles. You have to take out the whole jar, separating the red marbles from blue marbles, carefully putting the blue marbles back into the jar. Everything you’ve done is for picking out the red marbles.
 
-What if the jar is only full or red marbles?
+What if the jar is only full of red marbles?
 
 You’re no longer exhausting effort to separate the marbles. Everything you pick is right. When everything are essential on the screen, you won’t drift away from what you’re supposed to do.
 
