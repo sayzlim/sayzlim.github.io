@@ -56,7 +56,7 @@ Set Notes as the source of your text files. Configure a keyboard shortcut to tog
 
 If you’re a Writer Pro user, you might want to bring all your notes into this folder. You can achieve this by [creating a symbolic link for each folder from iCloud to Dropbox](http://sayzlim.net/sync-writer-pro-icloud-dropbox "Sync Writer Pro Between iCloud and Dropbox - Sayz Lim").
 
-**Photos** – I’ve [moved all my photos from iPhoto to Dropbox][8675-001]. Organizing photos without relying third party apps has many benefits. I can choose to open photos with Pixelmator, Sketch, or Photoshop. I can access those photos from Android devices. I can also share those photos easily with Dropbox Sharing. I hate naming files; it’s a time wasting tasks. That’s why [I use Hazel and Pixa to manage photos in Dropbox][8675-002].
+**Photos** – I’ve [moved all my photos from iPhoto to Dropbox][8675-001]. Organizing photos without relying third party apps has many benefits. I can choose to open photos with Pixelmator, Sketch, or Photoshop. I can access those photos from Android devices. I can also share those photos easily with Dropbox Sharing. I hate naming files; it’s a time wasting task. That’s why [I use Hazel and Pixa to manage photos in Dropbox][8675-002].
 
 [8675-001]: http://sayzlim.net/move-entire-iphoto-library-to-dropbox "Move Entire iPhoto Library to Dropbox - Sayz Lim"
 [8675-002]: http://sayzlim.net/manage-dropbox-photos-pixa "How I Manage Photos with Dropbox and Pixa - Sayz Lim"
