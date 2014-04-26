@@ -46,7 +46,7 @@ I’ve also renamed all the imported screenshots to follow the same naming patte
 
 All of my screenshots are in `JPG` format because they’re smaller than `PNG` in term of file size. You can even compress the size further — usually up to 50% — with [ImageOptim](http://imageoptim.com/ "ImageOptim — better Save For Web"). I’m not saying `JPG` is better than `PNG`, but for screenshots that don’t need transparency, `JPG` is more suitable.
 
-There are several ways to complete this task too. You can use Hazel to detect all `PNG` images inside `Screenshots` folder, and run an [imagemagick](http://www.imagemagick.org/ "ImageMagick: Convert, Edit, Or Compose Bitmap Images") to convert, crop, and compress all of them at once.
+There are several ways to complete this task too. You can use Hazel to detect all `PNG` images inside `Screenshots` folder, run an [imagemagick](http://www.imagemagick.org/ "ImageMagick: Convert, Edit, Or Compose Bitmap Images") to convert, crop  or compress all of them at once.
 
 Or  you can create a folder action in Automator to avoid scripting. The end result will be something similar to the screenshot below.
 
@@ -62,7 +62,7 @@ Select a folder to receive action, and drag `Change Type of Images` action into 
 
 Test the folder action by moving one of the `PNG` images into the associated folder. The `PNG` images should convert to `JPG` automatically. You can even use this folder to batch convert photos.
 
-Now take some screenshots on your iPhone or iPad, run the Dropbox for iOS, and watch how Hazel and Automator move your screenshots and convert them automatically.
+Now take some screenshots on your iPhone or iPad, run the Dropbox for iOS, watch how Hazel and Automator move your screenshots and convert them automatically.
 
 ## Wrapping Up
 
