@@ -5,11 +5,12 @@ $charcoal: #333;
 $gold: #bbaf75;
 $blueberry: #7e3e69;
 $milky-pink: #ff7598;
+$cayenne: #fe5561;
 
 // Base Variable
 $base-font: source-sans-pro, Avenir Next, Verdana, sans-serif;
 $monospace-font: Consolas, Menlo, Monaco, 'Lucida Console', 'Liberation Mono', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Courier New', monospace, serif;
-$base-color: $citrus;
+$base-color: $cayenne;
 $bg-color: $teal;
 $text-color: $charcoal;
 $hover-color: adjust-lightness($base-color, 10%);
