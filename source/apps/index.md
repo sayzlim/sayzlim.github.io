@@ -7,7 +7,7 @@ description: Complete list of apps I’ve installed on my MacBook Air.
 Each person has their own set of tools to get jobs done. This is the list of the apps I’m using everyday. Some of the apps are not available on App Store, so you need to buy directly from the developers. Links from App Store are affiliate links.
 
 ## Essential on Mac
-Those are the apps I must install on my Mac. Without these apps, I’ll have hard time navigating from one screen to another.
+These are the apps I must install on my Mac. Without these apps, I’ll have hard time navigating from one screen to another.
 
 - 1Password ($49.99): [App Store][1] or [Direct][2]
 - Alfred (£17): [App Store][3] or [Direct][4]
@@ -30,18 +30,18 @@ Those are the apps I must install on my Mac. Without these apps, I’ll have har
 ## Writing Tools
 List of the third party apps I use to write. There are some essential built-in apps like **Dictionary** and **Dictation** which I don’t include in this list.
 
-- iA Writer ($9.99): [App Store][A1]
+- Writer Pro ($19.99): [App Store][A1]
 - Marked 2 ($11.99): [Direct][A2]
 - ReadKit ($6.99): [App Store][A3]
 - TranslateTab ($3.99): [App Store][A4]
 
-[A1]: https://itunes.apple.com/us/app/ia-writer/id439623248?mt=12&at=11ld6n&ct=ia+writer "iA Writer for Mac"
+[A1]: https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&at=11ld6n&ct=writer+pro+mac "Writer Pro for Mac"
 [A2]: http://marked2app.com "Marked 2 - Smarter tools for smarter writers"
 [A3]: https://itunes.apple.com/us/app/readkit/id588726889?mt=12&at=11ld6n&ct=readkit "Mac App Store - ReadKit - iTunes - Apple"
 [A4]: https://itunes.apple.com/us/app/translate-tab/id458887729?mt=12&at=11ld6n&ct=translate+tab "Mac App Store - Translate Tab - iTunes - Apple"
 
 ## Design & Development Tools
-Sometimes I do simple image editing and programming with those apps:
+Sometimes I do minor image editing and programming with listed apps:
 
 - ColorSnapper ($4.99): [App Store][B1]
 - Dash (Free or $7.99): [App Store][B2]
@@ -49,7 +49,6 @@ Sometimes I do simple image editing and programming with those apps:
 - Pixelmator ($14.99): [App Store][B4]
 - Sublime Text (Free/$70): [Direct][B7]
 - xScope ($29.99): [App Store][B5] or [Direct][B6]
-
 
 [B1]: https://itunes.apple.com/us/app/colorsnapper/id418176775?mt=12&at=11ld6n&ct=colorsnapper "Mac App Store - ColorSnapper - iTunes - Apple"
 [B2]: https://itunes.apple.com/us/app/dash-docs-snippets/id458034879?mt=12&at=11ld6n&ct=dash "Mac App Store - Dash (Docs &amp; Snippets) - iTunes - Apple"
@@ -87,7 +86,7 @@ I use CleanMyMac 2 to clear caches and uninstall apps, Cookie to manage cookies 
 [D6]: https://itunes.apple.com/us/app/wifi-signal/id525912054?l=en&mt=12&at=11ld6n&ct=wifi+signal "Mac App Store - WiFi Signal - iTunes - Apple"
 
 ## System Preferences
-Those apps are installed within System Preferences. FunctionFlip is useful if you only want to enable part of the function keys. Magic Launch allows you to set rules which files should open with which apps. SmoothMouse fix the quirk of OS X mouse cursor delay. Hazel? That’s one of the most powerful app you can get on Mac.
+Those apps are installed within System Preferences. FunctionFlip is useful if you only want to enable part of the function keys. Magic Launch allows you to set rules which files should open with which apps. SmoothMouse fixes the quirk of OS X mouse cursor delay. Hazel? That’s one of the most powerful app you can get on Mac.
 
 - FunctionFlip (Free): [Direct][2775-001]
 - Hazel ($28): [Direct][2775-002]
