@@ -1,7 +1,13 @@
 ---
+title: Page Not Found
 layout: page
 sharing: false
 ---
 
-## Page Not Found
-Looks like the page you're looking for doesn't exist. Please visit [home](/) or try to use the search box below to find the page you need.
+[ ![404 Pages Not Found][img] ](http://images.sayzlim.net/404.jpg "404 Pages Not Found")
+
+[img]: http://images.sayzlim.net/404.jpg "404 Pages Not Found"
+
+Looks like the page you're looking for doesn't exist. It sometimes happens when the page is deleted or the URL has been moved to another page. Send me [an email](http://sayzlim.net/contact "Contact - Sayz Lim") if you think this page should be available.
+
+Please visit [home](/) or try to use the search box below to find the page you need.
