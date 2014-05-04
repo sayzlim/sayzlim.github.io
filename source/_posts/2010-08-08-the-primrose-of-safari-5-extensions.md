@@ -23,7 +23,6 @@ These are the extensions which sweeten your user interface by eliminating the un
 It doesn't change the font. It makes your text more readable by improving the kerning and ligatures in text.
 - [**Pure Flickr**][11]: Pure Flickr adding touch to Flickr by replacing the default logo with the clean one (without by Yahoo!) and adding more whitespace to give the spacious impression.
 - [**Reload Button**][3]: I find a browser without reload button weird even though I use shortcut.
-- [**Simplr**][4]: The simple version of Tumblr. Simplr improves the usability of Tumblr by eliminating the large button icons, hide the featured post and place a new post link on the left sidebar.
 
 ## Productivity Helper
 These extensions can help you speed up your work and avoid distractions such as ads, checking email and etc.
@@ -42,7 +41,6 @@ These extensions can help you speed up your work and avoid distractions such as 
 [1]: http://sites.google.com/site/mfrelink/ "GoogleSearchCleanup - Google Sites"
 [2]: https://langui.sh/safari-extensions/ "Safari Extensions | langui.sh"
 [3]: http://siracusafamily.org/safari/extensions/ "Safari Reload Button"
-[4]: http://blog.jakepaul.com/post/743155721/simplr "Jake Paul - Simplr"
 [5]: http://safariadblock.com/ "AdBlock"
 [6]: http://autopagerize.net/ "AutoPagerize"
 [7]: http://www.regisgaughan.com/fbphotozoom/ "FB Photo Zoom - Regis Gaughan"

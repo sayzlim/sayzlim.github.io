@@ -50,4 +50,4 @@ Download: [OS X Toolbox Workflow by Ed Heltzer](http://s3.sayzlim.net/f/alfred-t
 [3]: https://buy.alfredapp.com "Buy Alfred"
 [4]: http://rainydaymedia.net "RDM | A Storming Is Brewing"
 
-[^1]: Thanks [CarlosNZ](http://www.alfredforum.com/user/104-carlosnz/) for [his helpful tips](http://www.alfredforum.com/topic/178-fixing-your-reveal-in-finder-not-working-with-this-workflow/#entry1694).
+[^1]: Thanks [CarlosNZ](http://geekzone.philosophicalzombie.net/ "Carl&#39;s Geekzone") for [his helpful tips](http://www.alfredforum.com/topic/178-fixing-your-reveal-in-finder-not-working-with-this-workflow/#entry1694).

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkmark
-external-url: http://getcheckmark.com
+external-url: http://builtbysnowman.com/checkmark/
 tags:
 - share
 ---

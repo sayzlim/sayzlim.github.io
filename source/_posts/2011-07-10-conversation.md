@@ -4,7 +4,7 @@ title: Conversation
 tags:
 - zen
 ---
-When was the last time you really immerse yourself into a conversation? A conversation that is simply for fun. A conversation where you’re being yourself. A conversation where you use your mouth instead of fingers to express yourself.
+When was the last time you immerse yourself in a conversation? A conversation that is simply for fun. A conversation where you’re being yourself. A conversation where you use your speech instead of touchscreen to express yourself.
 
 A conversation is more than just typing a message and send it to your friends. It’s more than just BUZZing your friends. It’s more than just giving a phone call to your family. It’s more than just a simple LIKE button.
 

@@ -43,4 +43,4 @@ Beside popular users, we can also find out the most popular shops and tags in a 
 ## Wrapping Up
 Flow is the most wonderful Instagram client for iPad I’ve seen so far. There is no other apps that deliver the same quality of animation, smoothness, and design. Browsing and discovering photos has never been this easy on Instagram. Now you can do it with Flow.
 
-[**Download Flow for Instagram (Free**)](https://itunes.apple.com/us/app/flow-for-instagram/id766462439?mt=8&uo=4&at=11ld6n&ct=flow+for+instagram "Flow for Instagram")
+[**Download Flow for Instagram (Free)**](https://itunes.apple.com/us/app/flow-for-instagram/id766462439?mt=8&uo=4&at=11ld6n&ct=flow+for+instagram "Flow for Instagram")
