@@ -52,10 +52,8 @@
     box-sizing: border-box;
     margin: 1.1em 0;
     padding: .5em;
-    border:  4px solid;
-    background-color: scale-lightness($bg-color, -90%);
-    color: $gold;
-    text-shadow: none;
+    border-radius: 2px;
+    background-color: scale-lightness($base-color, 90%);
     p {
       margin: 0;
     }
@@ -102,11 +100,11 @@
 
   // Readers Support
   .support {
-    font-size: .8em;
     margin: 5em 0 3em;
     border-top: solid 1px scale-lightness($bg-color, -15%);
     text-align: left;
     text-shadow: none;
+    font-size: .8em;
     &:before {
       display: block;
       border-top: solid 1px scale-lightness($bg-color, 25%);
