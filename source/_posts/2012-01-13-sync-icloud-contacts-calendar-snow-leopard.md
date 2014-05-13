@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sync iCloud Contacts and Calendar on Snow Leopard
+title: Sync iCloud Contacts and Calendar on Snow Leopard
 alias: [/post/15776938944/sync-icloud-contacts-and-calendar-on-snow-leopard, post/15776938944/]
 description: Follow the step by step tutorial to sync your iCloud contacts and calendar on Snow Leopard.
 tags:
@@ -23,7 +23,7 @@ You should find something similar to this:
 
 	p03-contactsws.icloud.com/co/mecard/?dsid=1325673149
 
-From the image above, my iCloud ID would be __1325673149__ and my data are stored in server __p03__. Note down what you’ve found out because we’ll need these information later while setting up iCloud on iCal and Address Book.
+From the image above, my iCloud ID is __1325673149__ and my data are stored in server __p03__. Note down what you’ve found out because we’ll need these information later while setting up iCloud on iCal and Address Book.
 
 ### Syncing iCal
 Run iCal and choose __iCal -&gt; Preferences…__ from menu bar. Pick __Accounts Tab__ and click on the small plus sign at the bottom left. Fill in your iCloud email address and password.
@@ -35,7 +35,7 @@ Run iCal and choose __iCal -&gt; Preferences…__ from menu bar. Pick __Accounts
 The most important part is to replace the __p03-caldav.icloud.com__ with your own iCloud Server Number. For instance, if you find out that your iCloud Server Number is __p11__, fill the Server address with __p11-caldav.icloud.com__.
 
 ### Syncing Address Book
-Syncing your contacts[^1] might be a little bit difficult if you’re not used to edit .plist files. This is the right time to export all your contacts from Address Book and import them to iCloud before proceeding to next step. You can do this by select all your contacts and use right-click to create a backup file.
+Syncing your contacts[^1] might be a little bit difficult if you’re not used to edit `plist` documents. This is the right time to export all your contacts from Address Book and import them to iCloud before proceeding to next step. You can do this by select all your contacts and use right-click to create a backup file.
 
 Access Address Book preferences by choosing __Address Book -&gt; Preferences…__ from menu bar. Add a CardDAV account by following the same procedure as iCal.
 
