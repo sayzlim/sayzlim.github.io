@@ -1,34 +1,14 @@
 ---
 layout: page
 title: "Wallpaper"
-description: List of my favorite wallpapers as displayed in every reviews and tutorials.
+description: The best sites to download wallpapers you see in my articles.
 date: 2013-09-10 16:26
 ---
 
-[![Night Fall][9]](http://bit.ly/1aBZQmp "Night Fall by Vadim Sherbakov")
+Wallpaper represents the taste, the hobby, and the mood of the user. Throughout the posts written for this site, you’re probably wondering where I get all those beautiful wallpapers. Well, here is the list of my favorite websites in no particular order.
 
-[![Brick by Brick][7]](http://fiftyfootshadows.net/2013/09/10/brick-by-brick/ "Brick by Brick by John Carey")
+[**FiftyFootShadows**](http://fiftyfootshadows.net/ "fiftyfootshadows.net") — Probably the site where I get most my wallpapers. The photographer John Carey, along with his wife, YoungDoo Moon, has been turning a common object he encounters daily into a beautiful photos.
 
-[![Grass][8]](http://www.flickr.com/photos/31851196@N05/9158126034/ "Grass by Tobias Wiedenmann")
+[**Unsplash**](http://unsplash.com/ "Unsplash") — This site shares 10 photos every 10 days which you can use for any purposes (including commercial use). I’m fond of their consistency to keep the site updated and variation of photography styles in one location. You might need to crop or resize the images to make sure it looks great as wallpapers.
 
-[![Jaune][1]](http://mariesturges.deviantart.com/art/Jaune-for-Desktop-211582680 "Jaune by Marie Sturges")
-
-[![Desert][2]](http://bo0xvn.deviantart.com/art/164-264533610 "Sand Dunes by matthis_v")
-
-[![Track][3]](http://fiftyfootshadows.net/2011/08/17/aiaiai-tracks/ "Track by John Carey")
-
-[![One][4]](http://georgeharrison.deviantart.com/art/One-148479573 "One by George Harrison")
-
-[![Field Road][5]](http://natsum-i.deviantart.com/art/Field-Road-272463310 "Field Road by Natsumi")
-
-[![Red Bricks][6]](http://mantia.me/wallpaper/red-bricks/ "Red Bricks by Louie Mantia")
-
-[1]: http://images.sayzlim.net/wallpaper/jaune.jpg "Jaune by Marie Sturges"
-[2]: http://images.sayzlim.net/wallpaper/desert.jpg "Sand Dunes by matthis_v"
-[3]: http://images.sayzlim.net/wallpaper/track.jpg "Track by John Carey"
-[4]: http://images.sayzlim.net/wallpaper/one.jpg "One by George Harrison"
-[5]: http://images.sayzlim.net/wallpaper/field_road.jpg "Field Road by Natsumi"
-[6]: http://images.sayzlim.net/wallpaper/red_bricks.jpg "Red Bricks by Louie Mantia"
-[7]: http://images.sayzlim.net/wallpaper/brick_by_brick.jpg "Brick by Brick by John Carey"
-[8]: http://images.sayzlim.net/wallpaper/grass.jpg "Grass by Tobias Wiedenmann"
-[9]: http://images.sayzlim.net/wallpaper/night_fall.jpg "Night Fall by Vadim Sherbakov"
+[**A Solid Base**](http://solidbas.es/ "A Solid Base - The best wallpaper. For your computer, tablet or ...") — The site is no longer active, but you can still find tons of nice wallpapers sorted in both colors and categories.
