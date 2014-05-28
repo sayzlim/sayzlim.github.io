@@ -8,11 +8,11 @@ tags:
 - bettertouchtool
 ---
 
-Working in small screen means you often  need to [switch between apps](http://sayzlim.net/contexts-manage-mac-windows "Manage Mac Application Windows with Contexts - Sayz Lim"), or move and resize windows to optimize the screen state . Sometimes you’re comparing two designs side by side, sometimes you’re taking notes while watching screencast, or sometimes you simply want to move documents from one folder to another.
+Working in small screen means you often  need to [switch between apps](http://sayzlim.net/contexts-manage-mac-windows "Manage Mac Application Windows with Contexts - Sayz Lim"), or move and resize windows to optimize the screen state. Sometimes you’re comparing two designs side by side, sometimes you’re taking notes while watching screencast, or sometimes you simply want to move documents from one folder to another.
 
 <!-- more -->
 
-In one of the Matt Gemmell’s article, [small screen productivity](http://mattgemmell.com/small-screen-productivity "Small screen productivity - Matt Gemmell"), he shared all the best practices to work his 11" MacBook Air. One of the tips is using a dedicated utility for resizing and managing windows.
+In one of the Matt Gemmell’s article, [small screen productivity](http://mattgemmell.com/small-screen-productivity "Small screen productivity - Matt Gemmell"), he shared all the best practices to work on his 11" MacBook Air. One of the tips is using a dedicated utility for resizing and managing windows.
 
 > Moving and resizing windows is traditionally the job of a pointing device, and it’s a guaranteed route to headaches – particularly if you’re a bit obsessive about things lining up properly, as I am.
 
