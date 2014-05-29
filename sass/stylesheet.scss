@@ -32,7 +32,8 @@
 
   .post-container {
     img {
-      margin: 0 1%;
+      display: block;
+      margin: 0 auto;
       max-width: 98%;
       -webkit-box-shadow: 0 0 3px 1px $box-shadow;
       -moz-box-shadow: 0 0 3px 1px $box-shadow;
