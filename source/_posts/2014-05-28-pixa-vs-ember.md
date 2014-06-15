@@ -2,7 +2,7 @@
 layout: post
 title: "Pixa vs Ember"
 date: 2014-05-30 01:00
-description: "Is Ember better than Pixa? This reviews will outline their similarities and differences to help you choose your perfect image manager"
+description: "Is Ember better than Pixa? This reviews will outline their similarities and differences to help you choose your perfect image manager."
 tags:
 - pixa
 - ember

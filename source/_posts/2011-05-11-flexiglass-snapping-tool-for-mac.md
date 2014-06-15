@@ -7,11 +7,11 @@ tags:
 ---
 This is not paid review. The developer kindly contacts me and request a review which coincidentally included in future posts. So I move forward the schedule and post it sooner.
 
+<!--more-->
+
 [ ![Flexiglass Configuration][img1] ](http://images.sayzlim.net/2011/05/flexiglass_setting.jpg "Flexiglass Configuration")
 
 [img1]: http://images.sayzlim.net/2011/05/flexiglass_setting.jpg "Flexiglass Configuration"
-
-<!--more-->
 
 The first thing that catch my attention is the configuration interface. The well designed user interface explain all Flexiglass features without having user to explore deep further. This is very important because most people avoid app with complicated configuration.
 

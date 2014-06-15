@@ -19,7 +19,7 @@ How much time did you spend? Five minutes? Fifteen minutes? Forty minutes?  You 
 
 Do you have similar problem? Keep on reading to find out how I solve this problem. You should be able to sort all the articles in the list by reading this post now, not later.
 
-The key to read all the articles in the list is to simplify the organization process. You can do this by avoiding micromanagement — things like tagging documents, moving files to folders, or emptying trashes. In other words, automate things that can be automated, simplify the structure of your storage. 
+The key to read all the articles in the list is to simplify the organization process. You can do this by avoiding micromanagement — things like tagging documents, moving files to folders, or emptying trashes. In other words, automate things that can be automated, simplify the structure of your storage.
 
 ## Maintain High Level Categorization
 
@@ -38,7 +38,7 @@ There are many types of silos. You can use a folder to store all your read items
 [1893-001]: http://www.barebones.com/products/yojimbo/ "Bare Bones Software - Yojimbo
 [1893-002]: http://sayzlim.net/remember-everything "Remember Everything - Sayz Lim"
 
-The reason why I choose Evernote is each new note contains an excerpt and original link from archived articles. Most of the keywords are included in the title or the excerpt that saves me the time from tagging. Beside, Evernote has a powerful search that acts as my private search engine. 
+The reason why I choose Evernote is each new note contains an excerpt and original link from archived articles. Most of the keywords are included in the title or the excerpt that saves me the time from tagging. Beside, Evernote has a powerful search that acts as my private search engine.
 
 This approach solves two things. First, you don’t feel burdened from saving too many articles in your reading list. It means you can decide what to read later. Another thing it solves is organization. There is no micromanagement. You just save, read, and archive.
 
