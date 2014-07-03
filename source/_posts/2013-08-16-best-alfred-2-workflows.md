@@ -11,7 +11,7 @@ Without [Alfred][3] installed, I feel crippled. I use Alfred for a least 320 tim
 
 <!--more-->
 
-Tons of features developed by the community is ready for you to plug into Alfred. I see these workflows as separate upgrade for my Alfred. Alfred is my weapon. Maximizing the capability of Alfred requires constant exploration until you find workflows that fit your style. Since the beginning of Alfred 2, I’ve gathered some workflows that prove to be useful no matter style you are. Here are the best Alfred 2 workflows you can install immediately.
+Tons of features developed by the community is ready for you to plug into Alfred. I see these workflows as a separate upgrade for Alfred. Maximizing the capability of Alfred requires constant exploration until you find workflows that fit your style. Since the beginning of Alfred 2, I’ve gathered some workflows that prove to be useful no matter what style you are. Here are the best Alfred 2 workflows you can install immediately.
 
 ## [1. Top Processes](https://github.com/zhaocai/alfred2-top-workflow "zhaocai/alfred2-top-workflow · GitHub")
 
@@ -29,7 +29,7 @@ You can quit active window applications with Alfred by using “Quit” keyword,
 
 This workflow allows you to execute menu bar commands without accessing the menu bar. Need to enter full screen? Just type “m full” to show the “Enter Full Screen” command. Menu Bar Search has saved me the headache from implement shortcuts for each application.
 
-## [3. Create New File](http://fufyi.daniel.sh/post/41656533044/alfred-v2-workflow-roundup "Alfred v2 Workflow Roundup - Fuck You, I&#39;m a Prophet")
+## [3. Create New File](http://s3.sayzlim.net/f/create-new-file-alfredworkflow.zip "Create New File Alfred Workflow")
 
 [ ![Create New File Alfred Workflow][img3] ](http://images.sayzlim.net/2013/08/workflow_new_file.jpg "Create New File Alfred Workflow")
 
