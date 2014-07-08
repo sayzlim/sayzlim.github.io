@@ -33,9 +33,9 @@ The repository hosts over 200 workflows: ranging from a simple workflow to compl
 
 Packal Updater is an Alfred workflow that’ll  **only upgrade all the workflows downloaded from Packal**.  It won’t upgrade any workflows you’ve downloaded from other sources, including the one you’ve written.
 
-[ ![Packal Updater in Alfred][img] ](http://images.sayzlim.net/2014/07/packal_alfred.jpg "Packal Updater in Alfre")
+[ ![Packal Updater in Alfred][img] ](http://images.sayzlim.net/2014/07/packal_alfred.jpg "Packal Updater in Alfred")
 
-[img]: http://images.sayzlim.net/2014/07/packal_alfred.jpg "Packal Updater in Alfre"
+[img]: http://images.sayzlim.net/2014/07/packal_alfred.jpg "Packal Updater in Alfred"
 
 The first thing you should do after installing this workflow is to open the graphical application which is available right after you type `packal` as query.  Take some time to configure Packal Updater settings (you can toggle the menu by pressing the burger menu on top of the window). Enter the name you use for all your custom workflows, and make changes to other options according to your preferences.
 
