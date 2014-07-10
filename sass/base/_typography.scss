@@ -130,12 +130,16 @@ p,
 ol,
 ul {
   code {
+    padding: .2em .6em;
+    border: solid 1px scale-lightness($bg-color, -10%);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
     background-color: scale-lightness($bg-color, -4%);
+    vertical-align: baseline;
+    text-shadow: none;
+    white-space: pre-wrap;
     font-size: .77em;
     font-family: $monospace-font;
-    padding: .2em .6em;
-    vertical-align: baseline;
-    white-space: pre-wrap;
-    text-shadow: none;
   }
 }
