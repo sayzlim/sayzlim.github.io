@@ -53,6 +53,8 @@ This workflow is unavailable in Packal, however, it’s one of the workflows you
 
 Enter `recent` to show the all the recently edited files, or filter the result by entering the filename or filetype as parameter. I suggest to change the shortcut to `r` to shorten the number of keystrokes to trigger this workflow.
 
+[**Download Last Changed Files Workflow**](http://s3.sayzlim.net/f/last-changed-files.alfredworkflow.zip "Last Changed Files Workflow")
+
 ## Workflow Help Workflows
 
 [ ![Alfred Workflow Help Workflows][img3] ](http://images.sayzlim.net/2014/07/alfred_helps.jpg "Alfred Workflow Help Workflows")
