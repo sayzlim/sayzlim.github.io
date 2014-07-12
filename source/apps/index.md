@@ -4,7 +4,7 @@ title: "Apps Recommendations"
 date: 2013-10-03 21:00
 description: Complete list of apps I’ve installed on my MacBook Air.
 ---
-Each person has their own set of tools to get jobs done. This is the list of the apps I’m using everyday. Some of the apps are not available on App Store, so you need to buy directly from the developers. Links from App Store are affiliate links.
+Each person has their own set of tools to get jobs done. This is the list of the apps I’m using every day. Some of the apps are not available on App Store, so you need to buy directly from the developers. Links from App Store are affiliate links.
 
 ## Essential on Mac
 These are the apps I must install on my Mac. Without these apps, I’ll have hard time navigating from one screen to another.

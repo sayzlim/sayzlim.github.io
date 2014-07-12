@@ -15,7 +15,7 @@ tags:
 
 The carefully selected typography and focus mode is the reason I choose iA Writer as my writing app. Writer Pro brings it to next level by introducing  Syntax Control™ that highlights the element of sentences like adverbs and adjectives, which as the result, writers gain the eagle-eye view of their own writing.
 
-Writer Pro won’t turn you into a better writer. I believe the only way to become a better writer is to read and write everyday.  Writer Pro is just another writing tool built for writers.
+Writer Pro won’t turn you into a better writer. I believe the only way to become a better writer is to read and write every day.  Writer Pro is just another writing tool built for writers.
 
 Writing is a selfish act. We’re perfecting our craft  — ironically it’ll never be perfect —  so we feel the sense of achievement with each writing completed. We’re also arrogant enough to believe that our writing process is the holy grail that outweigh other writers’ writing process. Ultimately, writers just write and there is no tools that can define what you want to say.
 

@@ -7,7 +7,7 @@ tags:
 - rant
 ---
 
-It was love at first sight. The moment I opened Instapaper, I knew this read later app is designed with _words_ as the main lead of a play. Everyday I’m delighted with the details that made me feel like an honored guest in a coffee shop full of my favorite books and magazines.
+It was love at first sight. The moment I opened Instapaper, I knew this read later app is designed with _words_ as the main lead of a play. Every day I’m delighted with the details that made me feel like an honored guest in a coffee shop full of my favorite books and magazines.
 
 <!--more-->
 

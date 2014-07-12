@@ -2,7 +2,7 @@
 layout: post
 title: "Remember Everything"
 date: 2013-11-27 00:30
-description: We create fragments everyday. Why don’t we save and remember them?
+description: We create fragments every day. Why don’t we save and remember them?
 tags:
 - declutter
 - evernote

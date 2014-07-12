@@ -17,7 +17,7 @@ Sometimes we only want to see all the files that have been created today. Let’
 
 [img1]: http://images.sayzlim.net/2013/06/smartplaylist_finder.jpg "Finder Smart Folder Rules"
 
-These rules, as shown above, are the common one. They’re simple. As you become more experienced with rules, you can create many smart playlists to generate songs automatically everyday in iTunes. All can be done without you lifting a finger.
+These rules, as shown above, are the common one. They’re simple. As you become more experienced with rules, you can create many smart playlists to generate songs automatically every day in iTunes. All can be done without you lifting a finger.
 
 But that’s not the only thing. These rules can be nested. Nested rules is useful when you’re faced with some problems that doesn’t seem resolvable.
 

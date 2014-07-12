@@ -18,7 +18,7 @@ Give the best desktop computer to an ignorant user. Without enough knowledge, he
 
 Give an average desktop computer to a smart user. He’ll know which software works, configure optimal settings, use the computer resources efficiently, and execute tasks within the ability of the hardware itself. He knows what he can do with this device, thus not complaining when the device doesn’t do what he wants.
 
-Perhaps I’m being subjective by not considering many external factors here. The problem is I know some users who don’t bother to learn what they use everyday. Formatting your computer doesn’t solve your problems. You might be busy, but if computing is part of your job or daily activity, I think it’s necessary to gain knowledge about it.
+Perhaps I’m being subjective by not considering many external factors here. The problem is I know some users who don’t bother to learn what they use every day. Formatting your computer doesn’t solve your problems. You might be busy, but if computing is part of your job or daily activity, I think it’s necessary to gain knowledge about it.
 
 To bring out the best of the computing experience, the users themselves need to upgrade their knowledge. It’s not enough to upgrade the system alone. To upgrade the system, you need money. Gaining knowledge doesn’t require as much money as upgrading the system.
 
