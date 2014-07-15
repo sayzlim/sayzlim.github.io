@@ -1,0 +1,176 @@
+/*
+   This document has been created with Marked.app <http://markedapp.com>, Copyright 2011 Brett Terpstra
+   Please leave this notice in place, along with any additional credits below.
+   ---------------------------------------------------------------
+   Title: Personal Resume
+   Author: Sayz Lim
+   Description: Personal made resume.
+*/
+
+@import "base/variable";
+@import "base/normalize";
+
+$condensed-font: "Avenir Next Condensed";
+
+/* Typography*/
+
+#wrapper {
+  overflow: hidden;
+  min-height: 10in;
+}
+
+body {
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    color: $text-color;
+    font: 12px/150% $base-font !important;
+}
+
+a {
+    color: $base-color;
+    text-decoration: none;
+}
+
+h1 {
+    color: $base-color;
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: $condensed-font;
+}
+
+ul,
+ol {
+  padding-left: 1.4em;
+  list-style-position: outside;
+  list-style-type: square;
+}
+
+@mixin highlight {
+  display: inline-block;
+  padding: .4em;
+  background: $base-color;
+  color: $bg-color;
+}
+
+// Layout
+
+.main {
+  float: left;
+  width: 72%;
+}
+
+.sidebar {
+  float: right;
+  width: 22%;
+}
+
+.objective {
+
+  margin-bottom: 1em;
+  padding: 1em 1em 1em 0;
+  border-bottom: solid 2px $base-color;
+
+  font-size: 1.4em;
+  line-height: 150%;
+
+  h2 {
+    color: $base-color;
+    font-size: 1.2em;
+  }
+}
+
+.work-experience {
+
+  margin: 2em 0;
+
+  h2 {
+    @include highlight;
+    font-size: 1.2em;
+  }
+}
+
+  .entry {
+    float: left;
+    width: 48%;
+
+    &:nth-child(2n+1) {
+      margin-right: 2%;
+    }
+
+    p {
+      margin: .5em 0;
+    }
+
+    h3 {
+      margin: .2em 0;
+      font-size: 1em;
+      line-height: .8em;
+    }
+
+    h4 {
+      margin: .8em 0 .4em;
+      color: $base-color;
+      line-height: 1em;
+    }
+
+    em {
+      font-style: normal;
+      line-height: 1em;
+    }
+  }
+
+
+.sidebar {
+  font-size: .8em;
+
+  .profile h2 {
+    margin: .2em 0;
+    color: $base-color;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-family: $condensed-font;
+  }
+}
+
+  .avatar {
+    padding: 0 5%;
+    width: 90%;
+    -webkit-border-radius: 500%;
+  }
+
+  .education,
+  .technical-skills {
+
+    p {
+      margin: .3em 0;
+    }
+
+    h2 {
+      @include highlight;
+      margin: .3em 0;
+      font-size: 1.1em;
+    }
+
+    h3 {
+      color: $base-color;
+      font-size: 1em;
+    }
+  }
+
+  .technical-skills strong {
+    text-transform: uppercase;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: .2in;
+    padding-top: .2in;
+    width: 100%;
+    border-top: solid 2px $base-color;
+    text-align: center;
+
+    p {
+      margin: 0 .7em;
+    }
+  }
