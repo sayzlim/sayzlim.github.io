@@ -16,7 +16,6 @@
     transition: all .15s ease-in-out;
     &:focus {
       outline: none;
-      background: scale-lightness($base-color, 95%);
     }
   }
 
