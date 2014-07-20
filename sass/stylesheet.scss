@@ -27,7 +27,8 @@
   .meta {
     color: scale-lightness($text-color, 40%);
     text-align: center;
-    font-size: .8em;
+    text-transform: uppercase;
+    font: .6em/2.5em $secondary-font;
   }
 
   .post-container {
