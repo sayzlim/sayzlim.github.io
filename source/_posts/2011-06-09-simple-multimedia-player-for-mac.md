@@ -16,7 +16,7 @@ Several open source multimedia player can handle most of the file types without 
 
 [ ![MPlayerX Preview][img1] ](http://images.sayzlim.net/2011/06/mplayerx_preview.jpg "MPlayerX Preview")
 
-[img]: http://images.sayzlim.net/2011/06/mplayerx_preview.jpg "MPlayerX Preview"
+[img1]: http://images.sayzlim.net/2011/06/mplayerx_preview.jpg "MPlayerX Preview"
 
 [MPlayerX](http://mplayerx.org/ "MPlayerX") is an open source multimedia player crafted by Zongyao Qu by considering the simplicity, aesthetic beauty, and the core features. By simplicity, it’s very similar to QuickTime Player in term of interface and user experience.
 
