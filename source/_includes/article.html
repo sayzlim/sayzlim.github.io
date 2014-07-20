@@ -15,7 +15,7 @@
     {% endif %}
     {% unless page.meta == false %}
       <aside class="meta">
-        <a href="{{ root_url }}{{ post.url }}">&#x221E;</a> {% include post/date.html %}{{ time }}
+        <a href="{{ root_url }}{{ post.url }}">&#x221E;</a> {% include post/date.html %}{{ time }} • {{ content | reading_time }}
       </aside>
     {% endunless %}
 {% endunless %}
