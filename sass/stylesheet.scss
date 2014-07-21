@@ -52,12 +52,24 @@
 
   .update {
     box-sizing: border-box;
+    border: solid 1px scale-lightness($base-color, 40%);
     margin: 1.1em 0;
-    padding: .5em;
+    padding: 1em;
     border-radius: 2px;
     background-color: scale-lightness($base-color, 90%);
     p {
       margin: 0;
+    }
+  }
+
+  .sidenote {
+    @extend .update;
+    strong {
+      font: bold  .8em/1.4em $secondary-font;
+      content: "Note";
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: .5em;
     }
   }
 
@@ -121,10 +133,6 @@
     // @extend .support;
     font: 1em/1.875em $base-font;
     margin: 1em 0;
-
-    .form {
-      text-align: left;
-    }
 
     h2 {
       margin: .5em 0;
