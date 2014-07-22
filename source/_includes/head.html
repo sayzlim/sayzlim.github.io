@@ -16,7 +16,7 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
   <meta name="author" content="{{ site.author }}">
-  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
+  <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 | remove_whitespace }}">
 
   {% include custom/opengraph.html %}
   {% include custom/twitter_card.html %}

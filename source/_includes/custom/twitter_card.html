@@ -2,6 +2,6 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="{{ site.twitter }}">
   <meta name="twitter:title" content="{{ page.title }}">
-  <meta name="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
+  <meta name="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:200 | remove_whitespace }}">
   {{ content | fetch_first_image }}
 {% endif %}
