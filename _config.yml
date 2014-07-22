@@ -15,6 +15,9 @@ description: I write articles on how to organize, minimize, and focus works with
 # Additionally, %o will give you the ordinal representation of the day
 date_format: "%b %d, %Y"
 
+# Social Media Accounts
+twitter: "@sayzlim"
+
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: http://feedpress.me/sayzlim
 subscribe_email: http://eepurl.com/OGGfD

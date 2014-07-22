@@ -3,13 +3,8 @@
 <!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head prefix="og: http://ogp.me/ns/article#">
-  <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
-  <meta name="author" content="{{ site.author }}">
-  {% include custom/opengraph.html %}
   {% assign index = true %}
   {% if page.title %}{% assign index = false %}{% endif %}
-
 
   {% capture description %}
     {% if index %}{{ site.description }}
@@ -18,15 +13,13 @@
     {% endif %}
   {% endcapture %}
 
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}</title>
+  <meta name="author" content="{{ site.author }}">
   <meta name="description" content="{{ description | strip_html | condense_spaces | truncate:150 }}">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@sayzlim">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.author }}">
-  <meta name="twitter:description" content="{{ description | strip_html | condense_spaces | truncate:200 }}">
-  {{ content | fetch_first_image }}
-
-  {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+  {% include custom/opengraph.html %}
+  {% include custom/twitter_card.html %}
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
