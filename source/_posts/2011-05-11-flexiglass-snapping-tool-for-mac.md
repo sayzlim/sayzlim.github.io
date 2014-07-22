@@ -33,4 +33,4 @@ Aside from the Flexiglass, there are other apps such as [BetterTouchTool](http:/
 
 Flexiglass is a complete windows snapping app, it provides basic snapping feature and shortcuts configuration to fill from half to quarter of window screen. It enhances the titlebar controls with ability to quit and fully maximize window. It is for you who need complete features snapping app with simple configuration user interface.
 
-Purchase: [Flexiglass](https://itunes.apple.com/us/app/flexiglass/id426410278?mt=12 "Flexi Glass")
+[**Purchase Flexiglass ($9.99)**](https://itunes.apple.com/us/app/flexiglass/id426410278?mt=12&uo=4&at=11ld6n&ct=flexiglass "Flexiglass")

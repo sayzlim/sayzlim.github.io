@@ -64,4 +64,4 @@ Wren for Mac is for you who want to occasionally tweet without having to check o
 
 Remember that Wren for Mac is not crafted to work as full featured client. Instead, it’s an app with one purpose. Let you share your thought and keep creating.
 
-Purchase: [Wren for Mac](https://itunes.apple.com/us/app/wren/id439545337?mt=12 "Wren")
+[**Purchase Wren for Mac ($4.99)**](https://itunes.apple.com/us/app/wren/id439545337?mt=12&uo=4&at=11ld6n&ct=wren+for+mac "Wren")
