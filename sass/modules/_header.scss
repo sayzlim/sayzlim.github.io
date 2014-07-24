@@ -1,55 +1,70 @@
-header {
+// Layout
+.site-header{
   overflow: hidden;
   background-color: $header-color;
   padding: 0 1.5em;
 }
 
-.nav-wrapper {
-    margin: 3.5em auto 0.5em auto;
-    max-width: 37.5em;
-    a, a:active, a:visited, a:hover {
-      color: $bg-color;
-      text-shadow: 0 -1px 0 adjust-lightness($base-color, -10%);
-    }
-    section {
-      overflow: hidden;
-    }
-    nav {
-      float: right;
-      ul {
-        margin: 0;
-        padding: 0;
-      }
-      li { display: inline-block; padding: 0.2em; }
-      a, a:active, a:visited {
-        margin: 5px 0;
-        padding-bottom: .5em;
-      }
-      a:hover {
-        padding-bottom: 0;
-        border-bottom: solid 2px $bg-color;
-      }
-    }
+  h1.title {
+    margin: 0;
+    float: left;
   }
 
-  .title { float: left; }
+.nav-wrapper {
+    margin: 3.5em auto 0.5em auto;
+    padding: 0 0 .1em 0;
+    max-width: 37.5em;
+    overflow: hidden;
+  }
 
+  .nav-item {
+    margin-top: .4em;
+    float: right;
 
-header {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+      li {
+        display: inline-block;
+        padding: 0.2em;
+      }
+  }
+
+// Typography
+
+.site-header {
   text-align: center;
   text-shadow: none;
   -webkit-text-shadow: none;
   -moz-text-shadow: none;
-
-  section nav {
-    font-size: 0.9em;
-  }
 }
-  .title {
-    font-weight: bold;
-    font-size: 1.4em;
-    &:hover {
-      padding: 0;
+
+  h1.title  a:hover {
       color: $bg-color;
+    }
+
+  .nav-wrapper {
+    a,
+    a:active,
+    a:visited,
+    a:hover {
+      color: $bg-color;
+      text-shadow: 0 -1px 0 adjust-lightness($base-color, -10%);
+    }
+  }
+
+  .nav-item {
+    font: .9em/160% $base-font;
+    a,
+    a:active,
+    a:visited {
+      margin: 5px 0;
+      padding-bottom: .5em;
+    }
+    a:hover {
+      padding-bottom: .05em;
+      border-bottom: solid 2px $bg-color;
     }
   }

@@ -3,20 +3,26 @@
 }
 
 @media screen and (max-width: pem(1050)) {
-  .ads, img.typekit-badge { display: none !important; }
+  .ads,
+  img.typekit-badge {
+    display: none !important;
+  }
 }
 
 @media screen and (min-width: pem(569)) and (max-width: pem(1100)) {
-  body { font: 1.125em/1.6875em $base-font; }
+  body {
+    font: 1.125em/1.6875em $base-font;
+  }
 }
 
 @media screen and (max-width: pem(568)) {
-  body { font: .9375em/1.640625em $base-font; }
-  .title, .nav-wrapper nav {
+  body {
+    font: .9375em/1.640625em $base-font;
+  }
+  .title,
+  .nav-wrapper nav {
     width: 100%;
   }
-
-  .title { margin-bottom: 0.3em; }
 
 .form {
     input {

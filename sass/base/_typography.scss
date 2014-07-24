@@ -14,14 +14,14 @@ h6 {
   margin: .6em 0;
   text-align: center;
   font-weight: bold;
-  a {
+  a, a:active, a:visited {
     display: block;
     padding: 0;
-    border: none !important;
-    color: $text-color !important;
+    border: none;
+    color: $text-color;
     &:hover {
-      border: none !important;
-      color: $base-color !important;
+      border: none;
+      color: $hover-color;
     }
   }
 }
@@ -29,14 +29,14 @@ h6 {
 a,
 a:active,
 a:visited {
-  color: $text-color;
+  color: $base-color;
   text-decoration: none;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
+  -webkit-transition: all .23s ease-in-out;
+  -moz-transition: all .23s ease-in-out;
+  transition: all .23s ease-in-out;
 }
 
-a:hover { color: $base-color; }
+a:hover { color: $hover-color; }
 
 ::selection {
   background-color: $base-color;
