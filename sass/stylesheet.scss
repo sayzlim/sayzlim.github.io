@@ -157,3 +157,16 @@
       width: 48%;
       text-align: right;
     }
+
+
+
+// Animation
+
+.post-container img {
+  -webkit-transform: scale3d(1,1,1);
+  -webkit-transition: all .15s ease-in-out;
+  &:hover,
+  &:focus {
+    -webkit-transform: scale3d(1.01,1.01,1.01);
+  }
+}
