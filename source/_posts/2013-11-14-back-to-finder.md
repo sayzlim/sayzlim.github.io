@@ -5,6 +5,7 @@ date: 2013-11-14  01:23
 description: Mavericks introduces tabs as one of the main feature alongside with tags. Should I go back to Finder?
 tags:
 - declutter
+- finder
 ---
 
 Tabs is finally available in Finder.  A simple and familiar feature we’ve grown accustomed can now be found in the wave of Mavericks.
