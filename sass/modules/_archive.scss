@@ -16,13 +16,13 @@
 }
 
 .archives > .list-item {
-  margin: .5em 0 0 1em;
+  margin: .5em 0 .6em 1em;
 }
 
 .archives time {
   display: block;
-  height: 1.2em;
   color: scale-lightness($text-color, 40%);
   text-transform: uppercase;
-  font: 0.54em/1.2em $secondary-font;
+  font: 0.54em/1.5 $secondary-font;
+  margin: .1em 0;
 }

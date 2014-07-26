@@ -22,7 +22,7 @@
     color: scale-lightness($text-color, 40%);
     text-align: center;
     text-transform: uppercase;
-    font: .6em/2.5em $secondary-font;
+    font: .6em/2.2 $secondary-font;
   }
 
   .post-container {
@@ -59,7 +59,7 @@
   .sidenote {
     @extend .update;
     strong {
-      font: bold  .8em/1.4em $secondary-font;
+      font: bold  .8em/1.4 $secondary-font;
       content: "Note";
       text-transform: uppercase;
       display: block;
@@ -92,7 +92,7 @@
   .footnotes {
     border-top: solid 1px scale-lightness($bg-color, -15%);
     font-weight: normal;
-    font: .75em/170% $base-font;
+    font: .75em/1.7 $base-font;
     p { margin: 0; }
     hr { display: none; }
     ol {
@@ -116,7 +116,7 @@
     background: scale-lightness($base-color, 95%);
     text-align: left;
     text-shadow: none;
-    font: .8em/1.7em $base-font;
+    font: .8em/1.5 $base-font;
 
     p {
       margin: 1em 0;
@@ -125,7 +125,7 @@
 
   .subscribe-page {
     // @extend .support;
-    font: 1em/1.875em $base-font;
+    font: 1em/1.8 $base-font;
     margin: 1em 0;
 
     h2 {

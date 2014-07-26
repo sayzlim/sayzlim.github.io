@@ -4,7 +4,9 @@
   background-color: $header-color;
   text-shadow: none;
 
-  a, a:active, a:visited {
+  a,
+  a:active,
+  a:visited {
     padding-bottom: .5em;
     color: $light-color;
     text-shadow: 0 -1px 0 adjust-lightness($base-color, -10%);
@@ -17,7 +19,7 @@
   }
 
   ul {
-    margin: 0;
+    margin: 1em 0;
     padding: 0;
     text-align: center;
     li {
@@ -45,7 +47,7 @@
       border: none;
       border-radius: 2px;
       background-color: $bg-color;
-      font: 0.9em/1.7em $base-font !important;
+      font: 0.9em/1.7 $base-font !important;
       &:focus {
         outline: none;
       }
@@ -56,7 +58,8 @@
 .credit {
   color: $bg-color;
   text-align: center;
-  font-size: 0.9em;
+  font: 0.9em/1.5 $base-font;
+  margin: 1.5em 0;
 }
 
 .footer {

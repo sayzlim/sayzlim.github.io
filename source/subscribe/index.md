@@ -4,7 +4,7 @@ title: "Newsletter Subscription"
 date: 2014-02-19 01:00
 ---
 
-Before you enter your name and email address in the form below, let me give you a brief summary of what you can expect from this newsletter, which made up from:
+Before you enter your name and email address in the form below, let me give you a brief summary of what you can expect from this newsletter, which are made up from:
 
 - Weekly updates of all the tips, reviews, and guides I’ve written.
 - The most useful and practical articles I’ve read in the past week.

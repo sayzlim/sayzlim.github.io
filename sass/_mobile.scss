@@ -11,13 +11,13 @@
 
 @media screen and (min-width: pem(569)) and (max-width: pem(1100)) {
   body {
-    font: 1.125em/1.6875em $base-font;
+    font: 1.125em/1.7 $base-font;
   }
 }
 
 @media screen and (max-width: pem(568)) {
   body {
-    font: .9375em/1.640625em $base-font;
+    font: .9375em/1.7 $base-font;
   }
   .title,
   .nav-wrapper nav {

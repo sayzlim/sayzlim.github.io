@@ -1,7 +1,7 @@
 body {
   color: $text-color;
   text-shadow: 0 1px 0 scale-lightness($text-color, 99%);
-  font: 1.25em/1.875em $base-font;
+  font: 1.25em/1.6 $base-font;
   -webkit-text-size-adjust: none;
 }
 
