@@ -11,8 +11,6 @@
     border-radius: 2px;
     background: scale-lightness($bg-color, 40%);
     font: 1em/1.7em $base-font !important;
-    -webkit-transition: all .15s ease-in-out;
-    -moz-transition: all .15s ease-in-out;
     transition: all .15s ease-in-out;
     &:focus {
       outline: none;

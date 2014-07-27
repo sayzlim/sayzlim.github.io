@@ -6,8 +6,6 @@
       border-left: solid .3em $base-color;
       a {
         display: block;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding: .4em;
         border: solid 1px scale-lightness($bg-color, -4%);

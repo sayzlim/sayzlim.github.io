@@ -33,8 +33,6 @@ a:active,
 a:visited {
   color: $base-color;
   text-decoration: none;
-  -webkit-transition: all .23s ease-in-out;
-  -moz-transition: all .23s ease-in-out;
   transition: all .23s ease-in-out;
 }
 
@@ -115,8 +113,6 @@ pre {
   border-radius: 2px;
   box-sizing: border-box;
   background-color: scale-lightness($bg-color, -90%);
-  -webkit-box-shadow: 0 0 3px 1px $box-shadow;
-  -moz-box-shadow: 0 0 3px 1px $box-shadow;
   box-shadow: 0 0 3px 1px $box-shadow;
   color: $gold;
   text-shadow: none;
@@ -134,8 +130,6 @@ ul {
   code {
     padding: .2em .6em;
     border: solid 1px scale-lightness($bg-color, -10%);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: scale-lightness($bg-color, -4%);
     vertical-align: baseline;
