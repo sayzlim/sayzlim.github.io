@@ -19,8 +19,6 @@ You need to know what you want to do with your browser. So choose the extension 
 These are the extensions which sweeten your user interface by eliminating the unnecessary to let the necessary talks. Give it a try to see what magic it will bring to your favourite site.
 
 - [**Google Search Cleanup**][1]: Bring the classic Google homepage and search by hiding the "more…" at left side.
-- [**Optimize Legibility**][2]
-It doesn't change the font. It makes your text more readable by improving the kerning and ligatures in text.
 - [**Pure Flickr**][11]: Pure Flickr adding touch to Flickr by replacing the default logo with the clean one (without by Yahoo!) and adding more whitespace to give the spacious impression.
 - [**Reload Button**][3]: I find a browser without reload button weird even though I use shortcut.
 

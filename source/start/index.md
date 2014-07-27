@@ -2,6 +2,7 @@
 layout: page
 title: "Start"
 date: 2013-09-10 16:26
+description: Collection of articles that can help you to declutter the messy and disorganized Mac storage.
 ---
 
 I used to publish [all my posts on Tumblr][5110-001] because of its simplicity. It’s a blogging platform where you just write. It’s a place where many authors with credibility share their thoughts. It’s a social network where readers can get know their favorite writers.

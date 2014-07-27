@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Keyboardless MacBook Air
+description: Is the future lay within keyboard? Can Apple build a MacBook Air that is thinner with a keyboard that adaptable.
 tags:
 - rant
 ---
