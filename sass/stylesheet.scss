@@ -58,7 +58,6 @@
     @extend .update;
     strong {
       font: bold  .8em/1.4 $secondary-font;
-      content: "Note";
       text-transform: uppercase;
       display: block;
       margin-bottom: .5em;
@@ -91,8 +90,12 @@
     border-top: solid 1px scale-lightness($bg-color, -15%);
     font-weight: normal;
     font: .75em/1.7 $base-font;
-    p { margin: 0; }
-    hr { display: none; }
+    p {
+      margin: 0;
+    }
+    hr {
+      display: none;
+    }
     ol {
       margin: 0;
       padding: 1em 1em 0 3em;
@@ -140,7 +143,8 @@
     }
   }
 
-    .newer, .older {
+    .newer,
+    .older {
       padding: 1em 0;
     }
 
