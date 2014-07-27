@@ -1,3 +1,4 @@
+require 'autoprefixer-rails'
 require 'sass-globbing'
 
 # Require any additional compass plugins here.
@@ -17,3 +18,10 @@ fonts_dir = "source/fonts"
 
 line_comments = false
 output_style = :compressed
+
+on_stylesheet_saved do |file|
+  css = File.read(file)
+  File.open(file, 'w') do |io|
+    io << AutoprefixerRails.process(css)
+  end
+end
