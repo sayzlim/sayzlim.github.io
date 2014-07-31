@@ -24,13 +24,22 @@
     width: 100%;
   }
 
-.form {
+  .form {
     input {
       float: left;
     }
     input.name,
     input.email {
       width: 70%;
+    }
+  }
+
+  .features {
+    .column {
+      width: 98%;
+      p {
+        text-align: left;
+      }
     }
   }
 }

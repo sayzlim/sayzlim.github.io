@@ -1,0 +1,24 @@
+@import "button";
+
+.digitalshelf.support {
+  margin: 1em 0;
+}
+
+.features {
+  text-align: center;
+  .button {
+    font: .8em/1.5 $base-font;
+  }
+}
+
+.column {
+  display: inline-block;
+  margin: 1.5%;
+  width: 30%;
+  text-align: center;
+  font: .9em/1.5 $base-font;
+}
+
+.button {
+  border-radius: 4px;
+}

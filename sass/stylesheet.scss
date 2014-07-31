@@ -3,6 +3,7 @@
 @import "components/swiftype";
 @import "components/form";
 @import "components/pace";
+@import "components/digitalshelf";
 
 /* Elements in post-container */
 
@@ -70,8 +71,7 @@
       display: inline-block;
       margin: .2em 0;
       padding: .8em 1.5em;
-      font-size: .8em;
-      line-height: 1em;
+      font: .8em/1 $base-font;
     }
 
     a {
