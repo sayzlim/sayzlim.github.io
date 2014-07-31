@@ -1,0 +1,15 @@
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: .3em .6em;
+  border: solid 1px scale-lightness($base-color, -5%);
+  border-radius: 2px;
+  background: scale-lightness($bg-color, 40%);
+  text-shadow: none;
+  font: 1em/1.7 $base-font;
+  transition: all .15s ease-in-out;
+  &:hover {
+    background-color: $base-color;
+    color: $bg-color;
+  }
+}
