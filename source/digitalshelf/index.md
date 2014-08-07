@@ -54,12 +54,12 @@ I’ll write more guides upcoming weeks. You can stay updated by signing up for 
 <a class="button" href="passwords/">Read More</a>
 </div>
 
-<div class="password column">
+<div class="photos column">
 <h3>Photos</h3>
 
 <p>Backup all your photos and open them with any photo editor you love. No more trouble exporting them when the app ceases to exist.</p>
 
-<a class="button" href="#">In Progress</a>
+<a class="button" href="photos/">Read More</a>
 </div>
 
 <div class="password column">
