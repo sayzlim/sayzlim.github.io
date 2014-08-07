@@ -9,10 +9,7 @@ module FetchFirstImageFilter
         # input.to_s.gsub!("/", "\"")
         first_image = input.match(/<img src=".*(jpg|png)"/)
         first_image = first_image.to_s.match(/http.*(jpg|png)/)
-
-        twitter_image_meta = "<meta name=\"twitter:image:src\" content=\"" + first_image.to_s + "\">"
-
-        first_image != nil ? twitter_image_meta : ""
+        first_image != nil ? first_image : ""
     end
 end
 

@@ -2,7 +2,8 @@
   <meta property="og:title" content="{{ page.title }}" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-  {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
+  <meta property="og:image" content="{{ content | fetch_first_image }}" />
+  <meta property="og:description" content="{{ description | strip_html | condense_spaces | truncate:200 | remove_whitespace }}" />
   <meta property="article:published_time" content="{{ page.date | date: "%Y-%m-%d" }}" />
   <meta property="article:author" content="{{ site.author }}" />
 {% endif %}
