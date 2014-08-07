@@ -2,7 +2,7 @@
 layout: post
 title: "Pixa vs Ember"
 date: 2014-05-30 01:00
-description: "Is Ember better than Pixa? This reviews will outline their similarities and differences to help you choose your perfect image manager."
+description: "Is Ember better than Pixa? This review will outline their similarities and differences to help you choose your perfect image manager."
 tags:
 - pixa
 - ember
@@ -12,6 +12,9 @@ tags:
 I run Pixa and Ember one more time; I need to confirm their differences. Pixa stores the collection of my precious photos: the graduation, the birthday, and the vacation. On the other hand, Ember is my inspirational chamber where beautiful websites, minimalistic fixie, and well-designed user interface are on display. What sets them apart? Is it possible to use them together?
 
 <!-- more -->
+
+> %sidenote%
+> **Get Pixa and Ember for $39.99:** The Productive Design Bundle features seven apps with Pixa and Ember bundled together. You can support my writing by [buying this bundle with my affiliate link](http://stacksocial.com/sales/the-productive-designer-mac-bundle?aid=a-n92mnbkl "The Productive Design Bundle").
 
 I was once the victim of abundance. Instead of figuring out what I need, I installed all the cool apps reviewed by media. As the result, I use tools without purpose — I swing the hammer in hand without target.
 
@@ -134,6 +137,9 @@ Ember is an amazing tool to help you creating a visual scrapbook. It’s suitabl
 ## Conclusion
 
 You can use Ember or Pixa to manage your images, but which one is the best?  It depends on your answer in the beginning. Do you need the images accessible in Finder? Do you need the editing tools?
+
+> %sidenote%
+> **Get Pixa and Ember for $39.99:** The Productive Design Bundle features seven apps with Pixa and Ember bundled together. You can support my writing by [buying this bundle with my affiliate link](http://stacksocial.com/sales/the-productive-designer-mac-bundle?aid=a-n92mnbkl "The Productive Design Bundle").
 
 It’s not about choosing one and forget the other. In fact, I use Pixa and Ember together. It’s a matter of what you want to do with those images.
 

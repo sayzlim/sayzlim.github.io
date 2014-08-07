@@ -53,7 +53,7 @@ When it comes to password manager, I only have one recommendation. It’s 1Passw
 
 **Don’t use real answers for the so-called  secret questions**.  Figuring out your personal information is much easier with Facebook, LinkedIn, and Google. “Where is your hometown” is no longer a question to protect your accounts. It’s the one way ticket to send your account to the irresponsible parties.
 
-Instead, answer with nonsenses. Where is your hometown? Use “Bikini Bottom” as an answer, or just type any combination of words like “The Terminator of Mars“. These information unavailable online. They won’t be able to guess the *secret answers*.
+Instead, answer with nonsenses. Where is your hometown? Use “Bikini Bottom” as an answer, or just type any combination of words like “The Terminator of Mars“. These information are unavailable online. They won’t be able to guess the *secret answers*.
 
 [ ![1Password Notes][222542] ](http://images.sayzlim.net/digitalshelf/password_1password_note.jpg "1Password Notes")
 
