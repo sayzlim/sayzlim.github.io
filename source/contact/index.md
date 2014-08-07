@@ -20,3 +20,4 @@ You can contact me at:
 
 - Email: <mailto:talk@sayzlim.net>
 - Twitter: [@sayzlim](http://twitter.com/sayzlim)
+- Discussion: [http://tlk.io/sayzlim](http://tlk.io/sayzlim "Sayz Lim Chat Room")
