@@ -46,6 +46,9 @@ Password manager these days are now integrated with web browsers. It means you c
 
 When it comes to password manager, I only have one recommendation. It’s 1Password. It’s available on Mac, Windows, iPhone, iPad, and Android. Check it out if you haven’t used any password manager.
 
+> %sidenote%
+> **1Password 30% Discount Sale!** AgileBits is currently holding a sale for both version of 1Passwords. If you buy it now, you’ll receive a free upgrade to iOS 8 supports which comes with an awesome extension (You can enter your password right from Safari without opening 1Passwords).
+
 - [Buy 1Password for Mac ($49.99)](https://itunes.apple.com/us/app/1password-password-manager/id443987910?mt=12&at=11ld6n&ct=1password+for+mac "Mac App Store - 1Password - Password Manager and Secure Wallet")
 - [Buy 1Password for iOS ($17.99)](https://itunes.apple.com/us/app/1password-password-manager/id568903335?mt=8&at=11ld6n&ct=1password+for+ios "1Password - Password Manager and Secure Wallet")
 
