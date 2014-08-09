@@ -1,24 +1,70 @@
+// Layout
+.search-result {
+  min-height: 20em;
+}
+
+// Swiftype
 .st-search-summary h2 {
-  text-align: left;
+  font: .8em/1.5 $base-font !important;
 }
 
 .st-query {
-  font-weight:bold ;
   color: $base-color !important;
+  text-transform: lowercase !important;
+  font-weight: bold;
 }
 
 .st-results {
   h3, {
     text-align: left;
+    font: 1em/1.5 $base-font !important;
     a {
       color: $base-color !important;
       text-decoration: none !important;
     }
   }
-
   em {
-    color: $base-color;
     font-weight: bold;
     font-style: normal;
+  }
+}
+
+.st-metadata {
+  font: .8em/1.5 $base-font !important;
+}
+
+.st-page {
+  margin: .5em 0;
+  padding: .5em;
+  text-transform: uppercase;
+  font: .7em/1.5 $secondary-font;
+}
+
+.st-page.st-next {
+  float: right !important;
+}
+
+// Search Form
+
+.search-form {
+  font: .9em/1.5 $base-font;
+
+  @extend %form;
+  .search-input {
+    display: block;
+    float: left;
+    width: 73%;
+  }
+  input[type="submit"] {
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    width: 23%;
+    border: solid 1px scale-lightness($base-color, -5%);
+    background: scale-lightness($base-color, 10%);
+    color: scale-lightness($base-color, 95%);
+    &:hover {
+      background: $base-color;
+    }
   }
 }

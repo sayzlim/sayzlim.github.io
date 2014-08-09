@@ -4,4 +4,5 @@ layout: nil
 User-agent: *
 Disallow: /post/*
 Disallow: /page/*
+Disallow: /search/
 Sitemap: {{ site.url }}/sitemap.xml
