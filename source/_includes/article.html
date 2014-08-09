@@ -2,19 +2,19 @@
   <article class="regular">
     {% if index %}
       {% if post.external-url %}
-        <h1><a href="{{ post.external-url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %} &#x2192;</a></h1>
+        <h1 data-swiftype-index="false"><a href="{{ post.external-url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %} &#x2192;</a></h1>
       {% else %}
-      <h1><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+      <h1 data-swiftype-index="false"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
       {% endif %}
     {% else %}
       {% if page.external-url %}
-        <h1><a href="{{ page.external-url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} &#x2192;</a></h1>
+        <h1 data-swiftype-index="false"><a href="{{ page.external-url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %} &#x2192;</a></h1>
       {% else %}
-        <h1><a href="{{ root_url }}{{ page.url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h1>
+        <h1 data-swiftype-index="false"><a href="{{ root_url }}{{ page.url }}">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</a></h1>
       {% endif %}
     {% endif %}
     {% unless page.meta == false %}
-      <aside class="meta">
+      <aside data-swiftype-index="false" class="meta">
         <a href="{{ root_url }}{{ post.url }}">&#x221E;</a> {% include post/date.html %}{{ time }} • {{ content | reading_time }}
       </aside>
     {% endunless %}

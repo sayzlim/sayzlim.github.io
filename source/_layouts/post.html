@@ -4,7 +4,7 @@ single: true
 ---
 
 <div class="post-container">
-  <nav>
+  <nav data-swiftype-index="false">
       {% if page.previous.url %}
         <a class="older" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &#x2192;</a>
       {% endif %}
@@ -16,7 +16,7 @@ single: true
   {% include article.html %}
 
   {% if site.related_posts != empty %}
-  <aside class="related">
+  <aside data-swiftype-index="false" class="related">
     <h3>Related Posts:</h3>
     <ul>
       {% for post in site.related_posts limit:5 %}
@@ -25,7 +25,7 @@ single: true
     </ul>
   </aside>
   {% else %}
-    <nav>
+    <nav data-swiftype-index="false">
       {% if page.previous.url %}
         <a class="older" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &#x2192;</a>
       {% endif %}
@@ -35,7 +35,7 @@ single: true
     </nav>
   {% endif %}
 
-  <aside class="support">
+  <aside data-swiftype-index="false" class="support">
     <p><strong>Looking for more creative ways to use your Mac?</strong> Join the rest of readers and subscribe to weekly newsletter where I share the best tips and secrets on using your Mac. <a href="http://sayzlim.net/subscribe/" title="Subscribe - Sayz Lim">More details »</a></p>
     <form class="form" action="http://sayzlim.us2.list-manage.com/subscribe/post" method="POST">
       <input type="hidden" name="u" value="ff1398bcc911abf87a3dfe82d">

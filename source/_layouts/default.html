@@ -1,7 +1,7 @@
 {% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
 {% include head.html %}
 <body>
-  <header class="site-header">
+  <header data-swiftype-index="false" class="site-header">
     <section class="nav-wrapper">
         {% include header.html %}
         {% include navigation.html %}
@@ -10,7 +10,7 @@
   <div class="container">
       {{ content | expand_urls: root_url }}
   </div>
-  <footer class="footer">{% include footer.html %}</footer>
+  <footer data-swiftype-index="false" class="footer">{% include footer.html %}</footer>
   {% include after_footer.html %}
 </body>
 </html>
