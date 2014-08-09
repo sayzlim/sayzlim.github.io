@@ -82,6 +82,7 @@
       text-shadow: none;
       &:hover {
         border: solid .15em $hover-color;
+        color: $hover-color;
       }
     }
   }
