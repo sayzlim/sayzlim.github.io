@@ -5,6 +5,7 @@
 
 // Swiftype
 .st-search-summary h2 {
+  text-align: left;
   font: .8em/1.5 $base-font !important;
 }
 
@@ -12,6 +13,12 @@
   color: $base-color !important;
   text-transform: lowercase !important;
   font-weight: bold;
+  &:before {
+    content: "“";
+  }
+  &:after {
+    content: "”";
+  }
 }
 
 .st-results {
