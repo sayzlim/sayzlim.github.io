@@ -65,6 +65,17 @@
     }
   }
 
+  .sticky {
+    @extend .update;
+    font: .8em/1.5 $base-font;
+    strong {
+      font: bold  .8em/1.4 $secondary-font;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: .5em;
+    }
+  }
+
   .read-more {
     text-align: center;
     a {
