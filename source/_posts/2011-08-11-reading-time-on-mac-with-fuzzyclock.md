@@ -5,11 +5,11 @@ tags:
 - fuzzyclock
 - review
 ---
-I love words. I love beautiful typography. FuzzyClock displays the time with words instead of numbers. With beautiful typeface, FuzzyClock looks elegant in menubar.
+I love words. I love beautiful typography. FuzzyClock displays the time with words instead of numbers. With beautiful typeface, FuzzyClock looks elegant in menu bar.
 
-[ ![FuzzyClock Desktop][img1] ](http://images.sayzlim.net/2011/08/fuzzyclock_desktop.jpg "FuzzyClock Desktop")
+[ ![FuzzyClock for Mac][214347] ](http://images.sayzlim.net/2011/08/fuzzyclock_desktop.jpg "FuzzyClock for Mac")
 
-[img1]: http://images.sayzlim.net/2011/08/fuzzyclock_desktop.jpg "FuzzyClock Desktop"
+[214347]: http://images.sayzlim.net/2011/08/fuzzyclock_desktop.jpg "FuzzyClock for Mac"
 
 It doesn't have beautiful icon. So get a replacement for it. Install it, and you might fall in love with it.
 
@@ -23,7 +23,8 @@ Download [CodeBold][2] and  use the setting below.
 
 [img2]: http://images.sayzlim.net/2011/08/fuzzyclock_setting.jpg "FuzzyClock Settings"
 
-If you plan to change the icon yourself, use official link. To use the modified one, use alternative link.
+> %update%
+> **Update 2014-08-11:** The developer has removed their download page. Here’s the alternative download I keep just in case stuffs like this happens. 
 
 [Download](http://s3.sayzlim.net/f/fuzzyclock.zip "FuzzyClock for Mac")
 
