@@ -1,13 +1,16 @@
 // Layout
-.search-result {
-  min-height: 20em;
-}
+.post-container
+  .search-result {
+    min-height: 20em;
+    margin-top: 0;
+  }
 
 // Swiftype
-.st-search-summary h2 {
-  text-align: left;
-  font: .8em/1.5 $base-font !important;
-}
+.st-search-summary
+  h2 {
+    text-align: left;
+    font: .8em/1.5 $base-font !important;
+  }
 
 .st-query {
   color: $base-color !important;
@@ -60,6 +63,7 @@
   .search-input {
     background: #fff;
     display: block;
+    font: 1.1em/1.5 $base-font !important;
     float: left;
     width: 73%;
   }
