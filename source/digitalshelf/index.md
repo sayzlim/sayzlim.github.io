@@ -62,12 +62,12 @@ I’ll write more guides upcoming weeks. You can stay updated by signing up for 
 <a class="button" href="photos/">Read More</a>
 </div>
 
-<div class="password column">
+<div class="notes column">
 <h3>Notes</h3>
 
 <p>Notes are meant to help you draw conclusion that supports your decision. It’s your knowledge bank. Keep them in order.</p>
 
-<a class="button" href="#">In Progress</a>
+<a class="button" href="notes/">Read More</a>
 </div>
 
 </div>
