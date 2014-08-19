@@ -127,6 +127,10 @@ figure.code {
   text-shadow: none;
 }
 
+  figure.code {
+    margin: .5em 0 1.1em;
+  }
+
   pre > code {
     padding: .5em;
   }
