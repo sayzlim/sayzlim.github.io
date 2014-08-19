@@ -1,0 +1,34 @@
+.code {
+  // Function
+  .nt,
+  .nv,
+  .mi, {
+    color: #fc580c;
+  }
+  .o {
+    color: #ffa927;
+  }
+  // Comments
+  .c,
+  .c1 {
+    color: #615953;
+  }
+  // String Type, Storage Type
+  .s,
+  .si {
+    color: #fdca49;
+  }
+  // Operator
+  .k,
+  .mh {
+    color: #f38630;
+  }
+  // Class Name
+  .na,
+  .nf,
+  .nb,
+  .nx,
+  .nc {
+    color: #ffc48c;
+  }
+}

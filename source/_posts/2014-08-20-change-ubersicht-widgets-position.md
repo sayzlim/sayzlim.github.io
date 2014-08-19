@@ -7,6 +7,40 @@ tags:
 - ubersicth
 ---
 
+``` css
+.code {
+  // Function
+  .nt,
+  .nv,
+  .mi, {
+    color: #fc580c;
+  }
+  .o {
+    color: #ffa927;
+  }
+  // Comments
+  .c1 {
+    color: #615953;
+  }
+  /* String Type, Storage Type */
+  .s,
+  .si {
+    color: #fdca49;
+  }
+  // Operator
+  .k {
+    color: #f38630;
+  }
+  // Class Name
+  .na,
+  .nf,
+  .nb,
+  .nx {
+    color: #ffc48c;
+  }
+}
+```
+
 Unlike Geeklets which you can drag around, the only way to modify Übersicht widgets position is by editing the CSS inside the script. This is the guide for you who want to change the widgets position but never write a single line of CSS.
 
 <!-- more -->
@@ -15,17 +49,17 @@ Unlike Geeklets which you can drag around, the only way to modify Übersicht wi
 
 Open the `index.coffee` file inside the `inspirational-quote.widget` folder with your preferred text editor. Take a look at each non-indented line in the file. You should be able to find these five sections that describe Übersicht’s basic widget structure.
 
-```
-command: // This is the command executed in shell.
-refreshFrequency: // This is how often the widget is refreshed in milliseconds.
-style: // This is the part that styles the rendered layout.
-render: // This is what is shown on desktop.
-update: (output, domEl) -> // This will update the rendered layout every time the widget is refreshed.
+``` coffeescript
+command: # This is the command executed in shell.
+refreshFrequency: # This is how often the widget is refreshed in milliseconds.
+style: # This is the part that styles the rendered layout.
+render: # This is what is shown on desktop.
+update: (output, domEl) -> # This will update the rendered layout every time the widget is refreshed.
 ```
 
 Unless you’re developing your own widgets, you only need to fiddle with the `style` and `render`  sections.  Let’s take a look at the `style` section.
 
-```
+``` coffeescript
 style: """
   bottom: 0px
   right: 0px
