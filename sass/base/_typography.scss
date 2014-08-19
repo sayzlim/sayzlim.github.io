@@ -1,8 +1,8 @@
 body {
   color: $text-color;
+  -webkit-text-size-adjust: none;
   text-shadow: 0 1px 0 scale-lightness($text-color, 99%);
   font: 1.25em/1.6 $base-font;
-  -webkit-text-size-adjust: none;
 }
 
 h1,
@@ -46,7 +46,8 @@ a:hover { color: $hover-color; }
 
 p,
 ul,
-ol {
+ol,
+pre {
   margin: .5em 0 1.1em;
 }
 
@@ -63,7 +64,7 @@ ol {
   list-style: decimal;
 }
 
-ul > li { margin-bottom: 0.3em; }
+ul > li { margin-bottom: .3em; }
 
 figure {
   margin: 0; padding: 0;
@@ -72,7 +73,7 @@ figure {
 figcaption {
   text-align: center;
   font-style: italic;
-  font-size: 0.75em; }
+  font-size: .75em; }
 
 em,
 i {
@@ -108,21 +109,36 @@ blockquote {
 }
 
 pre {
-  margin: 1.5em .3em;
-  padding: .5em;
-  border-radius: 2px;
-  box-sizing: border-box;
-  background-color: scale-lightness($bg-color, -90%);
-  box-shadow: 0 0 3px 1px $box-shadow;
-  color: $gold;
-  text-shadow: none;
-  white-space: pre-wrap;     /* css-3 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;    /* Opera 4-6 */
-  white-space: -o-pre-wrap;  /* Opera 7 */
-  word-wrap: break-word;     /* Internet Explorer 5.5+ */
+  display: block;
+  white-space: pre;
   font: .7em/1.5em $monospace-font;
 }
+
+pre > code,
+figure.code {
+  display: block;
+  overflow: scroll;
+  box-sizing: border-box;
+  padding: .1em .3em;
+  width: 100%;
+  border-radius: 2px;
+  background-color: scale-lightness($bg-color, -82%);
+  color: $code-color;
+  text-shadow: none;
+}
+
+  pre > code {
+    padding: .5em;
+  }
+
+  td.code {
+    padding: 0 .5em;
+  }
+
+  td.gutter {
+    padding: 0 .5em;
+    color: scale-lightness(shade($code-color, 80%), 75%);
+  }
 
 p,
 ol,

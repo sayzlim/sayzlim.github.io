@@ -179,11 +179,19 @@
 
 // Animation
 
+@keyframes shake {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.01);
+    }
+}
+
 .post-container img {
-  transform: scale3d(1,1,1);
-  transition: all .15s ease-in-out;
   &:hover,
   &:focus {
-    transform: scale3d(1.01,1.01,1.01);
+    animation: shake ease-in-out .2s;
   }
 }
