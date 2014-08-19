@@ -7,40 +7,6 @@ tags:
 - ubersicth
 ---
 
-``` css
-.code {
-  // Function
-  .nt,
-  .nv,
-  .mi, {
-    color: #fc580c;
-  }
-  .o {
-    color: #ffa927;
-  }
-  // Comments
-  .c1 {
-    color: #615953;
-  }
-  /* String Type, Storage Type */
-  .s,
-  .si {
-    color: #fdca49;
-  }
-  // Operator
-  .k {
-    color: #f38630;
-  }
-  // Class Name
-  .na,
-  .nf,
-  .nb,
-  .nx {
-    color: #ffc48c;
-  }
-}
-```
-
 Unlike Geeklets which you can drag around, the only way to modify Übersicht widgets position is by editing the CSS inside the script. This is the guide for you who want to change the widgets position but never write a single line of CSS.
 
 <!-- more -->
@@ -87,7 +53,7 @@ First, we have to identify the CSS for widget’s main **block — the container
 
 If I extract only the first indentation level content from `style` section, I’ll get the snippet below:
 
-```
+``` coffeescript
 style: """
   bottom: 0px
   right: 0px
@@ -101,7 +67,7 @@ The style above tells Übersicht to put inspirational quote widget `0px` from t
 
 You can also use percentage as the value if you prefer the widget adapt to the screen size. The code below will place the widget 5% from the bottom edge, and 10% from the right edge of the screen.
 
-```
+``` coffeescript
 style: """
   bottom: 5%
   right: 10%
@@ -113,7 +79,7 @@ Make sure the main block doesn’t have opposite properties. Avoid having `top` 
 
 You can also center the widget perfectly on all screen size with this method: set `left` property value to `50%` and the `margin-left` property value to the half of widget’s total width in negative.
 
-```
+``` coffeescript
 style: """
   left: 50%
   margin-left: -160px
@@ -127,4 +93,4 @@ In CSS, there is a way to define padding in one line under this format: `padding
 
 By summing up the width and padding, you get `300px+10px+10px` of total `320px` which you divide by half results in `160px`.
 
-There is a lot HTML and CSS terms I deliberately didn’t include in this guide because I’m afraid it might confuses a beginner. [Feel free to contact me](http://sayzlim.net/contact "Contact - Sayz Lim") if you have any questions or problems.
+There is a lot HTML and CSS terms I deliberately didn’t include in this guide because I’m afraid it might confuse a beginner. [Feel free to contact me](http://sayzlim.net/contact "Contact - Sayz Lim") if you have any questions or problems.
