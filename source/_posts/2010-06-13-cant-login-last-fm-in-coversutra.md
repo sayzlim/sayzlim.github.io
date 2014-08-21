@@ -2,6 +2,8 @@
 layout: post
 title: Can't Login Last.fm in CoverSutra
 description: Find out why you can’t sign into Last.fm and the solution for it.
+tags:
+- "CoverSutra"
 ---
 CoverSutra, a third party iTunes controller application, is a well designed application with its sharp icon on menu bar. It is one of the application which can&#8217;t be replaced by other application. Simple with minimal feature for playlist control.
 

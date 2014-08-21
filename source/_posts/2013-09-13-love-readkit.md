@@ -4,8 +4,8 @@ title: "Now You’re Going to Love ReadKit"
 date: 2013-09-14 16:30
 description: ReadKit can be the most useful app to make your reading experience wonderful with just a few configurations.
 tags:
-- readkit
-- review
+- "ReadKit"
+- "Review"
 ---
 
 ![ [ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_intro.jpg "ReadKit for Mac")

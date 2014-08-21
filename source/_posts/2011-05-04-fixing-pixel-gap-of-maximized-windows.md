@@ -2,7 +2,7 @@
 layout: post
 title: Fixing Pixel Gap of Maximized Windows
 tags:
-- prettify
+- "Prettify"
 ---
 Talking about perfection, there is one thing about Snow Leopard — I’m not sure about other version — that keeps bothering me. With the dock hidden, I expect the maximized window will cover entire screen perfectly, which unfortunately doesn’t do its job well. It leaves a 3–4 pixel gaps at the bottom of the hidden dock.
 

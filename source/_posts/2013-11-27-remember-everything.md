@@ -4,8 +4,8 @@ title: "Remember Everything"
 date: 2013-11-27 00:30
 description: We create fragments every day. Why don’t we save and remember them?
 tags:
-- declutter
-- evernote
+- "Declutter"
+- "Evernote"
 ---
 
 We don’t have a chip implanted in our brain yet to remember everything — from the books we’ve read, the places we’ve visited, and the food we’ve eaten. The most practical method is to write them down. But do the people nowadays use their time to record their life events when they don’t even allow themselves to admire the dancing cloud in the sky?
@@ -14,7 +14,7 @@ We don’t have a chip implanted in our brain yet to remember everything — fro
 
 [Keeping a journal][9371-001] is a great way to remember your existence. As you write often, you’ll get to know yourself better. You learn to arrange your thoughts in a manner that others can relate. The sweet and bitter memories will remain as part of your stories.
 
-One thing I’ve learned from keeping a journal is to keep the fragments and stories separated. What are fragments? They’re the records of your words, pictures, and places. Like I said earlier, you can’t write down everything. But you have those fragments spread all over the web. 
+One thing I’ve learned from keeping a journal is to keep the fragments and stories separated. What are fragments? They’re the records of your words, pictures, and places. Like I said earlier, you can’t write down everything. But you have those fragments spread all over the web.
 
 Most of the services save a single information about us. Instagram saves our photos. Twitter saves our thoughts. Facebook saves our interaction with friends. Pocket saves our read items. Maybe we just need to put them into a single place for later use. Still, what purpose do those fragments serve?
 

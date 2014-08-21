@@ -2,8 +2,8 @@
 layout: post
 title: Reading Time on Mac with FuzzyClock
 tags:
-- fuzzyclock
-- review
+- "FuzzyClock"
+- "Review"
 ---
 I love words. I love beautiful typography. FuzzyClock displays the time with words instead of numbers. With beautiful typeface, FuzzyClock looks elegant in menu bar.
 
@@ -24,7 +24,7 @@ Download [CodeBold][2] and  use the setting below.
 [img2]: http://images.sayzlim.net/2011/08/fuzzyclock_setting.jpg "FuzzyClock Settings"
 
 > %update%
-> **Update 2014-08-11:** The developer has removed their download page. Here’s the alternative download I keep just in case stuffs like this happens. 
+> **Update 2014-08-11:** The developer has removed their download page. Here’s the alternative download I keep just in case stuffs like this happens.
 
 [Download](http://s3.sayzlim.net/f/fuzzyclock.zip "FuzzyClock for Mac")
 

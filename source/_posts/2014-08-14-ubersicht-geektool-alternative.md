@@ -4,8 +4,8 @@ title: "Übersicht: Lightweight GeekTool Alternative for Mac"
 date: 2014-08-14 01:15
 description: "Meet Übersicht, a resource friendly GeekTool alternative for Mac. Build your own widgets with HTML, CSS, and JavaScript, or download the ready-made widgets for free."
 tags:
-- ubersicth
-- mac
+- "Ubersicth"
+- "Mac"
 ---
 
 GeekTool is a well-known application for displaying various information on the desktop. I was curious with this application. I searched for some geeklets (or widgets), installed them, and customized it to fit with my desktop. Everything was great until I  saw the insane CPU usage in Activity Monitor. I removed GeekTool and started searching for a better alternative.

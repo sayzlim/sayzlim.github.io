@@ -4,7 +4,7 @@ title: "Reason to Hide Away Inactive Apps"
 date: 2014-03-17 17:08
 description: It’s more than just keeping the desktop clean — you need to know the real reason to hide those inactive apps.
 tags:
-- declutter
+- "Declutter"
 ---
 
 Your screen is your working desk. Every pixels on the screen should support you to finish the main task on hand. They should never distract, complicate, or clutter.

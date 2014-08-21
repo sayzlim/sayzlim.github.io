@@ -3,7 +3,7 @@ layout: post
 title: Safari Neue Tabs Mod
 description: Change the look of your tabs in Safari 5 with the mod by Koshic.
 tags:
-- safari
+- "Safari"
 ---
 Stumbled Safari Tabs Collection by Koshic[^1] few days ago. The mod is impressive. It makes Safari tabs a lot more cleaner. Well, a picture tells a thousand words.
 

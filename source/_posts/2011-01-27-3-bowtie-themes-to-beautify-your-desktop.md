@@ -4,7 +4,7 @@ title: 3 Bowtie Themes to Beautify Your Desktop
 alias: /post/2942690106
 description: Three selected Bowtie themes that beautify your desktop with its simplicity and design.
 tags:
-- bowtie
+- "Bowtie"
 ---
 Music has become one of the core element in my computing experience. Turning on music while writing and doing assignment is a common daily event. Bowtie, an iTunes controller, is a jewel created to complete your desktop with its beautiful theming engine.
 

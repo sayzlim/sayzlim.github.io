@@ -3,7 +3,7 @@ layout: post
 title: The Color of Nature
 description: Gadgets will turn all this boring commuting interesting.
 tags:
-- zen
+- "Minimal"
 ---
 It was one usual morning. I was on the way to work. I stepped into the bus and got myself a comfortable seat. It was pleasant because the bus was spacious.
 

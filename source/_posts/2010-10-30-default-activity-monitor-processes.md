@@ -3,7 +3,7 @@ layout: post
 title: Default Activity Monitor Processes
 description: Find out the functions of all the running processes  if you doesn’t run anything at all on Mac.
 tags:
-- mac
+- "Mac"
 ---
 > Use your Mac, more importantly to know what is running.
 

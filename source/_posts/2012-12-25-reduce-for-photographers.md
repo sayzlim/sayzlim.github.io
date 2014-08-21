@@ -3,8 +3,8 @@ layout: post
 title: Reduce for Photographers
 description: Compress and watermark your photos and images from your iPad and iPhone.
 tags:
-- reduce
-- review
+- "Reduce"
+- "Review"
 ---
 I’m not a photographer. I don’t take photos daily; not even with my iPhone. I believe photography is one of the activity that can develop one sense of beauty. The art of composition in expressing the moment from a single image is brilliant. It’s a craft which requires thousand hours of practice to be good.
 

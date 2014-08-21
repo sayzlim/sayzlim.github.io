@@ -4,7 +4,7 @@ title: "Read Later Zero"
 date: 2014-02-24 22:42
 description: Read Later Zero is about how to spend your attention on discovery and importantly, reading.
 tags:
-- declutter
+- "Declutter"
 ---
 
 The ease to save web pages for reading is made simple with services like Pocket or Instapaper. You’re no longer need to read the article on the spot. Just send them to the queue list for reading, later.

@@ -4,8 +4,8 @@ title: "Stunning Built-in Reader Mode for Safari 7"
 date: 2014-03-21 22:41
 description: Customize Safari Reader Mode with this stunning fonts and colors, or create your own theme.
 tags:
-- safari
-- prettify
+- "Safari"
+- "Prettify"
 ---
 
 Reader Mode in Safari is the answer to the  nature of Internet — large number of information with terrible legibility. When publisher fails to deliver enjoyable reading experience, we should take control and pave our reading environment.
@@ -39,4 +39,4 @@ It’s incomplete without further tips to enhance your reading experience with C
 - Put the site with horrible legibility in the list of **Auto-Read** tab. CustomReader will toggle Reader Mode automatically when you visit the listed sites.
 - [Save the article in Reader Mode as PDF](http://macsparky.com/blog/2008/3/19/keyboard-shortcut-for-save-as-pdf-in-os-x.html "Keyboard Shortcut for &quot;Save as PDF...&quot; in OS X — MacSparky") and store them in Evernote. You can read the PDF version of your Reader Mode from everywhere. Beside that, Evernote will index all the texts in the PDF with its OCR technology.
 
-Sometimes it’s not author’s fault that the typography of a website doesn’t do their writing justice. Most of time, the problem lies with publishers. What we can do is creating an environment where we can read comfortably, even in the midst of ads booby trap set by these uncaring publishers. 
+Sometimes it’s not author’s fault that the typography of a website doesn’t do their writing justice. Most of time, the problem lies with publishers. What we can do is creating an environment where we can read comfortably, even in the midst of ads booby trap set by these uncaring publishers.

@@ -3,7 +3,7 @@ layout: post
 title: Minimal Spotlight Configuration
 description: Optimize Spotlight search result by removing the unneeded folders and items from the search list.
 tags:
-- mac
+- "Mac"
 ---
 The best feature for any new mac user is probably Spotlight. It provides a simplify experience to locate and run files and applications. It can be fast or slow depending on how we configure it. A decent and “just enough” configuration can lead to a better experience with Spotlight.
 

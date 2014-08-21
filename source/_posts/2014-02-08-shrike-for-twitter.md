@@ -4,7 +4,7 @@ title: "Shrike: Safari Extension for Cleaner Twitter"
 date: 2014-02-08 18:31
 description: More Tweets, Less Recommendations. Shrike removes clutters from Twitter web interface.
 tags:
-- safari extension
+- "Safari Extension"
 ---
 
 The first thing I do whenever Twitter launches their redesigned webpage is searching for a Safari extension that hides the clutters . I avoid noises by hiding the trending topics. I decide who to follow from the Retweets and Discovery Tab — not from machine generated recommendations pasted over the sidebar.

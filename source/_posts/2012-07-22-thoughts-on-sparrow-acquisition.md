@@ -2,7 +2,7 @@
 layout: post
 title: Thoughts on Sparrow Acquisition
 tags:
-- rant
+- "Personal"
 ---
 When I heard the news that [Sparrow has been acquired by Google](http://sparrowmailapp.com/ "Sparrow — Get mail done"), I could only let out a deep sigh as one of the Sparrow user. You can’t avoid being disappointed when you’re looking forward for what they’re going to build into their next release. No one can blame their Sparrow for their decision when they’re offered an opportunity gain more income supporting their family while building a product that will be used by many people.
 

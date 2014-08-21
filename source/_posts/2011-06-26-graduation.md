@@ -2,7 +2,7 @@
 layout: post
 title: Graduation
 tags:
-- rant
+- "Personal"
 ---
 Graduating from one of the self-claimed renowned university in Indonesia marks the end of one chapter in my life. I was like everyone else, beginning my journey to hunt the job I desire, or maybe a job with high income. I had a small plan, a plan to work as an iOS programmer, or maybe not.
 

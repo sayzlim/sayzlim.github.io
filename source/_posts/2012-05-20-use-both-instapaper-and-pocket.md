@@ -4,7 +4,7 @@ title: Don’t Pick, Use Both Instapaper and Pocket
 alias: /post/23358093610
 description: Learn why I’ve decided to use both Instapaper and Pocket instead of choosing only one read later service.
 tags:
-- declutter
+- "Declutter"
 ---
 Among the services that clean away online clutter I know so far, Instapaper and Pocket come across to be the most used services. [Instapaper][1] is designed with the sole purpose for you to store, read later, and discard/archive. [Pocket][2], formerly Read It Later, comes out with a concept of save later for everything including articles, images, videos, and webpages.
 

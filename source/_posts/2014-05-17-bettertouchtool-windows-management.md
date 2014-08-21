@@ -4,8 +4,8 @@ title: "BetterTouchTool for Windows Management"
 date: 2014-05-17 13:00
 description: Boost your small screen productivity by using BetterTouchTool to manage, resize, and move your windows.
 tags:
-- mac
-- bettertouchtool
+- "Mac"
+- "BetterTouchTool"
 ---
 
 Working in small screen means you often  need to [switch between apps](http://sayzlim.net/contexts-manage-mac-windows "Manage Mac Application Windows with Contexts - Sayz Lim"), or move and resize windows to optimize the screen state. Sometimes you’re comparing two designs side by side, sometimes you’re taking notes while watching screencast, or sometimes you simply want to move documents from one folder to another.

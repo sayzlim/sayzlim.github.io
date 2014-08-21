@@ -3,7 +3,7 @@ layout: post
 title: Repair Disk Permissions Myth
 external-url: http://eggfreckles.net/notes/repair-disk-permissions/
 tags:
-- share
+- "Link"
 ---
 Thomas Brand addressed one of the most common myth on disk permissions:
 

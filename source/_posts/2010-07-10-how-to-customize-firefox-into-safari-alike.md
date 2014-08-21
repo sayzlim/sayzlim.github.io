@@ -3,8 +3,8 @@ layout: post
 title: How to Customize Firefox into Safari Alike
 description: You can still use Firefox while maintaining the appearance of elegant Safari in OS X.
 tags:
-- firefox
-- prettify
+- "Firefox"
+- "Prettify"
 ---
 There are countless debate over which browser is the best. It is human nature to seek for the best, not to mention the best browser. If you’ve done some research, most of the people will vote for Firefox as the best browser. If you’re a new Mac user and prefer Firefox as your default browser but wish it looks more Safarish. Then keep reading on.
 

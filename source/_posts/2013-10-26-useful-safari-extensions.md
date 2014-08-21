@@ -4,8 +4,8 @@ title: "Useful Extensions for Safari 7"
 date: 2013-10-26 02:18
 description: Safari in OS X Mavericks can become more useful if installed with these carefully chosen extensions.
 tags:
-- safari extension
-- safari
+- "Safari Extension"
+- "Safari"
 ---
 
 Safari is one of the finest update we can receive in Mavericks. It’s [packaged with the WebKit2 engine][A31] that has been rewritten to handle multiple tabs better, similar to Google’s Chrome process-per-tab architecture. No longer we have to restart Safari when one of the tab crashes.

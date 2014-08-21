@@ -3,7 +3,7 @@ layout: post
 title: Simplify Your iTunes Library
 description: You will learn some tips to organize your iTunes library and speed up your iTunes.
 tags:
-- declutter
+- "Declutter"
 ---
 You want to spend more time listening to your music, not managing your library. Applying these seven tips will help you keep the iTunes library organized all the time.
 

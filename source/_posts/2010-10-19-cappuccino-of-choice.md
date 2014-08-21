@@ -3,7 +3,7 @@ layout: post
 title: Cappuccino of Choice
 description: Random title with random thoughts on how you should select your stream of information carefully.
 tags:
-- rant
+- "Personal"
 ---
 What to write? And for who do I write?
 

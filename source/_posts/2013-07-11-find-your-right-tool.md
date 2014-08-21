@@ -4,7 +4,7 @@ title: "Find Your Right Tool"
 date: 2013-07-11 01:53
 description: Skill is important in craftsmanship. Tool is what a craftsman need to craft arts and products faster.
 tags:
-- rant
+- "Personal"
 ---
 
 “Mind your own business! My tools work just fine” is the expression, not exactly a reply, I get when I’m trying too hard while recommending apps to people. Hard-selling is hard, but I can’t get hold of myself from pointing out how they can save more time by doing less.

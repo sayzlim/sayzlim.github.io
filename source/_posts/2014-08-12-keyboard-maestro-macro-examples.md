@@ -4,10 +4,10 @@ title: "Keyboard Maestro Macro Examples"
 date: 2014-08-12 17:00
 description:  Here’s a few ideas and suggestions from my Keyboard Maestro macros library to help you get the most out of this amazing utilities.
 tags:
-- keyboardmaestro
+- "Keyboard Maestro"
 ---
 
-A reader asked me to share my macro library with him recently. I declined. Sharing the macros I use to copy the data from analytics to spreadsheet won’t give you a single clue on how to build a useful macro. Instead, I’m going to show you the type of macros you can build in this article. 
+A reader asked me to share my macro library with him recently. I declined. Sharing the macros I use to copy the data from analytics to spreadsheet won’t give you a single clue on how to build a useful macro. Instead, I’m going to show you the type of macros you can build in this article.
 
 <!-- more -->
 

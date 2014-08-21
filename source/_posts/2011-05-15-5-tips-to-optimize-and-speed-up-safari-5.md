@@ -4,7 +4,7 @@ title: 5 Tips to Optimize and Speed Up Safari 5
 alias: [/post/5485663917/5-tips-to-optimize-and-speed-up-safari-5, /post/5485663917/]
 description: Safari 5 can consume too much memory ocassionally. Here is the way to remedy the situation.
 tags:
-- safari
+- "Safari"
 ---
 Safari is not the best browser on Windows. But it remains as one of the most used browser on OS X. For some people, memory usage on Safari is too high compared to other browsers. It causes some performance issues, but there is a cure. I’ve implemented these tips since the day I use Snow Leopard till Mountain Lion. It remains useful to improve the performance.
 

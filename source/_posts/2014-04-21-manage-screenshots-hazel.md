@@ -4,9 +4,9 @@ title: "Manage iPad and iPhone Screenshots with Hazel"
 date: 2014-04-21  23:00
 description: "Transfer your screenshots from iPhone and iPad to Mac seamlessly with this simple yet efficient workflow"
 tags:
-- dropbox
-- hazel
-- mac
+- "Dropbox"
+- "Hazel"
+- "Mac"
 ---
 
 There are many ways to transfer screenshots from iPhone and iPad to Mac. You can use built-in app like Messages, third-party app like [Instashare](https://itunes.apple.com/us/app/instashare-transfer-files/id685953216?mt=12&uo=4&at=11ld6n&ct=instashare+for+mac "Instashare - Transfer files the easy way") and Dropbox, or the classic email client. But what I’m looking for is more than just transferring those screenshots.

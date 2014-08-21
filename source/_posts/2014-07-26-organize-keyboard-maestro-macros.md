@@ -4,7 +4,7 @@ title: "How I Organize Keyboard Maestro Macro Groups"
 date: 2014-07-26 16:30
 description: Dealing with a messy Keyboard Maestro library? Here’s a few tips to clean up your library and ensure they’re well-organized all the time.
 tags:
-- keyboardmaestro
+- "Keyboard Maestro"
 ---
 
 Once you’re accustomed to [building macros](http://sayzlim.net/building-keyboard-maestro-macros-tips "Building Keyboard Maestro Macros Tips - Sayz Lim"), the library is bound to be full of your automation tools and kits. Don’t let them scattered all over the place. You have to make sure that, even with the large amount of macros in library, they’re well-organized.

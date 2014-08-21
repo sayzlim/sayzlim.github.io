@@ -2,7 +2,7 @@
 layout: post
 title: Illusionary
 tags:
-- rant
+- "Personal"
 ---
 Sites I love are Twitter and Tumblr. Sites I hate is Facebook. So from the hates and loves, I get Illusionary.
 

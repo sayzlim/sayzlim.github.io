@@ -3,7 +3,7 @@ layout: post
 title: Personal Minimalist Mac Setup 2011
 description: The setup I’ve made for my Mac in the year of 2011.
 tags:
-- mac
+- "Mac"
 ---
 Embracing minimalism is the path to stay focused. Embedding minimalism approach in the gadget you use is often misunderstood with removing everything to a plain white paper. [Know your needs][1] is the first step have a minimalist setup. This post reflect my implementation of minimalist approach for my Mac setup this year.
 

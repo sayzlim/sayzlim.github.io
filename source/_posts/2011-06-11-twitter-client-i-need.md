@@ -2,7 +2,7 @@
 layout: post
 title: Twitter Client I Need
 tags:
-- rant
+- "Personal"
 ---
 Existing Twitter clients are build based on past Twitter user experience. Past Twitter is the service where real people tweet their activities. There were less companies, brands, and idols using it as one of the marketing tool. People used it merely to express themselves and engage with their friends.
 

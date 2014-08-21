@@ -4,8 +4,8 @@ title: "Dropbox as Online Backup"
 date: 2014-07-15 22:45
 description: Build a versatile online backup plan with Dropbox on your Mac.
 tags:
-- dropbox
-- declutter
+- "Dropbox"
+- "Declutter"
 ---
 
 I recently scanned my MacBook Air’s hard drive to find out the number of free space. Well, I have about 80 GB free space left, but the number is dwindling down every day, largely because of [my photos and videos setup](http://sayzlim.net/move-entire-iphoto-library-to-dropbox "Move Entire iPhoto Library to Dropbox - Sayz Lim"). I keep an off-site backup in my external drive for those files, photos, and videos, however, they’re still occupying the main hard drive. Then I realize that **Selective Sync** in Dropbox could be the solution for this problem.

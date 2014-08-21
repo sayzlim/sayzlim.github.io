@@ -4,7 +4,7 @@ title: "Building  Keyboard Maestro Macros Tips"
 date: 2014-07-22 23:30
 description: You don’t have to know AppleScript to create a Keyboard Maestro macro. What you need is learning how to build useful macros that automate mundane tasks for you.
 tags:
-- keyboardmaestro
+- "Keyboard Maestro"
 ---
 
 You don’t have to know AppleScript or shell script to use Keyboard Maestro. The built-in actions have all the basic interactions covered. What you need is learning how to build useful macros that automate mundane tasks for you.
@@ -18,15 +18,13 @@ Just build a macro.
 If you haven’t built a macro, or you simply don’t know what to build, I’ll share some tips that can help you getting started with this set of tools.
 
 > %sidenote%
-> **New to Keyboard Maestro?** Check out this [introduction guide](https://brooksreview.net/2012/11/km-basics/ "The Keyboard Maestro Basics — The Brooks Review") by Ben Brooks. You’ll be able to follow the rest of this article once you’ve read the guide.
+> **New to Keyboard Maestro?** Check out this [introduction guide][1] by Ben Brooks. You’ll be able to follow the rest of this article once you’ve read the guide.
 
 ## Assign Hot Key to Cancel All Macros
 
-[ ![Keyboard Maestro: Assign hot key to cancel global macros][img] ](http://images.sayzlim.net/2014/07/keyboard_maestro_cancel_macros.jpg "Keyboard Maestro: Assign hot key to cancel global macros")
+[ ![Keyboard Maestro: Assign hot key to cancel global macros][image-1] ][2]
 
-[img]: http://images.sayzlim.net/2014/07/keyboard_maestro_cancel_macros.jpg "Keyboard Maestro: Assign hot key to cancel global macros"
-
-When building a macro, the expectation and result may differ. This global hot key ensures that you can cancel all the running macros to prevent damage to your works, escape [infinite loop](http://en.wikipedia.org/wiki/Infinite_loop "Infinite loop - Wikipedia, the free encyclopedia") — thus avoid the urgency to restart your Mac.
+When building a macro, the expectation and result may differ. This global hot key ensures that you can cancel all the running macros to prevent damage to your works, escape [infinite loop][3] — thus avoid the urgency to restart your Mac.
 
 ## Build the Simplest Macro
 The point is to be familiar with the available actions in Keyboard Maestro. My first macro resizes an image in Photoshop into multiple sizes and exports it to Desktop. As I grow accustomed with the actions library, I expand the macro to batch processing all the images from the source folder, rename them orderly, and save them into result folder.
@@ -47,9 +45,7 @@ When you find it difficult to produce an expected result, break the macro into s
 ## Store Values into Variables
 Variable is where you store the permanent value where you use in almost any fields in Keyboard Maestro. It’s handy when you want to reuse the value in other macros, shell scripts, or AppleScripts.
 
-[ ![Keyboard Maestro: Variable in AppleScript][img5] ](http://images.sayzlim.net/2014/07/keyboard_maestro_variable.jpg "Keyboard Maestro: Variable in AppleScript")
-
-[img5]: http://images.sayzlim.net/2014/07/keyboard_maestro_variable.jpg "Keyboard Maestro: Variable in AppleScript"
+[ ![Keyboard Maestro: Variable in AppleScript][image-2] ][4]
 
 In the example above, I save the file path in a variable known as `Quotes Path`.  I later read the file path from the variable, randomly pick one line from the list of quotes, and save it to a new variable called `Quote` which is used by the Keep Writing macro to read out the text and displayed in notification.
 
@@ -57,9 +53,7 @@ Another common use case, without involving scripting,  is when you want to contr
 
 ## Access Clipboard History
 
-[ ![Keyboard Maestro: Enable Save Clipboard History to Disk][img2] ](http://images.sayzlim.net/2014/07/keyboard_maestro_save_clipboard.jpg "Keyboard Maestro: Enable Save Clipboard History to Disk")
-
-[img2]: http://images.sayzlim.net/2014/07/keyboard_maestro_save_clipboard.jpg "Keyboard Maestro: Enable Save Clipboard History to Disk"
+[ ![Keyboard Maestro: Enable Save Clipboard History to Disk][image-3] ][5]
 
 Clipboard is the common gateway to move values from one application to another. Before you can access it, you need to enable `Save Clipboard History to Disk` under  preferences.
 
@@ -69,9 +63,7 @@ Access the clipboard history by entering `%PastClipboard%1%`  in the macro actio
 
 Sometimes you want a macro to run only when certain conditions are met. Let’s use the macro that toggle Google Chrome below as example.
 
-[ ![Keyboard Maestro: Toggle Google Chrome][img3] ](http://images.sayzlim.net/2014/07/keyboard_maestro_toggle_chrome.jpg "Keyboard Maestro: Toggle Google Chrome")
-
-[img3]: http://images.sayzlim.net/2014/07/keyboard_maestro_toggle_chrome.jpg "Keyboard Maestro: Toggle Google Chrome"
+[ ![Keyboard Maestro: Toggle Google Chrome][image-4] ][6]
 
 This macro lets me switch Google Chrome with hot key combination, but  only when Google Chrome is running — in other words, Google Chrome stays inactive even when I’ve accidentally triggered the macro.  
 
@@ -84,4 +76,18 @@ You can minimize the amount of mistakes with action flows when building a comple
 
 This post briefly touches the surface of creating useful and reusable macros. Become familiar with the Keyboard Maestro actions so you know whether a task can be carried out by macros.
 
-I’m going to share a few tips in organizing macros in upcoming post. You can stay updated by [signing up for the newsletter](http://sayzlim.net/subscribe "Subscribe - Sayz Lim"), or follow [@sayzlim](https://twitter.com/sayzlim "Sayz Lim (sayzlim) on Twitter") on Twitter.
+I’m going to share a few tips in organizing macros in upcoming post. You can stay updated by [signing up for the newsletter][7], or follow [@sayzlim][8] on Twitter.
+
+[1]:	https://brooksreview.net/2012/11/km-basics/ "The Keyboard Maestro Basics — The Brooks Review"
+[2]:	http://images.sayzlim.net/2014/07/keyboard_maestro_cancel_macros.jpg "Keyboard Maestro: Assign hot key to cancel global macros"
+[3]:	http://en.wikipedia.org/wiki/Infinite_loop "Infinite loop - Wikipedia, the free encyclopedia"
+[4]:	http://images.sayzlim.net/2014/07/keyboard_maestro_variable.jpg "Keyboard Maestro: Variable in AppleScript"
+[5]:	http://images.sayzlim.net/2014/07/keyboard_maestro_save_clipboard.jpg "Keyboard Maestro: Enable Save Clipboard History to Disk"
+[6]:	http://images.sayzlim.net/2014/07/keyboard_maestro_toggle_chrome.jpg "Keyboard Maestro: Toggle Google Chrome"
+[7]:	http://sayzlim.net/subscribe "Subscribe - Sayz Lim"
+[8]:	https://twitter.com/sayzlim "Sayz Lim (sayzlim) on Twitter"
+
+[image-1]:	http://images.sayzlim.net/2014/07/keyboard_maestro_cancel_macros.jpg "Keyboard Maestro: Assign hot key to cancel global macros"
+[image-2]:	http://images.sayzlim.net/2014/07/keyboard_maestro_variable.jpg "Keyboard Maestro: Variable in AppleScript"
+[image-3]:	http://images.sayzlim.net/2014/07/keyboard_maestro_save_clipboard.jpg "Keyboard Maestro: Enable Save Clipboard History to Disk"
+[image-4]:	http://images.sayzlim.net/2014/07/keyboard_maestro_toggle_chrome.jpg "Keyboard Maestro: Toggle Google Chrome"

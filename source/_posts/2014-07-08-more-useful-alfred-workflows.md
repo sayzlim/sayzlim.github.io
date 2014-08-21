@@ -4,7 +4,7 @@ title: "More Useful Alfred Workflows"
 date: 2014-07-08 23:00
 description: There are tons of Alfred workflows written every week, and here I share what I find useful for everyone, especially avid Alfred Powerpack owner.
 tags:
-- alfred
+- "Alfred"
 ---
 
 While writing about the workflows directory Packal and the new released companion workflow Packal Updater, I discovered a few useful workflows to improve my computing experience — mostly about browser tabs, text editing, and accessing recently used files — that I want to share with everyone in this post today.

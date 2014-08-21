@@ -4,9 +4,9 @@ title: "Sync Writer Pro Between iCloud and Dropbox"
 date: 2014-01-05  16:00
 description: Writer Pro hasn’t build Dropbox sync yet, but you still can sync your documents by using symbolic links.
 tags:
-- dropbox
-- writer pro
-- review
+- "Dropbox"
+- "Writer Pro"
+- "Review"
 ---
 
 [Information Architects][2210-001], the developer of my favorite writing app [iA Writer][2210-002],  released [Writer Pro][2210-003], an advanced writing tool tailored for professional writers few weeks ago. They believe [Writer Pro’s workflow][2210-004] — by dividing the writing process into four stages: Note, Writer, Edit, and Read — can help writers to focus on their writing instead of tinkering with all the unnecessary preferences.

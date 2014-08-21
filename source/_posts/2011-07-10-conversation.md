@@ -2,7 +2,7 @@
 layout: post
 title: Conversation
 tags:
-- zen
+- "Minimal"
 ---
 When was the last time you immerse yourself in a conversation? A conversation that is simply for fun. A conversation where you’re being yourself. A conversation where you use your speech instead of touchscreen to express yourself.
 

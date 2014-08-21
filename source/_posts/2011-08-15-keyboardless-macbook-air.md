@@ -3,7 +3,7 @@ layout: post
 title: Keyboardless MacBook Air
 description: Is the future lay within keyboard? Can Apple build a MacBook Air that is thinner with a keyboard that adaptable.
 tags:
-- rant
+- "Personal"
 ---
 Apple is well known for their boldness in removing features and parts from their products. It has killed optical drive and firewire before. There is assumption that they will eventually kill keyboard in the future.
 

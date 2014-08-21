@@ -2,7 +2,7 @@
 layout: post
 title: Memories in Small Town
 tags:
-- rant
+- "Personal"
 ---
 As someone who has experienced the life without internet connection, I find the way people spending their time has changed a great deal.
 

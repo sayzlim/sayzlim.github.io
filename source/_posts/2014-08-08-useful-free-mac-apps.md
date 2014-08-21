@@ -5,7 +5,7 @@ date: 2014-08-08 20:51
 description: Free Free Free
 published: false
 tags:
-- mac
+- "Mac"
 ---
 
 The world of software development is full of people who build and share their creation for free. It’s no longer valid to dismiss free products as useless — most of the services you use online these days are free. Here are five apps I deem as useful for Mac users.

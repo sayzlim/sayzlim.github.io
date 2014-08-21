@@ -4,7 +4,7 @@ title: Alfred App vs Spotlight
 alias: /post/1633828233/‎
 description: What are the differences between Alfred and Spotlight? Which one is better?
 tags:
-- alfred
+- "Alfred"
 ---
 Deciding whether to switch from Spotlight to another launching application is not an easy task. For some users, Spotlight is more than just enough to accomodate their daily usage. But for some users hesitating to switch, keep reading.
 

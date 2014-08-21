@@ -3,7 +3,7 @@ layout: post
 title: The Hidden Value of Internet Explorer 6
 description: Internet Explorer 6 is a disaster. But it also teaches us a wonderful lesson of limitation.
 tags:
-- zen
+- "Minimal"
 ---
 Internet Explorer 6 is a nightmare for web developers and designers. Internet Explorer itself is not the best browser for web savvy user. It’s slow, bloated with useless features, and has a unfriendly UI — if not horrid.
 

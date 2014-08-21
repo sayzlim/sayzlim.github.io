@@ -2,7 +2,7 @@
 layout: post
 title: Pirating Movies, Music, and Apps
 tags:
-- rant
+- "Personal"
 ---
 Piracy is illegal. For tech savvy people, discovering pirated apps is like walking along the garden full of flowers and all they need to do is to pick.
 

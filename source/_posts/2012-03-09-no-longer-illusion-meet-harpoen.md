@@ -2,7 +2,7 @@
 layout: post
 title: No Longer Illusion, Meet Harpoen
 tags:
-- share
+- "Link"
 ---
 This [silly idea][4793-001][^1] I came up with few months ago is no longer an illusion. Meet [Harpoen][4793-002].
 

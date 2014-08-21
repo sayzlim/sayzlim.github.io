@@ -3,7 +3,7 @@ layout: post
 title: Soldier’s Story
 external-url: http://mnmal.org/post/6247808067/breaking-the-new-year-resolution
 tags:
-- share
+- "Link"
 ---
 > I was working out on the gym and someone let the weights fall to the floor. It made a sound that reminded me of small arms fire and I dived to the ground. I don’t know why but I did. Sometimes it happens.
 

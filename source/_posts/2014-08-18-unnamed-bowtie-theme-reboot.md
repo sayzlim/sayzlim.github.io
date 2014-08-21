@@ -4,7 +4,7 @@ title: "Unnamed Bowtie Theme Reboot "
 date: 2014-08-18 03:13
 description: Reboot version of Unnamed Bowtie theme with Retina display support. Put simplicity and music together on your desktop with this gorgeous theme.
 tags:
-- bowtie
+- "Bowtie"
 ---
 
 [Unnamed](http://beautifulblood.deviantart.com/art/Unnamed-255040591 "Unnamed by beautifulblood on deviantART") made by Thomas Günther and Cory remains as my favorite Bowtie theme. The theme hasn’t received any updates for the past three years, and it seems that the most requested feature is Retina display support. I think this is the right time to reboot this marvelous theme.

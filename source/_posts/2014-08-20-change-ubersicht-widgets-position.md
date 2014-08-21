@@ -4,14 +4,14 @@ title: "How to Change Übersicht Widgets Position"
 date: 2014-08-19 11:30
 description: "Short guide of arranging Übersicht widgets position for users who have never written a single line of CSS before."
 tags:
-- ubersicth
+- "Ubersicth"
 ---
 
 Unlike Geeklets which you can drag around, the only way to modify Übersicht widgets position is by editing the CSS inside the script. This is the guide for you who want to change the widgets position but never write a single line of CSS.
 
 <!-- more -->
 
-[Download this inspirational quote widget](https://raw.githubusercontent.com/felixhageloh/uebersicht-widgets/master/inspirational-quote/inspirational-quote.widget.zip "Inspiration Quote Widget"). We’re going to use this widget as an example. 
+[Download this inspirational quote widget](https://raw.githubusercontent.com/felixhageloh/uebersicht-widgets/master/inspirational-quote/inspirational-quote.widget.zip "Inspiration Quote Widget"). We’re going to use this widget as an example.
 
 Open the `index.coffee` file inside the `inspirational-quote.widget` folder with your preferred text editor. Take a look at each non-indented line in the file. You should be able to find these five sections that describe Übersicht’s basic widget structure.
 

@@ -4,8 +4,8 @@ title: "How I Organize Files in Dropbox"
 date: 2014-03-06 17:00
 description: Dropbox is great for storing all your files, only if you organize them well.
 tags:
-- dropbox
-- declutter
+- "Dropbox"
+- "Declutter"
 ---
 
 There is no perfect setup. Not mine, not yours. We organize folders our own ways.

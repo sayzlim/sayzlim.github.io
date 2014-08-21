@@ -4,7 +4,7 @@ title: "5 Beautiful Screen Savers for Mac"
 date: 2014-07-30 17:50
 description: Five beautiful and gorgeous screen savers you can install on your Mac without requiring Adobe Flash Plugin — the hungry battery-consuming monster sent by Adobe.
 tags:
-- prettify
+- "Prettify"
 ---
 
 There are millions of gorgeous wallpapers available online, but only a few screen savers that actually look great on Mac. Among the screen savers I’ve tried, these are the most beautiful screen savers you can install on your Mac — Adobe Flash Plugin is not required.
@@ -53,6 +53,6 @@ If you follow people who take amazing pictures on Instagram, you’ll love to ha
 
 [175010]: http://images.sayzlim.net/2014/07/screensaver_ios.jpg "iOS Screen Saver"
 
-Sometimes we just love to bring what we have on OS X to iOS, and vice versa. [iOS Screen Saver](http://bodysoulspirit.weebly.com/ios-screensaver.html "iOS Screensaver - Bodysoulspirit") comes with the default iOS 7 lock screen wallpaper, but you can change it with your favorite wallpaper. 
+Sometimes we just love to bring what we have on OS X to iOS, and vice versa. [iOS Screen Saver](http://bodysoulspirit.weebly.com/ios-screensaver.html "iOS Screensaver - Bodysoulspirit") comes with the default iOS 7 lock screen wallpaper, but you can change it with your favorite wallpaper.
 
 You can configure the screen saver for different type of screen size. Change the font size, the date format, and the position of each element. Talk about the uniform style, this is the one you’re going to use if you often put Mac, iPhone, and iPad side by side.

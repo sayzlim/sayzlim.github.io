@@ -4,7 +4,7 @@ title: The Primrose of Safari 5 Extensions
 alias: /post/918369667/
 description: Find the list of my favorite Safari extensions in this post.
 tags:
-- safari
+- "Safari"
 ---
 
 With the release of Safari 5.0.1 and the extensions gallery by Apple. Safari has proved to be very stable and sleek since the first time I use it on my MacBook. It user interface matches well with the OS X. And what makes me love Safari is the fact that it is the OS X native browser.

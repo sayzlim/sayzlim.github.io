@@ -3,7 +3,7 @@ layout: post
 title: Effective Menu Bar Search Workflow
 description: You can skip shortcuts and control your apps faster by using this Alfred’s workflow.
 tags:
-- alfred
+- "Alfred"
 ---
 I hate shortcuts. I used to love them. But, every time conflicting shortcuts exits, I smash my MacBook Air keyboards. No, I didn’t. I wish I could.
 

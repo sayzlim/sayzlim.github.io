@@ -4,8 +4,8 @@ title: "Scrobble iTunes Radio Songs to Last.fm"
 date: 2013-09-23 21:20
 description: Does Last.fm scrobble iTunes Radio? If the answer is yes. Then which app is the recommended one?
 tags:
-- itunes
-- bowtie
+- "iTunes"
+- "Bowtie"
 ---
 
 Everyone loves to share what they’re watching, reading, or listening. Twitter have tweeting, Last.fm have scroblling, Facebook have stalking[^1]. This is just one of the way to give other people a chance to say “me too”, and thus starting a conversation.

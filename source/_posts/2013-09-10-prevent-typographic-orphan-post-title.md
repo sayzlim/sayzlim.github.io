@@ -4,7 +4,7 @@ title: "Prevent Typographic Orphan in Post Title"
 date: 2013-09-10 23:45
 description: If you want to build a better web, you must eliminate typographic orphan.
 tags:
-- write
+- "Writing"
 ---
 
 I’ve been reading [Butterick’s Practical Typography][1] this past week. It’s a book detailing how typography can be applied to make our writing every day more useful for our intended audience.

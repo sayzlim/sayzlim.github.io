@@ -4,7 +4,7 @@ title: Someone is wrong on the Internet
 external-url: http://www.apfelquak.de/2010/07/15/safari-extension-someone-is-wrong-on-the-internet/
 description: Let them be wrong; you don’t need to correct them.
 tags:
-- share
+- "Link"
 ---
 [ ![Waste Time][img1] ](http://images.sayzlim.net/2010/07/waste_time.jpg "Waste Time" "Waste Time")
 

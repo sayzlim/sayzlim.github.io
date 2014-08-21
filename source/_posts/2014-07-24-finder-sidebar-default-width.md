@@ -4,9 +4,9 @@ title: "Change Finder Sidebar Default Width"
 date: 2014-07-24 01:30
 description: Does OS X provide an option to set Finder sidebar default width? No, but there is a workaround to change all Finder sidebar width, automatically.
 tags:
-- finder
-- keyboardmaestro
-- mac
+- "Finder"
+- "Keyboard Maestro"
+- "Mac"
 ---
 
 Does OS X provide an option to set Finder sidebar default width? No, but there is a workaround to change all Finder sidebar width, automatically.
@@ -29,7 +29,7 @@ Fortunately, Finder has `sidebar width` property that you can modify with AppleS
 		set sidebar width of every window to 160
 	end tell
 
-Experiment the value until you discover the size that can fit all the sidebar labels, but still have enough room for the labels to breathe. 
+Experiment the value until you discover the size that can fit all the sidebar labels, but still have enough room for the labels to breathe.
 
 It can get troublesome if you have to run the script whenever there is different sized sidebar on screen. Let’s come with a solution: tell Keyboard Maestro to run the script whenever Finder activates. Here is the screenshot of the macro:
 

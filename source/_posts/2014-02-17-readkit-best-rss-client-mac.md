@@ -4,7 +4,7 @@ title: "ReadKit the Best RSS Client for Mac"
 date: 2014-02-17 20:48
 description: ReadKit has a lot of features that makes it the best RSS client ever made for Mac.
 tags:
-- readkit
+- "ReadKit"
 ---
 
 [ ![ReadKit 2.4 for Mac][img] ](http://images.sayzlim.net/2014/02/readkit_24.jpg "ReadKit 2.4 for Mac")

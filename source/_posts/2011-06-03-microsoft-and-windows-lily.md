@@ -3,7 +3,7 @@ layout: post
 title: Microsoft and Windows Lily
 description: What is the future of Windows?
 tags:
-- rant
+- "Personal"
 ---
 Windows has become one of the my favorite company sitting alongside with Apple. They still build Windows and sell their office suites, but there are many things they have changed.
 

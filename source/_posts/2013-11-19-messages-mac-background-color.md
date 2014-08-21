@@ -4,7 +4,7 @@ title: "Messages for Mac Background Color"
 date: 2013-11-19 13:56
 description: Easily change Messages for Mac background color to tell apart between senders.
 tags:
-- prettify
+- "Prettify"
 ---
 
 Messages for Mac is extremely useful when you need to continue conversation from iPhone and iPad. There is no problem when you receive message from single person.  But when you’re conversing with several people at once, telling the senders apart requires more efforts.
@@ -15,7 +15,7 @@ By default, sender’s background color is set to **Automatic**. This setup will
 
 Won’t it be better if each sender has different message background color?
 
-Well it seems we can configure it. These options can be found in **Messages » Preferences** from menu bar. Set the sender’s background color to **Random**. The new setting will be applied to all existing conversation. You’ll be delighted to find each sender has their own distinctive background color. Beside background color, you can also set the font type and color. 
+Well it seems we can configure it. These options can be found in **Messages » Preferences** from menu bar. Set the sender’s background color to **Random**. The new setting will be applied to all existing conversation. You’ll be delighted to find each sender has their own distinctive background color. Beside background color, you can also set the font type and color.
 
 [ ![Messages for Mac Preferences][img1] ](http://images.sayzlim.net/2013/11/messages_preferences.jpg "Messages for Mac Preferences")
 

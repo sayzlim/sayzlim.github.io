@@ -4,7 +4,7 @@ title: "Clean Your Mac Weekly Routine"
 date: 2014-04-08 22:25
 description: Learn the way to fix the most common problems in Mac with these routines.
 tags:
-- mac
+- "Mac"
 ---
 
 One lesson I want to share with all the Mac users is a way to keep their Mac free from dust and mess. Usually the mess are weird behaviors in Launchpad or Launch Services, and the dust are file relics from removed apps.
@@ -34,7 +34,7 @@ Launchpad is another way to launch apps in Mac, but organizing Launchpad is a te
 
 My favorite (and lazy) way to organize apps in Launchpad is by resetting its layout using the Terminal command below:
 
-	rm ~/Library/Application\ Support/Dock/*.db && killall Dock 
+	rm ~/Library/Application\ Support/Dock/*.db && killall Dock
 
 OS X will rebuild the Launchpad with all the apps sorted alphabetically. No more blank spot, Launchpad is organized in no time.
 

@@ -4,8 +4,8 @@ title: "Refined Unibox: Perfect Social Email Client for Mac"
 date: 2014-04-13 22:28
 description: Unibox is a perfect email client that focuses on the conversation between people with its contact-centric design.
 tags:
-- unibox
-- review
+- "Unibox"
+- "Review"
 ---
 
 I started using Unibox as my primary email client last year. Although I’ve written down my methods to [simplify emails with Unibox](http://sayzlim.net/simplify-emails-unibox "Simplify Emails With Unibox - Sayz Lim"), I was still in doubt whether the new approach is suitable for daily work.

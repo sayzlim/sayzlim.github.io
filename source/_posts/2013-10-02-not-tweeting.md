@@ -4,7 +4,7 @@ title: "Not Tweeting"
 date: 2013-10-02 01:48
 description: Tweets are fragment of thoughts. You can either polish it, or just throw it out.
 tags:
-- zen
+- "Minimal"
 ---
 
 Compared to few years ago when I just started out using Twitter, the frequency of my tweets have hit rock bottom. What it used to be at least five tweets a day becomes one tweet a week.

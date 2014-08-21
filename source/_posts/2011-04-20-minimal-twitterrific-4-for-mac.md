@@ -2,8 +2,8 @@
 layout: post
 title: Minimal Twitterrific 4 for Mac
 tags:
-- twitterrific
-- prettify
+- "Twitterrific"
+- "Prettify"
 ---
 If you’ve been following my blog since the beginning of it. You will realize that I rarely review an app.[^1] There are too many well written review articles out there. I am not one of those writers. I’m too good for these kinds of articles.[^2]
 
@@ -32,7 +32,7 @@ If you have large number of active followers. You better switch off &#8220;Show 
 
 Finally, toggle the toolbar and sidebar from the window menu. Now I get the Twitterrific I want.
 
-Learn the shortcuts and it becomes one of the apps I love. I can’t say that [Twitterrific](http://twitterrific.com/mac/ "for Mac - Twitterrific: Making Twitter Extra Terrific") is perfect and suitable for everyone. But if you are the casual user who loves simple app and doesn’t mind navigating finder to upload your picture. Twitterrific is one of them.
+Learn the shortcuts and it becomes one of the apps I love. I can’t say that [Twitterrific](http://twitterrific.com/mac/ "for Mac - "Twitterrific": Making Twitter Extra Terrific") is perfect and suitable for everyone. But if you are the casual user who loves simple app and doesn’t mind navigating finder to upload your picture. Twitterrific is one of them.
 
 [^1]: Alfred App is the only review I have written so far.
 

@@ -4,7 +4,7 @@ title: ! 'OS X Toolbox Workflow for Alfred 2 '
 description: Collection of Alfred 2 workflows for daily tasks to increase your productivity.
 alias: /post/40457309216
 tags:
-- alfred
+- "Alfred"
 ---
 My favorite productivity tool, Alfred, has entered its second version and released the beta for every Mega Supporters last night. The most useful feature in Alfred 2 is workflow that allows you to create a series of actions to complete a task.
 

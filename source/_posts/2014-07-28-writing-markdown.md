@@ -4,8 +4,8 @@ title: "Writing in Markdown"
 date: 2014-07-28 11:45
 description: Markdown is useful, and it can be more useful. Learn the Markdown tools and services that can improve your writing efficiency drastically in this article.
 tags:
-- markdown
-- TextExpander
+- "Markdown"
+- "TextExpander"
 ---
 
 It’s not enough just being able to write in Markdown — the writing you do spans more than just leaving words on the blank cursor. It involves a lot of linking and formatting that take a lot of time. But with some right tools, you can increase your writing efficiency drastically while keeping the Markdown article clean.
@@ -32,7 +32,7 @@ These are some of my favorites. They carry different design decision and feature
 
 ## Create Links While Writing
 
-Anyone who writes online must use [SearchLink by Brett Terpstra](http://brettterpstra.com/projects/searchlink/ "SearchLink - BrettTerpstra.com"). This system service lets you convert any marked text into a fully working Marked links. 
+Anyone who writes online must use [SearchLink by Brett Terpstra](http://brettterpstra.com/projects/searchlink/ "SearchLink - BrettTerpstra.com"). This system service lets you convert any marked text into a fully working Marked links.
 
 For example, if I want to create a link to Marked on Mac App Store, I simply enter `[Marked](!mas)` into text editor. Then I simply run the service to convert it into:
 

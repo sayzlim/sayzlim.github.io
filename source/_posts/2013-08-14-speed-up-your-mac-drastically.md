@@ -4,7 +4,7 @@ title: Speed Up Your Mac Drastically
 description: A few straightforward tips to improve your Mac performance and speed.
 alias: post/58245260102
 tags:
-- mac
+- "Mac"
 ---
 Among many configurations I’ve made, under the hood tweaks are rarely documented. I’ve written several guides to [prettify a download folder][3], or choose themes for Adium, yet not a single article on improving the performance of OS X.
 

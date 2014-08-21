@@ -3,7 +3,7 @@ layout: post
 title: Feather Lighten Web Version of Twitter
 description: Beautiful Safari extension to clean up your Twitter homepage.
 tags:
-- safari extension
+- "Safari Extension"
 ---
 [ ![Feather Preview][img1] ](http://images.sayzlim.net/2012/05/feather_preview.jpg "Feather Preview")
 

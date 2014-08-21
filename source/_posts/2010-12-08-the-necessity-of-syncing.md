@@ -3,7 +3,7 @@ layout: post
 title: The Necessity of Syncing
 description: Syncing is only needed when you need it. Sometimes not sycing is a better.
 tags:
-- declutter
+- "Declutter"
 ---
 Syncing is one of the important feature in technology devices. Now you can sync your iPhone with your Mac, your Mac with your iMac, your iMac with your iPad and so on. Syncing is awesome and powerful. It works like a magic as if you own one machine in many forms.
 

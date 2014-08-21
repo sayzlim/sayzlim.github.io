@@ -4,7 +4,7 @@ title: "Scratches as Memories"
 date: 2014-01-14 23:31
 description: There is nothing wrong with being imperfect. There is also nothing wrong with scratches on your gadgets.
 tags:
-- zen
+- "Minimal"
 ---
 
 Admit it. You’re annoyed when you see a crack on your gadgets. If you deny it, try to create one on your iPhone.

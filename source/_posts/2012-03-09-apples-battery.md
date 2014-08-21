@@ -2,7 +2,7 @@
 layout: post
 title: Apple’s Battery
 tags:
-- rant
+- "Personal"
 ---
 Adrian Kingsley-Hughes’ [post on ZDnet](http://www.zdnet.com/blog/hardware/new-ipads-most-revolutionary-feature-is-its-battery/18985 "New iPad&#39;s most revolutionary feature is its battery - ZDNet"):
 

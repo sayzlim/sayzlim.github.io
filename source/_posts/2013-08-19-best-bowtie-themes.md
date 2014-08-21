@@ -3,7 +3,7 @@ layout: post
 title: 4 Best Bowtie Themes to Decorate Your Mac
 description: Four curated best designed Bowtie themes from the minimalist to the modern styles.
 tags:
-- bowtie
+- "Bowtie"
 ---
 I’ve just cleaned all unused files from desktop. I turn on Rdio as one of the Bowlet[^1] gradually appearing from the corner of the screen. It all thanks to Bowtie.
 
@@ -51,7 +51,7 @@ I like how Unnamed make use of small height to display song title and song artis
 Designed by [Dmitriy Bourim][7], [Neon][8] is one of the best theme I’ve discovered so far. The round shaped glowing neon surrounding the album cover, also as song indicator, will fill up slowly as the song is being played. The song indicator doesn’t always work as expected though. The track I play from Rdio will finish sooner even though the indicator hasn’t reach the middle.
 
 [7]: http://zb3k.deviantart.com/ "zb3k (Dmitriy Bourim) on deviantART"
-[8]: http://zb3k.deviantart.com/#/d2r6wei "Neon - bowtie theme v2 by ~zb3k on deviantART"
+[8]: http://zb3k.deviantart.com/#/d2r6wei "Neon - "Bowtie" theme v2 by ~zb3k on deviantART"
 
 Unlike other themes, Neon requires a compatible wallpaper to make it glows beautifully. I find that dark wallpapers work well with Neon as you can see from screenshot above.
 

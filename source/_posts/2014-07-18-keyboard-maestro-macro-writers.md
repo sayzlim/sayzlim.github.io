@@ -4,7 +4,7 @@ title: "Keyboard Maestro Macro for Writers"
 date: 2014-07-18 16:35
 description: I told myself that I should keep writing, ignore the spotted mistakes, and complete the first draft. This is the origin of this macro.
 tags:
-- keyboardmaestro
+- "Keyboard Maestro"
 ---
 
 I used to write a sentence over and over until I get it right. This approach is inefficient — I barely made any progress after spending few hours in front of the blinking cursor. I told myself that [I should keep writing](http://sayzlim.net/keep-writing "Keep Writing - Sayz Lim"), ignore the spotted mistakes, and complete the first draft. This is the origin of this macro.
@@ -28,7 +28,7 @@ Editing comes naturally for them. After they’ve filled the paper with a comple
 
 By imitating their workflow, I create this macro that disable the `delete` key in text editor. It also motivates the writer to finish their sentence by reading out one of the quotes from your favorite writers — in other words, you must start collecting famous writing quotes.
 
-Quotes collection must be in plain text with each quote separated by a line break. Searching for quotes doesn’t have to be complicated. I start by browsing [quotes about writing](g "http://www.goodreads.com/quotes/tag/writing"), and manually save them into my quotes collection.[^1] 
+Quotes collection must be in plain text with each quote separated by a line break. Searching for quotes doesn’t have to be complicated. I start by browsing [quotes about writing](g "http://www.goodreads.com/quotes/tag/writing"), and manually save them into my quotes collection.[^1]
 
 [**Download Keep Writing Macro**](http://s3.sayzlim.net/f/km-keep-writing.zip "Keep Writing Keyboard Maestro Macro")
 

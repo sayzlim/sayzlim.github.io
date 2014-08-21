@@ -4,8 +4,8 @@ title: "Snappy: Effortlessly Pin Your Screenshots"
 date: 2014-06-15 15:00
 description: The only visual clipboard you need to remember all your taken screenshots.
 tags:
-- review
-- snappy
+- "Review"
+- "Snappy"
 ---
 
 Here’s what I used to do when I need to write down visual notes from another window: I either arrange the windows side by side, or I switch the windows back and forth while trying to remember what I’ve seen in the previous window. Both methods are time wasting; there is a better way to remember those visual notes.

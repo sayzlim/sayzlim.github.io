@@ -3,7 +3,7 @@ layout: post
 title: Burn Data CD on Mac OS X
 description: Burning data CD on Mac OSX doesn’t require third party application and can be done easily
 tags:
-- mac
+- "Mac"
 ---
 Burning data CD on Mac OSX doesn’t require third party application and can be done easily. The built in ability to burn data CD can be accessed by right clicking on the files or folders.
 

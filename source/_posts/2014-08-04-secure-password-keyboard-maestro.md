@@ -4,7 +4,7 @@ title: "Secure Your Password with Keyboard Maestro"
 date: 2014-08-04 08:00
 description:  "Strong passwords are long. This macro will securely address the problem of typing long password in a dialog form that doesn’t accept paste command."
 tags:
-- keyboardmaestro
+- "Keyboard Maestro"
 ---
 
 I recently wrote a guide to [managing passwords online with Mac](http://sayzlim.dev/digitalshelf/passwords/ "Manage Your Passwords Online - Sayz Lim"). If you’ve read them, you should notice that stronger passwords are long, and having to type them without doubt will cause more mistakes. This Keyboard Maestro macro will address the problem by letting you enter password with a single key press.

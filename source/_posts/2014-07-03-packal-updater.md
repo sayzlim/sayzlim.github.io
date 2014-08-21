@@ -4,7 +4,7 @@ title: "Manage Alfred Workflows with Packal Updater"
 date: 2014-07-03 23:42
 description: Packal Updater is the missing workflows manager for Alfred.
 tags:
-- alfred
+- "Alfred"
 ---
 
 Alfred has been my main control center on Mac since 2011. I’ve used it for a lot of things: [launch apps][0722-001], [search the web][0722-002], and [manage documents][0722-003]. I start everything from Alfred.

@@ -4,7 +4,7 @@ title: "5 Handy Tips to Browse Files in Alfred"
 date: 2014-03-01 22:50
 description: Learn to navigate your way in Alfred for Mac with those tips and become more productive while working.
 tags:
-- alfred
+- "Alfred"
 ---
 
 I rarely use Finder anymore because all of the tasks is one query away. I save more time, I find my files faster. Here are some tips to improve the search experience in Alfred.
@@ -22,7 +22,7 @@ Turning on this option lets you search files quickly by prefixing the search ter
 ## 2. Action selected items in Finder
 We select multiple files in Finder for a reason. We want to take action. You can copy, move, or delete the selected files. Perhaps you want to open the selected files with third-party apps, or maybe you want to share those files your your colleagues. All of those tasks can be done with Alfred.
 
-Select some files and press `Option+Command+\` to show all the available actions. 
+Select some files and press `Option+Command+\` to show all the available actions.
 
 [ ![Alfred Action List][img2] ](http://images.sayzlim.net/2014/03/alfred_action.jpg "Alfred Action List")
 
@@ -42,7 +42,7 @@ Simplify your browsing experience by creating a Custom Searches workflow that se
 Not only you can browse files in Alfred, you can also action selected files by pressing `Tab` from Alfred built-in file browser.
 
 ## 4. Browse last browsed path
-Referring to the files or folders we’ve browsed before is easy. Type `previous` to browse the previous path in Alfred. If you prefer shortcut like me, instead of keyword, you can access the previous path with `Command+Option+/`. 
+Referring to the files or folders we’ve browsed before is easy. Type `previous` to browse the previous path in Alfred. If you prefer shortcut like me, instead of keyword, you can access the previous path with `Command+Option+/`.
 
 ## 5. QuickLook
 Not many users know about this feature. While QuickLook in Mavericks has suffered a degradation — with all the crashes whenever I quick switch between photos  — it’s still useful to take a quick look inside the files. Especially with Alfred’s built-in file browser, you can easily preview the file you’re looking for without creating a new Finder window.

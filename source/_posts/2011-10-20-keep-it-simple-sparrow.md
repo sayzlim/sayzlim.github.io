@@ -3,8 +3,8 @@ layout: post
 title: Keep It Simple Sparrow
 description: Configure your Sparrow so it doesn’t hinder the way you work with emails.
 tags:
-- sparrow
-- review
+- "Sparrow"
+- "Review"
 ---
 Unless you’re a new to Mac, you’ve probably heard about Sparrow for Mac. This simple mail client has grown from a little app, supporting only Gmail, into a complete mail client while maintaining the nature of being “simple”.
 

@@ -4,7 +4,8 @@ title: "Protect Your Online Privacy with Cookie"
 date: 2014-05-13  22:38
 description: How stop websites from tracking your online activities and start protecting your privacy with Cookie.
 tags:
-- review
+- "Cookie"
+- "Review"
 ---
 
 Every time you visit a website, you’re being tracked. The mechanism to track your online activities is simple. The website will create a cookie in your browser, which acts as your *identity*. Whenever you visit the website, it’ll retrieve the cookie, associate it with your activities, and send them back to their analytics service.

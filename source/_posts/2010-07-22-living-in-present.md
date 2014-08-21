@@ -3,7 +3,7 @@ layout: post
 title: Living in Present
 description: We think so much about the future that we neglect the present.
 tags:
-- zen
+- "Minimal"
 ---
 > We are in such a hurry to grow up, and then we long for our lost childhood. We make ourselves ill earning money, and then spend all our money on getting well again. We think so much about the future that we neglect the present, and thus experience neither the present nor the future. We live as if we were never going to die, and die as if we had never lived. —  Paulo Coelho
 

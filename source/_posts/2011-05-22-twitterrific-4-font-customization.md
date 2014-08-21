@@ -3,8 +3,8 @@ layout: post
 title: Twitterrific 4 Font Customization
 description: Changing the font in Twitterrific for Mac is easy. Here is the tutorial to use your favorite font in Twitterrific.
 tags:
-- twitterrific
-- prettify
+- "Twitterrific"
+- "Prettify"
 ---
 There are many things I love and hate about [Twitterrific 4 for Mac][1]. The simplicity and unified timeline is the main reason why I choose Twitterrific 4 as my twitter client. But, the font selection, especially the username font size has been bothering me for a while. Luckily, I manage to find the configuration files for the theme within the app.
 

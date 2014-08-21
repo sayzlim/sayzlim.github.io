@@ -4,7 +4,7 @@ title: 4 Beautiful Dark Growl Styles Themes
 alias: [/post/3680368363/4-beautiful-dark-growl-styles-themes, /post/3680368363/]
 description: These four beautiful dark Growl styles will fit into all kind of wallpapers on your Mac.
 tags:
-- growl
+- "Growl"
 ---
 One app that turn the your Mac alive is Growl. [Growl][1] has been around since the age of Mac OS X 10.3 Panther. It provides Mac OS X with notification system for apps that support it. It is easy and simple to use. It is unlikely to find a Mac without Growl installed these days.
 

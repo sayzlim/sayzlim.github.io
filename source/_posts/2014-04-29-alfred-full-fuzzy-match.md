@@ -4,7 +4,7 @@ title: "Type Less with Full Fuzzy Match Search in Alfred"
 date: 2014-04-29 23:18
 description: Search your apps faster with Alfred. This time you define your own custom shortcuts for each app.
 tags:
-- alfred
+- "Alfred"
 ---
 
 I stop [comparing Alfred to Spotlight](http://sayzlim.net/alfred-app-vs-spotlight "Alfred App vs Spotlight - Sayz Lim"). Not because Spotlight is useless, but Alfred offers more with less.
@@ -13,7 +13,7 @@ I stop [comparing Alfred to Spotlight](http://sayzlim.net/alfred-app-vs-spotligh
 
 Alfred is smart — in the way Spotlight can never match. It studies your search queries and return results based on your selected choice. If you often open iTunes by entering `itu` as search query, Alfred  will rank iTunes higher than the rest of items in search result. In other word, Alfred can be trained.
 
-But there is one flaw with this feature: the number of shortcuts is limited. When I use `em` for `Empty Trash` and `Ember`, the action is no longer guaranteed. Typing `em` and press `Enter` won’t always empty the trash, sometimes it launches Ember. I can type three letters — by using `emt` and `emb` —  to avoid this problem, but I prefer to keep the query short. 
+But there is one flaw with this feature: the number of shortcuts is limited. When I use `em` for `Empty Trash` and `Ember`, the action is no longer guaranteed. Typing `em` and press `Enter` won’t always empty the trash, sometimes it launches Ember. I can type three letters — by using `emt` and `emb` —  to avoid this problem, but I prefer to keep the query short.
 
 Luckily, Alfred’s search setting is also smart.
 

@@ -3,7 +3,7 @@ layout: post
 title: Tweetie for Mac Message Mod
 description: Make Tweetie for Mac prettier by applying this mod that changes the messages bubble.
 tags:
-- prettify
+- "Prettify"
 ---
 I spent a little time to modify Tweetie for Mac which you can see at the picture below.
 

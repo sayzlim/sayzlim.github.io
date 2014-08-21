@@ -2,11 +2,11 @@
 layout: post
 title: "Highlight"
 date: 2014-06-30  23:56
-description: 
+description:
 tags:
-- evernote
-- instapaper
-- declutter
+- "Evernote"
+- "Instapaper"
+- "Declutter"
 ---
 
 Writers only need one sentence to tell a story. It shapes the story. It informs readers. It makes you think.
@@ -47,7 +47,7 @@ I have a notebook called “Highlights” where I store all my highlights. They�
 ## Sending Highlights to Silo
 
 - **From Instapaper**: I start using Instapaper again. I used to [dismiss Instapaper](http://sayzlim.net/why-i-ditched-instapaper "Why I Ditched Instapaper - Sayz Lim") as an incompetent read later service because the lack of IFTTT triggers and the article rendering issue. The latest update added a new trigger that makes sending highlights to Evernote seamless. By using [this recipe](https://ifttt.com/recipes/185505-send-instapaper-highlights-to-evernote "Send Instapaper Highlights to Evernote"), all the highlights are immediately saved to your selected notebook.
-- **From Pocket**: Before switching back to Instapaper, I save the highlights to Evernote by using Pocket built-in Save to Evernote feature. Instead of saving the whole copy of the article, I manually copy the sentences I want to save, and paste it from Pocket. It’s more time consuming but the result is the same format I expect from Instapaper. 
+- **From Pocket**: Before switching back to Instapaper, I save the highlights to Evernote by using Pocket built-in Save to Evernote feature. Instead of saving the whole copy of the article, I manually copy the sentences I want to save, and paste it from Pocket. It’s more time consuming but the result is the same format I expect from Instapaper.
 - **From iBooks**: There is no Evernote integration with iBooks yet, but that doesn’t mean we can’t save the important quotes to Evernote. Fortunately email can bypass this kind of limitation. By [saving your Evernote email as a new contact](http://evernote.com/contact/support/kb/#/article/23480523 "How to send email into Everno"), you can highlight a certain section in the book, and share it via email to Evernote. Make sure to add `#iBooks @Highlights` at the end of email subject to make sure it’s tagged with `iBooks` and saved in the notebook called `Highlights`.[^2]
 - **From web browser**: Evernote users can install the [web clipper extension](http://evernote.com/webclipper/ "Evernote Web Clipper - Evernote"), select the group of text, and activate web clipping to save the highlighted text into Evernote. It’s a quick way to save highlights when you don’t send the articles to your read later services.
 - **From email**: Many have tried to create email alternative but none has successfully replace it. We still use email as the primary way to communicate with each other. By learning [how to send email to Evernote](http://evernote.com/contact/support/kb/#/article/23480523 "How to send email into Evernote"), you can create note from everywhere, as long the platform supports email.

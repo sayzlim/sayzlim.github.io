@@ -4,7 +4,7 @@ title: Witel K336, The Minimal of Minimalism
 alias: [/post/601511321/witel-k336-the-minimal-of-minimalism, /post/601511321/]
 description: Losing a phone makes me realize the importance of simplification.
 tags:
-- zen
+- "Minimal"
 ---
 After the period for not using mobile phone at all (I’m saving money for the 4th generation iPhone), my brother lend me his Witel K336. I bet you won’t even know what type of mobile phone it is. Even I don’t know about it.
 

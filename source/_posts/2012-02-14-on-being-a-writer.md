@@ -2,7 +2,7 @@
 layout: post
 title: On Being a Writer
 tags:
-- rant
+- "Personal"
 ---
 
 I’ve never expected writing will become part of my life. I started writing when I had internet access in 2007. That was the time when I didn’t even know that “I” should be capitalized.

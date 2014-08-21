@@ -3,7 +3,7 @@ layout: post
 title: Enable Dropbox Contextual Link on Mac
 description: Solve Dropbox “share this link” not appearing after right clicking the folder.
 tags:
-- dropbox
+- "Dropbox"
 ---
 > [Dropbox](http://www.dropbox.com/referrals/NTM1NjQ5ODQ5 "Dropbox") is the easiest way to store, sync, and, share files online.
 

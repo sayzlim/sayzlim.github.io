@@ -3,7 +3,7 @@ layout: post
 title: Zynga, Shame On You
 external-url: http://www.cultofmac.com/156508/
 tags:
-- share
+- "Link"
 ---
 
 > Pierce had such a project: a little game called Connectrode, a Dr. Mario style puzzler he had created for his wife. He had made it before joining OMGPOP, and it hardly made any money, but Pierce had sentimental attachment to the game.

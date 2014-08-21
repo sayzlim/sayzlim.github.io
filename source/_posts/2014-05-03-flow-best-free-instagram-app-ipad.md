@@ -4,7 +4,8 @@ title: "Flow: The Best Free Instagram App for iPad"
 date: 2014-05-03 16:47
 description: "Flow is the best free Instagram app for iPad. Instagram lacks official iPad app, but Flow won’t disappoint you with its delightful design."
 tags:
-- review
+- "Flow"
+- "Review"
 ---
 
 I didn’t sign up for Instagram during its most popular moment, and I don’t plan to sign up after Facebook bought its last year. But this app is the reason why I sign up for Instagram.
@@ -27,7 +28,7 @@ The sidebar will hide itself automatically in landscape mode when you scroll to 
 
 By upgrading to Flow Plus+ for $2.99, you can get multiple accounts support, unlimited bookmarks, and two new themes — dark and light. What you probably need the most is **Extended Home Feed**. This’ll remove the photos limit when viewing your Instagram home feed, in addition for allowing you to save photos and videos. If you’re an active Instagram user, this upgrade is definitely worth it.
 
-The team behind Flow know how to put the native iOS components together without overdecorating it — something we often see these days. The grid layout only features photos, but you can toggle the username by tap and hold the screen, or enable it in the preferences. Design wise, Flow manages to persevere the identity of Instagram while maintaining the simplicity of iPad. 
+The team behind Flow know how to put the native iOS components together without overdecorating it — something we often see these days. The grid layout only features photos, but you can toggle the username by tap and hold the screen, or enable it in the preferences. Design wise, Flow manages to persevere the identity of Instagram while maintaining the simplicity of iPad.
 
 ## Explore Popular Users, Shops, and Tags
 

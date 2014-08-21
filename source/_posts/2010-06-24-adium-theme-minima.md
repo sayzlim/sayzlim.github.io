@@ -4,7 +4,7 @@ title: Adium Theme Minima
 alias: /post/731096029/
 description: Minimal Adium theme that focuses on typography and simple style.
 tags:
-- adium
+- "Adium"
 ---
 [ ![Adium Minima][img1] ](http://images.sayzlim.net/2010/06/adium_minima.jpg "Adium Minima")
 

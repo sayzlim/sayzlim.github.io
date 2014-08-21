@@ -4,8 +4,8 @@ title: "Improved Unclutter for Mac"
 date: 2013-12-04 21:06
 description: Unclutter your desktop with three basic pockets. Browse clipboard history and clear temporary files from desktop.
 tags:
-- unclutter
-- review
+- "Unclutter"
+- "Review"
 ---
 
 Better keep your desktop tidy instead of making yourself dizzy. I belong to the former. Show me a desktop full of clutter and I’ll show you how to clear it with a Terminal command. Here it is:

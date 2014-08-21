@@ -3,7 +3,7 @@ layout: post
 title: Best Alfred 2 Workflows
 description: Download these best Alfred 2 workflows and save your time.
 tags:
-- alfred
+- "Alfred"
 ---
 Without [Alfred][3] installed, I feel crippled. I use Alfred for a least 320 times a day, that’s 9.600 times a month. It shows how much you can do with Alfred alone.
 

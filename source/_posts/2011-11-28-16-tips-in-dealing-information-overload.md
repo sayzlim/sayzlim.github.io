@@ -2,7 +2,7 @@
 layout: post
 title: 16 Tips in Dealing Information Overload
 tags:
-- declutter
+- "Declutter"
 ---
 - Only use the services you need. Deactivate and delete unneeded services.
 - Don’t read news.
