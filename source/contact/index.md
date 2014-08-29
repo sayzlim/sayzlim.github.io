@@ -4,7 +4,7 @@ title: "Contact"
 date: 2013-09-10 16:26
 ---
 
-My name is Sutanto, but I’m known as Sayz Lim online. I avoid using my real name because it’s a common in Indonesia, and I  prefer to have the same username for all my online accounts.
+My name is Sutanto, but I’m known as Sayz Lim online. I avoid using my real name because it’s common in Indonesia, and I  prefer to have the same username for all my online accounts.
 
 I currently live in Batam, Indonesia with my younger sister and mother.
 

@@ -58,7 +58,7 @@ The simplest way to change the target folder is by using [TinkerTool][7], a util
 
 Keeping your desktop clean doesn’t make you more productive. I’ve seen people with messy desk staying productive all the time. But there is a benefit from maintaining a clean desktop. It helps you embrace the morning with a clean and fresh mind. This way, you can put the most important thing you want to work today on that precious desk of yours.
 
-[^1]:	Read more on [how I organize my Dropbox folders][1], especially how I archive completed projects.
+[^1]:	Read more on [how I organize my Dropbox folders](http://sayzlim.net/organize-files-in-dropbox "How I Organize Files in Dropbox - Sayz Lim"), especially how I archive completed projects.
 
 [1]:	http://sayzlim.net/organize-files-in-dropbox "How I Organize Files in Dropbox - Sayz Lim"
 [2]:	http://images.sayzlim.net/2014/05/finder_desktop.jpg "Mac Clean Desktop"

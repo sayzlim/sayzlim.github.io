@@ -32,7 +32,7 @@ This is a mini series guides I started in late July to create help people declut
 I’ll write more guides upcoming weeks. You can stay updated by signing up for my weekly newsletter.
 
 <aside class="digitalshelf support">
-<p><strong>Do you want to be in control of your digital shelf?</strong> Sign up for the weekly newsletter to receive the first update when the new guide is available. Don’t worry! You can unsubscribe anytime.</a>  <a href="http://sayzlim.net/subscribe/" title="Subscribe - Sayz Lim">More details »</a></p>
+<p><strong>Do you want to be in control of your digital shelf?</strong> Sign up for the weekly newsletter to receive the update when the new guide is available. Don’t worry! You can unsubscribe anytime.</a>  <a href="http://sayzlim.net/subscribe/" title="Subscribe - Sayz Lim">More details »</a></p>
 <form class="form" action="http://sayzlim.us2.list-manage.com/subscribe/post" method="POST">
 <input type="hidden" name="u" value="ff1398bcc911abf87a3dfe82d">
 <input type="hidden" name="id" value="cc23ae2e4d">

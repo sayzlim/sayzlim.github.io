@@ -29,4 +29,4 @@ So here’s the list of updates for Unnamed Reboot:
 - Replaced the note with ♫ glyph.
 - Replaced Myriad Pro with built-in font Seravek. In fact, Seravek looks much better in the new theme.
 
-You can [download Unnamed Reboot here](http://s3.sayzlim.net/f/Unnamed.bowtie.zip "Unnamed Reboot Bowtie Theme").
+You can [download Unnamed Reboot here](http://s3.sayzlim.net/f/unnamed.bowtie.zip "Unnamed Reboot Bowtie Theme").
