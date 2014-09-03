@@ -4,6 +4,13 @@ single: true
 ---
 
 <div class="post-container">
+
+  {% if site.show_sticky %}
+  <div data-swiftype-index="false" class="sticky">
+    <p><strong>(Last Day) Get Keyboard Maestro, Dropzone 3, and Moom for $39.99:</strong> The Award-Winning MacLovin&#8217; Bundle features the winners from Apple Design Award and MacWorld Editors’ Choice. I highly recommend this bundle if you haven’t bought Keyboard Maestro. You can support my writing by <a href="http://stacksocial.com/sales/the-award-winning-maclovin-bundle?aid=a-n92mnbkl" title="The Award-Winning MacLovin' Bundle">buying this bundle with my affiliate link</a>.</p>
+  </div>
+  {% endif %}
+
   <nav data-swiftype-index="false">
       {% if page.previous.url %}
         <a class="older" href="{{page.previous.url}}" title="Previous Post: {{page.previous.title}}">{{page.previous.title}} &#x2192;</a>
@@ -14,6 +21,12 @@ single: true
   </nav>
 
   {% include article.html %}
+
+  {% if site.show_sticky %}
+  <div data-swiftype-index="false" class="sticky">
+    <p><strong>Should you get this bundle?</strong> I only share the bundle I find worth buying. Keyboard Maestro is an amazing utility. Dropzone 3 is <a href="http://brettterpstra.com/2014/07/16/review-dropzone-3/" title="Review: Dropzone 3 - BrettTerpstra.com">one of Brett Terpstra’s main apps</a>. Moom is great for managing windows. <a href="https://itunes.apple.com/us/app/boom/id415312377?mt=12&amp;uo=4&amp;at=11ld6n&amp;ct=boom" title="Boom">Boom</a> is a popular equalizer for Mac. My writing is supported by readers like you who <a href="http://stacksocial.com/sales/the-award-winning-maclovin-bundle?aid=a-n92mnbkl" title="The Award-Winning MacLovin' Bundle">buys bundle with my affiliate link</a>.</p>
+  </div>
+  {% endif %}
 
   {% if site.related_posts != empty %}
   <aside data-swiftype-index="false" class="related">
