@@ -4,7 +4,8 @@ title: "Apps Recommendations"
 date: 2013-10-03 21:00
 description: Complete list of apps I’ve installed on my MacBook Air.
 ---
-Each person has their own set of tools to get jobs done. This is the list of the apps I’m using every day. Some of the apps are not available on App Store, so you need to buy directly from the developers. Links from App Store are affiliate links.
+
+Each person has their own set of tools to get jobs done. This is the list of the apps I’m using every day. Some of the apps are unavailable on App Store, so you need to buy directly from the developers. Links from App Store are affiliate links.
 
 ## Essential on Mac
 These are the apps I must install on my Mac. Without these apps, I’ll have hard time navigating from one screen to another.
@@ -23,6 +24,7 @@ List of the third party apps I use to write. There are some essential built-in a
 - Writer Pro ($19.99): [App Store](https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&at=11ld6n&ct=writer+pro+mac "Writer Pro for Mac")
 - Marked 2 ($11.99): [Direct](http://marked2app.com "Marked 2 - Smarter tools for smarter writers")
 - ReadKit ($6.99): [App Store](https://itunes.apple.com/us/app/readkit/id588726889?mt=12&at=11ld6n&ct=readkit "Mac App Store - ReadKit - iTunes - Apple")
+- Terminology for Mac (Free): [Direct](http://sayzlim.net/terminology-mac "Terminology for Mac - Sayz Lim")
 - TranslateTab ($3.99): [App Store](https://itunes.apple.com/us/app/translate-tab/id458887729?mt=12&at=11ld6n&ct=translate+tab "Mac App Store - Translate Tab - iTunes - Apple")
 
 ## Design & Development Tools
