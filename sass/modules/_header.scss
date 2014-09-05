@@ -1,7 +1,6 @@
 // Layout
 .site-header{
   overflow: hidden;
-  background-color: $header-color;
   padding: 0 1.5em;
 }
 
@@ -39,7 +38,7 @@
   text-shadow: none;
 }
 
-  h1.title  a:hover {
+  h1.title a:hover {
       color: $bg-color;
     }
 
