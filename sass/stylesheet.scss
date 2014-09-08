@@ -46,6 +46,7 @@
   .update {
     box-sizing: border-box;
     border: solid 1px scale-lightness($base-color, 40%);
+    font: .9em/1.4 $base-font;
     margin: 1.1em 0;
     padding: 1em;
     border-radius: 2px;
@@ -58,7 +59,7 @@
   .sidenote {
     @extend .update;
     strong {
-      font: bold  .8em/1.4 $secondary-font;
+      font: bold .8em/1.4 $secondary-font;
       text-transform: uppercase;
       display: block;
       margin-bottom: .5em;
