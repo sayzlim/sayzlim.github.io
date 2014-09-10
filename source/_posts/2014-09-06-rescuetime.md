@@ -120,4 +120,4 @@ Be honest with yourself. Do you spend time working on tasks that matters to you?
 
 I start tracking my time because I want to know how much hours I spend every day on time-wasting sites. The number shows me more of my habits — from my most productive hours to the apps that occupy most of my time. As I explore the premium features in RescueTime, I manage to come up with goals that help me to stay focused whenever I work in front of computer.
 
-Even if you don’t plan to sign up for premium account, I recommend you to [sign up for free account](https://www.rescuetime.com/rp/sayzlim/plans "Plans & Pricing — RescueTime") that can shows you how you spend time every day.
+Even if you don’t plan to sign up for premium account, I recommend you to [sign up for free account](https://www.rescuetime.com/rp/sayzlim/plans "Plans & Pricing — RescueTime") that can show you how you spend time every day.

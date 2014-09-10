@@ -13,9 +13,6 @@ I run Pixa and Ember one more time; I need to confirm their differences. Pixa st
 
 <!-- more -->
 
-> %sidenote%
-> **Get Pixa and Ember for $39.99:** The Productive Design Bundle features seven apps with Pixa and Ember bundled together. You can support my writing by [buying this bundle with my affiliate link](http://stacksocial.com/sales/the-productive-designer-mac-bundle?aid=a-n92mnbkl "The Productive Design Bundle").
-
 I was once the victim of abundance. Instead of figuring out what I need, I installed all the cool apps reviewed by media. As the result, I use tools without purpose — I swing the hammer in hand without target.
 
 Hammer is only useful when you use it with purpose. You can discover the usefulness of your tools in two ways: you start with a clear purpose in your mind before taking up the tool, or you master the tool and discover a new way to make the tool useful. Either way, you have to use it.
@@ -137,9 +134,6 @@ Ember is an amazing tool to help you creating a visual scrapbook. It’s suitabl
 ## Conclusion
 
 You can use Ember or Pixa to manage your images, but which one is the best?  It depends on your answer in the beginning. Do you need the images accessible in Finder? Do you need the editing tools?
-
-> %sidenote%
-> **Get Pixa and Ember for $39.99:** The Productive Design Bundle features seven apps with Pixa and Ember bundled together. You can support my writing by [buying this bundle with my affiliate link](http://stacksocial.com/sales/the-productive-designer-mac-bundle?aid=a-n92mnbkl "The Productive Design Bundle").
 
 It’s not about choosing one and forget the other. In fact, I use Pixa and Ember together. It’s a matter of what you want to do with those images.
 
