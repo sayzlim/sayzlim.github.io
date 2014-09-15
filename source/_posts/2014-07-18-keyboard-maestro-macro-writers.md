@@ -28,7 +28,7 @@ Editing comes naturally for them. After they’ve filled the paper with a comple
 
 By imitating their workflow, I create this macro that disable the `delete` key in text editor. It also motivates the writer to finish their sentence by reading out one of the quotes from your favorite writers — in other words, you must start collecting famous writing quotes.
 
-Quotes collection must be in plain text with each quote separated by a line break. Searching for quotes doesn’t have to be complicated. I start by browsing [quotes about writing](g "http://www.goodreads.com/quotes/tag/writing"), and manually save them into my quotes collection.[^1]
+Quotes collection must be in plain text with each quote separated by a line break. Searching for quotes doesn’t have to be complicated. I start by browsing [quotes about writing](https://www.goodreads.com/quotes/tag/writing "Quotes About Writing (6280 quotes) - Goodreads"), and manually save them into my quotes collection.[^1]
 
 [**Download Keep Writing Macro**](http://s3.sayzlim.net/f/km-keep-writing.zip "Keep Writing Keyboard Maestro Macro")
 
