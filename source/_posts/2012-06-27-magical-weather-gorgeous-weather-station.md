@@ -6,13 +6,13 @@ tags:
 - "Magical Weather"
 - "Review"
 ---
-It’s not just stunning. It’s absolutely gorgeous. [Magical Weather][1] is crafted by Sophia Teutschler, a designer and iOS developer, who keeps pushing many beautiful apps under her own brand [Sophiestication][2]. Without doubt, Magical Weather carries the essential of “great design in simple app” that I can’t stop myself from not writing about it.
-
-[ ![Magical Weather Exposé][img1] ](http://images.sayzlim.net/2012/06/magical_weather.jpg "Magical Weather Exposé")
-
-[img1]: http://images.sayzlim.net/2012/06/magical_weather.jpg "Magical Weather Exposé"
+It’s not just stunning. It’s absolutely gorgeous. Magical Weather is crafted by Sophia Teutschler, a designer and iOS developer, who keeps pushing many beautiful apps under her own brand [Sophiestication][2]. Without doubt, Magical Weather carries the essential of “great design in simple app” that I can’t stop myself from not writing about it.
 
 <!--more-->
+
+[ ![Magical Weather Exposé][005012] ](http://images.sayzlim.net/2012/06/magical_weather.jpg "Magical Weather Exposé")
+
+[005012]: http://images.sayzlim.net/2012/06/magical_weather.jpg "Magical Weather Exposé"
 
 Weather Exposé displays your current location weather and allows you to add 8 more locations. Each Exposé will show the temperature and weather condition in front of the scenic images. Easily add location by city, zip code, or airport code.
 

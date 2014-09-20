@@ -58,4 +58,4 @@ Enter this to terminal:
 
 Bookmark, share this article if you find it useful. You’ll realize how much the author of blog hoping their readers to support them by spreading the words.
 
-1.  You can simplify the whole process by installing [TinkerTool](http://www.bresink.com/osx/TinkerTool.html "TinkerTool: Description - Marcel Bresink Software-Systeme") to disable site icons and website preview caches.
+[^1]: You can simplify the whole process by installing [TinkerTool](http://www.bresink.com/osx/TinkerTool.html "TinkerTool: Description - Marcel Bresink Software-Systeme") to disable site icons and website preview caches.
