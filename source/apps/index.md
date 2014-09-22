@@ -21,11 +21,13 @@ These are the apps I must install on my Mac. Without these apps, I’ll have har
 ## Writing Tools
 List of the third party apps I use to write. There are some essential built-in apps like **Dictionary** and **Dictation** which I don’t include in this list.
 
-- Writer Pro ($19.99): [App Store](https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&at=11ld6n&ct=writer+pro+mac "Writer Pro for Mac")
 - Marked 2 ($11.99): [Direct](http://marked2app.com "Marked 2 - Smarter tools for smarter writers")
+- MindNode Pro ($19.99): [App Store](https://itunes.apple.com/us/app/mindnode-pro/id402398561?mt=12&uo=4&at=11ld6n&ct=mindnode+pro "MindNode Pro")
 - ReadKit ($6.99): [App Store](https://itunes.apple.com/us/app/readkit/id588726889?mt=12&at=11ld6n&ct=readkit "Mac App Store - ReadKit - iTunes - Apple")
+- Scapple ($14.99): [App Store](https://itunes.apple.com/us/app/scapple/id568020055?mt=12&uo=4&at=11ld6n&ct=scapple "Scapple")
 - Terminology for Mac (Free): [Direct](http://sayzlim.net/terminology-mac "Terminology for Mac - Sayz Lim")
 - TranslateTab ($3.99): [App Store](https://itunes.apple.com/us/app/translate-tab/id458887729?mt=12&at=11ld6n&ct=translate+tab "Mac App Store - Translate Tab - iTunes - Apple")
+- Writer Pro ($19.99): [App Store](https://itunes.apple.com/us/app/writer-pro-note-write-edit/id775737590?mt=12&at=11ld6n&ct=writer+pro+mac "Writer Pro for Mac")
 
 ## Design & Development Tools
 Sometimes I do minor image editing and programming with listed apps:
@@ -44,7 +46,7 @@ Too many menu bar items? Want to hide unused windows after certain period? Need 
 - Houdini (Free): [App Store](https://itunes.apple.com/us/app/houdini/id492081694?mt=12&at=11ld6n&ct=houdini "Houdini")
 - Unclutter ($4.99): [App Store](https://itunes.apple.com/us/app/unclutter/id577085396?mt=12&at=11ld6n&ct=unclutter "Mac App Store - Unclutter - iTunes - Apple")
 
-## Utilities Tools
+## Utilities
 I use CleanMyMac 2 to clear caches and uninstall apps, Cookie to manage cookies stored in all browsers, Growl to show notifications, TinkerTool to access hidden settings, and WiFi Signal to test the quality of WiFi.
 
 - CleanMyMac 2 ($39.95): [Direct](http://macpaw.com/cleanmymac "CleanMyMac 2: The Best Clean Up Mac App")
@@ -56,6 +58,7 @@ I use CleanMyMac 2 to clear caches and uninstall apps, Cookie to manage cookies 
 ## System Preferences
 Those apps are installed within System Preferences. FunctionFlip is useful if you only want to enable part of the function keys. Magic Launch allows you to set rules which files should open with which apps. SmoothMouse fixes the quirk of OS X mouse cursor delay. Hazel? That’s one of the most powerful app you can get on Mac.
 
+- Choosy ($12): [Direct](http://www.choosyosx.com/ "Choosy - A smarter default browser for Mac OS X")
 - FunctionFlip (Free): [Direct](http://kevingessner.com/software/functionflip/ "FunctionFlip - Software - Kevin Gessner")
 - Hazel ($28): [Direct](http://www.noodlesoft.com/hazel.php "Noodlesoft | Hazel")
 - Magic Launch (Free/$19.95 ): [Direct](http://www.metakine.com/products/magiclaunch/ "Metakine - Magic Launch")
