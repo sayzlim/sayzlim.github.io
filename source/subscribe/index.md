@@ -6,6 +6,7 @@ date: 2014-02-19 01:00
 
 Before you enter your name and email address in the form below, let me give you a brief summary of what you can expect from this newsletter, which are made up from:
 
+- Exclusive article that you can only find in newsletter.
 - Weekly updates of all the tips, reviews, and guides I’ve written.
 - The most useful and practical articles I’ve read in the past week.
 - Beautiful and noteworthy apps that you should check out.
