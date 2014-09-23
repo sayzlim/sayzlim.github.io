@@ -17,7 +17,7 @@ Most of the macros you see in this list are from my macro library. But I need yo
 
 You can [configure shortcuts without Keyboard Maestro in Keyboard Preferences](http://support.apple.com/kb/ph3957 "OS X Lion: Create keyboard shortcuts for applications - Apple Support"). But you can do much more with Keyboard Maestro: you can assign single key as shortcut.
 
-For example, I often switch between Twitter accounts in [Wren for Mac](http://sayzlim.net/clear-twitter-distraction-with-wren-for-mac "Clear Twitter Distraction with Wren for Mac - Sayz Lim"). The default flow to switch between accounts requires me to press the `Command` + `/`  before displaying the list of available accounts. To simplify the flow, I assign `tab` key to alternate between two accounts with the following macro.
+For example, I often switch between Twitter accounts in [Wren for Mac](http://sayzlim.net/clear-twitter-distraction-with-wren-for-mac "Clear Twitter Distraction with Wren for Mac - Sayz Lim"). The default flow to switch between accounts requires me to press the `Command-/`  before displaying the list of available accounts. To simplify the flow, I assign `tab` key to alternate between two accounts with the following macro.
 
 [ ![Switch Twitter Accounts Macro][170707] ](http://images.sayzlim.net/2014/08/keyboard_maestro_wren.jpg "Switch Twitter Accounts Macro")
 

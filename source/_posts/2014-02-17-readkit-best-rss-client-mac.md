@@ -17,7 +17,7 @@ Let me start this post by quoting my [review of ReadKit](http://sayzlim.net/love
 
 > ReadKit might not be the best reader app for Mac out there. But judging from the number of services they’ve added and improvements they’ve made this past few months make me realize that they do care what they build.
 
-The latest major update has proven it.  The problem with ReadKit before was switching between folder requires the key combination of `Command+Arrow`. Normally, we can use right and left arrow to navigate between folder and article list. They have fixed this navigation behavior.
+The latest major update has proven it. The problem with ReadKit before was switching between folder requires the key combination of `Command-Arrow`. Normally, we can use right and left arrow to navigate between folder and article list. They have fixed this navigation behavior.
 
 ReadKit is known for its high CPU usage when syncing multiple accounts simultaneously. The new preferences now allows you to set the number of concurrent sync operations. This option can be used if you want to sync the feeds item faster.
 

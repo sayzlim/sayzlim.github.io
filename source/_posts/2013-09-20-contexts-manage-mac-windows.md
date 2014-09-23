@@ -27,7 +27,7 @@ You use Application Switcher to manage applications. In other words, you can act
 
 What exactly is the difference?
 
-Application Switcher only shows the number of active applications. If they’re available in Dock, you can view all of them by pressing `Command+Tab`. As for Window Switcher, you can only see the active windows. If you have four active Finder windows, they’re all visible in Contexts.
+Application Switcher only shows the number of active applications. If they’re available in Dock, you can view all of them by pressing `Command-Tab`. As for Window Switcher, you can only see the active windows. If you have four active Finder windows, they’re all visible in Contexts.
 
 Both of them can be used together to tame all your active applications and windows.
 
@@ -43,9 +43,9 @@ I keep the sidebar visible all the time at the bottom right of the screen. The a
 
 [A2]: http://images.sayzlim.net/2013/09/contexts_search.jpg "Use Contexts Search to filter result"
 
-Contexts’ main feature is search. By utilizing <code>Option+`</code> to access search field, you can find a specific window among hundred of active windows within a few key presses.
+Contexts’ main feature is search. By utilizing <code>Option-`</code> to access search field, you can find a specific window among hundred of active windows within a few key presses.
 
-There is another shortcut to switch between windows — by using `Option+(Number)`. I don’t use this shortcut because it takes away the ability to type symbols on Mac. Some of the keys are pretty common such as ™ and ∞. I hope there is a way to assign our own shortcuts, or at least modifiers to avoid keys conflict in future.
+There is another shortcut to switch between windows — by using `Option-[Number]`. I don’t use this shortcut because it takes away the ability to type symbols on Mac. Some of the keys are pretty common such as ™ and ∞. I hope there is a way to assign our own shortcuts, or at least modifiers to avoid keys conflict in future.
 
 While under development, Contexts can be used for free and purchased for $7. That’s half of the original price. If you think you need an application to manage windows, Contexts is one of the choice you need to consider.
 

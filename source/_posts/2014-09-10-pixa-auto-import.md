@@ -74,7 +74,7 @@ Now you need to add these folders into Hazel and configure the following rules t
 
 [183456]: http://images.sayzlim.net/2014/09/hazel_pixa_tag_rules.jpg "Pixa with Hazel Conditions"
 
-Go ahead and drop one of the image into `Pixa – iPhone` folder. You should be able to view it in Pixa under tags view — access it by using `Command + 2`.
+Go ahead and drop one of the image into `Pixa – iPhone` folder. You should be able to view it in Pixa under tags view — access it by using `Command-2`.
 
 > %sidenote%
 > **Save image faster with Dropzone:** You can put the folders associated with Hazel rules into Dropzone grid for quick access. All you need to do is to drag the images into the folder, and Hazel will take care of the rest. [Buy Dropzone 3 ($4.99)](https://itunes.apple.com/us/app/dropzone-3/id695406827?mt=12&at=11ld6n&ct=dropzone+3 "Mac App Store –Dropzone 3")

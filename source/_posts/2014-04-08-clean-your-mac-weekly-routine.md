@@ -46,7 +46,7 @@ It’s easy to update your apps these days. Mac App Store streamlines the purcha
 ## Remove Login Items & Clean Launch Agents
 An installed apps can run a process automatically through two ways. The most common way is by launching the app itself every time you log into Mac. They’re usually known as **Login Items** which you can find under `System Preferences > Users & Groups > Login Items`.
 
-Sometimes installed apps takes the second approach to run process automatically. These processes are known as daemons or helpers — processes that run in background. For example, CleanMyMac offers to uninstall the app properly when you delete an app with `Command+Delete` key, despite CleanMyMac itself is inactive. These activities are monitored by CleanMyMac helpers or daemons.
+Sometimes installed apps takes the second approach to run process automatically. These processes are known as daemons or helpers — processes that run in background. For example, CleanMyMac offers to uninstall the app properly when you delete an app with - key, despite CleanMyMac itself is inactive. These activities are monitored by CleanMyMac helpers or daemons.
 
 [ ![LaunchControl for Mac][img2] ](http://images.sayzlim.net/2014/04/clean_launchagent.jpg "LaunchControl for Mac")
 

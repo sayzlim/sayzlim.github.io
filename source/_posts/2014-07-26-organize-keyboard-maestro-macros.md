@@ -63,7 +63,7 @@ Put all the macros without triggers in this group. It doesn’t mean you won’t
 
 [235057]: http://images.sayzlim.net/2014/07/keyboard_maestro_by_name.jpg "Keyboard Maestro: Trigger Macro by Name"
 
-Run these macros with an `Trigger Macro by Name` action. Create a new global macro and assign a hot key for it. You can then call up the list of available macros anytime, and run one of them by pressing `Command` + `[Number]` or by typing the macro name as query.
+Run these macros with an `Trigger Macro by Name` action. Create a new global macro and assign a hot key for it. You can then call up the list of available macros anytime, and run one of them by pressing `Command-[Number]` or by typing the macro name as query.
 
 #### Global Hot Keys
 

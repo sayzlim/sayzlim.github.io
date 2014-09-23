@@ -10,16 +10,16 @@ I’ve learned many tips to improve my experience with OS X for the past three m
 
 <!--more-->
 
-I use [nVALT][2] to take notes. A global shortcut is required to toggle nVALT window quickly. **`Option + E`** used to be the key. You can easily find that shortcut being used across applications. As the result, there are some shortcuts being rendered useless. Hyper modifier key solves this problem.
+I use [nVALT][2] to take notes. A global shortcut is required to toggle nVALT window quickly. **`Option-E`** used to be the key. You can easily find that shortcut being used across applications. As the result, there are some shortcuts being rendered useless. Hyper modifier key solves this problem.
 
 The new modifier key prevents the common conflicts between app specific shortcuts with global shortcuts. There are many apps that sit in menu bar these days which allows you to assign shortcut to toggle them. These are the list of apps I’ve assigned with my own custom shortcuts.
 
-- **`Hyper + B`** to toggle Bartender Bar
-- **`Hyper + C`** to toggle Cobook
-- **`Hyper + D`** to toggle Delibar
-- **`Hyper + E`** to toggle nVALT
-- **`Hyper + F`** to toggle Fantastical
-- **`Hyper + Space`** to toggle Keyboard Maestro Macro Trigger
+- **`Hyper-B`** to toggle Bartender Bar
+- **`Hyper-C`** to toggle Cobook
+- **`Hyper-D`** to toggle Delibar
+- **`Hyper-E`** to toggle nVALT
+- **`Hyper-F`** to toggle Fantastical
+- **`Hyper-Space`** to toggle Keyboard Maestro Macro Trigger
 
 However, there is one small problem: you might trigger the sysdiagnose command accidentally. Finder will open the sysdiagnose folder, well, diagnose your system, and zip the log results. Worst, sysdiagnose will drive the CPU performance crazy in order to diagnose your system.
 
@@ -29,7 +29,7 @@ Apparently, the shortcut can be easily triggered.[^2] You can see the descriptio
 
 Well, to save your time.
 
-> sysdiagnose can be triggered upon pressing a special key chord; this is currently **`Control-Option-Command-Shift-Period`**.
+> sysdiagnose can be triggered upon pressing a special key chord; this is currently **`Command-Shift-Option-Control-Period (.)`**.
 
 The only way I have figured so far to prevent OS X from triggering this special key chord is by remapping the Period key. I’m borrowing [Steve Losh’s tutorial][3][^3] as a guide in creating two mapping rules for [KeyRemap4MacBook][4]. I assume you’ve installed KeyRemap4MacBook since we’ll need it to map the `Period` key.
 
@@ -40,47 +40,49 @@ Run KeyRemap4MacBook and navigate to Misc & Uninstall tab. Choose “Open privat
 > %update%
 > **Update 2013-10-06**: A quick thanks to [Jeremy Mack][6] for letting me know that forward slash key also triggers sysdiagnose. I’ve included [his code][7] below.  Replace the previous code and reload private.xml to update the selection.
 
-	<item>
-	  <name>Disable Sysdiagnose DOT Key</name>
-	  <appendix>Disable Sysdiagnose DOT Key</appendix>
-	  <identifier>private.disable_sysdiagnose_dot_key</identifier>
-	  <autogen>
-	      --KeyToKey--
-	      KeyCode::DOT,
-	      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
-	      KeyCode::VK_NONE
-	  </autogen>
-	</item>
-	
-	<item>
-	  <name>Disable Sysdiagnose COMMA Key</name>
-	  <appendix>Disable Sysdiagnose COMMA Key</appendix>
-	  <identifier>private.disable_sysdiagnose_comma_key</identifier>
-	  <autogen>
-	      --KeyToKey--
-	      KeyCode::COMMA,
-	      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
-	      KeyCode::VK_NONE
-	  </autogen>
-	</item>
-	
-	<item>
-	  <name>Disable Sysdiagnose Foward Slash Key</name>
-	  <appendix>Disable Sysdiagnose FORWARD SLASH Key</appendix>
-	  <identifier>private.disable_sysdiagnose_forward_slash</identifier>
-	  <autogen>
-	      --KeyToKey--
-	      KeyCode::SLASH,
-	      ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
-	      KeyCode::VK_NONE
-	  </autogen>
-	    </item>
+``` xml
+<item>
+  <name>Disable Sysdiagnose DOT Key</name>
+  <appendix>Disable Sysdiagnose DOT Key</appendix>
+  <identifier>private.disable_sysdiagnose_dot_key</identifier>
+  <autogen>
+    --KeyToKey--
+    KeyCode::DOT,
+    ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+    KeyCode::VK_NONE
+  </autogen>
+</item>
+
+<item>
+  <name>Disable Sysdiagnose COMMA Key</name>
+  <appendix>Disable Sysdiagnose COMMA Key</appendix>
+  <identifier>private.disable_sysdiagnose_comma_key</identifier>
+  <autogen>
+    --KeyToKey--
+    KeyCode::COMMA,
+    ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+    KeyCode::VK_NONE
+  </autogen>
+</item>
+
+<item>
+  <name>Disable Sysdiagnose Foward Slash Key</name>
+  <appendix>Disable Sysdiagnose FORWARD SLASH Key</appendix>
+  <identifier>private.disable_sysdiagnose_forward_slash</identifier>
+  <autogen>
+    --KeyToKey--
+    KeyCode::SLASH,
+    ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L | ModifierFlag::COMMAND_L,
+    KeyCode::VK_NONE
+  </autogen>
+</item>
+```
 
 Run KeyRemap4MacBook again. This time, open Change Key tab and choose ReloadXML. You should see three new remapping rules similar to the screenshot below. Activate them.
 
 [ ![Activate new mapping rules][image-2] ][8]
 
-The rules above prevent the combination between left side modifier with Period and Comma. Try to hit `Hyper + Comma` and `Hyper + Period`. It should do nothing, but you can still type `Shift + Comma` and `Shift + Period`.
+The rules above prevent the combination between left side modifier with Period and Comma. Try to hit `Hyper-Comma (,)` and `Hyper-Period (.)`. It should do nothing, but you can still type `Shift-Comma (,)` and `Shift-Period (.)`.
 
 The new remapping rules should solve the problem with sysdiagnose randomly popping out from nowhere. [Let me know][9] if it works for you.
 

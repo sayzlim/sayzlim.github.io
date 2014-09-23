@@ -30,9 +30,9 @@ Options to disable system services can be found in **Keyboard Shortcuts** under 
 
 With Path Finder, I can search a folder through Alfred and have it opened in the new tab. This is the most precious feature for me. Mavericks with the new Finder, despite the addition of tabs, doesn’t allow “Reveal in Finder” to create new tab. The only available option to open folder in new tab is through Finder.
 
-The easiest way to open folder in new tab is by pressing `Control + Command + O`. Not that it doesn’t work. It just doesn’t work for me — I’m awfully bad at pressing `Control + Command` key combination.
+The easiest way to open folder in new tab is by pressing `Command-Control-O`. Not that it doesn’t work. It just doesn’t work for me — I’m awfully bad at pressing `Control-Command` key combination.
 
-I need one shortcut. One shortcut to open files (`Command + O`) that can also open folders in new tab.
+I need one shortcut. One shortcut to open files (`Command-O`) that can also open folders in new tab.
 
 Fortunately, Keyboard Maestro can remedy the situation easily. Since folders are the only item that can be opened in new tab, I can create [a macro](http://s3.sayzlim.net/f/km-open-in-new-tab.zip "Open in New Tab Macro") that’ll check whether a menu item with the name of “Open in New Tab” exists. If the menu item exists, it’s a folder and it’ll opened in new tab. If it doesn’t exist, it’s a file and will be opened normally.
 

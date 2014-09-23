@@ -46,7 +46,7 @@ Clipboard manager usually only saves the history of your copied text, but not th
 
 Furthermore, the top window title is used as the name of the snaps. If you snap a small area from this post, then the name of the snap will be `Snappy: Effortlessly Pin Your Screenshots | Sayz Lim at 2:12:56 PM`. The search becomes useful because of this naming convention. Type the name of the document or website to see what you’ve snapped before instead of browsing through the list one by one.
 
-Double click any snaps will bring it back to desktop. You can use `Command+S` to save the images or simply drag the snaps into your target folder. If you prefer to skip this step, `Command+Shift+C` will copy the original file location.
+Double click any snaps will bring it back to desktop. You can use `Command-S` to save the images or simply drag the snaps into your target folder. If you prefer to skip this step, `Command-Shift-C` will copy the original file location.
 
 ## Conclusion
 I love Snappy, but the developer seems to have abandoned it. There are certainly many areas where I can see improvement, like the integration with other third-party services to share those snaps. Another problem I have with Snappy is the lack of global shortcut to access **Snaps From the Past**.

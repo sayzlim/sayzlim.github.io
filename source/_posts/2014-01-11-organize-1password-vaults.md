@@ -40,7 +40,7 @@ Audit all your saved login items. Sven Fechner on his blog, simplicitybliss, [ha
 ## Family Vault
 Welcome home superhero! This place is where all the forgotten passwords shall be recovered. This is also one of the reasons why your family treats you as the computer genius. Hurry, move all their accounts to this vault and use the naming convention I’ve shown in the fifth paragraph.
 
-Switching between vault can be troublesome. To make it easy for you, assign a shortcut to call 1Password mini and press `Command+Comma` to show all the available vaults. It’s a great way to change between mode, like only use Business Vault during working hour, or Primary Vault once you’ve returned to home.
+Switching between vault can be troublesome. To make it easy for you, assign a shortcut to call 1Password mini and press `Command-Comma (,)` to show all the available vaults. It’s a great way to change between mode, like only use Business Vault during working hour, or Primary Vault once you’ve returned to home.
 
 [1811-001]: http://learn.agilebits.com/1Password4/Mac/en/Features/multiple-vaults.html "Multiple Vaults - AgileBits"
 [1811-002]: http://blog.agilebits.com/2013/11/13/1password-tip-how-to-create-share-a-vault-with-family-or-coworkers-mac/ "1Password tip: How to create, share a vault with family or coworkers ..."

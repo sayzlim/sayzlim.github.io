@@ -41,7 +41,7 @@ Turn on window snapping feature in the **Action Settings** panel. You can config
 You can also resize and move windows with custom shortcuts. The preferences to customize shortcuts can be found under **Keyboard section**.
 
 
-**Shortcuts are useful when you work in small screen**. If you want to compare a folder contents side by side, you can press `Command+Shift+Left Arrow` and have the first window to fill the left half of the screen, and press `Command+Shift+Right Arrow` to have the second window fill the right half of the screen. This is much faster than dragging the window to one of the edge.
+**Shortcuts are useful when you work in small screen**. If you want to compare a folder contents side by side, you can press `Command-Shift-Left Arrow (←)` and have the first window to fill the left half of the screen, and press `Command-Shift-Right Arrow (→)` to have the second window fill the right half of the screen. This is much faster than dragging the window to one of the edge.
 
 BetterTouchTool has tons of predefined actions available that you can use to create your own custom shortcuts. Here are my five most used shortcuts and predefined actions.
 
@@ -49,7 +49,7 @@ BetterTouchTool has tons of predefined actions available that you can use to cre
 
 [img4]: http://images.sayzlim.net/2014/05/bettertouchtool_keyboard_shortcuts.jpg "BetterTouchTool Keyboard Shortcuts"
 
-Don’t be intimidated by the `Command+Option+Shift+Control` key combination. It’s known as `Hyper` key mapped to the `Caps Lock`, so I only need to press `Caps Lock+Right Arrow` to trigger the actions above. You can find out more about [mapping Caps Lock key in this tutorial by Brett Terpstra](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/ "A useful Caps Lock key - BrettTerpstra.com").
+Don’t be intimidated by the `Command-Shift-Option-Control` key combination. It’s known as `Hyper` key mapped to the `Caps Lock`, so I only need to press `Caps Lock-Right Arrow (→)` to trigger the actions above. You can find out more about [mapping Caps Lock key in this tutorial by Brett Terpstra](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/ "A useful Caps Lock key - BrettTerpstra.com").
 
 You should notice that there is an action for `F3` that centers window. If you’re like me, you probably want make sure the window perfectly centered all the time. Well, that’s exactly what this shortcut do: perfectly center the active window.
 

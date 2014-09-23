@@ -43,7 +43,7 @@ What we’re going doing here is to create folder called _Notes_[^1] that contai
 
 The arrow indicates that the note, write, edit, and read folders are symbolic link pointing to their source. So where are those sources located?
 
-To view the original iCloud folders, you need to show your hidden _Library_ folder. Fortunately, Mavericks has provided an option to show Library. All you need to do is to open your user folder (as indicated by the House icon) and press `Command + J` to show **View Options**. Turn on the Show Library Folder checkbox. You should see your Library folder now.
+To view the original iCloud folders, you need to show your hidden _Library_ folder. Fortunately, Mavericks has provided an option to show Library. All you need to do is to open your user folder (as indicated by the House icon) and press `Command-J` to show **View Options**. Turn on the Show Library Folder checkbox. You should see your Library folder now.
 
 [ ![Finder Show Hidden Library][img2] ](http://images.sayzlim.net/2014/01/writer_pro_toggle_library.jpg "Finder Show Hidden Library")
 

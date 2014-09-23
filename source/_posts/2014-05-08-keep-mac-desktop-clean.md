@@ -32,7 +32,7 @@ But won’t storing everything in one location turn the folder upside down? No. 
 
 [ ![Finder Sort by Date Added][image-2] ][3]
 
-One way you can do it, without relying third party apps is to arrange all the documents by added date. In OS X Mavericks, you can do it by pressing `Command+J` and choose how you want to sort or arrange the files. Once a week, you can remove files that have been added for longer than a week manually.
+One way you can do it, without relying third party apps is to arrange all the documents by added date. In OS X Mavericks, you can do it by pressing `Command-J` and choose how you want to sort or arrange the files. Once a week, you can remove files that have been added for longer than a week manually.
 
 Here is another tip to make your Finder looks clean. Hide the rest of columns and only leave **size** visible. The extra space can accommodate lengthy filename.
 

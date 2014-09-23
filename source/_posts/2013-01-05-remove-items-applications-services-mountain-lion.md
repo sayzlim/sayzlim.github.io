@@ -16,11 +16,11 @@ If you’ve installed Tweetbot for Mac before and removed it from your Mac, then
 
 The remained items won’t cause any problems to your Mac. However, I don’t like to see broken preferences. Therefore, I researched how to remove it and discovered a method to fix this problem.[^1]
 
-The method is to locate and edit the configuration file that stores the applications in Location Services. In order to do that, we need to open the folder that contains the file. Type `Command+Shift+G` in Finder and insert the file path below:
+The method is to locate and edit the configuration file that stores the applications in Location Services. In order to do that, we need to open the folder that contains the file. Type `Command-Shift-G` in Finder and insert the file path below:
 
 	/private/var/db/locationd/
 
-You’ll see many files and folders. Find and select `locationd` folder. You’ll see it has a small red badge. The badge means that you don’t have the permission to access and edit the folder. We’ll grant permission to ourselves by pressing `Command+I` or **Secondary Click&#160;» Get Info** on the selected folder.
+You’ll see many files and folders. Find and select `locationd` folder. You’ll see it has a small red badge. The badge means that you don’t have the permission to access and edit the folder. We’ll grant permission to ourselves by pressing `Command-I` or **Secondary Click&#160;» Get Info** on the selected folder.
 
 ![Edit Permission for locationd Folder](http://images.sayzlim.net/2013/01/location_services_path.jpg)
 

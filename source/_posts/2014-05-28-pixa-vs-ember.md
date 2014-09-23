@@ -145,4 +145,4 @@ It’s not about choosing one and forget the other. In fact, I use Pixa and Embe
 [2]: https://itunes.apple.com/us/app/ember-screenshot-annotate/id478308340?mt=8&uo=4&at=11ld6n&ct=ember+for+ios "Ember - Screenshot, Annotate and Share"
 [3]: https://itunes.apple.com/us/app/pixa/id527618971?mt=12&uo=4&at=11ld6n&ct=pixa "Pixa"
 
-[^1]: You can leave a comment on a file by pressing `Command+I` and expand the **Comments** section.
+[^1]: You can leave a comment on a file by pressing `Command-I` and expand the **Comments** section.

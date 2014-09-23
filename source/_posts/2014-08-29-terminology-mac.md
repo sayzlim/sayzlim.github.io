@@ -45,7 +45,7 @@ Select `Create` and wait for Fluid to complete creating your Mac app.
 
 Now we have to configure few settings to make Terminology looks better.
 
-**1. The first thing is to hide the status bar**. You can choose `View » Hide Status Bar` from the menu or just press `Command + /`.
+**1. The first thing is to hide the status bar**. You can choose `View » Hide Status Bar` from the menu or just press `Command-Slash (/)`.
 
 **2. Choose iOS Safari 7 as the browser user agent**. You can find it under  `Terminology » User Agent » iOS Safari 7 — iPhone` from menu bar. This will pick the mobile version of term.ly every time you open Terminology.
 

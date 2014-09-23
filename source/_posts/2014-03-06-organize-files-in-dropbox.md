@@ -52,7 +52,7 @@ Here are the document flows I’ve assigned for each folder:
 
 **Notes** – I need a quick way to jot down notes on Mac. It has to be an app that works universally and plays well with plain text — learn why you should [use plain text](http://bettermess.com/a-plain-text-primer/ "A Plain Text Primer - A Better Mess"). This means I can freely create a plain text file from everywhere, and also access it with any apps. By far,  [nvALT](http://brettterpstra.com/projects/nvalt/ "nvALT - BrettTerpstra.com") by Brett Terpstra is the best app for this task.
 
-Set Notes as the source of your text files. Configure a keyboard shortcut to toggle nvALT everywhere. My preferred key combination is `Hyper+E`.[^1]
+Set Notes as the source of your text files. Configure a keyboard shortcut to toggle nvALT everywhere. My preferred key combination is `Hyper-E`.[^1]
 
 If you’re a Writer Pro user, you might want to bring all your notes into this folder. You can achieve this by [creating a symbolic link for each folder from iCloud to Dropbox](http://sayzlim.net/sync-writer-pro-icloud-dropbox "Sync Writer Pro Between iCloud and Dropbox - Sayz Lim").
 
@@ -95,10 +95,10 @@ Unlike Documents in iCloud, you can open those files with any apps.
 
 Name all the folders with the app name. Replace the the folder icon with the app icon. Here is the quick tutorial to replace Pixelmator folder icon:
 
-1. Select Pixelmator app and press `Command+I` to get the information window.
-2. Select the icon in the information window and press `Command+C` to copy the icon.
-3. Select Pixelmator folder in Safe folder and press `Command+I` to get the information window.
-4. Select the icon in information window and press `Command+V` to paste the Pixelmator icon.
+1. Select Pixelmator app and press `Command-I` to get the information window.
+2. Select the icon in the information window and press `Command-C` to copy the icon.
+3. Select Pixelmator folder in Safe folder and press `Command-I` to get the information window.
+4. Select the icon in information window and press `Command-V` to paste the Pixelmator icon.
 
 Repeat for all the folders in Safe.
 
@@ -109,4 +109,4 @@ Find the setup that works for you, but remember to keep the structure simple. Fe
 
 [^1]: Learn about `Hyper` key in [this post](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/ "A useful Caps Lock key - BrettTerpstra.com") by Brett Terpstra.
 
-[^2]: You can access the preferences by pressing `Command+J` in active window.
+[^2]: You can access the preferences by pressing `Command-J` in active window.

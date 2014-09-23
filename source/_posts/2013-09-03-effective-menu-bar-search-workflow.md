@@ -15,7 +15,7 @@ I’ve been looking for an effective way to select uncommon menu item. The easie
 
 [img]: http://images.sayzlim.net/2013/09/menubar_help.jpg "Menu Bar Search"
 
-For faster execution, you can [assign `Command+Shift+/`](http://images.sayzlim.net/2013/09/menubar_search.jpg) to trigger help menu. It solves the problem, but this approach is slow. A better way is using [Menu Bar Search Workflow for Alfred 2](http://www.alfredforum.com/topic/653-menu-bar-search/ "Menu bar search - Share your Workflows - Alfred App Community Forum").
+For faster execution, you can [assign `Command-Shift-/`](http://images.sayzlim.net/2013/09/menubar_search.jpg) to trigger help menu. It solves the problem, but this approach is slow. A better way is using [Menu Bar Search Workflow for Alfred 2](http://www.alfredforum.com/topic/653-menu-bar-search/ "Menu bar search - Share your Workflows - Alfred App Community Forum").
 
 [ ![Pixemaltor Menu Bar][img2] ](http://images.sayzlim.net/2013/09/menubar_pixelmator.jpg "Pixemaltor Menu Bar")
 
