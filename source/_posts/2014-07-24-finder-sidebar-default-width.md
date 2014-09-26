@@ -25,9 +25,11 @@ If you change the sidebar icon size to medium, the sidebar falls apart. The narr
 
 Fortunately, Finder has `sidebar width` property that you can modify with AppleScript.  Resize the sidebar in all active windows by running the script below in AppleScript Editor.
 
-	tell application "Finder"
-		set sidebar width of every window to 160
-	end tell
+``` applescript
+tell application "Finder"
+  set sidebar width of every window to 160
+end tell
+```
 
 Experiment the value until you discover the size that can fit all the sidebar labels, but still have enough room for the labels to breathe.
 
