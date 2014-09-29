@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My Favorites iOS 8 Features"
+title: "My Favorite iOS 8 Features"
 date: 2014-09-26 18:00
 description: 
 tags:
