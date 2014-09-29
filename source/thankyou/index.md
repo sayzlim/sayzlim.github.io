@@ -8,7 +8,7 @@ description: We’re now connected, you and I together to learn the art of using
 
 [img]: thank_you.jpg "Thank You!"
 
-**You’re now subscribed to the weekly newsletter**! You’ll receive your first newsletter this Sunday morning at 11 AM. It’s just a right time to play with some new toys on your Mac.
+**You’re now subscribed to the weekly newsletter**! You’ll receive your first newsletter this Sunday morning at 8 AM (Jakarta Local Time). It’s just a right time to play with some new toys on your Mac.
 
 ## Where to go from here?
 
