@@ -9,7 +9,7 @@ tags:
 - "Review"
 ---
 
-[Information Architects][2210-001], the developer of my favorite writing app [iA Writer][2210-002],  released [Writer Pro][2210-003], an advanced writing tool tailored for professional writers few weeks ago. They believe [Writer Pro’s workflow][2210-004] — by dividing the writing process into four stages: Note, Writer, Edit, and Read — can help writers to focus on their writing instead of tinkering with all the unnecessary preferences.
+[Information Architects][2210-001], the developer of my favorite writing app [iA Writer][2210-002],  released [Writer Pro][2210-003], an advanced writing tool tailored for professional writers few weeks ago. They believe [Writer Pro’s workflow][2210-004] — by dividing the writing process into four stages: Note, Write, Edit, and Read — can help writers to focus on their writing instead of tinkering with all the unnecessary preferences.
 
 <!--more-->
 
@@ -51,7 +51,7 @@ To view the original iCloud folders, you need to show your hidden _Library_ fold
 
 Make sure iCloud Documents & Data sync is on.[^2] Navigate into the **Mobile Documents** and find a folder containing `pro~writer`. Mine is `27N4MQEA55~pro~writer`. Yours might differ. So make sure the contents are correct by navigating further into the folder. Once you’ve ensure the files are correct, we’re going to create symbolic link for each folder in this path:
 
-	~/Library/27N4MQEA55~pro~writer/Documents/
+	~/Library/Mobile Documents/27N4MQEA55~pro~writer/Documents/
 
 You create symbolic link by using the command under this format:
 
