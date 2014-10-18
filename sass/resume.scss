@@ -21,6 +21,7 @@ $condensed-font: "Avenir Next Condensed";
 
 body {
     display: block;
+    position: relative;
     height: 100%;
     background-color: #fff;
     color: $text-color;
@@ -54,6 +55,10 @@ ol {
 }
 
 // Layout
+
+.main-wrapper {
+  overflow: hidden;
+}
 
 .main {
   float: left;
@@ -163,8 +168,6 @@ ol {
   }
 
   .footer {
-    position: absolute;
-    bottom: .2in;
     padding-top: .2in;
     width: 100%;
     border-top: solid 2px $base-color;
