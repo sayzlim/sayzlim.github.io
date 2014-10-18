@@ -24,7 +24,7 @@ With the release of Safari 5, developers can finally build extensions to make Sa
 
 Two years since my last post on Safari extensions; things have changed a lot. It’s difficult to find new Safari extensions  made these days. Although not as much like it used to, I still have many extensions installed. Here are the seven most useful extension that everyone will find useful.
 
-## [Sessions](http://safariextensions.tumblr.com/post/723682715 "Safari Extensions — Sessions by David Yoo")
+## [Sessions](https://dl.dropboxusercontent.com/u/8247646/sessions/index.html "Safari Extensions — Sessions by David Yoo")
 
 [ ![Sessions Safari Extension][img1] ](http://images.sayzlim.net/2013/10/safari_extension_sessions.jpg "Sessions Safari Extension")
 
