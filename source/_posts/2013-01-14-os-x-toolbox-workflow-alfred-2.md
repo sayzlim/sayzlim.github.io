@@ -20,13 +20,12 @@ Taking this chance, I’ve compiled all the extensions I’ve built and download
 
 > Attribution to each original extension creator can be found in the shell script action.
 
-**Rebuild Launch Services:** A simple command to rebuild your launch services that manage all the “Open with…” menu item. If you see duplicate items, run this command to fix the problem.
-
+- **Rebuild Launch Services:** A simple command to rebuild your launch services that manage all the “Open with…” menu item. If you see duplicate items, run this command to fix the problem.
 - **Toggle Desktop:** Turn desktop visible or hidden.
 - **Toggle System Files by [Don Southard](http://www.dirtdon.com):** Turn system files visible/hidden.
 - **Toggle Wi-Fi by [Jonas Eriksen](http://www.aiyo.dk/alfredapp):** Turn Wi-Fi On/Off.
 - **Purge Inactive Memory:** Clear away inactive memory without rebooting your Mac.
-- **Relaunch Finder:** If you’ve encountered a bug that stops you from revealing Alfred search result in Finder, then you’ll need this command. Usually it happened after you relaunch Finder without killing “appleeventsd” process. With this, you can relaunch Finder and kill the process in one stroke. <del>Because we need *sudo* command, you’ll need to enter your user password in the workflows menu (see the Relauch Finder shell script).</del> You’re no longer need to type in your password in the shell script. This action will use your password as argument and pass it along to the command.[^1]
+- **Relaunch Finder:** If you’ve encountered a bug that stops you from revealing Alfred search result in Finder, then you’ll need this command. Usually it happened after you relaunch Finder without killing “appleeventsd” process. With this, you can relaunch Finder and kill the process in one stroke.
 
 [ ![Alfred Workflow Requires Password][img2] ](http://images.sayzlim.net/2013/01/alfred2_password.jpg "Alfred Workflow Requires Password")
 
@@ -39,12 +38,17 @@ If you plan to build a better and complete version of this, [send me an email][2
 > %update%
 > **Update 2013-08-15:** I’ve included the command to reset Launchpad’s apps ordering in the latest update. You may get the workflow from the download link below.
 
-Download: [OS X Toolbox Workflow for Alfred 2](http://s3.sayzlim.net/f/alfred-toolbox.zip "OS X Toolbox Workflow for Alfred 2")
+Download: [OS X Toolbox Workflow v1.1 for Alfred 2](http://s3.sayzlim.net/f/alfred-toolbox.zip "OS X Toolbox Workflow for Alfred 2")
 
 > %update%
 > **Update 2013-09-27:** Ed Heltzer from [Rainy Day Media][4] has sent me an updated workflow with more and better tools. With the improved Wi-Fi toggle, you can also view the your Wi-Fi network and see your IP address from single command. Perhaps the  “space” command is the one I’ll use the most. It’ll check and show the storage on your local and mounted drives. Pretty handy, isn’t it?
 
 Download: [OS X Toolbox Workflow by Ed Heltzer](http://s3.sayzlim.net/f/alfred-toolbox-heltzer.zip "OS X Toolbox Workflow by Ed Heltzer")
+
+> %update%
+> **Update 2014-10-18:** Changed the icon to match OS X Yosemite flat looks. There is also a fix for the Launchpad action in this update.
+
+Download: [OS X Toolbox Workflow v1.2 for Alfred 2](http://s3.sayzlim.net/f/alfred-toolbox-1-2.zip "OS X Toolbox Workflow v1.2 for Alfred 2")
 
 [2]: http://sayzlim.net/contact "Contact | Sayz Lim"
 [3]: https://buy.alfredapp.com "Buy Alfred"
