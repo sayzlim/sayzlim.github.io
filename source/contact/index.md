@@ -4,15 +4,24 @@ title: "Contact"
 date: 2013-09-10 16:26
 ---
 
-My name is Sutanto, but I’m known as Sayz Lim online. I avoid using my real name because it’s a common name in Indonesia, and I  prefer to have the same username for all my online accounts.
+My name is Sutanto, but most people know me as Sayz Lim. I’ve been writing about technology, mostly about OS X and iOS, on this site since 2010 to help people simplify their workflows while working on a Mac.
 
-I currently live in Batam, Indonesia with my younger sister and mother.
+I’m a firm believer that technology is made to create more free time for us so we can pursue the creative side of our works. The tools are made to amplify our output with the least amount of efforts as possible.
 
-I’ve been a contributor for the largest Apple News Portal in Indonesia, [MakeMac](http://www.makemac.com/ "MakeMac: Situs Tips, Tutorial, Review dan Berita Apple Terbesar di Indonesia"), since 2011 and acted as Editor-in-chief starting 2012–2013. I quit my position as Editor-in-chief in early 2013 and continue to help with SEO and SEM for the mother company, Apps Foundry.
+I publish on this site every Wednesday and Friday, and send an exclusive article through newsletter every Sunday. Just enter your email below to subscribe:
 
-If you’re new to this site, do [start from this page](http://sayzlim.net/start "Start - Sayz Lim") to understand what this site is about. You can also [subscribe to this site](http://sayzlim.net/subscribe "Subscribe - Sayz Lim - SayzLim.net"), if you like.
+<div class="subscribe-page">
 
-If you’re [one of the product I’ve used and reviewed](http://sayzlim.net/apps "Apps Recommendations - Sayz Lim"), and wish to support my works, let’s discuss how I can help you to promote your products to my readers.
+    <form class="form subscribe" action="http://sayzlim.us2.list-manage.com/subscribe/post" method="POST">
+      <input type="hidden" name="u" value="ff1398bcc911abf87a3dfe82d">
+      <input type="hidden" name="id" value="cc23ae2e4d">
+      <input type="text" value="" name="FNAME" class="name" placeholder="First Name" required>
+      <input type="email" value="" name="EMAIL" class="email" placeholder="Email Address" required>
+      <input type="submit" class="subscribe" value="Sign Up">
+    </form>
+</div>
+
+You can support my works by [treating me a cup of coffee every month](http://sayzlim.net/membership "Membership - Sayz Lim"), or purchase the [tools I’ve recommended for Mac users](http://sayzlim.net/apps "Apps Recommendations - Sayz Lim").
 
 You can contact me at:
 
