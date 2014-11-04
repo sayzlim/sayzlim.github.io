@@ -4,9 +4,9 @@ title: "Membership"
 description: "Subscribe for $2 a month to show your support to my writing and help me turn this into a full-time job" 
 ---
 
-This membership page is tucked away in the footer because I’m sure only a few would pay attention to it. Let me make a humble request since you’ve visited this page.
+Writing on this site is my second-job after my day job. I want fully work on this site and the only way to achieve that is the direct support from readers. You can do so by **subscribing to this site for $2 a month (billed every 3-months).**
 
-I want fully work on this site and one of the way to achieve that is by receiving the direct support from readers like you. You can do so by **subscribing to this site for $2 a month**.
+If you’ve found this site useful in helping you get more things done, and most importantly, save you a lot of time, I hope you can become a subscribing member.
 
 <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -15,6 +15,3 @@ I want fully work on this site and one of the way to achieve that is by receivin
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
 
-I’m not going to compare $2 to a cup of coffee because I know $2 is a big deal. It represents the time you spent to earn your monthly income. 
-
-Don’t worry, even without this subscription, I’ll keep writing. I simply have to provide more value so you can spend that $2 next time on the book I write or the service I provide.
