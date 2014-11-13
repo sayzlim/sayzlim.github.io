@@ -5,6 +5,7 @@ date: 2014-10-18 11:44
 description: "What I’ve done to make this flat user interface looks better and cleaner on MacBook Air."
 tags:
 - "Personal"
+- "Yosemite"
 ---
 
 It’s been a day since I started using OS X Yosemite. I love the fact that OS X Yosemite brings a new look to the operating system that sports the Aqua theme for the past fourteen years, but I also hate the truth that this flat interface only looks perfectly gorgeous on Retina display.

@@ -22,6 +22,9 @@ OS X Yosemite with the new flat design, boasting translucency to add more dimens
 
 Long time OS X users should be familiar with CandyBar. Developed by Panic, this is the best app to replace the system and apps icons. The company [stopped developing CandyBar and gave away this application for free](http://www.panic.com/blog/candybar-mountain-lion-and-beyond/ "Panic Blog » CandyBar, Mountain Lion, and Beyond"). Like I mentioned in the beginning, although it can’t change the Dock’s look anymore, CandyBar can still replace the system icons, and possibly one of the best free icon organizer for Mac.
 
+> %sidenote%
+> CandyBar can’t change system icons in OS X Yosemite? Don’t worry. You can still use [LiteIcon](http://www.freemacsoft.net/liteicon/ "LiteIcon - FreeMacSoft") by FreeMacSoft to change the system icons safely.
+
 Due to code signing, you also can’t change the internal icons of Mac App Store apps with CandyBar. There is a workaround for this limitation. You can still change the icons with this method I’m going to show you. Not only this method won’t affect the code signing, it also simplifies the restoration process.
 
 ## Replace Apps Icons with CandyBar
