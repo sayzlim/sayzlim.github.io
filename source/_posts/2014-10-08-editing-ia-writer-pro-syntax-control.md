@@ -83,4 +83,6 @@ Unlike the rest of syntaxes where the occurrence count is low, I find that nouns
 
 ## Conclusion
 
-Writing is a fascinating activity since there is no rules of writing. I have mentioned the tips above as rules, but the point is to provide your with a picture of how I use Syntax Control to proofread my own writing. Syntax Control is a powerful feature to help writers viewing their writing in different perspective.
+I have mentioned the tips above as rules, but what makes writing fascinating is there is no writing rules. The point of sharing them as tips is to provide you with a picture of how I use Syntax Control for proofreading.
+
+Syntax Control is a powerful feature to help writers viewing their writing in different perspective. If you’re a writer, you must try it for your next piece of writing.

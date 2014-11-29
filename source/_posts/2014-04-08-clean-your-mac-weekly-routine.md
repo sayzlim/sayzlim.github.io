@@ -34,7 +34,7 @@ Launchpad is another way to launch apps in Mac, but organizing Launchpad is a te
 
 My favorite (and lazy) way to organize apps in Launchpad is by resetting its layout using the Terminal command below:
 
-	rm ~/Library/Application\ Support/Dock/*.db && killall Dock
+	rm ~/Library/Application\ Support/Dock/*.db; defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock
 
 OS X will rebuild the Launchpad with all the apps sorted alphabetically. No more blank spot, Launchpad is organized in no time.
 
