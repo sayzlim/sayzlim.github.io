@@ -1,5 +1,5 @@
 @function pem($pixels) {
-  @return #{$pixels/16.0}em
+  @return #{$pixels/16.0}em;
 }
 
 @media screen and (max-width: pem(1050)) {
