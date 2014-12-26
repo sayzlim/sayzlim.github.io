@@ -23,13 +23,13 @@ For example, I often switch between Twitter accounts in [Wren for Mac](http://sa
 
 [170707]: http://images.sayzlim.net/2014/08/keyboard_maestro_wren.jpg "Switch Twitter Accounts Macro"
 
-I also use this type of macro to run features that can’t be found in menu bar like Safari Developer Tools `Inspect Element`. This macro simulates secondary click and choose the `Inspect Element` from  the available list items.
+I also use this type of macro to run features that can’t be found in menu bar like Safari Developer Tools `Inspect Element`. This macro simulates secondary click and choose the `Inspect Element` from the available list items.
 
 [ ![Inspect Element Macro][170725] ](http://images.sayzlim.net/2014/08/keyboard_maestro_inspect_element.jpg "Inspect Element Macro")
 
 [170725]: http://images.sayzlim.net/2014/08/keyboard_maestro_inspect_element.jpg "Inspect Element Macro"
 
-By using the actions under control flow group, you can use one shortcut for two type of tasks.  The following macro will check  the status of  `Open in New Tab` menu item and choose to either open selected file, or open the folder in new tab.
+By using the actions under control flow group, you can use one shortcut for two type of tasks.  The following macro will check the status of  `Open in New Tab` menu item and choose to either open selected file, or open the folder in new tab.
 
 [ ![Open in New Tab Macro][170735] ](http://images.sayzlim.net/2014/08/keyboard_maestro_new_tab.jpg "Open in New Tab Macro")
 
@@ -51,7 +51,7 @@ The second approach is to prepare workspaces. Let’s say you’re trying to ent
 
 Developers can’t always fulfill our features requests. It takes a decent amount of time and vigorous testing to make the feature works as intended . Instead of waiting, why don’t we add the feature by ourselves?
 
-Let me show you a few macros in [Spillo](https://itunes.apple.com/us/app/spillo/id873245660?mt=12&uo=4&at=11ld6n&ct=spillo "Spillo"), a Pinboard manager for Mac, I bought recently. It’s understandable that the early version doesn’t support shortcuts so I  create a macros to copy link, share to Twitter, and save to Instapaper. I also have these macros to display Growl notification whenever an action is completed.
+Let me show you a few macros in [Spillo](https://itunes.apple.com/us/app/spillo/id873245660?mt=12&uo=4&at=11ld6n&ct=spillo "Spillo"), a Pinboard manager for Mac, I bought recently. It’s understandable that the early version doesn’t support shortcuts so I create a macros to copy link, share to Twitter, and save to Instapaper. I also have these macros to display Growl notification whenever an action is completed.
 
 [ ![Save to Instapaper Macro][170818] ](http://images.sayzlim.net/2014/08/keyboard_maestro_spillo_instapaper.jpg "Save to Instapaper Macro")
 

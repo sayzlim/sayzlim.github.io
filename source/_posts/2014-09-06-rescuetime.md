@@ -12,20 +12,20 @@ How to measure productivity? How to tell if you’re productive?  While you can 
 
 <!-- more -->
 
-[The limitation you set with WasteNoTime extension](http://sayzlim.net/waste-no-time "Waste No Time - Sayz Lim") only applies during browsing session. You can still fall into the illusion of being productive by spending most of the time on  irrelevant activities — take communication and scheduling apps for example —  that doesn’t contribute any progress to your main goals.
+[The limitation you set with WasteNoTime extension](http://sayzlim.net/waste-no-time "Waste No Time - Sayz Lim") only applies during browsing session. You can still fall into the illusion of being productive by spending most of the time on irrelevant activities — take communication and scheduling apps for example —  that doesn’t contribute any progress to your main goals.
 
 This is where we can use RescueTime to help us understand our daily habits. How much hours have I worked today? When is my most productive hours? Am I productive today?
 
 RescueTime is similar to WasteNoTime, but unlike the latter which only tracks the websites you visit, RescueTime tracks up to the apps window level. This will give you a comprehensive report of what websites you’ve visited and what apps you’ve opened during the day.
 
 > %sidenote%
-> **RescueTime Premium 14 Days  Free Trial:** Make sure you [sign up for a premium account](https://www.rescuetime.com/rp/sayzlim/signup/solo/pro) to try out all the features — this offer only happens during the registration process.  You can cancel subscription under [billing page](https://www.rescuetime.com/accounts/billing "RescueTime - Account Settings") to avoid automatic renewal.
+> **RescueTime Premium 14 Days Free Trial:** Make sure you [sign up for a premium account](https://www.rescuetime.com/rp/sayzlim/signup/solo/pro) to try out all the features — this offer only happens during the registration process.  You can cancel subscription under [billing page](https://www.rescuetime.com/accounts/billing "RescueTime - Account Settings") to avoid automatic renewal.
 
 ## Initial Setup
 
 After you’ve signed up an account, download the app, and configure it on all your Mac. The premium plan comes with set of features to create more specific goals and detailed report that can help you fully understand your daily habits, but for general use, the Lite version has all the essential features covered. 
 
-RescueTime will ask you to organize activity categories based on their importance— the choice you make here will automatically label most of the recorded activities  according to its productivity level. You can always modify the activity’s category if you find that it’s assigned with incorrect category or productivity level.
+RescueTime will ask you to organize activity categories based on their importance— the choice you make here will automatically label most of the recorded activities according to its productivity level. You can always modify the activity’s category if you find that it’s assigned with incorrect category or productivity level.
 
 [ ![RescueTime Dashboard][141123] ](http://images.sayzlim.net/2014/09/rescuetime_dashboard.jpg "RescueTime Dashboard")
 
@@ -39,7 +39,7 @@ Dashboard lets you see the overview of your productivity pulse measured by the a
 
 Scroll down a little bit and you’ll be able to see the spotlight on your top activities. This’ll give you a glimpse of what apps or websites has taken most of your time. You can also see your goals progress and the daily achievement you’ve noted down — if you have one — in the sidebar.
 
-Goals are available in free plan, so let’s setup a few goals  to help us stay focused.
+Goals are available in free plan, so let’s setup a few goals to help us stay focused.
 
 ## Goals Settings
 
@@ -68,7 +68,7 @@ I find it’s important to highlight the premium features that help me to shape 
 
 ### Block Distracting Site
 
-RescueTime has a built-in feature to block distracting sites like the Instant Lockdown feature in WasteNoTim extension. Unlike WasteNoTime that demands you to add sites to block list manually, RescueTime uses the their intensive database to automatically block sites it find distracting. The rules in RescueTime is more lenient since you can unblock the site by waiting for fifteen seconds. Sometimes you’ll find amusing “This site is blocked” image  for certain websites such as Facebook or Reddit.
+RescueTime has a built-in feature to block distracting sites like the Instant Lockdown feature in WasteNoTim extension. Unlike WasteNoTime that demands you to add sites to block list manually, RescueTime uses the their intensive database to automatically block sites it find distracting. The rules in RescueTime is more lenient since you can unblock the site by waiting for fifteen seconds. Sometimes you’ll find amusing “This site is blocked” image for certain websites such as Facebook or Reddit.
 
 ### Daily Highlights
 

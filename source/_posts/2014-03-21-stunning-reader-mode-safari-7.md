@@ -8,7 +8,7 @@ tags:
 - "Prettify"
 ---
 
-Reader Mode in Safari is the answer to the  nature of Internet — large number of information with terrible legibility. When publisher fails to deliver enjoyable reading experience, we should take control and pave our reading environment.
+Reader Mode in Safari is the answer to the nature of Internet — large number of information with terrible legibility. When publisher fails to deliver enjoyable reading experience, we should take control and pave our reading environment.
 
 <!--more-->
 

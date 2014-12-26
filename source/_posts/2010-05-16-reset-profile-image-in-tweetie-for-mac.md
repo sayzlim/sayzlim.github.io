@@ -11,7 +11,7 @@ Tweetie, a simple and elegant Twitter application, is liked by many mac enthusia
 
 Have you ever changed your Twitter profile image and realize that Tweetie doesn’t cache and change your profile image accordingly? There is a chance the problem is caused by the slow caching system on Twitter server. But if your profile picture doesn’t change after 1–2 days. Then the problem lies with the Tweetie caching system.
 
-To reset your Tweetie profile image cache, delete the cache image folder `com.atebits.tweetie.profile-images`  in:
+To reset your Tweetie profile image cache, delete the cache image folder `com.atebits.tweetie.profile-images` in:
 
 	User » Home » Library » com.atebits.tweetie.profile-images
 

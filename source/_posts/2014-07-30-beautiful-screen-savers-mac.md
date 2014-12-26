@@ -35,7 +35,7 @@ The good news is the the maker of Fliqlo has rebuilt the screen saver from scrat
 
 [175021]: http://images.sayzlim.net/2014/07/screensaver_screenstagram.jpg "Screenstagram"
 
-Instagram is a perfect example of social network made for visual people. It lets  the users to communicate with picture.
+Instagram is a perfect example of social network made for visual people. It lets the users to communicate with picture.
 
 If you follow people who take amazing pictures on Instagram, you’ll love to have these pictures as your screensaver. [Screenstagram](http://screenstagram.s3.amazonaws.com/download.html "Screenstagram version 2.01") lets you login with your Instagram account and display those images in the grid layout similar to Nibbble. There is an option to show only the photos you’ve favorited, or you can also exclude tags you’re not interested.
 

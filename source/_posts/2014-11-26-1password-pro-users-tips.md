@@ -53,7 +53,7 @@ Now, go ahead and put your Apple ID with iCloud ID together.
 
 [231234]: http://images.sayzlim.net/2014/11/1password_smart_folders.jpg "Sorting Smart Folders in 1Password"
 
-Here is a little trick you can use to organize any folders in your projects. Group similar folders together by prepending them with a unique symbol or emoji — such as ∞ for smart folders. You  can find these symbols under the menu item at `Edit… » Special Characters`.
+Here is a little trick you can use to organize any folders in your projects. Group similar folders together by prepending them with a unique symbol or emoji — such as ∞ for smart folders. You can find these symbols under the menu item at `Edit… » Special Characters`.
 
 ## Attach Scanned Documents to 1Password
 

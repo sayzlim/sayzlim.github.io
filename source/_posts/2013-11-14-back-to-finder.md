@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Back to Finder"
-date: 2013-11-14  01:23
+date: 2013-11-14 01:23
 description: Mavericks introduces tabs as one of the main feature alongside with tags. Should I go back to Finder?
 tags:
 - "Declutter"

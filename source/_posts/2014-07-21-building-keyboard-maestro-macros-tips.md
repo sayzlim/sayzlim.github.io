@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Building  Keyboard Maestro Macros Tips"
+title: "Building Keyboard Maestro Macros Tips"
 date: 2014-07-22 23:30
 description: You don’t have to know AppleScript to create a Keyboard Maestro macro. What you need is learning how to build useful macros that automate mundane tasks for you.
 tags:
@@ -47,17 +47,17 @@ Variable is where you store the permanent value where you use in almost any fiel
 
 [ ![Keyboard Maestro: Variable in AppleScript][image-2] ][4]
 
-In the example above, I save the file path in a variable known as `Quotes Path`.  I later read the file path from the variable, randomly pick one line from the list of quotes, and save it to a new variable called `Quote` which is used by the Keep Writing macro to read out the text and displayed in notification.
+In the example above, I save the file path in a variable known as `Quotes Path`. I later read the file path from the variable, randomly pick one line from the list of quotes, and save it to a new variable called `Quote` which is used by the Keep Writing macro to read out the text and displayed in notification.
 
-Another common use case, without involving scripting,  is when you want to control macro flow which I’ll elaborate more later.
+Another common use case, without involving scripting, is when you want to control macro flow which I’ll elaborate more later.
 
 ## Access Clipboard History
 
 [ ![Keyboard Maestro: Enable Save Clipboard History to Disk][image-3] ][5]
 
-Clipboard is the common gateway to move values from one application to another. Before you can access it, you need to enable `Save Clipboard History to Disk` under  preferences.
+Clipboard is the common gateway to move values from one application to another. You can access clipboard history during runtime, but it’ll disappear when you log out or restart your computer. Enabling `Save Clipboard History to Disk` under preferences save your clipboard history across restarts and log outs.
 
-Access the clipboard history by entering `%PastClipboard%1%`  in the macro actions text field. The number indicates the record of past clipboard. If you want the sixth record of clipboard from the past,  enter `%PastClipboard%6%` as the value.
+Access the clipboard history by entering `%PastClipboard%1%` in the macro actions text field. The number indicates the record of past clipboard. If you want the sixth record of clipboard from the past, enter `%PastClipboard%6%` as the value.
 
 ## Use Control Flow Actions
 
@@ -65,7 +65,7 @@ Sometimes you want a macro to run only when certain conditions are met. Let’s 
 
 [ ![Keyboard Maestro: Toggle Google Chrome][image-4] ][6]
 
-This macro lets me switch Google Chrome with hot key combination, but  only when Google Chrome is running — in other words, Google Chrome stays inactive even when I’ve accidentally triggered the macro.  
+This macro lets me switch Google Chrome with hot key combination, but only when Google Chrome is running — in other words, Google Chrome stays inactive even when I’ve accidentally triggered the macro.
 
 You can minimize the amount of mistakes with action flows when building a complex macro. The library can check most situations — from application, menu item, and network name — but when the condition you want is not available, you can use this two methods to control the flow:
 

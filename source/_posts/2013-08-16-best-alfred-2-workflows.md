@@ -58,4 +58,4 @@ Useful Alfred’s Workflows will boost your efficiency by threefold, or maybe te
 [2519-001]: http://www.alfredforum.com/ "Alfred App Community Forum"
 [2519-002]: http://sayzlim.net/os-x-toolbox-workflow-alfred-2 "OS X Toolbox Workflow for Alfred 2 | Sayz Lim"
 
-Alfred is your tool. How powerful it get depends how you use it and what you equip it with. Explore and try to master this  powerful tool.
+Alfred is your tool. How powerful it get depends how you use it and what you equip it with. Explore and try to master this powerful tool.

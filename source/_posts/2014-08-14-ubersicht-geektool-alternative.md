@@ -8,7 +8,7 @@ tags:
 - "Mac"
 ---
 
-GeekTool is a well-known application for displaying various information on the desktop. I was curious with this application. I searched for some geeklets (or widgets), installed them, and customized it to fit with my desktop. Everything was great until I  saw the insane CPU usage in Activity Monitor. I removed GeekTool and started searching for a better alternative.
+GeekTool is a well-known application for displaying various information on the desktop. I was curious with this application. I searched for some geeklets (or widgets), installed them, and customized it to fit with my desktop. Everything was great until I saw the insane CPU usage in Activity Monitor. I removed GeekTool and started searching for a better alternative.
 
 <!-- more -->
 

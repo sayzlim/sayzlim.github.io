@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Best Lion Theme for Snow Leopard
-description: Change the theme of Mac OS X Snow Leopard into Lion  with this small package.
+description: Change the theme of Mac OS X Snow Leopard into Lion with this small package.
 tags:
 - "Prettify"
 ---
@@ -17,7 +17,7 @@ One of the reason is my MacBook doesn’t have multitouch support.  I’ve tried
 
 Basically, I feel that there are many things I won’t use later in Lion.
 
-Of course, Lion is worth an upgrade, especially with the Mail 5 and many system enhancements. But, if there is one reason for me  upgrading to Lion is the GUI because I’ve never liked Aqua style.
+Of course, Lion is worth an upgrade, especially with the Mail 5 and many system enhancements. But, if there is one reason for me upgrading to Lion is the GUI because I’ve never liked Aqua style.
 
 So, I’ve been searching and waiting patiently for someone to create a proper mod for Snow Leopard. A theme that fits perfectly with Snow Leopard and yet doesn’t overshadow default theme. Introducing…
 

@@ -8,7 +8,7 @@ tags:
 - "Workflow"
 ---
 
-[Evernote](https://www.evernote.com/referral/Registration.action?uid=4069191&sig=f73fab7c71caeed669c2e9a2a93e4023 "Evernote - Sign Up") remembers everything. [Workflow](https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&uo=4&at=11ld6n&ct=workflow+powerful+automation "Workflow: Powerful Automation Made Simple") automates most of the things. When you combine these two apps together, you have a wonderful setup that can create note with a few taps. The Workflow  series is incomplete if I don’t share these workflows I built as an avid Evernote user.
+[Evernote](https://www.evernote.com/referral/Registration.action?uid=4069191&sig=f73fab7c71caeed669c2e9a2a93e4023 "Evernote - Sign Up") remembers everything. [Workflow](https://itunes.apple.com/us/app/workflow-powerful-automation/id915249334?mt=8&uo=4&at=11ld6n&ct=workflow+powerful+automation "Workflow: Powerful Automation Made Simple") automates most of the things. When you combine these two apps together, you have a wonderful setup that can create note with a few taps. The Workflow series is incomplete if I don’t share these workflows I built as an avid Evernote user.
 
 <!-- more -->
 
@@ -54,7 +54,7 @@ There are two features I want to create so I add a **Choose from Menu** action c
 
 The second option is **Send Saved Latest Photo**. The reason I avoid **Get Images from Input** is because that action will download all the found images on a web page, which can drain battery and your data package like a hungry ghoul. Efficiency is the key. The workflow will first delete the latest saved photo — since you’ve saved the photo into variable, deleting latest photo won’t remove the one you store in variable until the workflow finish running. It’ll then send the `Latest Photo` into a new note along with the site title.
 
-If I want to do the second action step by step. I’ll need to save the photo, switch to Photos.app, and use the share sheet to send the photo to Evernote. I must also copy  and enter the site title from the URL manually. Instead of going through these troublesome steps. I can tap and hold the photo, save it to camera roll, and complete the rest of steps in one action.
+If I want to do the second action step by step. I’ll need to save the photo, switch to Photos.app, and use the share sheet to send the photo to Evernote. I must also copy and enter the site title from the URL manually. Instead of going through these troublesome steps. I can tap and hold the photo, save it to camera roll, and complete the rest of steps in one action.
 
 We’ve laid the foundation for the workflow which we can built upon later if we ever need to change it for different kind of purposes. If you ever find yourself in need to create more options sending to other services, you can just add a new item in **Choose from Menu** action and reuse all those stored variables.
 

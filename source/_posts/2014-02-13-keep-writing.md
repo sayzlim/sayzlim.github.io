@@ -11,7 +11,7 @@ If you’re read my tutorial on [how to sync Writer Pro to Dropbox and iCloud](h
 
 <!--more-->
 
-As good as I might make it sound. It hasn’t fixed my  habit to rewrite my sentences before it’s completed. Pressing the delete key to correct the typo, rearrange the structure, and remove adverbs slows me down.
+As good as I might make it sound. It hasn’t fixed my habit to rewrite my sentences before it’s completed. Pressing the delete key to correct the typo, rearrange the structure, and remove adverbs slows me down.
 
 Fear stops me from completing the sentence. This sentence sounds stupid. This sentence ruins the whole paragraph. This sentence doesn’t make sense. Stop judging yourself. In fact, how can I be so sure that the incomplete sentences are bad? The sentences I find stupid might turn out to be a pearl covered in mud.
 

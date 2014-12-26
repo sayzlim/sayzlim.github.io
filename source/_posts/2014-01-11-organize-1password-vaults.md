@@ -13,18 +13,18 @@ One of the problems after using 1Password for several years is _all_ sensitive i
 
 <!--more-->
 
-Hundred of accounts are stored in my 1Password  Primary Vault. I skim through them,  counting the number of accounts I don’t use in the past year, and in the midst of my reading time, I decide to clean up this old security vault.
+Hundred of accounts are stored in my 1Password Primary Vault. I skim through them,  counting the number of accounts I don’t use in the past year, and in the midst of my reading time, I decide to clean up this old security vault.
 
 I’ve been looking for a better way to manage my 1Password saved items. The first step is to have separate storage for different type of information.
 
 1Password 4 introduces a new storage system known as [multiple vaults][1811-001]. This new feature allows me to keep my personal and business information separated.
 
-I used to distinguish items under one service by including the username in the  title — like  "Facebook | Sayz Lim" and "Facebook | Brother Who Doesn’t Remember His Password".  By using  multiple vaults, I can create a vault designed for the people I’ve helped to create their accounts.
+I used to distinguish items under one service by including the username in the title — like  "Facebook | Sayz Lim" and "Facebook | Brother Who Doesn’t Remember His Password".  By using multiple vaults, I can create a vault designed for the people I’ve helped to create their accounts.
 
 There are four vaults that I recommend each 1Password user to have. The default one,  called Primary Vault, along with Business Vault are must-have.  Additionally, we’ll create an Archive Vault to archive inactive accounts, and Family Vault for the family who can’t store their own information properly.
 
 ## Primary Vault
-Like how you used to store items in 1Password, Primary Vault is used to store all your personal information. All saved items in here should belong  to you and *only* about you. It should be personal, which mean, your business email address shouldn’t be found in this vault.
+Like how you used to store items in 1Password, Primary Vault is used to store all your personal information. All saved items in here should belong to you and *only* about you. It should be personal, which mean, your business email address shouldn’t be found in this vault.
 
 ## Business Vault
 Business Vault, on the other hand, is where you store all information related to your business. You can also replace Business Vault with your employer’s company name.  If you’re in a team that shares same account, it’s recommended that you create a separate vault where you can share the vault with each other. You can later [sync the shared vault][1811-002] to keep everyone updated.

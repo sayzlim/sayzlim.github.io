@@ -11,7 +11,7 @@ I stop [comparing Alfred to Spotlight](http://sayzlim.net/alfred-app-vs-spotligh
 
 <!-- more -->
 
-Alfred is smart — in the way Spotlight can never match. It studies your search queries and return results based on your selected choice. If you often open iTunes by entering `itu` as search query, Alfred  will rank iTunes higher than the rest of items in search result. In other word, Alfred can be trained.
+Alfred is smart — in the way Spotlight can never match. It studies your search queries and return results based on your selected choice. If you often open iTunes by entering `itu` as search query, Alfred will rank iTunes higher than the rest of items in search result. In other word, Alfred can be trained.
 
 But there is one flaw with this feature: the number of shortcuts is limited. When I use `em` for `Empty Trash` and `Ember`, the action is no longer guaranteed. Typing `em` and press `Enter` won’t always empty the trash, sometimes it launches Ember. I can type three letters — by using `emt` and `emb` —  to avoid this problem, but I prefer to keep the query short.
 
@@ -39,4 +39,4 @@ Now I just need to type two letters for my most used apps:
 
 This method has saved me time from defining custom shortcuts in workflows to launch apps.  Moreover, you can train Alfred to rank certain apps or folders higher with your queries, all without accessing preferences.
 
-Maybe we haven’t reached the peak  to use apps with natural language, however, this simple yet effective method to customize apps behavior is definitely useful.
+Maybe we haven’t reached the peak to use apps with natural language, however, this simple yet effective method to customize apps behavior is definitely useful.

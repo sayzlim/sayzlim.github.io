@@ -35,7 +35,7 @@ This flow helps me to narrow down where I should look for an email. Instead of d
 I’ve discussed the philosophy behind Unibox. Now I’m going to show you some of the noteworthy features from this app. Those are the features I use regularly which should be useful for the rest of us.
 
 - **Browse attachments** in a beautiful grid and list view.  Since attachments are also grouped according to the senders, instead of asking “Where is the files?”, we can just ask “Who sent the files?”. No longer we need to browse each subject looking for the attachment we need.
-- **Follow the conversation** like the traditional mail client. You can still get the conversation view  by selecting the arrow icon right to subject title. This allows you to follow the conversation from different senders easily.
+- **Follow the conversation** like the traditional mail client. You can still get the conversation view by selecting the arrow icon right to subject title. This allows you to follow the conversation from different senders easily.
 - **Flawless Contacts Integration**. This is Unibox’s essential feature. You want to consolidate all the emails from one sender — sometimes with multiple emails — in one contact so it doesn’t clutter your inbox with different senders. Unibox manages to integrate Contacts so well that changes are seen immediately.
 - **Gravatar** can fill the faceless contacts found in your inbox. While not every contact sign up for Gravatar, this is an additional feature that can help us fill the faceless contacts from most of the companies.
 

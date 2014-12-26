@@ -7,7 +7,7 @@ tags:
 - "Mac"
 ---
 
-Font smoothing  can dramatically change how font are rendered. You’ll see a major improvement in the looks and feels of apps by just turning on font smoothing, but with a simple command in Terminal, you can make the font on non-Retina display looks way better than the default setting.
+Font smoothing can dramatically change how font are rendered. You’ll see a major improvement in the looks and feels of apps by just turning on font smoothing, but with a simple command in Terminal, you can make the font on non-Retina display looks way better than the default setting.
 
 <!-- more -->
 

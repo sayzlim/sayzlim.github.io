@@ -25,7 +25,7 @@ There are five type of notes you can save with Evernote Web Clipper, and the nat
 
 [225954]: http://images.sayzlim.net/2014/08/evernote_webclipper_article.jpg "Evernote Web Clipper: Article"
 
-You’re not limited to the highlighted section determined by the extension. For example, instead of the main content section, you can choose to save only the sidebar section. Perhaps you only want to save main content and sidebar. You can do it with the built-in shortcuts — expand or shrink the highlighted area  by pressing the `↑` or `↓` key, and move between section by pressing `←` or `→` key.
+You’re not limited to the highlighted section determined by the extension. For example, instead of the main content section, you can choose to save only the sidebar section. Perhaps you only want to save main content and sidebar. You can do it with the built-in shortcuts — expand or shrink the highlighted area by pressing the `↑` or `↓` key, and move between section by pressing `←` or `→` key.
 
 **2. Simplified Article** is the best choice when it comes to cleaning the web page with poor typography, or just filled with ugly ads. This’ll make sure that the saved note is readable even if the web page looks like a wrecked ship.
 

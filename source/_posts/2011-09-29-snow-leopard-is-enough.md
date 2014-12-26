@@ -4,7 +4,7 @@ title: Snow Leopard Is Enough
 tags:
 - "Personal"
 ---
-Mac OS X has entered another major change. The first major change happened few years ago when Steve Jobs brought us Leopard  with a major UI change and over 300 new features.
+Mac OS X has entered another major change. The first major change happened few years ago when Steve Jobs brought us Leopard with a major UI change and over 300 new features.
 
 <!--more-->
 

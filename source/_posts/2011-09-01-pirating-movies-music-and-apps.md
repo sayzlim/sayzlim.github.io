@@ -28,7 +28,7 @@ Definitely guilty, but let me state some common excuse why people use pirated ap
 
 - **It’s too expensive, I have no money:** Fine, as long you’re someone who really can’t pay[^1] for the apps, make sure to purchase it once you receive bonus or extra income.
 
-- **I don’t want to pay for it:** This is a different case, if you  can afford it and you don’t want to pay, now or later, I hope that no one will pay for your products or services. Let’s hope your screen doesn’t blow up while you’re reading this.
+- **I don’t want to pay for it:** This is a different case, if you can afford it and you don’t want to pay, now or later, I hope that no one will pay for your products or services. Let’s hope your screen doesn’t blow up while you’re reading this.
 
 - **I thought all apps are free:** Now that you know not all apps are free. If you insist all apps should be made for free, educate yourself a little and please, for humanity sake, don’t reproduce.
 

@@ -12,7 +12,7 @@ Assigning shortcuts to macros can be a problem when there is too many conflictin
 
 <!-- more -->
 
-The main challenge with assigning shortcuts as macro triggers is looking for key combination that doesn’t conflict with shortcuts in other apps.[^1] You probably think a shortcut such as `Command-Option-Semicolon(;)` is unlikely found in other apps, however, that shortcut is used for `Show Guides` menu item in Pixelmator. You can rewire mentioned key combination into different shortcut, but it’ll be much better to avoid the problem in the first place and use better method to run  rarely used macros, which is by using search.
+The main challenge with assigning shortcuts as macro triggers is looking for key combination that doesn’t conflict with shortcuts in other apps.[^1] You probably think a shortcut such as `Command-Option-Semicolon(;)` is unlikely found in other apps, however, that shortcut is used for `Show Guides` menu item in Pixelmator. You can rewire mentioned key combination into different shortcut, but it’ll be much better to avoid the problem in the first place and use better method to run rarely used macros, which is by using search.
 
 Search is powerful because there is no way for a combination of string to conflict with each other. Macros with similar name will show up in your search result just fine, and you just need choose the one you want to run from the list.
 

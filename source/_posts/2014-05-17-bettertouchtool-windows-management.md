@@ -8,7 +8,7 @@ tags:
 - "BetterTouchTool"
 ---
 
-Working in small screen means you often  need to [switch between apps](http://sayzlim.net/contexts-manage-mac-windows "Manage Mac Application Windows with Contexts - Sayz Lim"), or move and resize windows to optimize the screen state. Sometimes you’re comparing two designs side by side, sometimes you’re taking notes while watching screencast, or sometimes you simply want to move documents from one folder to another.
+Working in small screen means you often need to [switch between apps](http://sayzlim.net/contexts-manage-mac-windows "Manage Mac Application Windows with Contexts - Sayz Lim"), or move and resize windows to optimize the screen state. Sometimes you’re comparing two designs side by side, sometimes you’re taking notes while watching screencast, or sometimes you simply want to move documents from one folder to another.
 
 <!-- more -->
 

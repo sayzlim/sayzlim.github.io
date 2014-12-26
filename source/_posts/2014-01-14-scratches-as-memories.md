@@ -13,7 +13,7 @@ As the result, we resolve to all kinds of protection for our gadgets. We buy cas
 
 <!--more-->
 
-Try to pull out the devices in your possession — I assume you have iPhone or iPad in your hands. Remove the protective bulky case that hides the line, shape, and color of the original design. Feel the texture of the material, the reduced size and weight, and the  clarity of the screen. What you see is the thousand of decisions designers have made to craft this perfectly tuned device.
+Try to pull out the devices in your possession — I assume you have iPhone or iPad in your hands. Remove the protective bulky case that hides the line, shape, and color of the original design. Feel the texture of the material, the reduced size and weight, and the clarity of the screen. What you see is the thousand of decisions designers have made to craft this perfectly tuned device.
 
 Like the rest of you, I also want to protect this device from the cracks and scratches.  It’s risky to use iPhone without protective case. But life is also full of risks.
 

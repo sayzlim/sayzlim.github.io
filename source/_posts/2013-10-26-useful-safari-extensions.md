@@ -22,7 +22,7 @@ With the release of Safari 5, developers can finally build extensions to make Sa
 [2]: http://sayzlim.net/the-primrose-of-safari-5-extensions "The Primrose of Safari 5 Extensions | Sayz Lim"
 [3]: http://sayzlim.net/three-extensions-one-browser-killed-flash "Three Extensions, One Browser, Killed Flash | Sayz Lim"
 
-Two years since my last post on Safari extensions; things have changed a lot. It’s difficult to find new Safari extensions  made these days. Although not as much like it used to, I still have many extensions installed. Here are the seven most useful extension that everyone will find useful.
+Two years since my last post on Safari extensions; things have changed a lot. It’s difficult to find new Safari extensions made these days. Although not as much like it used to, I still have many extensions installed. Here are the seven most useful extension that everyone will find useful.
 
 ## [Sessions](https://dl.dropboxusercontent.com/u/8247646/sessions/index.html "Safari Extensions — Sessions by David Yoo")
 

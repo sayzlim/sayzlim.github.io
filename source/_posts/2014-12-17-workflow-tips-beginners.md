@@ -78,4 +78,4 @@ You can also use the built-in clipboard variable to pass the clipboard into text
 
 ## Quick Look and Alert for Debug
 
-Building workflow means you need to keep testing and debugging to make sure the produced result is right. Fortunately, Workflow has a Quick Look which you can use to preview the result in each step before you continue to next action. It’s the easiest way to check workflows that have **Create New Note** without cluttering your Dropbox, Evernote, or  iCloud with wrong result. Leave a breakpoint with **Alert** action to stop the workflow after previewing result in Quick Look.
+Building workflow means you need to keep testing and debugging to make sure the produced result is right. Fortunately, Workflow has a Quick Look which you can use to preview the result in each step before you continue to next action. It’s the easiest way to check workflows that have **Create New Note** without cluttering your Dropbox, Evernote, or iCloud with wrong result. Leave a breakpoint with **Alert** action to stop the workflow after previewing result in Quick Look.

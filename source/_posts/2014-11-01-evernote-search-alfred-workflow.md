@@ -22,9 +22,9 @@ When I was trying Spotlight after OS X Yosemite release, I noticed that Evernote
 
 	~/Library/CoreData/com.evernote.Evernote/
 
-Now you can use the `find` and `open` keywords to search for the  Evernote notes with Alfred.
+Now you can use the `find` and `open` keywords to search for the Evernote notes with Alfred.
 
-Make sure to [reindex  the folder that contains Evernote’s notes](http://support.apple.com/kb/ht2409 "Spotlight: How to re-index folders or volumes - Apple"). You can do it by dragging the `com.evernoteEvernote` folder into Spotlight Privacy setting. This’ll remove the notes from Spotlight index. You can then remove the folder so Spotlight will start reindexing the notes. You’ll notice that the CPU usage will be around 35% in Activity Monitor. It’s normal. It’s a sign that `mdworker` is reindexing the notes.
+Make sure to [reindex the folder that contains Evernote’s notes](http://support.apple.com/kb/ht2409 "Spotlight: How to re-index folders or volumes - Apple"). You can do it by dragging the `com.evernoteEvernote` folder into Spotlight Privacy setting. This’ll remove the notes from Spotlight index. You can then remove the folder so Spotlight will start reindexing the notes. You’ll notice that the CPU usage will be around 35% in Activity Monitor. It’s normal. It’s a sign that `mdworker` is reindexing the notes.
 
 There is one small problem with this setup though. If you open the notes from Alfred, the revealed notes will automatically activate the search panel and mess up the window. The solution for this problem is telling Alfred to open the notes with Finder which you can do by creating a custom search for Evernote’s notes.
 

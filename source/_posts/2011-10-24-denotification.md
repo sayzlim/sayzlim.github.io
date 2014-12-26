@@ -14,7 +14,7 @@ Problem is, it’s difficult — if not troublesome — to sort out notification
 
 Thus, it leads me to question the importance of notification app on desktop.
 
-To say that notification app play a big role in your computing experience is not entirely wrong. But, if we take a close look on how most people make use of notification, notification distracts instead of helping. A split second of notification can  remove the focus you’ve been building over time. If notification can hinder focus, why should we have them on desktop where we’re supposed to create and work?
+To say that notification app play a big role in your computing experience is not entirely wrong. But, if we take a close look on how most people make use of notification, notification distracts instead of helping. A split second of notification can remove the focus you’ve been building over time. If notification can hinder focus, why should we have them on desktop where we’re supposed to create and work?
 
 Put it blatantly, you don’t need to worry missing notifications. If the messages are important, you’ll remember them. You’ll take an extra step to ensure everything is working perfectly.
 

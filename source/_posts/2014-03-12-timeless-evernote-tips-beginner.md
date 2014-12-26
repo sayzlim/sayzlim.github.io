@@ -14,7 +14,7 @@ What stops you from using Evernote? I didn’t use Evernote until recently. In t
 
 At that moment, I realized the importance of keeping records.
 
-[Now I keep the records](http://sayzlim.net/remember-everything "Remember Everything - Sayz Lim") of my  articles, photos, receipts, licenses, and locations with Evernote.
+[Now I keep the records](http://sayzlim.net/remember-everything "Remember Everything - Sayz Lim") of my articles, photos, receipts, licenses, and locations with Evernote.
 
 When I started to use Evernote, I couldn’t figure out how to organize my notes. What kind of notes should I save? How many notebooks should I create?  How to keep everything organized?
 

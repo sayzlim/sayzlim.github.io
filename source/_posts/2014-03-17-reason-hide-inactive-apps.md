@@ -11,7 +11,7 @@ Your screen is your working desk. Every pixels on the screen should support you 
 
 <!--more-->
 
-One way to shut down distraction is to turn off [useless notifications](http://sayzlim.net/denotification "Denotification - Sayz Lim"). But  that’s not enough. When working on a task, you rarely use single app — even creative task like writing needs references.
+One way to shut down distraction is to turn off [useless notifications](http://sayzlim.net/denotification "Denotification - Sayz Lim"). But that’s not enough. When working on a task, you rarely use single app — even creative task like writing needs references.
 
 Let’s do a quick test. If you use Mission Control, try to activate it and see how many windows are on the screen. If you don’t, try to hit `Command-Tab` and see how many active apps are running. You probably don’t need all these active apps or windows for your task.
 

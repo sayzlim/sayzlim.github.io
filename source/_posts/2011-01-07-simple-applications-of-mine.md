@@ -6,7 +6,7 @@ description: List of the applications I usually install on the new Mac.
 tags:
 - "Mac"
 ---
-There are several apps I installed are needed temporary. They are not essential because I use them just for this semester. However, there are some core applications I always have them installed. The list below consist  all the core applications I use frequently.
+There are several apps I installed are needed temporary. They are not essential because I use them just for this semester. However, there are some core applications I always have them installed. The list below consist all the core applications I use frequently.
 
 <!--more-->
 
@@ -20,7 +20,7 @@ There are several apps I installed are needed temporary. They are not essential 
 - [Droplr](https://droplr.com/ "Droplr • Hello") - for sharing files online (not syncing), I use Droplr because I know it first. [CloudApp](http://getcloudapp.com/ "CloudApp") is another nice service for file sharing.
 - [F.lux](http://justgetflux.com/ "f.lux: software to make your life better") - everyone stays up till very late last 2010. There is no doubt that people will stay the same again this year. I use this application to keep my eyes comfortable using Mac at night. It is a very cool apps once you get used to it.
 - [Google Chrome](http://www.google.com/chrome/ "Chrome Browser - Google") - since I uninstalled Flash on my Mac, I need an alternative for viewing Flash content. The easiest way is to have Google Chrome as an alternative browser which have Flash integrated in it.
-- [LittleSnapper](http://www.realmacsoftware.com/ember "Your digital scrapbook — Ember - Realmac Software") - I use LittleSnapper for photo management. The reason I choose it over iPhoto is simplicity in editing for blog post. I also use this to collect photos, illustration, and screenshot. It’s very simple with  elegant user interface.
+- [LittleSnapper](http://www.realmacsoftware.com/ember "Your digital scrapbook — Ember - Realmac Software") - I use LittleSnapper for photo management. The reason I choose it over iPhoto is simplicity in editing for blog post. I also use this to collect photos, illustration, and screenshot. It’s very simple with elegant user interface.
 - [MoneyWell](http://nothirst.com/moneywell/ "MoneyWell - No Thirst Software") - managing expense is one of my daily activity. MoneyWell has proven as one of the solid money management application on Mac. I have used it for the last 6 months and love it.
 - [Notational Velocity](http://notational.net/ "Notational Velocity") - the most lightweight note taking apps. You can sync your notes by signing up to SimpleNote, another lightweight web-based apps.
 - [The Unarchiver](http://wakaba.c3.cx/s/apps/unarchiver "The Unarchiver - Wakaba") - there is nothing that I can’t unzip with it so far.

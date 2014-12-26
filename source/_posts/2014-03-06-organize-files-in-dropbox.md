@@ -77,7 +77,7 @@ Aleh Cherp answered this question in [his post on tags and folders usage](http:/
 
 The point of tagging is to simplify the searching flow. With Alfred, you can use `tags` keyword to show specific tagged files in search result.
 
-I usually store long term reference files like articles, tutorials, or e-books  in Evernote. If by some chance one of these files fall under these categories, I’ll save them into Evernote before archiving these projects.
+I usually store long term reference files like articles, tutorials, or e-books in Evernote. If by some chance one of these files fall under these categories, I’ll save them into Evernote before archiving these projects.
 
 [ ![Hazel Rules for Archive][img4] ](http://images.sayzlim.net/2014/03/dropbox_hazel_rules.jpg "Hazel Rules for Archive")
 

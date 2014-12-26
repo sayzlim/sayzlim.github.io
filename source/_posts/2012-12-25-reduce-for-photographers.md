@@ -28,7 +28,7 @@ There are several basic features I think you’ll need as a photographer. You’
 
 When you first open the application, you’ll realize that everything I’ve mentioned are presented in one screen. All the folders inside Photos application will be shown in a photo stack manner. Tapping the folder expands all photos within folder. Below you can find the option to toggle Exif data, image resize &amp; sharpening method, including Jpeg quality adjustment.
 
-Each feature is self-explanatory. You can adjust the width by using the slider for pixel size which comes in pre-determined value. It’s a good thing that you can choose image width without  worrying the value might go past 1 or 2 pixels.
+Each feature is self-explanatory. You can adjust the width by using the slider for pixel size which comes in pre-determined value. It’s a good thing that you can choose image width without worrying the value might go past 1 or 2 pixels.
 
 [ ![Reduce Watermark][img2] ](http://images.sayzlim.net/2012/12/reduce_watermark.jpg "Reduce Watermark")
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Manage iPad and iPhone Screenshots with Hazel"
-date: 2014-04-21  23:00
+date: 2014-04-21 23:00
 description: "Transfer your screenshots from iPhone and iPad to Mac seamlessly with this simple yet efficient workflow"
 tags:
 - "Dropbox"
@@ -46,9 +46,9 @@ I’ve also renamed all the imported screenshots to follow the same naming patte
 
 All of my screenshots are in `JPG` format because they’re smaller than `PNG` in term of file size. You can even compress the size further — usually up to 50% — with [ImageOptim](http://imageoptim.com/ "ImageOptim — better Save For Web"). I’m not saying `JPG` is better than `PNG`, but for screenshots that don’t need transparency, `JPG` is more suitable.
 
-There are several ways to complete this task too. You can use Hazel to detect all `PNG` images inside `Screenshots` folder, run an [imagemagick](http://www.imagemagick.org/ "ImageMagick: Convert, Edit, Or Compose Bitmap Images") to convert, crop  or compress all of them at once.
+There are several ways to complete this task too. You can use Hazel to detect all `PNG` images inside `Screenshots` folder, run an [imagemagick](http://www.imagemagick.org/ "ImageMagick: Convert, Edit, Or Compose Bitmap Images") to convert, crop or compress all of them at once.
 
-Or  you can create a folder action in Automator to avoid scripting. The end result will be something similar to the screenshot below.
+Or you can create a folder action in Automator to avoid scripting. The end result will be something similar to the screenshot below.
 
 [ ![Automator Convert PNG to JPG][img2] ](http://images.sayzlim.net/2014/04/hazel_automator.jpg "Automator Convert PNG to JPG")
 

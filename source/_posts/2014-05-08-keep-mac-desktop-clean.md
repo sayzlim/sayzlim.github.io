@@ -26,7 +26,7 @@ You don’t need useless items on your desk, so do your desktop. Hide those hard
 
 ## Use download folder for all your temporary files
 
-I put all the files I received from emails, downloaded from Internet, and saved from Messages  in system default downloads folder. I avoid creating additional folders because they’re hard to manage. 
+I put all the files I received from emails, downloaded from Internet, and saved from Messages in system default downloads folder. I avoid creating additional folders because they’re hard to manage. 
 
 But won’t storing everything in one location turn the folder upside down? No. There is a way to keep them organized.
 
@@ -50,7 +50,7 @@ Here is an example of the rules I’ve configured for my Downloads folder. You c
 
 ## Change your screenshots folder
 
-The default target folder for screenshots is desktop. It’s  acceptable if you occasionally take one or two screenshots, but for people who take more than five at once, the only way to keep the desktop clean is by changing the target folder.
+The default target folder for screenshots is desktop. It’s acceptable if you occasionally take one or two screenshots, but for people who take more than five at once, the only way to keep the desktop clean is by changing the target folder.
 
 The simplest way to change the target folder is by using [TinkerTool][7], a utility designed to access OS X hidden preferences easily. I save [all the taken screenshots in my Dropbox folder][8] along with the iPhone and iPad screenshots. By storing them all in one folder, especially backed up online, I can share and edit those screenshots from all devices.
 

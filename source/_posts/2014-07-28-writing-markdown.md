@@ -52,7 +52,7 @@ Here is the Markdown I use to link those images:
 
 	[Reference]: http://someimage.com/image.jpg "Image Title Text"
 
-The `Reference` has to be different for each image. If I have more than one image in an article, I have to create more unique reference label, either by appending number to the reference, or  create a new reference. But that’s not important and I figure out that there might be a better way to handle this problem.
+The `Reference` has to be different for each image. If I have more than one image in an article, I have to create more unique reference label, either by appending number to the reference, or create a new reference. But that’s not important and I figure out that there might be a better way to handle this problem.
 
 I ended up making this TextExpander snippet that pulls the current hours, minutes, and seconds and use it as the `Reference` .
 

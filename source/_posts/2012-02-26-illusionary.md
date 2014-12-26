@@ -20,7 +20,7 @@ I respect privacy. So, there is no need to show the number of followers in your 
 
 Talking about privacy, if your account is set to private, other users won’t be able to see your profile in your followers’ &#8220;Following&#8221; section. Make this account just for your friends.
 
-Fashion bloggers, cuisine hunters, or gadget geeks. Feel free to create a public account and treat it as common blog. But this time, we’re making it location based. Your followers can only see the notes you leave when they’re near the notes. Sounds great? Maybe we can have a simple Love or Hate button for your notes to determine your its popularity.
+Fashion bloggers, cuisine hunters, or gadget geeks. Feel free to create a public account and treat it as common blog. But this time, we’re making it location based. Your followers can only see the notes you leave when they’re near the notes. Sounds great? Maybe we can have a simple Love or Hate button for your notes to determine its popularity.
 
 We don’t have mention, direct message, or retweet. That’s it, the interaction is between you and your followers. Your followers can only love or hate your notes. I love spontaneity, that means you can only post your notes from your current location.
 

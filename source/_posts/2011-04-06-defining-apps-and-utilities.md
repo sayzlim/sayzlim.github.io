@@ -22,7 +22,7 @@ Basically, I put apps inside Applications folder and utilities apps inside Utili
 
 But how do I determine which apps considered as utilities? This is how I distinguish them.
 
-- If it is actively used regularly, mark it as apps. Apps such as  Alfred and Bowtie are the example of this type of apps. I use them regularly and have to control it.
+- If it is actively used regularly, mark it as apps. Apps such as Alfred and Bowtie are the example of this type of apps. I use them regularly and have to control it.
 - If I control it, mark it as apps. There might be some apps you don’t use regularly. But whenever you use it, it requires you to control its behavior. I need to control Transmission for torrent download and Data Glue to join several parts of files. However, I don’t use them regularly.
 - If it is an apps, mark it as apps. Photoshop, Safari, iTunes and Mail are clearly this type of apps.
 - If it is running in background to enhance your workflow. Mark it as utilities. Caffeine, Cinch, and F.lux are considered as utilities.

@@ -23,7 +23,7 @@ Terminology helps writers exploring the vast selection of words in dictionary. W
 The good news is we can use the official Terminology companion online service [term.ly](http://term.ly/ "Dictionary, Thesaurus - term.ly") to define and explore words. Registered term.ly users can also save their favorite words and keep track of their search history.[^1] The only drawback with using term.ly is I have to open it with a browser.
 
 ## Defiining Words with Alfred
-Alfred is a wonderful tool to define words. I can just type `define <word>` (or `d <word>` for faster search) to view the definition  with built-in Dictionary. If Terminology is officially made for Mac, I would like to have the same feature for searching word definition. So I turn term.ly into a Mac app with Fluid and create an Alfred workflow that defines the word with Terminology.
+Alfred is a wonderful tool to define words. I can just type `define <word>` (or `d <word>` for faster search) to view the definition with built-in Dictionary. If Terminology is officially made for Mac, I would like to have the same feature for searching word definition. So I turn term.ly into a Mac app with Fluid and create an Alfred workflow that defines the word with Terminology.
 
 [ ![Terminology for Mac Alfred Workflow][225017] ](http://images.sayzlim.net/2014/08/terminology_alfred.gif "Terminology for Mac Alfred Workflow")
 

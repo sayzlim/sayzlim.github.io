@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sync Writer Pro Between iCloud and Dropbox"
-date: 2014-01-05  16:00
+date: 2014-01-05 16:00
 description: Writer Pro hasn’t build Dropbox sync yet, but you still can sync your documents by using symbolic links.
 tags:
 - "Dropbox"
@@ -13,7 +13,7 @@ tags:
 
 <!--more-->
 
-The carefully selected typography and focus mode is the reason I choose iA Writer as my writing app. Writer Pro brings it to next level by introducing  Syntax Control™ that highlights the element of sentences like adverbs and adjectives, which as the result, writers gain the eagle-eye view of their own writing.
+The carefully selected typography and focus mode is the reason I choose iA Writer as my writing app. Writer Pro brings it to next level by introducing Syntax Control™ that highlights the element of sentences like adverbs and adjectives, which as the result, writers gain the eagle-eye view of their own writing.
 
 Writer Pro won’t turn you into a better writer. I believe the only way to become a better writer is to read and write every day.  Writer Pro is just another writing tool built for writers.
 
@@ -24,7 +24,7 @@ Writing is a selfish act. We’re perfecting our craft  — ironically it’ll n
 My writing process must be neat and clear. The four stages writing process is common among writers. The only difference is how the writer store their notes, and the tool they use for each stage. I use nVALT to jot down my though in the Note stage, iA Writer for Write and Edit stage, and [Marked][2210-005] for Read stage. Although the experience is not unified, the transition between stage is clear.
 
 ## The Problem with iCloud
-If you’ve used Writer Pro, you might notice with each stage change, such as from Note to Edit, the associated note will be moved to their respective folder in iCloud. This idea of _flowing the notes_  organizes your notes in each stage will be useful if we can access them directly. But this is the problem with iCloud, there is no way to access notes stored in Writer Pro from other apps.
+If you’ve used Writer Pro, you might notice with each stage change, such as from Note to Edit, the associated note will be moved to their respective folder in iCloud. This idea of _flowing the notes_ organizes your notes in each stage will be useful if we can access them directly. But this is the problem with iCloud, there is no way to access notes stored in Writer Pro from other apps.
 
 Alex Knight from Zero Distraction shares some tips to [store Writer Pro documents to Dropbox][2210-006]. The idea is to copy Write Pro’s iCloud folders to Dropbox whenever notes are added or modified. With this approach, you always have a backup of your Writer Pro in Dropbox.
 
@@ -82,7 +82,7 @@ As you can see from the writing process above, I have a clear structure of each 
 Instead of waiting for Information Architects to include Dropbox sync in their next release, this setup has provided me with the great benefit of both Dropbox and iCloud.
 
 [^1]: Notes is where all the plain text documents are stored. Inside this folder you can create separate folder for different type of documents. However, I prefer to store everything inside Note and search them with nVALT.
-[^2]: If you’re not sure, open iCloud in System Preferences to  see the status of Documents & Data checkbox.
+[^2]: If you’re not sure, open iCloud in System Preferences to see the status of Documents & Data checkbox.
 [^3]: Configuring Writer Pro as the editor in Marked will open the post right into Edit stage. You can open them side by side for editing and previewing at the same time, skipping the Read stage altogether.
 
 [2210-001]: http://ia.net/ "Information Architects | iA designs and builds digital products."

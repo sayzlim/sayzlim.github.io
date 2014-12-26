@@ -34,7 +34,7 @@ Here’s the common usage of Snappy:
 
 Clipboard manager plays an important part in improving one productivity. People who don’t use clipboard manager often copy and paste the text into a temporary document known as scratchpad. With a clipboard manager, you can avoid using the scratchpad altogether.
 
-If you haven’t used a clipboard manager, it’s time to get one for yourself. I use [Alfred](http://www.alfredapp.com/ "Alfred App - Productivity App for Mac OS X") as my clipboard manager  along with all [these amazing workflows](http://sayzlim.net/best-alfred-2-workflows "Best Alfred 2 Workflows - Sayz Lim")
+If you haven’t used a clipboard manager, it’s time to get one for yourself. I use [Alfred](http://www.alfredapp.com/ "Alfred App - Productivity App for Mac OS X") as my clipboard manager along with all [these amazing workflows](http://sayzlim.net/best-alfred-2-workflows "Best Alfred 2 Workflows - Sayz Lim")
 
 Clipboard manager usually only saves the history of your copied text, but not the visual notes like screenshots. What if you want to keep the history of your taken screenshots? What if you want to search all the visual notes you’ve pinned with Snappy?
 

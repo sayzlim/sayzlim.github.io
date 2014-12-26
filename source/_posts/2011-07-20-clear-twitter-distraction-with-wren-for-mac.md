@@ -46,7 +46,7 @@ The whole layout works together to assist you in crafting quality tweets. Last t
 
 Wren has stripped all unnecessary shortcuts and commands in menu bar. As the result, figuring out and mastering all the available shortcuts doesn’t take much time.
 
-Surprisingly, Wren’s preferences is so simple with almost nothing for you to configure. First, you can configure global shortcut to access Wren. In this case, I use option+w for it. Second, you can choose which URL shortening services you want to use. I think it’s one of the app with the most choices including  bit.ly, CloudApp, goo.gl, is.gd, j.mp, and TinyURL.
+Surprisingly, Wren’s preferences is so simple with almost nothing for you to configure. First, you can configure global shortcut to access Wren. In this case, I use option+w for it. Second, you can choose which URL shortening services you want to use. I think it’s one of the app with the most choices including bit.ly, CloudApp, goo.gl, is.gd, j.mp, and TinyURL.
 
 However, it seems that CloudApp doesn’t work on Wren at the present.
 

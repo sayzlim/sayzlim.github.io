@@ -48,7 +48,7 @@ Now let’s build our macros! The macro contains two actions. The first one pull
 
 ## Naming Macros Tips
 
-Here is a quick tip when it comes to naming macros. If few macros share the same trigger, such as using the same hot key combination, Keyboard Maestro will offer you to choose which macro to run.  There are two quick ways to choose from the available macros. The first one is to use the number from 1–9 to choose the macros in the list. The second is to type the greyed out character in the macros. In the screenshot below, I name the macros by appending the first character of the passwords to the  word `Enter`.
+Here is a quick tip when it comes to naming macros. If few macros share the same trigger, such as using the same hot key combination, Keyboard Maestro will offer you to choose which macro to run.  There are two quick ways to choose from the available macros. The first one is to use the number from 1–9 to choose the macros in the list. The second is to type the greyed out character in the macros. In the screenshot below, I name the macros by appending the first character of the passwords to the word `Enter`.
 
 [ ![Keyboard Maestro Shortcut][200050] ](http://images.sayzlim.net/2014/08/keyboard_maestro_shortcut.jpg "Keyboard Maestro Shortcut")
 

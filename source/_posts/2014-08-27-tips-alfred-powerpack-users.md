@@ -2,7 +2,7 @@
 layout: post
 title: "Tips for New Alfred Powerpack Users"
 date: 2014-08-27 00:30
-description: "Just bought Alfred for Mac recently? Amazing! Further boost your productivity with these tips written  for Powerpack users."
+description: "Just bought Alfred for Mac recently? Amazing! Further boost your productivity with these tips written for Powerpack users."
 tags:
 - "Alfred"
 ---
@@ -17,7 +17,7 @@ There is a [lot of differences](http://v1support.alfredapp.com/comparison-chart 
 
 [224748]: http://images.sayzlim.net/2014/08/alfred_workflows.jpg "Alfred Workflow"
 
-Workflows are essentially the reason you pay for Powerpack. You can  build workflow to create features that are unavailable in Alfred by using AppleScript, shell script, or  Terminal command.
+Workflows are essentially the reason you pay for Powerpack. You can build workflow to create features that are unavailable in Alfred by using AppleScript, shell script, or Terminal command.
 
 Thanks to Alfred community, you can find most of the common workflows in the [official forum](http://www.alfredforum.com/ "Alfred App Community Forum"). There is also a workflows directory called [Packal](http://www.packal.org/ "Packal: Home") where you can browse workflows and themes.  You can use [Packal workflow](http://sayzlim.net/packal-updater "Manage Alfred Workflows with Packal Updater - Sayz Lim") to keep all your workflows updated.
 
@@ -50,7 +50,7 @@ You can also act onto these files directly with [Alfred built-in files browser](
 
 The first workflow you should create is `Custom Searches` which groups all your `File Filter` triggers in one location. One of the purpose of this workflow is to help you search files based on their types. I have a `File Filter` that only searches for all the Markdown document and open the selected file in Writer Pro. You can also choose different action for selected result such as `Reveal in Finder` or `Open with Marked`.
 
-My favorite trigger is filtering and browsing folders in Alfred. Instead of creating a new window in Finder, I can just view the files inside folder by entering `f <folder name>` into Alfred. Need to show recently opened Sublime Projects? Create a file trigger  that filters all the `sublime-project` filetype, then type period as your search query. 
+My favorite trigger is filtering and browsing folders in Alfred. Instead of creating a new window in Finder, I can just view the files inside folder by entering `f <folder name>` into Alfred. Need to show recently opened Sublime Projects? Create a file trigger that filters all the `sublime-project` filetype, then type period as your search query. 
 
 ## 4. Limit Fallback Results
 

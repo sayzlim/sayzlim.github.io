@@ -27,7 +27,7 @@ Sadly, it doesn&#8217;t work on some other sites if you don&#8217;t have Flash i
 
 It also replaces many plug-in based media players with HTML5 media player which can&#8217;t be replaced by YouTube5.
 
-[HTML5 Audio][4], created by Shaun Inman, is an extension that replace Flash  audio files with HTML5 audio element.
+[HTML5 Audio][4], created by Shaun Inman, is an extension that replace Flash audio files with HTML5 audio element.
 
 ### Configuration
 

@@ -58,7 +58,7 @@ Just because Pixa can handle the huge library well, it doesn’t mean you should
 
 **Wallpapers** to display all downloaded wallpaper. It feels great just to take a look at all the gorgeous wallpaper in Pixa.
 
-This setup has helped me to organize images efficiently. All the  goes into Download folder and waiting to be organized, screenshots are available in the dock, and each images contain the important URL source.
+This setup has helped me to organize images efficiently. All the goes into Download folder and waiting to be organized, screenshots are available in the dock, and each images contain the important URL source.
 
 [Pixa][8] is definitely one of the best application you can get to organize images. Stop wondering which application you can get to view all the photos stored in Dropbox. Get Pixa.
 

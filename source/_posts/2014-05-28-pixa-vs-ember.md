@@ -105,7 +105,7 @@ After all, we’re talking about building a visual scrapbook. The main concern i
 
 [img7]: http://images.sayzlim.net/2014/05/ember_subscriptions.jpg "Ember: Subscriptions"
 
-The word delightful is close enough to describe the browsing experience in Ember. The complete list of images are arranged in the bottom of the screen which you can use to quickly navigate between items. Swipe across the main screen to select next or previous image. When you find the photo you like, hit double-tap  to save the image.
+The word delightful is close enough to describe the browsing experience in Ember. The complete list of images are arranged in the bottom of the screen which you can use to quickly navigate between items. Swipe across the main screen to select next or previous image. When you find the photo you like, hit double-tap to save the image.
 
 There is a couple of ways to save images to Ember. The first one is to open the website with built-in browser, press the snap button, and snap the images. The benefit with this approach is you get to keep the source of website along with its meta description along with the saved images.
 

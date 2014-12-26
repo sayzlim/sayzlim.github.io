@@ -43,7 +43,7 @@ These are the list of smart folders almost everyone need to create at first:
 
 [Starred Folder in ReadKit for Mac]: http://images.sayzlim.net/2013/09/readkit_starred.jpg
 
-**Past Week:** This is a smart folder to show all the permanent  unread items[^2] in read later services I’ve saved in the past week.
+**Past Week:** This is a smart folder to show all the permanent unread items[^2] in read later services I’ve saved in the past week.
 
 ![ [Past Week Folder in ReadKit for Mac][] ](http://images.sayzlim.net/2013/09/readkit_past_week.jpg "Past Week Folder in ReadKit for Mac")
 

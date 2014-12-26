@@ -17,7 +17,7 @@ It doesn't have beautiful icon. So get a replacement for it. Install it, and you
 
 And, if you use [Menubar icons v2][1] by ~iAndrew, I have a few suggestions for you.
 
-Download [CodeBold][2] and  use the setting below.
+Download [CodeBold][2] and use the setting below.
 
 [ ![FuzzyClock Settings][img2] ](http://images.sayzlim.net/2011/08/fuzzyclock_setting.jpg "FuzzyClock Settings")
 

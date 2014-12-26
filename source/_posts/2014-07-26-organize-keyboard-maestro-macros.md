@@ -35,7 +35,7 @@ There are two benefits with this approach:
 2. Safari and Chrome can have different triggers.
 3. You can extend the new macro with more actions, leaving the original macro untouched.
 
-Now you have an idea of  creating a highly extensible macro group. If you put them in practice, most of the macro groups fall into one of these three categories: Application Based, Trigger Based, or Feature Based. 
+Now you have an idea of creating a highly extensible macro group. If you put them in practice, most of the macro groups fall into one of these three categories: Application Based, Trigger Based, or Feature Based. 
 
 ### 1. Application Based Macro Group
 
@@ -97,7 +97,7 @@ In the example above, I have a macro that runs [Dropbox Encore](http://www.joyof
 
 #### Global Clipboards
 
-When you find yourself editing system clipboard, chance is you can build  a macro for it. 
+When you find yourself editing system clipboard, chance is you can build a macro for it. 
 
 This macro group contains the macros that modify clipboards.  I don’t assign any triggers for the macros in this group because they’re meant to be used by other macros.
 
@@ -120,7 +120,7 @@ So far, I only have one macro which is to call up the emoji by entering `::` in 
 You probably won’t use typed string triggered macro if you use [TextExpander](https://itunes.apple.com/us/app/textexpander-for-mac/id405274824?mt=12&at=11ld6n&ct=textexpander-for-mac "TextExpander for Mac"). While TextExpander is tend to geared for text replacement, the typed string in Keyboard Maestro is for controlling your Mac. If the task you want to perform is unavailable in TextExpander (like selecting the `Rename`… menu item when you type `.rename`), you can put them in this macro group.
 
 ### 3. Feature Based Macro Group
-Feature based group consists of the macros you use to build a complex macro. The grouping methods in the [“Keep Writing ” macro group](http://sayzlim.net/keyboard-maestro-macro-writers/ "Keyboard Maestro Macros for Writers - Sayz Lim ") I’ve shared before  is an example of feature based macro group — it does one thing: disable the `delete` button. By putting them in a new macro group called Keep Writing, I can choose where those macros can run without over-cluttering the application based macro group.
+Feature based group consists of the macros you use to build a complex macro. The grouping methods in the [“Keep Writing ” macro group](http://sayzlim.net/keyboard-maestro-macro-writers/ "Keyboard Maestro Macros for Writers - Sayz Lim ") I’ve shared before is an example of feature based macro group — it does one thing: disable the `delete` button. By putting them in a new macro group called Keep Writing, I can choose where those macros can run without over-cluttering the application based macro group.
 
 Another benefit of building a feature based macro group is you can easily export them for other people to use. Have an idea that be useful for everyone? Build them slowly in a macro group, and when it’s ready, export it as a macro library.
 
