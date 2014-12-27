@@ -1,0 +1,96 @@
+@import "components/button";
+
+.recommendations {
+}
+
+.recommendation-list {
+  overflow: hidden;
+}
+
+.card {
+  display: inline-block;
+  overflow: hidden;
+  margin: .2em;
+  padding: 1em 1em 0 1em;
+  min-height: 12em;
+  max-width: 42%;
+  border: solid 2px $base-color;
+  border-radius: 6px;
+}
+
+  .card > * {
+    float: left;
+  }
+
+  .card img {
+    margin: 0 !important;
+    max-width: 20% !important;
+    box-shadow: none !important;
+  }
+
+  .detail {
+    margin-left: 1em;
+    max-width: 70%;
+  }
+
+  .detail {
+    font-size: .8em;
+    line-height: 1.35;
+  }
+
+    .detail h3 {
+      text-align: left;
+    }
+
+    .detail ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+
+    .detail ul li {
+      display: inline-block;
+      position: relative;
+    }
+
+  .detail ul li+ li {
+    margin-left: .4em;
+  }
+
+    .detail ul li a {
+      min-width: 4em;
+      text-align: center;
+      font-size: .8em;
+
+      @extend %button;
+    }
+
+    .in-app:before {
+      position: absolute;
+      top: .1em;
+      left: .1em;
+      display: block;
+      padding: 0 .1em;
+      border-radius: 3px;
+      content: "+";
+      line-height: 1;
+    }
+
+@mixin recommendation-mobile {
+  .card {
+    margin: .2em 0;
+    padding: 1em;
+    min-height: 0;
+    max-width: 100%;
+  }
+
+  .detail ul li+ li {
+    margin-left: 0;
+  }
+
+  .detail {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}

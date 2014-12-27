@@ -3,6 +3,7 @@
 @import "components/form";
 @import "components/pace";
 @import "components/digitalshelf";
+@import "components/recommendations";
 
 /* Elements in post-container */
 
@@ -178,3 +179,5 @@
 .paypal {
   text-align: center;
 }
+
+@import "mobile";

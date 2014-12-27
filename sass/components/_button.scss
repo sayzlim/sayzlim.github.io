@@ -1,4 +1,4 @@
-.button {
+%button {
   display: inline-block;
   box-sizing: border-box;
   padding: .3em .6em;
@@ -12,4 +12,8 @@
     background-color: $base-color;
     color: $bg-color;
   }
+}
+
+.button {
+  @extend %button
 }
