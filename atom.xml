@@ -1,0 +1,1770 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Sayz Lim]]></title>
+  <link href="https://sayzlim.net/atom.xml" rel="self"/>
+  <link href="https://sayzlim.net/"/>
+  <updated>2021-07-14T00:07:51+07:00</updated>
+  <id>https://sayzlim.net/</id>
+  <author>
+    <name><![CDATA[Sayz Lim]]></name>
+    <email><![CDATA[talk@sayzlim.net]]></email>
+  </author>
+  <generator uri="https://jekyllrb.com">Jekyll</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[How to Verify 'osxkeychain helper' Personal Access Token]]></title>
+    <link href="https://sayzlim.net/verify-osxkeychain-helper/"/>
+    <updated>2021-07-10T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/verify-osxkeychain-helper</id>
+    <content type="html"><![CDATA[<p>I like using GitHub for macOS because it lets me compare the difference of files before each commit. If you’ve configured credential helper to <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" title="Caching your GitHub credentials in Git - GitHub Docs">tell Git to remember your password</a>, you also want to learn how to verify that the personal access token has been stored correctly.</p>
+
+<p>The official application uses HTTPS as the default protocol, so I have to enter the password every time I want to push the update in Terminal. Caching the credentials allows me to continue using HTTPS as the protocol while offering the flexibility to push the updates through the <code class="language-plaintext highlighter-rouge">git</code> command.</p>
+
+<p><a href="https://images.sayzlim.net/2021/07/osxkeychain-helper.webp" title="GitHub Personall Access Token in macOS Keychain Access"> <img src="https://images.sayzlim.net/2021/07/osxkeychain-helper.webp" alt="GitHub Personall Access Token in macOS Keychain Access" title="GitHub Personall Access Token in macOS Keychain Access" /> </a></p>
+
+<p>Here’s how you can verify that <code class="language-plaintext highlighter-rouge">osxkeychain helper</code> is storing your personal access token.</p>
+
+<ol>
+  <li>Open Keychain Access with Spotlight</li>
+  <li>Search for <code class="language-plaintext highlighter-rouge">github.com</code> — it will show up as an “Internet password”</li>
+  <li>Double-click on the item to view the attributes</li>
+  <li>Click “Show password” and enter your macOS account password to view the access token</li>
+  <li>Open “Access Control” to verify that <code class="language-plaintext highlighter-rouge">git credential-osxkeychain</code> CLI is the only one that can access this item</li>
+</ol>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Self-Host Plausible with Amazon EC2 Free Tier]]></title>
+    <link href="https://sayzlim.net/self-host-plausible-amazon-ec2/"/>
+    <updated>2021-07-04T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/self-host-plausible-amazon-ec2</id>
+    <content type="html"><![CDATA[<p>I decided to self-host Plausible because I want to keep the cost of maintaining this site as low as possible. So here are some resources to help you configure Plausible for free on Amazon EC2.</p>
+
+<p><a href="https://plausible.io/" title="Plausible Analytics - Simple, privacy-friendly alternative to Google Analytics">Plausible</a> is lightweight and privacy-friendly analytics for people who want to see only the essential stats of their site.</p>
+
+<p>If you’re not concerned with the pricing, you can subscribe to their basic plan for $6/month and track the page views up to 10k per month. Choosing this option means you can focus on growing your projects and spend less time managing the server running Plausible.</p>
+
+<p>The main advantage of self-hosting Plausible is the cost. You can eliminate the cost of analytics by creating a virtual machine on the cloud. Thanks to the folks at Plausible for making the project open-source; you can easily create a free instance on Amazon EC2 and get Plausible running in hours.</p>
+
+<h2 id="getting-started-with-amazon-ec2">Getting Started with Amazon EC2</h2>
+<p><a href="https://aws.amazon.com/ec2/" title="Amazon EC2">Amazon EC2</a> is a web service that lets you create virtual machines (known as instances) in the cloud. They’re also known as <strong>Cloud Server</strong>.</p>
+
+<p>Other cloud servers also offer free-tier, but I’m going to use Amazon EC2 because I’ve already used Amazon S3 for my static documents. Sign in with your Amazon account to access the dashboard.</p>
+
+<p>Follow these steps to create a new instance that we will use to set up Plausible.</p>
+<ol>
+  <li>Select “Instances” from the sidebar</li>
+  <li>Select “Launch Instances”</li>
+  <li>Enable “Free-tier only” filter in the sidebar</li>
+  <li>Choose Ubuntu Server 20.04 LTS (HVM) 64-bit (x86)</li>
+  <li>Choose the free tier option in the list</li>
+  <li>Select “Review and Launch” to complete the instance setup</li>
+  <li>Save the <code class="language-plaintext highlighter-rouge">PEM</code> certificate somewhere safe</li>
+</ol>
+
+<p>You’ll be asked to name the <code class="language-plaintext highlighter-rouge">PEM</code> certificate. I name the certificate as <code class="language-plaintext highlighter-rouge">aws-ubuntu</code> and save it in <code class="language-plaintext highlighter-rouge">~/.ssh</code> directory. <strong>Keep the certificate safe</strong> because you will need it whenever you want to access the server.</p>
+
+<p>Before connecting to the instance you’ve just created, you need to set the inbound security rules to accept requests made to port 80 and 443. You can click on the running instance and select the <strong>Security</strong> tab under the instance summary. Next, click on the security groups and set the following inbound rules.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Protocol</th>
+      <th>Port range</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HTTP</td>
+      <td>TCP</td>
+      <td>80</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>SSH</td>
+      <td>TCP</td>
+      <td>22</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+    <tr>
+      <td>HTTPS</td>
+      <td>TCP</td>
+      <td>443</td>
+      <td>0.0.0.0/0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="connecting-instance-through-ssh">Connecting Instance Through SSH</h2>
+<p><strong>Make sure you can connect to the instance through SSH.</strong> You can follow the instructions under the “Connect” tab to get started. I personally use macOS built-in Terminal application to access the remote server.</p>
+
+<p>Here’s a command you enter into Terminal with the information you copied from the “Connect” tab.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">ssh -i "aws-ubuntu.pem" ubuntu@ec2-1-111-222-33.us-east-2.compute.amazonaws.com
+</span></code></pre></div></div>
+
+<p class="sidenote">The command you want to paste will look different from the one you see above. Pay attention to the name of the <code class="language-plaintext highlighter-rouge">PEM</code> certificate and the remote address to access your server.</p>
+
+<h2 id="notes-on-setting-up-plausible">Notes on Setting Up Plausible</h2>
+<p>Tyler has written a <a href="https://tinkerlog.dev/journal/self-hosting-analytics-with-plausible-and-nginx-on-ubuntu-server" title="Self hosting analytics with Plausible &amp; NGINX on Ubuntu Server | Tinker log">concise tutorial to help you setting up Plausible on a Ubuntu Server</a>. You should be able to get Plausible running if you follow each step carefully.</p>
+
+<p>Here are some notes you want to pay attention to when setting up Plausible.</p>
+
+<p class="sidenote">Executing commands as a root user is not exactly a best practice when it comes to managing a remote server. You usually want to set up a separate user account under the <code class="language-plaintext highlighter-rouge">sudo</code> group. However, for a personal project like this, you can skip creating a user account if you’re not comfortable with accounts management.</p>
+
+<p><strong>Public IPv4 address</strong> is the IP address you want to set up as A record under the DNS configuration. For example, I access my dashboard from stats.sayzlim.net, so I will have to set the A record to point to my server’s public IP address. Make sure to set the proxy status to DNS only if you’re on CloudFlare.</p>
+
+<p>Add <code class="language-plaintext highlighter-rouge">DISABLE_REGISTRATION=true</code> to <code class="language-plaintext highlighter-rouge">plausible-conf.ev</code> file to prevent people signing up a new account on your self-hosted Plausible.</p>
+
+<p>Run <code class="language-plaintext highlighter-rouge">docker ps</code> to list all the active containers. Plausible will only work if those four containers are running. I spent hours debugging because I entered a wrong secret key. It turned out one of the containers will not run if the key length is not <code class="language-plaintext highlighter-rouge">Base64</code>.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">hosting_plausible_1
+hosting_plausible_events_db_1
+hosting_mail_1
+hosting_plausible_db_1
+</span></code></pre></div></div>
+
+<p>Be patient when setting up SSL certificates with certbot. Verify that the <code class="language-plaintext highlighter-rouge">server_name</code> in <code class="language-plaintext highlighter-rouge">/etc/nginx/sites-enabled/plausible</code> has been set to the correct URL. You can verify the A record by running the <code class="language-plaintext highlighter-rouge">nslookup</code> command. For example, I will run <code class="language-plaintext highlighter-rouge">nslookup stats.sayzlim.net</code> and expect the public IP address in the result.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Server:		192.168.1.1
+</span><span class="gp">Address:	192.168.1.1#</span>53
+<span class="go">
+Non-authoritative answer:
+Name:	stats.sayzlim.net
+Address: 3.143.214.18
+</span></code></pre></div></div>
+
+<p>Send me a Twitter DM if you encounter any problems while trying to get Plausible configured on Amazon EC2. Also, make sure to <a href="https://github.com/sponsors/plausible" title="Sponsor @plausible on GitHub Sponsors · GitHub">sponsor Plausible</a> if you’ve successfully self-hosted it on your server.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using Feedbin in 2021]]></title>
+    <link href="https://sayzlim.net/using-feedbin/"/>
+    <updated>2021-06-01T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/using-feedbin</id>
+    <content type="html"><![CDATA[<p>I found out today that I’ve been using Feedbin for seven years. Feedbin started as a simple feed reader, which I used to sync over to third-party RSS clients such as <a href="https://www.reederapp.com/" title="Reeder 5">Reeder</a> and <a href="https://www.goldenhillsoftware.com/unread/" title="Unread: An RSS Reader">Unread</a>. These days, I read everything on Feedbin.</p>
+
+<p><a href="https://feedbin.com/" title="Feedbin">Feedbin</a> added many features while I was away from my daily reading. Here are some of the features that changed the way I use Feedbin.</p>
+
+<h3 id="send-to-feedbin-bookmarklet">Send to Feedbin Bookmarklet</h3>
+<p>I used to assign my <strong>Read Later</strong> and <strong>RSS Subscription</strong> into two services: Instapaper and Feedbin.</p>
+
+<p><a href="https://images.sayzlim.net/2021/06/feedbin-bookmarklet.webp" title="Send to Feedbin Bookmarklet"> <img src="https://images.sayzlim.net/2021/06/feedbin-bookmarklet.webp" alt="Send to Feedbin Bookmarklet" title="Send to Feedbin Bookmarklet" /> </a></p>
+
+<p>Instapaper has a bookmarklet known as <strong>Save to Instapaper</strong> that you can put in the <strong>Favorites Bar</strong> to save articles conveniently. I will save any noteworthy articles to Instapaper and archive the read items to a notebook called <a href="https://sayzlim.net/evernote-histories/" title="Inside Evernote Histories Notebook - Sayz Lim"><strong>Histories</strong> in Evernote</a>.</p>
+
+<p>Although I enjoy both services, I find that switching between applications for one purpose — reading and saving interesting ideas — is a distraction.</p>
+
+<p><strong>Send to Feedbin</strong> works like <strong>Save to Instapaper</strong> by letting you send any articles to the “Pages” folder in Feedbin. By having all the subscriptions and saved articles in a single location, I can maintain the same reading experience everywhere.</p>
+
+<p>Feedbin also does a terrific job in parsing the article with excellent integration to Evernote, where you can save these items in the semantic structure.</p>
+
+<h3 id="recently-read">Recently Read</h3>
+<p>I’m surprised that this folder is not available by default on most feed readers. I’m the type of person who tends to accidentally mark an item, so having this little folder to show my recently read items makes it easy to revisit any read items that I forgot to save to Evernote.</p>
+
+<p><a href="https://images.sayzlim.net/2021/06/feedbin-main.webp" title="Feedbin Home"> <img src="https://images.sayzlim.net/2021/06/feedbin-main.webp" alt="Feedbin Home" title="Feedbin Home" /> </a></p>
+
+<h3 id="actions-and-smart-filters">Actions and Smart Filters</h3>
+<p>If you subscribe to popular sites that publish many articles per week, you can choose to receive notification only when the article contains a particular keyword.</p>
+
+<p>You can achieve the setup above with <strong>Feedbin Actions</strong>.</p>
+
+<p>You can choose to receive Push Notification if the article contains “iPhone” in the body or mark the article as read when it has [Sponsor] in the title.<sup id="fnref:2021060282957" role="doc-noteref"><a href="#fn:2021060282957" class="footnote" rel="footnote">1</a></sup></p>
+
+<h3 id="subscribe-to-newsletters">Subscribe to Newsletters</h3>
+<p>I gave up on Evernote when they stopped offering email forwarding unless you’re on the <strong>Premium Plan</strong>. Fortunately, Feedbin added this feature when I started actively using it again.</p>
+
+<p>When you signed up for Feedbin, you will receive an email address that you can use to subscribe to newsletters. Every incoming email will be assigned with a tag you configured in the settings.<sup id="fnref:2021060282938" role="doc-noteref"><a href="#fn:2021060282938" class="footnote" rel="footnote">2</a></sup></p>
+
+<p>Having Feedbin manage my newsletters means I can leave my inbox for low-volume emails.</p>
+
+<p><strong>Avoid using Feedbin email address to subscribe to newsletters</strong>. It will be difficult to update your subscription if you decide to stop using Feedbin one day. Instead, you want to take advantage of Gmail plus notation and create a smart rule to forward incoming emails to Feedbin. For example, I will subscribe to a newsletter with <code class="language-plaintext highlighter-rouge">email+feedbin@gmail.com</code> and ask Gmail to forward the emails to <code class="language-plaintext highlighter-rouge">randomGeneratedNumbers@newsletters.feedbin.com</code></p>
+
+<p>Another thing I like about keeping newsletters in Feedbin means I can save these newsletters to Evernote for safekeeping with a simple shortcut.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:2021060282957" role="doc-endnote">
+      <p>I don’t recommend marking sponsored posts as read if you wish to support your favorite bloggers. <a href="#fnref:2021060282957" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2021060282938" role="doc-endnote">
+      <p>The obvious tag to use in the settings is “Newsletter”. <a href="#fnref:2021060282938" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Better Way to Set Default Application on macOS]]></title>
+    <link href="https://sayzlim.net/set-default-apps-mac/"/>
+    <updated>2021-05-20T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/set-default-apps-mac</id>
+    <content type="html"><![CDATA[<p>Have you ever found that setting default application for documents on macOS is an annoying experience? It’s difficult to find out which documents that you’ve modified before. I will show you a better way to set the default application.</p>
+
+<p>Here is the standard workflow to set the default application on Mac.</p>
+
+<ol>
+  <li>Select the document with the file extension that you want to update. For example, if you’re going to open <code class="language-plaintext highlighter-rouge">txt</code> document with iA Writer as the default application, you will want to select the <code class="language-plaintext highlighter-rouge">txt</code> document in Finder.</li>
+  <li>Get the document’s info by pressing <code class="language-plaintext highlighter-rouge">Command - I</code> or right-click and select <code class="language-plaintext highlighter-rouge">Get Info</code>.</li>
+  <li>Expand the <code class="language-plaintext highlighter-rouge">Open with:</code> section and choose iA Writer from the list.</li>
+  <li>Click <code class="language-plaintext highlighter-rouge">Change All</code> to set iA Writer as the default application for all documents with <code class="language-plaintext highlighter-rouge">txt</code> as the extension.</li>
+</ol>
+
+<p>It’s a straightforward process, but you won’t be able to tell which document that you’ve modified before. You’re also limited to only one default application per document type. Most people use more than one text and image editing application. You want to be able to select the default application based on the rules you’ve created.</p>
+
+<h2 id="set-default-application-with-openin">Set Default Application with OpenIn</h2>
+<p><a href="https://loshadki.app/openin/" title="OpenIn - Loshadki Apps">OpenIn</a> is a new application I discovered while I was searching for <a href="https://sayzlim.net/customize-default-apps-magic-launch/" title="Customize Default Apps with Magic Launch - Sayz Lim">Magic Launch</a> replacement. Unfortunately, Magic Launch doesn’t receive any more updates because they’ve built an application that takes advantage of the macOS native UI framework to create rules.</p>
+
+<p>Since I’m familiar with Magic Launch, I will compare many aspects of OpenIn to Magic Launch.</p>
+
+<p>When you first open OpenIn, you can set the default browser and mail apps in their respective preference window.</p>
+
+<p><a href="https://images.sayzlim.net/2021/05/openin-settings.webp" title="OpenIn Settings"> <img src="https://images.sayzlim.net/2021/05/openin-settings.webp" alt="OpenIn Settings" title="OpenIn Settings" /> </a></p>
+
+<p>It’s convenient to set the default application on macOS with OpenIn. Under the <strong>File types</strong>, you can add the document type to view all the applications that can open the associated document. For example, I’ve added <code class="language-plaintext highlighter-rouge">jpg</code> document type, and it shows me the list of applications that support this document type. I’ve also used the <code class="language-plaintext highlighter-rouge">Quick Actions</code> to disable all the applications and enable Pixelmator Pro, Sketch, and CleanShot X.</p>
+
+<h2 id="opening-document-with-openin">Opening Document with OpenIn</h2>
+<p>OpenIn has implemented a quick method for people to choose which application to open when several applications are set as default. It will present a list of applications that can be selected with a mouse cursor or number shortcut.</p>
+
+<p><a href="https://images.sayzlim.net/2021/05/openin-preview.gif" title="Opening Documents with OpenIn"> <img src="https://images.sayzlim.net/2021/05/openin-preview.gif" alt="Opening Documents with OpenIn" title="Opening Documents with OpenIn" /> </a></p>
+
+<p>There are also advanced preferences that you can set with OpenIn. Here is one area where OpenIn design direction pales compared to Magic Launch. Instead of opting to the <a href="https://developer.apple.com/design/human-interface-guidelines/macos/fields-and-labels/search-fields/" title="Search Fields - Fields and Labels - macOS - Human Interface Guidelines - Apple Developer">scope bars</a> to let us set rules for each file type, OpenIn presents the options in the sidebar. It exposes unnecessary information and makes it difficult to find which rules we’ve configured.</p>
+
+<p>One of the most used options is probably <strong>Path Rules</strong> to enter a rule to match the document with the directory. It’s not the most intuitive way to create a rule, so I hope the developer will consider changing it to scope bars-based rules creation.</p>
+
+<h2 id="summary">Summary</h2>
+<p>OpenIn has made managing default applications for each document much more manageable. If you’re looking for a more granular way to set default applications, you’re going to like what OpenIn offers. You can purchase OpenIn for $9.99, or you can get it on Setapp by <a href="http://sayzlim.net/go/setapp/" title="Sign Up Setapp">signing up for a 7-days trial</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Build a Jekyll Component]]></title>
+    <link href="https://sayzlim.net/jekyll-include-component/"/>
+    <updated>2021-05-07T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/jekyll-include-component</id>
+    <content type="html"><![CDATA[<p>Jekyll is a static site generator with some great ideas to help us structure a website. By taking advantage of some of these ideas, you can decouple the complicated part of the project and build them as separate components.</p>
+
+<p>Jekyll provides a tag called <code class="language-plaintext highlighter-rouge">include</code>, which you can use to include content from other documents. Using the <code class="language-plaintext highlighter-rouge">include</code> tag, you can avoid repetition and keep the code clean by passing parameters into the include component.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>For example, we’re going to create a <code class="language-plaintext highlighter-rouge">related_card.html</code> component that you can include at the end of your post. You will have to place the file inside <code class="language-plaintext highlighter-rouge">includes</code> directory. I usually create another folder called <code class="language-plaintext highlighter-rouge">components</code> and group these components together.</p>
+
+<p>Here is the structure of the directory:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_includes/
+  components/
+    related_card.html
+  custom/
+  footer.html
+  head.html
+  header.html
+  main.html
+  sidebar.html
+</code></pre></div></div>
+
+<p>Here is the content of the <code class="language-plaintext highlighter-rouge">related_card.html</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"related_card"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h4&gt;</span>{{ include.title }}<span class="nt">&lt;/h4&gt;</span>
+  <span class="nt">&lt;p&gt;</span>{{ include.description }}<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ root_url }}{{ include.url }}"</span><span class="nt">&gt;</span>Read More<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+
+<p class="sidenote">You need to prepend <code class="language-plaintext highlighter-rouge">include</code> before each parameter because that’s how you will access these parameters later on.</p>
+
+<h2 id="how-to-include-the-component">How to Include the Component</h2>
+
+<p>If you’re using Jekyll for your blog, you will find a layout called <code class="language-plaintext highlighter-rouge">_post.html</code> that renders how a blog post should look. Here’s how you can include the <code class="language-plaintext highlighter-rouge">related_card.html</code> and pass values into the component.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% include components/related_card.html 
+  title = "The Post Title"
+  description = "Here is the description"
+  url = "Here is the site URL"
+%}
+
+</code></pre></div></div>
+
+<p>This approach is useful when you need to iterate through a collection, data or when you want to create an archive page with the card format as part of the layout. Here is how you can iterate all the posts on your site.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+{% for post in site.posts %}
+  {% include components/related_card.html 
+    title = post.title
+    description = post.description
+    url = post.url
+  %}
+{% endif %}
+
+</code></pre></div></div>
+
+<p>Once you’ve familiarized yourself with <code class="language-plaintext highlighter-rouge">include</code>, you can start removing some repetitive parts from your project and put them inside the components folder. You will be able to make changes without having to edit each page layout.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p><a href="https://jekyllrb.com/docs/includes/" title="Includes - Jekyll • Simple, blog-aware, static sites">Read the official documentation</a> to learn more what you can do with <code class="language-plaintext highlighter-rouge">include</code>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Set Default Window Size on Mac with Keyboard Maestro]]></title>
+    <link href="https://sayzlim.net/default-window-size-keyboard-maestro/"/>
+    <updated>2021-03-23T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/default-window-size-keyboard-maestro</id>
+    <content type="html"><![CDATA[<p>Resizing application windows is one of the easiest macros you can create with Keyboard Maestro. By implementing a single action, you can set a default window size for every application on your Mac. What if I tell you that there is a better way to organize and resize application windows?</p>
+
+<p>With MacBook Pro, I often use the full-screen mode to take advantage of all the available screen states. After switching to iMac 27” as my main machine, I find that it requires more effort to organize the windows.</p>
+
+<p>Rather than always viewing the application in full-screen mode, I set a default window size for each different group. I put the browser’s default window size (1440, 1000). Some of the productivity applications like Things and Finder are set to (960, 700).</p>
+
+<p>The idea to build this macro came up when I was cleaning my Keyboard Maestro library. I found out that the “Resize and Center” macro I created a long time ago was <em>very inefficient</em>.</p>
+
+<h2 id="the-old-resize-and-center-macro">The “Old” Resize and Center Macro</h2>
+
+<p>The “Resize and Center” macro, available in the <strong>Global UI Control</strong> macro group, has only one task: to set the front window size to width to 1440 and height to 1000.</p>
+
+<p class="sidenote">I have my reason to save the macro in the <strong>Global UI Control</strong> instead of creating a separate macro group for each application. It’s related to <a href="https://sayzlim.net/organize-keyboard-maestro-macros/" title="How I Organize Keyboard Maestro Macro Groups - Sayz Lim">how I organize my macro groups</a>.</p>
+
+<p>Instead of assigning a global shortcut to the macro, I have to create a new macro group to selectively choose which applications to trigger the macro. For example, I can create a macro group called “Finder” and put an action to execute the “Resize and Center” macro in the group. <strong>The advantage of this approach is I can set a different type of trigger for each application</strong>, such as resizing the window whenever the application activates</p>
+
+<p><a href="https://images.sayzlim.net/2021/03/default-window-size-old-resize-macro.webp" title="Execute a Macro in a Separate Macro Group"> <img src="https://images.sayzlim.net/2021/03/default-window-size-old-resize-macro.webp" alt="Execute a Macro in a Separate Macro Group" title="Execute a Macro in a Separate Macro Group" /> </a></p>
+
+<p>There are some problems with this approach:</p>
+<ol>
+  <li>I have to create a new macro group for each application that uses the “Resize and Center” macro.</li>
+  <li>I have to create a new “Resize and Center” for each different default window size.</li>
+  <li>Using the “Trigger Macro by Name” action will show many duplicates of the “Resize and Center” macro.</li>
+</ol>
+
+<h2 id="the-new-resize-and-center-macro">The “New” Resize and Center Macro</h2>
+
+<p>Keyboard Maestro lets you pass parameters when executing a macro. By tweaking the “Resize and Center” macro, I can tell the new macro to accept width and height as the parameters to resize the window size dynamically.</p>
+
+<p><a href="https://images.sayzlim.net/2021/03/default-window-size-new-resize-macro.webp" title="&quot;New&quot; Resize and Center Macro"> <img src="https://images.sayzlim.net/2021/03/default-window-size-new-resize-macro.webp" alt="&quot;New&quot; Resize and Center Macro" title="&quot;New&quot; Resize and Center Macro" /> </a></p>
+
+<p>The macro is pretty straightforward. It accepts two parameters separated by a comma for width and height. You can access the parameter’s value respectively with <code class="language-plaintext highlighter-rouge">%TriggerValue[1]%</code> and <code class="language-plaintext highlighter-rouge">%TriggerValue[2]%</code> and save them as local variables.</p>
+
+<p class="sidenote">You can prepend <code class="language-plaintext highlighter-rouge">Local</code> to the variable to prevent Keyboard Maestro from making the variable available globally for other macros. It’s one way to avoid clutter in the “variables” section under the preferences pane.</p>
+
+<p>The remaining action is centering the front application window. I adjusted the vertical position to take into the menu bar height. Now, the “Resize and Center” macro can accept <code class="language-plaintext highlighter-rouge">(height, width)</code> as the parameter.</p>
+
+<p class="sidenote">Click on the gear icon on the top right <strong>Execute Macro</strong> action to toggle <strong>With Parameter</strong> input fields.</p>
+
+<h3 id="setting-multiple-default-sizes-with-switch-case">Setting Multiple Default Sizes with Switch Case</h3>
+
+<p>Inside the “Global UI Control” macro group, I create a new macro called “Default Window Size”. I prefer to set <code class="language-plaintext highlighter-rouge">F8</code> as the hot key to trigger this macro and set the front window application to the default size. You can change it to your preferred shortcut.</p>
+
+<p><a href="https://images.sayzlim.net/2021/03/default-window-size-macro.webp" title="Default Window Size Macro"> <img src="https://images.sayzlim.net/2021/03/default-window-size-macro.webp" alt="Default Window Size Macro" title="Default Window Size Macro" /> </a></p>
+
+<p>The macro uses a <strong>Switch/Case Action</strong> to control the flow of the actions. It checks the front window application name — accessed through <code class="language-plaintext highlighter-rouge">%Application%1%</code> — by matching the regular expression through the term “Matches”.</p>
+
+<p class="sidenote">Each application name is separated by a pipe for alternation. You can learn more about <a href="https://sayzlim.net/clipboards-regular-expression/" title="Manipulate Clipboards with Regular Expression - Sayz Lim">regular expressions in this post</a>.</p>
+
+<p>The new macro offers much more versatility. I can easily set the default size for a new application by adding the application name into the matching expression. If I want to create a new default size, I just have to add another matching case in the control flow. If I want to change the window size, I just have to update the passing parameter value.</p>
+
+<p><strong><a href="http://s3.sayzlim.net/km/default-window-size.kmmacros" title="Download Default Window Size Macro">Download Default Window Size Macro</a></strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Evernote Device Limit Workaround]]></title>
+    <link href="https://sayzlim.net/evernote-device-limit-workaround/"/>
+    <updated>2021-03-16T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/evernote-device-limit-workaround</id>
+    <content type="html"><![CDATA[<p>One of the most frustrating problems with Evernote Basic is that you can sign into the Evernote application up to only two devices. Here is a workaround that you can follow if you wish to use Evernote on more devices.</p>
+
+<p>When <a href="https://mjtsai.com/blog/2020/11/13/evernote-goes-electron/">Evernote decided to go Electron</a>, I was under the impression that they need to <em>change</em> to streamline the product development. After all, we didn’t see many breakthroughs with the native application for years because they have different people working on each version of the application: Mac, Windows, iPhone, and Android.</p>
+
+<p>The recent updates put off many existing paid customers. The Evernote web application butchered many features that paid customers used to love. I’ve seen many customers searching for Evernote replacement because of the device limitation. I’ve canceled Evernote Premium temporarily because I don’t feel the pricing justify for the features they offer.</p>
+
+<p>As someone who owns iPhone and iPad, it’s easy to hit the limit early. I mostly spend my time working with MacBook Pro and iMac 27”, so I want to run Evernote as a separate application on these devices.</p>
+
+<p>Fortunately,  I’ve found a way to turn the Evernote website into a full-fledged application running on macOS.</p>
+
+<h2 id="building-evernote-desktop-with-nativefier">Building Evernote Desktop with Nativefier</h2>
+<p>Since Evernote is built with Electron. There is no significant difference using Evernote on the website, desktop, or mobile devices. It also means that using Evernote with a browser doesn’t count towards your device limit.</p>
+
+<p>All we have to do is to <em>package</em> the Evernote website into a native application that you can run as a separate entity from the desktop browsers. We’re going to use <a href="https://github.com/nativefier/nativefier" title="Nativefier: Make any web page a desktop application">Nativefier</a> in this tutorial.</p>
+
+<p>If you haven’t installed Node.js, you will have to install it first on your machine. Check out this tutorial to <a href="https://sayzlim.net/setup-macos-web-development/" title="How to Set Up macOS for Web Development">set up a web development environment</a> correctly. Make sure you install the following tools:</p>
+
+<ul>
+  <li>Xcode Command Line Tools</li>
+  <li>Homebrew</li>
+  <li>Node.js</li>
+</ul>
+
+<p><a href="https://images.sayzlim.net/2021/03/evernote-nativefier-terminal.webp" title="Installing Evernote with Nativefier"> <img src="https://images.sayzlim.net/2021/03/evernote-nativefier-terminal.webp" alt="Installing Evernote with Nativefier" title="Installing Evernote with Nativefier" /> </a></p>
+
+<p>Restart Terminal and switch to the latest version of Node.js. Copy and paste the following command into Terminal to install Nativefier.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm install -g nativefier
+</span></code></pre></div></div>
+
+<p>It may take a few minutes for the installation to complete. Once nativefier is installed, you can run the following command to create a native Evernote application from their official website.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">cd ~/Desktop &amp;&amp; nativefier --name 'Evernote' 'evernote.com'
+</span></code></pre></div></div>
+
+<p>The command above will create a folder containing the Evernote application built with Electron on the desktop. Move only <strong>Evernote.app</strong> into the Applications folder. You can delete the rest of the files in the folder.</p>
+
+<h2 id="replacing-evernote-icon">Replacing Evernote Icon</h2>
+
+<p><a href="https://images.sayzlim.net/2021/03/evernote-nativefier-icon.webp" title="Evernote Icon Replacement"> <img src="https://images.sayzlim.net/2021/03/evernote-nativefier-icon.webp" alt="Evernote Icon Replacement" title="Evernote Icon Replacement" /> </a></p>
+
+<p>Pay attention that the Evernote application we built with Nativefier has Electron logo as the icon. This is expected because we didn’t pass any image into the command line when creating the application.</p>
+
+<video controls="" style="max-width: 100%;">
+<source src="https://images.sayzlim.net/2021/03/evernote-icon-replacement.mp4" type="video/mp4" />
+</video>
+
+<p>Here’s how you can update the Evernote icon you’ve just created:</p>
+<ol>
+  <li>Download your favorite Evernote icon from <a href="https://macosicons.com/evernote">macOSicons by Elias</a>.</li>
+  <li>Right-click on the Evernote.app — located inside the Applications folder — and select “Get Info” from the contextual menu to display the info window.</li>
+  <li>Drag the downloaded icon to the top of the Evernote.app icon inside the info window.</li>
+</ol>
+
+<p>You can open the Evernote application and sign in with your credentials. Now, Enjoy the native web version of Evernote without hitting the device limit set.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Replacing DragonDrop with Dropover]]></title>
+    <link href="https://sayzlim.net/dropover-review/"/>
+    <updated>2021-03-10T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/dropover-review</id>
+    <content type="html"><![CDATA[<p>I’ve been searching for a reliable <a href="https://sayzlim.net/dragondrop-makes-dragging-and-dropping-easier/" title="DragonDrop Makes Dragging and Dropping Easier - Sayz Lim">DragonDrop</a> replacement without any success. None of the alternatives were close to the workflow I needed: a quick way to drag and drop files into a holding bin that sits on top of the desktop. I’m glad that I found out about Dropover.</p>
+
+<p>On the surface, Dropover works like DragonDrop. You select single or several files, and shake them to activate the shelf. You can place and hold these files inside the shelf, which you can use again in a different space. Check out the following video to see how it works.</p>
+
+<video controls="" style="max-width: 100%;">
+<source src="https://images.sayzlim.net/2021/03/dropover-demo.mp4" type="video/mp4" />
+</video>
+
+<h2 id="better-shelves">Better Shelves</h2>
+<p>With DragonDrop, you’re limited to one shelf at a time. Dropover allows you to create several shelves that you can organize several files at once and move them to different destinations.</p>
+
+<p>You may want to set the sensitivity to <strong>high</strong> because the default setting requires more shake to activate the shelf. I find myself using the <kbd>Shift</kbd> modifier more often these days.</p>
+
+<p><img src="https://images.sayzlim.net/2021/03/dropover-shelf-setting.webp" alt="Dropover Shelf Settings" title="Dropover Shelf Settings" /></p>
+
+<h2 id="sharing-files-with-dropover-cloud">Sharing Files with Dropover Cloud</h2>
+<p>On top of the core feature to hold files, you can also use their in-house Dropover Cloud to share them online. It comes with the feature to set a password and an expiration timer for the shared files.</p>
+
+<p><img src="https://images.sayzlim.net/2021/03/dropover-cloud-upload.webp" alt="Dropover Cloud Upload Screen" title="Dropover Cloud Upload Screen" /></p>
+
+<p>Dropover offers a better integration to popular online file-sharing services like Dropbox, Google Drive, and One Drive. You can also share your files through <a href="https://support.apple.com/en-us/HT203093" title="Mail Drop limits - Apple Support">iCloud’s Mail Drop</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<p>I don’t see Dropover replacing CleanShot X as my primary tool to share screenshots, but I will consider using it to share files online.</p>
+
+<p>With all said, Dropover continues DragonDrop legacy as the best drag and drop macOS app to move files around.</p>
+
+<p><a href="https://dropoverapp.com" title="Dropover ‐ Easier Drag and Drop on your Mac."><strong>Download Dropover</strong></a></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Allowing users to share the file through Mail Drop is smart, but Apple does a poor job explaining how you can delete the shared files. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building a Plain HTML Form with ConvertKit]]></title>
+    <link href="https://sayzlim.net/plain-html-form-convertkit/"/>
+    <updated>2021-03-03T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/plain-html-form-convertkit</id>
+    <content type="html"><![CDATA[<p><a href="https://convertkit.com" title="ConvertKit - Email Marketing for Online Creators">ConvertKit</a> provides different kinds of templates that creators can easily embed on their website, but as a result, it also comes with additional scripts and options you don’t need. I will show you how to create a lightweight form that you can integrate into your website.</p>
+
+<p>Head over the Landing Pages and Forms to create a new form. Choose “Charlotte” as the design. Add another field and name it “First Name” if you want to collect your subscriber’s name. Choose “Embed” and “HTML” to view the content of the form.</p>
+
+<p><img src="https://images.sayzlim.net/2021/03/plain-html-convertkit.webp" alt="Embed Using HTML with ConvertKit" title="Embed Using HTML with ConvertKit" /></p>
+
+<p>You will need to locate the Form ID and User ID from the content of the HTML.</p>
+
+<ul>
+  <li>Form ID: The numerical values found in the URL while you’re editing the form. For example, mine is <code class="language-plaintext highlighter-rouge">2056639</code>. You can also find it as an action value in the HTML as <code class="language-plaintext highlighter-rouge">action="https://app.convertkit.com/forms/2056639/subscriptions"</code></li>
+  <li>User ID: The unique string of your ID which is passed as <code class="language-plaintext highlighter-rouge">data-uid</code> in the form. For example: <code class="language-plaintext highlighter-rouge">data-uid="c72f97e133"</code>.</li>
+</ul>
+
+<h3 id="plain-html-convertkit-form">Plain HTML ConvertKit Form</h3>
+<p>Here is the HTML ConvertKit form that you can integrate into your site. You have to replace the <code class="language-plaintext highlighter-rouge">actions</code>, <code class="language-plaintext highlighter-rouge">data-sv-form</code>, and <code class="language-plaintext highlighter-rouge">data-uid</code> with your own values.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">action=</span><span class="s">"https://app.convertkit.com/forms/2056450/subscriptions"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">data-sv-form=</span><span class="s">"2056450"</span> <span class="na">data-uid=</span><span class="s">"c249fe0755"</span> <span class="na">data-options=</span><span class="s">"{&amp;quot;settings&amp;quot;:{&amp;quot;after_subscribe&amp;quot;:{&amp;quot;action&amp;quot;: &amp;quot;redirect&amp;quot;,&amp;quot;redirect_url&amp;quot;: &amp;quot;https://sayzlim.net/welcome/&amp;quot;}}}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"fields[first_name]"</span> <span class="na">placeholder=</span><span class="s">"First Name"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"email_address"</span> <span class="na">placeholder=</span><span class="s">"Email Address"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">required</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">data-element=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"subscribe"</span> <span class="na">value=</span><span class="s">"Subscribe"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+<p>In the default HTML template provided by ConvertKit, you will find <code class="language-plaintext highlighter-rouge">data-options</code> containing the value of options you can set for the form. Here is what it looks like if we display it as a JSON object.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"after_subscribe"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"message"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"success_message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success! Now check your email to confirm your subscription."</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"redirect_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"analytics"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"google"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"facebook"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"segment"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"pinterest"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"sparkloop"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"googletagmanager"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"modal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"powered_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"show"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://convertkit.com?utm_source=dynamic&amp;amp;utm_medium=referral&amp;amp;utm_campaign=poweredby&amp;amp;utm_content=form"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"recaptcha"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"return_visitor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"show"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"custom_content"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"slide_in"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"display_in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bottom_right"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="nl">"sticky_bar"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"display_in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"top"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Since you don’t need to pass most of the options above, we can keep the settings minimum by removing the values we don’t need.</p>
+
+<p>The only option I enable is <code class="language-plaintext highlighter-rouge">redirect_url</code>. It allows you to redirect subscribers to a custom landing page whenever they have successfully signed up for your newsletter. Replace <code class="language-plaintext highlighter-rouge">https://sayzlim.net/welcome/</code> with your landing page URL.</p>
+
+<p>Once you’ve confirmed that the form is working, you can style it to match your site design.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Tips for Using Things Efficiently on macOS]]></title>
+    <link href="https://sayzlim.net/tips-using-things-macos/"/>
+    <updated>2021-02-14T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/tips-using-things-macos</id>
+    <content type="html"><![CDATA[<p>I’ve been using Things 3 as my GTD since 2014. It has become an essential part of my life. I want to share several tips for anyone looking to use Things to manage several aspects of your life. These tips are strictly for Things on macOS.</p>
+
+<h2 id="1-use-keyboard-shortcuts-with-quick-entry">1. Use Keyboard Shortcuts with Quick Entry</h2>
+<p>Quick Entry lets you jot down the tasks without bringing Things to the front. You should set it up if you haven’t done so. I assigned `Control - Space’ as the dedicated shortcut for this feature.</p>
+
+<p>You can also add some details for the task by using the available shortcuts. Here are some default shortcuts I often use:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Command - S</code> to schedule the task to another date.</li>
+  <li><code class="language-plaintext highlighter-rouge">Command - Shift - D</code> to set a deadline for the task.</li>
+  <li><code class="language-plaintext highlighter-rouge">Command - Shift - M</code> to move the task into a different area or project.</li>
+  <li><code class="language-plaintext highlighter-rouge">Command - Shift - T</code> to tag the task.</li>
+</ul>
+
+<h2 id="2-its-okay-to-clutter-the-inbox">2. It’s Okay to Clutter The Inbox</h2>
+<p>I used to be an extremely organized person. I couldn’t deal with a cluttered inbox at all. However, I realized the obsession with an empty inbox only crippled my productivity.</p>
+
+<p>Inbox can be messy. Inbox doesn’t have to be empty.</p>
+
+<p>Inbox is meant to be a temporary space for your tasks. You use it to collect tasks and ideas. If something comes up while you’re working, you can place them inside the Inbox.</p>
+
+<h2 id="3-no-task-naming-rules">3. No Task Naming Rules</h2>
+<p>You can name it however you want. Sometimes I just paste the link as the task name. Sometimes I leave the title blank and fill up only the details. You can rename them later.</p>
+
+<p>There will be time for you to reorganize and remove those that are not important as you think.</p>
+
+<h2 id="4-schedule-inbox-and-today-tasks">4. Schedule Inbox and Today Tasks</h2>
+<p>Some tasks are not meant to be completed immediately. Review your Inbox and Today once in a few days and reschedule them if you’re overwhelmed by the number of tasks that show up in Today. Inbox can get massive if you don’t decide what you want to do with them. So, either delete or break them into smaller tasks by rescheduling them into another day.</p>
+
+<p>That way, Today becomes more manageable because they’ve been spread out into different dates.</p>
+
+<h2 id="5-use-deadline">5. Use Deadline</h2>
+<p>The primary purpose of setting a deadline is to provide a state of urgency. If you have a task that must be completed before a specific date, you must select the due date a few days earlier for the task to appear in the Today view.</p>
+
+<p>If you wish to learn more about Things, you should <a href="https://culturedcode.com/things/guide/">check out their official guide</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Find Conflicting Keyboard Shortcuts on Mac]]></title>
+    <link href="https://sayzlim.net/find-conflicting-shortucts-mac/"/>
+    <updated>2020-06-07T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/find-conflicting-shortucts-mac</id>
+    <content type="html"><![CDATA[<p>It’s frustrating to troubleshoot conflicting keyboard shortcuts on Mac because it doesn’t show you which app is currently binding the combination keys. Here’s how you can find the conflicting keys on Mac.</p>
+
+<video controls="" style="max-width: 100%;">
+<source src="https://images.sayzlim.net/2020/06/find-conflicting-shortcuts-mac.mp4" type="video/mp4" />
+</video>
+
+<p><a href="http://www.irradiatedsoftware.com/labs/" title="Irradiated Software - Labs - Beta Tested &bull; Gamma Blasted">ShortcutDetective</a> is a free app from Irradiated Labs that can help you detect conflicting shortcuts on your Mac. You can download ShortcutDetective and grant accessibility permission to start identifying the problematic keys combination.</p>
+
+<p>The usage is straightforward. You press the shortcuts, and it will start to show you which macOS app is binding the keys.</p>
+
+<p>It’s possible to <a href="/non-conflicting-shortcuts/" title="Non-Conflicting Shortcuts - Sayz Lim">avoid conflicting shortcuts</a> by following some best practices when assigning a shortcut.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Calculation Keyboard Maestro Macro]]></title>
+    <link href="https://sayzlim.net/quick-calculation-keyboard-maestro-macro/"/>
+    <updated>2020-05-27T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/quick-calculation-keyboard-maestro-macro</id>
+    <content type="html"><![CDATA[<p>Sometimes you want to quickly calculate a number while typing. Here’s how you can maintain the typing flow and calculate numbers with Keyboard Maestro.</p>
+
+<p>We want the macro to replace the math formula with the result whenever we type the formula that ends with a question mark. Here are some examples:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30*(50+20)?
+100^2?
+75*30?
+</code></pre></div></div>
+
+<h2 id="macro-breakdown">Macro Breakdown</h2>
+
+<video controls="" style="max-width: 100%;">
+<source src="https://images.sayzlim.net/2020/05/quick-calculation-macro.mp4" type="video/mp4" />
+</video>
+
+<p>We’re going to select “This string is typed” as a trigger to decide when to call this macro. Change the dropdown to “regular expression match” and enter this expression:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[\d.,+\-*/()^]+\?
+</code></pre></div></div>
+
+<p>If you’re not familiar with regular expressions, you can <a href="https://sayzlim.net/clipboards-regular-expression/" title="Manipulate Clipboards with Regular Expression - Sayz Lim">learn more about it in this post</a>. What we’re doing here is to tell Keyboard Maestro:</p>
+
+<ul>
+  <li>Run the macro only when any digit <code class="language-plaintext highlighter-rouge">\d</code> and math signs like <code class="language-plaintext highlighter-rouge">+\-*/()^</code> appear at least once and repeat regardless of the order. You can see that we wrapped these values in a bracket as <code class="language-plaintext highlighter-rouge">[\d.,+\-*/()^]+</code> followed by a plus sign.</li>
+  <li>Run the macro only when the matched string ends with a question mark <code class="language-plaintext highlighter-rouge">\?</code>.</li>
+  <li>The backslash is used to escape special characters in regular expressions such as question mark, plus, and minus sign.</li>
+</ul>
+
+<p>The triggered macro will copy the selected line and extract only the detected math formula. It will remove the question mark and pass it to <strong>Filter Variable “Formula” with Calculate</strong> and save the result back to <strong>Formula</strong> variable.</p>
+
+<p>In the last step, the macro replaces the detected formula in the clipboard with the result and then paste it back to the application source.</p>
+
+<p>There are some lessons to build a macro here. You can extract strings with regular expressions, manipulate them, and send them back to the source.</p>
+
+<p><strong><a href="http://s3.sayzlim.net/f/km-automatic-calculation.zip">Download Quick Calculation Macro</a></strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why I Switched from Snappy to CleanShot X]]></title>
+    <link href="https://sayzlim.net/snappy-to-cleanshot-x/"/>
+    <updated>2020-05-22T13:00:00+07:00</updated>
+    <id>https://sayzlim.net/snappy-to-cleanshot-x</id>
+    <content type="html"><![CDATA[<p>Snappy is my most used screenshot app on macOS. It’s also free. I still recommend it if you’re looking for a free screenshot and annotation tool for macOS. But I decided to replace Snappy with CleanShot X this year.</p>
+
+<p>I’ve been using Snappy for the past six years. I’ve never considered searching for a replacement because it has all the features I want from a screenshot app. Until recently, it becomes slow when you have too many snaps in the library. I have to regularly delete old snaps to make sure the menu bar item is responsive.</p>
+
+<p><a href="https://getcleanshot.com/" title="CleanShot X for Mac">CleanShot X</a> is the best and most responsive screenshot app on macOS right now. It has most of the things I want from Snappy. Here is a list of what like from CleanShot X:</p>
+
+<ul>
+  <li>Easily pin a screenshot as a visual note on your desktop.</li>
+  <li>Take multiple screenshots and store them in the sidebar without cluttering your screen.</li>
+  <li>Powerful annotation tools to help you communicate your message and idea better.</li>
+  <li>Capture long-form screenshot with their scrolling capture feature.</li>
+  <li>Record a video and export them with several options, such as GIF.</li>
+</ul>
+
+<p>CleanShot is not perfect for me yet. There are some areas that I wish they could have done better.</p>
+
+<h2 id="screenshot-groups">Screenshot Groups</h2>
+<p>Snappy does one thing very well. It automatically organizes your screenshots according to the dominant captured area of the screenshot. For example, the screenshot taken in Sublime Text will be placed under Sublime Text directory.</p>
+
+<p>CleanShot X hasn’t added a local library to track screenshots history. I hope that they will consider adding this feature to their cloud library. It will be great if they can automatically tag the screenshot with the front window application name.</p>
+
+<h2 id="more-capture-area-and-pin-options">More “Capture Area and Pin” Options</h2>
+
+<p>I like to pin captured screenshots. I can take a screenshot of the documentation and switch back to Sublime Text to write the code. I also like to take a screenshot of writing guidelines and refer to them for my drafts.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/cleanshot-x-annotate.jpg" alt="Capture Area &amp; Annotate in CleanShot X" title="Capture Area &amp; Annotate in CleanShot X" /></p>
+
+<p>CleanShot X does a great job with “Capture Area &amp; Annotate” feature. There are a ton of options for you to choose from. The annotation tool appears after you’ve captured the screenshot. Once you’ve finished annotating the screenshot, you can have few options:</p>
+
+<ul>
+  <li>Press <code class="language-plaintext highlighter-rouge">Command - C</code> to copy the screenshot and close the window.</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Command - U</code> to upload the screenshot to CleanShot Cloud and close the window.</li>
+  <li>Press <code class="language-plaintext highlighter-rouge">Command - S</code> to save the screenshot to your selected directory.</li>
+</ul>
+
+<p>I wish they can do the same for “Capture Area and Pin”. Wouldn’t it be better if you can also use these shortcuts above for pinned screenshots? They can also add <code class="language-plaintext highlighter-rouge">Command - E</code> as the shortcut to display annotation tool.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<h2 id="native-scalable-window-in-screen-recording">Native Scalable Window in Screen Recording</h2>
+<p>CleanShot X has done a great job with their <strong>Wallpaper</strong> preferences. One way to make a screenshot looks fabulous is to include the wallpaper as the background with some padding around it.</p>
+
+<p>This is also true with the screen recording.</p>
+
+<video controls="" style="max-width: 100%;">
+<source src="https://images.sayzlim.net/2020/05/cleanshot-x-native-macos-window.mp4" type="video/mp4" />
+</video>
+
+<p>I don’t expect them to add this feature to screen recording (yet). What I usually do with other recording tools is to press <code class="language-plaintext highlighter-rouge">Space</code> to focus the screen recording area and resize the window while holding <code class="language-plaintext highlighter-rouge">Option</code>. Here is the native macOS window resizing behavior:</p>
+
+<ul>
+  <li>Hold <code class="language-plaintext highlighter-rouge">Option</code> while resizing a window to scale only the selected edge.</li>
+  <li>Hold <code class="language-plaintext highlighter-rouge">Shift - Option</code> while resizing a window to scale the entire edge.</li>
+</ul>
+
+<p>It seems that CleanShot X is not using native window resizing. I can’t use these shortcuts with CleanShot X screen recording feature. You can’t also maintain the window at the center by changing the recording area value because it’ll expand to the right.</p>
+
+<h2 id="pricing">Pricing</h2>
+<p>CleanShot X costs $29 per Mac. I’m not a fan of buying software licenses that you can only use on one machine, but I understand that it’s the only way to prevent people from abusing their privilege by sharing their licenses with other people.</p>
+
+<p>The other option is to <a href="/go/setapp">subscribe to Setapp</a> at $9.99 per month to use CleanShot X and also gain access to additional 150 apps. If you’re not sure whether it’s worth it, you can <a href="https://sayzlim.net/is-setapp-worth-it/" title="Read Is Setapp Worth It?">read my review of Setapp here</a>.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Technically, you can also pin the screenshot with “Capture Area &amp; Annotate”, but you need to drag the title bar to move it around. Meanwhile, you can drag the entire screenshot around with “Capture Area and Pin” mode. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Is Setapp Worth It?]]></title>
+    <link href="https://sayzlim.net/is-setapp-worth-it/"/>
+    <updated>2020-05-19T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/is-setapp-worth-it</id>
+    <content type="html"><![CDATA[<p>Why would you want to subscribe to Setapp if you’re a veteran macOS user, and should you even consider subscribing to Setapp if you’re new to macOS?</p>
+
+<p class="sidenote"><strong>TLDR</strong>: Subscribe if you don’t own many applications with lifetime licenses. Setapp offers ClearVPN as part of the subscription. It’s worth the money by including Bartender, CleanMyMac, and CleanShot alone.</p>
+
+<h2 id="about-setapp-and-macpaw">About Setapp and MacPaw</h2>
+
+<p><a href="/go/setapp" title="Setapp">Setapp</a> is a curated macOS app store with a collection of high-quality apps. Unlike Apple’s Mac App Store, where you have to buy each app separately, you can download and use more than 150 apps from Setapp by subscribing for $9.99 per month.</p>
+
+<p><a href="https://macpaw.com/" title="MacPaw - Making Your Mac Life Simpler">MacPaw</a>, the company behind Setapp, is well-known among macOS users and developers for their popular utility app CleanMyMac X.</p>
+
+<p>For example, <a href="https://red-sweater.com/" title="Red Sweater - Amazing Mac Software">Red Sweater</a> has put MarsEdit 4.0 on Setapp. It requires trust from a company like Red Sweater that has been operating since 2005 to list their apps on Setapp.</p>
+
+<p><a href="https://brettterpstra.com/" title="BrettTerpstra.com">Brett Terpstra</a>, one of my favorite bloggers, who’ve created countless of writing utilities for macOS is also a Setapp partner. You can find <a href="https://github.com/markedjs/marked" title="GitHub - markedjs/marked: A markdown parser and compiler. Built for speed.">Marked</a> as one of the apps in the collection.</p>
+
+<p>The CEO is a fan of Apple products. He offered to <a href="https://macpaw.com/news/macpaw-museum" title="Keeping Apple History Alive at MacPaw">buy all the Macintosh collection from Tekserve</a>, a small repair shop in New York City, when they decided to close down the shop.</p>
+
+<p><img src="https://cdn.macpaw.com/uploads/images/tumblr_inline_opqueaoOIb1s7vjoo_1280.jpg" alt="MacPaw Office Museum" title="MacPaw Office Museum" /></p>
+
+<p>They store these collections as an office museum that you can visit the next time you’re in Kyiv, Ukraine.</p>
+
+<h2 id="considering-pricing-model">Considering Pricing Model</h2>
+<p>The typical macOS app costs around $9.99, and as complexity increases, you will find one that costs $129.99.</p>
+
+<p>From my experience, the average price of a macOS app is around $29.99.</p>
+
+<p>Most developers release a major update every year. You can usually receive a 50% upgrade discount. If you want to keep up with the latest version of each app, it will costs you $14.49 per year or $144.90 for ten apps.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/setapp-pricing.jpg" alt="Setapp Pricing Plans" title="Setapp Pricing Plans" /></p>
+
+<p>Setapp subscription costs $9.99 per month or with a 10% discount at $107.88 per year.</p>
+
+<p>Should you even consider subscribing to Setapp?</p>
+
+<p>To answer the question above, you have to consider two factors:</p>
+<ul>
+  <li>The number of apps you want to use from their collection.</li>
+  <li>The number of apps and the versions that you’ve already bought.</li>
+</ul>
+
+<h2 id="quality-of-the-collection">Quality of the Collection</h2>
+
+<p>You’re not going to use every app in Setapp collection. In fact, Setapp doesn’t have my favorite apps in the store, such as Fantastical, Things, and Alfred.</p>
+
+<p>I haven’t subscribed to Setapp mainly because of one reason: I own most of the apps in their collection.</p>
+
+<p>Here is a list of the apps I’ve used for the past few years that you can find in Setapp collection:<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>- Archiver           - Endurance         - Marked    
+- Bartender          - Gemini            - Paste     
+- BetterTouchTool    - HazeOver          - Permute   
+- CleanMyMac X       - iStats Menus      - TaskPaper 
+- Chronicle          - MacPilot          - Unclutter 
+- Downie             - MarsEdit          - Unibox    
+- Dropzone           - MindNode          - Ulysses   
+</code></pre></div></div>
+
+<p>There is no reason for me to subscribe if it costs me less by buying an app I want to use separately.</p>
+
+<p>I started to reconsider subscribing to Setapp after discovering that CleanShot X is available in their collection. It costs $29 to purchase a single license. I would have bought a separate license if I don’t see more value from the subscription.</p>
+
+<p>I have an older version of Ulysses, but I didn’t upgrade when they switched to a subscription model. When I discovered that the latest version of Ulysses is also available in Setapp, I started to reconsider subscribing to their plan.</p>
+
+<p>There is also another reason why I want to subscribe to Setapp.</p>
+
+<p>CleanMyMac X is one of the apps that I always use to maintain a new Mac. I’ve bought several CleanMyMac X licenses when they were more affordable. I used to subscribe for a month to clean up my other Macs that don’t have the license.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/setapp-receipts.jpg" alt="Setapp Receipts" title="Setapp Receipts" /></p>
+
+<p>When I consider that most of the apps above will release a major update and makes me pay for another upgrade, I start to find paying a monthly fee more lucrative.</p>
+
+<p>Furthermore, I also gain access to more apps to help me with my daily tasks.</p>
+
+<h2 id="should-you-subscribe">Should You Subscribe?</h2>
+<p>If you’re new to macOS, I recommend you try out Setapp for 7 days for free to explore their collection of apps to see what you like best.</p>
+
+<p>Some of the apps that you must use are CleanMyMac X, CleanShot X, and Paste.</p>
+
+<p>If you’re a long time macOS user, you want to consider whether subscribing to Setapp saves you more money in the long run.</p>
+
+<blockquote>
+  <p>It’s no longer feasible to upgrade each app whenever there is a major release, especially if you own most of the apps in their collection.</p>
+</blockquote>
+
+<p>I hope this post gives you a better idea of Setapp and answers your doubts. <strong>If you find this post useful and wish to support my works, you can sign up for Setapp by using the referral link below</strong>. Setapp offers a 7-days free trial.</p>
+
+<p><strong><a href="/go/setapp" title="Sign Up Setapp">Sign Up for Setapp</a></strong></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I can include more apps in this list if I count the number of apps I received from buying a bundle discount. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Quick Find and Replace Keyboard Maestro Macro]]></title>
+    <link href="https://sayzlim.net/quick-find-replace-macro/"/>
+    <updated>2020-05-16T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/quick-find-replace-macro</id>
+    <content type="html"><![CDATA[<p>Do you often find yourself opening a separate text editor to replace a word from a selected line or paragraph? With Quick Find and Replace Macro, you can substitute a word from anywhere.</p>
+
+<p>I built this macro because I often replace part of a string in Google Sheet Formula. For example, here is the formula I use to pull the value from <code class="language-plaintext highlighter-rouge">2020/04</code> sheet into the main dashboard.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=IF(ISNA(INDEX('2020/04'!J:J,MATCH(A2,'2020/04'A:A,0)))
+,0,INDEX('2020/04'!J:J,MATCH(A2,'2020/04'!A:A,0)))
+</code></pre></div></div>
+
+<p>If I need to pull <code class="language-plaintext highlighter-rouge">2020/05</code> sheet into the dashboard, I have to copy the formula and replace <code class="language-plaintext highlighter-rouge">2020/04</code> with <code class="language-plaintext highlighter-rouge">2020/05</code>.</p>
+
+<p>You can either use Google Sheet built-in search and replace, or use another text editor’s find and replace feature. You have two choices from the basic search feature: replace each word one by one or replace every found word.</p>
+
+<p>There is no option to search and replace only selected text.</p>
+
+<p>What if there is a better way to find and replace text? Isn’t it better if you can replace only the found word in the selected paragraph without opening another text editor?</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/quick-find-replace-macro.gif" alt="Quick Find and Replace Macro" title="Quick Find and Replace Macro" /></p>
+
+<p>Quick Find and Replace Macro does precisely one thing. You can select any part of a paragraph. You can select the whole content. You can select the last sentence.</p>
+
+<p>Set the shortcut to <code class="language-plaintext highlighter-rouge">Option - R</code>, type the word you want to find and replace, and press <code class="language-plaintext highlighter-rouge">return</code> to complete the process.</p>
+
+<p>You can access this feature from everywhere. This macro has changed the way I manipulate text. I hope you will find this useful.</p>
+
+<p><strong><a href="http://s3.sayzlim.net/f/km-quick-find-replace.zip?version=1.0" title="Download Quick Find and Replace Macro">Download Quick Find and Replace Macro</a></strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[QLColorCode Replacement on macOS Catalina]]></title>
+    <link href="https://sayzlim.net/qlcolorcode-not-working-catalina/"/>
+    <updated>2020-05-15T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/qlcolorcode-not-working-catalina</id>
+    <content type="html"><![CDATA[<p>I searched for a replacement for the feature to enable syntax preview on macOS when I found out that QLColorCode was not working on macOS Catalina 10.15.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/syntax-higlight-preview.jpg" alt="Syntax Highlight Preview" title="Syntax Highlight Preview" /></p>
+
+<p>It’s frustrating to work with source code if you have to open each of them in the text editor. Quick Look offers the advantage of previewing documents without having to open it first since the day of OS X Leopard.</p>
+
+<p>Apple tightened the security on macOS with Gatekeeper and System Integrity Protection to prevent malicious software from modifying protected files and documents on your Mac.</p>
+
+<p>I tried to install the <a href="https://sayzlim.net/must-have-macos-quicklook-plugins/" title="Must Have macOS Quick Look Plugins - Sayz Lim">my favorite Quick Look extensions</a> back on macOS Catalina and found out that none of them were working. It turned out macOS Catalina had deprecated the qlgenerator APIs.</p>
+
+<p>These Quick Look plugins are broken unless they’re official signed.</p>
+
+<blockquote>
+  <p>MacOS 10.15 Catalina has deprecated the qlgenerator APIs. Moreover a .qlgenerator package inside Library/QuickLook must be notarized on 10.15.0 to works. In version 10.15.1 it seems that notarization is no longer required.</p>
+</blockquote>
+
+<p>Fortunately, someone has bundled the QLColorCode into a Mac App for distribution.</p>
+
+<h2 id="preview-source-in-quick-look-with-syntax-highlight">Preview Source in Quick Look with Syntax Highlight</h2>
+
+<p>Syntax Highlight lets you easily customize the theme of the Quick Look preview with a few clicks. Before you can enable it in the System Preferences, you have to open the application to inform macOS that the app is available.</p>
+
+<blockquote>
+  <p>This application offers a quicklook extension for MacOS 10.15 Catalina for previewing source files. Inside it uses Highlight to render source code with syntax highlighting. The application is distributed with a version of the highlight. If you want you can use a different version customizing the preferences.</p>
+</blockquote>
+
+<p>Open the <strong>Security &amp; Privacy</strong> in the <strong>System Preferences</strong> and select <strong>Files and Folders</strong> under <strong>Privacy</strong> tab. Allow Syntax Highlight with the access to your folders.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/syntax-highlight-access.jpg" alt="Syntax Highlight Preferences" title="Syntax Highlight Preferences" /></p>
+
+<p>Open Syntax Highlight again. Choose the theme for light and dark mode. I personally only use dark mode these days, so I selected Monokai as the theme and <a href="https://input.fontbureau.com/" title="Input: Fonts for Code">Input Mono</a> as the font.</p>
+
+<p><img src="https://images.sayzlim.net/2020/05/syntax-highlight.jpg" alt="Syntax Highlight Theme Selections" title="Syntax Highlight Theme Selections" /></p>
+
+<p><strong>Syntax Highlight is not officially signed</strong>. Make sure you’re aware of the risks if you’re going to install it on your Mac. The project is open-source, so you can check the code yourself. I’m glad that we can enable this feature without tampering with each extension through terminal command.</p>
+
+<p><a href="https://github.com/sbarex/SourceCodeSyntaxHighlight/releases" title="Download Syntax Highlight"><strong>Download Syntax Highlight</strong></a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Set Up macOS for Web Development]]></title>
+    <link href="https://sayzlim.net/setup-macos-web-development/"/>
+    <updated>2020-05-12T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/setup-macos-web-development</id>
+    <content type="html"><![CDATA[<p>Most aspiring front-end developers made mistakes when setting up their development environment. In this guide, you will learn the best practices to prepare macOS for web development.</p>
+
+<p>Like most people, I started my web development journey by learning HTML, CSS, and JavaScript from online tutorials.</p>
+
+<p>There was no <a href="https://roadmap.sh/frontend" title="Learn to become a modern front-end developer">roadmaps</a> to tell me what to learn next.</p>
+
+<p>Eventually, I ventured into the land of web frameworks and libraries: Node.js, React, and Vue.js.</p>
+
+<p>I was stuck.</p>
+
+<p>Most tutorials on how to build a project with a framework assume that the readers are familiar with managing computer files through CLI (Command Line Interface) and the concept of package managers.</p>
+
+<p>These tutorials often start by asking you to install a specific package.</p>
+
+<p>As a result, you occasionally encounter issues that require you to run <code class="language-plaintext highlighter-rouge">sudo</code> command.</p>
+
+<blockquote>
+  <p>Running <code class="language-plaintext highlighter-rouge">sudo</code> command without knowing what it does is a bad idea.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+</blockquote>
+
+<p>Eliminate <code class="language-plaintext highlighter-rouge">sudo</code> from your dictionary until you understand the consequences of running it. I ended up wasting countless hours troubleshooting the package and project configurations instead of focusing on the goal: learning to use the framework.</p>
+
+<p>I will show you the tools to set up macOS for web development. Here are topics I’ll cover in this post:</p>
+
+<ol id="markdown-toc">
+  <li><a href="#finder" id="markdown-toc-finder">Finder</a></li>
+  <li><a href="#xcode" id="markdown-toc-xcode">Xcode Command Line Tools</a></li>
+  <li><a href="#gitconfig" id="markdown-toc-gitconfig">Git Configuration</a>    <ol>
+      <li><a href="#gitconfig" id="markdown-toc-gitconfig">.gitconfig</a></li>
+      <li><a href="#gitignore" id="markdown-toc-gitignore">.gitignore</a></li>
+    </ol>
+  </li>
+  <li><a href="#homebrew" id="markdown-toc-homebrew">macOS Package Manager</a></li>
+  <li><a href="#version-manager" id="markdown-toc-version-manager">Version Manager for Programming Language</a>    <ol>
+      <li><a href="#rbenv" id="markdown-toc-rbenv">Setting Ruby Environment with rbenv</a></li>
+      <li><a href="#pyenv" id="markdown-toc-pyenv">Setting Python Environment with pyenv</a></li>
+      <li><a href="#n" id="markdown-toc-n">Setting Node.js Environment with <code class="language-plaintext highlighter-rouge">n</code></a></li>
+    </ol>
+  </li>
+  <li><a href="#dependency-manager" id="markdown-toc-dependency-manager">Dependency Manager</a>    <ol>
+      <li><a href="#bundler" id="markdown-toc-bundler">Manage Ruby Packages Dependencies with Bundler</a></li>
+      <li><a href="#poetry" id="markdown-toc-poetry">Manage Python Packages Dependencies with Poetry</a></li>
+    </ol>
+  </li>
+  <li><a href="#more-on-package-manager" id="markdown-toc-more-on-package-manager">More on Package Manager</a></li>
+</ol>
+
+<h2 id="finder">Finder</h2>
+
+<p>Files that start with dot prefix such as <code class="language-plaintext highlighter-rouge">.npm</code> don’t show up on Finder by default. Make them visible to see what folders and files are created whenever you install a package or initialize a project.</p>
+
+<p>Run this command in terminal to display hidden files:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">defaults write com.apple.finder AppleShowAllFiles TRUE &amp;&amp; killall Finder
+</span></code></pre></div></div>
+
+<p class="sidenote"><a href="https://itconnect.uw.edu/learn/workshops/online-tutorials/web-publishing/what-is-a-terminal/" title="What is a Terminal?">Terminals</a>, also known as command lines or consoles, allow us to accomplish and automate tasks on a computer without the use of a graphical user interface. Popular macOS terminals are <a href="https://support.apple.com/guide/terminal/welcome/mac" title="Terminal User Guide">macOS built-in Terminal</a>, <a href="https://iterm2.com/" title="iTerm2 - macOS Terminal Replacement">iTerm</a>, and <a href="https://hyper.is/" title="hyper.is">Hyper</a>.</p>
+
+<h2 id="xcode">Xcode Command Line Tools</h2>
+<p>You need to install command line tools on macOS separately. With Xcode Command Line Tools, you gain access to useful packages like version control system <code class="language-plaintext highlighter-rouge">git</code> and <code class="language-plaintext highlighter-rouge">svn</code>.</p>
+
+<p>Install the command line tools by running this command in terminal:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">xcode-select —install
+</span></code></pre></div></div>
+
+<p>You will be prompted with a popup window to install software. <a href="https://macpaw.com/how-to/install-command-line-tools" title="How to install command line tools on a Mac">Find the detailed tutorial to install Xcode Command Line Tools here</a>.</p>
+
+<h2 id="gitconfig">Git Configuration</h2>
+<p><a href="https://git-scm.com/" title="Git">Git</a> is the most popular version control system right now. It’s available to you when you installed command line tools earlier.</p>
+
+<p>Before creating your first commit, you have to configure these two files: <code class="language-plaintext highlighter-rouge">.gitconfig</code> and <code class="language-plaintext highlighter-rouge">.gitignore</code></p>
+
+<p class="sidenote">You can still follow this guide even if you’re new to Git. There are plenty of online resources that teach Git basic. Check out <a href="https://learngitbranching.js.org/" title="Learn Git Branching">this interactive introduction to Git</a>.</p>
+
+<h3 id="gitconfig">.gitconfig</h3>
+<p>Set a global username and email for <em>every</em> repository on your computer. You can <a href="https://help.github.com/en/github/using-git/setting-your-username-in-git" title="Setting your username in Git - GitHub Help">learn more about setting up your Git username here</a>, or you can run these commands in terminal.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git config --global user.name "First Last"
+git config --global user.email "email@example.com"
+</span></code></pre></div></div>
+
+<p>Sometimes you want to use a different email address for a separate repository. For example, using your work email address for workplace repositories.</p>
+
+<p>You can set a separate email address in local repository <code class="language-plaintext highlighter-rouge">.gitconfig</code> by running the same command without passing the <code class="language-plaintext highlighter-rouge">--global</code> option.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git config user.email "email@workplace.com"
+</span></code></pre></div></div>
+
+<h3 id="gitignore">.gitignore</h3>
+<p>Global <code class="language-plaintext highlighter-rouge">.gitignore</code> tells Git what files to ignore whenever you create a new repository. You want to exclude all the hidden files created by macOS by adding these lines into <code class="language-plaintext highlighter-rouge">.gitignore</code> file.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+</code></pre></div></div>
+
+<p class="sidenote">Your <code class="language-plaintext highlighter-rouge">.gitignore</code> content will be different based on what projects you’re going to develop often. <a href="https://github.com/github/gitignore" title="GitHub - github/gitignore: A collection of useful .gitignore templates">Browse for more templates here</a>.</p>
+
+<h2 id="homebrew">macOS Package Manager</h2>
+<p><a href="https://brew.sh/" title="The Missing Package Manager for macOS (or Linux) — Homebrew">Homebrew</a> is the most up to date package manager for macOS. You use it to install and manage packages that are not included with macOS. Paste this into the terminal to install Homebrew:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">/bin/bash -c "$</span><span class="o">(</span>curl <span class="nt">-fsSL</span> https://raw.githubusercontent.com/Homebrew/install/master/install.sh<span class="o">)</span><span class="s2">"
+</span></code></pre></div></div>
+
+<p>To learn more about it, you can read <a href="https://flaviocopes.com/homebrew/" title="A practical guide to Homebrew">a practical guide to Homebrew</a> by Flavio.</p>
+
+<h2 id="version-manager">Version Manager for Programming Language</h2>
+<p>If you’re going to choose front-end development as a career, you must understand one lesson: <strong>You don’t get to choose which version of programing language to work with</strong>.</p>
+
+<p>Your local environment setup must match the production environment setup.</p>
+
+<p>For example, macOS Catalina comes with a pre-installed Ruby 2.6.2 by default. If you work for a company that uses Ruby 2.5.0, well, you have to install Ruby 2.5.0 on macOS.</p>
+
+<p>Increase the number of projects, and you see why it’s crucial to have a specific tool to switch the version of your programming language on your local machine.</p>
+
+<blockquote>
+  <p>Version manager lets you install, manage, and switch multiple versions of a programming language easily. It maintains macOS system integrity by installing the programming language at the user directory level.</p>
+</blockquote>
+
+<p>Each programming language their own environment managers. Regardless of the programming language you’re using, I recommend installing these version managers:</p>
+
+<ul>
+  <li><a href="https://github.com/rbenv/rbenv" title="GitHub - rbenv/rbenv: Groom your app’s Ruby environment">rbenv</a> to manage Ruby.</li>
+  <li><a href="https://github.com/pyenv/pyenv" title="GitHub - pyenv/pyenv: Simple Python version management">pyenv</a> to manage Python.</li>
+  <li><a href="https://github.com/tj/n" title="GitHub - tj/n: Node version management">n</a> to manage Node.js.</li>
+</ul>
+
+<p>Enter the command line by line to install each package separately. Make sure to follow the instructions in the console after each complete installation. Some of them require you to add additional configurations in <code class="language-plaintext highlighter-rouge">.zshrc</code> or <code class="language-plaintext highlighter-rouge">.bash_profile</code>.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">brew install rbenv
+brew install pyenv
+brew install n
+</span></code></pre></div></div>
+
+<p class="sidenote">The <code class="language-plaintext highlighter-rouge">n</code> command installs the package to <code class="language-plaintext highlighter-rouge">/usr/local</code> by default. It will ask you to add <code class="language-plaintext highlighter-rouge">sudo</code> to execute the command. ** DON’T USE <code class="language-plaintext highlighter-rouge">sudo</code>**. Instead, copy and paste the following content to <code class="language-plaintext highlighter-rouge">.zshrc</code> or <code class="language-plaintext highlighter-rouge">.bash_profile</code> file. If you’re not sure where to find the file, you can type <code class="language-plaintext highlighter-rouge">open ~</code> into the terminal to locate the home folder.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
+</code></pre></div></div>
+
+<p>Once the package installations are complete, you should see these configurations in <code class="language-plaintext highlighter-rouge">.zshrc</code>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># n Configurations
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
+
+# rbenv Configurations
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# pyenv configuration
+eval "$(pyenv init -)"
+</code></pre></div></div>
+
+<p>You can add the configurations above to <code class="language-plaintext highlighter-rouge">.zshrc</code> if you don’t see them as part of the content.</p>
+
+<h3 id="rbenv">Setting Ruby Environment with rbenv</h3>
+<p>Most people prefer <code class="language-plaintext highlighter-rouge">rbenv</code> to <code class="language-plaintext highlighter-rouge">rvm</code> for <a href="https://github.com/rbenv/rbenv/wiki/Why-rbenv?">many reasons</a>. If you’re not sure which version manager to use, choose <code class="language-plaintext highlighter-rouge">rbenv</code>.</p>
+
+<p>Here’s how to install the latest Ruby version on macOS with <code class="language-plaintext highlighter-rouge">rbenv</code>. List all the available versions by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">rbenv install -l
+</span></code></pre></div></div>
+
+<p>Scroll up to find the latest stable version. You can also <a href="https://www.google.com/search?rls=en&amp;q=latest+stable+ruby+version">google</a> for it. The latest stable version while I work on this post is <code class="language-plaintext highlighter-rouge">2.7.1</code>. Install the selected version with this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">rbenv install 2.7.1
+</span></code></pre></div></div>
+
+<p>Wait until the installation is complete. Set the global environment to the latest version by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">rbenv global 2.7.1
+</span></code></pre></div></div>
+
+<p>To revert back to the system version, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">rbenv global system
+</span></code></pre></div></div>
+
+<h3 id="pyenv">Setting Python Environment with pyenv</h3>
+<p>I install <code class="language-plaintext highlighter-rouge">pyenv</code> because some packages I use are written with Python. You’re also going to need it if you plan to develop using web frameworks like <a href="https://www.djangoproject.com/" title="The Web framework for perfectionists with deadlines - Django">Django</a>, <a href="https://flask.palletsprojects.com/" title="flask.palletsprojects.com">Flask</a>, and <a href="https://cherrypy.org/" title="CherryPy — A Minimalist Python Web Framework">CherryPy</a>.</p>
+
+<p>To list all the available versions, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pyenv install -l
+</span></code></pre></div></div>
+
+<p><a href="https://www.python.org/downloads/" title="Download Python - Python.org">Find out the latest stable version</a>. To install the latest version of Python with <code class="language-plaintext highlighter-rouge">pyenv</code>, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pyenv install 3.8
+</span></code></pre></div></div>
+
+<p>To set the global environment to a specific version, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pyenv global 3.8
+</span></code></pre></div></div>
+
+<p>To revert the global environment back to the system version, run:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pyenv global system
+</span></code></pre></div></div>
+
+<h3 id="n">Setting Node.js Environment with <code class="language-plaintext highlighter-rouge">n</code></h3>
+<p>Some of the packages installed on Sublime Text requires <code class="language-plaintext highlighter-rouge">node</code> to run. You also need the built-in package manager <code class="language-plaintext highlighter-rouge">npm</code> if you plan to develop website with JavaScript framework like <a href="https://vuejs.org" title="vuejs.org">Vue.js</a>, <a href="https://www.gatsbyjs.org/" title="www.gatsbyjs.org">Gatsby.js</a>, and <a href="https://svelte.dev/" title="Svelte • Cybernetically enhanced web apps">Svelte</a>.</p>
+
+<p>To install the latest Node.js, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">n latest
+</span></code></pre></div></div>
+
+<p>To switch to other version, for example version 13.0.1, run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">n 13.0.1
+</span></code></pre></div></div>
+
+<p class="sidenote">It will download and install the requested version if it’s not available locally. Since Node.js is not installed by default. There is no way to set the system version on macOS.</p>
+
+<h2 id="dependency-manager">Dependency Manager</h2>
+<p>Dependency manager can also function as a package manager, but their purpose is more tailored on a per-project basis. <a href="https://getcomposer.org/doc/00-intro.md#dependency-management">Composer’s website</a> explains the difference between dependency and package manager best.</p>
+
+<blockquote>
+  <p>Composer is not a package manager in the same sense as Yum or Apt are. Yes, it deals with “packages” or libraries, but it manages them on a per-project basis, installing them in a directory (e.g. vendor) inside your project. By default it does not install anything globally. Thus, it is a dependency manager. It does however support a “global” project for convenience via the global command.</p>
+</blockquote>
+
+<p>Here are some advantages of using dependency manager:</p>
+
+<ul>
+  <li>It keeps your user (global) library clean from project specific packages.</li>
+  <li>It lets people run your project easily without messing with their user library.</li>
+  <li>It separates the project source code from libraries code base by installing the packages in the project directory (local).</li>
+  <li>It simplifies the process to manage and upgrade the libraries by updating the dependency file: Node.js <code class="language-plaintext highlighter-rouge">package.json</code> or Bundler <code class="language-plaintext highlighter-rouge">Gemfile</code>.</li>
+</ul>
+
+<h3 id="bundler">Manage Ruby Packages Dependencies with Bundler</h3>
+
+<p><a href="https://bundler.io/" title="Bundler: The best way to manage a Ruby application's gems">Bundler</a> is the best way to manage Ruby packages known as gems. It’s important to install Bundler if you want to develop a <a href="https://jekyllrb.com/" title="Jekyll • Simple, blog-aware, static sites - Transform your plain text into static websites and blogs">Jekyll</a> site.</p>
+
+<p>You can learn more about Bundler by following the tutorial on <a href="https://sayzlim.net/create-jekyll-site-beginners/">how to start a Jeklyll project from scratch</a>.</p>
+
+<p>Run this command to install Bundler:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">gem install bundler
+</span></code></pre></div></div>
+
+<h3 id="poetry">Manage Python Packages Dependencies with Poetry</h3>
+<p><a href="https://python-poetry.org/" title="Poetry - Python dependency management and packaging made easy.">Poetry</a> is getting more popular these days among Python developers. <a href="https://johnfraney.ca/posts/2019/03/06/pipenv-poetry-benchmarks-ergonomics/" title="Pipenv and Poetry: Benchmarks &amp; Ergonomics · JF's Dev Blog">It’s faster</a>.</p>
+
+<p>You shouldn’t install Poetry with <code class="language-plaintext highlighter-rouge">brew install poetry</code> because it can only use the Python environment that comes with Homebrew.</p>
+
+<p>To pair the simplicity of <code class="language-plaintext highlighter-rouge">pyenv</code> with <code class="language-plaintext highlighter-rouge">poetry</code>, you have to follow the installation instructions on the official site by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+</span></code></pre></div></div>
+
+<p>Verify that Poetry has been installed correctly with this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">which poetry
+</span></code></pre></div></div>
+
+<p>If the installation path is correct, you will see something like this:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">
+</span><span class="gp">/Users/&lt;your.macos.username&gt;</span>/.poetry/bin/poetry
+<span class="go">
+</span></code></pre></div></div>
+
+<h2 id="more-on-package-manager">More on Package Manager</h2>
+<p>Package manager is not as relevant as dependency manager because web development is usually project based. You rarely have to install packages globally, but it’s a great way to install useful tools.</p>
+
+<p>Think of package manager as an app store for each language.</p>
+
+<ul>
+  <li>Node.js has <code class="language-plaintext highlighter-rouge">npm</code> and <code class="language-plaintext highlighter-rouge">yarn</code></li>
+  <li>Ruby has <code class="language-plaintext highlighter-rouge">gem</code></li>
+  <li>Python has <code class="language-plaintext highlighter-rouge">pip</code> or <code class="language-plaintext highlighter-rouge">pip3</code></li>
+</ul>
+
+<p>For example, I found a Python package called <a href="https://github.com/dilshod/xlsx2csv" title="GitHub - dilshod/xlsx2csv: Convert xslx to csv, it is fast, and works for huge xlsx files">xlsx2csv</a> that can convert <code class="language-plaintext highlighter-rouge">xlsx</code> to <code class="language-plaintext highlighter-rouge">csv</code> through terminal. I can install it globally by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pip install xlsx2csv
+</span></code></pre></div></div>
+
+<p>Instead of installing the package with <code class="language-plaintext highlighter-rouge">poetry</code>, I decided to install the package with <code class="language-plaintext highlighter-rouge">pip</code> to make the command accessible anytime in console, not restricted to a project.</p>
+
+<p>It makes automation with easier.</p>
+
+<p>You can view all the installed Python packages with this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">pip list
+</span></code></pre></div></div>
+
+<p>Another great example is <a href="https://cli.vuejs.org/" title="Vue CLI">Vue CLI</a>. It’s a command line tool that is built to help you create a new Vue project quickly. You install it by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm install -g @vue/cli
+</span></code></pre></div></div>
+
+<p>By adding <code class="language-plaintext highlighter-rouge">-g</code>, you tell <code class="language-plaintext highlighter-rouge">npm</code> to install <code class="language-plaintext highlighter-rouge">@vue/cli</code> globally. To see the installed modules on your machine, you can run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm list -g --depth 0
+</span></code></pre></div></div>
+
+<h2 class="no_toc" id="further-readings">Further Readings</h2>
+<ul>
+  <li><a href="https://www.taniarascia.com/how-to-use-the-command-line-for-apple-macos-and-linux/" title="www.taniarascia.com">How to Use the Command Line for Apple macOS and Linux</a></li>
+  <li><a href="https://www.quora.com/Why-do-we-need-package-manager-for-front-end-development">Why do we need package manager for front end development?</a></li>
+  <li><a href="https://blog.tidelift.com/a-brief-history-of-package-management" title="A brief history of package management">A brief history of package management</a></li>
+  <li><a href="https://opensource.com/article/18/7/evolution-package-managers" title="The evolution of package managers - Opensource.com">The evolution of package managers</a></li>
+</ul>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>“Development machines, production machines, or machines from any environment shouldn’t be using sudo npm or sudo yarn (and probably shouldn’t be using sudo at all)” — <a href="https://medium.com/@ExplosionPills/dont-use-sudo-with-npm-still-66e609f5f92" title="Don't Use `sudo` with `npm` …still">Don’t Use <code class="language-plaintext highlighter-rouge">sudo</code> with <code class="language-plaintext highlighter-rouge">npm</code> …still</a>. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How to Create a Jekyll Site from Scratch]]></title>
+    <link href="https://sayzlim.net/create-jekyll-site-beginners/"/>
+    <updated>2020-05-07T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/create-jekyll-site-beginners</id>
+    <content type="html"><![CDATA[<p>I recently migrated from <a href="http://octopress.org/" title="Octopress">Octopress</a> to <a href="https://jekyllrb.com/" title="Jekyll • Simple, blog-aware, static sites - Transform your plain text into static websites and blogs">Jekyll</a> after I’ve figured out how to build a vanilla Jekyll project. In this tutorial, you’re going to learn how to start a new project and manage the dependencies correctly.</p>
+
+<h2 id="why-another-jekyll-tutorial">Why Another Jekyll Tutorial?</h2>
+<p>Most of the online tutorials don’t address my main concern with learning a new framework.</p>
+
+<blockquote>
+  <p>How do I build a Jekyll site without a built-in theme and dependencies? I want to make everything from scratch.</p>
+</blockquote>
+
+<p>You’re likely to find this tutorial useful if you fit into the following criteria:</p>
+
+<ul>
+  <li>Comfortable developing a website with only HTML, CSS, and JavaScript.</li>
+  <li>Use version control like Git to track and deploy your projects.</li>
+  <li>Understand the advantage of using <a href="https://brew.sh/" title="The Missing Package Manager for macOS (or Linux) — Homebrew">Homebrew</a> to manage packages.</li>
+  <li>Prefer to use version managers like <a href="http://rbenv.org" title="Simple Ruby version management: rbenv">rbenv</a>, <a href="https://pypi.org/project/pipenv/" title="pipenv · PyPI">pipenv</a>, and <a href="https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc" title="Install NVM On Mac With Brew - James Auble">nvm</a> to avoid running <code class="language-plaintext highlighter-rouge">sudo</code> when installing Ruby, Python, or Node on your working machine.</li>
+</ul>
+
+<h2 id="recommended-way-to-start-a-new-jekyll-project">Recommended Way to Start a New Jekyll Project</h2>
+
+<p>There is a <a href="https://jekyllrb.com/docs/" title="Quickstart - Jekyll • Simple, blog-aware, static sites">quick way to start a Jekyll site</a>, but we’re going to <strong>choose the best way</strong> by starting the project with Bundler.</p>
+
+<blockquote>
+  <p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p>
+</blockquote>
+
+<p>With Bundler, you can clone your repository and get the Jekyll site running in minutes. Read more about <a href="https://jekyllrb.com/tutorials/using-jekyll-with-bundler/" title="Using Jekyll with Bundler - Jekyll • Simple, blog-aware, static sites">installing Jekyll with Bundler</a>. Run the command lines below to create a <code class="language-plaintext highlighter-rouge">my-jekyll-website</code> folder  and set up a bundle.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mkdir my-jekyll-website
+cd my-jekyll-website
+bundle init
+</span></code></pre></div></div>
+
+<p>This is optional, but I prefer to install the bundle in the project subdirectory to avoid permission errors you might get during the gem installation.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle config set --local path 'vendor/bundle'
+</span></code></pre></div></div>
+
+<p>Instead of running <code class="language-plaintext highlighter-rouge">bundle add jekyll</code> to add Jekyll as a dependency for your new project, you want add this line item <code class="language-plaintext highlighter-rouge">gem "jekyll", github: "jekyll/jekyll"</code> to the <code class="language-plaintext highlighter-rouge">Gemfile</code>.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Replace the content of <code class="language-plaintext highlighter-rouge">Gemfile</code> with the following snippet.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source "https://rubygems.org"
+gem "jekyll", github: "jekyll/jekyll"
+</code></pre></div></div>
+
+<p class="sidenote">A <strong>Gemfile</strong> is a file we create which is used for describing gem dependencies for Ruby programs. A gem is a collection of Ruby code that we can extract into a “collection” which we can call later. — <a href="https://tosbourn.com/what-is-the-gemfile/" title="What is a Gemfile">Tosbourn</a></p>
+
+<p>Install the gems required to run Jekyll with the command below. Wait until the installation process is complete.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle install
+</span></code></pre></div></div>
+
+<p>Run the following command to create a new Jekyll folder called <code class="language-plaintext highlighter-rouge">source</code> that contains your source code. We need to add <code class="language-plaintext highlighter-rouge">--blank</code> option to create a blank Jekyll directory structure to help you understand the purpose of each file and folder.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll new source --blank
+</span></code></pre></div></div>
+
+<p>Move <code class="language-plaintext highlighter-rouge">_config.yml</code> from the <code class="language-plaintext highlighter-rouge">source</code> directory to the root directory by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mv source/_config.yml .
+</span></code></pre></div></div>
+
+<p>Here’s the directory structure of your Jekyll project.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my-jekyll-website/
+  | source/
+  | vendor/
+  | _config.yml
+  | Gemfile
+  | Gemfile.lock
+</code></pre></div></div>
+
+<p>Execute the following command to build and serve the site locally.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll serve
+</span></code></pre></div></div>
+
+<p>You will see this build warning in the console.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Build Warning: Layout 'default' requested in source/index.md does not exist.
+</span></code></pre></div></div>
+
+<p>The first line mentioned that the homepage <code class="language-plaintext highlighter-rouge">index.md</code> is using the <code class="language-plaintext highlighter-rouge">default</code> layout that doesn’t exist. This is happening because <code class="language-plaintext highlighter-rouge">_config.yml</code> tried to build the site using the folders from the same directory, which happened to be in the <code class="language-plaintext highlighter-rouge">source</code> folder. We can fix this error by updating <code class="language-plaintext highlighter-rouge">config.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the name of your site, e.g. ACME Corp.</span>
+
+<span class="c1"># Set the source folder</span>
+<span class="na">source</span><span class="pi">:</span> <span class="s">source</span>
+</code></pre></div></div>
+
+<p>Rebuild the site with this command that tells Jekyll to incrementally update the site whenever it detects change with any of the files.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll serve --incremental
+</span></code></pre></div></div>
+
+<p>You should be able to view the site by visiting <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>. Congratulations! You’ve learned how to set up and build a Jekyll site.</p>
+
+<h2 id="development-with-jekyll">Development with Jekyll</h2>
+
+<p>This is the most <em>exciting</em> and time-consuming step in the whole process: <strong>developing your Jekyll website from scratch</strong>.</p>
+
+<p>Jekyll is a static site generator, so you can create <code class="language-plaintext highlighter-rouge">index.html</code> in the source directory to build a single-page website.</p>
+
+<p>But, we’re not going to settle with a single page site.</p>
+
+<p>We’re building a site that comes with a blog, a site that can have many posts and pages, and a site where you can experiment with a different type of layouts.</p>
+
+<h2 id="setting-up-git">Setting Up Git</h2>
+
+<p>Before we start making changes to the project, we want to use Git to track any updates with our files. Go ahead and run <code class="language-plaintext highlighter-rouge">git init</code> to track your project while you’re in the console. You also want to add these lines to <code class="language-plaintext highlighter-rouge">.gitignore</code> file found in the folder.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Jekyll
+.bundle
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+_site/
+Gemfile.lock
+vendor/
+</code></pre></div></div>
+
+<p class="sidenote">You can also add these lines above into your global <code class="language-plaintext highlighter-rouge">.gitignore</code> that can be found in <code class="language-plaintext highlighter-rouge">~/.gitignore</code>. It’s useful to add them as a global setting if you find yourself developing many Jekyll projects in the future.</p>
+
+<h2 id="jekyll-directory-structure">Jekyll Directory Structure</h2>
+<p>Jekyll is the most elegant static site generator I’ve used. It’s the only framework where I only have to deal with HTML, CSS, and Markdown files.</p>
+
+<p>Each folder created in the source directory has a purpose. I recommend that you read the explanation of the <a href="https://jekyllrb.com/docs/structure/" title="Directory Structure - Jekyll • Simple, blog-aware, static sites">directory structure</a> before you continue with this tutorial.</p>
+
+<blockquote>
+  <p>The first concept we need to remember is <em>any post or page in Markdown format can be rendered as a special file only when we’ve added a valid <strong>front matter</strong> at the beginning of the document</em>. I’ve spent many hours unable to figure out why some pages don’t show up correctly because I forgot about this concept.</p>
+</blockquote>
+
+<p class="sidenote"><a href="https://jekyllrb.com/docs/front-matter/">Front Matter</a> — it must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">index.md</code> inside <code class="language-plaintext highlighter-rouge">source</code> directory to see its content. You will find that <code class="language-plaintext highlighter-rouge">layout</code> variable is set inside the front matter.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+---
+</code></pre></div></div>
+
+<p>It tells Jekyll to use the <code class="language-plaintext highlighter-rouge">default.html</code> found inside <code class="language-plaintext highlighter-rouge">_layouts</code> folder as its parent layout. If you modify anything in <code class="language-plaintext highlighter-rouge">default.html</code>, it will also be rendered for any page that uses <code class="language-plaintext highlighter-rouge">default.html</code> as the layout.</p>
+
+<p>You’re probably wondering how <code class="language-plaintext highlighter-rouge">index.md</code> content shows up in <code class="language-plaintext highlighter-rouge">default.html</code>. Let’s learn more about it by checking out the content:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"{{ site.lang | default: "</span><span class="na">en-US</span><span class="err">"</span> <span class="err">}}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;title&gt;</span>{{ page.title }} - {{ site.title }}<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"{{ "</span><span class="err">/</span><span class="na">assets</span><span class="err">/</span><span class="na">css</span><span class="err">/</span><span class="na">main.css</span><span class="err">"</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    {{ content}}
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">{{ content }}</code> tag tells Jekyll to load the content of a post or page that uses this layout.</p>
+
+<p class="sidenote">You must remember that <code class="language-plaintext highlighter-rouge">_layouts</code> folder is your building blocks to design a website. The only time you want to modify anything inside this folder is whenever you want to change your site HTML structure. You never have to write the content directly here.</p>
+
+<p>Typically, you want to use <code class="language-plaintext highlighter-rouge">default.html</code> as the first building block for other layouts you’re going to create. Here’s a common way to structure the <code class="language-plaintext highlighter-rouge">_default.html</code>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">'en'</span><span class="nt">&gt;</span>
+{% include head.html %}
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    {% include header.html %}
+    {{ content }}
+    {% include sidebar.html %}
+    {% include footer.html %}
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+
+</code></pre></div></div>
+
+<p>Notice that we’re using <code class="language-plaintext highlighter-rouge">{% include &lt;filename.ext&gt; %}</code> tag several times. It tells Jekyll to include the corresponding files that are found inside <code class="language-plaintext highlighter-rouge">_includes</code> folder.</p>
+
+<p>You can treat anything inside <code class="language-plaintext highlighter-rouge">_includes</code> folder as components for you to use in your layout or post. You can also create more folders there to further organize your components.</p>
+
+<p>Here is what I have in the folder when this post is published. You’re going to create additional components as you build a more complex layout, or by adding various sections on your site.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_includes/
+  | custom/
+    | extra.html
+    | opengraph.html
+    | twitter_card.html
+  | footer.html
+  | head.html
+  | header.html
+  | sidebar.html
+</code></pre></div></div>
+
+<h2 id="organize-pages-with-collections">Organize Pages with Collections</h2>
+<p>We’re halfway into this tutorial, but we haven’t discussed anything about the <code class="language-plaintext highlighter-rouge">posts</code> folder.</p>
+
+<p>Let’s take a break.</p>
+
+<p>Good?</p>
+
+<p>You want to make your website looks alive with many pages. You don’t want to have a homepage full of blog posts without other pages to feature a different type of content.</p>
+
+<p>There are two ways to create a new page.</p>
+
+<p>First, you can add more pages by creating a new folder named after the permalink you want to use, and put an <code class="language-plaintext highlighter-rouge">index.md</code> or <code class="language-plaintext highlighter-rouge">index.html</code> in the folder. For example, here is how the source directory looks like if you want to create an <code class="language-plaintext highlighter-rouge">about</code> page with this method.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source/
+  | _data/
+  | _drafts/
+  | _includes/
+  | _layouts/
+  | _posts/
+  | _sass/
+  | about/
+    | index.html
+  | assets/
+  | posts/
+  | index.html
+</code></pre></div></div>
+
+<p>This is the easiest way to create a new page, but you may find that your <code class="language-plaintext highlighter-rouge">source</code> folder cluttered with folders if you’re creating many pages.</p>
+
+<p>There is a better way to create pages in Jekyll. We’re going to use <a href="https://jekyllrb.com/docs/collections/" title="Collections - Jekyll • Simple, blog-aware, static sites">collections</a>.</p>
+
+<p>Start by creating a new folder called <code class="language-plaintext highlighter-rouge">_pages</code> on the same directory level as others. Create a new file called <code class="language-plaintext highlighter-rouge">about.html</code> and put it inside <code class="language-plaintext highlighter-rouge">_pages</code> folder.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+title: About
+permalink: /about/
+---
+Tell people about yourself.
+</code></pre></div></div>
+
+<p>You will find a new variable called <code class="language-plaintext highlighter-rouge">permalink</code> inside the front matter. You can change it into <code class="language-plaintext highlighter-rouge">permalink: /me/</code> if you want the about page accessible from visiting <a href="http://127.0.0.1:4000/me/">http://127.0.0.1:4000/me/</a></p>
+
+<p>The pages won’t be accessible yet because there is one more step left. We’ve to set up the collections by adding these lines to <code class="language-plaintext highlighter-rouge">_config.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Jekyll Collections</span>
+<span class="na">collections</span><span class="pi">:</span>
+  <span class="na">pages</span><span class="pi">:</span>
+    <span class="na">output</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Set to render files in _pages folder</span>
+    <span class="na">permalink</span><span class="pi">:</span> <span class="s">/:title/</span> <span class="c1"># Set the format of the permalink by default </span>
+</code></pre></div></div>
+
+<p>Visit <a href="http://127.0.0.1:4000/about/">http://127.0.0.1:4000/about/</a> again should load the page.</p>
+
+<p>With the <code class="language-plaintext highlighter-rouge">_pages</code> folder ready, you can add more pages by creating <code class="language-plaintext highlighter-rouge">html</code> or <code class="language-plaintext highlighter-rouge">markdown</code> files in the folder. The structure remains organized even after we’ve added a contact and portfolio page.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source/
+  | _data/
+  | _drafts/
+  | _includes/
+  | _layouts/
+  | _posts/
+  | _pages/
+    | about.html
+    | contact.html
+    | portfolio.html
+  | _sass/
+  | assets/
+  | posts/
+  | index.html
+</code></pre></div></div>
+
+<h2 id="pagination-and-iteration-with-posts">Pagination and Iteration with Posts</h2>
+
+<p>If you’ve published any posts from your previous setup, you can copy markdown files into the new project <code class="language-plaintext highlighter-rouge">posts</code> folder. We’re going to use actual content to start building the posts page.</p>
+
+<p>Pagination is the most important feature on the posts page because we want to avoid displaying all the posts on a single page. Instead of using <code class="language-plaintext highlighter-rouge">jekyll-paginate</code> recommended by Jekyll, we’re going to use  <code class="language-plaintext highlighter-rouge">jekyll-paginate-v2</code> to create a paginated posts page.</p>
+
+<p>Open <code class="language-plaintext highlighter-rouge">Gemfile</code> and update its content into:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem "jekyll", github: "jekyll/jekyll"
+group :jekyll_plugins do
+  gem 'jekyll-paginate-v2'
+end
+</code></pre></div></div>
+
+<p class="sidenote">There are <a href="https://jekyllrb.com/docs/plugins/installation/" title="Plugins \| Jekyll • Simple, blog-aware, static sites">three ways to install plugins</a>, but I recommend using <code class="language-plaintext highlighter-rouge">Gemfile</code> because we started with Bundler to manage the dependencies.</p>
+
+<p>To enable pagination, you need to configure the pagination settings in <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
+<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
+<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the name of your site, e.g. ACME Corp.</span>
+<span class="na">source</span><span class="pi">:</span> <span class="s">source</span>
+
+<span class="c1"># Pagination</span>
+<span class="na">pagination</span><span class="pi">:</span>
+  <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># must be set to true</span>
+  <span class="na">per_page</span><span class="pi">:</span> <span class="m">10</span> <span class="c1"># number of posts displayed per page</span>
+  <span class="na">permalink</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/page/:num/'</span> <span class="c1"># the pagination format</span>
+  <span class="na">sort_reverse</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># show the latest post first</span>
+
+<span class="c1"># Collections</span>
+<span class="na">collections</span><span class="pi">:</span>
+  <span class="na">pages</span><span class="pi">:</span>
+    <span class="na">output</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Set to render files in _pages folder</span>
+    <span class="na">permalink</span><span class="pi">:</span> <span class="s">/:title/</span> <span class="c1"># Set the format of the permalink by default </span>
+</code></pre></div></div>
+
+<p>You can now access <code class="language-plaintext highlighter-rouge">paginator</code> liquid object to iterate every post as long you’ve enabled it in the front matter.</p>
+
+<p>Depending on where you want to display your latest posts, you will have a different directory structure. If you’re going to show the latest posts and pagination on the homepage, you can rename <code class="language-plaintext highlighter-rouge">index.md</code> into <code class="language-plaintext highlighter-rouge">index.html</code> and update the content with this:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+---
+layout: default
+pagination: 
+  enabled: true # Enable pagination on this page
+---
+
+<span class="c">&lt;!-- This loops through the paginated posts --&gt;</span>
+{% for post in paginator.posts %}
+  <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"date"</span><span class="nt">&gt;</span>{{ post.date }}<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+    {{ post.content }}
+  <span class="nt">&lt;/div&gt;</span>
+{% endfor %}
+
+<span class="c">&lt;!-- Pagination links --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+  {% if paginator.previous_page %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.previous_page_path }}"</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;</span>
+      Previous
+    <span class="nt">&lt;/a&gt;</span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.next_page_path }}"</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+  {% endif %}
+<span class="nt">&lt;/div&gt;</span>
+
+</code></pre></div></div>
+
+<p>Your site now supports the basic features of a blogging platform. You can create more pages by creating files in <code class="language-plaintext highlighter-rouge">_pages</code> folder. Here are more tips and resources to help you get started developing your site:</p>
+
+<ul>
+  <li><a href="https://shopify.github.io/liquid/" title="Liquid template language">Learn about Liquid filters and tags</a> because it’s the primary language to code the site.</li>
+  <li><a href="https://jekyllrb.com/docs/liquid/filters/" title="Liquid Filters - Jekyll • Simple, blog-aware, static sites">Learn about Jekyll filters</a> that are useful to format date, sort data, and manage arrays.</li>
+  <li><a href="https://jekyllrb.com/docs/configuration/environments/" title="Environments - Jekyll • Simple, blog-aware, static sites">Specifying Jekyll environment value</a> to separate content for development and production.</li>
+  <li>Learn more about <code class="language-plaintext highlighter-rouge">_data</code> folder and how you can use it to populate repetitive data.</li>
+</ul>
+
+<h2 id="deployment-to-github-pages">Deployment to GitHub Pages</h2>
+
+<p>Check out <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site" title="Configuring a custom domain for your GitHub Pages site - GitHub Help">how to configure custom domain on GitHub Pages</a> if you haven’t done so. If you’ve already published your site on GitHub, you want to clone the repository to your desktop by using this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">git clone &lt;your_github_repo_url&gt;</span><span class="w"> </span>~/Desktop/_site
+</code></pre></div></div>
+
+<p>Replace your Jekyll <code class="language-plaintext highlighter-rouge">_site</code> folder with the cloned <code class="language-plaintext highlighter-rouge">_site</code> folder from GitHub. You should see that the folder contains files like <code class="language-plaintext highlighter-rouge">CNAME</code> and <code class="language-plaintext highlighter-rouge">.git</code>. To prevent Jekyll from removing them whenever we build the site, we need to exclude them by adding this line into <code class="language-plaintext highlighter-rouge">_config.yml</code></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">keep_files</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">CNAME</span><span class="pi">,</span> <span class="nv">.git</span><span class="pi">]</span>
+</code></pre></div></div>
+
+<p>To build for the production, you can enter this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">JEKYLL_ENV=production bundle exec jekyll build
+</span></code></pre></div></div>
+
+<p>It will override the content of <code class="language-plaintext highlighter-rouge">_site</code> folder with the new one. Once you’re satisfied with your site, you can push the commit back to GitHub to make the new site live.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Jekyll is the first framework I can use to swiftly build and deploy a static site from scratch. It provides me with the environment to practice the fundamental of building a semantic and responsive site with HTML/CSS.</p>
+
+<p>I know there are people like me who prefer to keep the website development process simple: a plain old HTML, CSS, and maybe some JavaScript to spice up the site.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>There is a bug with the version of Jekyll that is hosted on RubyGems.org. That’s why you want to use the latest stable release from the repository directly. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Getting to Know CleanMyMac]]></title>
+    <link href="https://sayzlim.net/getting-to-know-cleanmymac/"/>
+    <updated>2017-10-29T15:54:00+07:00</updated>
+    <id>https://sayzlim.net/getting-to-know-cleanmymac</id>
+    <content type="html"><![CDATA[<p>I’ve been using CleanMyMac since 2012. It completes macOS by offering various tools to maintain and review the system status easily from the dashboard.</p>
+
+<!-- more -->
+
+<p>CleanMyMac doesn’t do anything special. You can replicate its features by executing commands in the Terminal or install other utilities. For example, you can uninstall the app using <a href="https://freemacsoft.net/appcleaner/" title="AppCleaner">AppCleaner</a>, purge the DNS with a terminal command, or free up some space with <a href="https://ingmarstein.github.io/Monolingual/" title="Monolingual for Mac">Monolingual</a>.</p>
+
+<p>Only, if you’re bothered to put these utilities together and actively maintain them.</p>
+
+<p>The most significant CleanMyMac feature comes from how well these small pieces of tasks fit together as a single app.</p>
+
+<h3 id="1-clean-uninstall-app-with-alfred">1. Clean Uninstall App with Alfred</h3>
+
+<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-uninstaller.jpg" title="CleanMyMac - Uninstaller"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-uninstaller.jpg" alt="CleanMyMac - Uninstaller" title="CleanMyMac - Uninstaller" /> </a></p>
+
+<p>CleanMyMac offers a menu bar companion utility to monitor the number of free space on your Mac. What makes the menu bar utility useful is that it will help you clean uninstall whenever you move an app to Trash.</p>
+
+<p>I‘m not a fan of having another background task running, so I decide to proactively uninstall the app by using Alfred’s <code class="language-plaintext highlighter-rouge">Open With…</code> action command. You simply search for the app you want to uninstall and choose to open with CleanMyMac.</p>
+
+<h3 id="2-the-macos-maintenance-tasks">2. The macOS Maintenance Tasks</h3>
+
+<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-maintenance.jpg" title="CleanMyMac - Maintenance Tasks"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-maintenance.jpg" alt="CleanMyMac - Maintenance Tasks" title="CleanMyMac - Maintenance Tasks" /> </a></p>
+
+<p>There aren’t many things you have to deal with by using macOS as your operating system, but you do have to run some tasks from time to time. I like the Maintenance section where I can execute commands to maintain the system. Each command includes a brief explanation of what it does and how often you have to run it. For example, if you encounter problems with your “Open with…” list of apps, you can run Rebuild Launch Services which reset the list of indexed apps.</p>
+
+<h3 id="3-the-cleanmymac-menu-item">3. The CleanMyMac Menu Item</h3>
+
+<p>The menu item provides you with the overview of your Mac health and performance. You can quickly free up inactive memory which can be allocated for other active processes. It diagnoses and monitors any problems Mac and reminds you about it before you even realize something is wrong with macOS. You can <a href="https://macpaw.com/cleanmymac/cleanmymac-menu" title="CleanMyMac 3 Menu - Quick Access to Cleaning and Health Monitoring">learn more about CleanMyMac Menu here</a>.</p>
+
+<h3 id="4-reclaiming-free-space">4. Reclaiming Free Space</h3>
+<p>The initial design for CleanMyMac is reclaiming as much space as you can. It achieves its goal by removing unused languages from each app and freeing up the caches that are no longer in uses. Removing caches can be a sensitive issue because some apps perform better with caches left on the hard drive. For example, Spotify caches the music you often play, so it doesn’t have to load them from the server.</p>
+
+<p>This is an area that even CleanMyMac is still improving. If you’re not careful, you might remove the settings in your Safari extensions. I recommend that you’re not removing anything from your browsrs and use the built-in clear caches feature instead.</p>
+
+<p>Most of the times, you can run Smart Cleanup and remove those unnecessary caches without encountering any significant problems. Take note that that the system is imperfect. You probably don’t have to clear the browser caches every day if you visit the same sites often. I recommend that you run this option once every two months.</p>
+
+<h3 id="5-see-every-extensions-installed">5. See Every Extensions Installed</h3>
+
+<p>You will find an Extensions section under Utilities. This is my favorite section, and it’s where I spend most of my time while using CleanMyMac. It shows you every extension that is enabled in each app.</p>
+
+<p>Extensions are mostly hidden inside the system folder. Most Mac users don’t know how to see which extensions are installed on their system. This section shows you these enabled extensions so you can disable the one you’re not using.</p>
+
+<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-extensions.jpg" title="CleanMyMac - QuickLook Extensions"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-extensions.jpg" alt="CleanMyMac - QuickLook Extensions" title="CleanMyMac - QuickLook Extensions" /> </a></p>
+
+<p>Quick Look Plugins is a collection of extension to make Quick Look more useful in previewing file contents. I shared some <a href="https://sayzlim.net/must-have-macos-quicklook-plugins/" title="Must Have macOS Quick Look Plugins - Sayz Lim">must have Quick Look plugins</a> before, check it out if you haven’t done it.</p>
+
+<p>Services, on the other hand, is the list of commands that you can run whenever you select a file, text, or image. You can run it in the menu bar or event with the secondary click. Some apps come with pre-built services. For example, CleanMyMac comes with a service to securely erase files, and Spark comes with a command Create an Email from Selection.</p>
+
+<p>CleanMyMac does a decent job at listing all the apps with their services, but in term of layout, <a href="http://macosxautomation.com/services/servicesmanager/" title="Mac OS X Automation: Services Manager">Services Manager</a> (no longer supported in macOS Sierra) does a better job and toggling the services.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>Overall, CleanMyMac is a nice utility I would love to have on my Mac. It’s the best app for cleaning up your Mac where they can also focus on educating the users with information to keep your Mac healthy. There are many similar apps out there, but you can rarely find the apps that are built with such detailed animation and robust underlying system to be future-proof.</p>
+
+<p><strong>You can also support my works by <a href="https://macpaw.7eer.net/c/345957/66209/1733" title="Buy CleanMyMac">purchasing CleanMyMac with my referral link</a>.</strong></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Edit in Grammarly Macro]]></title>
+    <link href="https://sayzlim.net/edit-in-grammarly-macro/"/>
+    <updated>2017-03-20T08:02:00+07:00</updated>
+    <id>https://sayzlim.net/edit-in-grammarly-macro</id>
+    <content type="html"><![CDATA[<p>The only limitation with Grammarly is the incapability to check your writing in other macOS application. You have to paste the selected text into Grammarly, edit the found mistakes, and move the result back into the origin of the selected text app. The process can be simplified with this macro.</p>
+
+<!-- more -->
+
+<p><a href="https://images.sayzlim.net/2017/03/grammarly-macro.jpg" title="Edit in Grammarly Macro"> <img src="https://images.sayzlim.net/2017/03/grammarly-macro.jpg" alt="Edit in Grammarly Macro" title="Edit in Grammarly Macro" /> </a></p>
+
+<p>It creates a seamless process for anyone who uses other writing apps in macOS. It copies the selected text and pastes it to Grammarly. Once you’ve finished editing the article, you can press the shortcut again to paste the result back to the previously selected app.</p>
+
+<p>There are two requirements to ensure that this macro runs correctly:</p>
+
+<ol>
+  <li>Grammarly must be active and visible in the macOS Dock.</li>
+  <li>You have to create a new post with preferred document type. For example, I have three blank documents called personal email, blog post, and general for the different type of writing I’m doing every day.</li>
+</ol>
+
+<p><a href="https://images.sayzlim.net/2017/03/grammarly-macro-templates.jpg" title="Grammarly Macro Document Types"> <img src="https://images.sayzlim.net/2017/03/grammarly-macro-templates.jpg" alt="Grammarly Macro Document Types" title="Grammarly Macro Document Types" /> </a></p>
+
+<p>The macro will ask you to launch Grammarly if it’s not running in the background. Optionally, you can also add an action to automatically open Grammarly when it’s not running instead of displaying a notification.</p>
+
+<p><strong><a href="http://s3.sayzlim.net/f/edit-grammarly.zip">Download Edit in Grammarly Macro</a></strong></p>
+]]></content>
+  </entry>
+  
+</feed>
