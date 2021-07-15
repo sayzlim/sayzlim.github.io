@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2021-07-14T22:25:40+07:00</updated>
+  <updated>2021-07-15T15:14:56+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to Fix 'jekyll-autoprefixer' Error Running Ruby 3.0.0]]></title>
+    <link href="https://sayzlim.net/fix-jekyll-autoprefixer-error/"/>
+    <updated>2021-07-15T15:00:00+07:00</updated>
+    <id>https://sayzlim.net/fix-jekyll-autoprefixer-error</id>
+    <content type="html"><![CDATA[<p>I postponed upgrading my Ruby environment to 3.x.x for a while because I couldn’t build or serve this Jekyll site due to the error with <code class="language-plaintext highlighter-rouge">jekyll-autoprefixer</code>.</p>
+
+<p>Here is the error I encountered when I tried to build this site.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">TypeError: Cannot read property 'version' of undefined (ExecJS::ProgramError)
+</span></code></pre></div></div>
+
+<p class="sidenote">I assume you’re using <a href="https://bundler.io/" title="Bundler: The best way to manage a Ruby application's gems">Bundler</a> to manage the gems. If you’re not familiar with Bundler, I recommend that you check it out and use it to set up dependencies for your project.</p>
+
+<p>You can fix the error by downgrading <code class="language-plaintext highlighter-rouge">execjs</code> back to 2.7.0.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Add the following line <code class="language-plaintext highlighter-rouge">gem 'execjs', '2.7.0'</code> to your Gemfile.</p>
+
+<p>Then run <code class="language-plaintext highlighter-rouge">bundle update</code> to update all the installed gems.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>You can <a href="https://github.com/vwochnik/jekyll-autoprefixer/issues/11" title="ExecJS 2.8.0 breaks Jekyll">check out this issue</a> to see a different method to fix it. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Verify 'osxkeychain helper' Personal Access Token]]></title>
@@ -1736,34 +1764,6 @@ pagination:
 <p>Overall, CleanMyMac is a nice utility I would love to have on my Mac. It’s the best app for cleaning up your Mac where they can also focus on educating the users with information to keep your Mac healthy. There are many similar apps out there, but you can rarely find the apps that are built with such detailed animation and robust underlying system to be future-proof.</p>
 
 <p><strong>You can also support my works by <a href="https://macpaw.7eer.net/c/345957/66209/1733" title="Buy CleanMyMac">purchasing CleanMyMac with my referral link</a>.</strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Edit in Grammarly Macro]]></title>
-    <link href="https://sayzlim.net/edit-in-grammarly-macro/"/>
-    <updated>2017-03-20T08:02:00+07:00</updated>
-    <id>https://sayzlim.net/edit-in-grammarly-macro</id>
-    <content type="html"><![CDATA[<p>The only limitation with Grammarly is the incapability to check your writing in other macOS application. You have to paste the selected text into Grammarly, edit the found mistakes, and move the result back into the origin of the selected text app. The process can be simplified with this macro.</p>
-
-<!-- more -->
-
-<p><a href="https://images.sayzlim.net/2017/03/grammarly-macro.jpg" title="Edit in Grammarly Macro"> <img src="https://images.sayzlim.net/2017/03/grammarly-macro.jpg" alt="Edit in Grammarly Macro" title="Edit in Grammarly Macro" /> </a></p>
-
-<p>It creates a seamless process for anyone who uses other writing apps in macOS. It copies the selected text and pastes it to Grammarly. Once you’ve finished editing the article, you can press the shortcut again to paste the result back to the previously selected app.</p>
-
-<p>There are two requirements to ensure that this macro runs correctly:</p>
-
-<ol>
-  <li>Grammarly must be active and visible in the macOS Dock.</li>
-  <li>You have to create a new post with preferred document type. For example, I have three blank documents called personal email, blog post, and general for the different type of writing I’m doing every day.</li>
-</ol>
-
-<p><a href="https://images.sayzlim.net/2017/03/grammarly-macro-templates.jpg" title="Grammarly Macro Document Types"> <img src="https://images.sayzlim.net/2017/03/grammarly-macro-templates.jpg" alt="Grammarly Macro Document Types" title="Grammarly Macro Document Types" /> </a></p>
-
-<p>The macro will ask you to launch Grammarly if it’s not running in the background. Optionally, you can also add an action to automatically open Grammarly when it’s not running instead of displaying a notification.</p>
-
-<p><strong><a href="http://s3.sayzlim.net/f/edit-grammarly.zip">Download Edit in Grammarly Macro</a></strong></p>
 ]]></content>
   </entry>
   
