@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2021-07-15T15:14:56+07:00</updated>
+  <updated>2021-09-13T18:18:48+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,112 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tips to Maintain Forked Repository]]></title>
+    <link href="https://sayzlim.net/tips-maintain-forked-repository/"/>
+    <updated>2021-09-13T17:00:00+07:00</updated>
+    <id>https://sayzlim.net/tips-maintain-forked-repository</id>
+    <content type="html"><![CDATA[<p>Working with <a href="https://www.carbonads.net" title="Carbon Ads">Carbon</a> means I have to fork some open-source projects to submit a pull request with the ad code integration. Here is the list of the tips I’ve collected while learning how to contribute to the public repositories.</p>
+
+<p>By forking a repository, it means that you’ve cloned an identical project that you can edit. Whenever you make a mistake, the worst-case scenario is to delete the forked repository and clone it again.</p>
+
+<p>The main purpose of these tips is to <strong>avoid resetting the repository</strong> and understand the workflow to contribute back to the upstream project.</p>
+
+<p class="sidenote">I will be referring to the <code class="language-plaintext highlighter-rouge">master</code> branch as <code class="language-plaintext highlighter-rouge">main</code> in this post. They can be used interchangeably, but most new projects prefer to name their default branch as <code class="language-plaintext highlighter-rouge">main</code>.</p>
+
+<h2 id="always-create-a-new-branch">Always Create a New Branch</h2>
+<p>Branching is a safe way for you to experiment with a new feature without affecting the main branch. Even if you’re making a minor update to the <code class="language-plaintext highlighter-rouge">README</code>, you’re still going to create a new branch because it will keep the main branch clean.</p>
+
+<p>Whenever you’re done with a feature, you can push the branch you’re working to your forked repository. Then, you can follow up by submitting a pull request to the upstream.</p>
+
+<p class="sidenote">The <code class="language-plaintext highlighter-rouge">upstream</code> remote refers to <strong>the original source</strong> of your forked repository. You can check the configured remote repository by running <code class="language-plaintext highlighter-rouge">git remote -v</code> in Terminal. <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork" title="Configuring a remote for a fork - GitHub Docs">Follow this guide by GitHub</a> to configure remote repository.</p>
+
+<h2 id="never-commit-to-the-main-branch">Never Commit to the Main Branch</h2>
+<p>You should never commit to the main branch. I mentioned before that we want to keep the main branch clean. What exactly do we want to keep it clean from?</p>
+
+<p>We don’t want our local commits in the main branch.</p>
+
+<p>The local main branch should always match to the upstream origin. Adding commits to the local main branch will create conflicts that trigger Git to asks you merge, rebase, or fast-forward the tree history.</p>
+
+<p>Instead of committing to the main branch, you want the upstream maintainer to accept your pull request, and then you can match the HEAD of your main branch to the upstream main branch. Here’s the command you can run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git switch main
+git pull upstream main --ff
+</span></code></pre></div></div>
+
+<p>Let’s run through each line. <code class="language-plaintext highlighter-rouge">git switch main</code> lets you switch to the <code class="language-plaintext highlighter-rouge">main</code> branch where you can apply the update from the upstream. Once you’re on the <code class="language-plaintext highlighter-rouge">main</code> branch, you can pull the latest update and pass <code class="language-plaintext highlighter-rouge">--ff</code> option to fast forward the commits. It’s optional to pass <code class="language-plaintext highlighter-rouge">--ff</code> if you keep the main branch clean, however, it’s a good practice to always decide how you want to deal with the conflicts.</p>
+
+<h2 id="dealing-with-conflicts-on-main-branch">Dealing with Conflicts on Main Branch</h2>
+<p>I often messed up the main branch when I was learning using Git. The most common mistake is to run this command on the main branch.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git pull upstream main
+</span></code></pre></div></div>
+
+<p>Here is the problem with the command above.</p>
+
+<p>You’re telling git to fetch and update the active branch to match the remote branch <strong>without specifying how you want to deal with the conflicts</strong>.</p>
+
+<p>Then this happens:</p>
+<ol>
+  <li>I panicked because I didn’t know how to deal with the conflicts.</li>
+  <li>I gave up, deleted the folder, and recloned the remote repository.</li>
+</ol>
+
+<p>There is no need to panic because you’re still working on your local and remote branch.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The worst-case scenario is to delete and refork the repository if you’re still unfamiliar with Git.</p>
+
+<p>However, you can easily fix this issue by running this command:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git reflog
+git reset HEAD@{index}
+</span></code></pre></div></div>
+
+<p>Let’s break down the command above.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">reflog</code> shows the history of updates that happened to the tip of branches in the local repository.</li>
+  <li><code class="language-plaintext highlighter-rouge">git reset HEAD@{index}</code> reset the branch to the number of moves based on the passed <code class="language-plaintext highlighter-rouge">index</code> value. <code class="language-plaintext highlighter-rouge">HEAD@{index}</code> is one of many ways to specify revision value. I personally prefer to use the <code class="language-plaintext highlighter-rouge">sha1</code> value.</li>
+</ul>
+
+<h2 id="syncing-local-main-branch-to-upstream">Syncing Local Main Branch to Upstream</h2>
+<p>You can deal with most conflicts locally before submitting a pull request. The reason is the upstream main branch might have received more commits since the last time you cloned it. Match the tip of your local main branch to the upstream main branch. Here’s what you can run:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git fetch upstream main
+git switch main &amp;&amp; rebase upstream/main
+git push origin main
+</span></code></pre></div></div>
+
+<h2 id="pushing-force-to-remote-branch">Pushing –Force to Remote Branch</h2>
+<p>Sometimes I want to set things right for both local and remote repository. I don’t plan to keep any updates I’ve made and my main goal is to sync local and remote repository to restart everything.</p>
+
+<p class="sidenote"><strong>You can only do this if you’re the only one who manage repository</strong>. For example, I can do it for my Jekyll site because the repository is private and no one else will be affected if I forcibly push an update to the remote repository.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reflog
+git reset --hard &lt;sha1-value&gt;
+git branch -r
+git fetch upstream main &amp;&amp; git rebase upstream/main
+git push --force origin main
+</code></pre></div></div>
+
+<ol>
+  <li>Check for the <code class="language-plaintext highlighter-rouge">sha1</code> value we’re going to pass into the <code class="language-plaintext highlighter-rouge">git reset</code> command.</li>
+  <li>Reset the branch before it’s broken.</li>
+  <li>List all remote repositories with their branches. Most of the time, you’re looking at the <code class="language-plaintext highlighter-rouge">upstream/main</code> branch.</li>
+  <li>Fetch the <code class="language-plaintext highlighter-rouge">main</code> branch from <code class="language-plaintext highlighter-rouge">upstream</code> and rebase local <code class="language-plaintext highlighter-rouge">main</code> branch to the upstream <code class="language-plaintext highlighter-rouge">main</code> branch.</li>
+  <li>Push local <code class="language-plaintext highlighter-rouge">main</code> branch to <code class="language-plaintext highlighter-rouge">origin/main</code> remote branch.</li>
+</ol>
+
+<p>This step will ensure you have a clean slate of a local and remote main branch without deleting the forked repository. Next, create and start your work from the new branch.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Unless you’re working in a company that allows you to push your commit to the remote main branch. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to Fix 'jekyll-autoprefixer' Error Running Ruby 3.0.0]]></title>
@@ -1703,67 +1809,6 @@ pagination:
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Getting to Know CleanMyMac]]></title>
-    <link href="https://sayzlim.net/getting-to-know-cleanmymac/"/>
-    <updated>2017-10-29T15:54:00+07:00</updated>
-    <id>https://sayzlim.net/getting-to-know-cleanmymac</id>
-    <content type="html"><![CDATA[<p>I’ve been using CleanMyMac since 2012. It completes macOS by offering various tools to maintain and review the system status easily from the dashboard.</p>
-
-<!-- more -->
-
-<p>CleanMyMac doesn’t do anything special. You can replicate its features by executing commands in the Terminal or install other utilities. For example, you can uninstall the app using <a href="https://freemacsoft.net/appcleaner/" title="AppCleaner">AppCleaner</a>, purge the DNS with a terminal command, or free up some space with <a href="https://ingmarstein.github.io/Monolingual/" title="Monolingual for Mac">Monolingual</a>.</p>
-
-<p>Only, if you’re bothered to put these utilities together and actively maintain them.</p>
-
-<p>The most significant CleanMyMac feature comes from how well these small pieces of tasks fit together as a single app.</p>
-
-<h3 id="1-clean-uninstall-app-with-alfred">1. Clean Uninstall App with Alfred</h3>
-
-<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-uninstaller.jpg" title="CleanMyMac - Uninstaller"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-uninstaller.jpg" alt="CleanMyMac - Uninstaller" title="CleanMyMac - Uninstaller" /> </a></p>
-
-<p>CleanMyMac offers a menu bar companion utility to monitor the number of free space on your Mac. What makes the menu bar utility useful is that it will help you clean uninstall whenever you move an app to Trash.</p>
-
-<p>I‘m not a fan of having another background task running, so I decide to proactively uninstall the app by using Alfred’s <code class="language-plaintext highlighter-rouge">Open With…</code> action command. You simply search for the app you want to uninstall and choose to open with CleanMyMac.</p>
-
-<h3 id="2-the-macos-maintenance-tasks">2. The macOS Maintenance Tasks</h3>
-
-<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-maintenance.jpg" title="CleanMyMac - Maintenance Tasks"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-maintenance.jpg" alt="CleanMyMac - Maintenance Tasks" title="CleanMyMac - Maintenance Tasks" /> </a></p>
-
-<p>There aren’t many things you have to deal with by using macOS as your operating system, but you do have to run some tasks from time to time. I like the Maintenance section where I can execute commands to maintain the system. Each command includes a brief explanation of what it does and how often you have to run it. For example, if you encounter problems with your “Open with…” list of apps, you can run Rebuild Launch Services which reset the list of indexed apps.</p>
-
-<h3 id="3-the-cleanmymac-menu-item">3. The CleanMyMac Menu Item</h3>
-
-<p>The menu item provides you with the overview of your Mac health and performance. You can quickly free up inactive memory which can be allocated for other active processes. It diagnoses and monitors any problems Mac and reminds you about it before you even realize something is wrong with macOS. You can <a href="https://macpaw.com/cleanmymac/cleanmymac-menu" title="CleanMyMac 3 Menu - Quick Access to Cleaning and Health Monitoring">learn more about CleanMyMac Menu here</a>.</p>
-
-<h3 id="4-reclaiming-free-space">4. Reclaiming Free Space</h3>
-<p>The initial design for CleanMyMac is reclaiming as much space as you can. It achieves its goal by removing unused languages from each app and freeing up the caches that are no longer in uses. Removing caches can be a sensitive issue because some apps perform better with caches left on the hard drive. For example, Spotify caches the music you often play, so it doesn’t have to load them from the server.</p>
-
-<p>This is an area that even CleanMyMac is still improving. If you’re not careful, you might remove the settings in your Safari extensions. I recommend that you’re not removing anything from your browsrs and use the built-in clear caches feature instead.</p>
-
-<p>Most of the times, you can run Smart Cleanup and remove those unnecessary caches without encountering any significant problems. Take note that that the system is imperfect. You probably don’t have to clear the browser caches every day if you visit the same sites often. I recommend that you run this option once every two months.</p>
-
-<h3 id="5-see-every-extensions-installed">5. See Every Extensions Installed</h3>
-
-<p>You will find an Extensions section under Utilities. This is my favorite section, and it’s where I spend most of my time while using CleanMyMac. It shows you every extension that is enabled in each app.</p>
-
-<p>Extensions are mostly hidden inside the system folder. Most Mac users don’t know how to see which extensions are installed on their system. This section shows you these enabled extensions so you can disable the one you’re not using.</p>
-
-<p><a href="https://images.sayzlim.net/2017/10/cleanmymac-extensions.jpg" title="CleanMyMac - QuickLook Extensions"> <img src="https://images.sayzlim.net/2017/10/cleanmymac-extensions.jpg" alt="CleanMyMac - QuickLook Extensions" title="CleanMyMac - QuickLook Extensions" /> </a></p>
-
-<p>Quick Look Plugins is a collection of extension to make Quick Look more useful in previewing file contents. I shared some <a href="https://sayzlim.net/must-have-macos-quicklook-plugins/" title="Must Have macOS Quick Look Plugins - Sayz Lim">must have Quick Look plugins</a> before, check it out if you haven’t done it.</p>
-
-<p>Services, on the other hand, is the list of commands that you can run whenever you select a file, text, or image. You can run it in the menu bar or event with the secondary click. Some apps come with pre-built services. For example, CleanMyMac comes with a service to securely erase files, and Spark comes with a command Create an Email from Selection.</p>
-
-<p>CleanMyMac does a decent job at listing all the apps with their services, but in term of layout, <a href="http://macosxautomation.com/services/servicesmanager/" title="Mac OS X Automation: Services Manager">Services Manager</a> (no longer supported in macOS Sierra) does a better job and toggling the services.</p>
-
-<h3 id="conclusion">Conclusion</h3>
-<p>Overall, CleanMyMac is a nice utility I would love to have on my Mac. It’s the best app for cleaning up your Mac where they can also focus on educating the users with information to keep your Mac healthy. There are many similar apps out there, but you can rarely find the apps that are built with such detailed animation and robust underlying system to be future-proof.</p>
-
-<p><strong>You can also support my works by <a href="https://macpaw.7eer.net/c/345957/66209/1733" title="Buy CleanMyMac">purchasing CleanMyMac with my referral link</a>.</strong></p>
 ]]></content>
   </entry>
   
