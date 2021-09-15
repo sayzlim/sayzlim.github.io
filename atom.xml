@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2021-09-13T18:18:48+07:00</updated>
+  <updated>2021-09-15T23:02:54+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Tips to Maintain Forked Repository]]></title>
+    <title type="html"><![CDATA[Tips to Maintain a Forked Repository]]></title>
     <link href="https://sayzlim.net/tips-maintain-forked-repository/"/>
     <updated>2021-09-13T17:00:00+07:00</updated>
     <id>https://sayzlim.net/tips-maintain-forked-repository</id>
