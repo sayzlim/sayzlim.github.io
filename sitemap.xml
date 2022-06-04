@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://sayzlim.net/</loc>
-<lastmod>2022-06-04T10:08:55+07:00</lastmod>
+<lastmod>2022-06-04T10:10:30+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tags/</loc>
-<lastmod>2022-06-04T10:08:55+07:00</lastmod>
+<lastmod>2022-06-04T10:10:30+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tools/</loc>
-<lastmod>2022-06-04T10:08:55+07:00</lastmod>
+<lastmod>2022-06-04T10:10:30+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/welcome/</loc>
@@ -513,7 +513,7 @@
 <lastmod>2022-05-19T07:00:00+07:00</lastmod>
 </url>
 <url>
-<loc>https://sayzlim.net/execute-keyboard-maestro-macro-alfred/</loc>
+<loc>https://sayzlim.net/better-quit-all/</loc>
 <lastmod>2022-06-04T00:00:00+07:00</lastmod>
 </url>
 </urlset>

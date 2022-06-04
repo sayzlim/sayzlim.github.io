@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-06-04T10:08:55+07:00</updated>
+  <updated>2022-06-04T10:10:30+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Better "Quit All" with Keyboard Maestro]]></title>
-    <link href="https://sayzlim.net/execute-keyboard-maestro-macro-alfred/"/>
+    <link href="https://sayzlim.net/better-quit-all/"/>
     <updated>2022-06-04T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/execute-keyboard-maestro-macro-alfred</id>
+    <id>https://sayzlim.net/better-quit-all</id>
     <content type="html"><![CDATA[<p>When I’m done with the work, I enter “quitall” with Alfred and quit all the apps in the Dock. I found out that I need more control to decide which apps to keep active.</p>
 
 <p>I’ve been using Alfred built-in <strong>Quit All</strong> to quit all the applications whenever I’m done with my work. It’s a great way to end the day so you can see a clean working space.</p>
