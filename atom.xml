@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-05-23T10:16:40+08:00</updated>
+  <updated>2022-06-04T10:08:55+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -14,9 +14,42 @@
 
   
   <entry>
+    <title type="html"><![CDATA[Better "Quit All" with Keyboard Maestro]]></title>
+    <link href="https://sayzlim.net/execute-keyboard-maestro-macro-alfred/"/>
+    <updated>2022-06-04T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/execute-keyboard-maestro-macro-alfred</id>
+    <content type="html"><![CDATA[<p>When I’m done with the work, I enter “quitall” with Alfred and quit all the apps in the Dock. I found out that I need more control to decide which apps to keep active.</p>
+
+<p>I’ve been using Alfred built-in <strong>Quit All</strong> to quit all the applications whenever I’m done with my work. It’s a great way to end the day so you can see a clean working space.</p>
+
+<p>However, there are some apps that I want to keep active in the Dock such as Timemator for time tracking and Drafts for note-taking. Unfortunately, Alfred doesn’t have a built-in option to exclude apps from this command.</p>
+
+<p>Which brings me to Keyboard Maestro.</p>
+
+<p><img src="https://images.sayzlim.net/2022/06/keyboard-maestro-preferences.webp" alt="" title="Keyboard Maestro Excluded Preferences" /></p>
+
+<p><strong>Keyboard Maestro offers more flexibility</strong> when it comes to building a macro that caters to your needs. All you need to do is to add the apps you want to exclude from the preferences and the app will take care of the rest.</p>
+
+<p><img src="https://images.sayzlim.net/2022/06/alfred-quitall-command.webp" alt="" title="Alfred Custom 'Quit All' Command" /></p>
+
+<p>The next thing you want to do is to create a search command in Alfred that runs <code class="language-plaintext highlighter-rouge">/usr/bin/osascript (AppleScript)</code>. You can paste the script below to tell Keyboard Maestro Engine to execute the</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- The passed query is the UUID of the macro
+tell application "Keyboard Maestro Engine"
+  do script "5F2B4E32-239D-4B46-BA07-2F0F103CE1EA"
+end tell
+</code></pre></div></div>
+
+<p><img src="https://images.sayzlim.net/2022/06/keyboard-maestro-copy-uuid.webp" alt="" title="Copy Macro UUID in Keyboard Maestro" /></p>
+
+<p>You can get the UUID of a macro by right-clicking and selecting <strong>Copy as UUID</strong> from the contextual menu. For example, <code class="language-plaintext highlighter-rouge">5F2B4E32-239D-4B46-BA07-2F0F103CE1EA</code> is the UUID for the Quit All macro in my library.</p>
+]]></content>
+  </entry>
+  
+  <entry>
     <title type="html"><![CDATA[Text Expansion with Keyboard Maestro]]></title>
     <link href="https://sayzlim.net/text-expansion-keyboard-maestro/"/>
-    <updated>2022-05-19T07:00:00+08:00</updated>
+    <updated>2022-05-19T07:00:00+07:00</updated>
     <id>https://sayzlim.net/text-expansion-keyboard-maestro</id>
     <content type="html"><![CDATA[<p>I replaced TextExpander with Keyboard Maestro as my primary text expansion tool because I prefer the native editing experience and the flexibility that Keyboard Maestro offers.</p>
 
@@ -93,7 +126,7 @@ Are you available for a quick call to discuss this partnership?
   <entry>
     <title type="html"><![CDATA[HubSpot Deployment Shell Script]]></title>
     <link href="https://sayzlim.net/hubspot-deployment-shell-script/"/>
-    <updated>2022-05-14T09:00:00+08:00</updated>
+    <updated>2022-05-14T09:00:00+07:00</updated>
     <id>https://sayzlim.net/hubspot-deployment-shell-script</id>
     <content type="html"><![CDATA[<p>I started building and managing websites with HubSpot recently because it offers the flexibility to allow other team members, especially those who are in the marketing team, to create and customize a landing page.</p>
 
@@ -157,7 +190,7 @@ hs <span class="k">${</span><span class="nv">action</span><span class="k">}</spa
   <entry>
     <title type="html"><![CDATA[Tips to Maintain a Forked Repository]]></title>
     <link href="https://sayzlim.net/tips-maintain-forked-repository/"/>
-    <updated>2021-09-13T17:00:00+08:00</updated>
+    <updated>2021-09-13T17:00:00+07:00</updated>
     <id>https://sayzlim.net/tips-maintain-forked-repository</id>
     <content type="html"><![CDATA[<p>Working with <a href="https://www.carbonads.net" title="Carbon Ads">Carbon</a> means I have to fork some open-source projects to submit a pull request with the ad code integration. Here is the list of the tips I’ve collected while learning how to contribute to the public repositories.</p>
 
@@ -263,7 +296,7 @@ git push --force origin main
   <entry>
     <title type="html"><![CDATA[How to Fix 'jekyll-autoprefixer' Error Running Ruby 3.0.0]]></title>
     <link href="https://sayzlim.net/fix-jekyll-autoprefixer-error/"/>
-    <updated>2021-07-15T15:00:00+08:00</updated>
+    <updated>2021-07-15T15:00:00+07:00</updated>
     <id>https://sayzlim.net/fix-jekyll-autoprefixer-error</id>
     <content type="html"><![CDATA[<p>I postponed upgrading my Ruby environment to 3.x.x for a while because I couldn’t build or serve this Jekyll site due to the error with <code class="language-plaintext highlighter-rouge">jekyll-autoprefixer</code>.</p>
 
@@ -291,7 +324,7 @@ git push --force origin main
   <entry>
     <title type="html"><![CDATA[How to Verify 'osxkeychain helper' Personal Access Token]]></title>
     <link href="https://sayzlim.net/verify-osxkeychain-helper/"/>
-    <updated>2021-07-10T00:00:00+08:00</updated>
+    <updated>2021-07-10T00:00:00+07:00</updated>
     <id>https://sayzlim.net/verify-osxkeychain-helper</id>
     <content type="html"><![CDATA[<p>I like using GitHub for macOS because it lets me compare the difference of files before each commit. If you’ve configured credential helper to <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" title="Caching your GitHub credentials in Git - GitHub Docs">tell Git to remember your password</a>, you also want to learn how to verify that the personal access token has been stored correctly.</p>
 
@@ -314,7 +347,7 @@ git push --force origin main
   <entry>
     <title type="html"><![CDATA[Self-Host Plausible with Amazon EC2 Free Tier]]></title>
     <link href="https://sayzlim.net/self-host-plausible-amazon-ec2/"/>
-    <updated>2021-07-04T00:00:00+08:00</updated>
+    <updated>2021-07-04T00:00:00+07:00</updated>
     <id>https://sayzlim.net/self-host-plausible-amazon-ec2</id>
     <content type="html"><![CDATA[<p>I decided to self-host Plausible because I want to keep the cost of maintaining this site as low as possible. So here are some resources to help you configure Plausible for free on Amazon EC2.</p>
 
@@ -421,7 +454,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Using Feedbin in 2021]]></title>
     <link href="https://sayzlim.net/using-feedbin/"/>
-    <updated>2021-06-01T00:00:00+08:00</updated>
+    <updated>2021-06-01T00:00:00+07:00</updated>
     <id>https://sayzlim.net/using-feedbin</id>
     <content type="html"><![CDATA[<p>I found out today that I’ve been using Feedbin for seven years. Feedbin started as a simple feed reader, which I used to sync over to third-party RSS clients such as <a href="https://www.reederapp.com/" title="Reeder 5">Reeder</a> and <a href="https://www.goldenhillsoftware.com/unread/" title="Unread: An RSS Reader">Unread</a>. These days, I read everything on Feedbin.</p>
 
@@ -478,7 +511,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Better Way to Set Default Application on macOS]]></title>
     <link href="https://sayzlim.net/set-default-apps-mac/"/>
-    <updated>2021-05-20T00:00:00+08:00</updated>
+    <updated>2021-05-20T00:00:00+07:00</updated>
     <id>https://sayzlim.net/set-default-apps-mac</id>
     <content type="html"><![CDATA[<p>Have you ever found that setting default application for documents on macOS is an annoying experience? It’s difficult to find out which documents that you’ve modified before. I will show you a better way to set the default application.</p>
 
@@ -521,7 +554,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[How to Build a Jekyll Component]]></title>
     <link href="https://sayzlim.net/jekyll-include-component/"/>
-    <updated>2021-05-07T00:00:00+08:00</updated>
+    <updated>2021-05-07T00:00:00+07:00</updated>
     <id>https://sayzlim.net/jekyll-include-component</id>
     <content type="html"><![CDATA[<p>Jekyll is a static site generator with some great ideas to help us structure a website. By taking advantage of some of these ideas, you can decouple the complicated part of the project and build them as separate components.</p>
 
@@ -595,7 +628,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[How to Set Default Window Size on Mac with Keyboard Maestro]]></title>
     <link href="https://sayzlim.net/default-window-size-keyboard-maestro/"/>
-    <updated>2021-03-23T00:00:00+08:00</updated>
+    <updated>2021-03-23T00:00:00+07:00</updated>
     <id>https://sayzlim.net/default-window-size-keyboard-maestro</id>
     <content type="html"><![CDATA[<p>Resizing application windows is one of the easiest macros you can create with Keyboard Maestro. By implementing a single action, you can set a default window size for every application on your Mac. What if I tell you that there is a better way to organize and resize application windows?</p>
 
@@ -655,7 +688,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Evernote Device Limit Workaround]]></title>
     <link href="https://sayzlim.net/evernote-device-limit-workaround/"/>
-    <updated>2021-03-16T00:00:00+08:00</updated>
+    <updated>2021-03-16T00:00:00+07:00</updated>
     <id>https://sayzlim.net/evernote-device-limit-workaround</id>
     <content type="html"><![CDATA[<p>One of the most frustrating problems with Evernote Basic is that you can sign into the Evernote application up to only two devices. Here is a workaround that you can follow if you wish to use Evernote on more devices.</p>
 
@@ -718,7 +751,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Replacing DragonDrop with Dropover]]></title>
     <link href="https://sayzlim.net/dropover-review/"/>
-    <updated>2021-03-10T00:00:00+08:00</updated>
+    <updated>2021-03-10T00:00:00+07:00</updated>
     <id>https://sayzlim.net/dropover-review</id>
     <content type="html"><![CDATA[<p>I’ve been searching for a reliable DragonDrop replacement without any success. None of the alternatives were close to the workflow I needed: a quick way to drag and drop files into a holding bin that sits on top of the desktop. I’m glad that I found out about Dropover.</p>
 
@@ -761,7 +794,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Building a Plain HTML Form with ConvertKit]]></title>
     <link href="https://sayzlim.net/plain-html-form-convertkit/"/>
-    <updated>2021-03-03T00:00:00+08:00</updated>
+    <updated>2021-03-03T00:00:00+07:00</updated>
     <id>https://sayzlim.net/plain-html-form-convertkit</id>
     <content type="html"><![CDATA[<p><a href="https://convertkit.com" title="ConvertKit - Email Marketing for Online Creators">ConvertKit</a> provides different kinds of templates that creators can easily embed on their website, but as a result, it also comes with additional scripts and options you don’t need. I will show you how to create a lightweight form that you can integrate into your website.</p>
 
@@ -855,7 +888,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Tips for Using Things Efficiently on macOS]]></title>
     <link href="https://sayzlim.net/tips-using-things-macos/"/>
-    <updated>2021-02-14T00:00:00+08:00</updated>
+    <updated>2021-02-14T00:00:00+07:00</updated>
     <id>https://sayzlim.net/tips-using-things-macos</id>
     <content type="html"><![CDATA[<p>I’ve been using Things 3 as my GTD since 2014. It has become an essential part of my life. I want to share several tips for anyone looking to use Things to manage several aspects of your life. These tips are strictly for Things on macOS.</p>
 
@@ -898,7 +931,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[How to Find Conflicting Keyboard Shortcuts on Mac]]></title>
     <link href="https://sayzlim.net/find-conflicting-shortucts-mac/"/>
-    <updated>2020-06-07T00:00:00+08:00</updated>
+    <updated>2020-06-07T00:00:00+07:00</updated>
     <id>https://sayzlim.net/find-conflicting-shortucts-mac</id>
     <content type="html"><![CDATA[<p>It’s frustrating to troubleshoot conflicting keyboard shortcuts on Mac because it doesn’t show you which app is currently binding the combination keys. Here’s how you can find the conflicting keys on Mac.</p>
 
@@ -917,7 +950,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Quick Calculation Keyboard Maestro Macro]]></title>
     <link href="https://sayzlim.net/quick-calculation-keyboard-maestro-macro/"/>
-    <updated>2020-05-27T00:00:00+08:00</updated>
+    <updated>2020-05-27T00:00:00+07:00</updated>
     <id>https://sayzlim.net/quick-calculation-keyboard-maestro-macro</id>
     <content type="html"><![CDATA[<p>Sometimes you want to quickly calculate a number while typing. Here’s how you can maintain the typing flow and calculate numbers with Keyboard Maestro.</p>
 
@@ -960,7 +993,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Why I Switched from Snappy to CleanShot X]]></title>
     <link href="https://sayzlim.net/snappy-to-cleanshot-x/"/>
-    <updated>2020-05-22T13:00:00+08:00</updated>
+    <updated>2020-05-22T13:00:00+07:00</updated>
     <id>https://sayzlim.net/snappy-to-cleanshot-x</id>
     <content type="html"><![CDATA[<p>Snappy is my most used screenshot app on macOS. It’s also free. I still recommend it if you’re looking for a free screenshot and annotation tool for macOS. But I decided to replace Snappy with CleanShot X this year.</p>
 
@@ -1035,7 +1068,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Is Setapp Worth It?]]></title>
     <link href="https://sayzlim.net/is-setapp-worth-it/"/>
-    <updated>2020-05-19T00:00:00+08:00</updated>
+    <updated>2020-05-19T00:00:00+07:00</updated>
     <id>https://sayzlim.net/is-setapp-worth-it</id>
     <content type="html"><![CDATA[<p>Why would you want to subscribe to Setapp if you’re a veteran macOS user, and should you even consider subscribing to Setapp if you’re new to macOS?</p>
 
@@ -1137,7 +1170,7 @@ Address: 3.143.214.18
   <entry>
     <title type="html"><![CDATA[Quick Find and Replace Keyboard Maestro Macro]]></title>
     <link href="https://sayzlim.net/quick-find-replace-macro/"/>
-    <updated>2020-05-16T00:00:00+08:00</updated>
+    <updated>2020-05-16T00:00:00+07:00</updated>
     <id>https://sayzlim.net/quick-find-replace-macro</id>
     <content type="html"><![CDATA[<p>Do you often find yourself opening a separate text editor to replace a word from a selected line or paragraph? With Quick Find and Replace Macro, you can substitute a word from anywhere.</p>
 
@@ -1164,51 +1197,6 @@ Address: 3.143.214.18
 <p>You can access this feature from everywhere. This macro has changed the way I manipulate text. I hope you will find this useful.</p>
 
 <p><strong><a href="http://s3.sayzlim.net/f/km-quick-find-replace.zip?version=1.0" title="Download Quick Find and Replace Macro">Download Quick Find and Replace Macro</a></strong></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[QLColorCode Replacement on macOS Catalina]]></title>
-    <link href="https://sayzlim.net/qlcolorcode-not-working-catalina/"/>
-    <updated>2020-05-15T00:00:00+08:00</updated>
-    <id>https://sayzlim.net/qlcolorcode-not-working-catalina</id>
-    <content type="html"><![CDATA[<p>I searched for a replacement for the feature to enable syntax preview on macOS when I found out that QLColorCode was not working on macOS Catalina 10.15.</p>
-
-<p><img src="https://images.sayzlim.net/2020/05/syntax-higlight-preview.jpg" alt="Syntax Highlight Preview" title="Syntax Highlight Preview" /></p>
-
-<p>It’s frustrating to work with source code if you have to open each of them in the text editor. Quick Look offers the advantage of previewing documents without having to open it first since the day of OS X Leopard.</p>
-
-<p>Apple tightened the security on macOS with Gatekeeper and System Integrity Protection to prevent malicious software from modifying protected files and documents on your Mac.</p>
-
-<p>I tried to install the <a href="https://sayzlim.net/must-have-macos-quicklook-plugins/" title="Must Have macOS Quick Look Plugins - Sayz Lim">my favorite Quick Look extensions</a> back on macOS Catalina and found out that none of them were working. It turned out macOS Catalina had deprecated the qlgenerator APIs.</p>
-
-<p>These Quick Look plugins are broken unless they’re official signed.</p>
-
-<blockquote>
-  <p>MacOS 10.15 Catalina has deprecated the qlgenerator APIs. Moreover a .qlgenerator package inside Library/QuickLook must be notarized on 10.15.0 to works. In version 10.15.1 it seems that notarization is no longer required.</p>
-</blockquote>
-
-<p>Fortunately, someone has bundled the QLColorCode into a Mac App for distribution.</p>
-
-<h2 id="preview-source-in-quick-look-with-syntax-highlight">Preview Source in Quick Look with Syntax Highlight</h2>
-
-<p>Syntax Highlight lets you easily customize the theme of the Quick Look preview with a few clicks. Before you can enable it in the System Preferences, you have to open the application to inform macOS that the app is available.</p>
-
-<blockquote>
-  <p>This application offers a quicklook extension for MacOS 10.15 Catalina for previewing source files. Inside it uses Highlight to render source code with syntax highlighting. The application is distributed with a version of the highlight. If you want you can use a different version customizing the preferences.</p>
-</blockquote>
-
-<p>Open the <strong>Security &amp; Privacy</strong> in the <strong>System Preferences</strong> and select <strong>Files and Folders</strong> under <strong>Privacy</strong> tab. Allow Syntax Highlight with the access to your folders.</p>
-
-<p><img src="https://images.sayzlim.net/2020/05/syntax-highlight-access.jpg" alt="Syntax Highlight Preferences" title="Syntax Highlight Preferences" /></p>
-
-<p>Open Syntax Highlight again. Choose the theme for light and dark mode. I personally only use dark mode these days, so I selected Monokai as the theme and <a href="https://input.fontbureau.com/" title="Input: Fonts for Code">Input Mono</a> as the font.</p>
-
-<p><img src="https://images.sayzlim.net/2020/05/syntax-highlight.jpg" alt="Syntax Highlight Theme Selections" title="Syntax Highlight Theme Selections" /></p>
-
-<p><strong>Syntax Highlight is not officially signed</strong>. Make sure you’re aware of the risks if you’re going to install it on your Mac. The project is open-source, so you can check the code yourself. I’m glad that we can enable this feature without tampering with each extension through terminal command.</p>
-
-<p><a href="https://github.com/sbarex/SourceCodeSyntaxHighlight/releases" title="Download Syntax Highlight"><strong>Download Syntax Highlight</strong></a></p>
 ]]></content>
   </entry>
   
