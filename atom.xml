@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-06-16T18:15:15+07:00</updated>
+  <updated>2022-06-17T01:28:30+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Prioritize Health]]></title>
+    <link href="https://sayzlim.net/prioritize-health/"/>
+    <updated>2022-06-16T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/prioritize-health</id>
+    <content type="html"><![CDATA[<p>In the last eight years, I’ve made a lot of decisions. There were some good and bad choices, but I always end up in a better situation if I follow this one rule.</p>
+
+<p>Health comes first.</p>
+
+<p>I am able to perform and think more effectively in both life and work when I make decisions that benefit my physical and mental health. I can sit without worrying about my back hurting. I can stay focused longer. I can think and analyze without feeling anxious.</p>
+
+<p><a href="https://twitter.com/sayzlim/status/1535493652998500353">My goal</a> is to be a good parent to my children. I want to be there whenever they need me. I want to be able to carry them upstairs without hurting my knees. I want to provide for them until they are old enough to care for themselves.</p>
+
+<p>Most people glorifying hustle culture fail to take care of their health. Even before I became a parent, I prioritized my health by <em>trying</em> to have a balanced diet and exercise regularly.</p>
+
+<p>If you are given the option, <strong>always choose to be healthy.</strong></p>
+
+<p>If there is one productivity tip I want to share with you, it is to keep yourself healthy so that you can do the work you’re proud of in the next two decades.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Better "Quit All" with Keyboard Maestro]]></title>
@@ -1164,39 +1185,6 @@ Address: 3.143.214.18
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Quick Find and Replace Keyboard Maestro Macro]]></title>
-    <link href="https://sayzlim.net/quick-find-replace-macro/"/>
-    <updated>2020-05-16T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/quick-find-replace-macro</id>
-    <content type="html"><![CDATA[<p>Do you often find yourself opening a separate text editor to replace a word from a selected line or paragraph? With Quick Find and Replace Macro, you can substitute a word from anywhere.</p>
-
-<p>I built this macro because I often replace part of a string in Google Sheet Formula. For example, here is the formula I use to pull the value from <code class="language-plaintext highlighter-rouge">2020/04</code> sheet into the main dashboard.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>=IF(ISNA(INDEX('2020/04'!J:J,MATCH(A2,'2020/04'A:A,0)))
-,0,INDEX('2020/04'!J:J,MATCH(A2,'2020/04'!A:A,0)))
-</code></pre></div></div>
-
-<p>If I need to pull <code class="language-plaintext highlighter-rouge">2020/05</code> sheet into the dashboard, I have to copy the formula and replace <code class="language-plaintext highlighter-rouge">2020/04</code> with <code class="language-plaintext highlighter-rouge">2020/05</code>.</p>
-
-<p>You can either use Google Sheet built-in search and replace, or use another text editor’s find and replace feature. You have two choices from the basic search feature: replace each word one by one or replace every found word.</p>
-
-<p>There is no option to search and replace only selected text.</p>
-
-<p>What if there is a better way to find and replace text? Isn’t it better if you can replace only the found word in the selected paragraph without opening another text editor?</p>
-
-<p><img src="https://images.sayzlim.net/2020/05/quick-find-replace-macro.gif" alt="Quick Find and Replace Macro" title="Quick Find and Replace Macro" /></p>
-
-<p>Quick Find and Replace Macro does precisely one thing. You can select any part of a paragraph. You can select the whole content. You can select the last sentence.</p>
-
-<p>Set the shortcut to <code class="language-plaintext highlighter-rouge">Option - R</code>, type the word you want to find and replace, and press <code class="language-plaintext highlighter-rouge">return</code> to complete the process.</p>
-
-<p>You can access this feature from everywhere. This macro has changed the way I manipulate text. I hope you will find this useful.</p>
-
-<p><strong><a href="http://s3.sayzlim.net/f/km-quick-find-replace.zip?version=1.0" title="Download Quick Find and Replace Macro">Download Quick Find and Replace Macro</a></strong></p>
 ]]></content>
   </entry>
   
