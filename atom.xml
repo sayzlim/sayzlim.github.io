@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-07-06T12:23:12+07:00</updated>
+  <updated>2022-07-07T10:21:49+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -1049,7 +1049,7 @@ Address: 3.143.214.18
     <content type="html"><![CDATA[<p>I’ve been using Things 3 as my GTD since 2014. It has become an essential part of my life. I want to share several tips for anyone looking to use Things to manage several aspects of your life. These tips are strictly for Things on macOS.</p>
 
 <h2 id="1-use-keyboard-shortcuts-with-quick-entry">1. Use Keyboard Shortcuts with Quick Entry</h2>
-<p>Quick Entry lets you jot down the tasks without bringing Things to the front. You should set it up if you haven’t done so. I assigned `Control - Space’ as the dedicated shortcut for this feature.</p>
+<p>Quick Entry lets you jot down the tasks without bringing Things to the front. You should set it up if you haven’t done so. I assigned <code class="language-plaintext highlighter-rouge">Control - Space</code> as the dedicated shortcut for this feature.</p>
 
 <p>You can also add some details for the task by using the available shortcuts. Here are some default shortcuts I often use:</p>
 
