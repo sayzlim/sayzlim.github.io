@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-07-28T00:15:33+07:00</updated>
+  <updated>2022-07-30T11:50:43+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to fix EventMachine C extension error in Jekyll]]></title>
+    <link href="https://sayzlim.net/fix-eventmachine-c-extension-error/"/>
+    <updated>2022-07-30T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/fix-eventmachine-c-extension-error</id>
+    <content type="html"><![CDATA[<p>Jekyll comes with a built-in live reload feature to help you preview the change as you make a change to your codes. I encountered an error after running <code class="language-plaintext highlighter-rouge">bundle update</code> recently, and it turns out the fix is straightforward.</p>
+
+<p><img src="https://images.sayzlim.net/2022/07/jekyll-gem-event-machine-error.webp" alt="" title="EventMachine C error logs in Terminal" /></p>
+
+<p><strong>You can resolve most of the errors</strong> by updating affected gems to the latest version.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> However, <a href="https://github.com/eventmachine/eventmachine" title="eventmachine/eventmachine: EventMachine: fast, simple event-processing library for Ruby programs">EventMachine</a> is not exactly being actively maintained, so we don’t always receive the latest version if you’re using <a href="https://rubygems.org/">RubyGems.org</a> as the source for your Gemfile.</p>
+
+<p>You can fix the error by updating the eventmachine gem source to the official GitHub repository. Here is the line you want to paste into the Gemfile.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'eventmachine', github: 'eventmachine/eventmachine'
+</code></pre></div></div>
+
+<p>After that, you can run <code class="language-plaintext highlighter-rouge">bundle update</code> to fetch the latest version of every gem in your Jekyll project.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Sometimes you want to revert to the older version if the latest version is the cause of the errors. <a href="https://bundler.io/man/gemfile.5.html" title="Bundler: gemfile">Check out the official page</a> to learn more about Gemfile. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Getting Started with Obsidian]]></title>
@@ -1100,49 +1128,6 @@ Address: 3.143.214.18
 <p>The usage is straightforward. You press the shortcuts, and it will start to show you which macOS app is binding the keys.</p>
 
 <p>It’s possible to <a href="/non-conflicting-shortcuts/" title="Non-Conflicting Shortcuts - Sayz Lim">avoid conflicting shortcuts</a> by following some best practices when assigning a shortcut.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Quick Calculation Keyboard Maestro Macro]]></title>
-    <link href="https://sayzlim.net/quick-calculation-keyboard-maestro-macro/"/>
-    <updated>2020-05-27T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/quick-calculation-keyboard-maestro-macro</id>
-    <content type="html"><![CDATA[<p>Sometimes you want to quickly calculate a number while typing. Here’s how you can maintain the typing flow and calculate numbers with Keyboard Maestro.</p>
-
-<p>We want the macro to replace the math formula with the result whenever we type the formula that ends with a question mark. Here are some examples:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30*(50+20)?
-100^2?
-75*30?
-</code></pre></div></div>
-
-<h2 id="macro-breakdown">Macro Breakdown</h2>
-
-<video controls="" style="max-width: 100%;">
-<source src="https://images.sayzlim.net/2020/05/quick-calculation-macro.mp4" type="video/mp4" />
-</video>
-
-<p>We’re going to select “This string is typed” as a trigger to decide when to call this macro. Change the dropdown to “regular expression match” and enter this expression:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[\d.,+\-*/()^]+\?
-</code></pre></div></div>
-
-<p>If you’re not familiar with regular expressions, you can <a href="https://sayzlim.net/clipboards-regular-expression/" title="Manipulate Clipboards with Regular Expression - Sayz Lim">learn more about it in this post</a>. What we’re doing here is to tell Keyboard Maestro:</p>
-
-<ul>
-  <li>Run the macro only when any digit <code class="language-plaintext highlighter-rouge">\d</code> and math signs like <code class="language-plaintext highlighter-rouge">+\-*/()^</code> appear at least once and repeat regardless of the order. You can see that we wrapped these values in a bracket as <code class="language-plaintext highlighter-rouge">[\d.,+\-*/()^]+</code> followed by a plus sign.</li>
-  <li>Run the macro only when the matched string ends with a question mark <code class="language-plaintext highlighter-rouge">\?</code>.</li>
-  <li>The backslash is used to escape special characters in regular expressions such as question mark, plus, and minus sign.</li>
-</ul>
-
-<p>The triggered macro will copy the selected line and extract only the detected math formula. It will remove the question mark and pass it to <strong>Filter Variable “Formula” with Calculate</strong> and save the result back to <strong>Formula</strong> variable.</p>
-
-<p>In the last step, the macro replaces the detected formula in the clipboard with the result and then paste it back to the application source.</p>
-
-<p>There are some lessons to build a macro here. You can extract strings with regular expressions, manipulate them, and send them back to the source.</p>
-
-<p><strong><a href="http://s3.sayzlim.net/f/km-automatic-calculation.zip">Download Quick Calculation Macro</a></strong></p>
 ]]></content>
   </entry>
   
