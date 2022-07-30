@@ -10,7 +10,7 @@ const _manager = {
 			localStorage.getItem('user-color-scheme')
 		) {
 			let userColorScheme = localStorage.getItem('user-color-scheme');
-			this.setTheme('html', userColorScheme);
+			this.setTheme(userColorScheme);
 		}
 	},
 	resetUserTheme: function() {
