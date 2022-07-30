@@ -1,3 +1,29 @@
+const _manager = {
+	setTheme: function (userColorScheme) {
+		localStorage.setItem('user-color-scheme', userColorScheme);
+		document
+				.querySelector('html')
+				.setAttribute('data-site-theme', userColorScheme);
+	},
+	setUserTheme: function () {
+		if (
+			localStorage.getItem('user-color-scheme')
+		) {
+			let userColorScheme = localStorage.getItem('user-color-scheme');
+			this.setTheme('html', userColorScheme);
+		}
+	},
+	resetUserTheme: function() {
+		localStorage.removeItem('user-color-scheme');
+		document
+				.querySelector('html')
+				.removeAttribute('data-site-theme');
+	},
+	init: function () {
+		this.setUserTheme();
+	},
+};
+
 let lastKnownScrollPosition = 0;
 let ticking = false;
 
@@ -40,70 +66,71 @@ document.addEventListener('scroll', function (e) {
 
 // Page Visibility API
 const _carbonOptimize = {
-  isRefreshAble: function () {
-    return !(
-      typeof document.addEventListener === 'undefined' ||
-      this.browserSupport().hidden === undefined
-    );
-  },
-  browserSupport: function () {
-    let hidden;
-    let visibilityChange;
-    if (typeof document.hidden !== 'undefined') {
-      // Opera 12.10 and Firefox 18 and later support
-      hidden = 'hidden';
-      visibilityChange = 'visibilitychange';
-    } else if (typeof document.msHidden !== 'undefined') {
-      hidden = 'msHidden';
-      visibilityChange = 'msvisibilitychange';
-    } else if (
-      typeof document.webkitHidden !== 'undefined'
-    ) {
-      hidden = 'webkitHidden';
-      visibilityChange = 'webkitvisibilitychange';
-    }
-    return {
-      hidden: hidden,
-      visibilityChange: visibilityChange,
-    };
-  },
-  handleVisibilityChange: function () {
-    const isElementInViewport = function (el) {
-      let element = document.querySelector(el);
-      let bounding = element.getBoundingClientRect();
-      let isVisible;
+	isRefreshAble: function () {
+		return !(
+			typeof document.addEventListener === 'undefined' ||
+			this.browserSupport().hidden === undefined
+		);
+	},
+	browserSupport: function () {
+		let hidden;
+		let visibilityChange;
+		if (typeof document.hidden !== 'undefined') {
+			// Opera 12.10 and Firefox 18 and later support
+			hidden = 'hidden';
+			visibilityChange = 'visibilitychange';
+		} else if (typeof document.msHidden !== 'undefined') {
+			hidden = 'msHidden';
+			visibilityChange = 'msvisibilitychange';
+		} else if (
+			typeof document.webkitHidden !== 'undefined'
+		) {
+			hidden = 'webkitHidden';
+			visibilityChange = 'webkitvisibilitychange';
+		}
+		return {
+			hidden: hidden,
+			visibilityChange: visibilityChange,
+		};
+	},
+	handleVisibilityChange: function () {
+		const isElementInViewport = function (el) {
+			let element = document.querySelector(el);
+			let bounding = element.getBoundingClientRect();
+			let isVisible;
 
-      if (
-        bounding.top >= 0 &&
-        bounding.left >= 0 &&
-        bounding.right <= window.innerWidth &&
-        bounding.bottom <= window.innerHeight
-      ) {
-        isVisible = true;
-      } else {
-        isVisible = false;
-      }
-      return isVisible;
-    };
+			if (
+				bounding.top >= 0 &&
+				bounding.left >= 0 &&
+				bounding.right <= window.innerWidth &&
+				bounding.bottom <= window.innerHeight
+			) {
+				isVisible = true;
+			} else {
+				isVisible = false;
+			}
+			return isVisible;
+		};
 
-    if (!document.hidden) {
-      if (
-        typeof _carbonads !== 'undefined' &&
-        isElementInViewport('#carbonads')
-      ) {
-        _carbonads.refresh();
-      }
-    }
-  },
-  init: function () {
-    if (this.isRefreshAble()) {
-      document.addEventListener(
-        this.browserSupport().visibilityChange,
-        this.handleVisibilityChange,
-        false
-      );
-    }
-  },
+		if (!document.hidden) {
+			if (
+				typeof _carbonads !== 'undefined' &&
+				isElementInViewport('#carbonads')
+			) {
+				_carbonads.refresh();
+			}
+		}
+	},
+	init: function () {
+		if (this.isRefreshAble()) {
+			document.addEventListener(
+				this.browserSupport().visibilityChange,
+				this.handleVisibilityChange,
+				false
+			);
+		}
+	},
 };
 
 _carbonOptimize.init();
+_manager.init();
