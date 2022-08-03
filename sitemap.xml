@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://sayzlim.net/</loc>
-<lastmod>2022-08-01T09:49:14+07:00</lastmod>
+<lastmod>2022-08-04T00:25:47+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tags/</loc>
-<lastmod>2022-08-01T09:49:14+07:00</lastmod>
+<lastmod>2022-08-04T00:25:47+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tools/</loc>
-<lastmod>2022-08-01T09:49:14+07:00</lastmod>
+<lastmod>2022-08-04T00:25:47+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/welcome/</loc>
@@ -531,6 +531,10 @@
 <url>
 <loc>https://sayzlim.net/fix-eventmachine-c-extension-error/</loc>
 <lastmod>2022-07-30T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>https://sayzlim.net/keyboard-maestro-macro-tips/</loc>
+<lastmod>2022-08-04T00:00:00+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/lab/matrix/</loc>

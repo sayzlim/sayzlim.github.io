@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-08-01T09:49:14+07:00</updated>
+  <updated>2022-08-04T00:25:47+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,65 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to create a robust and reliable Keyboard Maestro macro]]></title>
+    <link href="https://sayzlim.net/keyboard-maestro-macro-tips/"/>
+    <updated>2022-08-04T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/keyboard-maestro-macro-tips</id>
+    <content type="html"><![CDATA[<p>Building a reliable macro can be challenging if you have to run a series of sub-macros together. I’ve written my fair share of macros and put together a series of tips to help you efficiently build and debug a macro.</p>
+
+<h2 id="setup-the-macro-default-state">Setup The Macro Default State</h2>
+<p>You want to <strong>set a consistent default state</strong> if you’re building a macro that involves a series of sub-macros. Setting a default state is like moving the chess pieces to the starting position after you’ve finished the game.</p>
+
+<p>Setting a default state is essential if the macro you build needs to deal with multiple application windows running in full screen.</p>
+
+<p><img src="https://images.sayzlim.net/2022/08/keyboard-maestro-default-state.webp" alt="" title="Keyboard Maestro Macro Default State" /></p>
+
+<p>Here is an example.</p>
+
+<p>You want to set up a workspace that involves creating and resizing multiple Safari windows on a different screen. The default state will be a Safari application with all the windows closed. The macro will start by pressing <code class="language-plaintext highlighter-rouge">Command-Option-Q</code> to quit and close all windows.</p>
+
+<p>The same can be said when you’re building a macro that pulls data from the spreadsheet tab and enter them into a different application. The default state is to close irrelevant documents and browser tabs. Then you can launch the applications for the macro to run.</p>
+
+<h2 id="set-between-actions-delay">Set Between Actions Delay</h2>
+<p>Another common problem with macro is that they can run too fast. Sometimes the application won’t be ready to respond to your macro in time and create unexpected behaviors. For example, the macro will type the value before the input field is focused.</p>
+
+<p>The workaround is pretty simple. You can set an action delay between macro to 0.2 seconds at the beginning of the macro. Play around with the value until you can ensure that the macro runs consistently.</p>
+
+<p class="sidenote">You can also resolve these unexpected behaviors by implementing control flows. I’ve published a <a href="https://sayzlim.net/building-keyboard-maestro-macros-tips/">collection of tips</a> to help you build your first macro before. Although it hasn’t been updated for a while, these tips are still relevant today.</p>
+
+<h2 id="declutter-with-local-or-instance-variables">Declutter with Local or Instance Variables</h2>
+<p>Variables are wonderful pieces of Keyboard Maestro. You can use it to combine a series of macros to build a simple application.</p>
+
+<p>The common mistake with people new to Keyboard Maestro is saving variables globally. You can check if you’ve been using global variables by opening the <strong>Preferences Variables</strong> settings. Most of the time, you don’t have to expose those variables to every macro.</p>
+
+<p><img src="https://images.sayzlim.net/2022/08/keyboard-maestro-variables-preferences.webp" alt="" title="Keyboard Maestro Value Preferences" /></p>
+
+<p>The solution for the problem is to prepend <code class="language-plaintext highlighter-rouge">Local</code> or <code class="language-plaintext highlighter-rouge">Instance</code> to the variable so it’s available only for the executing macro during the runtime.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>The difference between these two is how accessible they are to the executing macro. Most of the time, you can use local variables, but you want to use instance variables when:</p>
+
+<ul>
+  <li>You want the variable accessible by the sub-macros from the executing macro.</li>
+  <li>You want to keep the variable unique for each execution. For example, assuming you have a macro where you save file name to a variable called <code class="language-plaintext highlighter-rouge">InstanceFileName</code>. You can run the macro multiple times and each <code class="language-plaintext highlighter-rouge">InstanceFileName</code> will be unique even if macros run concurrently. Instance variables are useful when you have a macro that does many things in the background and you prefer not to wait for them to run sequentially.</li>
+</ul>
+
+<h2 id="debug-with-value-inspector">Debug with Value Inspector</h2>
+<p>Once you start chaining multiple actions together, you will notice that you often need to check the value of the variables or tokens you plan to use. Keyboard Maestro has a built-in inspector where you can preview the value of variables. You can enable them by pressing <kbd>Command - 6</kbd> or selecting it from <strong>Window - Value Inspector</strong>.</p>
+
+<p><img src="https://images.sayzlim.net/2022/08/keyboard-maestro-value-inspector.webp" alt="" title="Keyboard Maestro Value Inspector" /></p>
+
+<p>Keyboard Maestro also comes with a <a href="https://wiki.keyboardmaestro.com/Tokens#List_of_Tokens">variety of tokens</a> that you can use to set up your macro. A common token you want to use is the <code class="language-plaintext highlighter-rouge">ICUDateTime</code> token, where you can customize the date format. For example, you can enter <code class="language-plaintext highlighter-rouge">%ICUDateTime%yyyy-MM-dd% </code> in the inspector to see what it looks like before implementing it in the macro.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:2" role="doc-endnote">
+      <p>You can <a href="https://wiki.keyboardmaestro.com/manual/Variables">learn more about variables</a> from Keyboard Maestro documentation. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to fix EventMachine C extension error in Jekyll]]></title>
@@ -1109,25 +1168,6 @@ Address: 3.143.214.18
 <p>The primary purpose of setting a deadline is to provide a state of urgency. If you have a task that must be completed before a specific date, you must select the due date a few days earlier for the task to appear in the Today view.</p>
 
 <p>If you wish to learn more about Things, you should <a href="https://culturedcode.com/things/guide/">check out their official guide</a>.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Find Conflicting Keyboard Shortcuts on Mac]]></title>
-    <link href="https://sayzlim.net/find-conflicting-shortucts-mac/"/>
-    <updated>2020-06-07T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/find-conflicting-shortucts-mac</id>
-    <content type="html"><![CDATA[<p>It’s frustrating to troubleshoot conflicting keyboard shortcuts on Mac because it doesn’t show you which app is currently binding the combination keys. Here’s how you can find the conflicting keys on Mac.</p>
-
-<video controls="" style="max-width: 100%;">
-<source src="https://images.sayzlim.net/2020/06/find-conflicting-shortcuts-mac.mp4" type="video/mp4" />
-</video>
-
-<p><a href="http://www.irradiatedsoftware.com/labs/" title="Irradiated Software - Labs - Beta Tested &bull; Gamma Blasted">ShortcutDetective</a> is a free app from Irradiated Labs that can help you detect conflicting shortcuts on your Mac. You can download ShortcutDetective and grant accessibility permission to start identifying the problematic keys combination.</p>
-
-<p>The usage is straightforward. You press the shortcuts, and it will start to show you which macOS app is binding the keys.</p>
-
-<p>It’s possible to <a href="/non-conflicting-shortcuts/" title="Non-Conflicting Shortcuts - Sayz Lim">avoid conflicting shortcuts</a> by following some best practices when assigning a shortcut.</p>
 ]]></content>
   </entry>
   
