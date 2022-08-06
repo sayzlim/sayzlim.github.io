@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-08-05T07:37:07+07:00</updated>
+  <updated>2022-08-06T11:36:32+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,113 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to sort CSS properties with Prettier in Sublime Text]]></title>
+    <link href="https://sayzlim.net/sort-css-prettier-sublime-text/"/>
+    <updated>2022-08-06T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/sort-css-prettier-sublime-text</id>
+    <content type="html"><![CDATA[<p>I’ve been searching for a replacement for CSScomb because it is no longer actively being maintained. It turns out Prettier can also accomplish the same work by combining it with PostCSS.</p>
+
+<p>We’ll be using <a href="https://prettier.io/" title="Prettier · Opinionated Code Formatter">Prettier</a> as the code formatter. I’m going to assume that you’re not familiar with configuring Sublime Text packages, and I will provide all the details you need to get this setup working.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<ol id="markdown-toc">
+  <li><a href="#getting-started" id="markdown-toc-getting-started">Getting Started</a>    <ol>
+      <li><a href="#nodejs" id="markdown-toc-nodejs">Node.js</a></li>
+      <li><a href="#required-node-packages" id="markdown-toc-required-node-packages">Required Node Packages</a></li>
+      <li><a href="#jsprettier-sublime-package" id="markdown-toc-jsprettier-sublime-package">JsPrettier Sublime Package</a></li>
+    </ol>
+  </li>
+  <li><a href="#sublime-text-settings" id="markdown-toc-sublime-text-settings">Sublime Text Settings</a>    <ol>
+      <li><a href="#jsprettier-settings" id="markdown-toc-jsprettier-settings">JsPrettier Settings</a></li>
+      <li><a href="#additional-prettier-cli-arguments" id="markdown-toc-additional-prettier-cli-arguments">Additional Prettier CLI Arguments</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="getting-started">Getting Started</h2>
+<p>Sublime Text is just a text editor. Unlike Visual Studio Code which is built with Electron, it doesn’t support Node.js by default. <em>Therefore, most installed packages will not work out of the box.</em> Sometimes you have to install the dependencies on your local machine before you can run them.</p>
+
+<h3 id="nodejs">Node.js</h3>
+<p>The best way to install <a href="https://nodejs.org/en/">Node.js</a> is using Node version manager so you can update and switch between versions easily. I’ve written a <a href="/setup-macos-web-development/">comprehensive guide to set up your development environment for macOS</a> if you wish to learn more about it.</p>
+
+<h3 id="required-node-packages">Required Node Packages</h3>
+<p>You need these three packages to format and sort the CSS in the file.</p>
+<ul>
+  <li>prettier</li>
+  <li>postcss</li>
+  <li>prettier-plugin-css-order</li>
+</ul>
+
+<p>You want to install them globally on your machine because it’s not dependent on any projects.<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup> Run the following commands to install them all at once.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">--global</span> prettier postcss prettier-plugin-css-order
+</code></pre></div></div>
+
+<p>To confirm that they are installed correctly, you can run this command to list the installed global packages.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm list <span class="nt">-g</span> <span class="nt">--depth</span> 0
+</code></pre></div></div>
+
+<h3 id="jsprettier-sublime-package">JsPrettier Sublime Package</h3>
+
+<p><img src="https://images.sayzlim.net/2022/08/jsprettier-install.webp" alt="" title="Install JsPrettier with Package Control" /></p>
+
+<p>Install <a href="https://packagecontrol.io/packages/JsPrettier" title="JsPrettier - Packages - Package Control">JsPrettier Sublime Package</a>. They provide several methods to install the package, but I recommend using <a href="https://packagecontrol.io/" title="Package Control - the Sublime Text package manager">Package Control</a> to manage your Sublime Text packages. It’s a package manager that makes it easy to install, remove, and update your installed Sublime packages.</p>
+
+<h2 id="sublime-text-settings">Sublime Text Settings</h2>
+
+<h3 id="jsprettier-settings">JsPrettier Settings</h3>
+<p>JsPrettier doesn’t work out of the box after you’ve installed it. You still have to configure the <code class="language-plaintext highlighter-rouge">prettier_cli_path</code> and <code class="language-plaintext highlighter-rouge">node_path</code> to tell Sublime Text to run the command to process your CSS files.</p>
+
+<p>You can access the package setting by pressing <kbd>Command-Shift-P</kbd> to call the Command Palette then type <code class="language-plaintext highlighter-rouge">jsprettier settings - side-by-side</code> to open the default and user settings side by side.</p>
+
+<p><img src="https://images.sayzlim.net/2022/08/jsprettier-side-by-side.webp" alt="" title="JsPrettier Side by Side Settings in Sublime Text" /></p>
+
+<p>To customize JsPrettier package, you need to override the default settings by passing the value into the associated key. For example, here is how you want to set up the paths if you have installed Node.js with N as the version manager:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"prettier_cli_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~/.n/bin/prettier"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"node_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~/.n/bin/node"</span><span class="p">,</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p class="sidenote"><strong>Where can I find the package paths?</strong> If you’re uncertain about the path of <code class="language-plaintext highlighter-rouge">prettier</code> and <code class="language-plaintext highlighter-rouge">node</code>, you can type <code class="language-plaintext highlighter-rouge">which prettier node</code> in Terminal to print their paths.</p>
+
+<h3 id="additional-prettier-cli-arguments">Additional Prettier CLI Arguments</h3>
+<p>You should be able to use JsPrettier package in Sublime Text now, but it still doesn’t sort the CSS properties. The main feature of <code class="language-plaintext highlighter-rouge">prettier-plugin-css-order</code> is to add two configurable keys to Prettier:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">order</code> defaults to <code class="language-plaintext highlighter-rouge">concentric-css</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">keepOverrides</code> defaults to <code class="language-plaintext highlighter-rouge">true</code>, for a new codebase <code class="language-plaintext highlighter-rouge">false</code> is recommended.</li>
+</ul>
+
+<p>We want to tell Prettier to always sort the CSS by passing <code class="language-plaintext highlighter-rouge">order</code> as the additional argument. It’s based on <a href="https://github.com/Siilwyn/css-declaration-sorter/">css-declaration-sorter</a>. You can set the order to either <code class="language-plaintext highlighter-rouge">alphabetical</code>, <code class="language-plaintext highlighter-rouge">smacss</code>, or <code class="language-plaintext highlighter-rouge">concentric-css</code></p>
+
+<p>Here is what the user settings look like after passing the <code class="language-plaintext highlighter-rouge">--order</code> value.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"prettier_cli_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~/.n/bin/prettier"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"node_path"</span><span class="p">:</span><span class="w"> </span><span class="s2">"~/.n/bin/node"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"additional_cli_args"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"--order"</span><span class="p">:</span><span class="w"> </span><span class="s2">"smacss"</span><span class="w"> </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Save the JsPrettier user settings and run Prettier to confirm it’s working. There is an option to format code on save by setting <code class="language-plaintext highlighter-rouge">auto_format_on_save</code> to <code class="language-plaintext highlighter-rouge">true</code>, but I prefer to sort the CSS manually by searching for <code class="language-plaintext highlighter-rouge">JSPrettier: Format Code</code> with the command palette.</p>
+
+<p>If you have any questions about this guide, you can send me a DM on Twitter.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Sublime Text is as my favorite text editor because it’s lightweight and fast. However, it can be challenging to configure installed packages without understanding how preferences are stored in Sublime Text. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>I write a small amount of CSS daily to help publishers fix their ad format issues. If you use the package only on your machine, you can install them as a global package. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to create a robust and reliable Keyboard Maestro macro]]></title>
@@ -1125,49 +1232,6 @@ Address: 3.143.214.18
 <p>The only option I enable is <code class="language-plaintext highlighter-rouge">redirect_url</code>. It allows you to redirect subscribers to a custom landing page whenever they have successfully signed up for your newsletter. Replace <code class="language-plaintext highlighter-rouge">https://sayzlim.net/welcome/</code> with your landing page URL.</p>
 
 <p>Once you’ve confirmed that the form is working, you can style it to match your site design.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tips for Using Things Efficiently on macOS]]></title>
-    <link href="https://sayzlim.net/tips-using-things-macos/"/>
-    <updated>2021-02-14T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/tips-using-things-macos</id>
-    <content type="html"><![CDATA[<p>I’ve been using Things 3 as my GTD since 2014. It has become an essential part of my life. I want to share several tips for anyone looking to use Things to manage several aspects of your life. These tips are strictly for Things on macOS.</p>
-
-<h2 id="1-use-keyboard-shortcuts-with-quick-entry">1. Use Keyboard Shortcuts with Quick Entry</h2>
-<p>Quick Entry lets you jot down the tasks without bringing Things to the front. You should set it up if you haven’t done so. I assigned <code class="language-plaintext highlighter-rouge">Control - Space</code> as the dedicated shortcut for this feature.</p>
-
-<p>You can also add some details for the task by using the available shortcuts. Here are some default shortcuts I often use:</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">Command - S</code> to schedule the task to another date.</li>
-  <li><code class="language-plaintext highlighter-rouge">Command - Shift - D</code> to set a deadline for the task.</li>
-  <li><code class="language-plaintext highlighter-rouge">Command - Shift - M</code> to move the task into a different area or project.</li>
-  <li><code class="language-plaintext highlighter-rouge">Command - Shift - T</code> to tag the task.</li>
-</ul>
-
-<h2 id="2-its-okay-to-clutter-the-inbox">2. It’s Okay to Clutter The Inbox</h2>
-<p>I used to be an extremely organized person. I couldn’t deal with a cluttered inbox at all. However, I realized the obsession with an empty inbox only crippled my productivity.</p>
-
-<p>Inbox can be messy. Inbox doesn’t have to be empty.</p>
-
-<p>Inbox is meant to be a temporary space for your tasks. You use it to collect tasks and ideas. If something comes up while you’re working, you can place them inside the Inbox.</p>
-
-<h2 id="3-no-task-naming-rules">3. No Task Naming Rules</h2>
-<p>You can name it however you want. Sometimes I just paste the link as the task name. Sometimes I leave the title blank and fill up only the details. You can rename them later.</p>
-
-<p>There will be time for you to reorganize and remove those that are not important as you think.</p>
-
-<h2 id="4-schedule-inbox-and-today-tasks">4. Schedule Inbox and Today Tasks</h2>
-<p>Some tasks are not meant to be completed immediately. Review your Inbox and Today once in a few days and reschedule them if you’re overwhelmed by the number of tasks that show up in Today. Inbox can get massive if you don’t decide what you want to do with them. So, either delete or break them into smaller tasks by rescheduling them into another day.</p>
-
-<p>That way, Today becomes more manageable because they’ve been spread out into different dates.</p>
-
-<h2 id="5-use-deadline">5. Use Deadline</h2>
-<p>The primary purpose of setting a deadline is to provide a state of urgency. If you have a task that must be completed before a specific date, you must select the due date a few days earlier for the task to appear in the Today view.</p>
-
-<p>If you wish to learn more about Things, you should <a href="https://culturedcode.com/things/guide/">check out their official guide</a>.</p>
 ]]></content>
   </entry>
   
