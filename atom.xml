@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-08-09T00:17:24+07:00</updated>
+  <updated>2022-08-09T11:16:20+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -110,7 +110,7 @@
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1" role="doc-endnote">
-      <p>Sublime Text is as my favorite text editor because it’s lightweight and fast. However, it can be challenging to configure installed packages without understanding how preferences are stored in Sublime Text. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+      <p>Sublime Text is my favorite text editor because it’s lightweight and fast. However, it can be challenging to configure installed packages without understanding how preferences are stored in Sublime Text. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
     <li id="fn:2" role="doc-endnote">
       <p>I write a small amount of CSS daily to help publishers fix their ad format issues. If you use the package only on your machine, you can install them as a global package. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
