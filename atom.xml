@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-08-09T11:16:20+07:00</updated>
+  <updated>2022-08-10T01:49:11+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,133 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Reading CSV as JSON with Alfred Script Filter]]></title>
+    <link href="https://sayzlim.net/alfred-script-filter-read-csv/"/>
+    <updated>2022-08-10T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/alfred-script-filter-read-csv</id>
+    <content type="html"><![CDATA[<p>I write this guide for people who want to learn how to set up Alfred with Script Filter as the input. It’s perfectly fine if you’re not familiar with any scripting languages. The guide will show you how to convert CSV files into JSON objects that can populate Alfred search results.</p>
+
+<h2 id="pick-a-scripting-language">Pick a Scripting Language</h2>
+<p>You can write the script in any language you’re comfortable with and run it through a Unix shell. For this tutorial, we’re going to use Python 3. The easiest way to install Python is through a package manager like Homebrew. You can <a href="https://docs.python-guide.org/starting/install3/osx/">refer to this guide to install Python on macOS</a>.</p>
+
+<h2 id="workflow-setup">Workflow Setup</h2>
+<p>Create a blank workflow and add Script Filter input with keywords to trigger the workflow. Write this down in the script input field.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 main.py
+</code></pre></div></div>
+
+<p><img src="https://images.sayzlim.net/2022/08/alfred-script-filter-reveal-workflow.webp" alt="" title="Reveal Alfred Workflow Folder" /></p>
+
+<p>Click on the folder icon as seen from the screenshot above to reveal the workflow directory. Create a new Python file in the workflow folder and name it <code class="language-plaintext highlighter-rouge">main.py</code>. The main process will be written in this script.</p>
+
+<p>There are two things we want to achieve in this script:</p>
+<ol>
+  <li>The workflow must be able to read the file with a relative path using tilde so any user can use it.</li>
+  <li>The workflow must be able to convert the CSV into JSON for Alfred to filter the results.</li>
+</ol>
+
+<p>Here is the <code class="language-plaintext highlighter-rouge">sample.csv</code> content that we’ll be using for this tutorial. You can store it on the desktop.</p>
+
+<p><a href="https://s3.sayzlim.net/f/sample.csv">Download CSV</a></p>
+
+<h2 id="python-script">Python Script</h2>
+<p>Here is a Python script to read a CSV file from your selected source on your machine. I’m going to break down each part of the code, so they make sense, and you can modify it to match your workflow.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">csv_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s">"~/Desktop/sample.csv"</span><span class="p">)</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"items"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_file_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+	<span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="p">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+	<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+		<span class="n">row_item</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="s">"uid"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">'title'</span><span class="p">],</span>
+			<span class="s">"title"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">],</span>
+			<span class="s">"subtitle"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"subtitle"</span><span class="p">],</span>
+			<span class="s">"match"</span> <span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">row</span><span class="p">[</span><span class="s">"platform"</span><span class="p">],</span>
+			<span class="s">"arg"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">],</span>
+			<span class="s">"text"</span><span class="p">:</span> <span class="p">{</span>
+					<span class="s">"copy"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"price"</span><span class="p">]</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+		<span class="n">result</span><span class="p">[</span><span class="s">"items"</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">row_item</span><span class="p">)</span>
+
+<span class="n">output</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>First, we must import the modules we need to process the JSON and CSV files. These modules allow us to run the functions, read CSV files and convert them into JSON. We also want to expand the tilde using the <code class="language-plaintext highlighter-rouge">os.path.expanduser</code> function so this script can work for all users.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="n">csv_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">path</span><span class="p">.</span><span class="n">expanduser</span><span class="p">(</span><span class="s">"~/Desktop/sample.csv"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Alfred accepts JSON as the output of the script. The result must be stored inside the <code class="language-plaintext highlighter-rouge">items</code> key for Alfred to show them when you search for it. The following script declares a <code class="language-plaintext highlighter-rouge">result</code> dictionary variable with <code class="language-plaintext highlighter-rouge">items</code> as an array.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">result</span> <span class="o">=</span> <span class="p">{</span>
+	<span class="s">"items"</span><span class="p">:</span> <span class="p">[]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Now we want to populate the <code class="language-plaintext highlighter-rouge">items</code> key with the row item from the <code class="language-plaintext highlighter-rouge">csv_file_path</code>. The most important part is the value you assign for each key in the <code class="language-plaintext highlighter-rouge">row_item</code>. You can learn more about <a href="https://www.alfredapp.com/help/workflows/inputs/script-filter/json/">Script Filter JSON Format</a>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">csv_file_path</span><span class="p">)</span> <span class="k">as</span> <span class="n">csv_file</span><span class="p">:</span>
+	<span class="n">csv_reader</span> <span class="o">=</span> <span class="n">csv</span><span class="p">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">csv_file</span><span class="p">)</span>
+	<span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">csv_reader</span><span class="p">:</span>
+		<span class="n">row_item</span> <span class="o">=</span> <span class="p">{</span>
+			<span class="s">"uid"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">'title'</span><span class="p">],</span>
+			<span class="s">"title"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">],</span>
+			<span class="s">"subtitle"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"subtitle"</span><span class="p">],</span>
+			<span class="s">"match"</span> <span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">]</span> <span class="o">+</span> <span class="s">" "</span> <span class="o">+</span> <span class="n">row</span><span class="p">[</span><span class="s">"platform"</span><span class="p">],</span>
+			<span class="s">"arg"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"title"</span><span class="p">],</span>
+			<span class="s">"text"</span><span class="p">:</span> <span class="p">{</span>
+					<span class="s">"copy"</span><span class="p">:</span> <span class="n">row</span><span class="p">[</span><span class="s">"price"</span><span class="p">]</span>
+				<span class="p">}</span>
+			<span class="p">}</span>
+		<span class="n">result</span><span class="p">[</span><span class="s">"items"</span><span class="p">].</span><span class="n">append</span><span class="p">(</span><span class="n">row_item</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The advantage of using Script Filter is that we can tell Alfred which value to use for the workflow. Here are some essential keys that you need to know. Here are some things that you want to consider modifying:</p>
+
+<ul>
+  <li>Define the value that you want to pass in <code class="language-plaintext highlighter-rouge">arg</code>.</li>
+  <li>Pass multiple values into the <code class="language-plaintext highlighter-rouge">match</code> key to expand what Alfred can search. In the following example, we combine row title and platform values.</li>
+  <li>Define the text result you receive from copying <code class="language-plaintext highlighter-rouge">Command-C</code> and displaying large type with <code class="language-plaintext highlighter-rouge">Command-L</code> in the <code class="language-plaintext highlighter-rouge">text</code> key.</li>
+</ul>
+
+<p>Once the items are populated, you can convert them into JSON using <code class="language-plaintext highlighter-rouge">json.dumps(result)</code> and print the result for Alfred to pick up.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">output</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">output</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h2 id="example-use-case">Example Use Case</h2>
+
+<p><img src="https://images.sayzlim.net/2022/08/alfred-script-filter-workflow.webp" alt="" title="Alfred Script Filter Result" /></p>
+
+<p>Once you have the Script Filter input configured, you can chain them with actions based on the argument you’ve defined. For example, I have a CSV file containing the list of sites in the ad network. I can pass the site ID as the argument and open the dashboard URL to check the site performance.</p>
+
+<p>If you use CRM like HubSpot, you can also export the list of customers you manage and store them on your machine. Instead of using HubSpot search, you can filter the result right from Alfred. You can be creative with the modifiers:</p>
+<ul>
+  <li>Create an action to accept customer ID to take you to the HubSpot contact page.</li>
+  <li>Set the <code class="language-plaintext highlighter-rouge">text</code> key to the contact email address so you can copy it from the search result.</li>
+  <li>Display the company name as the subtitle of the search result.</li>
+</ul>
+
+<p>The advantage of Script Filter input is the flexibility to modify the value of the search result. It’s possible to build a fancier workflow with API, however, I see that processing CSV as the most practical use case for most people.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to sort CSS properties with Prettier in Sublime Text]]></title>
@@ -1138,100 +1265,6 @@ Address: 3.143.214.18
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Building a Plain HTML Form with ConvertKit]]></title>
-    <link href="https://sayzlim.net/plain-html-form-convertkit/"/>
-    <updated>2021-03-03T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/plain-html-form-convertkit</id>
-    <content type="html"><![CDATA[<p><a href="https://convertkit.com" title="ConvertKit - Email Marketing for Online Creators">ConvertKit</a> provides different kinds of templates that creators can easily embed on their website, but as a result, it also comes with additional scripts and options you don’t need. I will show you how to create a lightweight form that you can integrate into your website.</p>
-
-<p>Head over the Landing Pages and Forms to create a new form. Choose “Charlotte” as the design. Add another field and name it “First Name” if you want to collect your subscriber’s name. Choose “Embed” and “HTML” to view the content of the form.</p>
-
-<p><img src="https://images.sayzlim.net/2021/03/plain-html-convertkit.webp" alt="Embed Using HTML with ConvertKit" title="Embed Using HTML with ConvertKit" /></p>
-
-<p>You will need to locate the Form ID and User ID from the content of the HTML.</p>
-
-<ul>
-  <li>Form ID: The numerical values found in the URL while you’re editing the form. For example, mine is <code class="language-plaintext highlighter-rouge">2056639</code>. You can also find it as an action value in the HTML as <code class="language-plaintext highlighter-rouge">action="https://app.convertkit.com/forms/2056639/subscriptions"</code></li>
-  <li>User ID: The unique string of your ID which is passed as <code class="language-plaintext highlighter-rouge">data-uid</code> in the form. For example: <code class="language-plaintext highlighter-rouge">data-uid="c72f97e133"</code>.</li>
-</ul>
-
-<h3 id="plain-html-convertkit-form">Plain HTML ConvertKit Form</h3>
-<p>Here is the HTML ConvertKit form that you can integrate into your site. You have to replace the <code class="language-plaintext highlighter-rouge">actions</code>, <code class="language-plaintext highlighter-rouge">data-sv-form</code>, and <code class="language-plaintext highlighter-rouge">data-uid</code> with your own values.</p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form"</span> <span class="na">action=</span><span class="s">"https://app.convertkit.com/forms/2056450/subscriptions"</span> <span class="na">method=</span><span class="s">"post"</span> <span class="na">data-sv-form=</span><span class="s">"2056450"</span> <span class="na">data-uid=</span><span class="s">"c249fe0755"</span> <span class="na">data-options=</span><span class="s">"{&amp;quot;settings&amp;quot;:{&amp;quot;after_subscribe&amp;quot;:{&amp;quot;action&amp;quot;: &amp;quot;redirect&amp;quot;,&amp;quot;redirect_url&amp;quot;: &amp;quot;https://sayzlim.net/welcome/&amp;quot;}}}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span><span class="nt">&gt;</span>First Name<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"fields[first_name]"</span> <span class="na">placeholder=</span><span class="s">"First Name"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">required</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">value=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"email_address"</span> <span class="na">placeholder=</span><span class="s">"Email Address"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">required</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">data-element=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"subscribe"</span> <span class="na">value=</span><span class="s">"Subscribe"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/form&gt;</span>
-</code></pre></div></div>
-
-<p>In the default HTML template provided by ConvertKit, you will find <code class="language-plaintext highlighter-rouge">data-options</code> containing the value of options you can set for the form. Here is what it looks like if we display it as a JSON object.</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"settings"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"after_subscribe"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"message"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"success_message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Success! Now check your email to confirm your subscription."</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"redirect_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"analytics"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"google"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"facebook"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"segment"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"pinterest"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"sparkloop"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"googletagmanager"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"modal"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"powered_by"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"show"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://convertkit.com?utm_source=dynamic&amp;amp;utm_medium=referral&amp;amp;utm_campaign=poweredby&amp;amp;utm_content=form"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"recaptcha"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"return_visitor"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"action"</span><span class="p">:</span><span class="w"> </span><span class="s2">"show"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"custom_content"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"slide_in"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"display_in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bottom_right"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="nl">"sticky_bar"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"display_in"</span><span class="p">:</span><span class="w"> </span><span class="s2">"top"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"trigger"</span><span class="p">:</span><span class="w"> </span><span class="s2">"timer"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"scroll_percentage"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"timer"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"devices"</span><span class="p">:</span><span class="w"> </span><span class="s2">"all"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"show_once_every"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">},</span><span class="w">
-    </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"5"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Since you don’t need to pass most of the options above, we can keep the settings minimum by removing the values we don’t need.</p>
-
-<p>The only option I enable is <code class="language-plaintext highlighter-rouge">redirect_url</code>. It allows you to redirect subscribers to a custom landing page whenever they have successfully signed up for your newsletter. Replace <code class="language-plaintext highlighter-rouge">https://sayzlim.net/welcome/</code> with your landing page URL.</p>
-
-<p>Once you’ve confirmed that the form is working, you can style it to match your site design.</p>
 ]]></content>
   </entry>
   
