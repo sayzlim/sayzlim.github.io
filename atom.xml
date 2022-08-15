@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-08-10T12:38:04+07:00</updated>
+  <updated>2022-08-15T16:20:17+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,109 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to add dark theme with Sass and CSS variables]]></title>
+    <link href="https://sayzlim.net/dark-theme-css-sass/"/>
+    <updated>2022-08-15T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/dark-theme-css-sass</id>
+    <content type="html"><![CDATA[<p>A few weeks ago, I added an option to toggle between dark and light themes to this blog. After exploring some options, I decide to store the color tokens with Sass and assign them to CSS variables.</p>
+
+<h2 id="setting-up-design-tokens">Setting Up Design Tokens</h2>
+<p>Design tokens are values you use for your design system. It serves as a guideline to keep your brand overall feel consistent.</p>
+
+<p>If you’ve been hardcoding the color values in the CSS, you want to set those colors with CSS variables so you can reuse them in  your CSS file.</p>
+
+<p>For a personal project where you’re the sole author, the design token name formats are flexible as long they make sense to you. I usually choose a few base colors and play around with the opacity value.</p>
+
+<p class="sidenote"><strong>Color Picking Tips</strong> — You can adjust the lightness in the LCH value if you want something lighter or darker. You can use a tool like <a href="https://css.land/lch/">LCH Colour picker</a> to adjust the LCH values.</p>
+
+<p>I store those design tokens as the Sass variables so they’re not exposed in the stylesheet.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Dark Colors</span>
+<span class="nv">$color-orange-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">27</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">79%</span><span class="p">);</span>
+<span class="nv">$color-orange-400-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">27</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">79%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+<span class="nv">$color-orange-400-50</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">27</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">79%</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+<span class="nv">$color-charcoal-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0%</span><span class="o">,</span> <span class="m">2%</span><span class="p">);</span>
+<span class="nv">$color-charcoal-400-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0%</span><span class="o">,</span> <span class="m">2%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+<span class="nv">$color-charcoal-300</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">0</span><span class="o">,</span> <span class="m">0%</span><span class="o">,</span> <span class="m">11%</span><span class="p">);</span>
+<span class="nv">$color-green-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">105</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">75%</span><span class="p">);</span>
+<span class="nv">$color-green-400-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">109</span><span class="o">,</span> <span class="m">100%</span><span class="o">,</span> <span class="m">77%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+<span class="nv">$color-dirtwhite-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">60</span><span class="o">,</span> <span class="m">36%</span><span class="o">,</span> <span class="m">96%</span><span class="p">);</span>
+<span class="nv">$color-dirtwhite-400-30</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">60</span><span class="o">,</span> <span class="m">36%</span><span class="o">,</span> <span class="m">96%</span><span class="o">,</span> <span class="mi">.3</span><span class="p">);</span>
+
+<span class="c1">// Light Colors</span>
+<span class="nv">$color-linen-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">30</span><span class="o">,</span> <span class="m">58%</span><span class="o">,</span> <span class="m">93%</span><span class="p">);</span>
+<span class="nv">$color-linen-500</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">33</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">87%</span><span class="p">);</span>
+<span class="nv">$color-linen-500-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">33</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">87%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+<span class="nv">$color-oil-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">32</span><span class="o">,</span> <span class="m">29%</span><span class="o">,</span> <span class="m">10%</span><span class="p">);</span>
+<span class="nv">$color-oil-400-30</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">32</span><span class="o">,</span> <span class="m">29%</span><span class="o">,</span> <span class="m">10%</span><span class="o">,</span> <span class="mi">.3</span><span class="p">);</span>
+<span class="nv">$color-darkpurple-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">266</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">59%</span><span class="p">);</span>
+<span class="nv">$color-darkpurple-400-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">266</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">59%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+<span class="nv">$color-darkpurple-400-50</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">266</span><span class="o">,</span> <span class="m">45%</span><span class="o">,</span> <span class="m">59%</span><span class="o">,</span> <span class="mi">.5</span><span class="p">);</span>
+<span class="nv">$color-rose-400</span><span class="p">:</span> <span class="nf">hsl</span><span class="p">(</span><span class="m">353</span><span class="o">,</span> <span class="m">54%</span><span class="o">,</span> <span class="m">55%</span><span class="p">);</span>
+<span class="nv">$color-rose-400-10</span><span class="p">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="m">353</span><span class="o">,</span> <span class="m">54%</span><span class="o">,</span> <span class="m">55%</span><span class="o">,</span> <span class="mi">.1</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="set-default-theme">Set Default Theme</h2>
+<p>With color variables ready, you can set the default theme color in <code class="language-plaintext highlighter-rouge">:root</code> by assigning them to your design tokens as CSS variables. You can have fewer or more variables depending on how you style your site. The idea is to start with some simple tokens like background, accent, and text color. I used to have a dark theme as the default, but I decided to set the light theme as the default.</p>
+
+<p class="sidenote">You can’t assign Sass variable directly to CSS variable. You have to <a href="https://sass-lang.com/documentation/interpolation">interpolate the variable</a> with <code class="language-plaintext highlighter-rouge">#{}</code> to make it work with CSS built-in variables.</p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nd">:root</span> <span class="p">{</span>
+	<span class="na">--theme-color-background-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-linen-400</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-background-500</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-linen-500</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-background-500-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-linen-500-10</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-accent-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-darkpurple-400</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-accent-400-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-darkpurple-400-10</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-accent-400-50</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-darkpurple-400-50</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-foreground-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-rose-400</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-foreground-400-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-rose-400-10</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-text</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-oil-400</span><span class="si">}</span><span class="p">;</span>
+	<span class="na">--theme-color-shadow</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-oil-400-30</span><span class="si">}</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You’re going to replace the colors in your CSS files with those variables. If you’ve been passing the Sass color values directly, you want to take advantage of CSS variables. Instead of writing <code class="language-plaintext highlighter-rouge">color: $theme-color-text</code>, you can write it like this:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">body</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="n">var</span><span class="p">(</span><span class="n">--theme-color-text</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="adding-dark-theme-support">Adding Dark Theme Support</h2>
+<p>It’s straightforward to add dark theme support. I’m borrowing this <a href="https://ethanmarcotte.com/wrote/update-in/">technique Ethan Marcotte’s recent update</a>.</p>
+
+<p>We want to assign a different color to the design tokens by using @media query to check the user device preferences. We’re will apply the dark color values when the <code class="language-plaintext highlighter-rouge">:root</code> or <code class="language-plaintext highlighter-rouge">html</code> document doesn’t have <code class="language-plaintext highlighter-rouge">data-site-theme</code> as the attribute.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">@media</span> <span class="p">(</span><span class="n">prefers-color-scheme</span><span class="o">:</span> <span class="n">dark</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nd">:root:not</span><span class="o">([</span><span class="nt">data-site-theme</span><span class="o">])</span> <span class="p">{</span>
+		<span class="na">--theme-color-background-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-charcoal-400</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-background-500</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-charcoal-300</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-background-500-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-charcoal-400-10</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-accent-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-orange-400</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-accent-400-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-orange-400-10</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-accent-400-50</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-orange-400-50</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-foreground-400</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-green-400</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-foreground-400-10</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-green-400-10</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-text</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-dirtwhite-400</span><span class="si">}</span><span class="p">;</span>
+		<span class="na">--theme-color-shadow</span><span class="p">:</span> <span class="si">#{</span><span class="nv">$color-dirtwhite-400-30</span><span class="si">}</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>You can check if your site theme is working by emulating the dark theme with Chrome Dev Tools by pressing <code class="language-plaintext highlighter-rouge">Command-Shift-P</code> and search for “emulate dark” for the command to emulate dark theme.</p>
+
+<p>It’s not enough to automatically support dark theme. The next thing you want to do is to allow readers to choose the theme they want to keep when they visit your site. I will cover this topic in a separate post.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>The custom <code class="language-plaintext highlighter-rouge">data-site-theme</code> attribute will be useful when we want to build a feature to allow users to select a specific theme. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Reading CSV as JSON with Alfred Script Filter]]></title>
@@ -1222,49 +1325,6 @@ Address: 3.143.214.18
 </ol>
 
 <p>You can open the Evernote application and sign in with your credentials. Now, Enjoy the native web version of Evernote without hitting the device limit set.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Replacing DragonDrop with Dropover]]></title>
-    <link href="https://sayzlim.net/dropover-review/"/>
-    <updated>2021-03-10T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/dropover-review</id>
-    <content type="html"><![CDATA[<p>I’ve been searching for a reliable DragonDrop replacement without any success. None of the alternatives were close to the workflow I needed: a quick way to drag and drop files into a holding bin that sits on top of the desktop. I’m glad that I found out about Dropover.</p>
-
-<p>On the surface, Dropover works like DragonDrop. You select single or several files, and shake them to activate the shelf. You can place and hold these files inside the shelf, which you can use again in a different space. Check out the following video to see how it works.</p>
-
-<video controls="" style="max-width: 100%;">
-<source src="https://images.sayzlim.net/2021/03/dropover-demo.mp4" type="video/mp4" />
-</video>
-
-<h2 id="better-shelves">Better Shelves</h2>
-<p>With DragonDrop, you’re limited to one shelf at a time. Dropover allows you to create several shelves that you can organize several files at once and move them to different destinations.</p>
-
-<p>You may want to set the sensitivity to <strong>high</strong> because the default setting requires more shake to activate the shelf. I find myself using the <kbd>Shift</kbd> modifier more often these days.</p>
-
-<p><img src="https://images.sayzlim.net/2021/03/dropover-shelf-setting.webp" alt="Dropover Shelf Settings" title="Dropover Shelf Settings" /></p>
-
-<h2 id="sharing-files-with-dropover-cloud">Sharing Files with Dropover Cloud</h2>
-<p>On top of the core feature to hold files, you can also use their in-house Dropover Cloud to share them online. It comes with the feature to set a password and an expiration timer for the shared files.</p>
-
-<p><img src="https://images.sayzlim.net/2021/03/dropover-cloud-upload.webp" alt="Dropover Cloud Upload Screen" title="Dropover Cloud Upload Screen" /></p>
-
-<p>Dropover offers a better integration to popular online file-sharing services like Dropbox, Google Drive, and One Drive. You can also share your files through <a href="https://support.apple.com/en-us/HT203093" title="Mail Drop limits - Apple Support">iCloud’s Mail Drop</a><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
-
-<p>I don’t see Dropover replacing CleanShot X as my primary tool to share screenshots, but I will consider using it to share files online.</p>
-
-<p>With all said, Dropover continues DragonDrop legacy as the best drag and drop macOS app to move files around.</p>
-
-<p><a href="https://dropoverapp.com" title="Dropover ‐ Easier Drag and Drop on your Mac."><strong>Download Dropover</strong></a></p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Allowing users to share the file through Mail Drop is smart, but Apple does a poor job explaining how you can delete the shared files. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   
