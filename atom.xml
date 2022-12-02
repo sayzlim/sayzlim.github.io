@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2022-11-24T01:29:57+07:00</updated>
+  <updated>2022-12-02T11:51:17+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,28 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fixing Karabiner Elements Issue on macOS Monterey]]></title>
+    <link href="https://sayzlim.net/karabiner-elements-monterey-not-working/"/>
+    <updated>2022-12-02T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/karabiner-elements-monterey-not-working</id>
+    <content type="html"><![CDATA[<p>Karabiner Elements stopped working after I updated Dropbox because it couldn’t pick up the configuration files that I synced through Mackup via Dropbox.</p>
+
+<p>Dropbox is now fully supported on macOS Monterey by taking advantage of Apple’s File Provider APIs, which means you need to grant additional permission to Karabiner Elements binary files to access the configuration files.</p>
+
+<p><img src="https://images.sayzlim.net/2022/12/karabiner-elements-full-disk-access.webp" alt="" title="System Preferences Full Disk Access" /></p>
+
+<p>You can fix the issues by granting <code class="language-plaintext highlighter-rouge">karabiner_grabber</code> and <code class="language-plaintext highlighter-rouge">karabiner_obsserver</code> full disk access. You can find this setting under Security &amp; Privacy in System Preferences.</p>
+
+<p>You can locate these two binary files by using Finder and pressing <code class="language-plaintext highlighter-rouge">Command-Shift-G</code>, then you can paste the following path to open the folder:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Library/Application Support/org.pqrs/Karabiner-Elements/bin/
+</code></pre></div></div>
+
+<p>Move these two files into the Full Disk Access window and restart Karabiner Elements. If you follow the steps above, Karabiner Elements will start working again in macOS Monterey.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[How to add a theme selection feature with vanilla JavaScript]]></title>
@@ -1328,66 +1350,6 @@ Address: 3.143.214.18
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Set Default Window Size on Mac with Keyboard Maestro]]></title>
-    <link href="https://sayzlim.net/default-window-size-keyboard-maestro/"/>
-    <updated>2021-03-23T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/default-window-size-keyboard-maestro</id>
-    <content type="html"><![CDATA[<p>Resizing application windows is one of the easiest macros you can create with Keyboard Maestro. By implementing a single action, you can set a default window size for every application on your Mac. What if I tell you that there is a better way to organize and resize application windows?</p>
-
-<p>With MacBook Pro, I often use the full-screen mode to take advantage of all the available screen states. After switching to iMac 27” as my main machine, I find that it requires more effort to organize the windows.</p>
-
-<p>Rather than always viewing the application in full-screen mode, I set a default window size for each different group. I put the browser’s default window size (1440, 1000). Some of the productivity applications like Things and Finder are set to (960, 700).</p>
-
-<p>The idea to build this macro came up when I was cleaning my Keyboard Maestro library. I found out that the “Resize and Center” macro I created a long time ago was <em>very inefficient</em>.</p>
-
-<h2 id="the-old-resize-and-center-macro">The “Old” Resize and Center Macro</h2>
-
-<p>The “Resize and Center” macro, available in the <strong>Global UI Control</strong> macro group, has only one task: to set the front window size to width to 1440 and height to 1000.</p>
-
-<p class="sidenote">I have my reason to save the macro in the <strong>Global UI Control</strong> instead of creating a separate macro group for each application. It’s related to <a href="https://sayzlim.net/organize-keyboard-maestro-macros/" title="How I Organize Keyboard Maestro Macro Groups - Sayz Lim">how I organize my macro groups</a>.</p>
-
-<p>Instead of assigning a global shortcut to the macro, I have to create a new macro group to selectively choose which applications to trigger the macro. For example, I can create a macro group called “Finder” and put an action to execute the “Resize and Center” macro in the group. <strong>The advantage of this approach is I can set a different type of trigger for each application</strong>, such as resizing the window whenever the application activates</p>
-
-<p><a href="https://images.sayzlim.net/2021/03/default-window-size-old-resize-macro.webp" title="Execute a Macro in a Separate Macro Group"> <img src="https://images.sayzlim.net/2021/03/default-window-size-old-resize-macro.webp" alt="Execute a Macro in a Separate Macro Group" title="Execute a Macro in a Separate Macro Group" /> </a></p>
-
-<p>There are some problems with this approach:</p>
-<ol>
-  <li>I have to create a new macro group for each application that uses the “Resize and Center” macro.</li>
-  <li>I have to create a new “Resize and Center” for each different default window size.</li>
-  <li>Using the “Trigger Macro by Name” action will show many duplicates of the “Resize and Center” macro.</li>
-</ol>
-
-<h2 id="the-new-resize-and-center-macro">The “New” Resize and Center Macro</h2>
-
-<p>Keyboard Maestro lets you pass parameters when executing a macro. By tweaking the “Resize and Center” macro, I can tell the new macro to accept width and height as the parameters to resize the window size dynamically.</p>
-
-<p><a href="https://images.sayzlim.net/2021/03/default-window-size-new-resize-macro.webp" title="&quot;New&quot; Resize and Center Macro"> <img src="https://images.sayzlim.net/2021/03/default-window-size-new-resize-macro.webp" alt="&quot;New&quot; Resize and Center Macro" title="&quot;New&quot; Resize and Center Macro" /> </a></p>
-
-<p>The macro is pretty straightforward. It accepts two parameters separated by a comma for width and height. You can access the parameter’s value respectively with <code class="language-plaintext highlighter-rouge">%TriggerValue[1]%</code> and <code class="language-plaintext highlighter-rouge">%TriggerValue[2]%</code> and save them as local variables.</p>
-
-<p class="sidenote">You can prepend <code class="language-plaintext highlighter-rouge">Local</code> to the variable to prevent Keyboard Maestro from making the variable available globally for other macros. It’s one way to avoid clutter in the “variables” section under the preferences pane.</p>
-
-<p>The remaining action is centering the front application window. I adjusted the vertical position to take into the menu bar height. Now, the “Resize and Center” macro can accept <code class="language-plaintext highlighter-rouge">(height, width)</code> as the parameter.</p>
-
-<p class="sidenote">Click on the gear icon on the top right <strong>Execute Macro</strong> action to toggle <strong>With Parameter</strong> input fields.</p>
-
-<h3 id="setting-multiple-default-sizes-with-switch-case">Setting Multiple Default Sizes with Switch Case</h3>
-
-<p>Inside the “Global UI Control” macro group, I create a new macro called “Default Window Size”. I prefer to set <code class="language-plaintext highlighter-rouge">F8</code> as the hot key to trigger this macro and set the front window application to the default size. You can change it to your preferred shortcut.</p>
-
-<p><a href="https://images.sayzlim.net/2021/03/default-window-size-macro.webp" title="Default Window Size Macro"> <img src="https://images.sayzlim.net/2021/03/default-window-size-macro.webp" alt="Default Window Size Macro" title="Default Window Size Macro" /> </a></p>
-
-<p>The macro uses a <strong>Switch/Case Action</strong> to control the flow of the actions. It checks the front window application name — accessed through <code class="language-plaintext highlighter-rouge">%Application%1%</code> — by matching the regular expression through the term “Matches”.</p>
-
-<p class="sidenote">Each application name is separated by a pipe for alternation. You can learn more about <a href="https://sayzlim.net/clipboards-regular-expression/" title="Manipulate Clipboards with Regular Expression - Sayz Lim">regular expressions in this post</a>.</p>
-
-<p>The new macro offers much more versatility. I can easily set the default size for a new application by adding the application name into the matching expression. If I want to create a new default size, I just have to add another matching case in the control flow. If I want to change the window size, I just have to update the passing parameter value.</p>
-
-<p><strong><a href="http://s3.sayzlim.net/km/default-window-size.kmmacros" title="Download Default Window Size Macro">Download Default Window Size Macro</a></strong></p>
 ]]></content>
   </entry>
   
