@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2023-02-03T18:48:29+07:00</updated>
+  <updated>2023-02-04T15:58:08+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -81,7 +81,7 @@
 <p>Open Security &amp; Privacy in the System Preferences and drag the <code class="language-plaintext highlighter-rouge">cfprefsd</code> into the <strong>Privacy =&gt; Full Disk Access</strong> tab. You can log out and login into your user account to see if this resolves the problem.</p>
 
 <h2 id="custom-mackup-directory-path">Custom Mackup Directory Path</h2>
-<p>If you still having problems with reading the preferences, you want to consider uninstalling Mackup and restoring the preferences files back to their original paths.</p>
+<p>If you are still having problems with reading the preferences, you want to consider uninstalling Mackup and restoring the preferences files back to their original paths.</p>
 
 <ol>
   <li>Backup the latest preferences by entering <code class="language-plaintext highlighter-rouge">mackup backup</code> into Terminal. Enter <code class="language-plaintext highlighter-rouge">Yes</code> for all the preferences you want to backup.</li>
