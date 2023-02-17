@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2023-02-04T15:58:08+07:00</updated>
+  <updated>2023-02-17T17:03:58+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,23 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Archive daily notes by months in Obsidian]]></title>
+    <link href="https://sayzlim.net/archive-daily-notes-obsidian/"/>
+    <updated>2023-02-17T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/archive-daily-notes-obsidian</id>
+    <content type="html"><![CDATA[<p>When you enable the Daily Notes feature in Obsidian, it will create a new file in your selected location. The number of files can grow too big if you’re actively using Obsidian to take notes, so I use Hazel to create a rule to organize these notes into subfolders.</p>
+
+<p><img src="https://images.sayzlim.net/2023/02/obsidian-sidebar.webp" alt="" title="List of subfolder in Obsidian sidebar" /></p>
+
+<p>Ideally, I only want to see today’s daily note in the sidebar and keep the rest of the older files in a separate folder. So here is how I come up with this Hazel rule to manage the files in the daily notes directory.</p>
+
+<p><img src="https://images.sayzlim.net/2023/02/hazel-sort-by-months.webp" alt="" title="Sort into monthly subfolder Hazel rule" /></p>
+
+<p>I decided to use <code class="language-plaintext highlighter-rouge">YYYY-MM-MMM</code> for the date-created pattern because I want them to stay sorted by the file system. I also find that the subfolder pattern allows me to expand the search query when I want to locate the daily note on a certain date. For example, I can type “2022 Jan 22” or “2022-01-22” to search for the file created on that date.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Carbon Ads Component in Next.js Framework]]></title>
@@ -1280,63 +1297,6 @@ Address: 3.143.214.18
 </span></code></pre></div></div>
 
 <p>Send me a Twitter DM if you encounter any problems while trying to get Plausible configured on Amazon EC2. Also, make sure to <a href="https://github.com/sponsors/plausible" title="Sponsor @plausible on GitHub Sponsors · GitHub">sponsor Plausible</a> if you’ve successfully self-hosted it on your server.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Using Feedbin in 2021]]></title>
-    <link href="https://sayzlim.net/using-feedbin/"/>
-    <updated>2021-06-01T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/using-feedbin</id>
-    <content type="html"><![CDATA[<p>I found out today that I’ve been using Feedbin for seven years. Feedbin started as a simple feed reader, which I used to sync over to third-party RSS clients such as <a href="https://www.reederapp.com/" title="Reeder 5">Reeder</a> and <a href="https://www.goldenhillsoftware.com/unread/" title="Unread: An RSS Reader">Unread</a>. These days, I read everything on Feedbin.</p>
-
-<p><a href="https://feedbin.com/" title="Feedbin">Feedbin</a> added many features while I was away from my daily reading. Here are some of the features that changed the way I use Feedbin.</p>
-
-<h3 id="send-to-feedbin-bookmarklet">Send to Feedbin Bookmarklet</h3>
-<p>I used to assign my <strong>Read Later</strong> and <strong>RSS Subscription</strong> into two services: Instapaper and Feedbin.</p>
-
-<p><a href="https://images.sayzlim.net/2021/06/feedbin-bookmarklet.webp" title="Send to Feedbin Bookmarklet"> <img src="https://images.sayzlim.net/2021/06/feedbin-bookmarklet.webp" alt="Send to Feedbin Bookmarklet" title="Send to Feedbin Bookmarklet" /> </a></p>
-
-<p>Instapaper has a bookmarklet known as <strong>Save to Instapaper</strong> that you can put in the <strong>Favorites Bar</strong> to save articles conveniently. I will save any noteworthy articles to Instapaper and archive the read items to a notebook called <strong>Histories</strong> in Evernote.</p>
-
-<p>Although I enjoy both services, I find that switching between applications for one purpose — reading and saving interesting ideas — is a distraction.</p>
-
-<p><strong>Send to Feedbin</strong> works like <strong>Save to Instapaper</strong> by letting you send any articles to the “Pages” folder in Feedbin. By having all the subscriptions and saved articles in a single location, I can maintain the same reading experience everywhere.</p>
-
-<p>Feedbin also does a terrific job in parsing the article with excellent integration to Evernote, where you can save these items in the semantic structure.</p>
-
-<h3 id="recently-read">Recently Read</h3>
-<p>I’m surprised that this folder is not available by default on most feed readers. I’m the type of person who tends to accidentally mark an item, so having this little folder to show my recently read items makes it easy to revisit any read items that I forgot to save to Evernote.</p>
-
-<p><a href="https://images.sayzlim.net/2021/06/feedbin-main.webp" title="Feedbin Home"> <img src="https://images.sayzlim.net/2021/06/feedbin-main.webp" alt="Feedbin Home" title="Feedbin Home" /> </a></p>
-
-<h3 id="actions-and-smart-filters">Actions and Smart Filters</h3>
-<p>If you subscribe to popular sites that publish many articles per week, you can choose to receive notification only when the article contains a particular keyword.</p>
-
-<p>You can achieve the setup above with <strong>Feedbin Actions</strong>.</p>
-
-<p>You can choose to receive Push Notification if the article contains “iPhone” in the body or mark the article as read when it has [Sponsor] in the title.<sup id="fnref:2021060282957" role="doc-noteref"><a href="#fn:2021060282957" class="footnote" rel="footnote">1</a></sup></p>
-
-<h3 id="subscribe-to-newsletters">Subscribe to Newsletters</h3>
-<p>I gave up on Evernote when they stopped offering email forwarding unless you’re on the <strong>Premium Plan</strong>. Fortunately, Feedbin added this feature when I started actively using it again.</p>
-
-<p>When you signed up for Feedbin, you will receive an email address that you can use to subscribe to newsletters. Every incoming email will be assigned with a tag you configured in the settings.<sup id="fnref:2021060282938" role="doc-noteref"><a href="#fn:2021060282938" class="footnote" rel="footnote">2</a></sup></p>
-
-<p>Having Feedbin manage my newsletters means I can leave my inbox for low-volume emails.</p>
-
-<p><strong>Avoid using Feedbin email address to subscribe to newsletters</strong>. It will be difficult to update your subscription if you decide to stop using Feedbin one day. Instead, you want to take advantage of Gmail plus notation and create a smart rule to forward incoming emails to Feedbin. For example, I will subscribe to a newsletter with <code class="language-plaintext highlighter-rouge">email+feedbin@gmail.com</code> and ask Gmail to forward the emails to <code class="language-plaintext highlighter-rouge">randomGeneratedNumbers@newsletters.feedbin.com</code></p>
-
-<p>Another thing I like about keeping newsletters in Feedbin means I can save these newsletters to Evernote for safekeeping with a simple shortcut.</p>
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:2021060282957" role="doc-endnote">
-      <p>I don’t recommend marking sponsored posts as read if you wish to support your favorite bloggers. <a href="#fnref:2021060282957" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2021060282938" role="doc-endnote">
-      <p>The obvious tag to use in the settings is “Newsletter”. <a href="#fnref:2021060282938" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   
