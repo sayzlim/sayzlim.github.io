@@ -57,7 +57,8 @@ function setObserver() {
 			toggleElement('.hello');
 		}
 	});
-	observer.observe(relatedPostWrapper);
+
+	if(relatedPostWrapper !== undefined) observer.observe(relatedPostWrapper);
 }
 
 // Page Visibility API
