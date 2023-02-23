@@ -24,14 +24,7 @@ const _manager = {
 	},
 };
 
-let lastKnownScrollPosition = 0;
-let ticking = false;
-
-function doSomething(scrollPos) {
-	if (scrollPos > 500) {
-		toggleElement('.hello');
-	}
-}
+// Observer for Related Posts
 
 function toggleElement(el) {
 	el = document.querySelector(el);
@@ -51,18 +44,21 @@ function dismissElement(el) {
 	el.toggleAttribute('show');
 }
 
-document.addEventListener('scroll', function (e) {
-	lastKnownScrollPosition = window.scrollY;
+function setObserver() {
+	const relatedPostWrapper = document.querySelectorAll(
+		'.related-posts'
+	)[0];
+	const observer = new IntersectionObserver(function (
+		entries
+	) {
+		const [entry] = entries;
 
-	if (!ticking) {
-		window.requestAnimationFrame(function () {
-			doSomething(lastKnownScrollPosition);
-			ticking = false;
-		});
-
-		ticking = true;
-	}
-});
+		if (entry.isIntersecting) {
+			toggleElement('.hello');
+		}
+	});
+	observer.observe(relatedPostWrapper);
+}
 
 // Page Visibility API
 const _carbonOptimize = {
@@ -132,5 +128,12 @@ const _carbonOptimize = {
 	},
 };
 
-_carbonOptimize.init();
-_manager.init();
+
+
+function loadInits() {
+	_manager.init();
+	_carbonOptimize.init();
+	setObserver();
+}
+
+document.addEventListener('DOMContentLoaded', loadInits);
