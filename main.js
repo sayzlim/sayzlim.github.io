@@ -130,11 +130,10 @@ const _carbonOptimize = {
 };
 
 
-
 function loadInits() {
-	_manager.init();
 	_carbonOptimize.init();
 	setObserver();
 }
 
 document.addEventListener('DOMContentLoaded', loadInits);
+_manager.init();
