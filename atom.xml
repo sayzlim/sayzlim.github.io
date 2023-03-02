@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2023-02-27T11:28:29+07:00</updated>
+  <updated>2023-03-03T03:43:47+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Better YouTube Parental Control]]></title>
+    <link href="https://sayzlim.net/better-youtube-parental-control/"/>
+    <updated>2023-03-03T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/better-youtube-parental-control</id>
+    <content type="html"><![CDATA[<p>I try my best not to allow my children to watch videos on YouTube. I don’t want to use YouTube Kids.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> It doesn’t seem YouTube has figured out how to make their official app kids-friendly, but there is one way to have more control.</p>
+
+<p>Sometimes I give up and allow the children to watch videos on YouTube. Here is the method I use to ensure they can only watch the videos I approve.</p>
+
+<ol>
+  <li>Search and download videos that you allow your kids to watch.</li>
+  <li>Turn off the Wi-Fi before you hand over the device to your children.</li>
+</ol>
+
+<p>By doing so, you can limit the selection of videos to only the one you have downloaded to your device.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>YouTube Kids shouldn’t exist in the first place if there is no easy way to manage the content. Furthermore, the recommendation is awful, with most of their content quality below average. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Overpassing states in React]]></title>
@@ -1230,29 +1256,6 @@ git push --force origin main
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Verify 'osxkeychain helper' Personal Access Token]]></title>
-    <link href="https://sayzlim.net/verify-osxkeychain-helper/"/>
-    <updated>2021-07-10T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/verify-osxkeychain-helper</id>
-    <content type="html"><![CDATA[<p>I like using GitHub for macOS because it lets me compare the difference of files before each commit. If you’ve configured credential helper to <a href="https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git" title="Caching your GitHub credentials in Git - GitHub Docs">tell Git to remember your password</a>, you also want to learn how to verify that the personal access token has been stored correctly.</p>
-
-<p>The official application uses HTTPS as the default protocol, so I have to enter the password every time I want to push the update in Terminal. Caching the credentials allows me to continue using HTTPS as the protocol while offering the flexibility to push the updates through the <code class="language-plaintext highlighter-rouge">git</code> command.</p>
-
-<p><a href="https://images.sayzlim.net/2021/07/osxkeychain-helper.webp" title="GitHub Personall Access Token in macOS Keychain Access"> <img src="https://images.sayzlim.net/2021/07/osxkeychain-helper.webp" alt="GitHub Personall Access Token in macOS Keychain Access" title="GitHub Personall Access Token in macOS Keychain Access" /> </a></p>
-
-<p>Here’s how you can verify that <code class="language-plaintext highlighter-rouge">osxkeychain helper</code> is storing your personal access token.</p>
-
-<ol>
-  <li>Open Keychain Access with Spotlight</li>
-  <li>Search for <code class="language-plaintext highlighter-rouge">github.com</code> — it will show up as an “Internet password”</li>
-  <li>Double-click on the item to view the attributes</li>
-  <li>Click “Show password” and enter your macOS account password to view the access token</li>
-  <li>Open “Access Control” to verify that <code class="language-plaintext highlighter-rouge">git credential-osxkeychain</code> CLI is the only one that can access this item</li>
-</ol>
 ]]></content>
   </entry>
   
