@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2023-03-04T08:24:56+07:00</updated>
+  <updated>2023-04-16T09:37:37+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Understanding export PATH with ChatGPT]]></title>
+    <link href="https://sayzlim.net/chatgpt-export-path/"/>
+    <updated>2023-04-15T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/chatgpt-export-path</id>
+    <content type="html"><![CDATA[<p>One main advantage of a tool like ChatGPT becoming widely available to the public is that you can understand a concept faster because the answer is more digestible than the search engine result.</p>
+
+<p>I spent a few hours this weekend checking out some configuration files on my HOME directory. I have installed a bunch of CLI programs in the last couple of years, but I don’t have a good understanding of how they work. So it’s an excellent opportunity to ask some questions through ChatGPT to help me understand what each command does and whether removing them is safe.</p>
+
+<h2 id="what-does-export-do">What does export do?</h2>
+<p>I don’t completely understand the following statements in the <code class="language-plaintext highlighter-rouge">.zprofile</code>. I assume that it’s required because the documentation told me to add them.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">N_PREFIX</span><span class="o">=</span><span class="nv">$HOME</span>/.local/n
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$N_PREFIX</span>/bin:<span class="nv">$PATH</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$PYENV_ROOT</span><span class="s2">/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+<span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.rbenv/bin:</span><span class="nv">$PATH</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<p>The <code class="language-plaintext highlighter-rouge">export</code> statement creates a global variable during the active shell session. You can access those variables by prepending the variable with a dollar sign. Since <code class="language-plaintext highlighter-rouge">PATH</code> variable is the default global variable for Unix-based operating systems to search for executable files, it’s expected that we have to include our user-installed files in the PATH variable.</p>
+
+<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$N_PREFIX</span>/bin:<span class="nv">$PATH</span>
+</code></pre></div></div>
+
+<p>For example, if the initial PATH value is <code class="language-plaintext highlighter-rouge">/usr/local/bin</code>, running the above command will expand the <code class="language-plaintext highlighter-rouge">$N_PREFIX</code> and <code class="language-plaintext highlighter-rouge">$PATH</code> values and prepend them to the previous PATH value separated with a colon. The result will be something like the following.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Users/username/.local/n/bin:/usr/local/bin
+</code></pre></div></div>
+
+<p class="sidenote">The <code class="language-plaintext highlighter-rouge">colon</code> is used as a separator for the shell to search for all the executables in the PATH variable. It’s a common mistake to forget to include <code class="language-plaintext highlighter-rouge">:$PATH</code> and cause the shell to be unable to search for the executables that were added before.</p>
+
+<p>You can type <code class="language-plaintext highlighter-rouge">export</code> into the shell application to see the list of global variables.</p>
+
+<p>ChatGPT has made it easy for people to understand the basic concept, but it’s still far from being able to write a better email or teaching modern technology that receives an update every year.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Better YouTube Parental Control]]></title>
@@ -1225,34 +1261,6 @@ git push --force origin main
   <ol>
     <li id="fn:1" role="doc-endnote">
       <p>Unless you’re working in a company that allows you to push your commit to the remote main branch. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Fix 'jekyll-autoprefixer' Error Running Ruby 3.0.0]]></title>
-    <link href="https://sayzlim.net/fix-jekyll-autoprefixer-error/"/>
-    <updated>2021-07-15T15:00:00+07:00</updated>
-    <id>https://sayzlim.net/fix-jekyll-autoprefixer-error</id>
-    <content type="html"><![CDATA[<p>I postponed upgrading my Ruby environment to 3.x.x for a while because I couldn’t build or serve this Jekyll site due to the error with <code class="language-plaintext highlighter-rouge">jekyll-autoprefixer</code>.</p>
-
-<p>Here is the error I encountered when I tried to build this site.</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">TypeError: Cannot read property 'version' of undefined (ExecJS::ProgramError)
-</span></code></pre></div></div>
-
-<p class="sidenote">I assume you’re using <a href="https://bundler.io/" title="Bundler: The best way to manage a Ruby application's gems">Bundler</a> to manage the gems. If you’re not familiar with Bundler, I recommend that you check it out and use it to set up dependencies for your project.</p>
-
-<p>You can fix the error by downgrading <code class="language-plaintext highlighter-rouge">execjs</code> back to 2.7.0.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Add the following line <code class="language-plaintext highlighter-rouge">gem 'execjs', '2.7.0'</code> to your Gemfile.</p>
-
-<p>Then run <code class="language-plaintext highlighter-rouge">bundle update</code> to update all the installed gems.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>You can <a href="https://github.com/vwochnik/jekyll-autoprefixer/issues/11" title="ExecJS 2.8.0 breaks Jekyll">check out this issue</a> to see a different method to fix it. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
