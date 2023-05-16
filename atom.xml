@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2023-04-16T09:37:37+07:00</updated>
+  <updated>2023-05-16T22:30:11+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -166,10 +166,20 @@
 
 <p>This component should work with most of the React-based frameworks. Here is the <code class="language-plaintext highlighter-rouge">carbon.tsx</code> component that you can also find in this <a href="https://codesandbox.io/p/sandbox/carbon-next-js-75stb3?file=%2Fcomponents%2Fcarbon.tsx">CodeSandBox project</a>.</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useRouter</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">next/router</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">class</span> <span class="nx">CarbonAds</span> <span class="kd">extends</span> <span class="nx">React</span><span class="p">.</span><span class="nx">Component</span> <span class="p">{</span>
-  <span class="nx">componentDidMount</span><span class="p">()</span> <span class="p">{</span>
+<span class="kd">const</span> <span class="nx">CarbonAds</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">router</span> <span class="o">=</span> <span class="nx">useRouter</span><span class="p">();</span>
+
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">isCarbonExist</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">#carbonads</span><span class="dl">"</span><span class="p">);</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="o">!!</span><span class="nx">isCarbonExist</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">_carbonads</span><span class="p">.</span><span class="nx">refresh</span><span class="p">();</span>
+      <span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
     <span class="kd">const</span> <span class="nx">script</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span><span class="dl">"</span><span class="s2">script</span><span class="dl">"</span><span class="p">);</span>
     <span class="nx">script</span><span class="p">.</span><span class="nx">src</span> <span class="o">=</span>
       <span class="dl">"</span><span class="s2">//cdn.carbonads.com/carbon.js?serve=CVAIKKQM&amp;placement=carbonadsnet</span><span class="dl">"</span><span class="p">;</span>
@@ -177,17 +187,15 @@
     <span class="nx">script</span><span class="p">.</span><span class="k">async</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
 
     <span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">#carbon-container</span><span class="dl">"</span><span class="p">)[</span><span class="mi">0</span><span class="p">].</span><span class="nx">appendChild</span><span class="p">(</span><span class="nx">script</span><span class="p">);</span>
-  <span class="p">}</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">router</span><span class="p">.</span><span class="nx">asPath</span><span class="p">]);</span>
 
-  <span class="nx">render</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="dl">"</span><span class="s2">carbon-container</span><span class="dl">"</span><span class="o">&gt;&lt;</span><span class="sr">/div&gt;</span><span class="err">;
-</span>  <span class="p">}</span>
-<span class="p">}</span>
+  <span class="k">return</span> <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">id</span><span class="o">=</span><span class="dl">"</span><span class="s2">carbon-container</span><span class="dl">"</span><span class="o">&gt;&lt;</span><span class="sr">/div&gt;</span><span class="err">;
+</span><span class="p">};</span>
 
 <span class="k">export</span> <span class="k">default</span> <span class="nx">CarbonAds</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>Replace the value of <code class="language-plaintext highlighter-rouge">script.src</code> with the ad tag found on your dashboard. The component doesn’t do anything fancy. It simply creates an empty <code class="language-plaintext highlighter-rouge">div</code> container with <code class="language-plaintext highlighter-rouge">carbon-container</code> as the class name where we append them after the component is successfully mounted.</p>
+<p>Replace the value of <code class="language-plaintext highlighter-rouge">script.src</code> with the ad tag found on your dashboard. The component doesn’t do anything fancy. It simply creates an empty <code class="language-plaintext highlighter-rouge">div</code> container with <code class="language-plaintext highlighter-rouge">carbon-container</code> as the class name where we append them after the component is successfully mounted. It uses <code class="language-plaintext highlighter-rouge">[router.asPath]</code> as the dependency to refresh the ad when the <code class="language-plaintext highlighter-rouge">#carbonads</code> element exists on the page already.</p>
 
 <h2 id="dealing-with-duplicate-ads">Dealing with Duplicate Ads</h2>
 <p>One of the common problems you often see with implementing Carbon Ads component with this method is seeing duplicate ads. It happens because <code class="language-plaintext highlighter-rouge">reactStrictMode</code> is enabled by default when you’re working with newer React projects. If you’re using Next.js, you can turn it off in <code class="language-plaintext highlighter-rouge">next.config.js</code> to prevent duplicate ads from appearing.</p>
