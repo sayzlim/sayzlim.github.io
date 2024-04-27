@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-03-18T21:49:50+07:00</updated>
+  <updated>2024-04-27T20:58:48+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Resetting properties with "all" shorthand in CSS]]></title>
+    <link href="https://sayzlim.net/reset-properties-css/"/>
+    <updated>2024-04-27T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/reset-properties-css</id>
+    <content type="html"><![CDATA[<p>When designing an ad unit that Carbon publishers need to install on their website, I need to make sure the website stylesheet is not overriding the CSS of the ad unit. This is where the cascading nature of CSS shines.</p>
+
+<p>Cascading is an inherent feature that enhances the flexibility of CSS, allowing for orderly and efficient styling. One of the common techniques is to reset all the properties to the initial value before working on the ad unit design.</p>
+
+<p>Let’s say that I’m going to wrap the ad unit in a <code class="language-plaintext highlighter-rouge">div</code> element with <code class="language-plaintext highlighter-rouge">carbonads</code> as the ID. I will write something like this to reset the CSS of the parent container, which will be inherited by all the children.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#carbonads</span> <span class="p">{</span>
+	<span class="nl">all</span><span class="p">:</span> <span class="n">revert</span><span class="p">;</span> <span class="err">//</span> <span class="err">revert</span> <span class="err">all</span> <span class="err">the</span> <span class="err">properties</span> <span class="err">to</span> <span class="err">the</span> <span class="err">initial</span> <span class="err">value</span> <span class="err">set</span> <span class="err">by</span> <span class="err">browsers</span>
+<span class="p">}</span>
+
+<span class="nf">#carbonads</span> <span class="nc">.carbon-wrapper</span> <span class="p">{</span>
+	<span class="err">//</span> <span class="err">Write</span> <span class="err">the</span> <span class="err">CSS</span> <span class="err">value</span> <span class="err">to</span> <span class="err">style</span> <span class="err">the</span> <span class="err">ad</span> <span class="err">format</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>However, you must not write something like the following because it will also make <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> element visible. It’s better to limit the <code class="language-plaintext highlighter-rouge">all</code> shorthand to the parent container where no other properties will be used.</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#carbonads</span> <span class="o">*</span> <span class="p">{</span>
+	<span class="nl">all</span><span class="p">:</span> <span class="n">initial</span>
+<span class="p">}</span>
+</code></pre></div></div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Understanding export PATH with ChatGPT]]></title>
@@ -1166,112 +1195,6 @@ hs <span class="k">${</span><span class="nv">action</span><span class="k">}</spa
 <p>Although it’s ideal to set up Continuous Integration with the GitHub repository, I feel that creating a simple shell script above can accommodate the current needs of the business where we need the flexibility from both marketers and developers to push updates quickly.</p>
 
 <p>One thing I’ve learned from being on the side of “not” working with codes and working with codes directly is to choose the most efficient and resilient method when it comes to solving a problem.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Tips to Maintain a Forked Repository]]></title>
-    <link href="https://sayzlim.net/tips-maintain-forked-repository/"/>
-    <updated>2021-09-13T17:00:00+07:00</updated>
-    <id>https://sayzlim.net/tips-maintain-forked-repository</id>
-    <content type="html"><![CDATA[<p>Working with <a href="https://www.carbonads.net" title="Carbon Ads">Carbon</a> means I have to fork some open-source projects to submit a pull request with the ad code integration. Here is the list of the tips I’ve collected while learning how to contribute to the public repositories.</p>
-
-<p>By forking a repository, it means that you’ve cloned an identical project that you can edit. Whenever you make a mistake, the worst-case scenario is to delete the forked repository and clone it again.</p>
-
-<p>The main purpose of these tips is to <strong>avoid resetting the repository</strong> and understand the workflow to contribute back to the upstream project.</p>
-
-<p class="sidenote">I will be referring to the <code class="language-plaintext highlighter-rouge">master</code> branch as <code class="language-plaintext highlighter-rouge">main</code> in this post. They can be used interchangeably, but most new projects prefer to name their default branch as <code class="language-plaintext highlighter-rouge">main</code>.</p>
-
-<h2 id="always-create-a-new-branch">Always Create a New Branch</h2>
-<p>Branching is a safe way for you to experiment with a new feature without affecting the main branch. Even if you’re making a minor update to the <code class="language-plaintext highlighter-rouge">README</code>, you’re still going to create a new branch because it will keep the main branch clean.</p>
-
-<p>Whenever you’re done with a feature, you can push the branch you’re working to your forked repository. Then, you can follow up by submitting a pull request to the upstream.</p>
-
-<p class="sidenote">The <code class="language-plaintext highlighter-rouge">upstream</code> remote refers to <strong>the original source</strong> of your forked repository. You can check the configured remote repository by running <code class="language-plaintext highlighter-rouge">git remote -v</code> in Terminal. <a href="https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork" title="Configuring a remote for a fork - GitHub Docs">Follow this guide by GitHub</a> to configure remote repository.</p>
-
-<h2 id="never-commit-to-the-main-branch">Never Commit to the Main Branch</h2>
-<p>You should never commit to the main branch. I mentioned before that we want to keep the main branch clean. What exactly do we want to keep it clean from?</p>
-
-<p>We don’t want our local commits in the main branch.</p>
-
-<p>The local main branch should always match to the upstream origin. Adding commits to the local main branch will create conflicts that trigger Git to asks you merge, rebase, or fast-forward the tree history.</p>
-
-<p>Instead of committing to the main branch, you want the upstream maintainer to accept your pull request, and then you can match the HEAD of your main branch to the upstream main branch. Here’s the command you can run:</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git switch main
-git pull upstream main --ff
-</span></code></pre></div></div>
-
-<p>Let’s run through each line. <code class="language-plaintext highlighter-rouge">git switch main</code> lets you switch to the <code class="language-plaintext highlighter-rouge">main</code> branch where you can apply the update from the upstream. Once you’re on the <code class="language-plaintext highlighter-rouge">main</code> branch, you can pull the latest update and pass <code class="language-plaintext highlighter-rouge">--ff</code> option to fast forward the commits. It’s optional to pass <code class="language-plaintext highlighter-rouge">--ff</code> if you keep the main branch clean, however, it’s a good practice to always decide how you want to deal with the conflicts.</p>
-
-<h2 id="dealing-with-conflicts-on-main-branch">Dealing with Conflicts on Main Branch</h2>
-<p>I often messed up the main branch when I was learning using Git. The most common mistake is to run this command on the main branch.</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git pull upstream main
-</span></code></pre></div></div>
-
-<p>Here is the problem with the command above.</p>
-
-<p>You’re telling git to fetch and update the active branch to match the remote branch <strong>without specifying how you want to deal with the conflicts</strong>.</p>
-
-<p>Then this happens:</p>
-<ol>
-  <li>I panicked because I didn’t know how to deal with the conflicts.</li>
-  <li>I gave up, deleted the folder, and recloned the remote repository.</li>
-</ol>
-
-<p>There is no need to panic because you’re still working on your local and remote branch.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> The worst-case scenario is to delete and refork the repository if you’re still unfamiliar with Git.</p>
-
-<p>However, you can easily fix this issue by running this command:</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git reflog
-git reset HEAD@{index}
-</span></code></pre></div></div>
-
-<p>Let’s break down the command above.</p>
-
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">reflog</code> shows the history of updates that happened to the tip of branches in the local repository.</li>
-  <li><code class="language-plaintext highlighter-rouge">git reset HEAD@{index}</code> reset the branch to the number of moves based on the passed <code class="language-plaintext highlighter-rouge">index</code> value. <code class="language-plaintext highlighter-rouge">HEAD@{index}</code> is one of many ways to specify revision value. I personally prefer to use the <code class="language-plaintext highlighter-rouge">sha1</code> value.</li>
-</ul>
-
-<h2 id="syncing-local-main-branch-to-upstream">Syncing Local Main Branch to Upstream</h2>
-<p>You can deal with most conflicts locally before submitting a pull request. The reason is the upstream main branch might have received more commits since the last time you cloned it. Match the tip of your local main branch to the upstream main branch. Here’s what you can run:</p>
-
-<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git fetch upstream main
-git switch main &amp;&amp; rebase upstream/main
-git push origin main
-</span></code></pre></div></div>
-
-<h2 id="pushing-force-to-remote-branch">Pushing –Force to Remote Branch</h2>
-<p>Sometimes I want to set things right for both local and remote repository. I don’t plan to keep any updates I’ve made and my main goal is to sync local and remote repository to restart everything.</p>
-
-<p class="sidenote"><strong>You can only do this if you’re the only one who manage repository</strong>. For example, I can do it for my Jekyll site because the repository is private and no one else will be affected if I forcibly push an update to the remote repository.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git reflog
-git reset --hard &lt;sha1-value&gt;
-git branch -r
-git fetch upstream main &amp;&amp; git rebase upstream/main
-git push --force origin main
-</code></pre></div></div>
-
-<ol>
-  <li>Check for the <code class="language-plaintext highlighter-rouge">sha1</code> value we’re going to pass into the <code class="language-plaintext highlighter-rouge">git reset</code> command.</li>
-  <li>Reset the branch before it’s broken.</li>
-  <li>List all remote repositories with their branches. Most of the time, you’re looking at the <code class="language-plaintext highlighter-rouge">upstream/main</code> branch.</li>
-  <li>Fetch the <code class="language-plaintext highlighter-rouge">main</code> branch from <code class="language-plaintext highlighter-rouge">upstream</code> and rebase local <code class="language-plaintext highlighter-rouge">main</code> branch to the upstream <code class="language-plaintext highlighter-rouge">main</code> branch.</li>
-  <li>Push local <code class="language-plaintext highlighter-rouge">main</code> branch to <code class="language-plaintext highlighter-rouge">origin/main</code> remote branch.</li>
-</ol>
-
-<p>This step will ensure you have a clean slate of a local and remote main branch without deleting the forked repository. Next, create and start your work from the new branch.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Unless you’re working in a company that allows you to push your commit to the remote main branch. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   
