@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-04-27T20:58:48+07:00</updated>
+  <updated>2024-04-29T23:02:41+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -36,9 +36,11 @@
 <p>However, you must not write something like the following because it will also make <code class="language-plaintext highlighter-rouge">&lt;style&gt;</code> element visible. It’s better to limit the <code class="language-plaintext highlighter-rouge">all</code> shorthand to the parent container where no other properties will be used.</p>
 
 <div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#carbonads</span> <span class="o">*</span> <span class="p">{</span>
-	<span class="nl">all</span><span class="p">:</span> <span class="n">initial</span>
+	<span class="nl">all</span><span class="p">:</span> <span class="n">revert</span>
 <span class="p">}</span>
 </code></pre></div></div>
+
+<p>If you wish to to learn more about inheritance in CSS, I recommend <a href="https://piccalil.li/blog/css-inheritance/" title="CSS inheritance by Andy Bell">checking out this post</a> by Andy Bell that shares more examples.</p>
 ]]></content>
   </entry>
   
