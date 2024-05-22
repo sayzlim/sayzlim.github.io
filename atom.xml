@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-04-29T23:02:41+07:00</updated>
+  <updated>2024-05-23T02:40:53+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,31 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Adding mechanical keyboard sound with Keyboard Maestro]]></title>
+    <link href="https://sayzlim.net/mechanical-keyboard-maestro-sound/"/>
+    <updated>2024-05-11T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/mechanical-keyboard-maestro-sound</id>
+    <content type="html"><![CDATA[<p>During a recent conversation with my friends, they introduced me to an application that can bring mechanical keyboard sounds to a Mac. Intrigued by the idea of how adding sound feedback can enhance the typing experience, I decided to create a Keyboard Maestro macro to replicate this feature.</p>
+
+<p><img src="https://images.sayzlim.net/2024/05/mechanical-sound-macro.webp" alt="" title="Mechanical Typing Sound Keyboard Maestro Macro" /></p>
+
+<p>Creating the macro turned out to be fairly simple. By utilizing the “This string is typed” trigger and entering the regular expression <code class="language-plaintext highlighter-rouge">[a-zA-Z0-9\r\n\s]</code>, the macro can play a mechanical sound every time a key is pressed. Remember to uncheck the “simulate matching deletes before executing” option to prevent the macro from interfering with keystrokes.</p>
+
+<p>The most challenging aspect of this project was finding a suitable keyboard sound to use. A quick search for “mechanical keyboard sound” should provide access to websites where sound effects can be downloaded for free.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup></p>
+
+<p>One advantage of using Keyboard Maestro for this task is that it eliminates the need to grant additional permissions to another app to access keystrokes. I guess it’s better from the privacy perspective.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>You can search for “mixkit-hard-single-key-press-in-a-laptop-2542” which is the sound I’m using in the macro. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Resetting properties with "all" shorthand in CSS]]></title>
@@ -1133,70 +1158,6 @@ Are you available for a quick call to discuss this partnership?
   <li>Some websites prevent you from pasting from your clipboard into their email/password field.</li>
   <li>You want to maintain the focus of the dialog/input window from applications like Alfred or Spotlight.</li>
 </ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[HubSpot Deployment Shell Script]]></title>
-    <link href="https://sayzlim.net/hubspot-deployment-shell-script/"/>
-    <updated>2022-05-14T09:00:00+07:00</updated>
-    <id>https://sayzlim.net/hubspot-deployment-shell-script</id>
-    <content type="html"><![CDATA[<p>I started building and managing websites with HubSpot recently because it offers the flexibility to allow other team members, especially those who are in the marketing team, to create and customize a landing page.</p>
-
-<p>Instead of following recommended deployment method by HubSpot, I need to find a way to make the development process seamless while also allowing the rest of the team members to make changes in the Design Tools. It means that the rest of the team members don’t have to use version control if they prefer to update the code directly.</p>
-
-<p>I decided to write a shell script that allows me to choose which folder to fetch, upload, and watch. Here is the content of the shell script:</p>
-
-<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/env zsh</span>
-
-<span class="c"># List of projects in their respective folder</span>
-<span class="c"># "folder_paths" is a dictionary, you can add more folders</span>
-<span class="c"># if you need to specify a different project to watch.</span>
-<span class="nb">declare</span> <span class="nt">-A</span> folder_paths
-
-folder_paths[root]<span class="o">=</span><span class="s2">"Default/"</span>
-folder_paths[carbon]<span class="o">=</span><span class="s2">"Templates/Carbon/"</span>
-folder_paths[publishers]<span class="o">=</span><span class="s2">"Templates/Publishers/"</span>
-
-<span class="c"># Default Options</span>
-<span class="nv">portal</span><span class="o">=</span><span class="k">${</span><span class="nv">portal</span><span class="k">:-</span><span class="nv">DEV</span><span class="k">}</span>
-<span class="nv">project</span><span class="o">=</span><span class="k">${</span><span class="nv">project</span><span class="k">:-</span><span class="nv">root</span><span class="k">}</span>
-<span class="nv">action</span><span class="o">=</span><span class="k">${</span><span class="nv">action</span><span class="k">:-</span><span class="nv">watch</span><span class="k">}</span>
-
-<span class="k">while</span> <span class="o">[</span> <span class="nv">$# </span><span class="nt">-gt</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">do
-   if</span> <span class="o">[[</span> <span class="nv">$1</span> <span class="o">==</span> <span class="k">*</span><span class="s2">"--"</span><span class="k">*</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then
-        </span><span class="nv">param</span><span class="o">=</span><span class="s2">"</span><span class="k">${</span><span class="nv">1</span><span class="p">/--/</span><span class="k">}</span><span class="s2">"</span>
-        <span class="nb">declare</span> <span class="nv">$param</span><span class="o">=</span><span class="s2">"</span><span class="nv">$2</span><span class="s2">"</span>
-        <span class="c"># echo $1 $2 // Optional to see the parameter:value result</span>
-   <span class="k">fi
-  </span><span class="nb">shift
-</span><span class="k">done</span>
-
-<span class="c"># Main Commands</span>
-<span class="nb">echo</span> <span class="s2">"[Working Portal] : </span><span class="se">\"</span><span class="s2">"</span><span class="k">${</span><span class="nv">portal</span><span class="k">}</span> <span class="s2">"portal"</span><span class="se">\"</span>
-<span class="nb">echo</span> <span class="s2">"[Selected Folder] : </span><span class="se">\"</span><span class="k">${</span><span class="nv">folder_paths</span><span class="p">[</span><span class="k">${</span><span class="nv">project</span><span class="k">}</span><span class="p">]</span><span class="k">}</span><span class="se">\"</span><span class="s2">"</span>
-hs <span class="k">${</span><span class="nv">action</span><span class="k">}</span> <span class="nt">--account</span><span class="o">=</span><span class="k">${</span><span class="nv">portal</span><span class="k">}</span> <span class="s2">"</span><span class="k">${</span><span class="nv">folder_paths</span><span class="p">[</span><span class="k">${</span><span class="nv">project</span><span class="k">}</span><span class="p">]</span><span class="k">}</span><span class="s2">"</span> <span class="s2">"</span><span class="k">${</span><span class="nv">folder_paths</span><span class="p">[</span><span class="k">${</span><span class="nv">project</span><span class="k">}</span><span class="p">]</span><span class="k">}</span><span class="s2">"</span>
-</code></pre></div></div>
-
-<h2 id="how-it-works">How It Works</h2>
-<p>For example, if I need to upload the changes I made to the Carbon website, I can run this command:</p>
-
-<div class="language-zsh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>zsh deploy.sh <span class="nt">--action</span> upload <span class="nt">--portal</span> PROD <span class="nt">--project</span> carbon
-</code></pre></div></div>
-
-<p>The available commands are based on <a href="https://developers.hubspot.com/docs/cms/developer-reference/local-development-cli" title="Local Development Tooling: CLI Reference">HubSpot CLI</a>. You can also run other commands such as <code class="language-plaintext highlighter-rouge">--action watch</code> if you wish to watch and preview the changes you’ve made locally on the staging or production.</p>
-
-<p>I want to share why this shell script is important in the daily workflow. When it comes to the business, we need to be able to prioritize. If you’re like me, you probably want to follow the best practice to deploy changes to the production website. However, there are other factors to take into consideration.</p>
-
-<ul>
-  <li>The team members must be able to make changes using HubSpot Design Tools without waiting for developers.</li>
-  <li>Developers must be able to use keep the version history of the changes they’ve made to the project.</li>
-  <li>Several developers should still be able to collaborate through the shared remote repository.</li>
-</ul>
-
-<p>Although it’s ideal to set up Continuous Integration with the GitHub repository, I feel that creating a simple shell script above can accommodate the current needs of the business where we need the flexibility from both marketers and developers to push updates quickly.</p>
-
-<p>One thing I’ve learned from being on the side of “not” working with codes and working with codes directly is to choose the most efficient and resilient method when it comes to solving a problem.</p>
 ]]></content>
   </entry>
   
