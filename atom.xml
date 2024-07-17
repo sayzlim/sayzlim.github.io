@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-05-26T01:08:28+07:00</updated>
+  <updated>2024-07-17T14:02:43+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Filtering pivot table data with custom formula in Google Sheets]]></title>
+    <link href="https://sayzlim.net/filter-pivot-table-custom-formula-google-sheets/"/>
+    <updated>2024-07-17T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/filter-pivot-table-custom-formula-google-sheets</id>
+    <content type="html"><![CDATA[<p>When working with a medium set of data, it’s easier to use a pivot table to group and analyze the data. The limitation with pivot tables is that you have limited options when it comes to filtering the data.</p>
+
+<p>There are many instances where the value of the column you want to filter data by is made up of a series of strings. Take categories, for example; they usually appear in the form of strings chained together like “Crypto, Design, Dev, Tech”.</p>
+
+<p>What if you only want to create a pivot table that displays zones that are under the Crypto and Tech categories?</p>
+
+<p>The most straightforward solution is to combine the CUSTOM FORMULA filter option and REGEXMATCH to select the data you need.</p>
+
+<p>If you’re like me, you probably try to match the column letters in the formula and are unable to get the result you want to achieve.</p>
+
+<p>Instead of using <code class="language-plaintext highlighter-rouge">=REGEXMATCH(B:B,"Crypto|Tech")</code>, assuming that the formula can recognize the column, you must match the column name like this: <code class="language-plaintext highlighter-rouge">=REGEXMATCH(Categories,"Crypto|Tech")</code>. This is because the pivot table recognizes the header name instead of the column letter.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Adding mechanical keyboard sound with Keyboard Maestro]]></title>
@@ -1081,83 +1100,6 @@ end tell
 <p><img src="https://images.sayzlim.net/2022/06/keyboard-maestro-copy-uuid.webp" alt="" title="Copy Macro UUID in Keyboard Maestro" /></p>
 
 <p>You can get the UUID of a macro by right-clicking and selecting <strong>Copy as UUID</strong> from the contextual menu. For example, <code class="language-plaintext highlighter-rouge">5F2B4E32-239D-4B46-BA07-2F0F103CE1EA</code> is the UUID for the Quit All macro in my library.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Text Expansion with Keyboard Maestro]]></title>
-    <link href="https://sayzlim.net/text-expansion-keyboard-maestro/"/>
-    <updated>2022-05-19T07:00:00+07:00</updated>
-    <id>https://sayzlim.net/text-expansion-keyboard-maestro</id>
-    <content type="html"><![CDATA[<p>I replaced TextExpander with Keyboard Maestro as my primary text expansion tool because I prefer the native editing experience and the flexibility that Keyboard Maestro offers.</p>
-
-<p>The post on <a href="/memorable-textexpander-abbreviations/" title="Creating Memorable TextExpander Abbreviations - Sayz Lim">creating memorable abbreviations</a> is still relevant regardless of what apps you use for this task. In this post, I’m going to share some tips and changes I’ve made to import the snippets that I often use in TextExpander.</p>
-
-<h2 id="organize-them-with-emoji">Organize Them with Emoji</h2>
-<p>By default, Keyboard Maestro sorts macro groups by name. The only way to categorize similar macro groups together is by prepending the group name with a symbol or an emoji — I wrote a post that covers more details on <a href="/organize-keyboard-maestro-macros/" title="How I Organize Keyboard Maestro Macro Groups - Sayz Lim">organizing your library separately</a>.</p>
-
-<p><img src="https://images.sayzlim.net/2022/05/keyboard-maestro-text-expansion.webp" alt="" title="Organize Keyboard Maestro Groups with Emoji" /></p>
-
-<p>I have more than ten snippet groups in TextExpander. However, I’ve decided to import two snippet groups that I often use and prepend them with “Media Shuffle Playback” emoji 🔀 which is kind of similar to expanding.</p>
-
-<ul>
-  <li><strong>🔀 Avoid These Words</strong>: This group contains the word that I want to avoid and correct. It also omits some useless words like <strong>basically</strong>, <strong>actually</strong>, and <strong>clearly</strong>.</li>
-  <li><strong>🔀 Text Expansion (or General)</strong>: This group acts as a general group for my most frequently used snippets. I might move some of them to their dedicated group later on.</li>
-</ul>
-
-<h2 id="prompt-for-user-input">Prompt for User Input</h2>
-<p>One of the key features that make TextExpander great is its wide selection of fill-in fields that allows you to complete the missing snippet details on the fly.</p>
-
-<p>Here’s an example of this kind of snippet:</p>
-
-<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi <span class="nt">&lt;FirstName&gt;</span>,
-
-I'm from <span class="nt">&lt;AgencyName&gt;</span> which specializes in helping offline business grow their online presence through social media and website branding.
-
-I researched about <span class="nt">&lt;LeadCompany&gt;</span> and want to share some tips to help you gain more customers:
-
-{ list the reasons }
-
-Are you available for a quick call to discuss this partnership?
-</code></pre></div></div>
-
-<p>You can request all these details with Prompt for User Input action and save them to local variables before expanding them. Here is what it looks like in Keyboard Maestro.</p>
-
-<p class="sidenote">Prepending <code class="language-plaintext highlighter-rouge">Local</code> to the variable name will make it available only to the macro calling it. <a href="https://wiki.keyboardmaestro.com/manual/Variables" title="Keyboard Maestro Variables">Learn more here</a>.</p>
-
-<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi %Variable%LocalFirstName%,
-
-I'm from %Variable%LocalAgencyName% which specializes in helping offline business grow their online presence through social media and website branding.
-
-I researched about %Variable%LocalLeadCompany% and want to share some tips to help you gain more customers:
-
-{ list the reasons }
-
-Are you available for a quick call to discuss this partnership?
-</code></pre></div></div>
-
-<h2 id="prompt-with-list-from-text">Prompt with List from Text</h2>
-<p>Here is a simple macro that you can create that lets you choose which email address to use. By assigning <code class="language-plaintext highlighter-rouge">@@@</code> as the abbreviation, you can enter your email addresses as a list that you can choose whenever you need them.</p>
-
-<p><img src="https://images.sayzlim.net/2022/05/keyboard-maestro-email.webp" alt="" title="Keyboard Maestro Prompt with List from Text" /></p>
-
-<p>You can enter your personal email address and work email address in this macro. Another example use case is whenever I write an email template that offers different questions or options. Instead of writing them down whenever there is a prompt, you can save them into a list and select them with a filter.</p>
-
-<h2 id="format-with-icudatetime">Format with ICUDateTime</h2>
-<p>I have a specific use case where I expand <code class="language-plaintext highlighter-rouge">.now</code> into today’s date. It’s nothing fancy. I use them to prepend my notes and files that should be sorted by date in the file system.</p>
-
-<p>By combining it with Prompt with List from Text action, I set up a shortcut for <code class="language-plaintext highlighter-rouge">.pay</code> that lets me name the note I send to my Evernote’s Receipts notebook.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%ICUDateTime%yyyy-MM-dd% %Variable%LocalClipboard%
-</code></pre></div></div>
-
-<h2 id="insert-by-pasting-vs-insert-by-typing">Insert by Pasting vs Insert by Typing</h2>
-<p><strong>Insert by Pasting offers better performance</strong> because it doesn’t need to simulate any keystrokes. However, you will encounter some scenarios where using Insert by Typing is an ideal choice. Here are some of those scenarios:</p>
-
-<ul>
-  <li>Some websites prevent you from pasting from your clipboard into their email/password field.</li>
-  <li>You want to maintain the focus of the dialog/input window from applications like Alfred or Spotlight.</li>
-</ul>
 ]]></content>
   </entry>
   
