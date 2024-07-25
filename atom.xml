@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-07-17T14:02:43+07:00</updated>
+  <updated>2024-07-25T12:13:48+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Designing the MDN sidebar ad unit]]></title>
+    <link href="https://sayzlim.net/designing-mdn-sidebar-ad/"/>
+    <updated>2024-07-24T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/designing-mdn-sidebar-ad</id>
+    <content type="html"><![CDATA[<p>MDN (Mozilla Developer Network ) is one of the most visited online resources that any frontend developers visit on a regular basis.</p>
+
+<p>I was excited when I learned that <a href="https://www.buysellads.com/blog/mozilla-developer-network-partners-exclusively-with-buysellads-for-native-advertising-initiative">BuySellAds partnered with MDN</a> to handle their native advertising exclusively.</p>
+
+<p>The initial design for the ad unit is fairly straightforward. It uses the same creatives as the Carbon ad unit, which is a 260 × 200 image and description. I passed the Carbon classic mockup to the team at MDN to implement the design. The advantage of sharing the same creatives as Carbon is that we can set up the campaigns immediately the moment we have approval from clients to run the campaigns on MDN.</p>
+
+<p>During one of the discussions with the team, I was asked to refresh the sidebar ad unit. I already have a few designs as part of my experiments with Carbon Cover creatives. It didn’t take much time to put together a <a href="https://cdpn.io/pen/debug/zYQrYbp/e132d3531f4ec948a535e3b01ab7ad94">CodePen live demo</a> to share with MDN team.</p>
+
+<p><img src="https://images.sayzlim.net/2024/07/mdn-sidebar.webp" alt="" title="Initial mockup for MDN sidebar ad unit" /></p>
+
+<p>When designing an ad unit tailored for developers, I take into account the following crucial factors:</p>
+<ul>
+  <li>How much empty space the most visited pages, usually the docs, is left to display ads?</li>
+  <li>What are the creatives that will be used to design this ad unit?</li>
+  <li>How will the creatives requirements affect the time needed for account manager to collect from clients?</li>
+  <li>How <em>flashy</em> can we design the ad unit by showcasing all the creatives while maintaining the subtlety of the ads being present with the main content.</li>
+  <li>What percentage of browsers support the CSS we use for this design?</li>
+</ul>
+
+<p>The goal is to use the same creatives as Carbon Cover and combine them in such a way that it’s still occupy the relative same amount of width in the sidebar. I wanted to put more focus on the image and decided to remove the padding inside the ad container. I chose to use <code class="language-plaintext highlighter-rouge">linear-gradient</code> because it’s widely supported and I can ensure that it looks similar on most browsers.</p>
+
+<p>There is also a small touch of animation when the site visitors hover the image. The addition of title and call-to-action fields allows us to put more emphasis on the tagline of the ad.</p>
+
+<p>In summary, creating ad units for a developer audience involves careful consideration of design elements and user experience. The collaborative effort between BuySellAds and MDN has set a solid foundation for innovative approaches to native advertising, and I hope the insights shared in this post prove helpful as you navigate similar challenges.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Filtering pivot table data with custom formula in Google Sheets]]></title>
@@ -1067,39 +1099,6 @@ directory = Mackup
 <p>If you are given the option, <strong>always choose to be healthy.</strong></p>
 
 <p>If there is one productivity tip I want to share with you, it is to keep yourself healthy so that you can do the work you’re proud of in the next two decades.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Better "Quit All" with Keyboard Maestro]]></title>
-    <link href="https://sayzlim.net/better-quit-all/"/>
-    <updated>2022-06-04T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/better-quit-all</id>
-    <content type="html"><![CDATA[<p>When I’m done with the work, I enter “quitall” with Alfred and quit all the apps in the Dock. I found out that I need more control to decide which apps to keep active.</p>
-
-<p>I’ve been using Alfred built-in <strong>Quit All</strong> to quit all the applications whenever I’m done with my work. It’s a great way to end the day so you can see a clean working space.</p>
-
-<p>However, there are some apps that I want to keep active in the Dock such as Timemator for time tracking and Drafts for note-taking. Unfortunately, Alfred doesn’t have a built-in option to exclude apps from this command.</p>
-
-<p>Which brings me to Keyboard Maestro.</p>
-
-<p><img src="https://images.sayzlim.net/2022/06/keyboard-maestro-preferences.webp" alt="" title="Keyboard Maestro Excluded Preferences" /></p>
-
-<p><strong>Keyboard Maestro offers more flexibility</strong> when it comes to building a macro that caters to your needs. All you need to do is to add the apps you want to exclude from the preferences and the app will take care of the rest.</p>
-
-<p><img src="https://images.sayzlim.net/2022/06/alfred-quitall-command.webp" alt="" title="Alfred Custom 'Quit All' Command" /></p>
-
-<p>The next thing you want to do is to create a search command in Alfred that runs <code class="language-plaintext highlighter-rouge">/usr/bin/osascript (AppleScript)</code>. You can paste the script below to tell Keyboard Maestro Engine to execute the</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-- The passed query is the UUID of the macro
-tell application "Keyboard Maestro Engine"
-  do script "5F2B4E32-239D-4B46-BA07-2F0F103CE1EA"
-end tell
-</code></pre></div></div>
-
-<p><img src="https://images.sayzlim.net/2022/06/keyboard-maestro-copy-uuid.webp" alt="" title="Copy Macro UUID in Keyboard Maestro" /></p>
-
-<p>You can get the UUID of a macro by right-clicking and selecting <strong>Copy as UUID</strong> from the contextual menu. For example, <code class="language-plaintext highlighter-rouge">5F2B4E32-239D-4B46-BA07-2F0F103CE1EA</code> is the UUID for the Quit All macro in my library.</p>
 ]]></content>
   </entry>
   
