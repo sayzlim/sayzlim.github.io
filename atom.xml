@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-07-26T09:54:08+07:00</updated>
+  <updated>2024-07-30T12:00:22+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -50,7 +50,7 @@
     <link href="https://sayzlim.net/filter-pivot-table-custom-formula-google-sheets/"/>
     <updated>2024-07-17T00:00:00+07:00</updated>
     <id>https://sayzlim.net/filter-pivot-table-custom-formula-google-sheets</id>
-    <content type="html"><![CDATA[<p>When working with a medium set of data, it’s easier to use a pivot table to group and analyze the data. The limitation with pivot tables is that you have limited options when it comes to filtering the data.</p>
+    <content type="html"><![CDATA[<p>When working with a medium-sized dataset, it’s easier to use a pivot table to group and analyze the data. However, one limitation of pivot tables is that you have limited options when it comes to filtering the data.</p>
 
 <p>There are many instances where the value of the column you want to filter data by is made up of a series of strings. Take categories, for example; they usually appear in the form of strings chained together like “Crypto, Design, Dev, Tech”.</p>
 
@@ -60,7 +60,7 @@
 
 <p>If you’re like me, you probably try to match the column letters in the formula and are unable to get the result you want to achieve.</p>
 
-<p>Instead of using <code class="language-plaintext highlighter-rouge">=REGEXMATCH(B:B,"Crypto|Tech")</code>, assuming that the formula can recognize the column, you must match the column name like this: <code class="language-plaintext highlighter-rouge">=REGEXMATCH(Categories,"Crypto|Tech")</code>. This is because the pivot table recognizes the header name instead of the column letter.</p>
+<p>Instead of using <code class="language-plaintext highlighter-rouge">=REGEXMATCH(B:B,"Crypto|Tech")</code>, which assumes that the formula can recognize the column, you must match the column name like this: <code class="language-plaintext highlighter-rouge">=REGEXMATCH(Categories,"Crypto|Tech")</code>. This is because the pivot table recognizes the header name instead of the column letter.</p>
 ]]></content>
   </entry>
   
