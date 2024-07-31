@@ -213,9 +213,41 @@ a:not([class]) {
 	--s6: 3.814rem;
 
 	/* Line Heights */
-	--lh-1: calc(1.1em + .25ex);
+	--lh-1: calc(1.1em + 0.25ex);
 	--lh0: calc(1.35em + .5ex);
-	--lh1: calc(1.6em + .75ex);
+	--lh1: calc(1.6em + 0.75ex);
+}
+
+.s-1 {
+	font-size: var(--s-1);
+}
+
+.s0 {
+	font-size: var(--s0);
+}
+
+.s1 {
+	font-size: var(--s1);
+}
+
+.s2 {
+	font-size: var(--s2);
+}
+
+.s3 {
+	font-size: var(--s3);
+}
+
+.s4 {
+	font-size: var(--s4);
+}
+
+.s5 {
+	font-size: var(--s5);
+}
+
+.s6 {
+	font-size: var(--s6);
 }
 
 button,
@@ -334,7 +366,7 @@ small {
 .headline {
 	max-inline-size: 70ch;
 	padding: 4em 0;
-	height: 70ch;
+	height: 70vh;
 	place-content: center;
 }
 
@@ -354,6 +386,10 @@ small {
 
 h2 {
 	font-size: var(--s4);
+}
+
+main {
+	margin-block: 5rem;
 }
 
 .cta {
@@ -457,9 +493,6 @@ footer.container {
 }
 
 @media only screen and (max-width: 759px) {
-	body {
-		font-size: 0.75em;
-	}
 	.question-container {
 		grid-template-columns: 1fr;
 	}
