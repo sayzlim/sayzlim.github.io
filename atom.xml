@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2024-08-14T12:23:36+07:00</updated>
+  <updated>2024-08-15T17:46:07+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,57 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Integrating ChatGPT into Keyboard Maestro]]></title>
+    <link href="https://sayzlim.net/chatgpt-keyboard-maestro/"/>
+    <updated>2024-08-14T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/chatgpt-keyboard-maestro</id>
+    <content type="html"><![CDATA[<p>While there isn’t an immediate option to integrate ChatGPT into Keyboard Maestro, you can achieve this on macOS Monterey by combining Shortcuts with the macro. In this blog post, I’ll show you how to do it.</p>
+
+<p>There are plenty of AI-powered apps where you can enter your OpenAI API key and prompt them to perform tasks for you. However, I’ve found that my most frequent use case is using ChatGPT to improve the clarity of my prose while typing.</p>
+
+<p>To make this work, we need to send a POST request with all the necessary information to the OpenAI API endpoint. If you’re not familiar with the terms I’ve mentioned, please bear with me. Essentially, you need a method to communicate with the server and request that it return the processed text to you.</p>
+
+<p>The most reliable method is to use the Shortcuts action <code class="language-plaintext highlighter-rouge">Get Contents of URL</code>, which enables you to parse the response and extract the message for easy copying back to the clipboard. I will explain how it works, but you can also download and install this shortcut directly.</p>
+
+<p><strong><a href="https://www.icloud.com/shortcuts/9d5635dad69643f5b5f6e3315ded37b4">Download ChatGPT - Keyboard Maestro Workflow</a>.</strong></p>
+
+<p class="sidenote">The workflow above receives input from a Keyboard Maestro macro. You will need to enter the API key and the system prompt within the workflow.</p>
+
+<h2 id="configuring-openai-api-key">Configuring OpenAI API Key</h2>
+<p>If you don’t have a developer account, you can sign up for one at the <a href="https://platform.openai.com/docs/overview">OpenAI Platform</a>. They consistently release faster and more powerful models; however, the most cost-effective model available at the time of this post is <code class="language-plaintext highlighter-rouge">chatgpt-4o-mini</code>, which we will be using in this guide. Create a project API key, name it “Keyboard Maestro,” and store it in your notes. The key enables communication with the server to process your request.</p>
+
+<p>Expand the “Get content of URL” action, and you will see something similar to the screenshot below.</p>
+
+<p><img src="https://images.sayzlim.net/2024/08/chatgpt-keyboard-maestro-workflow.webp" alt="" title="ChatGPT - Keyboard Maestro Action" /></p>
+
+<p>Enter the key in the <code class="language-plaintext highlighter-rouge">Authorization</code> field, located within the Headers group. If you opened the shortcut above, you’ll see that the value has been set to <code class="language-plaintext highlighter-rouge">CombinedOpenAI_API_KEY</code> for simplicity in configuration.</p>
+
+<h2 id="combining-keyboard-maestro-and-shortcuts">Combining Keyboard Maestro and Shortcuts</h2>
+<p>With the Keyboard Maestro macro, you want to pass the information you want to process into the Shortcut workflow you’ve just configured. You can choose to pass the “prompt” if you plan to create a different type of macro to process the text. Since we’re always processing the clipboard, there is no need to create another variable.</p>
+
+<p>This is where you can choose where to store the prompts. The most straightforward method is to set <code class="language-plaintext highlighter-rouge">KM_Input</code> as the value for <code class="language-plaintext highlighter-rouge">OpenAI_Prompt</code>.</p>
+
+<p><img src="https://images.sayzlim.net/2024/08/chatgpt-keyboard-maestro-prompt.webp" alt="" title="Set the value of OpenAI_Prompt" /></p>
+
+<p>If you intend to process only the clipboard with the macro, you should pass the <code class="language-plaintext highlighter-rouge">Clipboard</code> into the message. Once the workflow completes, it will copy the results to the clipboard.</p>
+
+<p class="sidenote">The <code class="language-plaintext highlighter-rouge">Get dictionary action</code> parses the values returned from the server. You don’t have to worry about this part because the API response rarely changes. If it does change, you’ll need to debug this section by checking what values it returns using the <code class="language-plaintext highlighter-rouge">Quick Look</code> action.</p>
+
+<h2 id="support-my-works-please">Support my works, please?</h2>
+<p>I enjoy writing these guides so you can tap into the full potential of Keyboard Maestro, but I don’t want to offer a subscription or ask for donations. If you appreciate everything I have written so far, you can support me by purchasing this Keyboard Maestro collection called <a href="https://keyboardtyro.com/">Keyboard Tyro</a>.</p>
+
+<p>It features a new macro group called <strong>ChatGPT - Clarity</strong>, where I integrate the techniques I’ve shared here with additional features, such as:</p>
+<ul>
+  <li>Configuring the OpenAI API Key as a Keyboard Maestro variable.</li>
+  <li>Utilizing the Keyboard Maestro Dictionary to pass multiple variables into the Shortcuts workflow.</li>
+  <li>Easily creating multiple prompts with a single macro that serves as the logic for processing commands.</li>
+</ul>
+
+<p><strong><a href="https://keyboardtyro.com/">Check out Keyboard Tyro</a></strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Designing the MDN sidebar ad unit]]></title>
@@ -1078,27 +1129,6 @@ directory = Mackup
     </li>
   </ol>
 </div>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Prioritize Health]]></title>
-    <link href="https://sayzlim.net/prioritize-health/"/>
-    <updated>2022-06-16T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/prioritize-health</id>
-    <content type="html"><![CDATA[<p>In the last eight years, I’ve made a lot of decisions. There were some good and bad choices, but I always end up in a better situation if I follow this one rule.</p>
-
-<p>Health comes first.</p>
-
-<p>I am able to perform and think more effectively in both life and work when I make decisions that benefit my physical and mental health. I can sit without worrying about my back hurting. I can stay focused longer. I can think and analyze without feeling anxious.</p>
-
-<p><a href="https://twitter.com/sayzlim/status/1535493652998500353">My goal</a> is to be a good parent to my children. I want to be there whenever they need me. I want to be able to carry them upstairs without hurting my knees. I want to provide for them until they are old enough to care for themselves.</p>
-
-<p>Most people glorifying hustle culture fail to take care of their health. Even before I became a parent, I prioritized my health by <em>trying</em> to have a balanced diet and exercise regularly.</p>
-
-<p>If you are given the option, <strong>always choose to be healthy.</strong></p>
-
-<p>If there is one productivity tip I want to share with you, it is to keep yourself healthy so that you can do the work you’re proud of in the next two decades.</p>
 ]]></content>
   </entry>
   
