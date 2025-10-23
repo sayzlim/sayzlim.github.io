@@ -4,7 +4,7 @@
   <title><![CDATA[Sayz Lim]]></title>
   <link href="https://sayzlim.net/atom.xml" rel="self"/>
   <link href="https://sayzlim.net/"/>
-  <updated>2025-02-04T13:35:35+07:00</updated>
+  <updated>2025-10-23T21:53:11+07:00</updated>
   <id>https://sayzlim.net/</id>
   <author>
     <name><![CDATA[Sayz Lim]]></name>
@@ -12,6 +12,51 @@
   </author>
   <generator uri="https://jekyllrb.com">Jekyll</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Writing in the age of AI]]></title>
+    <link href="https://sayzlim.net/ai-killed-my-blog/"/>
+    <updated>2025-10-23T00:00:00+07:00</updated>
+    <id>https://sayzlim.net/ai-killed-my-blog</id>
+    <content type="html"><![CDATA[<p>AI killed my blog, then brought it back to life.</p>
+
+<p>When AI got good at writing, I stopped. Why share my imperfect thoughts when a machine could polish any sentence to perfection? Writing felt commoditized. My words didn’t seem special anymore.</p>
+
+<p>But I was wrong about what matters.</p>
+
+<p>The essence of writing isn’t perfect prose—it’s the ideas you gather from actually living. From trying to build something meaningful and learning along the way. No AI can live your life for you. It can’t try sales for the first time, struggle with backend code, or decide to finally show up on Twitter after years of hiding. Those experiences are yours.</p>
+
+<p>I’ve been building SponsorSignals. Trying not to over-engineer it. Learning to code parts I used to avoid. Attempting sales conversations that make me uncomfortable. Each failure teaches me something. Each small win builds momentum. Even when the project struggles, that’s progress worth documenting.</p>
+
+<p>My child watches me learn. That matters more than perfect writing ever could.</p>
+
+<h2 id="the-shift-that-changed-everything">The shift that changed everything</h2>
+
+<p>I can now speak my thoughts and transcribe them instantly into written form. This sounds simple, but it changes everything.</p>
+
+<p>I used to think in English—constructing sentences in my head, arranging words until they flowed naturally. Exhausting. Slow. Often, finishing one blog post would take too much time.</p>
+
+<p>Now I speak in English. I share ideas in my own voice, raw and unfiltered. Then I pass the transcript to ChatGPT or another tool to smooth the reading flow.</p>
+
+<p>I don’t need to be both writer and editor anymore. I don’t need to let drafts sit for 24 hours before revising. I don’t need to obsess over typos.</p>
+
+<p>The old workflow demanded perfection at every stage. The new workflow separates idea capture from refinement. I can focus on what I actually have to say.</p>
+
+<h2 id="what-this-means-for-writing-more">What this means for writing more</h2>
+
+<p>Talk more. Speak more. Learn more. Get the raw stuff out as fast as possible.</p>
+
+<p>Then you’ll discover what you’ve actually been learning. You’ll see patterns in your thinking. You’ll notice gaps in your knowledge.</p>
+
+<p>If you spend all your time crafting the perfect blog post, you won’t have time to live the experiences worth writing about. Streamlining the writing process unlocks potential that didn’t exist before.</p>
+
+<p>I’m using Monologue from Every to transcribe my thoughts. Their writing tool Spiral helps me turn those transcripts into posts. If you’ve been hesitating to write—intimidated by the blank page or your inner editor—try voice-first writing.</p>
+
+<p>It won’t make you a better writer overnight. But it will get you writing again.</p>
+
+<p>And that’s what matters.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Integrating ChatGPT into Keyboard Maestro]]></title>
@@ -1093,42 +1138,6 @@ directory = Mackup
   <li>Typewriter Scroll — It keeps the cursor centered in the editor view.</li>
   <li>Dynamic Table of Contents — Generates Table of Contents based on the document’s headings. I use this in the beginning when I capture long-form for notes.</li>
 </ul>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to Repeat Actions and Macros in Keyboard Maestro]]></title>
-    <link href="https://sayzlim.net/loop-repeat-macros-keyboard-maestro/"/>
-    <updated>2022-07-01T00:00:00+07:00</updated>
-    <id>https://sayzlim.net/loop-repeat-macros-keyboard-maestro</id>
-    <content type="html"><![CDATA[<p>There are several ways to repeat macro and actions in Keyboard Maestro, and the method is different depending on your use case. I’m going to cover my favorite method in this post.</p>
-
-<p>Three main actions that can help you repeat a macro in Keyboard Maestro.</p>
-<ul>
-  <li>Repeat — Repeat a macro for a specified number amount of times.</li>
-  <li>Until — Repeat a macro <strong>until</strong> it meets a specified condition.</li>
-  <li>While — Repeat a macro <strong>while</strong> it meets a specified condition.</li>
-</ul>
-
-<p>Most of the time, you only need to use <strong>repeat</strong> action to loop over the macros. The main advantage is that it allows you to decide how many times you want to run them and save yourself from dealing with the uncertainty of checking variables in Until and While actions.<sup id="fnref:20220701083325" role="doc-noteref"><a href="#fn:20220701083325" class="footnote" rel="footnote">1</a></sup></p>
-
-<p>For example, sometimes, I need to get the SimilarWeb stats from the websites I found. I put these data in a spreadsheet and enter the number of times I want to repeat the macro that pulls the required information.</p>
-
-<p>Here is the macro that shows you how it works.</p>
-
-<p><img src="https://images.sayzlim.net/2022/07/keyboard-maestro-repeat-action.webp" alt="" title="Keyboard Maestro Repeat Action" /></p>
-
-<p>Create an action that prompts input from you to enter the number of times you want to repeat a group of actions or a macro. Save to a variable called <code class="language-plaintext highlighter-rouge">LocalRepeatAmount</code>.</p>
-
-<p>Create another action that repeats the actions based on the value of <code class="language-plaintext highlighter-rouge">LocalRepeatAmount</code>. The combination of repeat action and local variable lets you choose how many times you want to run the macro instead of going back into the editor to update the number of times to run the macro.</p>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:20220701083325" role="doc-endnote">
-      <p>These two actions are more suitable when you want to check the environment and screen conditions before you resume actions in a macro. <a href="#fnref:20220701083325" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 ]]></content>
   </entry>
   

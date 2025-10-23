@@ -2,15 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://sayzlim.net/</loc>
-<lastmod>2025-02-04T13:35:35+07:00</lastmod>
+<lastmod>2025-10-23T21:53:11+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tags/</loc>
-<lastmod>2025-02-04T13:35:35+07:00</lastmod>
+<lastmod>2025-10-23T21:53:11+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/tools/</loc>
-<lastmod>2025-02-04T13:35:35+07:00</lastmod>
+<lastmod>2025-10-23T21:53:11+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/welcome/</loc>
@@ -583,6 +583,10 @@
 <url>
 <loc>https://sayzlim.net/chatgpt-keyboard-maestro/</loc>
 <lastmod>2024-08-14T00:00:00+07:00</lastmod>
+</url>
+<url>
+<loc>https://sayzlim.net/ai-killed-my-blog/</loc>
+<lastmod>2025-10-23T00:00:00+07:00</lastmod>
 </url>
 <url>
 <loc>https://sayzlim.net/lab/matrix/</loc>
