@@ -1,2 +1,5 @@
+---
+layout: null
+---
 User-agent: *
-Sitemap: https://sayzlim.net/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml

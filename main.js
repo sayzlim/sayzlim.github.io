@@ -133,7 +133,183 @@ const _carbonOptimize = {
 function loadInits() {
 	_carbonOptimize.init();
 	setObserver();
+	initPostToc();
+	initCodeCopy();
+	initArchiveTimeline();
 }
 
 document.addEventListener('DOMContentLoaded', loadInits);
 _manager.init();
+
+function syncPostToc() {
+	const toc = document.querySelector('.post-toc');
+	if (!toc) return;
+
+	if (window.innerWidth >= 980) {
+		toc.setAttribute('open', '');
+	} else {
+		toc.removeAttribute('open');
+	}
+}
+
+function initPostToc() {
+	const toc = document.querySelector('.post-toc');
+	if (!toc) return;
+
+	syncPostToc();
+	window.addEventListener('resize', syncPostToc, { passive: true });
+	setupTocSpy(toc);
+	setupTocInteractions(toc);
+}
+
+function setActiveTocLink(toc, id) {
+	const links = toc.querySelectorAll('.toc a');
+	links.forEach((link) => {
+		const isActive = link.getAttribute('href') === `#${id}`;
+		link.classList.toggle('active', isActive);
+		if (isActive) {
+			link.setAttribute('aria-current', 'true');
+		} else {
+			link.removeAttribute('aria-current');
+		}
+	});
+}
+
+function setupTocSpy(toc) {
+	const headings = Array.from(document.querySelectorAll('.post-body h2[id], .post-body h3[id]'));
+	if (headings.length === 0) return;
+
+	let activeId = headings[0].id;
+	setActiveTocLink(toc, activeId);
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			const visible = entries
+				.filter((entry) => entry.isIntersecting)
+				.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+
+			if (visible && visible.target.id && visible.target.id !== activeId) {
+				activeId = visible.target.id;
+				setActiveTocLink(toc, activeId);
+			}
+		},
+		{
+			rootMargin: '-18% 0px -70% 0px',
+			threshold: [0, 1]
+		}
+	);
+
+	headings.forEach((heading) => observer.observe(heading));
+}
+
+function setupTocInteractions(toc) {
+	const links = toc.querySelectorAll('.toc a');
+	if (links.length === 0) return;
+
+	links.forEach((link) => {
+		link.addEventListener('click', () => {
+			if (window.innerWidth < 980) {
+				toc.removeAttribute('open');
+			}
+		});
+	});
+}
+
+function initCodeCopy() {
+	const blocks = document.querySelectorAll('.post-body pre, .prose-page pre');
+	if (blocks.length === 0 || !navigator.clipboard) return;
+
+	blocks.forEach((block) => {
+		if (block.querySelector('.code-copy')) return;
+
+		const button = document.createElement('button');
+		button.type = 'button';
+		button.className = 'code-copy';
+		button.textContent = 'Copy';
+		button.setAttribute('aria-label', 'Copy code to clipboard');
+
+		const status = document.createElement('span');
+		status.className = 'sr-only';
+		status.setAttribute('aria-live', 'polite');
+		status.setAttribute('aria-atomic', 'true');
+		button.append(status);
+
+		button.addEventListener('click', async () => {
+			const code = block.querySelector('code');
+			const text = (code ? code.innerText : block.innerText).replace(/\n$/, '');
+			try {
+				await navigator.clipboard.writeText(text);
+				button.textContent = 'Copied';
+				button.dataset.copied = 'true';
+				button.append(status);
+				status.textContent = 'Code copied to clipboard';
+				window.setTimeout(() => {
+					button.textContent = 'Copy';
+					delete button.dataset.copied;
+					button.append(status);
+					status.textContent = '';
+				}, 1400);
+			} catch (_error) {
+				button.textContent = 'Failed';
+				button.append(status);
+				status.textContent = 'Copy failed';
+				window.setTimeout(() => {
+					button.textContent = 'Copy';
+					button.append(status);
+					status.textContent = '';
+				}, 1400);
+			}
+		});
+
+		block.prepend(button);
+	});
+}
+
+function initArchiveTimeline() {
+	const groups = Array.from(document.querySelectorAll('[data-archive-year-group]'));
+	const nav = document.querySelector('.archive-jump-nav');
+	if (groups.length === 0 || !nav) return;
+
+	nav.querySelectorAll('[data-year-link]').forEach((link) => {
+		link.addEventListener('click', () => {
+			const href = link.getAttribute('href');
+			if (!href) return;
+			const id = href.replace('#', '');
+			const target = document.getElementById(id);
+			if (!target) return;
+
+			window.requestAnimationFrame(() => {
+				target.scrollIntoView({ block: 'start' });
+			});
+		});
+	});
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			const visible = entries
+				.filter((entry) => entry.isIntersecting)
+				.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+			if (!visible) return;
+
+			const year = visible.target.getAttribute('data-archive-year-group');
+			if (!year) return;
+
+			nav.querySelectorAll('[data-year-link]').forEach((link) => {
+				const isActive = link.getAttribute('data-year-link') === year;
+				if (isActive) {
+					link.setAttribute('aria-current', 'true');
+				} else {
+					link.removeAttribute('aria-current');
+				}
+			});
+		},
+		{
+			rootMargin: '-12% 0px -78% 0px',
+			threshold: [0, 1]
+		}
+	);
+
+	groups.forEach((group) => {
+		observer.observe(group);
+	});
+}

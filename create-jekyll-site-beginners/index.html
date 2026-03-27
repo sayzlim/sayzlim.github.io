@@ -1,28 +1,77 @@
-<!DOCTYPE html><html lang='en'><head prefix="og: http://ogp.me/ns/article#"><meta charset='utf-8'><title>How to Create a Jekyll Site from Scratch | Sayz Lim</title><meta name="description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly."><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="/main.css?v=1716660480" as="style"><link rel="stylesheet" href="/main.css?v=1716660480" > <script src="/main.js?v=1716660480"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Viga&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet"><link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"><link rel="apple-touch-icon" sizes="56x56" href="/img/apple-touch-icon-56x56.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png"><meta name="twitter:dnt" content="on"><meta name="format-detection" content="telephone=no"><link rel="alternate" type="application/rss+xml" title="Sayz Lim" href="https://sayzlim.net/atom.xml" /><meta property="og:title" content="How to Create a Jekyll Site from Scratch" /><meta property="og:type" content="article" /><meta property="og:url" content="https://sayzlim.net/create-jekyll-site-beginners/" /><meta property="og:description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly." /><meta property="article:published_time" content="2020-05-07" /><meta property="article:author" content="Sayz Lim" /><meta property="og:image" content="https://images.sayzlim.net/2020/05/jekyll-terminal.jpg" /><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@sayzlim"><meta name="twitter:title" content="How to Create a Jekyll Site from Scratch"><meta name="twitter:description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly."><meta name="twitter:image:src" content="https://images.sayzlim.net/2020/05/jekyll-terminal.jpg"><link rel="pingback" href="https://webmention.io/sayzlim.net/xmlrpc" /><link rel="webmention" href="https://webmention.io/sayzlim.net/webmention" /> <script async src="https://stats.sayzlim.net/script.js" data-website-id="35992e34-11d0-4168-8d6c-4a4c796417ef" ></script><body><div class="container"><header class="header"><nav class="nav-item"><ul><li><a href="/" >Home</a><li><a href="/posts/" >Posts</a><li><a href="/tags/" >Tags</a><li><a href="/tools/" >Tools</a><li></ul></nav><aside class="select-theme"> <button onclick="_manager.resetUserTheme()" aria-label="Enable System Theme"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> </button> <button onclick="_manager.setTheme('light')" aria-label="Enable Light Theme"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> </svg> </button> <button onclick="_manager.setTheme('dark')" aria-label="Enable Dark Theme"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> </button></aside></header><div class="layout:sidebar"><main class="posts flow"><section class="post flow" itemscope itemtype="https://schema.org/BlogPosting"><header class="flow"><h1 itemprop="headline"> <a itemprop="url" href="/create-jekyll-site-beginners/">How to Create a Jekyll Site from Scratch</a></h1><div class="post-author"><div class="post-avatar"><img src="/img/sayzlim.jpg" alt="Sayz Lim"><span class="schema-author" itemprop="author" itemprop="publisher">Sayz Lim</span></div><div class="post-date"> <span>Published</span> <time itemprop="datePublished" datetime="2020-05-07">May 07, 2020</time></div><div class="post-tag"> <span>Tagged</span><ul class="post-tags"><li><a href="/tag/jekyll">Jekyll</a><li><a href="/tag/tutorial">Tutorial</a></ul></div></div></header><article itemprop="articleBody" class="flow"><p>I recently migrated from <a href="http://octopress.org/" title="Octopress">Octopress</a> to <a href="https://jekyllrb.com/" title="Jekyll • Simple, blog-aware, static sites - Transform your plain text into static websites and blogs">Jekyll</a> after I’ve figured out how to build a vanilla Jekyll project. In this tutorial, you’re going to learn how to start a new project and manage the dependencies correctly.</p><h2 id="why-another-jekyll-tutorial">Why Another Jekyll Tutorial?</h2><p>Most of the online tutorials don’t address my main concern with learning a new framework.</p><blockquote><p>How do I build a Jekyll site without a built-in theme and dependencies? I want to make everything from scratch.</p></blockquote><p>You’re likely to find this tutorial useful if you fit into the following criteria:</p><ul><li>Comfortable developing a website with only HTML, CSS, and JavaScript.<li>Use version control like Git to track and deploy your projects.<li>Understand the advantage of using <a href="https://brew.sh/" title="The Missing Package Manager for macOS (or Linux) — Homebrew">Homebrew</a> to manage packages.<li>Prefer to use version managers like <a href="http://rbenv.org" title="Simple Ruby version management: rbenv">rbenv</a>, <a href="https://pypi.org/project/pipenv/" title="pipenv · PyPI">pipenv</a>, and <a href="https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc" title="Install NVM On Mac With Brew - James Auble">nvm</a> to avoid running <code class="language-plaintext highlighter-rouge">sudo</code> when installing Ruby, Python, or Node on your working machine.</ul><h2 id="recommended-way-to-start-a-new-jekyll-project">Recommended Way to Start a New Jekyll Project</h2><p>There is a <a href="https://jekyllrb.com/docs/" title="Quickstart - Jekyll • Simple, blog-aware, static sites">quick way to start a Jekyll site</a>, but we’re going to <strong>choose the best way</strong> by starting the project with Bundler.</p><blockquote><p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p></blockquote><p>With Bundler, you can clone your repository and get the Jekyll site running in minutes. Read more about <a href="https://jekyllrb.com/tutorials/using-jekyll-with-bundler/" title="Using Jekyll with Bundler - Jekyll • Simple, blog-aware, static sites">installing Jekyll with Bundler</a>. Run the command lines below to create a <code class="language-plaintext highlighter-rouge">my-jekyll-website</code> folder and set up a bundle.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mkdir my-jekyll-website
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><title>How to Create a Jekyll Site from Scratch | Sayz Lim</title><meta name="description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly."><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="twitter:dnt" content="on"><meta name="format-detection" content="telephone=no"><link rel="canonical" href="https://sayzlim.net/create-jekyll-site-beginners/"><script src="/main.js"></script><link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"><link rel="apple-touch-icon" sizes="56x56" href="/img/apple-touch-icon-56x56.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png"><link rel="alternate" type="application/rss+xml" title="Sayz Lim" href="https://sayzlim.net/atom.xml"><meta property="og:site_name" content="Sayz Lim"><meta property="og:title" content="How to Create a Jekyll Site from Scratch | Sayz Lim"><meta property="og:description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly."><meta property="og:type" content="article"><meta property="og:url" content="https://sayzlim.net/create-jekyll-site-beginners/"><meta property="og:image" content="https://images.sayzlim.net/2020/05/jekyll-terminal.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@sayzlim"><meta name="twitter:title" content="How to Create a Jekyll Site from Scratch | Sayz Lim"><meta name="twitter:description" content="In this tutorial, you're going to learn how to start a new Jekyll project and manage the dependencies correctly."><meta name="twitter:image" content="https://images.sayzlim.net/2020/05/jekyll-terminal.jpg"><meta property="article:published_time" content="2020-05-07"><meta property="article:author" content="Sayz Lim"><link rel="pingback" href="https://webmention.io/sayzlim.net/xmlrpc"><link rel="webmention" href="https://webmention.io/sayzlim.net/webmention"><script async src="https://stats.sayzlim.net/script.js" data-website-id="35992e34-11d0-4168-8d6c-4a4c796417ef"></script><link rel="stylesheet" href="/_astro/_slug_.BER9ptJH.css"></head> <body class="page-post"> <div class="site-shell"> <header class="site-header"> <div class="masthead"> <a class="brand" href="/">Sayz Lim</a> <p class="brand-note">A public notebook on product engineering, software, and the web.</p> <p class="brand-meta">Batam, Indonesia / in public since 2010</p> </div> <nav class="site-nav" aria-label="Primary"> <ul> <li> <a href="/"> <span>Home</span> </a> </li><li> <a href="/archive/"> <span>Archive</span> </a> </li><li> <a href="/tags/"> <span>Tags</span> </a> </li><li> <a href="/tools/"> <span>Tools</span> </a> </li> </ul> </nav> </header> <main class="page-frame">  <section class="post" itemscope itemtype="https://schema.org/BlogPosting"> <header class="post-hero"> <p class="post-kicker">Jekyll</p> <h1 itemprop="headline">How to Create a Jekyll Site from Scratch</h1> <p class="post-dek">In this tutorial, you&#39;re going to learn how to start a new Jekyll project and manage the dependencies correctly.</p> <div class="post-context"> <div class="post-meta"> <span class="post-author">Sayz Lim</span> <time itemprop="datePublished" datetime="2020-05-07T00:00:00.000Z">May 07, 2020</time>  </div> <ul class="post-tags" aria-label="Tags"> <li><a href="/tag/jekyll/">Jekyll</a></li><li><a href="/tag/tutorial/">Tutorial</a></li> </ul> </div> </header> <div class="post-content">  <article itemprop="articleBody" class="post-body flow"><p>I recently migrated from <a href="http://octopress.org/" title="Octopress">Octopress</a> to <a href="https://jekyllrb.com/" title="Jekyll • Simple, blog-aware, static sites - Transform your plain text into static websites and blogs">Jekyll</a> after I’ve figured out how to build a vanilla Jekyll project. In this tutorial, you’re going to learn how to start a new project and manage the dependencies correctly.</p>
+<h2 id="why-another-jekyll-tutorial">Why Another Jekyll Tutorial?</h2>
+<p>Most of the online tutorials don’t address my main concern with learning a new framework.</p>
+<blockquote>
+<p>How do I build a Jekyll site without a built-in theme and dependencies? I want to make everything from scratch.</p>
+</blockquote>
+<p>You’re likely to find this tutorial useful if you fit into the following criteria:</p>
+<ul>
+<li>Comfortable developing a website with only HTML, CSS, and JavaScript.</li>
+<li>Use version control like Git to track and deploy your projects.</li>
+<li>Understand the advantage of using <a href="https://brew.sh/" title="The Missing Package Manager for macOS (or Linux) — Homebrew">Homebrew</a> to manage packages.</li>
+<li>Prefer to use version managers like <a href="http://rbenv.org" title="Simple Ruby version management: rbenv">rbenv</a>, <a href="https://pypi.org/project/pipenv/" title="pipenv · PyPI">pipenv</a>, and <a href="https://medium.com/@jamesauble/install-nvm-on-mac-with-brew-adb921fb92cc" title="Install NVM On Mac With Brew - James Auble">nvm</a> to avoid running <code>sudo</code> when installing Ruby, Python, or Node on your working machine.</li>
+</ul>
+<h2 id="recommended-way-to-start-a-new-jekyll-project">Recommended Way to Start a New Jekyll Project</h2>
+<p>There is a <a href="https://jekyllrb.com/docs/" title="Quickstart - Jekyll • Simple, blog-aware, static sites">quick way to start a Jekyll site</a>, but we’re going to <strong>choose the best way</strong> by starting the project with Bundler.</p>
+<blockquote>
+<p>Bundler provides a consistent environment for Ruby projects by tracking and installing the exact gems and versions that are needed.</p>
+</blockquote>
+<p>With Bundler, you can clone your repository and get the Jekyll site running in minutes. Read more about <a href="https://jekyllrb.com/tutorials/using-jekyll-with-bundler/" title="Using Jekyll with Bundler - Jekyll • Simple, blog-aware, static sites">installing Jekyll with Bundler</a>. Run the command lines below to create a <code>my-jekyll-website</code> folder  and set up a bundle.</p>
+<pre><code class="language-console">mkdir my-jekyll-website
 cd my-jekyll-website
 bundle init
-</span></code></pre></div></div><p>This is optional, but I prefer to install the bundle in the project subdirectory to avoid permission errors you might get during the gem installation.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle config set --local path 'vendor/bundle'
-</span></code></pre></div></div><p>Instead of running <code class="language-plaintext highlighter-rouge">bundle add jekyll</code> to add Jekyll as a dependency for your new project, you want add this line item <code class="language-plaintext highlighter-rouge">gem "jekyll", github: "jekyll/jekyll"</code> to the <code class="language-plaintext highlighter-rouge">Gemfile</code>.<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> Replace the content of <code class="language-plaintext highlighter-rouge">Gemfile</code> with the following snippet.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source "https://rubygems.org"
-gem "jekyll", github: "jekyll/jekyll"
-</code></pre></div></div><p class="sidenote">A <strong>Gemfile</strong> is a file we create which is used for describing gem dependencies for Ruby programs. A gem is a collection of Ruby code that we can extract into a “collection” which we can call later. — <a href="https://tosbourn.com/what-is-the-gemfile/" title="What is a Gemfile">Tosbourn</a></p><p>Install the gems required to run Jekyll with the command below. Wait until the installation process is complete.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle install
-</span></code></pre></div></div><p>Run the following command to create a new Jekyll folder called <code class="language-plaintext highlighter-rouge">source</code> that contains your source code. We need to add <code class="language-plaintext highlighter-rouge">--blank</code> option to create a blank Jekyll directory structure to help you understand the purpose of each file and folder.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll new source --blank
-</span></code></pre></div></div><p>Move <code class="language-plaintext highlighter-rouge">_config.yml</code> from the <code class="language-plaintext highlighter-rouge">source</code> directory to the root directory by running this command:</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mv source/_config.yml .
-</span></code></pre></div></div><p>Here’s the directory structure of your Jekyll project.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>my-jekyll-website/
+</code></pre>
+<p>This is optional, but I prefer to install the bundle in the project subdirectory to avoid permission errors you might get during the gem installation.</p>
+<pre><code class="language-console">bundle config set --local path 'vendor/bundle'
+</code></pre>
+<p>Instead of running <code>bundle add jekyll</code> to add Jekyll as a dependency for your new project, you want add this line item <code>gem &quot;jekyll&quot;, github: &quot;jekyll/jekyll&quot;</code> to the <code>Gemfile</code>.<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> Replace the content of <code>Gemfile</code> with the following snippet.</p>
+<pre><code class="language-plaintext">source &quot;https://rubygems.org&quot;
+gem &quot;jekyll&quot;, github: &quot;jekyll/jekyll&quot;
+</code></pre>
+<p class="sidenote">A <strong>Gemfile</strong> is a file we create which is used for describing gem dependencies for Ruby programs. A gem is a collection of Ruby code that we can extract into a “collection” which we can call later. — <a href="https://tosbourn.com/what-is-the-gemfile/" title="What is a Gemfile">Tosbourn</a></p>
+<p>Install the gems required to run Jekyll with the command below. Wait until the installation process is complete.</p>
+<pre><code class="language-console">bundle install
+</code></pre>
+<p>Run the following command to create a new Jekyll folder called <code>source</code> that contains your source code. We need to add <code>--blank</code> option to create a blank Jekyll directory structure to help you understand the purpose of each file and folder.</p>
+<pre><code class="language-console">bundle exec jekyll new source --blank
+</code></pre>
+<p>Move <code>_config.yml</code> from the <code>source</code> directory to the root directory by running this command:</p>
+<pre><code class="language-console">mv source/_config.yml .
+</code></pre>
+<p>Here’s the directory structure of your Jekyll project.</p>
+<pre><code>my-jekyll-website/
   | source/
   | vendor/
   | _config.yml
   | Gemfile
   | Gemfile.lock
-</code></pre></div></div><p>Execute the following command to build and serve the site locally.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll serve
-</span></code></pre></div></div><p>You will see this build warning in the console.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Build Warning: Layout 'default' requested in source/index.md does not exist.
-</span></code></pre></div></div><p>The first line mentioned that the homepage <code class="language-plaintext highlighter-rouge">index.md</code> is using the <code class="language-plaintext highlighter-rouge">default</code> layout that doesn’t exist. This is happening because <code class="language-plaintext highlighter-rouge">_config.yml</code> tried to build the site using the folders from the same directory, which happened to be in the <code class="language-plaintext highlighter-rouge">source</code> folder. We can fix this error by updating <code class="language-plaintext highlighter-rouge">config.yml</code>.</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
-<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the name of your site, e.g. ACME Corp.</span>
+</code></pre>
+<p>Execute the following command to build and serve the site locally.</p>
+<pre><code class="language-console">bundle exec jekyll serve
+</code></pre>
+<p>You will see this build warning in the console.</p>
+<pre><code class="language-console">Build Warning: Layout 'default' requested in source/index.md does not exist.
+</code></pre>
+<p>The first line mentioned that the homepage <code>index.md</code> is using the <code>default</code> layout that doesn’t exist. This is happening because <code>_config.yml</code> tried to build the site using the folders from the same directory, which happened to be in the <code>source</code> folder. We can fix this error by updating <code>config.yml</code>.</p>
+<pre><code class="language-yaml">url: &quot;&quot; # the base hostname &amp; protocol for your site, e.g. http://example.com
+baseurl: &quot;&quot; # the subpath of your site, e.g. /blog
+title: &quot;&quot; # the name of your site, e.g. ACME Corp.
 
-<span class="c1"># Set the source folder</span>
-<span class="na">source</span><span class="pi">:</span> <span class="s">source</span>
-</code></pre></div></div><p>Rebuild the site with this command that tells Jekyll to incrementally update the site whenever it detects change with any of the files.</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">bundle exec jekyll serve --incremental
-</span></code></pre></div></div><p>You should be able to view the site by visiting <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>. Congratulations! You’ve learned how to set up and build a Jekyll site.</p><h2 id="development-with-jekyll">Development with Jekyll</h2><p>This is the most <em>exciting</em> and time-consuming step in the whole process: <strong>developing your Jekyll website from scratch</strong>.</p><p>Jekyll is a static site generator, so you can create <code class="language-plaintext highlighter-rouge">index.html</code> in the source directory to build a single-page website.</p><p>But, we’re not going to settle with a single page site.</p><p>We’re building a site that comes with a blog, a site that can have many posts and pages, and a site where you can experiment with a different type of layouts.</p><h2 id="setting-up-git">Setting Up Git</h2><p>Before we start making changes to the project, we want to use Git to track any updates with our files. Go ahead and run <code class="language-plaintext highlighter-rouge">git init</code> to track your project while you’re in the console. You also want to add these lines to <code class="language-plaintext highlighter-rouge">.gitignore</code> file found in the folder.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Jekyll
+# Set the source folder
+source: source
+</code></pre>
+<p>Rebuild the site with this command that tells Jekyll to incrementally update the site whenever it detects change with any of the files.</p>
+<pre><code class="language-console">bundle exec jekyll serve --incremental
+</code></pre>
+<p>You should be able to view the site by visiting <a href="http://127.0.0.1:4000/">http://127.0.0.1:4000/</a>. Congratulations! You’ve learned how to set up and build a Jekyll site.</p>
+<h2 id="development-with-jekyll">Development with Jekyll</h2>
+<p>This is the most <em>exciting</em> and time-consuming step in the whole process: <strong>developing your Jekyll website from scratch</strong>.</p>
+<p>Jekyll is a static site generator, so you can create <code>index.html</code> in the source directory to build a single-page website.</p>
+<p>But, we’re not going to settle with a single page site.</p>
+<p>We’re building a site that comes with a blog, a site that can have many posts and pages, and a site where you can experiment with a different type of layouts.</p>
+<h2 id="setting-up-git">Setting Up Git</h2>
+<p>Before we start making changes to the project, we want to use Git to track any updates with our files. Go ahead and run <code>git init</code> to track your project while you’re in the console. You also want to add these lines to <code>.gitignore</code> file found in the folder.</p>
+<pre><code># Jekyll
 .bundle
 .jekyll-cache/
 .jekyll-metadata
@@ -30,38 +79,59 @@ gem "jekyll", github: "jekyll/jekyll"
 _site/
 Gemfile.lock
 vendor/
-</code></pre></div></div><p class="sidenote">You can also add these lines above into your global <code class="language-plaintext highlighter-rouge">.gitignore</code> that can be found in <code class="language-plaintext highlighter-rouge">~/.gitignore</code>. It’s useful to add them as a global setting if you find yourself developing many Jekyll projects in the future.</p><h2 id="jekyll-directory-structure">Jekyll Directory Structure</h2><p>Jekyll is the most elegant static site generator I’ve used. It’s the only framework where I only have to deal with HTML, CSS, and Markdown files.</p><p>Each folder created in the source directory has a purpose. I recommend that you read the explanation of the <a href="https://jekyllrb.com/docs/structure/" title="Directory Structure - Jekyll • Simple, blog-aware, static sites">directory structure</a> before you continue with this tutorial.</p><blockquote><p>The first concept we need to remember is <em>any post or page in Markdown format can be rendered as a special file only when we’ve added a valid <strong>front matter</strong> at the beginning of the document</em>. I’ve spent many hours unable to figure out why some pages don’t show up correctly because I forgot about this concept.</p></blockquote><p class="sidenote"><a href="https://jekyllrb.com/docs/front-matter/">Front Matter</a> — it must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.</p><p>Open <code class="language-plaintext highlighter-rouge">index.md</code> inside <code class="language-plaintext highlighter-rouge">source</code> directory to see its content. You will find that <code class="language-plaintext highlighter-rouge">layout</code> variable is set inside the front matter.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre>
+<p class="sidenote">You can also add these lines above into your global <code>.gitignore</code> that can be found in <code>~/.gitignore</code>. It’s useful to add them as a global setting if you find yourself developing many Jekyll projects in the future.</p>
+<h2 id="jekyll-directory-structure">Jekyll Directory Structure</h2>
+<p>Jekyll is the most elegant static site generator I’ve used. It’s the only framework where I only have to deal with HTML, CSS, and Markdown files.</p>
+<p>Each folder created in the source directory has a purpose. I recommend that you read the explanation of the <a href="https://jekyllrb.com/docs/structure/" title="Directory Structure - Jekyll • Simple, blog-aware, static sites">directory structure</a> before you continue with this tutorial.</p>
+<blockquote>
+<p>The first concept we need to remember is <em>any post or page in Markdown format can be rendered as a special file only when we’ve added a valid <strong>front matter</strong> at the beginning of the document</em>. I’ve spent many hours unable to figure out why some pages don’t show up correctly because I forgot about this concept.</p>
+</blockquote>
+<p class="sidenote"><a href="https://jekyllrb.com/docs/front-matter/">Front Matter</a> — it must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.</p>
+<p>Open <code>index.md</code> inside <code>source</code> directory to see its content. You will find that <code>layout</code> variable is set inside the front matter.</p>
+<pre><code class="language-plaintext">---
 layout: default
 ---
-</code></pre></div></div><p>It tells Jekyll to use the <code class="language-plaintext highlighter-rouge">default.html</code> found inside <code class="language-plaintext highlighter-rouge">_layouts</code> folder as its parent layout. If you modify anything in <code class="language-plaintext highlighter-rouge">default.html</code>, it will also be rendered for any page that uses <code class="language-plaintext highlighter-rouge">default.html</code> as the layout.</p><p>You’re probably wondering how <code class="language-plaintext highlighter-rouge">index.md</code> content shows up in <code class="language-plaintext highlighter-rouge">default.html</code>. Let’s learn more about it by checking out the content:</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"{{ site.lang | default: "</span><span class="na">en-US</span><span class="err">"</span> <span class="err">}}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;title&gt;</span>{{ page.title }} - {{ site.title }}<span class="nt">&lt;/title&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"{{ "</span><span class="err">/</span><span class="na">assets</span><span class="err">/</span><span class="na">css</span><span class="err">/</span><span class="na">main.css</span><span class="err">"</span> <span class="err">|</span> <span class="na">relative_url</span> <span class="err">}}"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
+</code></pre>
+<p>It tells Jekyll to use the <code>default.html</code> found inside <code>_layouts</code> folder as its parent layout. If you modify anything in <code>default.html</code>, it will also be rendered for any page that uses <code>default.html</code> as the layout.</p>
+<p>You’re probably wondering how <code>index.md</code> content shows up in <code>default.html</code>. Let’s learn more about it by checking out the content:</p>
+<pre><code class="language-html">{% raw %}
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;{{ site.lang | default: &quot;en-US&quot; }}&quot;&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;{{ page.title }} - {{ site.title }}&lt;/title&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;{{ &quot;/assets/css/main.css&quot; | relative_url }}&quot;&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
     {{ content}}
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-
-</code></pre></div></div><p>The <code class="language-plaintext highlighter-rouge">{{ content }}</code> tag tells Jekyll to load the content of a post or page that uses this layout.</p><p class="sidenote">You must remember that <code class="language-plaintext highlighter-rouge">_layouts</code> folder is your building blocks to design a website. The only time you want to modify anything inside this folder is whenever you want to change your site HTML structure. You never have to write the content directly here.</p><p>Typically, you want to use <code class="language-plaintext highlighter-rouge">default.html</code> as the first building block for other layouts you’re going to create. Here’s a common way to structure the <code class="language-plaintext highlighter-rouge">_default.html</code>.</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">'en'</span><span class="nt">&gt;</span>
+  &lt;/body&gt;
+&lt;/html&gt;
+{% endraw %}
+</code></pre>
+<p>The <code>{% raw %}{{ content }}{% endraw %}</code> tag tells Jekyll to load the content of a post or page that uses this layout.</p>
+<p class="sidenote">You must remember that <code>_layouts</code> folder is your building blocks to design a website. The only time you want to modify anything inside this folder is whenever you want to change your site HTML structure. You never have to write the content directly here.</p>
+<p>Typically, you want to use <code>default.html</code> as the first building block for other layouts you’re going to create. Here’s a common way to structure the <code>_default.html</code>.</p>
+<pre><code class="language-html">{% raw %}
+&lt;!DOCTYPE html&gt;
+&lt;html lang='en'&gt;
 {% include head.html %}
-<span class="nt">&lt;body&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+&lt;body&gt;
+  &lt;div class=&quot;container&quot;&gt;
     {% include header.html %}
     {{ content }}
     {% include sidebar.html %}
     {% include footer.html %}
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-
-</code></pre></div></div><p>Notice that we’re using <code class="language-plaintext highlighter-rouge">{% include &lt;filename.ext&gt; %}</code> tag several times. It tells Jekyll to include the corresponding files that are found inside <code class="language-plaintext highlighter-rouge">_includes</code> folder.</p><p>You can treat anything inside <code class="language-plaintext highlighter-rouge">_includes</code> folder as components for you to use in your layout or post. You can also create more folders there to further organize your components.</p><p>Here is what I have in the folder when this post is published. You’re going to create additional components as you build a more complex layout, or by adding various sections on your site.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_includes/
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+{% endraw %}
+</code></pre>
+<p>Notice that we’re using <code>{% raw %}{% include &lt;filename.ext&gt; %}{% endraw %}</code> tag several times. It tells Jekyll to include the corresponding files that are found inside <code>_includes</code> folder.</p>
+<p>You can treat anything inside <code>_includes</code> folder as components for you to use in your layout or post. You can also create more folders there to further organize your components.</p>
+<p>Here is what I have in the folder when this post is published. You’re going to create additional components as you build a more complex layout, or by adding various sections on your site.</p>
+<pre><code class="language-plaintext">_includes/
   | custom/
     | extra.html
     | opengraph.html
@@ -70,7 +140,15 @@ layout: default
   | head.html
   | header.html
   | sidebar.html
-</code></pre></div></div><h2 id="organize-pages-with-collections">Organize Pages with Collections</h2><p>We’re halfway into this tutorial, but we haven’t discussed anything about the <code class="language-plaintext highlighter-rouge">posts</code> folder.</p><p>Let’s take a break.</p><p>Good?</p><p>You want to make your website looks alive with many pages. You don’t want to have a homepage full of blog posts without other pages to feature a different type of content.</p><p>There are two ways to create a new page.</p><p>First, you can add more pages by creating a new folder named after the permalink you want to use, and put an <code class="language-plaintext highlighter-rouge">index.md</code> or <code class="language-plaintext highlighter-rouge">index.html</code> in the folder. For example, here is how the source directory looks like if you want to create an <code class="language-plaintext highlighter-rouge">about</code> page with this method.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source/
+</code></pre>
+<h2 id="organize-pages-with-collections">Organize Pages with Collections</h2>
+<p>We’re halfway into this tutorial, but we haven’t discussed anything about the <code>posts</code> folder.</p>
+<p>Let’s take a break.</p>
+<p>Good?</p>
+<p>You want to make your website looks alive with many pages. You don’t want to have a homepage full of blog posts without other pages to feature a different type of content.</p>
+<p>There are two ways to create a new page.</p>
+<p>First, you can add more pages by creating a new folder named after the permalink you want to use, and put an <code>index.md</code> or <code>index.html</code> in the folder. For example, here is how the source directory looks like if you want to create an <code>about</code> page with this method.</p>
+<pre><code>source/
   | _data/
   | _drafts/
   | _includes/
@@ -82,18 +160,28 @@ layout: default
   | assets/
   | posts/
   | index.html
-</code></pre></div></div><p>This is the easiest way to create a new page, but you may find that your <code class="language-plaintext highlighter-rouge">source</code> folder cluttered with folders if you’re creating many pages.</p><p>There is a better way to create pages in Jekyll. We’re going to use <a href="https://jekyllrb.com/docs/collections/" title="Collections - Jekyll • Simple, blog-aware, static sites">collections</a>.</p><p>Start by creating a new folder called <code class="language-plaintext highlighter-rouge">_pages</code> on the same directory level as others. Create a new file called <code class="language-plaintext highlighter-rouge">about.html</code> and put it inside <code class="language-plaintext highlighter-rouge">_pages</code> folder.</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+</code></pre>
+<p>This is the easiest way to create a new page, but you may find that your <code>source</code> folder cluttered with folders if you’re creating many pages.</p>
+<p>There is a better way to create pages in Jekyll. We’re going to use <a href="https://jekyllrb.com/docs/collections/" title="Collections - Jekyll • Simple, blog-aware, static sites">collections</a>.</p>
+<p>Start by creating a new folder called <code>_pages</code> on the same directory level as others. Create a new file called <code>about.html</code> and put it inside <code>_pages</code> folder.</p>
+<pre><code class="language-html">---
 layout: default
 title: About
 permalink: /about/
 ---
 Tell people about yourself.
-</code></pre></div></div><p>You will find a new variable called <code class="language-plaintext highlighter-rouge">permalink</code> inside the front matter. You can change it into <code class="language-plaintext highlighter-rouge">permalink: /me/</code> if you want the about page accessible from visiting <a href="http://127.0.0.1:4000/me/">http://127.0.0.1:4000/me/</a></p><p>The pages won’t be accessible yet because there is one more step left. We’ve to set up the collections by adding these lines to <code class="language-plaintext highlighter-rouge">_config.yml</code>.</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Jekyll Collections</span>
-<span class="na">collections</span><span class="pi">:</span>
-  <span class="na">pages</span><span class="pi">:</span>
-    <span class="na">output</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Set to render files in _pages folder</span>
-    <span class="na">permalink</span><span class="pi">:</span> <span class="s">/:title/</span> <span class="c1"># Set the format of the permalink by default </span>
-</code></pre></div></div><p>Visit <a href="http://127.0.0.1:4000/about/">http://127.0.0.1:4000/about/</a> again should load the page.</p><p>With the <code class="language-plaintext highlighter-rouge">_pages</code> folder ready, you can add more pages by creating <code class="language-plaintext highlighter-rouge">html</code> or <code class="language-plaintext highlighter-rouge">markdown</code> files in the folder. The structure remains organized even after we’ve added a contact and portfolio page.</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source/
+</code></pre>
+<p>You will find a new variable called <code>permalink</code> inside the front matter. You can change it into <code>permalink: /me/</code> if you want the about page accessible from visiting <a href="http://127.0.0.1:4000/me/">http://127.0.0.1:4000/me/</a></p>
+<p>The pages won’t be accessible yet because there is one more step left. We’ve to set up the collections by adding these lines to <code>_config.yml</code>.</p>
+<pre><code class="language-yaml"># Jekyll Collections
+collections:
+  pages:
+    output: true # Set to render files in _pages folder
+    permalink: /:title/ # Set the format of the permalink by default 
+</code></pre>
+<p>Visit <a href="http://127.0.0.1:4000/about/">http://127.0.0.1:4000/about/</a> again should load the page.</p>
+<p>With the <code>_pages</code> folder ready, you can add more pages by creating <code>html</code> or <code>markdown</code> files in the folder. The structure remains organized even after we’ve added a contact and portfolio page.</p>
+<pre><code>source/
   | _data/
   | _drafts/
   | _includes/
@@ -107,57 +195,94 @@ Tell people about yourself.
   | assets/
   | posts/
   | index.html
-</code></pre></div></div><h2 id="pagination-and-iteration-with-posts">Pagination and Iteration with Posts</h2><p>If you’ve published any posts from your previous setup, you can copy markdown files into the new project <code class="language-plaintext highlighter-rouge">posts</code> folder. We’re going to use actual content to start building the posts page.</p><p>Pagination is the most important feature on the posts page because we want to avoid displaying all the posts on a single page. Instead of using <code class="language-plaintext highlighter-rouge">jekyll-paginate</code> recommended by Jekyll, we’re going to use <code class="language-plaintext highlighter-rouge">jekyll-paginate-v2</code> to create a paginated posts page.</p><p>Open <code class="language-plaintext highlighter-rouge">Gemfile</code> and update its content into:</p><div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
-gem "jekyll", github: "jekyll/jekyll"
+</code></pre>
+<h2 id="pagination-and-iteration-with-posts">Pagination and Iteration with Posts</h2>
+<p>If you’ve published any posts from your previous setup, you can copy markdown files into the new project <code>posts</code> folder. We’re going to use actual content to start building the posts page.</p>
+<p>Pagination is the most important feature on the posts page because we want to avoid displaying all the posts on a single page. Instead of using <code>jekyll-paginate</code> recommended by Jekyll, we’re going to use  <code>jekyll-paginate-v2</code> to create a paginated posts page.</p>
+<p>Open <code>Gemfile</code> and update its content into:</p>
+<pre><code>source 'https://rubygems.org'
+gem &quot;jekyll&quot;, github: &quot;jekyll/jekyll&quot;
 group :jekyll_plugins do
   gem 'jekyll-paginate-v2'
 end
-</code></pre></div></div><p class="sidenote">There are <a href="https://jekyllrb.com/docs/plugins/installation/" title="Plugins \| Jekyll • Simple, blog-aware, static sites">three ways to install plugins</a>, but I recommend using <code class="language-plaintext highlighter-rouge">Gemfile</code> because we started with Bundler to manage the dependencies.</p><p>To enable pagination, you need to configure the pagination settings in <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">url</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the base hostname &amp; protocol for your site, e.g. http://example.com</span>
-<span class="na">baseurl</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the subpath of your site, e.g. /blog</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">"</span> <span class="c1"># the name of your site, e.g. ACME Corp.</span>
-<span class="na">source</span><span class="pi">:</span> <span class="s">source</span>
+</code></pre>
+<p class="sidenote">There are <a href="https://jekyllrb.com/docs/plugins/installation/" title="Plugins | Jekyll • Simple, blog-aware, static sites">three ways to install plugins</a>, but I recommend using <code>Gemfile</code> because we started with Bundler to manage the dependencies.</p>
+<p>To enable pagination, you need to configure the pagination settings in <code>_config.yml</code>:</p>
+<pre><code class="language-yaml">url: &quot;&quot; # the base hostname &amp; protocol for your site, e.g. http://example.com
+baseurl: &quot;&quot; # the subpath of your site, e.g. /blog
+title: &quot;&quot; # the name of your site, e.g. ACME Corp.
+source: source
 
-<span class="c1"># Pagination</span>
-<span class="na">pagination</span><span class="pi">:</span>
-  <span class="na">enabled</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># must be set to true</span>
-  <span class="na">per_page</span><span class="pi">:</span> <span class="m">10</span> <span class="c1"># number of posts displayed per page</span>
-  <span class="na">permalink</span><span class="pi">:</span> <span class="s1">'</span><span class="s">/page/:num/'</span> <span class="c1"># the pagination format</span>
-  <span class="na">sort_reverse</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># show the latest post first</span>
+# Pagination
+pagination:
+  enabled: true # must be set to true
+  per_page: 10 # number of posts displayed per page
+  permalink: '/page/:num/' # the pagination format
+  sort_reverse: true # show the latest post first
 
-<span class="c1"># Collections</span>
-<span class="na">collections</span><span class="pi">:</span>
-  <span class="na">pages</span><span class="pi">:</span>
-    <span class="na">output</span><span class="pi">:</span> <span class="no">true</span> <span class="c1"># Set to render files in _pages folder</span>
-    <span class="na">permalink</span><span class="pi">:</span> <span class="s">/:title/</span> <span class="c1"># Set the format of the permalink by default </span>
-</code></pre></div></div><p>You can now access <code class="language-plaintext highlighter-rouge">paginator</code> liquid object to iterate every post as long you’ve enabled it in the front matter.</p><p>Depending on where you want to display your latest posts, you will have a different directory structure. If you’re going to show the latest posts and pagination on the homepage, you can rename <code class="language-plaintext highlighter-rouge">index.md</code> into <code class="language-plaintext highlighter-rouge">index.html</code> and update the content with this:</p><div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+# Collections
+collections:
+  pages:
+    output: true # Set to render files in _pages folder
+    permalink: /:title/ # Set the format of the permalink by default 
+</code></pre>
+<p>You can now access <code>paginator</code> liquid object to iterate every post as long you’ve enabled it in the front matter.</p>
+<p>Depending on where you want to display your latest posts, you will have a different directory structure. If you’re going to show the latest posts and pagination on the homepage, you can rename <code>index.md</code> into <code>index.html</code> and update the content with this:</p>
+<pre><code class="language-html">{% raw %}
 ---
 layout: default
 pagination: 
   enabled: true # Enable pagination on this page
 ---
 
-<span class="c">&lt;!-- This loops through the paginated posts --&gt;</span>
+&lt;!-- This loops through the paginated posts --&gt;
 {% for post in paginator.posts %}
-  <span class="nt">&lt;h1&gt;&lt;a</span> <span class="na">href=</span><span class="s">"{{ post.url }}"</span><span class="nt">&gt;</span>{{ post.title }}<span class="nt">&lt;/a&gt;&lt;/h1&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"date"</span><span class="nt">&gt;</span>{{ post.date }}<span class="nt">&lt;/span&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;</span>
+  &lt;h1&gt;&lt;a href=&quot;{{ post.url }}&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;
+  &lt;span class=&quot;date&quot;&gt;{{ post.date }}&lt;/span&gt;
+  &lt;div class=&quot;content&quot;&gt;
     {{ post.content }}
-  <span class="nt">&lt;/div&gt;</span>
+  &lt;/div&gt;
 {% endfor %}
 
-<span class="c">&lt;!-- Pagination links --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pagination"</span><span class="nt">&gt;</span>
+&lt;!-- Pagination links --&gt;
+&lt;div class=&quot;pagination&quot;&gt;
   {% if paginator.previous_page %}
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.previous_page_path }}"</span> <span class="na">class=</span><span class="s">"previous"</span><span class="nt">&gt;</span>
+    &lt;a href=&quot;{{ paginator.previous_page_path }}&quot; class=&quot;previous&quot;&gt;
       Previous
-    <span class="nt">&lt;/a&gt;</span>
+    &lt;/a&gt;
   {% endif %}
   {% if paginator.next_page %}
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ paginator.next_page_path }}"</span> <span class="na">class=</span><span class="s">"next"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+    &lt;a href=&quot;{{ paginator.next_page_path }}&quot; class=&quot;next&quot;&gt;Next&lt;/a&gt;
   {% endif %}
-<span class="nt">&lt;/div&gt;</span>
-
-</code></pre></div></div><p>Your site now supports the basic features of a blogging platform. You can create more pages by creating files in <code class="language-plaintext highlighter-rouge">_pages</code> folder. Here are more tips and resources to help you get started developing your site:</p><ul><li><a href="https://shopify.github.io/liquid/" title="Liquid template language">Learn about Liquid filters and tags</a> because it’s the primary language to code the site.<li><a href="https://jekyllrb.com/docs/liquid/filters/" title="Liquid Filters - Jekyll • Simple, blog-aware, static sites">Learn about Jekyll filters</a> that are useful to format date, sort data, and manage arrays.<li><a href="https://jekyllrb.com/docs/configuration/environments/" title="Environments - Jekyll • Simple, blog-aware, static sites">Specifying Jekyll environment value</a> to separate content for development and production.<li>Learn more about <code class="language-plaintext highlighter-rouge">_data</code> folder and how you can use it to populate repetitive data.</ul><h2 id="deployment-to-github-pages">Deployment to GitHub Pages</h2><p>Check out <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site" title="Configuring a custom domain for your GitHub Pages site - GitHub Help">how to configure custom domain on GitHub Pages</a> if you haven’t done so. If you’ve already published your site on GitHub, you want to clone the repository to your desktop by using this command:</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">git clone &lt;your_github_repo_url&gt;</span><span class="w"> </span>~/Desktop/_site
-</code></pre></div></div><p>Replace your Jekyll <code class="language-plaintext highlighter-rouge">_site</code> folder with the cloned <code class="language-plaintext highlighter-rouge">_site</code> folder from GitHub. You should see that the folder contains files like <code class="language-plaintext highlighter-rouge">CNAME</code> and <code class="language-plaintext highlighter-rouge">.git</code>. To prevent Jekyll from removing them whenever we build the site, we need to exclude them by adding this line into <code class="language-plaintext highlighter-rouge">_config.yml</code></p><div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">keep_files</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">CNAME</span><span class="pi">,</span> <span class="nv">.git</span><span class="pi">]</span>
-</code></pre></div></div><p>To build for the production, you can enter this command:</p><div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">JEKYLL_ENV=production bundle exec jekyll build
-</span></code></pre></div></div><p>It will override the content of <code class="language-plaintext highlighter-rouge">_site</code> folder with the new one. Once you’re satisfied with your site, you can push the commit back to GitHub to make the new site live.</p><h2 id="conclusion">Conclusion</h2><p>Jekyll is the first framework I can use to swiftly build and deploy a static site from scratch. It provides me with the environment to practice the fundamental of building a semantic and responsive site with HTML/CSS.</p><p>I know there are people like me who prefer to keep the website development process simple: a plain old HTML, CSS, and maybe some JavaScript to spice up the site.</p><div class="footnotes" role="doc-endnotes"><ol><li id="fn:1" role="doc-endnote"><p>There is a bug with the version of Jekyll that is hosted on RubyGems.org. That’s why you want to use the latest stable release from the repository directly. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p></ol></div></article></section><aside class="related-posts"><h5>Related Posts</h5><div class="related-box"><div class="related-card"><div class="related-date">Jul 30, 2022</div><a href="/fix-eventmachine-c-extension-error/"><div class="related-title">How to fix EventMachine C extension error in Jekyll</div><div class="related-desc">Here is a simple solution to resolve unable to load the EventMachine C extension; to use the pure-ruby reactor, require 'em/pure_ruby' error</div></a><ul class="excerpt-tags"><li><a href="/tag/jekyll">Jekyll</a></ul></div><div class="related-card"><div class="related-date">Jul 15, 2021</div><a href="/fix-jekyll-autoprefixer-error/"><div class="related-title">How to Fix 'jekyll-autoprefixer' Error Running Ruby 3.0.0</div><div class="related-desc">Here's a fix for Jekyll if you cannot build your project after updating Ruby to the latest version.</div></a><ul class="excerpt-tags"><li><a href="/tag/jekyll">Jekyll</a></ul></div><div class="related-card"><div class="related-date">Jul 10, 2021</div><a href="/verify-osxkeychain-helper/"><div class="related-title">How to Verify 'osxkeychain helper' Personal Access Token</div><div class="related-desc">If you use GitHub for macOS, you want to verify that your personal token access is stored correctly.</div></a><ul class="excerpt-tags"><li><a href="/tag/git">Git</a><li><a href="/tag/tutorial">Tutorial</a></ul></div><div class="related-card"><div class="related-date">May 07, 2021</div><a href="/jekyll-include-component/"><div class="related-title">How to Build a Jekyll Component</div><div class="related-desc">Take advantage of Jekyll Include to build a component in your project.</div></a><ul class="excerpt-tags"><li><a href="/tag/jekyll">Jekyll</a></ul></div></div></aside></main><aside class="sidebar"><div class="sticky-box"><div class="sidebar-promo form"><p><strong>ChatGPT in Keyboard Maestro</strong><br> A bundle of Keyboard Maestro macros to supercharge your workspace and get things done faster.<br><a class="button" href="https://keyboardtyro.com/">Check out Keyboard Tyro</a></p></div><div class="carbon-box"> <script async src="//cdn.carbonads.com/carbon.js?serve=CKYIC2JI&placement=sayzlimnet&format=cover" id="_carbonads_js"></script></div></div></aside></div><aside class="hello flow"><p> 👋 <strong>Thanks for visiting this site!</strong> Would you mind if I tell you more about what I create?</p><button onclick="toggleElement('.overlay');dismissElement('.hello')";>Sure</button> <button onclick="dismissElement('.hello')">Maybe next time</button></aside><aside class="overlay"><section class="flow"> <button id="close" onclick="dismissElement('.overlay')"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button><p>Interested in learning more Keyboard Maestro and the products I'm building? Subscribe to my newsletter for useful updates whenever I post new tips and resources to enhance your productivity. I’ll only reach out when there’s something valuable to share. <strong>Enter your email address to stay in touch!</strong></p><form class="form" action="https://app.convertkit.com/forms/2056450/subscriptions" method="post" data-sv-form="2056450" data-uid="c249fe0755" data-options='{"settings":{"after_subscribe":{"action": "redirect","redirect_url": "https://sayzlim.net/welcome/"}}}' > <label for="name">First Name</label> <input type="text" value="" name="fields[first_name]" placeholder="First Name" id="name" required /> <label for="email">Email</label> <input type="email" value="" name="email_address" placeholder="Email Address" id="email" required /> <button class="subscribe">Subscribe</button> </form></section></aside><footer class="footer"> &copy; 2010–2025 Sayz Lim | Powered by <a href="https://jekyllrb.com" title="Jekyll">Jekyll</a> and <a href="https://pages.github.com" title="GitHub Pages">GitHub Pages</a></footer></div>
+&lt;/div&gt;
+{% endraw %}
+</code></pre>
+<p>Your site now supports the basic features of a blogging platform. You can create more pages by creating files in <code>_pages</code> folder. Here are more tips and resources to help you get started developing your site:</p>
+<ul>
+<li><a href="https://shopify.github.io/liquid/" title="Liquid template language">Learn about Liquid filters and tags</a> because it’s the primary language to code the site.</li>
+<li><a href="https://jekyllrb.com/docs/liquid/filters/" title="Liquid Filters - Jekyll • Simple, blog-aware, static sites">Learn about Jekyll filters</a> that are useful to format date, sort data, and manage arrays.</li>
+<li><a href="https://jekyllrb.com/docs/configuration/environments/" title="Environments - Jekyll • Simple, blog-aware, static sites">Specifying Jekyll environment value</a> to separate content for development and production.</li>
+<li>Learn more about <code>_data</code> folder and how you can use it to populate repetitive data.</li>
+</ul>
+<h2 id="deployment-to-github-pages">Deployment to GitHub Pages</h2>
+<p>Check out <a href="https://help.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site" title="Configuring a custom domain for your GitHub Pages site - GitHub Help">how to configure custom domain on GitHub Pages</a> if you haven’t done so. If you’ve already published your site on GitHub, you want to clone the repository to your desktop by using this command:</p>
+<pre><code class="language-console">git clone &lt;your_github_repo_url&gt; ~/Desktop/_site
+</code></pre>
+<p>Replace your Jekyll <code>_site</code> folder with the cloned <code>_site</code> folder from GitHub. You should see that the folder contains files like <code>CNAME</code> and <code>.git</code>. To prevent Jekyll from removing them whenever we build the site, we need to exclude them by adding this line into <code>_config.yml</code></p>
+<pre><code class="language-yaml">keep_files: [CNAME, .git]
+</code></pre>
+<p>To build for the production, you can enter this command:</p>
+<pre><code class="language-console">JEKYLL_ENV=production bundle exec jekyll build
+</code></pre>
+<p>It will override the content of <code>_site</code> folder with the new one. Once you’re satisfied with your site, you can push the commit back to GitHub to make the new site live.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Jekyll is the first framework I can use to swiftly build and deploy a static site from scratch. It provides me with the environment to practice the fundamental of building a semantic and responsive site with HTML/CSS.</p>
+<p>I know there are people like me who prefer to keep the website development process simple: a plain old HTML, CSS, and maybe some JavaScript to spice up the site.</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>There is a bug with the version of Jekyll that is hosted on <a href="http://RubyGems.org">RubyGems.org</a>. That’s why you want to use the latest stable release from the repository directly. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</article> </div>  <div class="post-signoff"> <p>If this was useful, continue through the archive or follow the thread through related notes.</p> </div> </section> <aside class="related-posts"><div class="section-heading"><span>Next notes</span><h2>Follow the thread.</h2></div><div class="related-list"><article class="related-item"><span class="related-date">Jul 30, 2022</span><div><h3 class="related-title"><a href="/fix-eventmachine-c-extension-error/">How to fix EventMachine C extension error in Jekyll</a></h3><p class="related-desc">Here is a simple solution to resolve unable to load the EventMachine C extension; to use the pure-ruby reactor, require &#39;em/pure_ruby&#39; error</p></div></article><article class="related-item"><span class="related-date">Jul 15, 2021</span><div><h3 class="related-title"><a href="/fix-jekyll-autoprefixer-error/">How to Fix &#39;jekyll-autoprefixer&#39; Error Running Ruby 3.0.0</a></h3><p class="related-desc">Here&#39;s a fix for Jekyll if you cannot build your project after updating Ruby to the latest version.</p></div></article><article class="related-item"><span class="related-date">Jul 10, 2021</span><div><h3 class="related-title"><a href="/verify-osxkeychain-helper/">How to Verify &#39;osxkeychain helper&#39; Personal Access Token</a></h3><p class="related-desc">If you use GitHub for macOS, you want to verify that your personal token access is stored correctly.</p></div></article><article class="related-item"><span class="related-date">May 07, 2021</span><div><h3 class="related-title"><a href="/jekyll-include-component/">How to Build a Jekyll Component</a></h3><p class="related-desc">Take advantage of Jekyll Include to build a component in your project.</p></div></article></div></aside>  </main> <footer class="footer"> <div class="footer-copy"> <strong>Sayz Lim</strong> <p>Writing in public about product engineering, software, and keeping useful things in view.</p> </div> <div class="footer-links"> <span>&copy; 2010-2026</span> <a href="/atom.xml">Feed</a> </div> </footer> </div> </body></html>
