@@ -1,22 +1,83 @@
-const _manager = {
-  setTheme: function (userColorScheme) {
-    localStorage.setItem("user-color-scheme", userColorScheme);
-    document
-      .querySelector("html")
-      .setAttribute("data-site-theme", userColorScheme);
+const themeManager = {
+  storageKey: "user-color-scheme",
+  query: window.matchMedia("(prefers-color-scheme: dark)"),
+  normalize(preference) {
+    return preference === "light" || preference === "dark"
+      ? preference
+      : "system";
   },
-  setUserTheme: function () {
-    if (localStorage.getItem("user-color-scheme")) {
-      let userColorScheme = localStorage.getItem("user-color-scheme");
-      this.setTheme(userColorScheme);
+  getStoredPreference() {
+    try {
+      return this.normalize(window.localStorage.getItem(this.storageKey));
+    } catch {
+      return "system";
     }
   },
-  resetUserTheme: function () {
-    localStorage.removeItem("user-color-scheme");
-    document.querySelector("html").removeAttribute("data-site-theme");
+  getResolvedTheme(preference) {
+    return preference === "system"
+      ? this.query.matches
+        ? "dark"
+        : "light"
+      : preference;
   },
-  init: function () {
-    this.setUserTheme();
+  applyTheme(preference) {
+    const normalizedPreference = this.normalize(preference);
+    const resolvedTheme = this.getResolvedTheme(normalizedPreference);
+    const root = document.documentElement;
+
+    root.setAttribute("data-theme-preference", normalizedPreference);
+    root.setAttribute("data-site-theme", resolvedTheme);
+    this.syncControls(normalizedPreference);
+  },
+  persistPreference(preference) {
+    const normalizedPreference = this.normalize(preference);
+
+    try {
+      if (normalizedPreference === "system") {
+        window.localStorage.removeItem(this.storageKey);
+      } else {
+        window.localStorage.setItem(this.storageKey, normalizedPreference);
+      }
+    } catch {
+      return;
+    }
+  },
+  setPreference(preference) {
+    const normalizedPreference = this.normalize(preference);
+    this.persistPreference(normalizedPreference);
+    this.applyTheme(normalizedPreference);
+  },
+  syncControls(preference) {
+    document.querySelectorAll("[data-theme-option]").forEach((button) => {
+      const isActive = button.getAttribute("data-theme-option") === preference;
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  },
+  bindControls() {
+    document.querySelectorAll("[data-theme-option]").forEach((button) => {
+      if (button.dataset.themeBound === "true") return;
+
+      button.addEventListener("click", () => {
+        const preference = button.getAttribute("data-theme-option");
+        this.setPreference(preference);
+      });
+      button.dataset.themeBound = "true";
+    });
+  },
+  handleSystemChange() {
+    if (this.getStoredPreference() === "system") {
+      this.applyTheme("system");
+    }
+  },
+  init() {
+    this.applyTheme(this.getStoredPreference());
+    this.bindControls();
+
+    if (typeof this.query.addEventListener === "function") {
+      this.query.addEventListener("change", () => this.handleSystemChange());
+    } else if (typeof this.query.addListener === "function") {
+      this.query.addListener(() => this.handleSystemChange());
+    }
   },
 };
 
@@ -113,6 +174,7 @@ const _carbonOptimize = {
 };
 
 function loadInits() {
+  themeManager.init();
   _carbonOptimize.init();
   setObserver();
   initPostToc();
@@ -121,7 +183,6 @@ function loadInits() {
 }
 
 document.addEventListener("DOMContentLoaded", loadInits);
-_manager.init();
 
 function syncPostToc() {
   const toc = document.querySelector(".post-toc");
