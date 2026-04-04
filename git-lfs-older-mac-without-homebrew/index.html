@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><title>Git LFS on an Older Mac Without Waiting on Homebrew | Sayz Lim</title><meta name="description" content="Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately."><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="twitter:dnt" content="on"><meta name="format-detection" content="telephone=no"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f8f7f2" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17181b" media="(prefers-color-scheme: dark)"><link rel="canonical" href="https://sayzlim.net/git-lfs-older-mac-without-homebrew/"><script>(function () {
+  var storageKey = "user-color-scheme";
+  var root = document.documentElement;
+  var query = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function normalize(value) {
+    return value === "light" || value === "dark" ? value : "system";
+  }
+
+  function apply(preference) {
+    var resolved = preference === "system"
+      ? (query.matches ? "dark" : "light")
+      : preference;
+
+    root.setAttribute("data-site-theme", resolved);
+    root.setAttribute("data-theme-preference", preference);
+  }
+
+  try {
+    apply(normalize(window.localStorage.getItem(storageKey)));
+  } catch {
+    apply("system");
+  }
+})();</script><script src="/main.js"></script><link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"><link rel="apple-touch-icon" sizes="56x56" href="/img/apple-touch-icon-56x56.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png"><link rel="alternate" type="application/rss+xml" title="Sayz Lim" href="https://sayzlim.net/atom.xml"><meta property="og:site_name" content="Sayz Lim"><meta property="og:title" content="Git LFS on an Older Mac Without Waiting on Homebrew | Sayz Lim"><meta property="og:description" content="Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately."><meta property="og:type" content="article"><meta property="og:url" content="https://sayzlim.net/git-lfs-older-mac-without-homebrew/"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@sayzlim"><meta name="twitter:title" content="Git LFS on an Older Mac Without Waiting on Homebrew | Sayz Lim"><meta name="twitter:description" content="Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately."><meta property="article:published_time" content="2026-04-04"><meta property="article:author" content="Sayz Lim"><link rel="pingback" href="https://webmention.io/sayzlim.net/xmlrpc"><link rel="webmention" href="https://webmention.io/sayzlim.net/webmention"><script async src="https://stats.sayzlim.net/script.js" data-website-id="35992e34-11d0-4168-8d6c-4a4c796417ef"></script><style>#carbon-ad-container{min-height:160px}@media(min-width:1280px){.post-body{position:relative}#carbon-ad-wrapper{position:absolute;right:calc(-200px - 2rem);top:0;bottom:0;width:200px}#carbon-ad-container{position:sticky;top:1rem;width:200px;min-height:0}}#carbonads img{width:auto;border:none;background:none;margin:0}
+</style>
+<link rel="stylesheet" href="/_astro/SiteLayout.A7EPgm-H.css"></head> <body class="page-post"> <div class="site-shell"> <header class="site-header"> <div class="masthead"> <a class="brand" href="/">Sayz Lim</a> <p class="brand-note">
+A public notebook on product engineering, software, and the web.
+</p> <p class="brand-meta">Batam, Indonesia / in public since 2010</p> </div> <div class="site-controls"> <nav class="site-nav" aria-label="Primary"> <ul> <li> <a href="/"> <span>Home</span> </a> </li><li> <a href="/archive/"> <span>Archive</span> </a> </li><li> <a href="/tags/"> <span>Tags</span> </a> </li><li> <a href="/tools/"> <span>Tools</span> </a> </li> </ul> </nav> <div class="theme-switcher" data-theme-switcher> <span class="theme-switcher-label" id="theme-switcher-label">Theme</span> <div class="theme-switcher-options" role="group" aria-labelledby="theme-switcher-label"> <button type="button" data-theme-option="light" aria-pressed="false">
+Light
+</button> <button type="button" data-theme-option="dark" aria-pressed="false">
+Dark
+</button> <button type="button" data-theme-option="system" aria-pressed="true">
+System
+</button> </div> </div> </div> </header> <main class="page-frame"> <script type="module">const n=document.getElementById("carbon-ad-container");if(n){const e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//cdn.carbonads.com/carbon.js?serve=CKYIC2JI&placement=sayzlimnet&format=responsive",e.id="_carbonads_js",n.appendChild(e)}</script> <section class="post" itemscope itemtype="https://schema.org/BlogPosting"> <header class="post-hero"> <p class="post-kicker">Git</p> <h1 itemprop="headline">Git LFS on an Older Mac Without Waiting on Homebrew</h1> <p class="post-dek">Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately.</p> <div class="post-context"> <div class="post-meta"> <span class="post-author">Sayz Lim</span> <time itemprop="datePublished" datetime="2026-04-04T00:00:00.000Z"> Apr 04, 2026 </time>  </div> <ul class="post-tags" aria-label="Tags"> <li> <a href="/tag/git/"> Git </a> </li><li> <a href="/tag/homebrew/"> Homebrew </a> </li><li> <a href="/tag/macos/"> macOS </a> </li> </ul> </div> </header> <div class="post-content">  <article itemprop="articleBody" class="post-body flow"><div id="carbon-ad-wrapper"><div id="carbon-ad-container"></div></div><p>Git LFS became necessary once my notes started including images and other larger files.</p>
+<p>I have been moving those notes into a Git-backed setup where I own the files. Part of that comes from my experience with Evernote. Once I ran into a paywall and still did not have flexible, system-level access to my own notes, I realized I did not want to keep investing in a setup where the files were not really mine.</p>
+<p>In that setup, Git LFS matters for a simple reason: some notes include images, and I do not want those assets bloating normal Git history or making the remote repo unnecessarily heavy.</p>
+<p>So the goal was straightforward: get <code>git lfs</code> working in Terminal on my 2017 Intel MacBook Pro running Ventura and move on. Part of the reason this mattered in 2026 was that I was turning that old machine into an OpenClaw box, so getting this Git-backed notes workflow working there was useful beyond this one install.</p>
+<p>That is not what happened.</p>
+<p><code>brew install git-lfs</code> did not behave like a quick utility install. It started pulling in dependencies, warning about outdated Command Line Tools, and drifting into a much heavier build path than I expected.</p>
+<p>I assumed it would finish in 20 to 30 minutes. A few hours later, it was still compiling.</p>
+<p>The fix turned out not to be waiting longer. It was realizing that GitHub Desktop had already installed the Git toolchain I needed, including Git LFS.</p>
+<p>If you are trying to get Git LFS working on an Intel Mac and Homebrew seems to be taking forever, this may save you some time.</p>
+<h2 id="why-git-lfs-install-got-so-slow">Why Git LFS install got so slow</h2>
+<p>When I ran:</p>
+<pre><code class="language-sh">brew install git-lfs
+</code></pre>
+<p>the install stopped looking small pretty quickly.</p>
+<p>A few things stood out:</p>
+<ul>
+<li>Homebrew pulled in <code>openssl@3</code></li>
+<li>it warned that my Xcode Command Line Tools were outdated</li>
+<li>it classified the machine as a <code>Tier 2</code> setup</li>
+<li>the process moved into source compilation</li>
+</ul>
+<p>At that point, the output stopped looking like “install one small utility” and started looking more like toolchain maintenance. That was the point where I stopped treating this as something I should patiently wait out.</p>
+<p>What seemed to be happening was not that <code>git-lfs</code> itself was unusually big. The real problem was that the support path around the install on this machine had become the bottleneck.</p>
+<p>This matters because the machine was not fully unsupported. A 2017 Intel MacBook Pro on Ventura still works, but it no longer sits in the most well-supported part of the Homebrew matrix, especially once outdated Command Line Tools enter the picture.</p>
+<h2 id="the-turning-point">The turning point</h2>
+<p>I briefly considered more dramatic fixes, including changing package-manager strategy. But that would have been solving the wrong problem.</p>
+<p>I did not actually need to fix Homebrew first. I needed a working <code>git lfs</code> command in Terminal so I could keep using a Git-backed notes workflow with image assets on this Mac.</p>
+<p>Instead of asking, “How do I force this install to finish?” the better question became, “What is the shortest path to a working Git LFS setup on this machine?”</p>
+<h2 id="using-github-desktops-bundled-git-toolchain">Using GitHub Desktop’s bundled Git toolchain</h2>
+<p>GitHub Desktop already ships with its own Git binaries.</p>
+<p>It also includes <code>git-lfs</code>, just not in the most obvious place.</p>
+<p>On my machine, the paths were:</p>
+<p><strong>Git</strong></p>
+<pre><code class="language-sh">/Applications/GitHub Desktop.app/Contents/Resources/app/git/bin/git
+</code></pre>
+<p><strong>Git LFS</strong></p>
+<pre><code class="language-sh">/Applications/GitHub Desktop.app/Contents/Resources/app/git/libexec/git-core/git-lfs
+</code></pre>
+<p>So instead of waiting on Homebrew, I pointed Terminal at the Git toolchain GitHub Desktop had already installed.</p>
+<p>I could also have downloaded the official Git LFS binary directly from the project site. But in this case GitHub Desktop was simpler because I already use it on this older Intel MacBook Pro. Keeping Git and Git LFS inside the same bundled toolchain felt like the cleanest way to avoid mixing installations.</p>
+<p>I added these environment variables:</p>
+<pre><code class="language-zsh">export PATH=&quot;/Applications/GitHub Desktop.app/Contents/Resources/app/git/bin:$PATH&quot;
+export GIT_EXEC_PATH=&quot;/Applications/GitHub Desktop.app/Contents/Resources/app/git/libexec/git-core&quot;
+</code></pre>
+<p>Then I restarted the shell and checked:</p>
+<pre><code class="language-sh">git --version
+git lfs version
+</code></pre>
+<p>That worked.</p>
+<p>No separate Homebrew <code>git-lfs</code> install was needed.</p>
+<p>The important part was keeping the toolchain consistent: use GitHub Desktop’s Git, and let it find its matching Git LFS support instead of mixing pieces from different installs.</p>
+<p>I could have kept waiting, or gone looking for another standalone binary. But GitHub Desktop was already installed, and the binaries I needed were already sitting on the machine.</p>
+<p>So the shortest practical path was:</p>
+<ul>
+<li>stop waiting on the heavy Homebrew path</li>
+<li>reuse the installed Git toolchain</li>
+<li>make Terminal use it correctly</li>
+<li>keep Git and Git LFS coming from the same source</li>
+</ul>
+<p>That was simpler than cleaning up the whole package-manager situation just to get one command working.</p>
+<h2 id="the-real-lesson">The real lesson</h2>
+<p>The useful realization here was that I had started solving the wrong layer of the problem.</p>
+<p>I thought I needed to finish installing one small utility. In practice, I needed a working Git and Git LFS toolchain for a notes workflow built around owning my own files.</p>
+<p>Once Homebrew drifted into a heavier source-build path, the smarter move was not to become more patient. It was to route around the bottleneck using tooling that was already on the machine.</p>
+<p>In this case, GitHub Desktop already had the answer.</p>
+<p>This is a practical workaround, not necessarily the forever answer for every Mac. But if GitHub Desktop is already installed and the immediate goal is simply to get <code>git lfs</code> working without sitting through a long build spiral, it is a very reasonable shortcut.</p>
+</article>  </div>  <div class="post-signoff"> <p>
+If this was useful, continue through the archive or follow the
+              thread through related notes.
+</p> </div> </section> <aside class="related-posts"><div class="section-heading"><span>Next notes</span><h2>Follow the thread.</h2></div><div class="related-list"><article class="related-item"><span class="related-date">Sep 13, 2021</span><div><h3 class="related-title"><a href="/tips-maintain-forked-repository/">Tips to Maintain a Forked Repository</a></h3><p class="related-desc">I&#39;m sharing some tips to help you maintain repositories from the projects you forked from GitHub.</p></div></article><article class="related-item"><span class="related-date">Jul 10, 2021</span><div><h3 class="related-title"><a href="/verify-osxkeychain-helper/">How to Verify &#39;osxkeychain helper&#39; Personal Access Token</a></h3><p class="related-desc">If you use GitHub for macOS, you want to verify that your personal token access is stored correctly.</p></div></article></div></aside>  </main> <footer class="footer"> <div class="footer-copy"> <strong>Sayz Lim</strong> <p>
+Writing in public about product engineering, software, and keeping useful
+      things in view.
+</p> </div> <div class="footer-links"> <span>&copy; 2010-2026</span> <a href="/atom.xml">Feed</a> </div> </footer> </div> </body></html>
