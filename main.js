@@ -72,12 +72,7 @@ const themeManager = {
   init() {
     this.applyTheme(this.getStoredPreference());
     this.bindControls();
-
-    if (typeof this.query.addEventListener === "function") {
-      this.query.addEventListener("change", () => this.handleSystemChange());
-    } else if (typeof this.query.addListener === "function") {
-      this.query.addListener(() => this.handleSystemChange());
-    }
+    this.query.addEventListener("change", () => this.handleSystemChange());
   },
 };
 
