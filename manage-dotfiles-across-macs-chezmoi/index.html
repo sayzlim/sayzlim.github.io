@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><title>How I use chezmoi to manage dotfiles across Macs | Sayz Lim</title><meta name="description" content="Dotfiles drift when real machines change. Here is how I use chezmoi to keep config, app settings, and helper scripts predictable across my Macs."><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="twitter:dnt" content="on"><meta name="format-detection" content="telephone=no"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f8f7f2" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17181b" media="(prefers-color-scheme: dark)"><link rel="canonical" href="https://sayzlim.net/manage-dotfiles-across-macs-chezmoi/"><script>(function () {
+  var storageKey = "user-color-scheme";
+  var root = document.documentElement;
+  var query = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function normalize(value) {
+    return value === "light" || value === "dark" ? value : "system";
+  }
+
+  function apply(preference) {
+    var resolved = preference === "system"
+      ? (query.matches ? "dark" : "light")
+      : preference;
+
+    root.setAttribute("data-site-theme", resolved);
+    root.setAttribute("data-theme-preference", preference);
+  }
+
+  try {
+    apply(normalize(window.localStorage.getItem(storageKey)));
+  } catch {
+    apply("system");
+  }
+})();</script><script src="/main.js"></script><link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"><link rel="apple-touch-icon" sizes="56x56" href="/img/apple-touch-icon-56x56.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png"><link rel="alternate" type="application/rss+xml" title="Sayz Lim" href="https://sayzlim.net/atom.xml"><meta property="og:site_name" content="Sayz Lim"><meta property="og:title" content="How I use chezmoi to manage dotfiles across Macs | Sayz Lim"><meta property="og:description" content="Dotfiles drift when real machines change. Here is how I use chezmoi to keep config, app settings, and helper scripts predictable across my Macs."><meta property="og:type" content="article"><meta property="og:url" content="https://sayzlim.net/manage-dotfiles-across-macs-chezmoi/"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@sayzlim"><meta name="twitter:title" content="How I use chezmoi to manage dotfiles across Macs | Sayz Lim"><meta name="twitter:description" content="Dotfiles drift when real machines change. Here is how I use chezmoi to keep config, app settings, and helper scripts predictable across my Macs."><meta property="article:published_time" content="2026-04-16"><meta property="article:author" content="Sayz Lim"><link rel="pingback" href="https://webmention.io/sayzlim.net/xmlrpc"><link rel="webmention" href="https://webmention.io/sayzlim.net/webmention"><script async src="https://stats.sayzlim.net/script.js" data-website-id="35992e34-11d0-4168-8d6c-4a4c796417ef"></script><style>#carbon-ad-container{min-height:160px}@media(min-width:1280px){.post-body{position:relative}#carbon-ad-wrapper{position:absolute;right:calc(-200px - 2rem);top:0;bottom:0;width:200px}#carbon-ad-container{position:sticky;top:1rem;width:200px;min-height:0}}#carbonads img{width:auto;border:none;background:none;margin:0}
+</style>
+<link rel="stylesheet" href="/_astro/SiteLayout.CeIUerYq.css"></head> <body class="page-post"> <div class="site-shell"> <header class="site-header"> <div class="masthead"> <a class="brand" href="/">Sayz Lim</a> <p class="brand-note">
+A public notebook on product engineering, software, and the web.
+</p> <p class="brand-meta">Batam, Indonesia / in public since 2010</p> </div> <div class="site-controls"> <nav class="site-nav" aria-label="Primary"> <ul> <li> <a href="/"> <span>Home</span> </a> </li><li> <a href="/archive/"> <span>Archive</span> </a> </li><li> <a href="/tags/"> <span>Tags</span> </a> </li><li> <a href="/tools/"> <span>Tools</span> </a> </li> </ul> </nav> <div class="theme-switcher" data-theme-switcher> <span class="theme-switcher-label" id="theme-switcher-label">Theme</span> <div class="theme-switcher-options" role="group" aria-labelledby="theme-switcher-label"> <button type="button" data-theme-option="light" aria-pressed="false">
+Light
+</button> <button type="button" data-theme-option="dark" aria-pressed="false">
+Dark
+</button> <button type="button" data-theme-option="system" aria-pressed="false">
+System
+</button> </div> </div> </div> </header> <script>
+  (() => {
+    const preference =
+      document.documentElement.getAttribute("data-theme-preference") ||
+      "system";
+
+    document.querySelectorAll("[data-theme-option]").forEach((button) => {
+      const isActive = button.getAttribute("data-theme-option") === preference;
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  })();
+</script> <main class="page-frame"> <script type="module">const n=document.getElementById("carbon-ad-container");if(n){const e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//cdn.carbonads.com/carbon.js?serve=CKYIC2JI&placement=sayzlimnet&format=responsive",e.id="_carbonads_js",n.appendChild(e)}</script> <section class="post" itemscope itemtype="https://schema.org/BlogPosting"> <header class="post-hero"> <p class="post-kicker">Development</p> <h1 itemprop="headline">How I use chezmoi to manage dotfiles across Macs</h1> <p class="post-dek">Dotfiles drift when real machines change. Here is how I use chezmoi to keep config, app settings, and helper scripts predictable across my Macs.</p> <div class="post-context"> <div class="post-meta"> <span class="post-author">Sayz Lim</span> <time itemprop="datePublished" datetime="2026-04-16T00:00:00.000Z"> Apr 16, 2026 </time>  </div> <ul class="post-tags" aria-label="Tags"> <li> <a href="/tag/development/"> Development </a> </li> </ul> </div> </header> <div class="post-content">  <article itemprop="articleBody" class="post-body flow"><div id="carbon-ad-wrapper"><div id="carbon-ad-container"></div></div><p>Syncing dotfiles across machines should be straightforward.</p>
+<p>In practice, it drifts. Things get patched, scripts pile up, and after a while you’re not even sure how your own setup works anymore.</p>
+<p>I ended up at <a href="https://www.chezmoi.io/">chezmoi</a> in a fairly practical way. I had a dotconfig setup that worked, but it was slightly manually patched together. Around the same time I got a new MacBook Pro while still wanting my development environment to stay consistent with my 2020 Intel iMac.</p>
+<p>At some point I realized I didn’t fully remember how to maintain my own setup anymore.</p>
+<p>Chezmoi is the first tool I have used that makes this workflow feel boring in the right way.</p>
+<p>It gives me:</p>
+<ul>
+<li>a clean source-of-truth repo</li>
+<li>predictable application onto a machine</li>
+<li>support for private files and templates</li>
+<li>a sane way to pull local changes back into the repo when real apps edit files in place</li>
+</ul>
+<p>That last part is what makes it usable long term.</p>
+<h2 id="what-i-want-from-dotfiles">What I want from dotfiles</h2>
+<p>I want this to feel predictable. And I want it to behave like Git, because that’s what I already understand.</p>
+<p>I want:</p>
+<ul>
+<li>version-controlled config</li>
+<li>reproducible setup across machines</li>
+<li>a workflow that does not depend on manually rebuilding symlinks</li>
+<li>a way to manage files that apps rewrite directly</li>
+<li>a clean way to keep my own helper scripts and small CLI tools in sync too</li>
+</ul>
+<p>Git alone does not solve that cleanly. A bare repo in <code>$HOME</code> or a symlink farm works for a while, then starts to feel fragile.</p>
+<p>Chezmoi sits at a better level of abstraction. It handles mapping repo files into real home-directory paths without making me manage that translation manually.</p>
+<h2 id="what-my-setup-looks-like">What my setup looks like</h2>
+<p>Chezmoi stores files in a source repo with names that map to real paths.</p>
+<p>At first the naming looks a bit odd:</p>
+<pre><code class="language-text">dot_gitignore
+private_dot_gitconfig
+private_dot_config/private_git/private_ignore
+private_dot_config/private_karabiner/private_karabiner.json
+</code></pre>
+<p>But once it clicks, it becomes readable enough that you stop thinking about it.</p>
+<h2 id="the-basic-workflow">The basic workflow</h2>
+<p>The core commands are simple:</p>
+<pre><code class="language-sh">chezmoi init git@github.com:you/dotfiles.git
+chezmoi add ~/.zshrc
+chezmoi add ~/.gitconfig
+chezmoi apply
+chezmoi diff
+</code></pre>
+<p>The mental model is:</p>
+<ul>
+<li><code>add</code> brings an existing file under management</li>
+<li><code>apply</code> writes the source state onto the current machine</li>
+<li><code>diff</code> shows drift between the source repo and the live system</li>
+</ul>
+<p>That is already useful, but it is not the whole story.</p>
+<h2 id="the-command-that-matters-most-chezmoi-re-add">The command that matters most: <code>chezmoi re-add</code></h2>
+<p>This is the part most dotfiles guides under-explain.</p>
+<p>Real apps edit config files in place. Sometimes I also tweak the live file first because it is faster than opening the source repo.</p>
+<p>That is where <code>chezmoi re-add</code> matters.</p>
+<p>Example:</p>
+<pre><code class="language-sh">chezmoi re-add ~/.config/karabiner/karabiner.json
+</code></pre>
+<p>This pulls the current live version of the file back into the chezmoi source repo.</p>
+<p>That makes the workflow bidirectional:</p>
+<ol>
+<li>define config in the source repo</li>
+<li>apply it to the machine</li>
+<li>make real-world changes locally when needed</li>
+<li>sync those changes back into source with <code>re-add</code></li>
+</ol>
+<p>That loop is what makes this practical.</p>
+<p>Without it, the repo becomes a brittle idealized copy of your machine. With it, the repo stays close to reality.</p>
+<h2 id="a-few-examples-from-my-setup">A few examples from my setup</h2>
+<p>The useful parts of this workflow are not flashy files. They are the boring ones that actually need maintenance.</p>
+<h3 id="git-ignore-rules">Git ignore rules</h3>
+<p>I keep a global Git ignore through <code>~/.gitignore</code>.</p>
+<p>That is the kind of file I want managed centrally because it follows me across machines.</p>
+<h3 id="git-specific-excludes">Git-specific excludes</h3>
+<p>I also keep Git-specific ignore behavior under <code>~/.config/git/ignore</code>.</p>
+<p>That is a good example of a file that belongs in the same managed setup, but not necessarily in the same place as the global ignore.</p>
+<h3 id="karabiner">Karabiner</h3>
+<p>Karabiner is where <code>chezmoi re-add</code> becomes especially useful.</p>
+<p>Some config files are easier to tweak through the app or directly on the live machine. When that happens, I do not want to manually copy changes back into the source repo later. <code>re-add</code> gives me a clean way to sync the real state back into source.</p>
+<p>That is much closer to how machine configuration actually evolves.</p>
+<h3 id="my-own-helper-scripts">My own helper scripts</h3>
+<p>This also matters for the small scripts I use in day-to-day development.</p>
+<p>For example, I have been building my own helpers around commit workflows, including scripts that reword commits or review recent commits for potential risks. Those are not exactly “dotfiles,” but they are part of the working environment I want to preserve across machines.</p>
+<p>Once I started treating this as development-environment consistency rather than dotfiles aesthetics, chezmoi made a lot more sense.</p>
+<h2 id="what-to-avoid">What to avoid</h2>
+<p>A few mistakes seem easy to make here:</p>
+<ul>
+<li>editing live files and forgetting to sync them back</li>
+<li>using project-level <code>.gitignore</code> for personal machine noise</li>
+<li>over-templating too early</li>
+<li>turning dotfiles into a framework project instead of a maintenance system</li>
+</ul>
+<p>The goal is not to build a clever setup.<br>
+The goal is to make machine configuration boring to keep in sync.</p>
+<h2 id="why-i-prefer-this-over-ad-hoc-scripts">Why I prefer this over ad hoc scripts</h2>
+<p>The value of chezmoi is not that it makes dotfiles look tidy on GitHub.</p>
+<p>The value is that it gives me a repeatable maintenance loop:</p>
+<ul>
+<li>manage</li>
+<li>apply</li>
+<li>inspect drift</li>
+<li>sync changes back</li>
+</ul>
+<p>Once that loop clicks, dotfiles stop feeling like a side project and start acting like infrastructure.</p>
+<p>That’s the part I care about.</p>
+<h2 id="the-takeaway">The takeaway</h2>
+<p>If you already tweak your shell, Git, editor, or keyboard config across multiple machines, the best reason to use chezmoi is not that it stores dotfiles in Git.</p>
+<p>It is that it gives you a practical two-way workflow.</p>
+<p>You can define config in a clean source repo, apply it predictably, and when the real machine changes, pull that reality back into source with <code>chezmoi re-add</code>.</p>
+<p>That is what makes the setup hold up over time.</p>
+</article>  </div>  <div class="post-signoff"> <p>
+If this was useful, continue through the archive or follow the
+              thread through related notes.
+</p> </div> </section> <aside class="related-posts"><div class="section-heading"><span>Next notes</span><h2>Follow the thread.</h2></div><div class="related-list"><article class="related-item"><span class="related-date">Apr 04, 2026</span><div><h3 class="related-title"><a href="/git-lfs-older-mac-without-homebrew/">Git LFS on an Older Mac Without Waiting on Homebrew</a></h3><p class="related-desc">Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately.</p></div></article><article class="related-item"><span class="related-date">Mar 28, 2026</span><div><h3 class="related-title"><a href="/jekyll-to-astro-without-rebuilding-the-whole-site/">Migrating from Jekyll to Astro without rebuilding the whole site</a></h3><p class="related-desc">I migrated my personal site from Jekyll to Astro while keeping the content and publishing layers intact.</p></div></article><article class="related-item"><span class="related-date">Apr 27, 2024</span><div><h3 class="related-title"><a href="/reset-properties-css/">Resetting properties with &quot;all&quot; shorthand in CSS</a></h3><p class="related-desc">Learn how the &quot;all&quot; keyword in CSS simplifies universal styling changes across elements, making design tweaks quicker and more efficient.</p></div></article><article class="related-item"><span class="related-date">Apr 15, 2023</span><div><h3 class="related-title"><a href="/chatgpt-export-path/">Understanding export PATH with ChatGPT</a></h3><p class="related-desc">I spent the weekend asking ChatGPT what each command in the zprofile configuration file does.</p></div></article></div></aside>  </main> <footer class="footer"> <div class="footer-copy"> <strong>Sayz Lim</strong> <p>
+Writing in public about product engineering, software, and keeping useful
+      things in view.
+</p> </div> <div class="footer-links"> <span>&copy; 2010-2026</span> <a href="/atom.xml">Feed</a> </div> </footer> </div> </body></html>
