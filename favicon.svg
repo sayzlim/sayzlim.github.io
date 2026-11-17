@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <style>@media (prefers-color-scheme: dark) { .tile { fill: #ece9e3; } .glyph { fill: #111418; } }</style>
+  <g id="tile"><rect class="tile" width="512" height="512" rx="96" fill="#221f1a"/></g>
+  <g id="icon" class="glyph" fill="#fbfaf8" shape-rendering="crispEdges"><rect x="160" y="96" width="192" height="32"/><rect x="128" y="128" width="256" height="32"/><rect x="128" y="160" width="64" height="32"/><rect x="320" y="160" width="64" height="32"/><rect x="128" y="192" width="64" height="32"/><rect x="160" y="224" width="192" height="32"/><rect x="192" y="256" width="192" height="32"/><rect x="320" y="288" width="64" height="32"/><rect x="128" y="320" width="64" height="32"/><rect x="320" y="320" width="64" height="32"/><rect x="128" y="352" width="256" height="32"/><rect x="160" y="384" width="192" height="32"/></g>
+</svg>
