@@ -1,0 +1,95 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><title>My chezmoi setup, seven months later | Sayz Lim</title><meta name="description" content="In April I wrote that chezmoi makes dotfiles act like infrastructure. Here is what that looked like after seven months of real use across two Macs."><meta name="HandheldFriendly" content="True"><meta name="MobileOptimized" content="320"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="twitter:dnt" content="on"><meta name="format-detection" content="telephone=no"><meta name="color-scheme" content="light dark"><meta name="theme-color" content="#f8f7f2" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17181b" media="(prefers-color-scheme: dark)"><link rel="canonical" href="https://sayzlim.net/chezmoi-seven-months-later/"><script>(function () {
+  var storageKey = "user-color-scheme";
+  var root = document.documentElement;
+  var query = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function normalize(value) {
+    return value === "light" || value === "dark" ? value : "system";
+  }
+
+  function apply(preference) {
+    var resolved = preference === "system"
+      ? (query.matches ? "dark" : "light")
+      : preference;
+
+    root.setAttribute("data-site-theme", resolved);
+    root.setAttribute("data-theme-preference", preference);
+  }
+
+  try {
+    apply(normalize(window.localStorage.getItem(storageKey)));
+  } catch {
+    apply("system");
+  }
+})();</script><script src="/main.js"></script><link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16"><link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96"><link rel="apple-touch-icon" sizes="56x56" href="/img/apple-touch-icon-56x56.png"><link rel="apple-touch-icon" sizes="60x60" href="/img/apple-touch-icon-60x60.png"><link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon-76x76.png"><link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" sizes="120x120" href="/img/apple-touch-icon-120x120.png"><link rel="apple-touch-icon" sizes="144x144" href="/img/apple-touch-icon-144x144.png"><link rel="apple-touch-icon" sizes="152x152" href="/img/apple-touch-icon-152x152.png"><link rel="alternate" type="application/rss+xml" title="Sayz Lim" href="https://sayzlim.net/atom.xml"><meta property="og:site_name" content="Sayz Lim"><meta property="og:title" content="My chezmoi setup, seven months later | Sayz Lim"><meta property="og:description" content="In April I wrote that chezmoi makes dotfiles act like infrastructure. Here is what that looked like after seven months of real use across two Macs."><meta property="og:type" content="article"><meta property="og:url" content="https://sayzlim.net/chezmoi-seven-months-later/"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@sayzlim"><meta name="twitter:title" content="My chezmoi setup, seven months later | Sayz Lim"><meta name="twitter:description" content="In April I wrote that chezmoi makes dotfiles act like infrastructure. Here is what that looked like after seven months of real use across two Macs."><meta property="article:published_time" content="2026-11-17"><meta property="article:author" content="Sayz Lim"><link rel="pingback" href="https://webmention.io/sayzlim.net/xmlrpc"><link rel="webmention" href="https://webmention.io/sayzlim.net/webmention"><script async src="https://stats.sayzlim.net/script.js" data-website-id="35992e34-11d0-4168-8d6c-4a4c796417ef"></script><style>#carbon-ad-container{min-height:160px}@media(min-width:1280px){.post-body{position:relative}#carbon-ad-wrapper{position:absolute;right:calc(-200px - 2rem);top:0;bottom:0;width:200px}#carbon-ad-container{position:sticky;top:1rem;width:200px;min-height:0}}#carbonads img{width:auto;border:none;background:none;margin:0}
+</style>
+<link rel="stylesheet" href="/_astro/SiteLayout.DQYQuNML.css"></head> <body class="page-post"> <div class="site-shell"> <header class="site-header"> <div class="masthead"> <a class="brand" href="/">Sayz Lim</a> <p class="brand-note">
+A public notebook on product engineering, software, and the web.
+</p> <p class="brand-meta">Batam, Indonesia / in public since 2010</p> </div> <div class="site-controls"> <nav class="site-nav" aria-label="Primary"> <ul> <li> <a href="/"> <span>Home</span> </a> </li><li> <a href="/archive/"> <span>Archive</span> </a> </li><li> <a href="/tags/"> <span>Tags</span> </a> </li><li> <a href="/tools/"> <span>Tools</span> </a> </li> </ul> </nav> <div class="theme-switcher" data-theme-switcher> <span class="theme-switcher-label" id="theme-switcher-label">Theme</span> <div class="theme-switcher-options" role="group" aria-labelledby="theme-switcher-label"> <button type="button" data-theme-option="light" aria-pressed="false">
+Light
+</button> <button type="button" data-theme-option="dark" aria-pressed="false">
+Dark
+</button> <button type="button" data-theme-option="system" aria-pressed="false">
+System
+</button> </div> </div> </div> </header> <script>
+  (() => {
+    const preference =
+      document.documentElement.getAttribute("data-theme-preference") ||
+      "system";
+
+    document.querySelectorAll("[data-theme-option]").forEach((button) => {
+      const isActive = button.getAttribute("data-theme-option") === preference;
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  })();
+</script> <main class="page-frame"> <script type="module">const n=document.getElementById("carbon-ad-container");if(n){const e=document.createElement("script");e.async=!0,e.type="text/javascript",e.src="//cdn.carbonads.com/carbon.js?serve=CKYIC2JI&placement=sayzlimnet&format=responsive",e.id="_carbonads_js",n.appendChild(e)}</script> <section class="post" itemscope itemtype="https://schema.org/BlogPosting"> <header class="post-hero"> <p class="post-kicker">Development</p> <h1 itemprop="headline">My chezmoi setup, seven months later</h1> <p class="post-dek">In April I wrote that chezmoi makes dotfiles act like infrastructure. Here is what that looked like after seven months of real use across two Macs.</p> <div class="post-context"> <div class="post-meta"> <span class="post-author">Sayz Lim</span> <time itemprop="datePublished" datetime="2026-11-17T00:00:00.000Z"> Nov 17, 2026 </time>  </div> <ul class="post-tags" aria-label="Tags"> <li> <a href="/tag/development/"> Development </a> </li> </ul> </div> </header> <div class="post-content">  <article itemprop="articleBody" class="post-body flow"><div id="carbon-ad-wrapper"><div id="carbon-ad-container"></div></div><p>In April I wrote about <a href="/manage-dotfiles-across-macs-chezmoi/">how I use chezmoi to manage dotfiles across Macs</a>. It ended with a claim: once the maintenance loop clicks, dotfiles stop feeling like a side project and start acting like infrastructure.</p>
+<p>Seven months later, I can check that claim against the repo instead of my memory. Most of its history was written after that post.</p>
+<h2 id="what-held-up">What held up</h2>
+<p>The basics did not change.</p>
+<p>The source repo is still the truth. The naming scheme still reads fine once you stop noticing it. The loop is the same: manage, apply, inspect drift, sync back. Karabiner, my global Git ignore and <code>~/.config/git/ignore</code> are still managed exactly as I described.</p>
+<p>That part was right. What changed is everything around it.</p>
+<h2 id="the-setup-tells-me-when-it-drifts">The setup tells me when it drifts</h2>
+<p>In April, drift was something I had to remember to check with <code>chezmoi diff</code>. That is the weak point of any setup that depends on remembering.</p>
+<p>Now a new terminal tells me. When this Mac has fallen behind the repo, has unpushed or uncommitted changes, or differs from what chezmoi would apply, I get one line:</p>
+<pre><code class="language-text">dotfiles: 2 behind (chezmoi update), 1 changed (chezmoi diff)
+</code></pre>
+<p>Each part names the command to look at next. When everything matches, it prints nothing.</p>
+<p>The fetch behind it runs in the background, at most every 15 minutes, so opening a terminal never waits on the network. And if fetching or checking fails, it says so, because a failing check that printed nothing would look exactly like a clean machine.</p>
+<p>This is the change I would make first if I started again. Drift you have to go looking for is drift you find late.</p>
+<h2 id="changes-go-through-pull-requests">Changes go through pull requests</h2>
+<p>Since late September, every change to the dotfiles lands as a pull request, the same way changes land in my other repos.</p>
+<p>That sounds heavy for config files. It isn’t, and the reason is what the dotfiles now carry. A change to my Git config decides how every repo on both Macs authenticates. A change to my shell runs on every terminal I open. Those deserve the same review as code, because they behave like code.</p>
+<p>It also gives me a history I can read. Each change has a title that says what it does and a description that says why.</p>
+<h2 id="templates-arrived-when-a-real-difference-did">Templates arrived when a real difference did</h2>
+<p>In April I listed “over-templating too early” as a mistake. That advice held, and now I can say why: each template I have today arrived with a concrete reason, not in anticipation of one.</p>
+<ul>
+<li>My Git config looks up where <code>gh</code> is installed, because apps launched outside a terminal do not see my shell’s <code>PATH</code>. If <code>gh</code> is missing, the apply stops and tells me what to install, instead of writing a broken config.</li>
+<li>The Codex config is managed with a modify template that sets only the model settings. Codex writes its own per-machine entries into the same file, so owning the whole file would mean fighting it on every apply.</li>
+<li>One Mac has less memory available to Docker than the other. That difference lives as a flag in each machine’s local chezmoi config, not in the shared repo.</li>
+</ul>
+<p>Not everything needed a template. My work email applies automatically in work repositories through Git’s own <code>includeIf</code>, matched on the repository’s remote. Git already solved that one.</p>
+<h2 id="the-setup-now-includes-my-ai-tools">The setup now includes my AI tools</h2>
+<p>The biggest category of change was not shell or Git config. It was the rules I give Claude Code and Codex: how they report progress, when they stop and ask, what they must never do without me.</p>
+<p>Those rules are configuration in the most literal sense. They change how my tools behave on every project. And they drift like any other config: a rule added on one Mac and not the other means the same request behaves differently depending on where I am sitting.</p>
+<p>So they live in the dotfiles now, reviewed like everything else.</p>
+<h2 id="smaller-things">Smaller things</h2>
+<ul>
+<li>A <code>Brewfile</code> lists the Homebrew formulae the dotfiles depend on, and nothing else. <code>brew bundle check --no-upgrade</code> tells me whether a Mac is missing one.</li>
+<li>mise pins Node, pnpm and Python, so both Macs run the same versions.</li>
+<li>Aliases moved into their own file, and WezTerm joined the managed set.</li>
+<li>Git now fetches and pushes GitHub over HTTPS with the GitHub CLI’s login. 1Password still signs my commits, but it no longer needs to unlock an SSH key every time I pull.</li>
+</ul>
+<h2 id="one-correction">One correction</h2>
+<p>In April I wrote that my commit helper scripts were part of what I wanted chezmoi to keep in sync. They ended up somewhere else: a repository of their own, installed onto each Mac. They grew tests and their own review process, and they are tools rather than configuration.</p>
+<p>The line is not perfectly clean. chezmoi still carries a few scripts that exist only to run my work setup on these two Macs. But the helpers I use across every project now live where they can be developed and tested on their own.</p>
+<h2 id="the-takeaway">The takeaway</h2>
+<p>The April post was about a loop: manage, apply, inspect drift, sync back. That loop still works. What seven months added is that I no longer have to be the one who remembers to run it.</p>
+<p>The setup tells me when it has drifted. Every change since late September is reviewed. Templates exist only where there is a concrete reason.</p>
+<p>That is what I meant by infrastructure. Not a clever setup, but one that keeps telling the truth about itself.</p>
+</article>  </div> <div class="post-signoff"> <p>
+If this was useful, continue through the archive or follow the
+              thread through related notes.
+</p> </div> </section> <aside class="related-posts"><div class="section-heading"><span>Next notes</span><h2>Follow the thread.</h2></div><div class="related-list"><article class="related-item"><span class="related-date">Apr 16, 2026</span><div><h3 class="related-title"><a href="/manage-dotfiles-across-macs-chezmoi/">How I use chezmoi to manage dotfiles across Macs</a></h3><p class="related-desc">Dotfiles drift when real machines change. Here is how I use chezmoi to keep config, app settings, and helper scripts predictable across my Macs.</p></div></article><article class="related-item"><span class="related-date">Apr 04, 2026</span><div><h3 class="related-title"><a href="/git-lfs-older-mac-without-homebrew/">Git LFS on an Older Mac Without Waiting on Homebrew</a></h3><p class="related-desc">Homebrew fell into a heavy source-build path on my older Intel Mac, so I used GitHub Desktop’s bundled Git toolchain to get Git LFS working immediately.</p></div></article><article class="related-item"><span class="related-date">Mar 28, 2026</span><div><h3 class="related-title"><a href="/jekyll-to-astro-without-rebuilding-the-whole-site/">Migrating from Jekyll to Astro without rebuilding the whole site</a></h3><p class="related-desc">I migrated my personal site from Jekyll to Astro while keeping the content and publishing layers intact.</p></div></article><article class="related-item"><span class="related-date">Apr 27, 2024</span><div><h3 class="related-title"><a href="/reset-properties-css/">Resetting properties with &quot;all&quot; shorthand in CSS</a></h3><p class="related-desc">Learn how the &quot;all&quot; keyword in CSS simplifies universal styling changes across elements, making design tweaks quicker and more efficient.</p></div></article></div></aside>  </main> <footer class="footer"> <div class="footer-copy"> <strong>Sayz Lim</strong> <p>
+Writing in public about product engineering, software, and keeping useful
+      things in view.
+</p> </div> <div class="footer-links"> <span>&copy; 2010-2026</span> <a href="/atom.xml">Feed</a> </div> </footer> </div> </body></html>
